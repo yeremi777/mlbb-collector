@@ -11,7 +11,7 @@ import (
 
 var testConfig = Config{
 	MaxRequests: 2, WindowSeconds: 60, DetailMultiplier: 3,
-	CookieName: "mlbb_analyzer_client_id", CookieMaxAge: 3600, CookieSameSite: http.SameSiteLaxMode,
+	CookieName: "mlbb_collector_client_id", CookieMaxAge: 3600, CookieSameSite: http.SameSiteLaxMode,
 	Salt: "test-salt",
 }
 
