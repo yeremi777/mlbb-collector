@@ -104,36 +104,62 @@ type Mux interface {
 	HandleFunc(pattern string, handler func(http.ResponseWriter, *http.Request))
 }
 
-// docsPage renders /docs/openapi.yaml with Scalar.
-const docsPage = `<!doctype html>
+// docsPage renders /docs/openapi.yaml with Swagger UI's standalone layout:
+// the Swagger logo on the left of the top bar and the dark-mode toggle in its
+// right corner, without the Explore box. The page starts dark when the
+// operating system prefers dark.
+const docsPage = `<!DOCTYPE html>
 <html>
 <head>
-<title>MLBB Collector API</title>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link type="text/css" rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swagger-ui-dist@5/swagger-ui.css">
+<title>MLBB Collector - Swagger UI</title>
+<style>
+#swagger-ui .topbar .download-url-wrapper { display: none; }
+#swagger-ui .topbar .dark-mode-toggle { margin-left: auto; }
+</style>
 </head>
 <body>
-<script id="api-reference" data-url="/docs/openapi.yaml"></script>
-<script src="https://cdn.jsdelivr.net/npm/@scalar/api-reference@1"></script>
+<div id="swagger-ui"></div>
+<script src="https://cdn.jsdelivr.net/npm/swagger-ui-dist@5/swagger-ui-bundle.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swagger-ui-dist@5/swagger-ui-standalone-preset.js"></script>
+<script>
+const ui = SwaggerUIBundle({
+  url: '/docs/openapi.yaml',
+  dom_id: '#swagger-ui',
+  deepLinking: true,
+  showExtensions: true,
+  showCommonExtensions: true,
+  presets: [
+    SwaggerUIBundle.presets.apis,
+    SwaggerUIStandalonePreset
+  ],
+  plugins: [
+    SwaggerUIBundle.plugins.DownloadUrl
+  ],
+  layout: 'StandaloneLayout',
+})
+</script>
 </body>
 </html>
 `
 
-// docsRedirects are addresses people reach for the docs by: the server's
-// root, a trailing slash, and the Swagger UI address dev served.
-var docsRedirects = []string{"GET /{$}", "GET /docs/{$}", "GET /docs/index.html"}
+// docsPaths serve the docs page: /docs, a trailing slash, and the Swagger UI
+// address dev served, where browsers that cached dev's permanent redirect
+// from /docs still go.
+var docsPaths = []string{"GET /docs", "GET /docs/{$}", "GET /docs/index.html"}
 
-// Docs serves the OpenAPI contract at /docs/openapi.yaml and a Scalar page
-// rendering it at /docs, and sends the docsRedirects addresses to /docs.
+// Docs serves the OpenAPI contract at /docs/openapi.yaml and a Swagger UI page
+// rendering it at the docsPaths, and sends the server's root to /docs.
 func Docs(mux Mux, spec []byte) {
-	for _, pattern := range docsRedirects {
-		mux.HandleFunc(pattern, func(w http.ResponseWriter, r *http.Request) {
-			http.Redirect(w, r, "/docs", http.StatusFound)
+	for _, pattern := range docsPaths {
+		mux.HandleFunc(pattern, func(w http.ResponseWriter, _ *http.Request) {
+			w.Header().Set("Content-Type", "text/html; charset=utf-8")
+			_, _ = w.Write([]byte(docsPage))
 		})
 	}
-	mux.HandleFunc("GET /docs", func(w http.ResponseWriter, _ *http.Request) {
-		w.Header().Set("Content-Type", "text/html; charset=utf-8")
-		_, _ = w.Write([]byte(docsPage))
+	mux.HandleFunc("GET /{$}", func(w http.ResponseWriter, r *http.Request) {
+		http.Redirect(w, r, "/docs", http.StatusFound)
 	})
 	mux.HandleFunc("GET /docs/openapi.yaml", func(w http.ResponseWriter, _ *http.Request) {
 		w.Header().Set("Content-Type", "application/yaml")

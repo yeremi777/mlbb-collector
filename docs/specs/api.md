@@ -20,11 +20,11 @@
 | `GET /api/heroes/{heroId}` | Hero | 404 `hero_not_found` |
 | `GET /api/heroes/{heroId}/counters` | array of Counter | 404 `hero_not_found`, 404 `counter_data_not_found` |
 | `GET /api/heroes/{heroId}/synergies` | array of Synergy | 404 `hero_not_found`, 404 `synergy_data_not_found` |
-| `GET /docs` | Scalar page rendering `docs/openapi.yaml`, with `APP_URL` as its server | |
-| `GET /docs/openapi.yaml` | the spec file with its `servers` entry set to `APP_URL`, `application/yaml` | |
-| `GET /`, `GET /docs/`, `GET /docs/index.html` | 302 redirect to `/docs` | |
+| `GET /docs`, `GET /docs/`, `GET /docs/index.html` | Swagger UI's standalone page rendering `docs/openapi.yaml`; its top bar shows the Swagger logo on the left and the dark-mode toggle in the right corner, without the Explore box, and the page starts dark when the operating system prefers dark | |
+| `GET /docs/openapi.yaml` | the spec file as written, `application/yaml` | |
+| `GET /` | 302 redirect to `/docs` | |
 
-`docs/openapi.yaml` is the contract for every route and body except the docs routes and redirects above. It is written by hand, and a test fails when a registered route other than those is missing from it, or a path in it is not registered.
+`docs/openapi.yaml` is the contract for every route and body except the docs routes and redirect above. It declares no servers, so the docs page calls OpenAPI's default `/`, the address it was opened on, whether `localhost` or `127.0.0.1`. `/docs/index.html` serves the page because browsers that once saw `dev`'s permanent redirect from `/docs` go there without asking. It is written by hand, and a test fails when a registered route other than those is missing from it, or a path in it is not registered.
 
 ### Bodies
 
@@ -80,12 +80,12 @@ Read once at startup into one typed config, from the environment, which `make` f
 | `DB_PASSWORD` | empty | Postgres password |
 | `DB_SSLMODE` | required | `disable`, `allow`, `prefer`, `require`, `verify-ca`, or `verify-full` |
 | `APP_PORT` | required | listen port, 1 to 65535 |
-| `APP_URL` | required | the service's public base URL, an absolute `http` or `https` URL; the server the docs show |
+| `APP_URL` | required | the service's public base URL, an absolute `http` or `https` URL; a port in it must be `APP_PORT`; printed at startup as `url` and `docs` |
 | `FRONTEND_ORIGIN` | empty | extra CORS origins, comma-separated |
 
 ## Server
 
-- The server listens on `127.0.0.1:APP_PORT`.
+- The server listens on `127.0.0.1:APP_PORT` and logs `api listening url=<APP_URL> docs=<APP_URL>/docs`.
 - Startup pings Postgres and fails when it cannot reach it.
 - Read-header timeout 5s, read timeout 10s, idle timeout 60s. The write timeout is `AI_TIMEOUT_SECONDS` (default 60, owned by `analysis`) plus 10s, so an analyze response is never cut off.
 - `SIGINT` or `SIGTERM` stops accepting connections and lets in-flight requests finish for up to 25s.
@@ -97,8 +97,8 @@ Read once at startup into one typed config, from the environment, which `make` f
 - AC-3: An unknown path answers 404 `not_found` and a wrong method on a known path answers 405 `method_not_allowed`, both in the error body shape.
 - AC-4: A handler test forces a repository error and gets 500 `internal_error` with no detail from the error in the body.
 - AC-5: The route test passes: every registered route except `/docs` and `/docs/openapi.yaml` is in `docs/openapi.yaml`, and every path in it other than the four analyze routes `analysis` owns is registered.
-- AC-6: `GET /docs` renders the spec in Scalar, and `GET /docs/openapi.yaml` lists `APP_URL` as its only server.
-- AC-7: Startup without `DB_HOST` or `APP_URL`, with `APP_PORT=abc`, or with `APP_URL=localhost`, exits non-zero naming the variable. Startup with an unreachable database, or a `DB_SSLMODE` Postgres does not accept, exits non-zero.
+- AC-6: `GET /docs`, `/docs/`, and `/docs/index.html` render the spec in Swagger UI from both `localhost` and `127.0.0.1`, and `GET /docs/openapi.yaml` declares no servers.
+- AC-7: Startup without `DB_HOST` or `APP_URL`, with `APP_PORT=abc`, with `APP_URL=localhost`, or with an `APP_URL` port other than `APP_PORT`, exits non-zero naming the variable. Startup with an unreachable database, or a `DB_SSLMODE` Postgres does not accept, exits non-zero.
 - AC-8: After `SIGTERM` during a request that is still running, the request completes and the process exits 0.
 
 ## Verification

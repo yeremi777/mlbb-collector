@@ -4,6 +4,7 @@ import (
 	"errors"
 	"net/http"
 	"net/http/httptest"
+	"strings"
 	"testing"
 )
 
@@ -111,28 +112,27 @@ func TestCORS(t *testing.T) {
 func TestDocs(t *testing.T) {
 	mux := http.NewServeMux()
 	Docs(mux, []byte("openapi: 3.1.0\n"))
+	h := Router(mux)
 
-	page := serve(mux, http.MethodGet, "/docs", nil)
-	if page.Code != http.StatusOK || page.Header().Get("Content-Type") != "text/html; charset=utf-8" {
-		t.Errorf("/docs: got %d %q", page.Code, page.Header().Get("Content-Type"))
+	// /docs/index.html is where browsers that once saw dev's permanent
+	// redirect from /docs still go, so it serves the page rather than
+	// redirecting back to /docs.
+	for _, target := range []string{"/docs", "/docs/", "/docs/index.html"} {
+		page := serve(h, http.MethodGet, target, nil)
+		if page.Code != http.StatusOK || page.Header().Get("Content-Type") != "text/html; charset=utf-8" ||
+			!strings.Contains(page.Body.String(), "url: '/docs/openapi.yaml'") {
+			t.Errorf("%s: got %d %q, want the docs page", target, page.Code, page.Header().Get("Content-Type"))
+		}
 	}
 
-	spec := serve(mux, http.MethodGet, "/docs/openapi.yaml", nil)
+	spec := serve(h, http.MethodGet, "/docs/openapi.yaml", nil)
 	if spec.Code != http.StatusOK || spec.Header().Get("Content-Type") != "application/yaml" || spec.Body.String() != "openapi: 3.1.0\n" {
 		t.Errorf("/docs/openapi.yaml: got %d %q %q", spec.Code, spec.Header().Get("Content-Type"), spec.Body.String())
 	}
-}
 
-func TestDocsRedirectsNearMisses(t *testing.T) {
-	mux := http.NewServeMux()
-	Docs(mux, []byte("openapi: 3.1.0\n"))
-	h := Router(mux)
-
-	for _, target := range []string{"/", "/docs/", "/docs/index.html"} {
-		rec := serve(h, http.MethodGet, target, nil)
-		if rec.Code != http.StatusFound || rec.Header().Get("Location") != "/docs" {
-			t.Errorf("%s: got %d to %q, want 302 to /docs", target, rec.Code, rec.Header().Get("Location"))
-		}
+	root := serve(h, http.MethodGet, "/", nil)
+	if root.Code != http.StatusFound || root.Header().Get("Location") != "/docs" {
+		t.Errorf("/: got %d to %q, want 302 to /docs", root.Code, root.Header().Get("Location"))
 	}
 	if rec := serve(h, http.MethodGet, "/docs/other", nil); rec.Code != http.StatusNotFound {
 		t.Errorf("/docs/other: got %d, want the JSON 404", rec.Code)
