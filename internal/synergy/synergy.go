@@ -6,6 +6,8 @@ import (
 	"fmt"
 	"slices"
 	"strings"
+
+	"github.com/yeremi777/mlbb-collector/internal/hero"
 )
 
 // Synergy is one authored Synergy: SynergyHeroID makes AnchorHeroID stronger.
@@ -15,6 +17,15 @@ type Synergy struct {
 	Reasons       []string `json:"reasons"`
 	SynergyTypes  []string `json:"synergyTypes"`
 	Proof         []Proof  `json:"proof"`
+}
+
+// WithHero is a Synergy as the API serves it, with the Synergy hero in full.
+type WithHero struct {
+	AnchorHeroID string    `json:"anchorHeroId"`
+	SynergyHero  hero.Hero `json:"synergyHero"`
+	Reasons      []string  `json:"reasons"`
+	SynergyTypes []string  `json:"synergyTypes"`
+	Proof        []Proof   `json:"proof"`
 }
 
 // Proof is one concrete interaction supporting a Synergy.

@@ -6,6 +6,8 @@ import (
 	"fmt"
 	"slices"
 	"strings"
+
+	"github.com/yeremi777/mlbb-collector/internal/hero"
 )
 
 // Counter is one authored Counter: CounterHeroID beats TargetHeroID.
@@ -15,6 +17,15 @@ type Counter struct {
 	Reasons       []string `json:"reasons"`
 	CounterTypes  []string `json:"counterTypes"`
 	Proof         []Proof  `json:"proof"`
+}
+
+// WithHero is a Counter as the API serves it, with the Counter hero in full.
+type WithHero struct {
+	TargetHeroID string    `json:"targetHeroId"`
+	CounterHero  hero.Hero `json:"counterHero"`
+	Reasons      []string  `json:"reasons"`
+	CounterTypes []string  `json:"counterTypes"`
+	Proof        []Proof   `json:"proof"`
 }
 
 // Proof is one concrete interaction supporting a Counter.
