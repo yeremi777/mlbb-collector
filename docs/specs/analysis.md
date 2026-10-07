@@ -99,7 +99,7 @@ Each route checks, in this order, and answers with the first failure:
 go vet ./...
 go test ./...                                                       # AC-1 to AC-6, AC-9
 AI_PROVIDERS=mock make api                                          # then:
-curl -s -XPOST localhost:8080/api/counters/analyze-score -d '{"targetHeroId":"tigreal"}'           # AC-7
-curl -s -XPOST localhost:8080/api/synergies/analyze-detail -d '{"anchorHeroId":"tigreal","synergyHeroId":"'"$(curl -s localhost:8080/api/heroes/tigreal/synergies | jq -r '.[0].synergyHero.uid')"'","language":"id"}'   # AC-7
+curl -s -XPOST 127.0.0.1:8080/api/counters/analyze-score -d '{"targetHeroId":"tigreal"}'           # AC-7
+curl -s -XPOST 127.0.0.1:8080/api/synergies/analyze-detail -d '{"anchorHeroId":"tigreal","synergyHeroId":"'"$(curl -s 127.0.0.1:8080/api/heroes/tigreal/synergies | jq -r '.[0].synergyHero.uid')"'","language":"id"}'   # AC-7
 AI_PROVIDERS=openai go run ./cmd/api; test $? -ne 0                 # AC-8
 ```
