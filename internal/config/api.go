@@ -9,22 +9,21 @@ import (
 )
 
 // API is what the API server needs: its database, where it listens and is
-// reached, the browser origins it serves, and how long a response may take.
+// reached, the browser origins it serves, how it asks AI providers, and how
+// long a response may take.
 type API struct {
 	Database        Database
 	Port            int
 	URL             string
 	FrontendOrigins []string
+	AI              AI
 	// WriteTimeout bounds writing one response: the AI deadline plus margin,
 	// so an analysis answer is never cut off.
 	WriteTimeout time.Duration
 }
 
-// defaultAITimeout applies while AI_TIMEOUT_SECONDS is unset.
-const defaultAITimeout = 60
-
-// LoadAPI reads the DB_* and APP_* variables, FRONTEND_ORIGIN, and
-// AI_TIMEOUT_SECONDS. FRONTEND_ORIGIN may be empty and AI_TIMEOUT_SECONDS
+// LoadAPI reads the DB_* and APP_* variables, FRONTEND_ORIGIN, and the AI
+// variables LoadAI reads. FRONTEND_ORIGIN may be empty and the AI variables
 // unset; every other variable is required.
 func LoadAPI(getenv func(string) string) (API, error) {
 	db, err := LoadDatabase(getenv)
@@ -50,11 +49,9 @@ func LoadAPI(getenv func(string) string) (API, error) {
 	if p := u.Port(); p != "" && p != strconv.Itoa(port) {
 		return API{}, fmt.Errorf("APP_URL %q names port %s, but APP_PORT is %d", appURL, p, port)
 	}
-	aiTimeout := defaultAITimeout
-	if raw := getenv("AI_TIMEOUT_SECONDS"); raw != "" {
-		if aiTimeout, err = strconv.Atoi(raw); err != nil || aiTimeout < 1 {
-			return API{}, fmt.Errorf("AI_TIMEOUT_SECONDS %q is not a positive number of seconds", raw)
-		}
+	aiConfig, err := LoadAI(getenv)
+	if err != nil {
+		return API{}, err
 	}
 	var origins []string
 	for _, o := range strings.Split(getenv("FRONTEND_ORIGIN"), ",") {
@@ -67,6 +64,7 @@ func LoadAPI(getenv func(string) string) (API, error) {
 		Port:            port,
 		URL:             appURL,
 		FrontendOrigins: origins,
-		WriteTimeout:    time.Duration(aiTimeout)*time.Second + 10*time.Second,
+		AI:              aiConfig,
+		WriteTimeout:    aiConfig.Timeout + 10*time.Second,
 	}, nil
 }

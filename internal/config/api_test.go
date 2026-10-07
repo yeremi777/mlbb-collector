@@ -22,11 +22,13 @@ func TestLoadAPI(t *testing.T) {
 		t.Fatal(err)
 	}
 	db, _ := LoadDatabase(env(vars))
+	aiConfig, _ := LoadAI(env(vars))
 	want := API{
 		Database:        db,
 		Port:            8080,
 		URL:             "http://127.0.0.1:8080",
 		FrontendOrigins: []string{"https://a.example", "https://b.example"},
+		AI:              aiConfig,
 		WriteTimeout:    70 * time.Second,
 	}
 	if !reflect.DeepEqual(got, want) {
