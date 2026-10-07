@@ -9,22 +9,23 @@ import (
 )
 
 // API is what the API server needs: its database, where it listens and is
-// reached, the browser origins it serves, how it asks AI providers, and how
-// long a response may take.
+// reached, the browser origins it serves, how it asks AI providers and rate
+// limits analyze requests, and how long a response may take.
 type API struct {
 	Database        Database
 	Port            int
 	URL             string
 	FrontendOrigins []string
 	AI              AI
+	RateLimit       RateLimit
 	// WriteTimeout bounds writing one response: the AI deadline plus margin,
 	// so an analysis answer is never cut off.
 	WriteTimeout time.Duration
 }
 
-// LoadAPI reads the DB_* and APP_* variables, FRONTEND_ORIGIN, and the AI
-// variables LoadAI reads. FRONTEND_ORIGIN may be empty and the AI variables
-// unset; every other variable is required.
+// LoadAPI reads the DB_* and APP_* variables, FRONTEND_ORIGIN, and the
+// variables LoadAI and LoadRateLimit read. FRONTEND_ORIGIN may be empty and
+// the AI and rate-limit variables unset; every other variable is required.
 func LoadAPI(getenv func(string) string) (API, error) {
 	db, err := LoadDatabase(getenv)
 	if err != nil {
@@ -53,6 +54,10 @@ func LoadAPI(getenv func(string) string) (API, error) {
 	if err != nil {
 		return API{}, err
 	}
+	rateLimit, err := LoadRateLimit(getenv)
+	if err != nil {
+		return API{}, err
+	}
 	var origins []string
 	for _, o := range strings.Split(getenv("FRONTEND_ORIGIN"), ",") {
 		if o = strings.TrimSpace(o); o != "" {
@@ -65,6 +70,7 @@ func LoadAPI(getenv func(string) string) (API, error) {
 		URL:             appURL,
 		FrontendOrigins: origins,
 		AI:              aiConfig,
+		RateLimit:       rateLimit,
 		WriteTimeout:    aiConfig.Timeout + 10*time.Second,
 	}, nil
 }
