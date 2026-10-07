@@ -130,7 +130,7 @@ Primary key is the hero pair.
 ## Verification
 
 ```bash
-set -a; . ./.env; set +a; export PGHOST=$DB_HOST PGPORT=$DB_PORT PGDATABASE=$DB_NAME PGUSER=$DB_USERNAME PGPASSWORD=$DB_PASSWORD PGSSLMODE=$DB_SSLMODE   # psql below reads these
+set -a; . <(grep '^DB_' .env); set +a; export PGHOST=$DB_HOST PGPORT=$DB_PORT PGDATABASE=$DB_NAME PGUSER=$DB_USERNAME PGPASSWORD=$DB_PASSWORD PGSSLMODE=$DB_SSLMODE   # psql below reads these
 git -C ~/Documents/Local/mlbb-analyzer-service archive dev data/static | tar -x -C "$TMPDIR" && diff -r -x counters.json -x synergies.json -x raw -x README.md "$TMPDIR/data/static" data   # AC-1
 go vet ./...
 go test ./...                                                     # AC-2, AC-3

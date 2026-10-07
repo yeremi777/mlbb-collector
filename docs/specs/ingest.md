@@ -121,7 +121,7 @@ A non-default base URL is logged as a warning on every run.
 ## Verification
 
 ```bash
-set -a; . ./.env; set +a; export PGHOST=$DB_HOST PGPORT=$DB_PORT PGDATABASE=$DB_NAME PGUSER=$DB_USERNAME PGPASSWORD=$DB_PASSWORD PGSSLMODE=$DB_SSLMODE   # psql below reads these
+set -a; . <(grep '^DB_' .env); set +a; export PGHOST=$DB_HOST PGPORT=$DB_PORT PGDATABASE=$DB_NAME PGUSER=$DB_USERNAME PGPASSWORD=$DB_PASSWORD PGSSLMODE=$DB_SSLMODE   # psql below reads these
 go vet ./...
 go test ./...                                                      # AC-5, AC-8, AC-10
 make test-integration                                              # AC-5 to AC-7 against test_mlbb_collector

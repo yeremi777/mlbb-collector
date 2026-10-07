@@ -1,4 +1,6 @@
-# Load DB_* and APP_* from .env when it exists, and export them to every recipe.
+# Load .env when it exists and export it to every recipe. Values are make's:
+# unquoted, everything after = including spaces. A variable given on the
+# command line (make api AI_PROVIDERS=mock) overrides .env.
 ifneq (,$(wildcard .env))
 include .env
 export

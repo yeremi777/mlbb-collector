@@ -71,7 +71,7 @@ The rows of `hero_counter_daily` at the newest Snapshot date per Target hero, Ra
 ## Verification
 
 ```bash
-set -a; . ./.env; set +a; export PGHOST=$DB_HOST PGPORT=$DB_PORT PGDATABASE=$DB_NAME PGUSER=$DB_USERNAME PGPASSWORD=$DB_PASSWORD PGSSLMODE=$DB_SSLMODE   # psql below reads these
+set -a; . <(grep '^DB_' .env); set +a; export PGHOST=$DB_HOST PGPORT=$DB_PORT PGDATABASE=$DB_NAME PGUSER=$DB_USERNAME PGPASSWORD=$DB_PASSWORD PGSSLMODE=$DB_SSLMODE   # psql below reads these
 go vet ./...
 make test-integration                                              # AC-2 to AC-8
 make migrate-reset && make migrate-up                              # AC-1, run by the user
