@@ -10,36 +10,12 @@ import (
 
 	"github.com/jackc/pgx/v5"
 
-	"github.com/yeremi777/mlbb-collector/internal/config"
 	"github.com/yeremi777/mlbb-collector/internal/counter"
+	"github.com/yeremi777/mlbb-collector/internal/database/dbtest"
 	"github.com/yeremi777/mlbb-collector/internal/dataset"
 	"github.com/yeremi777/mlbb-collector/internal/hero"
 	"github.com/yeremi777/mlbb-collector/internal/synergy"
 )
-
-// beginTx opens a transaction on the DB_* database that is rolled back when the
-// test ends, so no test leaves a row behind.
-func beginTx(t *testing.T) (context.Context, pgx.Tx) {
-	t.Helper()
-	ctx := context.Background()
-	url, err := config.DatabaseURL()
-	if err != nil {
-		t.Fatal(err)
-	}
-	conn, err := pgx.Connect(ctx, url)
-	if err != nil {
-		t.Fatalf("connect: %v", err)
-	}
-	tx, err := conn.Begin(ctx)
-	if err != nil {
-		t.Fatalf("begin: %v", err)
-	}
-	t.Cleanup(func() {
-		_ = tx.Rollback(ctx)
-		_ = conn.Close(ctx)
-	})
-	return ctx, tx
-}
 
 func fixture() dataset.Dataset {
 	return dataset.Dataset{
@@ -97,7 +73,7 @@ const (
 )
 
 func TestSyncWritesTheDataset(t *testing.T) {
-	ctx, tx := beginTx(t)
+	ctx, tx := dbtest.BeginTx(t)
 	if err := Sync(ctx, tx, fixture()); err != nil {
 		t.Fatalf("Sync: %v", err)
 	}
@@ -130,7 +106,7 @@ func TestSyncWritesTheDataset(t *testing.T) {
 }
 
 func TestSyncRewritesOnlyChangedRows(t *testing.T) {
-	ctx, tx := beginTx(t)
+	ctx, tx := dbtest.BeginTx(t)
 	if err := Sync(ctx, tx, fixture()); err != nil {
 		t.Fatalf("first Sync: %v", err)
 	}
@@ -162,7 +138,7 @@ func TestSyncRewritesOnlyChangedRows(t *testing.T) {
 }
 
 func TestSyncDeletesWhatTheFilesNoLongerHold(t *testing.T) {
-	ctx, tx := beginTx(t)
+	ctx, tx := dbtest.BeginTx(t)
 	if err := Sync(ctx, tx, fixture()); err != nil {
 		t.Fatalf("Sync: %v", err)
 	}
@@ -194,7 +170,7 @@ func TestSyncDeletesWhatTheFilesNoLongerHold(t *testing.T) {
 }
 
 func TestSyncEmptiesAKindWithNoRows(t *testing.T) {
-	ctx, tx := beginTx(t)
+	ctx, tx := dbtest.BeginTx(t)
 	if err := Sync(ctx, tx, fixture()); err != nil {
 		t.Fatalf("Sync: %v", err)
 	}
@@ -213,7 +189,7 @@ func TestSyncEmptiesAKindWithNoRows(t *testing.T) {
 }
 
 func TestSyncReportsADatabaseFailure(t *testing.T) {
-	ctx, tx := beginTx(t)
+	ctx, tx := dbtest.BeginTx(t)
 	if err := Sync(ctx, tx, fixture()); err != nil {
 		t.Fatalf("Sync: %v", err)
 	}
