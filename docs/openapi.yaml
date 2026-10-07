@@ -142,6 +142,8 @@ paths:
       responses:
         "200":
           description: Ranked by score, then confidence, then hero ID.
+          headers:
+            Set-Cookie: { $ref: "#/components/headers/ClientCookie" }
           content:
             application/json:
               schema:
@@ -189,6 +191,8 @@ paths:
       responses:
         "200":
           description: The counter's score and explanation.
+          headers:
+            Set-Cookie: { $ref: "#/components/headers/ClientCookie" }
           content:
             application/json:
               schema:
@@ -227,6 +231,8 @@ paths:
       responses:
         "200":
           description: Ranked by score, then confidence, then hero ID.
+          headers:
+            Set-Cookie: { $ref: "#/components/headers/ClientCookie" }
           content:
             application/json:
               schema:
@@ -274,6 +280,8 @@ paths:
       responses:
         "200":
           description: The synergy's score and explanation.
+          headers:
+            Set-Cookie: { $ref: "#/components/headers/ClientCookie" }
           content:
             application/json:
               schema:
@@ -470,16 +478,16 @@ components:
         application/json:
           schema: { $ref: "#/components/schemas/Error" }
     RateLimitExceeded:
-      description: "`rate_limit_exceeded`."
+      description: "`rate_limit_exceeded`: the address or browser has used its quota for this route."
       headers:
         Retry-After:
-          description: Seconds until the quota resets.
+          description: Seconds until the refusing counter's rate-limit window ends.
           schema: { type: integer }
       content:
         application/json:
           schema: { $ref: "#/components/schemas/Error" }
     RateLimitUnavailable:
-      description: "`rate_limit_unavailable`: rate limiting is enabled and Redis cannot be reached."
+      description: "`rate_limit_unavailable`: rate limiting is enabled and Redis cannot answer."
       content:
         application/json:
           schema: { $ref: "#/components/schemas/Error" }
@@ -493,3 +501,10 @@ components:
       content:
         application/json:
           schema: { $ref: "#/components/schemas/Error" }
+
+  headers:
+    ClientCookie:
+      description: >
+        The browser's rate-limit ID, an HttpOnly UUID cookie. Issued when rate
+        limiting is enabled and the request carried no valid one.
+      schema: { type: string, examples: ["mlbb_analyzer_client_id=6f1c2a54-0d6e-4b8a-9a7e-3c5d1f2e8b90; Path=/; Max-Age=2592000; HttpOnly; SameSite=Lax"] }
