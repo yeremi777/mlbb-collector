@@ -1,0 +1,157 @@
+[
+  {
+    "targetHeroId": "belerick",
+    "counterHeroId": "karrie",
+    "reasons": [
+      "Karrie's max-HP true damage directly pressures Belerick's tank identity.",
+      "She is one of the clearest front-to-back answers when protected."
+    ],
+    "counterTypes": [
+      "tank-shred",
+      "true-damage",
+      "kiting"
+    ],
+    "proof": [
+      {
+        "id": "karrie-lightwheel-mark-vs-belerick-high-hp-frontline",
+        "category": "damage-type-advantage",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Belerick wants to win through high HP and return-damage punishment, while Karrie converts repeated hits into max-HP true damage that threatens tanks.",
+        "worksBestWhen": [
+          "Karrie has frontline protection.",
+          "Karrie kites outside Belerick's taunt range."
+        ],
+        "failureCases": [
+          "Belerick reaches Karrie with taunt.",
+          "Karrie attacks without peel.",
+          "Belerick's team dives Karrie first."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "belerick",
+    "counterHeroId": "lunox",
+    "reasons": [
+      "Lunox can pressure durable frontliners without relying only on basic-attack trades.",
+      "She can use defensive timing to avoid Belerick's punish window."
+    ],
+    "counterTypes": [
+      "tank-shred",
+      "penetration",
+      "burst"
+    ],
+    "proof": [
+      {
+        "id": "lunox-chaos-order-cycle-vs-belerick-frontline",
+        "category": "damage-type-advantage",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Belerick wants enemies to hit him repeatedly in punishable range, while Lunox can pressure him with magic burst cycles and defensive timing.",
+        "worksBestWhen": [
+          "Lunox tracks Belerick's taunt cooldown.",
+          "Lunox attacks from safe spacing."
+        ],
+        "failureCases": [
+          "Lunox is caught before Brilliance.",
+          "Belerick's team chains crowd control.",
+          "Lunox wastes defensive mode before committing damage."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "belerick",
+    "counterHeroId": "dyrroth",
+    "reasons": [
+      "Dyrroth can reduce Belerick's physical defense and burst him down with focused follow-up.",
+      "Compared with Alpha, Dyrroth is more direct and front-loaded into tank durability."
+    ],
+    "counterTypes": [
+      "penetration",
+      "burst",
+      "anti-frontline"
+    ],
+    "proof": [
+      {
+        "id": "dyrroth-defense-reduction-vs-belerick-durability",
+        "category": "damage-type-advantage",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Belerick wants to survive through durability and return damage, while Dyrroth can reduce physical defense and create a focused burst window against him.",
+        "worksBestWhen": [
+          "Dyrroth lands Spectre Step or Fatal Strike before committing ultimate.",
+          "Dyrroth fights with allied follow-up."
+        ],
+        "failureCases": [
+          "Dyrroth is taunted before landing defense reduction.",
+          "Belerick's team peels Dyrroth away.",
+          "Dyrroth commits alone into multiple enemies."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "belerick",
+    "counterHeroId": "x.borg",
+    "reasons": [
+      "X.Borg can pressure Belerick with sustained damage and true-damage threat.",
+      "His armor state gives more safety than fragile damage dealers when fighting near Belerick."
+    ],
+    "counterTypes": [
+      "true-damage",
+      "poke",
+      "frontline"
+    ],
+    "proof": [
+      {
+        "id": "xborg-true-damage-poke-vs-belerick-taunt-range",
+        "category": "damage-type-advantage",
+        "priority": "secondary",
+        "impact": "medium",
+        "summary": "Belerick wants close-range punish trades, while X.Borg can poke and threaten true damage through his damage pattern.",
+        "worksBestWhen": [
+          "X.Borg pokes before committing ultimate.",
+          "X.Borg avoids being taunted before armor or detonation timing."
+        ],
+        "failureCases": [
+          "Belerick catches X.Borg before reset.",
+          "X.Borg dives too deep into Belerick's team.",
+          "Belerick's team bursts X.Borg after armor breaks."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "belerick",
+    "counterHeroId": "alpha",
+    "reasons": [
+      "Alpha has true damage through Beta and can sustain in extended fights.",
+      "He is valid, but slightly below Dyrroth because Belerick can punish extended repeated-hit fights more easily than front-loaded defense-reduction burst."
+    ],
+    "counterTypes": [
+      "true-damage",
+      "sustain",
+      "anti-frontline"
+    ],
+    "proof": [
+      {
+        "id": "alpha-beta-true-damage-vs-belerick-extended-frontline",
+        "category": "damage-type-advantage",
+        "priority": "secondary",
+        "impact": "medium",
+        "summary": "Belerick wants to absorb damage and punish attackers, while Alpha can repeatedly trigger Beta true damage and sustain through frontline fighting.",
+        "worksBestWhen": [
+          "Alpha has enough sustain and item timing to survive Belerick's control.",
+          "Alpha fights with follow-up instead of dueling into full enemy backup."
+        ],
+        "failureCases": [
+          "Belerick taunts Alpha before Alpha finishes his combo.",
+          "Alpha is forced into a long fight while Belerick's team follows up.",
+          "Alpha's sustain is reduced by anti-heal or burst focus."
+        ]
+      }
+    ]
+  }
+]

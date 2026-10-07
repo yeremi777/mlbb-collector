@@ -1,0 +1,152 @@
+[
+  {
+    "targetHeroId": "lapu-lapu",
+    "counterHeroId": "valir",
+    "reasons": [
+      "Valir can push Lapu-Lapu away when he tries to enter melee range.",
+      "Slow and knockback reduce Lapu-Lapu's ability to stick to backline targets."
+    ],
+    "counterTypes": [
+      "kiting",
+      "disengage",
+      "anti-dive"
+    ],
+    "proof": [
+      {
+        "id": "valir-searing-torrent-vs-lapu-lapu-dive",
+        "category": "kiting",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Lapu-Lapu wants to dive and stay in melee range, while Valir can knock him back, slow him, and reset spacing.",
+        "worksBestWhen": [
+          "Valir saves Searing Torrent for Lapu-Lapu's real dive.",
+          "Valir positions behind frontline instead of standing alone."
+        ],
+        "failureCases": [
+          "Lapu-Lapu flanks and reaches Valir first.",
+          "Valir wastes knockback before the transformation engage."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "lapu-lapu",
+    "counterHeroId": "karrie",
+    "reasons": [
+      "Karrie's stacking true damage threatens durable fighters.",
+      "Lapu-Lapu's damage-reduction style is less reliable against true-damage pressure."
+    ],
+    "counterTypes": [
+      "true-damage",
+      "tank-shred",
+      "kiting"
+    ],
+    "proof": [
+      {
+        "id": "karrie-lightwheel-mark-vs-lapu-lapu-durability",
+        "category": "damage-type-advantage",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Lapu-Lapu survives dives through shield and damage reduction, while Karrie can stack max-HP true damage if protected.",
+        "worksBestWhen": [
+          "Karrie has peel and safe spacing.",
+          "Lapu-Lapu is forced to fight front-to-back."
+        ],
+        "failureCases": [
+          "Lapu-Lapu reaches Karrie without peel.",
+          "Karrie is behind in items and cannot apply stacks safely."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "lapu-lapu",
+    "counterHeroId": "khufra",
+    "reasons": [
+      "Khufra can punish Lapu-Lapu's mobility and dive path.",
+      "Bouncing Ball is useful against heroes that rely on blink or dash movement across the frontline."
+    ],
+    "counterTypes": [
+      "anti-dash",
+      "crowd-control-counter",
+      "frontline"
+    ],
+    "proof": [
+      {
+        "id": "khufra-bouncing-ball-vs-lapu-lapu-dive-path",
+        "category": "crowd-control-counter",
+        "priority": "primary",
+        "impact": "medium",
+        "summary": "Lapu-Lapu uses mobility to enter fights, while Khufra can punish blink-style movement and disrupt his path into the backline.",
+        "worksBestWhen": [
+          "Khufra positions between Lapu-Lapu and the backline.",
+          "Khufra times Bouncing Ball for the dive, not poke."
+        ],
+        "failureCases": [
+          "Lapu-Lapu waits out Bouncing Ball.",
+          "Khufra is controlled before he can block the engage."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "lapu-lapu",
+    "counterHeroId": "kaja",
+    "reasons": [
+      "Kaja can stop Lapu-Lapu after he commits into the fight.",
+      "Suppression creates a controlled burst window against a hero who normally wants extended brawls."
+    ],
+    "counterTypes": [
+      "suppression",
+      "anti-dive",
+      "pickoff"
+    ],
+    "proof": [
+      {
+        "id": "kaja-divine-judgment-vs-lapu-lapu-commit",
+        "category": "crowd-control-counter",
+        "priority": "primary",
+        "impact": "medium",
+        "summary": "Lapu-Lapu wants to commit with durability and AoE pressure, while Kaja can suppress and drag him out of his preferred fight position.",
+        "worksBestWhen": [
+          "Kaja waits for Lapu-Lapu's full commit.",
+          "Teammates save burst for the suppression window."
+        ],
+        "failureCases": [
+          "Kaja uses ultimate before Lapu-Lapu transforms.",
+          "Lapu-Lapu's team counter-engages during the drag."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "lapu-lapu",
+    "counterHeroId": "franco",
+    "reasons": [
+      "Franco can punish Lapu-Lapu before he gets full teamfight value.",
+      "Suppression is useful after Lapu-Lapu dives too deep."
+    ],
+    "counterTypes": [
+      "suppression",
+      "pickoff",
+      "cooldown-punish"
+    ],
+    "proof": [
+      {
+        "id": "franco-bloody-hunt-vs-lapu-lapu-cooldowns",
+        "category": "cooldown-window",
+        "priority": "condition",
+        "impact": "medium",
+        "summary": "Lapu-Lapu is hardest to handle once fully committed in enhanced stance, while Franco can punish mistimed entries or catch him after key cooldowns.",
+        "worksBestWhen": [
+          "Franco waits until Lapu-Lapu spends mobility.",
+          "Team follow-up is ready during Bloody Hunt."
+        ],
+        "failureCases": [
+          "Franco suppresses Lapu-Lapu while he is still too tanky and unsupported follow-up is low.",
+          "Lapu-Lapu's teammates punish Franco's position."
+        ]
+      }
+    ]
+  }
+]

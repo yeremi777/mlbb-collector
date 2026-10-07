@@ -1,0 +1,162 @@
+[
+  {
+    "anchorHeroId": "novaria",
+    "synergyHeroId": "franco",
+    "reasons": [
+      "Novaria's Astral Echo reveals enemies and increases hitbox size, helping Franco aim Iron Hook at marked targets.",
+      "Franco can convert Novaria's scouting into a direct pickoff through hook or suppression."
+    ],
+    "synergyTypes": [
+      "vision-setup",
+      "pickoff-combo",
+      "cc-chain"
+    ],
+    "proof": [
+      {
+        "id": "novaria-astral-echo-sets-up-franco-hook",
+        "category": "vision-setup",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Novaria marks and reveals targets, while Franco uses that information to hook or suppress a priority enemy.",
+        "worksBestWhen": [
+          "Novaria marks a target before Franco commits hook.",
+          "Franco waits for a clear angle and avoids hooking through minions or tanks.",
+          "The team is ready to follow the catch."
+        ],
+        "failureCases": [
+          "Franco hooks the wrong target.",
+          "Novaria's mark expires before Franco acts.",
+          "The enemy hides behind frontline units despite being revealed."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "novaria",
+    "synergyHeroId": "kaja",
+    "reasons": [
+      "Novaria can reveal the target area so Kaja can choose a better Divine Judgment angle.",
+      "Kaja's suppression gives Novaria a stable target for long-range follow-up damage."
+    ],
+    "synergyTypes": [
+      "vision-setup",
+      "pickoff-combo",
+      "burst-follow-up"
+    ],
+    "proof": [
+      {
+        "id": "novaria-vision-supports-kaja-pickoff",
+        "category": "pickoff-combo",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Novaria gives vision and poke setup, while Kaja locks the priority target for a controlled pickoff.",
+        "worksBestWhen": [
+          "Novaria reveals a carry or isolated target.",
+          "Kaja has a safe path to suppress the target.",
+          "Novaria has a clear follow-up angle."
+        ],
+        "failureCases": [
+          "Kaja engages outside Novaria's follow-up angle.",
+          "The target is too tanky to finish.",
+          "The enemy team collapses after Kaja commits."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "novaria",
+    "synergyHeroId": "beatrix",
+    "reasons": [
+      "Novaria's hitbox increase and reveal can help Beatrix land long-range weapon pressure more reliably.",
+      "Beatrix gives Novaria a gold-lane follow-up damage partner who can punish marked targets from range."
+    ],
+    "synergyTypes": [
+      "vision-setup",
+      "poke-siege",
+      "burst-follow-up"
+    ],
+    "proof": [
+      {
+        "id": "novaria-mark-enables-beatrix-long-range-follow-up",
+        "category": "vision-setup",
+        "priority": "secondary",
+        "impact": "medium",
+        "summary": "Novaria reveals and enlarges targets, while Beatrix follows with long-range or burst weapon pressure from gold lane positioning.",
+        "worksBestWhen": [
+          "Novaria marks targets before Beatrix commits a long-range shot or burst window.",
+          "Beatrix has safe backline spacing.",
+          "The marked target is a priority target."
+        ],
+        "failureCases": [
+          "Beatrix is using the wrong weapon for the follow-up angle.",
+          "Novaria marks only a tank.",
+          "Enemy dive reaches Beatrix or Novaria before the poke setup matters."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "novaria",
+    "synergyHeroId": "lolita",
+    "reasons": [
+      "Lolita protects Novaria from projectile and ranged pressure while Novaria aims long-range poke.",
+      "Novaria benefits from a defensive roamer because she needs time and space to set vision and skillshot angles."
+    ],
+    "synergyTypes": [
+      "backline-protection",
+      "peel",
+      "shielding"
+    ],
+    "proof": [
+      {
+        "id": "lolita-protects-novaria-poke-position",
+        "category": "protection",
+        "priority": "secondary",
+        "impact": "high",
+        "summary": "Lolita protects Novaria's casting position, letting Novaria focus on vision, poke, and hitbox setup.",
+        "worksBestWhen": [
+          "Lolita stays near Novaria during siege or objective fights.",
+          "Novaria uses the protected window to cast Astral Echo or Astral Recall from safe range.",
+          "The team plays around Novaria's vision before forcing fights."
+        ],
+        "failureCases": [
+          "Enemy assassins flank around Lolita.",
+          "Lolita engages forward and leaves Novaria exposed.",
+          "Novaria positions outside Lolita's shield angle."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "novaria",
+    "synergyHeroId": "mathilda",
+    "reasons": [
+      "Mathilda gives Novaria a reposition tool when enemies dive or flank her.",
+      "Novaria benefits from shield and mobility support because she needs time and space to aim long-range skillshots."
+    ],
+    "synergyTypes": [
+      "mobility-enable",
+      "shielding",
+      "backline-protection"
+    ],
+    "proof": [
+      {
+        "id": "mathilda-guiding-wind-protects-novaria-position",
+        "category": "mobility-enabler",
+        "priority": "secondary",
+        "impact": "medium",
+        "summary": "Mathilda helps Novaria survive pressure and reset spacing so Novaria can continue providing vision and poke.",
+        "worksBestWhen": [
+          "Mathilda saves Guiding Wind for Novaria's danger window.",
+          "Novaria uses the mobility defensively and keeps safe range.",
+          "Novaria keeps distance after repositioning."
+        ],
+        "failureCases": [
+          "Mathilda uses the field before Novaria is threatened.",
+          "Novaria is crowd-controlled before she can reposition.",
+          "The enemy reaches Novaria from multiple angles."
+        ]
+      }
+    ]
+  }
+]

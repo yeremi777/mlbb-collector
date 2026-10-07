@@ -1,0 +1,157 @@
+[
+  {
+    "anchorHeroId": "khaleed",
+    "synergyHeroId": "pharsa",
+    "reasons": [
+      "Khaleed can start fights with Raging Sandstorm, giving Pharsa a clear ranged burst window.",
+      "Pharsa can follow Khaleed's engage from safe distance while Khaleed handles frontline initiation."
+    ],
+    "synergyTypes": [
+      "engage-follow-up",
+      "burst-follow-up",
+      "aoe-follow-up"
+    ],
+    "proof": [
+      {
+        "id": "khaleed-raging-sandstorm-for-pharsa-burst",
+        "category": "engage-follow-up",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Khaleed creates the engage or stun window, while Pharsa follows from range with burst damage.",
+        "worksBestWhen": [
+          "Khaleed engages inside Pharsa's follow-up range.",
+          "Pharsa waits for Khaleed's real commit before using her main burst window."
+        ],
+        "failureCases": [
+          "Khaleed enters too far from Pharsa.",
+          "Pharsa is forced to reposition before follow-up damage lands.",
+          "The enemy spreads out before Pharsa can punish the engage."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "khaleed",
+    "synergyHeroId": "luo-yi",
+    "reasons": [
+      "Luo Yi can create rotation or flank entry with Diversion, helping Khaleed find better Raging Sandstorm angles.",
+      "Khaleed's engage can hold enemies in a fight long enough for Luo Yi to apply Yin/Yang reaction pressure."
+    ],
+    "synergyTypes": [
+      "mobility-enable",
+      "setup-combo",
+      "teamfight-combo"
+    ],
+    "proof": [
+      {
+        "id": "luo-yi-diversion-for-khaleed-engage",
+        "category": "mobility-enabler",
+        "priority": "primary",
+        "impact": "medium",
+        "summary": "Luo Yi enables a stronger entry angle, while Khaleed uses that position to start a fight with Raging Sandstorm.",
+        "worksBestWhen": [
+          "The team coordinates Diversion timing before Khaleed commits.",
+          "Khaleed enters from fog or flank instead of walking through predictable front vision."
+        ],
+        "failureCases": [
+          "The teleport is scouted.",
+          "Khaleed enters before Luo Yi and teammates are ready.",
+          "Luo Yi has no follow-up skills available after the entry."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "khaleed",
+    "synergyHeroId": "brody",
+    "reasons": [
+      "Khaleed can create early skirmish pressure and CC windows that help Brody apply Abyss Marks safely.",
+      "Brody gives Khaleed's engage a strong marksman damage follow-up during small fights and objective contests."
+    ],
+    "synergyTypes": [
+      "engage-follow-up",
+      "burst-follow-up",
+      "laning-synergy"
+    ],
+    "proof": [
+      {
+        "id": "khaleed-engage-for-brody-marks",
+        "category": "engage-follow-up",
+        "priority": "secondary",
+        "impact": "medium",
+        "summary": "Khaleed starts or disrupts the fight, while Brody uses the opening to apply Abyss Marks and threaten Torn-Apart Memory burst.",
+        "worksBestWhen": [
+          "Khaleed controls the target inside Brody's attack range.",
+          "Brody has enough space to stack marks before finishing."
+        ],
+        "failureCases": [
+          "Khaleed engages outside Brody's range.",
+          "Brody is zoned before he can apply marks.",
+          "The enemy uses hard dive onto Brody after Khaleed commits."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "khaleed",
+    "synergyHeroId": "cecilion",
+    "reasons": [
+      "Khaleed can frontline and disrupt enemies, giving Cecilion more safe time to cast from distance.",
+      "Cecilion gives Khaleed's engage a ranged magic follow-up that can punish enemies after the initial stun window."
+    ],
+    "synergyTypes": [
+      "frontline-enabler",
+      "poke-siege",
+      "burst-follow-up"
+    ],
+    "proof": [
+      {
+        "id": "khaleed-frontline-for-cecilion-casting",
+        "category": "frontline-enabler",
+        "priority": "secondary",
+        "impact": "medium",
+        "summary": "Khaleed creates space in front, while Cecilion follows from range with scaling magic damage.",
+        "worksBestWhen": [
+          "Khaleed starts fights where Cecilion can safely cast.",
+          "Cecilion keeps distance behind Khaleed instead of walking into melee range."
+        ],
+        "failureCases": [
+          "Khaleed dives too far away from Cecilion.",
+          "Cecilion is pressured before the fight starts.",
+          "The fight ends too quickly before Cecilion's repeated casting matters."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "khaleed",
+    "synergyHeroId": "ixia",
+    "reasons": [
+      "Khaleed can force enemies to react to his engage, giving Ixia a better angle for Full Barrage.",
+      "Ixia provides AoE damage follow-up while Khaleed handles frontline disruption."
+    ],
+    "synergyTypes": [
+      "engage-follow-up",
+      "aoe-follow-up",
+      "positioning-dependent"
+    ],
+    "proof": [
+      {
+        "id": "khaleed-engage-for-ixia-barrage-angle",
+        "category": "positioning-requirement",
+        "priority": "condition",
+        "impact": "medium",
+        "summary": "Khaleed starts or disrupts the fight, while Ixia follows if her Full Barrage angle is already prepared.",
+        "worksBestWhen": [
+          "Khaleed engages toward Ixia's firing direction.",
+          "Ixia has a safe position before Khaleed commits."
+        ],
+        "failureCases": [
+          "Khaleed pushes enemies away from Ixia's damage angle.",
+          "Ixia is forced to move and loses her damage window.",
+          "The enemy dives Ixia while Khaleed is already committed."
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,159 @@
+[
+  {
+    "anchorHeroId": "odette",
+    "synergyHeroId": "johnson",
+    "reasons": [
+      "Johnson can deliver Odette directly into a fight and create the first impact window for her AoE damage.",
+      "Odette benefits from Johnson's engage because she can start her damage sequence without walking into danger alone."
+    ],
+    "synergyTypes": [
+      "setup-combo",
+      "engage-follow-up",
+      "teamfight-combo"
+    ],
+    "proof": [
+      {
+        "id": "johnson-delivery-for-odette-combo",
+        "category": "setup-combo",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Johnson provides delivery and engage timing, while Odette follows with Swan Song and bouncing magic damage.",
+        "worksBestWhen": [
+          "Johnson drives after Odette is ready to cast.",
+          "Johnson crashes into enemy damage dealers or grouped enemies."
+        ],
+        "failureCases": [
+          "Johnson crashes into a low-value target.",
+          "Odette is interrupted immediately after arrival.",
+          "The enemy anticipates the route and spreads."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "odette",
+    "synergyHeroId": "tigreal",
+    "reasons": [
+      "Tigreal can group and control enemies, giving Odette a clean area to cast AoE damage.",
+      "Odette's damage becomes more reliable when enemies are already displaced or controlled before she commits."
+    ],
+    "synergyTypes": [
+      "setup-combo",
+      "cc-chain",
+      "aoe-follow-up"
+    ],
+    "proof": [
+      {
+        "id": "tigreal-group-control-for-odette-aoe",
+        "category": "crowd-control-chain",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Tigreal creates the grouped crowd-control window, while Odette converts that window into AoE magic damage.",
+        "worksBestWhen": [
+          "Tigreal engages after Odette is close enough to follow.",
+          "Odette waits for the real control window instead of casting too early."
+        ],
+        "failureCases": [
+          "Tigreal pushes enemies away from Odette's damage area.",
+          "Odette is interrupted during Swan Song.",
+          "Enemy cleanse or displacement breaks the combo timing."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "odette",
+    "synergyHeroId": "atlas",
+    "reasons": [
+      "Atlas can drag multiple enemies into one location, directly supporting Odette's area damage plan.",
+      "Odette can punish the pull area if she is already positioned to follow Atlas's engage."
+    ],
+    "synergyTypes": [
+      "setup-combo",
+      "cc-chain",
+      "teamfight-combo"
+    ],
+    "proof": [
+      {
+        "id": "atlas-fatal-links-for-odette-aoe",
+        "category": "teamfight-combo",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Atlas groups enemies with a teamfight engage, while Odette follows with AoE damage during the control window.",
+        "worksBestWhen": [
+          "Atlas catches multiple heroes.",
+          "Odette positions before Atlas completes the pull."
+        ],
+        "failureCases": [
+          "Atlas is interrupted before finishing the engage.",
+          "Odette is too far to follow.",
+          "Enemy hard control is saved for Odette after the pull."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "odette",
+    "synergyHeroId": "carmilla",
+    "reasons": [
+      "Carmilla's linked-target teamfight setup can make Odette's AoE damage more punishing when enemies are connected or grouped.",
+      "Carmilla can also help stand near the fight center so Odette has a safer moment to follow with damage."
+    ],
+    "synergyTypes": [
+      "teamfight-combo",
+      "cc-chain",
+      "aoe-follow-up"
+    ],
+    "proof": [
+      {
+        "id": "carmilla-link-setup-for-odette-aoe",
+        "category": "damage-amplification",
+        "priority": "secondary",
+        "impact": "medium",
+        "summary": "Carmilla links enemies in a teamfight, while Odette adds AoE magic damage that benefits from enemies staying close together.",
+        "worksBestWhen": [
+          "Carmilla links multiple priority targets.",
+          "Odette casts after the link is confirmed."
+        ],
+        "failureCases": [
+          "Carmilla links only one target.",
+          "Enemies split before Odette follows.",
+          "Odette is controlled before meaningful damage lands."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "odette",
+    "synergyHeroId": "minotaur",
+    "reasons": [
+      "Minotaur can frontline, heal nearby teammates, and create airborne or slow control before Odette commits.",
+      "Odette benefits when Minotaur absorbs pressure and holds enemies near her damage area."
+    ],
+    "synergyTypes": [
+      "frontline-enabler",
+      "cc-chain",
+      "healing-sustain",
+      "teamfight-combo"
+    ],
+    "proof": [
+      {
+        "id": "minotaur-frontline-control-for-odette",
+        "category": "frontline-enabler",
+        "priority": "secondary",
+        "impact": "medium",
+        "summary": "Minotaur starts or stabilizes the teamfight with frontline control and healing, while Odette follows when enemies are slowed, knocked airborne, or forced to fight near him.",
+        "worksBestWhen": [
+          "Minotaur engages first and absorbs enemy control before Odette channels.",
+          "Odette casts after Minotaur's airborne or slow window begins.",
+          "Minotaur stays close enough to protect or heal Odette during the fight."
+        ],
+        "failureCases": [
+          "Odette casts before Minotaur creates space.",
+          "Minotaur's crowd control misses or only hits the enemy frontline.",
+          "Enemy high-level crowd control is saved specifically to interrupt Odette's Swan Song."
+        ]
+      }
+    ]
+  }
+]

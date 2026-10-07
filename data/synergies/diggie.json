@@ -1,0 +1,157 @@
+[
+  {
+    "anchorHeroId": "diggie",
+    "synergyHeroId": "claude",
+    "reasons": [
+      "Diggie can protect Claude during Blazing Duet so Claude is less likely to be stopped by normal crowd control.",
+      "Claude benefits from Diggie's shield and control immunity during his highest-risk teamfight entry."
+    ],
+    "synergyTypes": [
+      "protect",
+      "shielding",
+      "teamfight-combo"
+    ],
+    "proof": [
+      {
+        "id": "diggie-time-journey-for-claude-entry",
+        "category": "protection",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Claude wants a safe AoE entry window, while Diggie reduces crowd-control interruption during that window.",
+        "worksBestWhen": [
+          "Diggie saves Time Journey for Claude's real commit.",
+          "Claude enters after enemy control has been baited."
+        ],
+        "failureCases": [
+          "Claude enters outside Diggie's range.",
+          "Enemy suppression is used.",
+          "Diggie uses Time Journey before Claude commits."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "diggie",
+    "synergyHeroId": "irithel",
+    "reasons": [
+      "Diggie can protect Irithel from crowd-control engage while she keeps moving and attacking.",
+      "Irithel benefits from Diggie's protection because her damage depends on uninterrupted spacing."
+    ],
+    "synergyTypes": [
+      "protect",
+      "backline-protection",
+      "positioning-dependent"
+    ],
+    "proof": [
+      {
+        "id": "diggie-protection-for-irithel-kiting",
+        "category": "protection",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Irithel needs uninterrupted spacing, while Diggie protects her from the crowd-control window that would normally stop her kiting.",
+        "worksBestWhen": [
+          "Diggie stays close enough to Irithel before enemy engage.",
+          "Irithel keeps moving behind the protected zone."
+        ],
+        "failureCases": [
+          "Irithel is caught outside Time Journey range.",
+          "Enemy uses suppression or delayed control after Time Journey ends.",
+          "Diggie is forced to use protection for himself first."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "diggie",
+    "synergyHeroId": "odette",
+    "reasons": [
+      "Diggie can protect Odette from normal crowd-control interruption during her AoE damage window.",
+      "Odette benefits when Diggie times protection after enemies commit to stopping her channel."
+    ],
+    "synergyTypes": [
+      "protect",
+      "shielding",
+      "teamfight-combo"
+    ],
+    "proof": [
+      {
+        "id": "diggie-protection-for-odette-swan-song",
+        "category": "protection",
+        "priority": "secondary",
+        "impact": "medium",
+        "summary": "Odette needs time to apply AoE damage, while Diggie can protect her from normal control during the key window.",
+        "worksBestWhen": [
+          "Diggie saves Time Journey for Odette's real cast.",
+          "Odette positions inside Diggie's protection range."
+        ],
+        "failureCases": [
+          "Enemy suppression or displacement bypasses the protection plan.",
+          "Odette channels too far from Diggie.",
+          "Diggie uses Time Journey before Odette is threatened."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "diggie",
+    "synergyHeroId": "layla",
+    "reasons": [
+      "Diggie can protect Layla's immobile backline damage pattern from crowd-control engage.",
+      "Layla benefits when Diggie prevents one engage from immediately ending her damage window."
+    ],
+    "synergyTypes": [
+      "backline-protection",
+      "protect",
+      "peel"
+    ],
+    "proof": [
+      {
+        "id": "diggie-backline-protection-for-layla",
+        "category": "protection",
+        "priority": "secondary",
+        "impact": "medium",
+        "summary": "Layla needs space and safety, while Diggie helps prevent crowd-control engage from immediately ending her damage window.",
+        "worksBestWhen": [
+          "Diggie positions near Layla before enemy tanks engage.",
+          "Layla keeps maximum safe range."
+        ],
+        "failureCases": [
+          "Layla is flanked from outside Diggie's position.",
+          "Diggie is baited into using Time Journey early.",
+          "Enemy burst kills Layla after the protection duration ends."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "diggie",
+    "synergyHeroId": "hanabi",
+    "reasons": [
+      "Diggie can add protection to Hanabi's teamfight damage pattern when enemy engage relies on normal crowd control.",
+      "Hanabi benefits from staying inside Diggie's protected formation while dealing backline damage."
+    ],
+    "synergyTypes": [
+      "backline-protection",
+      "shielding",
+      "teamfight-combo"
+    ],
+    "proof": [
+      {
+        "id": "diggie-protection-for-hanabi-teamfight",
+        "category": "protection",
+        "priority": "secondary",
+        "impact": "medium",
+        "summary": "Hanabi wants to stand and output in teamfights, while Diggie helps cover her against crowd-control engage.",
+        "worksBestWhen": [
+          "Diggie times Time Journey after the enemy commits.",
+          "Hanabi stays near the protected team formation."
+        ],
+        "failureCases": [
+          "Enemy suppresses or bursts after Time Journey ends.",
+          "Hanabi stands too far forward.",
+          "Diggie uses protection before the enemy poke or dive arrives."
+        ]
+      }
+    ]
+  }
+]

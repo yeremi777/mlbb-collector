@@ -1,0 +1,152 @@
+[
+  {
+    "targetHeroId": "argus",
+    "counterHeroId": "valir",
+    "reasons": [
+      "Valir can push Argus away and slow him, wasting Argus's limited chase and ultimate timing.",
+      "This handles Argus without feeding too much damage into Eternal Evil."
+    ],
+    "counterTypes": [
+      "kiting",
+      "disengage",
+      "cooldown-punish"
+    ],
+    "proof": [
+      {
+        "id": "valir-kiting-vs-argus-eternal-evil",
+        "category": "kiting",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Argus wants to stay attached during his death-immunity window, while Valir can deny melee uptime with pushback and slows.",
+        "worksBestWhen": [
+          "Valir saves displacement until Argus commits.",
+          "Valir kites backward instead of fighting Argus during Eternal Evil."
+        ],
+        "failureCases": [
+          "Argus flanks Valir.",
+          "Valir wastes Searing Torrent before Argus activates Eternal Evil."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "argus",
+    "counterHeroId": "minsitthar",
+    "reasons": [
+      "Minsitthar can limit Argus's movement-skill chase inside King's Calling.",
+      "This helps teammates disengage instead of fighting Argus during his strongest window."
+    ],
+    "counterTypes": [
+      "anti-dash",
+      "crowd-control-counter",
+      "teamfight"
+    ],
+    "proof": [
+      {
+        "id": "minsitthar-kings-calling-vs-argus-chase",
+        "category": "skill-interaction",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Argus depends on sticking to targets, while Minsitthar can create a field that restricts movement skills and slows Argus's chase.",
+        "worksBestWhen": [
+          "Minsitthar casts King's Calling after Argus commits.",
+          "Teammates disengage instead of fighting Argus during his strongest timing."
+        ],
+        "failureCases": [
+          "Argus waits outside the field.",
+          "Argus enters after King's Calling expires."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "argus",
+    "counterHeroId": "franco",
+    "reasons": [
+      "Franco can suppress Argus and waste part of his active fighting window.",
+      "This is strongest when Franco coordinates with teammates to disengage or punish Argus after Eternal Evil ends."
+    ],
+    "counterTypes": [
+      "suppress",
+      "cooldown-punish",
+      "pickoff"
+    ],
+    "proof": [
+      {
+        "id": "franco-bloody-hunt-vs-argus-eternal-evil",
+        "category": "crowd-control-counter",
+        "priority": "primary",
+        "impact": "medium",
+        "summary": "Argus wants to attack continuously during his survival window, while Franco can deny actions and burn time with suppression.",
+        "worksBestWhen": [
+          "Franco suppresses Argus after Eternal Evil is committed.",
+          "Teammates disengage during the suppression window."
+        ],
+        "failureCases": [
+          "Franco suppresses too early.",
+          "Argus still has enough time to continue fighting after suppression ends."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "argus",
+    "counterHeroId": "kaja",
+    "reasons": [
+      "Kaja can drag Argus away from priority targets and force him to spend time repositioning.",
+      "Kaja is useful when the team avoids wasting damage into Argus during Eternal Evil."
+    ],
+    "counterTypes": [
+      "suppress",
+      "pickoff",
+      "cooldown-punish"
+    ],
+    "proof": [
+      {
+        "id": "kaja-divine-judgment-vs-argus-dive",
+        "category": "crowd-control-counter",
+        "priority": "primary",
+        "impact": "medium",
+        "summary": "Argus wants uninterrupted melee uptime, while Kaja can suppress and drag him away from his preferred target path.",
+        "worksBestWhen": [
+          "Kaja drags Argus away from the backline.",
+          "Kaja coordinates with teammates to punish after Eternal Evil ends."
+        ],
+        "failureCases": [
+          "Argus baits Divine Judgment before committing Eternal Evil.",
+          "Kaja pulls Argus into a teammate who cannot survive."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "argus",
+    "counterHeroId": "baxia",
+    "reasons": [
+      "Baxia reduces shield and HP regeneration, which helps limit Argus's recovery value after forced trades.",
+      "Baxia also gives the team a durable body that can absorb Argus's engage better than fragile backliners."
+    ],
+    "counterTypes": [
+      "anti-sustain",
+      "frontline",
+      "anti-dive"
+    ],
+    "proof": [
+      {
+        "id": "baxia-mark-vs-argus-recovery",
+        "category": "sustain-anti-sustain",
+        "priority": "secondary",
+        "impact": "medium",
+        "summary": "Argus becomes threatening when he survives and recovers after a committed fight, while Baxia can reduce enemy Shield and HP Regen during the trade.",
+        "worksBestWhen": [
+          "Baxia marks Argus before or during his committed melee trade.",
+          "Baxia zones Argus away from fragile backline targets."
+        ],
+        "failureCases": [
+          "Argus ignores Baxia and reaches the backline.",
+          "Baxia cannot keep Argus marked during the important recovery window."
+        ]
+      }
+    ]
+  }
+]

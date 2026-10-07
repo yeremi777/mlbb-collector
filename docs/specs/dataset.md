@@ -110,7 +110,7 @@ Primary key is the hero pair.
 
 ## Seeding
 
-- `make seed` loads the dataset first and connects to `DATABASE_URL` only after the whole dataset is accepted.
+- `make seed` loads the dataset first and connects to the database named by the `DB_*` settings (as in `api`) only after the whole dataset is accepted.
 - One transaction covers all five tables. Within it, rows absent from the files are deleted first, then every row is upserted.
 - An upsert changes a row, and its `updated_at`, only when a column value differs from the stored one.
 - The seed prints the row count it synced per table.
@@ -130,12 +130,13 @@ Primary key is the hero pair.
 ## Verification
 
 ```bash
+set -a; . ./.env; set +a; export PGHOST=$DB_HOST PGPORT=$DB_PORT PGDATABASE=$DB_NAME PGUSER=$DB_USERNAME PGPASSWORD=$DB_PASSWORD PGSSLMODE=$DB_SSLMODE   # psql below reads these
 git -C ~/Documents/Local/mlbb-analyzer-service archive dev data/static | tar -x -C "$TMPDIR" && diff -r -x counters.json -x synergies.json -x raw -x README.md "$TMPDIR/data/static" data   # AC-1
 go vet ./...
 go test ./...                                                     # AC-2, AC-3, AC-9
 make migrate-reset && make migrate-up                             # AC-4, run by the user
 make seed && make seed                                            # AC-5, AC-6, run by the user
-psql "$DATABASE_URL" -c "SELECT 'heroes', count(*), max(updated_at) FROM heroes UNION ALL SELECT 'counters', count(*), max(updated_at) FROM counters UNION ALL SELECT 'counter_proofs', count(*), max(updated_at) FROM counter_proofs UNION ALL SELECT 'synergies', count(*), max(updated_at) FROM synergies UNION ALL SELECT 'synergy_proofs', count(*), max(updated_at) FROM synergy_proofs"   # AC-5, AC-6
+psql -c "SELECT 'heroes', count(*), max(updated_at) FROM heroes UNION ALL SELECT 'counters', count(*), max(updated_at) FROM counters UNION ALL SELECT 'counter_proofs', count(*), max(updated_at) FROM counter_proofs UNION ALL SELECT 'synergies', count(*), max(updated_at) FROM synergies UNION ALL SELECT 'synergy_proofs', count(*), max(updated_at) FROM synergy_proofs"   # AC-5, AC-6
 go run ./cmd/seed -data "$TMPDIR/data-minus-one"                  # AC-7, run by the user against a disposable database
 go run ./cmd/seed -data "$TMPDIR/data-invalid"; test $? -ne 0     # AC-8
 ```

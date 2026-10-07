@@ -1,0 +1,159 @@
+[
+  {
+    "anchorHeroId": "hanzo",
+    "synergyHeroId": "selena",
+    "reasons": [
+      "Selena's traps and arrow pressure help Hanzo choose safer routes and targets for Hanekage pressure.",
+      "Selena can create the first catch, allowing Hanzo to follow with remote chase damage."
+    ],
+    "synergyTypes": [
+      "vision-setup",
+      "pickoff-combo",
+      "objective-control"
+    ],
+    "proof": [
+      {
+        "id": "selena-vision-guides-hanzo-hanekage-pressure",
+        "category": "vision-setup",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Selena improves map control and catch information, while Hanzo uses that information to send Hanekage toward safer pickoff targets.",
+        "worksBestWhen": [
+          "Selena traps jungle entrances before Hanzo commits.",
+          "Hanzo follows confirmed control or vision instead of blind diving."
+        ],
+        "failureCases": [
+          "Selena's traps are cleared.",
+          "Hanzo commits into grouped enemies without follow-up.",
+          "Hanekage is killed, slowing and exposing Hanzo after the failed engage."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "hanzo",
+    "synergyHeroId": "chip",
+    "reasons": [
+      "Chip can create a portal path that lets Hanzo's teammates collapse on the area Hanzo is pressuring.",
+      "Hanzo benefits when the team can join his remote pressure instead of leaving Hanekage to fight alone."
+    ],
+    "synergyTypes": [
+      "mobility-enable",
+      "engage-follow-up",
+      "objective-control"
+    ],
+    "proof": [
+      {
+        "id": "chip-shortcut-converts-hanzo-remote-pressure",
+        "category": "mobility-enabler",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Hanzo pressures from a remote angle, while Chip creates a portal that lets teammates join the target area and convert pressure into a real fight.",
+        "worksBestWhen": [
+          "Chip places Shortcut on a target or area Hanzo is already pressuring.",
+          "Hanzo's team uses the portal together instead of one by one.",
+          "Hanzo keeps awareness of his real body position before the fight starts."
+        ],
+        "failureCases": [
+          "Teammates ignore the portal and Hanzo's pressure becomes isolated.",
+          "The enemy uses the portal timing to counter-engage.",
+          "Hanzo's real body is discovered while the team commits elsewhere."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "hanzo",
+    "synergyHeroId": "luo-yi",
+    "reasons": [
+      "Luo Yi can teleport teammates into a fight area after Hanzo identifies a target or forces enemy movement.",
+      "Hanzo's long-range pressure becomes more valuable when Luo Yi can turn it into a coordinated map collapse."
+    ],
+    "synergyTypes": [
+      "mobility-enable",
+      "vision-setup",
+      "execution-dependent"
+    ],
+    "proof": [
+      {
+        "id": "luo-yi-diversion-converts-hanzo-pressure",
+        "category": "mobility-enabler",
+        "priority": "secondary",
+        "impact": "medium",
+        "summary": "Hanzo pressures or scouts a target path with Hanekage, while Luo Yi moves teammates into position for a coordinated collapse.",
+        "worksBestWhen": [
+          "Luo Yi hides or times Diversion so the enemy cannot easily disengage.",
+          "Hanzo confirms the target area before Luo Yi commits the teleport.",
+          "Teammates coordinate around the arrival timing."
+        ],
+        "failureCases": [
+          "Luo Yi teleports the team after the target already escapes.",
+          "Hanzo's real body is moved into danger without proper protection.",
+          "The team arrives into enemy crowd control."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "hanzo",
+    "synergyHeroId": "kaja",
+    "reasons": [
+      "Kaja can suppress a priority target so Hanzo's Hanekage has a safer target to hit.",
+      "Hanzo benefits from Kaja's hard lock because remote pressure can fail when enemies freely dash away."
+    ],
+    "synergyTypes": [
+      "pickoff-combo",
+      "cc-chain",
+      "burst-follow-up"
+    ],
+    "proof": [
+      {
+        "id": "kaja-suppression-sets-hanzo-hanekage-hit",
+        "category": "pickoff-combo",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Kaja locks a target in place, while Hanzo sends Hanekage pressure into the controlled target window.",
+        "worksBestWhen": [
+          "Kaja catches a squishy or mobile target.",
+          "Hanzo is close enough to follow quickly with Hanekage."
+        ],
+        "failureCases": [
+          "Kaja catches a tank.",
+          "Hanzo is out of energy or too far to follow.",
+          "Enemy teammates collapse after Kaja commits."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "hanzo",
+    "synergyHeroId": "popol-and-kupa",
+    "reasons": [
+      "Popol and Kupa can add trap-based map control that supports Hanzo's jungle pressure.",
+      "Extra vision helps Hanzo avoid sending Hanekage into bad fights or enemy collapse zones."
+    ],
+    "synergyTypes": [
+      "vision-setup",
+      "pickoff-combo",
+      "objective-control"
+    ],
+    "proof": [
+      {
+        "id": "popol-and-kupa-traps-support-hanzo-invade",
+        "category": "vision-setup",
+        "priority": "secondary",
+        "impact": "medium",
+        "summary": "Popol and Kupa add trap vision and control, while Hanzo uses that map information to invade, poke, or pick targets more safely.",
+        "worksBestWhen": [
+          "Traps cover jungle entrances and objective paths.",
+          "Hanzo plays around trap-controlled areas."
+        ],
+        "failureCases": [
+          "Traps are placed in predictable or visible zones.",
+          "Hanzo ignores the vision and dives blind.",
+          "The team lacks follow-up despite having vision control."
+        ]
+      }
+    ]
+  }
+]

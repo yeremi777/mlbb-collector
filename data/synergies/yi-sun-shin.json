@@ -1,0 +1,152 @@
+[
+  {
+    "anchorHeroId": "yi-sun-shin",
+    "synergyHeroId": "tigreal",
+    "reasons": [
+      "Tigreal can start fights and group enemies so Yi Sun-shin can follow with damage and global pressure.",
+      "Yi Sun-shin's map vision helps the team choose better timing before Tigreal commits."
+    ],
+    "synergyTypes": [
+      "engage-follow-up",
+      "teamfight-combo",
+      "objective-control"
+    ],
+    "proof": [
+      {
+        "id": "tigreal-engage-sets-yi-sun-shin-follow-up",
+        "category": "engage-follow-up",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Tigreal creates the engage, while Yi Sun-shin follows with damage and map-pressure support.",
+        "worksBestWhen": [
+          "Yi Sun-shin has position to follow up before Tigreal fully commits.",
+          "Tigreal engages after the team has enough vision or objective pressure."
+        ],
+        "failureCases": [
+          "Tigreal engages while Yi Sun-shin is split too far from the fight.",
+          "Yi Sun-shin is forced to disengage before dealing follow-up damage."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "yi-sun-shin",
+    "synergyHeroId": "atlas",
+    "reasons": [
+      "Atlas can drag enemies together, giving Yi Sun-shin a clearer teamfight damage window.",
+      "Yi Sun-shin can use global vision to support engage timing before Atlas starts."
+    ],
+    "synergyTypes": [
+      "setup-combo",
+      "teamfight-combo",
+      "aoe-follow-up"
+    ],
+    "proof": [
+      {
+        "id": "atlas-setup-for-yi-sun-shin-teamfight",
+        "category": "setup-combo",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Atlas groups enemies, while Yi Sun-shin follows with ranged pressure and objective-side damage.",
+        "worksBestWhen": [
+          "Yi Sun-shin is already near enough to attack after the drag.",
+          "Atlas engages after the target positions are known."
+        ],
+        "failureCases": [
+          "Atlas engages while Yi Sun-shin is farming or too far from the fight.",
+          "Enemies disengage before Yi Sun-shin can follow."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "yi-sun-shin",
+    "synergyHeroId": "mathilda",
+    "reasons": [
+      "Mathilda helps Yi Sun-shin reposition between ranged damage, melee follow-up, and objective fights.",
+      "Shield support makes him safer when he steps forward to finish targets."
+    ],
+    "synergyTypes": [
+      "mobility-enable",
+      "shielding",
+      "protect"
+    ],
+    "proof": [
+      {
+        "id": "mathilda-reposition-supports-yi-sun-shin",
+        "category": "mobility-enabler",
+        "priority": "secondary",
+        "impact": "medium",
+        "summary": "Mathilda improves Yi Sun-shin's fight positioning and gives him a safer route during skirmishes.",
+        "worksBestWhen": [
+          "Mathilda supports Yi Sun-shin around objectives or river fights.",
+          "Yi Sun-shin uses the route to maintain damage uptime or disengage."
+        ],
+        "failureCases": [
+          "Yi Sun-shin overcommits into melee range without an escape route.",
+          "Mathilda is too far away to provide a useful path."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "yi-sun-shin",
+    "synergyHeroId": "angela",
+    "reasons": [
+      "Angela can protect Yi Sun-shin when he plays aggressively around objectives or cleanup.",
+      "This improves his ability to keep dealing damage after being targeted."
+    ],
+    "synergyTypes": [
+      "shielding",
+      "protect",
+      "healing-sustain"
+    ],
+    "proof": [
+      {
+        "id": "angela-protects-yi-sun-shin-cleanup",
+        "category": "protection",
+        "priority": "secondary",
+        "impact": "medium",
+        "summary": "Angela adds a shield and support layer so Yi Sun-shin can keep pressure during fights.",
+        "worksBestWhen": [
+          "Angela attaches during an objective fight or cleanup chase.",
+          "Yi Sun-shin has room to continue attacking after the shield arrives."
+        ],
+        "failureCases": [
+          "Yi Sun-shin is caught before Angela can channel Heartguard.",
+          "The enemy disengages until the protection window ends."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "yi-sun-shin",
+    "synergyHeroId": "franco",
+    "reasons": [
+      "Yi Sun-shin's global reveal can help locate enemies before Franco looks for a hook.",
+      "Franco's hook or suppression can create a single-target pick that Yi Sun-shin can help finish."
+    ],
+    "synergyTypes": [
+      "pickoff-combo",
+      "vision-setup",
+      "burst-follow-up"
+    ],
+    "proof": [
+      {
+        "id": "yi-sun-shin-vision-guides-franco-pickoff",
+        "category": "vision-setup",
+        "priority": "secondary",
+        "impact": "medium",
+        "summary": "Yi Sun-shin gives map information, and Franco converts that information into hook or suppression pickoffs.",
+        "worksBestWhen": [
+          "Franco uses the reveal window to predict enemy movement through river or jungle.",
+          "Yi Sun-shin is close enough to help finish the target."
+        ],
+        "failureCases": [
+          "Franco misses the hook.",
+          "Franco catches a durable frontline target."
+        ]
+      }
+    ]
+  }
+]

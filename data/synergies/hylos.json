@@ -1,0 +1,157 @@
+[
+  {
+    "anchorHeroId": "hylos",
+    "synergyHeroId": "irithel",
+    "reasons": [
+      "Hylos gives Irithel a moving frontline and pathway speed so she can keep repositioning while attacking.",
+      "Irithel benefits when Hylos slows enemies and keeps them away from her damage position."
+    ],
+    "synergyTypes": [
+      "frontline-enabler",
+      "mobility-enable",
+      "teamfight-combo"
+    ],
+    "proof": [
+      {
+        "id": "hylos-pathway-for-irithel-kiting",
+        "category": "frontline-enabler",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Hylos creates space and movement support, while Irithel uses that space to keep mobile basic attacks active.",
+        "worksBestWhen": [
+          "Hylos opens a path before Irithel commits forward.",
+          "Irithel stays behind Hylos's frontline pressure."
+        ],
+        "failureCases": [
+          "Irithel outruns her protection.",
+          "Hylos cannot stay between Irithel and divers.",
+          "Enemy burst targets Irithel before the pathway matters."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "hylos",
+    "synergyHeroId": "layla",
+    "reasons": [
+      "Hylos can create a safer front and movement path for Layla.",
+      "Layla benefits from Hylos's frontline because she needs distance and protection to maintain backline damage."
+    ],
+    "synergyTypes": [
+      "frontline-enabler",
+      "backline-protection",
+      "mobility-enable"
+    ],
+    "proof": [
+      {
+        "id": "hylos-frontline-for-layla-positioning",
+        "category": "frontline-enabler",
+        "priority": "secondary",
+        "impact": "medium",
+        "summary": "Hylos protects and opens space, while Layla uses the safer path to maintain backline damage.",
+        "worksBestWhen": [
+          "Hylos positions between Layla and enemy divers.",
+          "Layla uses the pathway to reposition instead of overextending."
+        ],
+        "failureCases": [
+          "Layla is flanked from behind.",
+          "Hylos engages too far forward.",
+          "Enemy assassins bypass the frontline."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "hylos",
+    "synergyHeroId": "claude",
+    "reasons": [
+      "Hylos can create a pathway and frontline disruption that helps Claude enter or exit during Blazing Duet.",
+      "Claude benefits when Hylos draws control and opens a safer teamfight route."
+    ],
+    "synergyTypes": [
+      "frontline-enabler",
+      "mobility-enable",
+      "teamfight-combo"
+    ],
+    "proof": [
+      {
+        "id": "hylos-pathway-for-claude-entry",
+        "category": "mobility-enabler",
+        "priority": "secondary",
+        "impact": "medium",
+        "summary": "Hylos opens the teamfight route, while Claude uses the movement window to position for AoE damage.",
+        "worksBestWhen": [
+          "Hylos starts the path before Claude commits.",
+          "Claude waits for Hylos to draw control first."
+        ],
+        "failureCases": [
+          "Claude enters while enemy control is still ready.",
+          "Hylos's pathway does not reach the fight angle.",
+          "Claude lacks item timing for meaningful follow-up."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "hylos",
+    "synergyHeroId": "pharsa",
+    "reasons": [
+      "Hylos can stand forward and slow enemies, giving Pharsa safer time to cast from the backline.",
+      "Pharsa benefits when Hylos zones enemies away from her channeling or burst position."
+    ],
+    "synergyTypes": [
+      "frontline-enabler",
+      "poke-siege",
+      "positioning-dependent"
+    ],
+    "proof": [
+      {
+        "id": "hylos-frontline-for-pharsa-poke",
+        "category": "frontline-enabler",
+        "priority": "secondary",
+        "impact": "medium",
+        "summary": "Hylos controls the front and enemy movement, while Pharsa follows with ranged poke or burst.",
+        "worksBestWhen": [
+          "Hylos zones enemies away from Pharsa.",
+          "Pharsa casts from a safe angle behind the frontline."
+        ],
+        "failureCases": [
+          "Hylos cannot reach the enemy backline.",
+          "Pharsa is flanked while channeling.",
+          "Enemies disengage outside Pharsa's damage area."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "hylos",
+    "synergyHeroId": "odette",
+    "reasons": [
+      "Hylos can slow and occupy enemies near the fight center, giving Odette a more stable area to apply AoE damage.",
+      "Odette benefits when Hylos absorbs pressure before she commits to her damage window."
+    ],
+    "synergyTypes": [
+      "frontline-enabler",
+      "teamfight-combo",
+      "positioning-dependent"
+    ],
+    "proof": [
+      {
+        "id": "hylos-frontline-for-odette-aoe",
+        "category": "frontline-enabler",
+        "priority": "secondary",
+        "impact": "medium",
+        "summary": "Hylos keeps enemies pressured in the fight area, while Odette adds AoE magic damage from behind or beside him.",
+        "worksBestWhen": [
+          "Hylos enters first and draws attention.",
+          "Odette casts after enemy control is partially spent."
+        ],
+        "failureCases": [
+          "Odette is interrupted before damage finishes.",
+          "Hylos and Odette fight in separate zones.",
+          "Enemy burst ignores Hylos and dives Odette."
+        ]
+      }
+    ]
+  }
+]

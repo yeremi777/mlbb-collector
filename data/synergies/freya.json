@@ -1,0 +1,152 @@
+[
+  {
+    "anchorHeroId": "freya",
+    "synergyHeroId": "angela",
+    "reasons": [
+      "Angela helps Freya stay alive after Freya commits with her jump or ultimate.",
+      "Freya's extended-fight style benefits from extra shield and support while she continues basic attacks and skill cycles."
+    ],
+    "synergyTypes": [
+      "shielding",
+      "healing-sustain",
+      "dive-support"
+    ],
+    "proof": [
+      {
+        "id": "angela-protects-freya-extended-fight",
+        "category": "shielding",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Freya dives and keeps fighting, while Angela adds protection that helps Freya remain active inside the fight.",
+        "worksBestWhen": [
+          "Angela saves Heartguard for Freya's real engage.",
+          "Freya commits when follow-up damage or control is available."
+        ],
+        "failureCases": [
+          "Freya commits before Angela can attach.",
+          "Freya gets chain-controlled after diving."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "freya",
+    "synergyHeroId": "mathilda",
+    "reasons": [
+      "Mathilda gives Freya extra reach and repositioning support.",
+      "Freya can start fights without spending all of her own mobility immediately."
+    ],
+    "synergyTypes": [
+      "mobility-enable",
+      "shielding",
+      "dive-support"
+    ],
+    "proof": [
+      {
+        "id": "mathilda-enables-freya-entry",
+        "category": "mobility-enabler",
+        "priority": "primary",
+        "impact": "medium",
+        "summary": "Mathilda improves Freya's entry and chase path, while Freya supplies the sustained melee damage.",
+        "worksBestWhen": [
+          "Mathilda uses her mobility support before Freya's commit or during chase.",
+          "Freya follows the route into a target she can keep attacking."
+        ],
+        "failureCases": [
+          "Freya overextends past Mathilda's support range.",
+          "Enemies disengage before Freya reaches melee range."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "freya",
+    "synergyHeroId": "minotaur",
+    "reasons": [
+      "Minotaur can add healing and layered crowd control around Freya's melee engage.",
+      "Freya benefits when enemies are held in place long enough for her sustained attacks to matter."
+    ],
+    "synergyTypes": [
+      "cc-chain",
+      "healing-sustain",
+      "teamfight-combo"
+    ],
+    "proof": [
+      {
+        "id": "minotaur-control-sustains-freya-fight",
+        "category": "crowd-control-chain",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Minotaur stabilizes the teamfight with healing and knock-up pressure, while Freya continues melee damage inside the controlled area.",
+        "worksBestWhen": [
+          "Minotaur enters before or alongside Freya.",
+          "Freya is close enough to continue attacking during the control window."
+        ],
+        "failureCases": [
+          "Minotaur's control misses.",
+          "Freya is forced to disengage before using her damage window."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "freya",
+    "synergyHeroId": "tigreal",
+    "reasons": [
+      "Tigreal can group enemies and create a clear melee entry for Freya.",
+      "Freya can follow the grouped crowd control with sustained damage and Valkyrie pressure."
+    ],
+    "synergyTypes": [
+      "engage-follow-up",
+      "cc-chain",
+      "teamfight-combo"
+    ],
+    "proof": [
+      {
+        "id": "tigreal-engage-opens-freya-melee-pressure",
+        "category": "engage-follow-up",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Tigreal starts the teamfight by pulling or stunning enemies, then Freya enters to continue the fight at close range.",
+        "worksBestWhen": [
+          "Freya is close enough to enter immediately after Tigreal's setup.",
+          "Tigreal engages when Freya's ultimate or damage window is ready."
+        ],
+        "failureCases": [
+          "Tigreal engages too far away from Freya.",
+          "Freya is controlled before reaching the grouped enemies."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "freya",
+    "synergyHeroId": "kaja",
+    "reasons": [
+      "Kaja can lock one priority target and drag them into Freya's melee range.",
+      "Freya can continue the fight with basic attacks and skill pressure after the suppression window."
+    ],
+    "synergyTypes": [
+      "pickoff-combo",
+      "setup-combo",
+      "burst-follow-up"
+    ],
+    "proof": [
+      {
+        "id": "kaja-drag-sets-freya-melee-finish",
+        "category": "setup-combo",
+        "priority": "primary",
+        "impact": "medium",
+        "summary": "Kaja isolates a target, and Freya follows with sustained melee pressure.",
+        "worksBestWhen": [
+          "Kaja pulls a squishy or mobile target toward Freya.",
+          "Freya has enough resources to continue attacking after the drag."
+        ],
+        "failureCases": [
+          "The target survives the first window and Freya is kited afterward.",
+          "Kaja catches a low-value frontline target."
+        ]
+      }
+    ]
+  }
+]

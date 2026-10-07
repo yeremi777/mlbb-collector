@@ -1,0 +1,152 @@
+[
+  {
+    "targetHeroId": "bane",
+    "counterHeroId": "baxia",
+    "reasons": [
+      "Baxia reduces the value of Bane's Ale healing and extended-trade sustain.",
+      "Baxia can frontline into Bane so the team can punish him before he resets with healing."
+    ],
+    "counterTypes": [
+      "anti-sustain",
+      "anti-heal",
+      "frontline"
+    ],
+    "proof": [
+      {
+        "id": "baxia-anti-heal-vs-bane-ale-sustain",
+        "category": "sustain-anti-sustain",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Bane wants to survive trades through Ale healing, while Baxia reduces healing and regeneration value so Bane has less time to reset the fight.",
+        "worksBestWhen": [
+          "Baxia tags Bane before Bane can disengage and heal safely.",
+          "Allies focus Bane during the anti-heal window."
+        ],
+        "failureCases": [
+          "Bane keeps distance and pokes before Baxia reaches him.",
+          "Bane disengages before the team can follow up on Baxia's pressure."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "bane",
+    "counterHeroId": "valir",
+    "reasons": [
+      "Valir can push Bane away and slow his approach before Bane reaches a strong Deadly Catch angle.",
+      "Bane has to walk into many fights, so Valir's disengage makes his setup less reliable."
+    ],
+    "counterTypes": [
+      "kiting",
+      "disengage",
+      "anti-engage"
+    ],
+    "proof": [
+      {
+        "id": "valir-disengage-vs-bane-forward-pressure",
+        "category": "kiting",
+        "priority": "primary",
+        "impact": "medium",
+        "summary": "Bane wants to move forward for poke, sustain, and Deadly Catch pressure, while Valir can slow and knock him back before he reaches the backline.",
+        "worksBestWhen": [
+          "Valir holds knockback for Bane's real forward movement.",
+          "Valir positions outside Bane's ultimate setup angle."
+        ],
+        "failureCases": [
+          "Bane catches Valir with Deadly Catch before Valir can disengage.",
+          "Valir wastes knockback on a lower-priority target."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "bane",
+    "counterHeroId": "dyrroth",
+    "reasons": [
+      "Dyrroth can punish Bane in close-range fights with burst and defense reduction.",
+      "This works best when Dyrroth forces the fight before Bane gets repeated Ale sustain."
+    ],
+    "counterTypes": [
+      "burst",
+      "penetration",
+      "cooldown-punish"
+    ],
+    "proof": [
+      {
+        "id": "dyrroth-defense-reduction-vs-bane-sustain-window",
+        "category": "damage-type-advantage",
+        "priority": "secondary",
+        "impact": "medium",
+        "summary": "Bane wants time to heal and extend trades, while Dyrroth's defense-reduction burst can shorten the fight before Bane's sustain matters.",
+        "worksBestWhen": [
+          "Dyrroth engages after Bane uses Ale or misses poke.",
+          "Dyrroth has enough damage backup to finish Bane quickly."
+        ],
+        "failureCases": [
+          "Bane pokes Dyrroth down before the all-in.",
+          "Dyrroth dives into Deadly Catch without follow-up."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "bane",
+    "counterHeroId": "karrie",
+    "reasons": [
+      "Karrie can pressure durable fighters with repeated tank-shred damage.",
+      "Bane's sustain is less valuable when Karrie has enough time and protection to keep attacking him."
+    ],
+    "counterTypes": [
+      "tank-shred",
+      "kiting",
+      "damage-type-advantage"
+    ],
+    "proof": [
+      {
+        "id": "karrie-tank-shred-vs-bane-frontline-sustain",
+        "category": "damage-type-advantage",
+        "priority": "secondary",
+        "impact": "medium",
+        "summary": "Bane wants to function as a durable sustained fighter, while Karrie can wear him down with repeated attacks when protected.",
+        "worksBestWhen": [
+          "Karrie has frontline protection from Bane's engage.",
+          "Karrie can keep distance and attack through the fight."
+        ],
+        "failureCases": [
+          "Bane reaches Karrie with Deadly Catch setup.",
+          "Karrie is forced to retreat before stacking damage."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "bane",
+    "counterHeroId": "lunox",
+    "reasons": [
+      "Lunox can punish Bane's durability with burst and penetration-style magic damage.",
+      "Her mobility and burst timing help her avoid long trades where Bane's sustain becomes more valuable."
+    ],
+    "counterTypes": [
+      "burst",
+      "penetration",
+      "mobility"
+    ],
+    "proof": [
+      {
+        "id": "lunox-burst-penetration-vs-bane-durability",
+        "category": "damage-type-advantage",
+        "priority": "secondary",
+        "impact": "medium",
+        "summary": "Bane wants extended fights where his healing has value, while Lunox can use burst windows to punish him before he stabilizes.",
+        "worksBestWhen": [
+          "Lunox enters after Bane uses key control or sustain.",
+          "Lunox has enough damage to force Bane low quickly."
+        ],
+        "failureCases": [
+          "Bane catches Lunox before she can reposition.",
+          "Lunox commits without enough damage or escape timing."
+        ]
+      }
+    ]
+  }
+]

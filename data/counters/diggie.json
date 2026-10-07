@@ -1,0 +1,153 @@
+[
+  {
+    "targetHeroId": "diggie",
+    "counterHeroId": "esmeralda",
+    "reasons": [
+      "Esmeralda is a strong Diggie counter because Diggie's ultimate gives shields, and Esmeralda can benefit from enemy shield interactions.",
+      "This makes Diggie's defensive value less clean in teamfights."
+    ],
+    "counterTypes": [
+      "shield-counter",
+      "sustain",
+      "teamfight"
+    ],
+    "proof": [
+      {
+        "id": "esmeralda-shield-interaction-vs-diggie-time-journey",
+        "category": "skill-interaction",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Diggie protects allies with shields and control immunity, while Esmeralda can punish shield-heavy formations by converting enemy shields into value for herself.",
+        "worksBestWhen": [
+          "Esmeralda can reach shielded heroes after Time Journey.",
+          "Esmeralda is not kited before she can convert shield value."
+        ],
+        "failureCases": [
+          "Diggie's team kites Esmeralda.",
+          "Esmeralda cannot enter the fight after Diggie uses Time Journey."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "diggie",
+    "counterHeroId": "hilda",
+    "reasons": [
+      "Hilda can be listed as a conditional map-control counter into Diggie.",
+      "Hilda can check bushes, trigger or absorb Diggie bomb pressure, then recover using bush sustain instead of giving up map control."
+    ],
+    "counterTypes": [
+      "vision-control",
+      "frontline",
+      "sustain"
+    ],
+    "proof": [
+      {
+        "id": "hilda-bush-sustain-vs-diggie-bomb-control",
+        "category": "vision-awareness",
+        "priority": "primary",
+        "impact": "medium",
+        "summary": "Diggie wants to control bushes and objective entrances with bombs, while Hilda can safely check map areas, absorb bomb pressure better than fragile heroes, and recover through bush sustain.",
+        "worksBestWhen": [
+          "Hilda is played as an aggressive roamer who actively checks bushes and river entrances.",
+          "Hilda turns bomb-checking into real map control or pressure."
+        ],
+        "failureCases": [
+          "Diggie's team chains damage after Hilda triggers bombs.",
+          "Anti-heal or burst prevents Hilda from resetting in bushes.",
+          "Hilda only eats bombs without creating vision or pressure."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "diggie",
+    "counterHeroId": "natalia",
+    "reasons": [
+      "Natalia can pressure Diggie before a fight starts and force him to use resources defensively.",
+      "This remains useful because Diggie is strongest when he can safely hold Time Journey for the enemy's main engage."
+    ],
+    "counterTypes": [
+      "pickoff",
+      "vision-control",
+      "burst"
+    ],
+    "proof": [
+      {
+        "id": "natalia-camouflage-vs-diggie-backline-support",
+        "category": "vision-awareness",
+        "priority": "primary",
+        "impact": "medium",
+        "summary": "Diggie wants safe positioning behind allies, while Natalia can threaten him from camouflage and make him play more defensively.",
+        "worksBestWhen": [
+          "Natalia approaches through bushes.",
+          "Natalia attacks before Diggie groups with teammates."
+        ],
+        "failureCases": [
+          "Diggie's team keeps reveal, traps, or grouped positioning.",
+          "Natalia is revealed before reaching Diggie."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "diggie",
+    "counterHeroId": "kaja",
+    "reasons": [
+      "Kaja can isolate Diggie before Diggie uses Time Journey for the real fight.",
+      "Suppression can force Diggie into a defensive timing instead of letting him protect his team."
+    ],
+    "counterTypes": [
+      "pickoff",
+      "suppress",
+      "cooldown-punish"
+    ],
+    "proof": [
+      {
+        "id": "kaja-divine-judgment-vs-diggie-ultimate-timing",
+        "category": "cooldown-window",
+        "priority": "primary",
+        "impact": "medium",
+        "summary": "Diggie's value depends on saving Time Journey for the correct engage window, while Kaja can force him into a pre-fight pickoff or defensive ultimate.",
+        "worksBestWhen": [
+          "Kaja catches Diggie before the main teamfight.",
+          "Kaja has teammate burst ready after the drag."
+        ],
+        "failureCases": [
+          "Diggie stays outside Kaja range.",
+          "Diggie saves ultimate for the real engage despite Kaja's pressure."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "diggie",
+    "counterHeroId": "franco",
+    "reasons": [
+      "Franco can punish exposed Diggie with hook or suppression before Diggie's ultimate timing becomes valuable.",
+      "This is especially useful around bushes and objectives."
+    ],
+    "counterTypes": [
+      "pickoff",
+      "suppress",
+      "vision-control"
+    ],
+    "proof": [
+      {
+        "id": "franco-hook-pressure-vs-diggie-positioning",
+        "category": "positioning-requirement",
+        "priority": "primary",
+        "impact": "medium",
+        "summary": "Diggie wants safe proximity to allies, while Franco punishes exposed support positioning with hook pressure and suppression.",
+        "worksBestWhen": [
+          "Franco controls bush vision before objectives.",
+          "Franco threatens Diggie before Time Journey becomes valuable."
+        ],
+        "failureCases": [
+          "Diggie plays behind minions or tanks.",
+          "Franco misses hook and cannot reach suppression range."
+        ]
+      }
+    ]
+  }
+]

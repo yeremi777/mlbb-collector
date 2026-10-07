@@ -1,0 +1,152 @@
+[
+  {
+    "anchorHeroId": "ruby",
+    "synergyHeroId": "tigreal",
+    "reasons": [
+      "Ruby and Tigreal can chain pulls and stuns to keep enemies controlled for a long teamfight window.",
+      "Ruby can follow Tigreal's engage or start a smaller pull that Tigreal expands into a bigger teamfight."
+    ],
+    "synergyTypes": [
+      "cc-chain",
+      "teamfight-combo",
+      "frontline-enabler"
+    ],
+    "proof": [
+      {
+        "id": "ruby-tigreal-layered-displacement-chain",
+        "category": "crowd-control-chain",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Tigreal and Ruby layer displacement and stun effects to keep enemies grouped and controlled.",
+        "worksBestWhen": [
+          "They do not overlap all control at the exact same moment.",
+          "Follow-up damage is ready during the chained control window."
+        ],
+        "failureCases": [
+          "Enemy cleanse or disengage breaks the chain before damage follow-up arrives.",
+          "Both use control at the same time and waste part of the chain."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "ruby",
+    "synergyHeroId": "atlas",
+    "reasons": [
+      "Atlas can group enemies first, then Ruby can extend the control with her pull and stun.",
+      "Ruby can also pull targets into a better area for Atlas to finish the engage."
+    ],
+    "synergyTypes": [
+      "setup-combo",
+      "cc-chain",
+      "teamfight-combo"
+    ],
+    "proof": [
+      {
+        "id": "atlas-ruby-displacement-teamfight-chain",
+        "category": "setup-combo",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Atlas and Ruby combine repeated displacement tools to keep enemies inside the team's damage area.",
+        "worksBestWhen": [
+          "Ruby times her pull after Atlas's drag instead of before it.",
+          "The team has damage ready when the enemies are grouped."
+        ],
+        "failureCases": [
+          "Both use control at the same time and waste part of the chain.",
+          "Ruby pulls enemies away from the team's damage zone."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "ruby",
+    "synergyHeroId": "angela",
+    "reasons": [
+      "Angela can reinforce Ruby's frontline sustain when Ruby commits to a pull-heavy fight.",
+      "Ruby benefits because she often stays inside enemy range to control targets."
+    ],
+    "synergyTypes": [
+      "shielding",
+      "healing-sustain",
+      "protect"
+    ],
+    "proof": [
+      {
+        "id": "angela-protects-ruby-frontline-control",
+        "category": "protection",
+        "priority": "secondary",
+        "impact": "medium",
+        "summary": "Angela helps Ruby survive while Ruby keeps enemies controlled in close range.",
+        "worksBestWhen": [
+          "Angela attaches as Ruby commits into the fight.",
+          "Ruby has follow-up damage nearby for her control."
+        ],
+        "failureCases": [
+          "Ruby is burst down before the shield lands.",
+          "Ruby gets isolated away from follow-up."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "ruby",
+    "synergyHeroId": "gord",
+    "reasons": [
+      "Ruby can pull enemies into Gord's area damage and beam path.",
+      "Gord benefits because Ruby's control helps prevent enemies from walking out immediately."
+    ],
+    "synergyTypes": [
+      "aoe-follow-up",
+      "cc-chain",
+      "teamfight-combo"
+    ],
+    "proof": [
+      {
+        "id": "ruby-pull-sets-gord-aoe-follow-up",
+        "category": "engage-follow-up",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Ruby controls and groups targets, while Gord follows with area magic damage.",
+        "worksBestWhen": [
+          "Gord is positioned safely before Ruby pulls enemies.",
+          "Ruby pulls enemies into Gord's skill path."
+        ],
+        "failureCases": [
+          "Ruby pulls enemies away from Gord's cast angle.",
+          "Gord is dived before the follow-up."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "ruby",
+    "synergyHeroId": "kagura",
+    "reasons": [
+      "Ruby can pull enemies into Kagura's umbrella combo area.",
+      "Kagura adds burst and additional control after Ruby starts the fight."
+    ],
+    "synergyTypes": [
+      "cc-chain",
+      "setup-combo",
+      "burst-follow-up"
+    ],
+    "proof": [
+      {
+        "id": "ruby-pull-sets-kagura-umbrella-combo",
+        "category": "crowd-control-chain",
+        "priority": "primary",
+        "impact": "medium",
+        "summary": "Ruby starts the close-range control, while Kagura adds umbrella burst and follow-up control from safer range.",
+        "worksBestWhen": [
+          "Kagura places umbrella before Ruby's pull or tracks target movement quickly.",
+          "Ruby pulls targets into Kagura's combo area."
+        ],
+        "failureCases": [
+          "Ruby pulls enemies away from Kagura's umbrella position.",
+          "Kagura commits before Ruby confirms the pull."
+        ]
+      }
+    ]
+  }
+]

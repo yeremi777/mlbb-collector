@@ -1,0 +1,157 @@
+[
+  {
+    "anchorHeroId": "harley",
+    "synergyHeroId": "franco",
+    "reasons": [
+      "Franco can isolate a target so Harley can apply Deadly Magic and stack burst without chasing through a full team.",
+      "Harley's single-target burst becomes more reliable when Franco holds the target in place."
+    ],
+    "synergyTypes": [
+      "pickoff-combo",
+      "setup-combo",
+      "burst-follow-up"
+    ],
+    "proof": [
+      {
+        "id": "franco-lock-for-harley-pickoff",
+        "category": "pickoff-combo",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Franco isolates or suppresses one target, while Harley converts that isolation into single-target magic burst.",
+        "worksBestWhen": [
+          "Franco catches a priority squishy target.",
+          "Harley waits until the target is controlled before committing burst."
+        ],
+        "failureCases": [
+          "Franco catches a tank instead of a priority target.",
+          "Harley commits before the target is controlled.",
+          "Enemy peel blocks Harley's follow-up path."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "harley",
+    "synergyHeroId": "kaja",
+    "reasons": [
+      "Kaja can suppress and drag one target, giving Harley a direct burst window.",
+      "Harley can quickly follow Kaja's pickoff with Deadly Magic and Poker Trick before the target escapes."
+    ],
+    "synergyTypes": [
+      "pickoff-combo",
+      "setup-combo",
+      "burst-follow-up"
+    ],
+    "proof": [
+      {
+        "id": "kaja-suppression-for-harley-burst",
+        "category": "setup-combo",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Kaja locks one target with suppression, while Harley adds burst during the forced-control window.",
+        "worksBestWhen": [
+          "Kaja suppresses a target Harley can immediately reach.",
+          "Harley keeps Space Escape available for exit after burst."
+        ],
+        "failureCases": [
+          "Kaja catches a high-durability target.",
+          "Harley's burst is blocked or delayed.",
+          "Enemy teammates collapse on Harley's return point."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "harley",
+    "synergyHeroId": "selena",
+    "reasons": [
+      "Selena can prepare vision and stun angles that let Harley commit to a confirmed pickoff.",
+      "Harley can burst the target Selena catches before the enemy team fully reacts."
+    ],
+    "synergyTypes": [
+      "vision-setup",
+      "pickoff-combo",
+      "burst-follow-up"
+    ],
+    "proof": [
+      {
+        "id": "selena-vision-stun-for-harley-pickoff",
+        "category": "vision-setup",
+        "priority": "secondary",
+        "impact": "medium",
+        "summary": "Selena creates scouting and stun opportunities, while Harley follows with fast magic burst on the confirmed target.",
+        "worksBestWhen": [
+          "Selena controls bushes or rotation paths.",
+          "Harley follows after a real stun or vision confirmation."
+        ],
+        "failureCases": [
+          "Selena misses the setup.",
+          "Harley dives without vision.",
+          "The target has cleanse, immunity, or strong peel nearby."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "harley",
+    "synergyHeroId": "mathilda",
+    "reasons": [
+      "Mathilda can give Harley extra shield and movement support during his burst dive.",
+      "Harley benefits from an additional escape or reposition option after using Space Escape aggressively."
+    ],
+    "synergyTypes": [
+      "mobility-enable",
+      "shielding",
+      "dive-support"
+    ],
+    "proof": [
+      {
+        "id": "mathilda-mobility-for-harley-dive",
+        "category": "mobility-enabler",
+        "priority": "secondary",
+        "impact": "medium",
+        "summary": "Harley starts the burst play, while Mathilda helps him enter or exit with mobility and shielding support.",
+        "worksBestWhen": [
+          "Mathilda positions close enough for Harley to use the mobility option.",
+          "Harley saves at least one escape route after committing."
+        ],
+        "failureCases": [
+          "Harley's return point is camped.",
+          "Mathilda is too far away.",
+          "The enemy waits out the shield before counter-engaging."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "harley",
+    "synergyHeroId": "angela",
+    "reasons": [
+      "Angela can shield and sustain Harley while he commits to a risky burst target.",
+      "Her support helps Harley survive the counterattack after he marks and damages a priority target."
+    ],
+    "synergyTypes": [
+      "shielding",
+      "dive-support",
+      "healing-sustain"
+    ],
+    "proof": [
+      {
+        "id": "angela-protection-for-harley-burst-window",
+        "category": "protection",
+        "priority": "secondary",
+        "impact": "medium",
+        "summary": "Harley supplies the burst, while Angela adds protection and sustain during his commit and escape window.",
+        "worksBestWhen": [
+          "Angela attaches before Harley enters dangerous range.",
+          "Harley still keeps an escape route after burst."
+        ],
+        "failureCases": [
+          "Harley dives into multiple hard-control heroes.",
+          "Angela's ultimate is unavailable.",
+          "Harley's target survives and the enemy collapses."
+        ]
+      }
+    ]
+  }
+]

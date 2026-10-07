@@ -1,0 +1,157 @@
+[
+  {
+    "anchorHeroId": "suyou",
+    "synergyHeroId": "floryn",
+    "reasons": [
+      "Floryn can heal Suyou globally, matching his mobile jungle pattern.",
+      "Suyou can commit deeper when Floryn's Bloom is ready as backup sustain."
+    ],
+    "synergyTypes": [
+      "healing-sustain",
+      "dive-support",
+      "game-phase"
+    ],
+    "proof": [
+      {
+        "id": "floryn-global-heal-for-suyou",
+        "category": "healing-sustain",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Floryn supports Suyou's mobile dive with global healing.",
+        "worksBestWhen": [
+          "Floryn uses Bloom before Suyou is already too low.",
+          "Suyou keeps mobility available after receiving the heal."
+        ],
+        "failureCases": [
+          "Suyou is burst before healing matters.",
+          "Suyou dives into suppression or layered crowd control.",
+          "Floryn's ultimate is unavailable."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "suyou",
+    "synergyHeroId": "chip",
+    "reasons": [
+      "Chip can convert Suyou's first pressure into a team collapse.",
+      "Suyou can enter first, then Chip brings the rest of the team to finish the fight."
+    ],
+    "synergyTypes": [
+      "mobility-enable",
+      "dive-support",
+      "pickoff-combo"
+    ],
+    "proof": [
+      {
+        "id": "chip-portal-followup-for-suyou-dive",
+        "category": "mobility-enabler",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Suyou starts the fight, while Chip turns it into a coordinated portal collapse.",
+        "worksBestWhen": [
+          "Suyou identifies a real target before Chip opens Shortcut.",
+          "Teammates are ready to use the portal together."
+        ],
+        "failureCases": [
+          "Chip portals into a losing fight.",
+          "Suyou enters too early and dies.",
+          "Enemies disengage from the portal area."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "suyou",
+    "synergyHeroId": "zetian",
+    "reasons": [
+      "Zetian reveals and controls enemies globally, giving Suyou clearer target selection.",
+      "Her movement support helps Suyou convert the global window into a dive."
+    ],
+    "synergyTypes": [
+      "vision-setup",
+      "dive-support",
+      "pickoff-combo"
+    ],
+    "proof": [
+      {
+        "id": "zetian-global-window-for-suyou-dive",
+        "category": "vision-setup",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Zetian creates a global reveal/control window, while Suyou uses mobility to reach the chosen target.",
+        "worksBestWhen": [
+          "Suyou is already near the revealed target.",
+          "Zetian uses ultimate when Suyou has cooldowns ready."
+        ],
+        "failureCases": [
+          "Suyou is too far to follow.",
+          "Enemy peel blocks his entry.",
+          "Suyou chooses the wrong target after reveal."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "suyou",
+    "synergyHeroId": "angela",
+    "reasons": [
+      "Angela can attach to Suyou and help him survive the commit window.",
+      "Suyou benefits because his fight pattern often moves away from normal support range."
+    ],
+    "synergyTypes": [
+      "shielding",
+      "dive-support",
+      "healing-sustain"
+    ],
+    "proof": [
+      {
+        "id": "angela-protection-for-suyou",
+        "category": "protection",
+        "priority": "secondary",
+        "impact": "medium",
+        "summary": "Angela gives Suyou attached protection while he dives or brawls.",
+        "worksBestWhen": [
+          "Angela attaches before Suyou uses all mobility.",
+          "Suyou commits while Angela can still protect him."
+        ],
+        "failureCases": [
+          "Suyou dives into layered crowd control.",
+          "Angela attaches too late.",
+          "Anti-heal and burst reduce the sustain value."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "suyou",
+    "synergyHeroId": "luo-yi",
+    "reasons": [
+      "Luo Yi can move Suyou and teammates into a surprise fight angle.",
+      "Suyou can use the teleport arrival to choose an aggressive form-based engage."
+    ],
+    "synergyTypes": [
+      "mobility-enable",
+      "teamfight-combo",
+      "execution-dependent"
+    ],
+    "proof": [
+      {
+        "id": "luo-yi-teleport-for-suyou-engage",
+        "category": "mobility-enabler",
+        "priority": "secondary",
+        "impact": "medium",
+        "summary": "Luo Yi creates map-entry options, while Suyou converts the arrival into dive pressure.",
+        "worksBestWhen": [
+          "Luo Yi's Diversion is coordinated with Suyou's cooldowns.",
+          "Suyou enters after teammates arrive instead of alone."
+        ],
+        "failureCases": [
+          "Teleport timing is mistimed.",
+          "Suyou arrives into enemy counter-engage.",
+          "The team splits targets after arrival."
+        ]
+      }
+    ]
+  }
+]

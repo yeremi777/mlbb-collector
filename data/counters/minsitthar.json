@@ -1,0 +1,152 @@
+[
+  {
+    "targetHeroId": "minsitthar",
+    "counterHeroId": "diggie",
+    "reasons": [
+      "Diggie reduces the value of Minsitthar's pick and teamfight control by protecting allies during the engage window.",
+      "Minsitthar depends on locking a target long enough for follow-up, while Diggie makes that timing harder."
+    ],
+    "counterTypes": [
+      "anti-cc",
+      "cleanse",
+      "teamfight"
+    ],
+    "proof": [
+      {
+        "id": "diggie-time-journey-vs-minsitthar-engage",
+        "category": "skill-interaction",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Minsitthar wants to chain pull and zone control, while Diggie can remove debuffs from nearby allies and grant control immunity during the engage window.",
+        "worksBestWhen": [
+          "Diggie saves ultimate for Minsitthar's real engage.",
+          "Diggie stays close enough to the target Minsitthar wants to catch."
+        ],
+        "failureCases": [
+          "Minsitthar baits Diggie ultimate before committing.",
+          "Minsitthar catches Diggie first."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "minsitthar",
+    "counterHeroId": "valir",
+    "reasons": [
+      "Valir can push Minsitthar away before he lands a clean Spear of Glory or ultimate zone.",
+      "Valir's self-cleanse timing makes him harder to lock down if Minsitthar catches him."
+    ],
+    "counterTypes": [
+      "disengage",
+      "poke",
+      "anti-engage"
+    ],
+    "proof": [
+      {
+        "id": "valir-disengage-vs-minsitthar-king-zone",
+        "category": "skill-interaction",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Minsitthar wants to start a close-range lock zone, while Valir can knock enemies back and cleanse control to reset spacing.",
+        "worksBestWhen": [
+          "Valir keeps distance and saves knockback for Minsitthar's commit.",
+          "Valir avoids standing where Spear of Glory can start the fight."
+        ],
+        "failureCases": [
+          "Valir wastes knockback before Minsitthar engages.",
+          "Minsitthar catches Valir while cleanse is unavailable."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "minsitthar",
+    "counterHeroId": "pharsa",
+    "reasons": [
+      "Pharsa can pressure Minsitthar from outside his preferred engage range.",
+      "Minsitthar becomes less reliable if he cannot force enemies into Spear of Glory or King’s Calling range."
+    ],
+    "counterTypes": [
+      "range-advantage",
+      "poke",
+      "positioning-requirement"
+    ],
+    "proof": [
+      {
+        "id": "pharsa-range-vs-minsitthar-engage-range",
+        "category": "range-advantage",
+        "priority": "primary",
+        "impact": "medium",
+        "summary": "Minsitthar wants enemies close enough for pull and anti-blink zone, while Pharsa can contribute damage from safer backline positions.",
+        "worksBestWhen": [
+          "Pharsa keeps terrain and frontline between herself and Minsitthar.",
+          "Pharsa does not channel from predictable locations."
+        ],
+        "failureCases": [
+          "Minsitthar reaches Pharsa before she can reposition.",
+          "Pharsa channels without vision against flank threats."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "minsitthar",
+    "counterHeroId": "lunox",
+    "reasons": [
+      "Lunox can punish Minsitthar after he commits if she avoids the first catch window.",
+      "Her defensive timing helps her survive predictable engage attempts."
+    ],
+    "counterTypes": [
+      "burst",
+      "mobility",
+      "cooldown-punish"
+    ],
+    "proof": [
+      {
+        "id": "lunox-timing-vs-minsitthar-commit",
+        "category": "cooldown-window",
+        "priority": "condition",
+        "impact": "medium",
+        "summary": "Minsitthar is strongest during his pull and ultimate window, while Lunox can use defensive timing to avoid or punish the commit.",
+        "worksBestWhen": [
+          "Lunox saves defensive timing until Minsitthar commits.",
+          "Lunox avoids fighting inside King’s Calling without support."
+        ],
+        "failureCases": [
+          "Lunox is caught before activating defensive timing.",
+          "Minsitthar's team layers follow-up control after her timing ends."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "minsitthar",
+    "counterHeroId": "karrie",
+    "reasons": [
+      "Karrie can punish Minsitthar's fighter/frontline durability with true damage.",
+      "She works best when she kites outside King’s Calling instead of trying to dash through it."
+    ],
+    "counterTypes": [
+      "true-damage",
+      "tank-shred",
+      "kiting"
+    ],
+    "proof": [
+      {
+        "id": "karrie-lightwheel-vs-minsitthar-frontline",
+        "category": "damage-type-advantage",
+        "priority": "secondary",
+        "impact": "medium",
+        "summary": "Minsitthar wants to survive long enough to control a fight, while Karrie can pressure durable targets through true-damage Max HP stacks.",
+        "worksBestWhen": [
+          "Karrie has frontline protection.",
+          "Karrie keeps enough spacing to avoid Spear of Glory."
+        ],
+        "failureCases": [
+          "Minsitthar pulls Karrie before she can stack damage.",
+          "Karrie mispositions inside King’s Calling."
+        ]
+      }
+    ]
+  }
+]

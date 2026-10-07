@@ -1,0 +1,157 @@
+[
+  {
+    "anchorHeroId": "popol-and-kupa",
+    "synergyHeroId": "lolita",
+    "reasons": [
+      "Lolita helps protect Popol's ranged position while Kupa controls close-range threats.",
+      "Popol and Kupa can pressure lane or objectives more safely when Lolita blocks or discourages enemy engage paths."
+    ],
+    "synergyTypes": [
+      "protect",
+      "peel",
+      "backline-protection"
+    ],
+    "proof": [
+      {
+        "id": "lolita-protects-popol-kupa-pressure",
+        "category": "protection",
+        "priority": "secondary",
+        "impact": "medium",
+        "summary": "Lolita protects Popol's backline position, allowing Popol and Kupa to maintain lane, objective, and trap pressure.",
+        "worksBestWhen": [
+          "Lolita stays near Popol during siege or objective contests.",
+          "Popol places traps before the enemy engages."
+        ],
+        "failureCases": [
+          "The enemy dives from behind Popol.",
+          "Lolita's defensive tool is forced before the real fight.",
+          "Popol overextends outside protection range."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "popol-and-kupa",
+    "synergyHeroId": "khufra",
+    "reasons": [
+      "Khufra gives Popol a durable frontline so Popol can keep attacking while Kupa follows up.",
+      "Khufra's control can chain with Kupa's pressure and trap-controlled zones."
+    ],
+    "synergyTypes": [
+      "frontline-enabler",
+      "peel",
+      "cc-chain"
+    ],
+    "proof": [
+      {
+        "id": "khufra-frontline-for-popol-kupa-control",
+        "category": "frontline-enabler",
+        "priority": "primary",
+        "impact": "medium",
+        "summary": "Khufra creates frontline space and CC disruption, letting Popol and Kupa safely convert trap control into damage.",
+        "worksBestWhen": [
+          "Popol sets traps around Khufra's engage path.",
+          "Kupa is available to follow up after Khufra starts."
+        ],
+        "failureCases": [
+          "Kupa is down or unavailable.",
+          "Popol is too far to attack after Khufra engages.",
+          "The enemy avoids the trapped zone."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "popol-and-kupa",
+    "synergyHeroId": "tigreal",
+    "reasons": [
+      "Tigreal can force enemies into controlled areas where Popol's traps and Kupa follow-up matter more.",
+      "Popol can damage safely after Tigreal starts the fight."
+    ],
+    "synergyTypes": [
+      "engage-follow-up",
+      "cc-chain",
+      "objective-control"
+    ],
+    "proof": [
+      {
+        "id": "tigreal-engage-into-popol-trap-zone",
+        "category": "engage-follow-up",
+        "priority": "secondary",
+        "impact": "medium",
+        "summary": "Tigreal starts the teamfight, while Popol and Kupa add trap control, Kupa pressure, and sustained ranged damage around the engage area.",
+        "worksBestWhen": [
+          "Popol pre-places traps near river, jungle entrance, or objective zones.",
+          "Tigreal engages toward Popol's side of the map."
+        ],
+        "failureCases": [
+          "Tigreal engages away from Popol's trap setup.",
+          "Popol cannot safely follow.",
+          "The enemy clears space before the objective fight starts."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "popol-and-kupa",
+    "synergyHeroId": "selena",
+    "reasons": [
+      "Popol's traps and Selena's vision tools can make enemy movement easier to read.",
+      "If one control tool catches the enemy, the other hero can help extend the pickoff window."
+    ],
+    "synergyTypes": [
+      "vision-setup",
+      "pickoff-combo",
+      "objective-control"
+    ],
+    "proof": [
+      {
+        "id": "popol-selena-layered-vision-pickoff",
+        "category": "vision-setup",
+        "priority": "condition",
+        "impact": "medium",
+        "summary": "Popol and Selena create layered map control, making bushes and jungle entrances harder for enemies to enter safely.",
+        "worksBestWhen": [
+          "Traps and vision tools are placed before the fight starts.",
+          "The team plays around the controlled zone instead of chasing randomly."
+        ],
+        "failureCases": [
+          "The enemy clears or avoids the controlled area.",
+          "The team has no follow-up damage after vision catches someone.",
+          "Selena and Popol overlap vision tools without controlling different paths."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "popol-and-kupa",
+    "synergyHeroId": "angela",
+    "reasons": [
+      "Angela can protect Popol during lane trades or skirmishes, helping him keep pressure while Kupa fights forward.",
+      "Heartguard can turn a close duel or gank around when Popol is the focus target."
+    ],
+    "synergyTypes": [
+      "shielding",
+      "protect",
+      "laning-synergy"
+    ],
+    "proof": [
+      {
+        "id": "angela-heartguard-for-popol-trades",
+        "category": "shielding",
+        "priority": "secondary",
+        "impact": "medium",
+        "summary": "Angela gives Popol extra shield and support during fights, helping him survive long enough for Kupa and ranged attacks to finish the trade.",
+        "worksBestWhen": [
+          "Angela saves Heartguard for real dive pressure.",
+          "Popol keeps Kupa available before committing to extended trades."
+        ],
+        "failureCases": [
+          "Angela attaches after Popol is already burst.",
+          "Popol is isolated too far from team follow-up.",
+          "Kupa is unavailable and Popol cannot pressure back."
+        ]
+      }
+    ]
+  }
+]

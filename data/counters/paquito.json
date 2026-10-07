@@ -1,0 +1,157 @@
+[
+  {
+    "targetHeroId": "paquito",
+    "counterHeroId": "barats",
+    "reasons": [
+      "Barats can survive Paquito's melee burst and punish Paquito's commitment.",
+      "Detona's Welcome gives Barats a direct suppression-style answer when Paquito enters too far."
+    ],
+    "counterTypes": [
+      "frontline",
+      "crowd-control-counter",
+      "anti-dive"
+    ],
+    "proof": [
+      {
+        "id": "barats-detona-welcome-vs-paquito-commit",
+        "category": "skill-interaction",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Paquito wants to dive into short range and chain combos, while Barats can absorb the entry and punish him with devour or suppression control.",
+        "worksBestWhen": [
+          "Barats has enough stacks and durability before Paquito commits.",
+          "Barats uses Detona's Welcome after Paquito enters."
+        ],
+        "failureCases": [
+          "Barats is kited before he can control Paquito.",
+          "Paquito baits the ultimate and disengages.",
+          "Barats lacks follow-up damage after the suppression."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "paquito",
+    "counterHeroId": "khufra",
+    "reasons": [
+      "Khufra directly punishes Paquito's dash-based entry.",
+      "Bouncing Ball can interrupt Paquito's rhythm and prevent him from freely chaining combos."
+    ],
+    "counterTypes": [
+      "anti-dash",
+      "anti-engage",
+      "crowd-control-counter"
+    ],
+    "proof": [
+      {
+        "id": "khufra-bouncing-ball-vs-paquito-dashes",
+        "category": "skill-interaction",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Paquito wants to dash in and chain burst, while Khufra can punish blink-style movement and stop the combo path.",
+        "worksBestWhen": [
+          "Khufra saves Bouncing Ball for Paquito's real entry.",
+          "Khufra positions near the target Paquito wants to dive."
+        ],
+        "failureCases": [
+          "Paquito baits Bouncing Ball first.",
+          "Khufra is controlled before he can block the dash.",
+          "Paquito fights after Khufra's anti-dash tool is unavailable."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "paquito",
+    "counterHeroId": "minsitthar",
+    "reasons": [
+      "Minsitthar can restrict Paquito's mobility inside King's Calling.",
+      "This reduces Paquito's freedom to chain dashes and reposition during a fight."
+    ],
+    "counterTypes": [
+      "anti-dash",
+      "anti-engage",
+      "teamfight"
+    ],
+    "proof": [
+      {
+        "id": "minsitthar-kings-calling-vs-paquito-combo",
+        "category": "skill-interaction",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Paquito wants repeated mobility and combo resets, while Minsitthar can force him to fight inside an anti-blink zone.",
+        "worksBestWhen": [
+          "Minsitthar casts after Paquito commits.",
+          "The team collapses while Paquito is trapped."
+        ],
+        "failureCases": [
+          "Paquito plays around the edge of the field.",
+          "Minsitthar casts too early.",
+          "Paquito's team disengages and re-enters later."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "paquito",
+    "counterHeroId": "obsidia",
+    "reasons": [
+      "Obsidia can punish mobile heroes by limiting dash or blink options with Hunt of Bone.",
+      "This is relevant against Paquito because he depends on skill movement to maintain pressure."
+    ],
+    "counterTypes": [
+      "anti-dash",
+      "burst",
+      "execution-dependent"
+    ],
+    "proof": [
+      {
+        "id": "obsidia-hunt-of-bone-vs-paquito-mobility",
+        "category": "skill-interaction",
+        "priority": "secondary",
+        "impact": "medium",
+        "summary": "Paquito wants to use mobility to enter, chase, or exit, while Obsidia can punish that mobility pattern when Hunt of Bone is timed correctly.",
+        "worksBestWhen": [
+          "Obsidia casts after Paquito starts his engage.",
+          "Paquito has no safe target to reset around."
+        ],
+        "failureCases": [
+          "Obsidia casts too early.",
+          "Paquito avoids the marked or punish window.",
+          "Obsidia is bursted before controlling the fight."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "paquito",
+    "counterHeroId": "kaja",
+    "reasons": [
+      "Kaja can suppress Paquito after he commits to a combo.",
+      "This prevents Paquito from finishing his chain or escaping after a short trade."
+    ],
+    "counterTypes": [
+      "pickoff",
+      "crowd-control-counter",
+      "anti-dive"
+    ],
+    "proof": [
+      {
+        "id": "kaja-divine-judgment-vs-paquito-combo-window",
+        "category": "crowd-control-counter",
+        "priority": "secondary",
+        "impact": "medium",
+        "summary": "Paquito wants fast burst windows, while Kaja can stop one key entry with suppression and force a pickoff.",
+        "worksBestWhen": [
+          "Kaja waits until Paquito commits.",
+          "Team has follow-up damage ready."
+        ],
+        "failureCases": [
+          "Paquito baits Divine Judgment.",
+          "Kaja cannot reach Paquito.",
+          "Paquito's team counter-engages after the pull."
+        ]
+      }
+    ]
+  }
+]

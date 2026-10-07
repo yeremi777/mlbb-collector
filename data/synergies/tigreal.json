@@ -1,0 +1,162 @@
+[
+  {
+    "anchorHeroId": "tigreal",
+    "synergyHeroId": "pharsa",
+    "reasons": [
+      "Pharsa can follow Tigreal's grouped crowd-control setup with long-range AoE burst.",
+      "Tigreal's frontline engage lets Pharsa deal damage from a safer backline angle."
+    ],
+    "synergyTypes": [
+      "teamfight-combo",
+      "engage-follow-up",
+      "aoe-follow-up"
+    ],
+    "proof": [
+      {
+        "id": "pharsa-airstrike-follows-tigreal-implosion",
+        "category": "engage-follow-up",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Tigreal groups and stuns enemies, while Pharsa follows from range with AoE burst into the controlled area.",
+        "worksBestWhen": [
+          "Tigreal catches multiple enemies.",
+          "Pharsa is positioned safely with ultimate ready.",
+          "The team has vision around the engage area."
+        ],
+        "failureCases": [
+          "Tigreal engages outside Pharsa's follow-up range.",
+          "Pharsa is forced to reposition before damage lands.",
+          "Enemies spread before Tigreal starts the fight."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "tigreal",
+    "synergyHeroId": "odette",
+    "reasons": [
+      "Odette can channel Swan Song after Tigreal groups enemies in one fight area.",
+      "Tigreal's setup increases the value of Odette's AoE damage during teamfights."
+    ],
+    "synergyTypes": [
+      "setup-combo",
+      "aoe-follow-up",
+      "teamfight-combo"
+    ],
+    "proof": [
+      {
+        "id": "odette-swan-song-follows-tigreal-group-engage",
+        "category": "setup-combo",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Tigreal creates the grouped engage, and Odette follows with Swan Song AoE damage while enemies are controlled or forced to stay nearby.",
+        "worksBestWhen": [
+          "Tigreal locks enemies before Odette commits.",
+          "Odette has protection from interruption.",
+          "The fight happens in a tight objective or chokepoint area."
+        ],
+        "failureCases": [
+          "Odette is interrupted during Swan Song.",
+          "Tigreal catches only one low-value enemy.",
+          "Enemies disengage before Odette enters."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "tigreal",
+    "synergyHeroId": "claude",
+    "reasons": [
+      "Claude can follow Tigreal's engage with Blazing Duet into enemies held close together.",
+      "Tigreal gives Claude a safer entry window by starting and absorbing the first layer of the fight."
+    ],
+    "synergyTypes": [
+      "engage-follow-up",
+      "aoe-follow-up",
+      "teamfight-combo"
+    ],
+    "proof": [
+      {
+        "id": "claude-blazing-duet-follows-tigreal-engage",
+        "category": "engage-follow-up",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Tigreal starts the grouped fight, and Claude enters after the setup to apply Blazing Duet damage around the controlled enemies.",
+        "worksBestWhen": [
+          "Claude waits until Tigreal confirms the engage.",
+          "Tigreal controls enemy peel before Claude enters.",
+          "Claude has enough items to convert the AoE window."
+        ],
+        "failureCases": [
+          "Claude enters before Tigreal lands control.",
+          "Enemy displacement pushes Claude out of damage range.",
+          "Tigreal engages too far from Claude's entry path."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "tigreal",
+    "synergyHeroId": "aurora",
+    "reasons": [
+      "Aurora can layer freeze and magic burst after Tigreal pulls enemies together.",
+      "The combined control gives the team a longer window to damage grouped targets."
+    ],
+    "synergyTypes": [
+      "cc-chain",
+      "teamfight-combo",
+      "setup-combo"
+    ],
+    "proof": [
+      {
+        "id": "aurora-freeze-chains-after-tigreal-engage",
+        "category": "crowd-control-chain",
+        "priority": "secondary",
+        "impact": "high",
+        "summary": "Tigreal groups the enemy team, and Aurora follows with freeze control plus AoE magic damage into the same cluster.",
+        "worksBestWhen": [
+          "Tigreal catches multiple enemies.",
+          "Aurora holds freeze or ultimate for the follow-up window.",
+          "Allies are ready to damage the frozen group."
+        ],
+        "failureCases": [
+          "Aurora casts before Tigreal confirms engage.",
+          "Enemies cleanse or disengage after the first control.",
+          "Targets are spread beyond Aurora's follow-up area."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "tigreal",
+    "synergyHeroId": "eudora",
+    "reasons": [
+      "Eudora can quickly burst a priority target that Tigreal has stunned or displaced.",
+      "Tigreal's control helps Eudora land her full combo on a target that would otherwise move away."
+    ],
+    "synergyTypes": [
+      "pickoff-combo",
+      "burst-follow-up",
+      "setup-combo"
+    ],
+    "proof": [
+      {
+        "id": "eudora-burst-follows-tigreal-control",
+        "category": "pickoff-combo",
+        "priority": "secondary",
+        "impact": "high",
+        "summary": "Tigreal locks a target in place, and Eudora follows with single-target magic burst during the control window.",
+        "worksBestWhen": [
+          "Tigreal catches a squishy mage or marksman.",
+          "Eudora is in range with combo cooldowns ready.",
+          "The team focuses the same priority target."
+        ],
+        "failureCases": [
+          "Tigreal catches a tanky target.",
+          "Eudora is out of range after the engage.",
+          "Enemy shield, magic defense, or peel keeps the target alive."
+        ]
+      }
+    ]
+  }
+]

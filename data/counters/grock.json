@@ -1,0 +1,152 @@
+[
+  {
+    "targetHeroId": "grock",
+    "counterHeroId": "karrie",
+    "reasons": [
+      "Karrie pressures Grock's durability with Max HP true damage instead of relying only on raw physical damage.",
+      "She can punish Grock when he fails to instantly reach the backline."
+    ],
+    "counterTypes": [
+      "tank-shred",
+      "true-damage",
+      "kiting"
+    ],
+    "proof": [
+      {
+        "id": "karrie-lightwheel-mark-vs-grock-frontline",
+        "category": "damage-type-advantage",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Grock is durable and wants to absorb pressure, while Karrie can stack Lightwheel Mark and cut through frontline durability with Max HP true damage.",
+        "worksBestWhen": [
+          "Karrie keeps safe spacing.",
+          "Karrie avoids being trapped by Grock's wall."
+        ],
+        "failureCases": [
+          "Grock blocks Karrie's retreat path.",
+          "Grock initiates with teammate follow-up before Karrie can stack damage."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "grock",
+    "counterHeroId": "dyrroth",
+    "reasons": [
+      "Dyrroth can punish Grock in direct skirmishes by reducing Physical Defense and forcing Grock to respect melee burst.",
+      "This is most useful before Grock controls the terrain setup."
+    ],
+    "counterTypes": [
+      "penetration",
+      "burst",
+      "anti-frontline"
+    ],
+    "proof": [
+      {
+        "id": "dyrroth-defense-reduction-vs-grock",
+        "category": "damage-type-advantage",
+        "priority": "secondary",
+        "impact": "medium",
+        "summary": "Grock is hard to burst through normal damage, while Dyrroth's defense-reduction pressure helps punish him in lane or small fights.",
+        "worksBestWhen": [
+          "Dyrroth fights before Grock has a clean wall angle.",
+          "Dyrroth has follow-up damage available."
+        ],
+        "failureCases": [
+          "Grock uses terrain and control-immunity timing to disengage.",
+          "Dyrroth fights inside Grock's team instead of isolating him."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "grock",
+    "counterHeroId": "valir",
+    "reasons": [
+      "Valir can push Grock back and slow his follow-up after Grock attempts to charge or zone.",
+      "Valir helps teammates reset when Grock tries to trap them with terrain."
+    ],
+    "counterTypes": [
+      "disengage",
+      "kiting",
+      "anti-engage"
+    ],
+    "proof": [
+      {
+        "id": "valir-searing-torrent-vs-grock-charge",
+        "category": "kiting",
+        "priority": "primary",
+        "impact": "medium",
+        "summary": "Grock wants to force enemies into awkward paths, while Valir can use pushback and slows to break the engage timing.",
+        "worksBestWhen": [
+          "Valir keeps distance from walls.",
+          "Valir saves Searing Torrent for Grock's approach."
+        ],
+        "failureCases": [
+          "Grock catches Valir from fog.",
+          "Grock blocks Valir's retreat before Valir can cast."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "grock",
+    "counterHeroId": "diggie",
+    "reasons": [
+      "Diggie can reduce Grock's engage value by giving nearby allies control immunity and shields during the commit window.",
+      "This is useful when Grock is paired with other crowd-control follow-up."
+    ],
+    "counterTypes": [
+      "anti-cc",
+      "cleanse",
+      "teamfight"
+    ],
+    "proof": [
+      {
+        "id": "diggie-time-journey-vs-grock-engage",
+        "category": "crowd-control-counter",
+        "priority": "primary",
+        "impact": "medium",
+        "summary": "Grock wants his wall and charge to start a decisive fight, while Diggie can protect allies during the control window.",
+        "worksBestWhen": [
+          "Diggie saves Time Journey for Grock's real engage.",
+          "Diggie stays near the teammates Grock wants to trap."
+        ],
+        "failureCases": [
+          "Grock baits Time Journey with wall pressure.",
+          "Grock re-engages after Diggie's ultimate expires."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "grock",
+    "counterHeroId": "lunox",
+    "reasons": [
+      "Lunox can threaten Grock with magic penetration and burst while having tools to avoid a bad engage.",
+      "She is more reliable when she does not have to walk into Grock's wall zone."
+    ],
+    "counterTypes": [
+      "penetration",
+      "burst",
+      "mobility"
+    ],
+    "proof": [
+      {
+        "id": "lunox-chaos-burst-vs-grock-durability",
+        "category": "damage-type-advantage",
+        "priority": "secondary",
+        "impact": "medium",
+        "summary": "Grock's durability makes normal burst less reliable, while Lunox's penetration and defensive or blink options give her a better way to trade.",
+        "worksBestWhen": [
+          "Lunox fights from mid-range.",
+          "Lunox waits out Grock's wall placement."
+        ],
+        "failureCases": [
+          "Grock traps Lunox before she enters the correct state.",
+          "Lunox is forced into Grock's teamfight zone."
+        ]
+      }
+    ]
+  }
+]

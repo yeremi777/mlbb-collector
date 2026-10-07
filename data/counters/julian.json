@@ -1,0 +1,155 @@
+[
+  {
+    "targetHeroId": "julian",
+    "counterHeroId": "minsitthar",
+    "reasons": [
+      "Minsitthar can restrict Julian's movement skill usage inside King's Calling.",
+      "Julian loses a lot of threat when he cannot freely dash into enhanced combo range."
+    ],
+    "counterTypes": [
+      "anti-dash",
+      "anti-engage",
+      "teamfight"
+    ],
+    "proof": [
+      {
+        "id": "minsitthar-kings-calling-vs-julian-combo",
+        "category": "skill-interaction",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Julian wants to use mobility and enhanced skills to enter and burst, while Minsitthar's field prevents movement skills and limits Julian's combo path.",
+        "worksBestWhen": [
+          "Minsitthar saves King's Calling for Julian's entry.",
+          "Julian is forced to fight inside the field."
+        ],
+        "failureCases": [
+          "Julian baits the ultimate then disengages.",
+          "Minsitthar casts after Julian has already completed his burst."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "julian",
+    "counterHeroId": "khufra",
+    "reasons": [
+      "Khufra punishes Julian's dash-based entry with Bouncing Ball.",
+      "He can protect backline allies by standing between Julian and his target."
+    ],
+    "counterTypes": [
+      "anti-dash",
+      "anti-engage",
+      "frontline"
+    ],
+    "proof": [
+      {
+        "id": "khufra-bouncing-ball-vs-julian-dash",
+        "category": "skill-interaction",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Julian wants to close distance for enhanced combos, while Khufra's Bouncing Ball knocks up enemies trying to blink across him.",
+        "worksBestWhen": [
+          "Khufra predicts Julian's engage path.",
+          "Backline allies stay behind Khufra's anti-dash zone."
+        ],
+        "failureCases": [
+          "Julian attacks from a side angle.",
+          "Khufra uses Bouncing Ball too early."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "julian",
+    "counterHeroId": "kaja",
+    "reasons": [
+      "Kaja can suppress Julian before the enhanced combo lands.",
+      "Dragging Julian out of formation makes his burst setup much less reliable."
+    ],
+    "counterTypes": [
+      "suppression",
+      "pickoff",
+      "anti-dive"
+    ],
+    "proof": [
+      {
+        "id": "kaja-divine-judgment-vs-julian-combo",
+        "category": "crowd-control-counter",
+        "priority": "primary",
+        "impact": "medium",
+        "summary": "Julian wants a clean combo chain, while Kaja can interrupt the timing with suppression and reposition him away from his target.",
+        "worksBestWhen": [
+          "Kaja waits until Julian commits.",
+          "The team bursts Julian during Divine Judgment."
+        ],
+        "failureCases": [
+          "Julian stays outside Kaja's range.",
+          "Kaja uses suppression on a lower-priority target."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "julian",
+    "counterHeroId": "franco",
+    "reasons": [
+      "Franco can stop Julian before he completes his enhanced skill cycle.",
+      "A suppressed Julian cannot freely reset spacing or finish his combo."
+    ],
+    "counterTypes": [
+      "suppression",
+      "pickoff",
+      "cooldown-punish"
+    ],
+    "proof": [
+      {
+        "id": "franco-bloody-hunt-vs-julian-combo-cycle",
+        "category": "crowd-control-counter",
+        "priority": "secondary",
+        "impact": "medium",
+        "summary": "Julian depends on sequential skill timing, while Franco can suppress him during the engage window and let teammates punish his cooldown cycle.",
+        "worksBestWhen": [
+          "Franco holds ultimate for Julian's dive.",
+          "Franco's team focuses Julian immediately."
+        ],
+        "failureCases": [
+          "Julian pokes safely and waits for Franco to miss hook.",
+          "Franco cannot reach Julian before the burst is completed."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "julian",
+    "counterHeroId": "obsidia",
+    "reasons": [
+      "Obsidia can punish Julian's mobility-based combo if Hunt of Bone hits, because the tether prevents displacement skills during the effect.",
+      "Julian becomes more punishable when his enhanced Sword movement or escape route is denied after committing forward."
+    ],
+    "counterTypes": [
+      "anti-dash",
+      "pickoff",
+      "burst",
+      "execution-dependent"
+    ],
+    "proof": [
+      {
+        "id": "obsidia-hunt-of-bone-vs-julian-displacement",
+        "category": "skill-interaction",
+        "priority": "primary",
+        "impact": "medium",
+        "summary": "Julian wants to chain skills into an enhanced combo and use enhanced Sword movement to enter, dodge, or escape, while Obsidia's Hunt of Bone can tether him and prevent displacement skills during the punish window.",
+        "worksBestWhen": [
+          "Obsidia waits until Julian commits before casting Hunt of Bone.",
+          "Julian has already used part of his combo and cannot immediately burst Obsidia.",
+          "Obsidia has enough damage or teammate follow-up during the tether."
+        ],
+        "failureCases": [
+          "Obsidia misses Hunt of Bone.",
+          "Julian bursts Obsidia before the tether creates value.",
+          "Julian plays outside Obsidia's ultimate range or uses non-displacement combo paths."
+        ]
+      }
+    ]
+  }
+]

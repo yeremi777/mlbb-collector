@@ -1,0 +1,157 @@
+[
+  {
+    "anchorHeroId": "aamon",
+    "synergyHeroId": "kaja",
+    "reasons": [
+      "Kaja can isolate a priority target for Aamon's shard burst.",
+      "Aamon can follow Kaja's catch with fast magic damage before the target can reposition."
+    ],
+    "synergyTypes": [
+      "pickoff-combo",
+      "burst-follow-up",
+      "cc-chain"
+    ],
+    "proof": [
+      {
+        "id": "aamon-shard-burst-after-kaja-lock",
+        "category": "pickoff-combo",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Kaja confirms the target, and Aamon uses the controlled window to unload burst safely.",
+        "worksBestWhen": [
+          "Kaja catches a squishy or low-health target.",
+          "Aamon has enough shards or ultimate ready."
+        ],
+        "failureCases": [
+          "Kaja catches a tank.",
+          "Aamon enters without enough burst setup.",
+          "Enemy peel saves the target after the control window."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "aamon",
+    "synergyHeroId": "franco",
+    "reasons": [
+      "Franco can create a single-target catch that gives Aamon a clear burst target.",
+      "Aamon's burst pattern fits after a hook or suppression because the target has less room to dodge."
+    ],
+    "synergyTypes": [
+      "pickoff-combo",
+      "burst-follow-up",
+      "execution-dependent"
+    ],
+    "proof": [
+      {
+        "id": "aamon-burst-after-franco-catch",
+        "category": "pickoff-combo",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Franco catches one target, and Aamon follows with shard burst to finish the pick.",
+        "worksBestWhen": [
+          "Franco catches a priority target near Aamon.",
+          "Aamon waits until the catch is confirmed before revealing."
+        ],
+        "failureCases": [
+          "Franco hooks a frontline tank.",
+          "Aamon reveals too early and gets zoned.",
+          "The enemy team collapses on Aamon after the pick attempt."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "aamon",
+    "synergyHeroId": "selena",
+    "reasons": [
+      "Selena can provide trap vision and long-range catch information for Aamon's approach path.",
+      "Aamon benefits from entering after a target is already revealed, stunned, or slowed."
+    ],
+    "synergyTypes": [
+      "vision-setup",
+      "pickoff-combo",
+      "burst-follow-up"
+    ],
+    "proof": [
+      {
+        "id": "aamon-pickoff-after-selena-vision-catch",
+        "category": "vision-setup",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Selena helps find or catch a target, and Aamon uses the confirmed information to enter for burst.",
+        "worksBestWhen": [
+          "Selena controls bushes and river paths before Aamon rotates.",
+          "Aamon waits for trap vision or long-range catch before committing."
+        ],
+        "failureCases": [
+          "Selena misses the setup.",
+          "Aamon commits without vision.",
+          "Enemy support clears traps and protects the target."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "aamon",
+    "synergyHeroId": "mathilda",
+    "reasons": [
+      "Mathilda can help Aamon enter or exit after he commits to a target.",
+      "Her shield reduces the risk of Aamon being punished during re-entry."
+    ],
+    "synergyTypes": [
+      "mobility-enable",
+      "shielding",
+      "dive-support"
+    ],
+    "proof": [
+      {
+        "id": "aamon-pickoff-safety-with-mathilda",
+        "category": "mobility-enabler",
+        "priority": "secondary",
+        "impact": "medium",
+        "summary": "Mathilda gives Aamon extra movement and shield support, improving his pickoff safety.",
+        "worksBestWhen": [
+          "Mathilda saves Guiding Wind for Aamon's commit or escape.",
+          "Aamon has shards ready before using the movement support."
+        ],
+        "failureCases": [
+          "Aamon uses the mobility before damage is ready.",
+          "Mathilda is too far to support.",
+          "Enemy hard crowd control catches Aamon after he reveals."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "aamon",
+    "synergyHeroId": "floryn",
+    "reasons": [
+      "Floryn can support Aamon globally when he dives away from the main team.",
+      "Aamon benefits from emergency healing because he often commits into risky burst windows."
+    ],
+    "synergyTypes": [
+      "healing-sustain",
+      "dive-support",
+      "cooldown-dependent"
+    ],
+    "proof": [
+      {
+        "id": "aamon-remote-sustain-with-floryn",
+        "category": "healing-sustain",
+        "priority": "secondary",
+        "impact": "medium",
+        "summary": "Floryn gives Aamon remote sustain support, helping him survive after entering for a pickoff.",
+        "worksBestWhen": [
+          "Floryn saves her team heal for Aamon's real assassination or escape window.",
+          "Aamon does not overcommit after receiving the heal."
+        ],
+        "failureCases": [
+          "Aamon is chain-controlled before healing matters.",
+          "Floryn uses ultimate before Aamon commits.",
+          "Enemy reveal and burst punish Aamon immediately."
+        ]
+      }
+    ]
+  }
+]

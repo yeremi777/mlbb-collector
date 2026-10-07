@@ -1,0 +1,162 @@
+[
+  {
+    "targetHeroId": "aamon",
+    "counterHeroId": "ruby",
+    "reasons": [
+      "Ruby can punish Aamon when he exits camouflage or commits into close range by using wide-area crowd control.",
+      "Her sustain and control make it harder for Aamon to complete a clean burst-and-reset pattern.",
+      "Ruby is valuable near the backline because she can hold control skills for Aamon's reveal or re-entry window."
+    ],
+    "counterTypes": [
+      "crowd-control-counter",
+      "anti-assassin",
+      "sustain-anti-sustain"
+    ],
+    "proof": [
+      {
+        "id": "ruby-aoe-control-vs-aamon-reveal-window",
+        "category": "skill-interaction",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Aamon wants to approach unseen, appear for burst, then reset with camouflage. Ruby can stay near the target Aamon wants to kill and punish his visible commitment window with AoE crowd control and sustain.",
+        "worksBestWhen": [
+          "Ruby holds Don't Run, Wolf King! for Aamon's entry.",
+          "Ruby stays near the ally Aamon wants to execute.",
+          "Ruby waits for Aamon to become visible or commit before spending control."
+        ],
+        "failureCases": [
+          "Ruby uses her control before Aamon commits.",
+          "Aamon waits for Ruby's cooldowns before entering.",
+          "Aamon targets a different isolated hero away from Ruby's protection range."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "aamon",
+    "counterHeroId": "x.borg",
+    "reasons": [
+      "X.Borg's Firaga Armor reduces the risk of being instantly killed by Aamon's burst.",
+      "His area pressure can make Aamon's close approach less safe.",
+      "X.Borg can contest Aamon's commit window without relying on fragile all-in burst."
+    ],
+    "counterTypes": [
+      "frontline",
+      "true-damage",
+      "anti-burst"
+    ],
+    "proof": [
+      {
+        "id": "xborg-firaga-armor-vs-aamon-burst",
+        "category": "sustain-anti-sustain",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Aamon wants quick magic burst and reset, while X.Borg's Firaga Armor gives him a buffer against instant execution and lets him punish close-range entry.",
+        "worksBestWhen": [
+          "X.Borg has Firaga Armor before Aamon commits.",
+          "X.Borg uses area pressure around Aamon's likely entry path."
+        ],
+        "failureCases": [
+          "X.Borg loses Firaga Armor before Aamon engages.",
+          "Aamon waits until X.Borg is low.",
+          "X.Borg cannot reveal or pressure Aamon's path."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "aamon",
+    "counterHeroId": "saber",
+    "reasons": [
+      "Saber can punish Aamon when Aamon becomes visible to commit.",
+      "Targeted burst is useful against assassins that rely on reset timing."
+    ],
+    "counterTypes": [
+      "burst",
+      "pickoff",
+      "cooldown-punish"
+    ],
+    "proof": [
+      {
+        "id": "saber-burst-vs-aamon-visible-commit",
+        "category": "cooldown-window",
+        "priority": "primary",
+        "impact": "medium",
+        "summary": "Aamon wants to choose his visible burst window, while Saber can punish that same window with targeted lock-burst.",
+        "worksBestWhen": [
+          "Saber waits until Aamon appears or commits.",
+          "Saber has enough burst to finish quickly."
+        ],
+        "failureCases": [
+          "Aamon baits Saber's ultimate.",
+          "Saber cannot locate Aamon.",
+          "Saber dives without vision or follow-up."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "aamon",
+    "counterHeroId": "kaja",
+    "reasons": [
+      "Kaja can suppress Aamon during his visible commit window.",
+      "This prevents Aamon from completing burst and resetting."
+    ],
+    "counterTypes": [
+      "pickoff",
+      "crowd-control-counter",
+      "anti-assassin"
+    ],
+    "proof": [
+      {
+        "id": "kaja-suppression-vs-aamon-commit-window",
+        "category": "crowd-control-counter",
+        "priority": "secondary",
+        "impact": "medium",
+        "summary": "Aamon wants short burst and escape timing, while Kaja can suppress him and force a team pickoff.",
+        "worksBestWhen": [
+          "Kaja waits for Aamon's entry.",
+          "Team saves burst for the suppressed target."
+        ],
+        "failureCases": [
+          "Aamon stays outside Kaja's range.",
+          "Kaja uses ultimate on another target.",
+          "Aamon's team counter-engages after the pull."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "aamon",
+    "counterHeroId": "selena",
+    "reasons": [
+      "Selena can control Aamon's common flank paths with Abyssal Traps, making his hidden approach less reliable.",
+      "Trap vision and control help the team prepare before Aamon reaches execute range.",
+      "Selena's pickoff threat also punishes Aamon if he rotates through predictable jungle or river paths."
+    ],
+    "counterTypes": [
+      "vision-control",
+      "pickoff",
+      "map-control"
+    ],
+    "proof": [
+      {
+        "id": "selena-trap-control-vs-aamon-flank-paths",
+        "category": "vision-awareness",
+        "priority": "condition",
+        "impact": "medium",
+        "summary": "Aamon depends on hidden approach routes and surprise burst. Selena can place traps around jungle entrances, river bushes, and objective paths to reveal or control his approach before he reaches the backline.",
+        "worksBestWhen": [
+          "Selena traps jungle entrances and flank bushes.",
+          "Team reacts when Aamon's path is revealed.",
+          "Selena places traps before objective fights and vulnerable rotations."
+        ],
+        "failureCases": [
+          "Aamon avoids trapped routes.",
+          "Selena places traps too shallow or too late.",
+          "The team does not react when Aamon's path is revealed."
+        ]
+      }
+    ]
+  }
+]

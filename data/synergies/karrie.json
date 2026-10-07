@@ -1,0 +1,157 @@
+[
+  {
+    "anchorHeroId": "karrie",
+    "synergyHeroId": "lolita",
+    "reasons": [
+      "Lolita can block ranged pressure and protect Karrie while Karrie repeatedly attacks frontline targets.",
+      "Karrie gains more time to stack Lightwheel Mark when Lolita creates a safer backline damage pocket."
+    ],
+    "synergyTypes": [
+      "protect",
+      "backline-protection",
+      "shielding"
+    ],
+    "proof": [
+      {
+        "id": "lolita-protects-karrie-attack-uptime",
+        "category": "protection",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Karrie needs sustained uptime, while Lolita reduces incoming ranged/projectile pressure and creates safer spacing.",
+        "worksBestWhen": [
+          "Lolita stands between Karrie and enemy poke.",
+          "Karrie attacks from behind the frontline."
+        ],
+        "failureCases": [
+          "Enemy assassins flank around Lolita.",
+          "Lolita's shield is baited early.",
+          "Karrie walks forward without peel."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "karrie",
+    "synergyHeroId": "minotaur",
+    "reasons": [
+      "Minotaur gives Karrie a frontline and healing/control layer, helping her keep attacking during extended fights.",
+      "Karrie can deal sustained tank-shred damage while Minotaur absorbs pressure and disrupts divers."
+    ],
+    "synergyTypes": [
+      "frontline-enabler",
+      "healing-sustain",
+      "peel"
+    ],
+    "proof": [
+      {
+        "id": "minotaur-frontline-enables-karrie-uptime",
+        "category": "frontline-enabler",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Minotaur absorbs pressure and disrupts enemies, while Karrie deals sustained tank-shred damage from behind him.",
+        "worksBestWhen": [
+          "Minotaur controls divers before they reach Karrie.",
+          "Karrie positions behind the frontline."
+        ],
+        "failureCases": [
+          "Minotaur engages too far away.",
+          "Karrie is flanked before Minotaur can peel.",
+          "Enemy burst kills Karrie before the fight extends."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "karrie",
+    "synergyHeroId": "tigreal",
+    "reasons": [
+      "Tigreal can start fights for Karrie to follow or peel divers away so she keeps attacking.",
+      "Karrie can convert Tigreal's crowd control into sustained basic-attack damage."
+    ],
+    "synergyTypes": [
+      "peel",
+      "engage-follow-up",
+      "teamfight-combo"
+    ],
+    "proof": [
+      {
+        "id": "tigreal-control-protects-karrie-uptime",
+        "category": "peel",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Tigreal controls enemy movement with displacement and airborne effects, while Karrie converts the space into sustained basic-attack damage.",
+        "worksBestWhen": [
+          "Tigreal saves control for divers or grouped enemies.",
+          "Karrie does not overstep before the engage."
+        ],
+        "failureCases": [
+          "Tigreal engages too far from Karrie.",
+          "Karrie is caught before Tigreal can peel.",
+          "The enemy splits the fight and attacks Karrie from multiple angles."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "karrie",
+    "synergyHeroId": "estes",
+    "reasons": [
+      "Estes helps Karrie survive extended fights, which gives her more time to stack marks and deal sustained damage.",
+      "Karrie can stay near the frontline formation while Estes sustains her and nearby teammates."
+    ],
+    "synergyTypes": [
+      "healing-sustain",
+      "protect",
+      "teamfight-combo"
+    ],
+    "proof": [
+      {
+        "id": "estes-sustains-karrie-extended-fight",
+        "category": "healing-sustain",
+        "priority": "secondary",
+        "impact": "medium",
+        "summary": "Estes keeps Karrie and the frontline healthy, while Karrie uses the extended fight duration to stack Lightwheel Mark.",
+        "worksBestWhen": [
+          "Karrie stays within healing range.",
+          "The team groups around Estes instead of taking scattered fights."
+        ],
+        "failureCases": [
+          "Karrie is isolated from Estes.",
+          "The enemy applies anti-heal.",
+          "The enemy bursts Karrie before healing can matter."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "karrie",
+    "synergyHeroId": "angela",
+    "reasons": [
+      "Angela can protect Karrie during high-pressure moments when enemy divers try to stop her attack uptime.",
+      "Karrie can keep attacking through a danger window when Angela adds shield and healing support."
+    ],
+    "synergyTypes": [
+      "shielding",
+      "protect",
+      "mobility-enable"
+    ],
+    "proof": [
+      {
+        "id": "angela-protects-karrie-dive-pressure",
+        "category": "shielding",
+        "priority": "secondary",
+        "impact": "medium",
+        "summary": "Karrie needs to survive long enough to stack marks, while Angela adds shield and heal support during dive pressure or chase.",
+        "worksBestWhen": [
+          "Angela saves Heartguard for the enemy dive.",
+          "Karrie has already reached a meaningful damage stage."
+        ],
+        "failureCases": [
+          "Angela attaches too late.",
+          "The enemy chain-controls Karrie through the support window.",
+          "Karrie is too far from the rest of the team after Angela commits."
+        ]
+      }
+    ]
+  }
+]

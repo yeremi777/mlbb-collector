@@ -1,0 +1,152 @@
+[
+  {
+    "targetHeroId": "jawhead",
+    "counterHeroId": "diggie",
+    "reasons": [
+      "Diggie can reduce the value of Jawhead's pickoff plan by protecting allies during the throw-and-stun window.",
+      "Jawhead becomes less reliable when his first target does not stay controlled long enough for follow-up damage."
+    ],
+    "counterTypes": [
+      "anti-cc",
+      "protect",
+      "teamfight"
+    ],
+    "proof": [
+      {
+        "id": "diggie-protect-vs-jawhead-ejector-pick",
+        "category": "teamfight-role-counter",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Jawhead wants to isolate one target with Ejector and follow-up control; Diggie can protect the target and lower the value of the pick.",
+        "worksBestWhen": [
+          "Diggie saves his protection for Jawhead's real engage.",
+          "Allies stay close enough to receive protection."
+        ],
+        "failureCases": [
+          "Jawhead throws Diggie first.",
+          "Jawhead baits Diggie's protection before committing ultimate."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "jawhead",
+    "counterHeroId": "valir",
+    "reasons": [
+      "Valir's knockback and self-cleanse tools make it harder for Jawhead to finish direct engage.",
+      "Valir can zone Jawhead before Jawhead gets a clean throw angle."
+    ],
+    "counterTypes": [
+      "disengage",
+      "anti-engage",
+      "anti-cc"
+    ],
+    "proof": [
+      {
+        "id": "valir-disengage-vs-jawhead-ejector",
+        "category": "skill-interaction",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Jawhead needs close access for Ejector; Valir can push him away and use defensive timing to deny or survive the engage.",
+        "worksBestWhen": [
+          "Valir keeps distance and saves knockback for Jawhead's entry.",
+          "Valir does not waste his defensive ultimate before the real engage."
+        ],
+        "failureCases": [
+          "Jawhead catches Valir from fog before he can react.",
+          "Jawhead targets another ally instead of Valir."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "jawhead",
+    "counterHeroId": "kaja",
+    "reasons": [
+      "Kaja can punish Jawhead after Jawhead commits into the team.",
+      "Direct lockdown makes Jawhead's dive risky if he cannot instantly secure the pick."
+    ],
+    "counterTypes": [
+      "pickoff",
+      "crowd-control-counter",
+      "cooldown-punish"
+    ],
+    "proof": [
+      {
+        "id": "kaja-lockdown-vs-jawhead-commit",
+        "category": "cooldown-window",
+        "priority": "primary",
+        "impact": "medium",
+        "summary": "Jawhead's engage is strongest during Ejector or ultimate timing; Kaja can hold lockdown for the moment Jawhead loses his safe entry window.",
+        "worksBestWhen": [
+          "Kaja waits until Jawhead commits rather than starting first.",
+          "The team bursts Jawhead during the lockdown."
+        ],
+        "failureCases": [
+          "Jawhead's team follows faster than Kaja's team can punish.",
+          "Kaja is thrown before he can use lockdown."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "jawhead",
+    "counterHeroId": "franco",
+    "reasons": [
+      "Franco can punish Jawhead's predictable engage route with hook or lockdown.",
+      "If Jawhead is caught before Ejector timing, his pickoff pressure drops heavily."
+    ],
+    "counterTypes": [
+      "pickoff",
+      "cooldown-punish",
+      "crowd-control-counter"
+    ],
+    "proof": [
+      {
+        "id": "franco-pickoff-vs-jawhead-engage-route",
+        "category": "positioning-requirement",
+        "priority": "primary",
+        "impact": "medium",
+        "summary": "Jawhead wants to choose the first target; Franco can reverse that plan by catching Jawhead before the throw setup.",
+        "worksBestWhen": [
+          "Franco controls bush vision around turtle, lord, and mid lane.",
+          "Franco saves lockdown for Jawhead or the hero Jawhead wants to deliver."
+        ],
+        "failureCases": [
+          "Franco misses hook and Jawhead immediately engages.",
+          "Jawhead uses minion or tank bodies to block hook threat."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "jawhead",
+    "counterHeroId": "martis",
+    "reasons": [
+      "Martis can contest Jawhead in close skirmishes and resist many control attempts during Mortal Coil.",
+      "His damage reduction and control immunity can make Jawhead's short burst window less reliable."
+    ],
+    "counterTypes": [
+      "control-immunity",
+      "frontline",
+      "skirmish"
+    ],
+    "proof": [
+      {
+        "id": "martis-mortal-coil-vs-jawhead-control-window",
+        "category": "crowd-control-counter",
+        "priority": "condition",
+        "impact": "medium",
+        "summary": "Jawhead wants short control windows, while Martis can use Mortal Coil's control immunity and damage reduction to survive or reverse close fights.",
+        "worksBestWhen": [
+          "Martis times Mortal Coil into Jawhead's engage window.",
+          "Martis has nearby allies to punish Jawhead after the throw attempt."
+        ],
+        "failureCases": [
+          "Martis uses Mortal Coil too early.",
+          "Jawhead isolates a different backline target instead of fighting Martis."
+        ]
+      }
+    ]
+  }
+]

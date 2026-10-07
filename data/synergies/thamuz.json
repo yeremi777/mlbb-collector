@@ -1,0 +1,152 @@
+[
+  {
+    "anchorHeroId": "thamuz",
+    "synergyHeroId": "estes",
+    "reasons": [
+      "Estes extends Thamuz's frontline uptime, letting Thamuz stay inside long fights.",
+      "Thamuz naturally wants repeated trades, so sustained healing directly supports his fight pattern."
+    ],
+    "synergyTypes": [
+      "healing-sustain",
+      "frontline-enabler",
+      "teamfight-combo"
+    ],
+    "proof": [
+      {
+        "id": "thamuz-estes-extended-frontline-healing",
+        "category": "healing-sustain",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Thamuz wants to remain in melee range for extended damage, while Estes helps keep him alive through repeated healing.",
+        "worksBestWhen": [
+          "Estes stays close enough to maintain healing links.",
+          "Thamuz fights within team range instead of chasing too far alone."
+        ],
+        "failureCases": [
+          "Thamuz overextends outside Estes's support range.",
+          "Enemy anti-heal and burst damage cut through the sustain plan."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "thamuz",
+    "synergyHeroId": "angela",
+    "reasons": [
+      "Angela can attach to Thamuz when he commits, giving him shield and support during deep frontline trades.",
+      "Angela's movement and slow support help Thamuz stay close to targets during extended fights."
+    ],
+    "synergyTypes": [
+      "shielding",
+      "healing-sustain",
+      "dive-support"
+    ],
+    "proof": [
+      {
+        "id": "thamuz-angela-commit-window-shield",
+        "category": "shielding",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Angela adds protection to Thamuz's commit window, making his extended brawl harder to punish.",
+        "worksBestWhen": [
+          "Angela attaches as Thamuz starts the real engage.",
+          "Thamuz uses the support to pressure priority targets, not only tanks."
+        ],
+        "failureCases": [
+          "Angela attaches after Thamuz has already lost too much HP.",
+          "Enemy disengage prevents Thamuz from staying in melee range."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "thamuz",
+    "synergyHeroId": "floryn",
+    "reasons": [
+      "Floryn can support Thamuz during side-lane or jungle skirmishes without needing to stand beside him.",
+      "Global healing gives Thamuz another sustain layer when he commits into long fights."
+    ],
+    "synergyTypes": [
+      "healing-sustain",
+      "protect",
+      "game-phase"
+    ],
+    "proof": [
+      {
+        "id": "thamuz-floryn-global-heal-brawl-reset",
+        "category": "healing-sustain",
+        "priority": "primary",
+        "impact": "medium",
+        "summary": "Thamuz can fight far from the backline, and Floryn's global heal helps cover that distance problem.",
+        "worksBestWhen": [
+          "Floryn times Bloom for Thamuz's all-in or low-health brawl.",
+          "Thamuz uses the heal to reset the fight instead of chasing into isolated danger."
+        ],
+        "failureCases": [
+          "Thamuz is controlled and burst before the heal can change the fight.",
+          "Anti-heal reduces the sustain value."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "thamuz",
+    "synergyHeroId": "hylos",
+    "reasons": [
+      "Hylos's path can speed up Thamuz's engage and slow enemies, helping Thamuz stay close enough to fight.",
+      "Double frontline pressure creates space for Thamuz to brawl without being isolated."
+    ],
+    "synergyTypes": [
+      "mobility-enable",
+      "frontline-enabler",
+      "teamfight-combo"
+    ],
+    "proof": [
+      {
+        "id": "thamuz-hylos-pathway-chase-enable",
+        "category": "mobility-enabler",
+        "priority": "primary",
+        "impact": "medium",
+        "summary": "Hylos improves Thamuz's approach and chase pattern, making Thamuz's sustained melee pressure easier to apply.",
+        "worksBestWhen": [
+          "Hylos places the path toward the fight or objective.",
+          "Thamuz follows the path timing instead of entering before the team is ready."
+        ],
+        "failureCases": [
+          "Enemy disengage avoids the path direction.",
+          "Hylos and Thamuz both commit without backline follow-up."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "thamuz",
+    "synergyHeroId": "faramis",
+    "reasons": [
+      "Faramis lets Thamuz commit harder in teamfights because Nether Realm gives extra survival value.",
+      "Thamuz can keep pressuring enemies during the protection window instead of immediately retreating."
+    ],
+    "synergyTypes": [
+      "protection",
+      "teamfight-combo",
+      "frontline-enabler"
+    ],
+    "proof": [
+      {
+        "id": "thamuz-faramis-nether-realm-frontline-insurance",
+        "category": "protection",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Thamuz wants to stay inside the fight, and Faramis can protect that commit with teamfight survival utility.",
+        "worksBestWhen": [
+          "Faramis uses Nether Realm before Thamuz is finished by burst.",
+          "Thamuz keeps fighting near teammates who can also use the protection window."
+        ],
+        "failureCases": [
+          "Thamuz dives outside Nether Realm value.",
+          "Enemy waits out the protection window before re-engaging."
+        ]
+      }
+    ]
+  }
+]

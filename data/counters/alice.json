@@ -1,0 +1,157 @@
+[
+  {
+    "targetHeroId": "alice",
+    "counterHeroId": "baxia",
+    "reasons": [
+      "Baxia directly reduces Alice's HP regeneration and sustain value."
+    ],
+    "counterTypes": [
+      "anti-sustain",
+      "anti-heal",
+      "frontline"
+    ],
+    "proof": [
+      {
+        "id": "baxia-anti-regen-vs-alice-sustain",
+        "category": "sustain-anti-sustain",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Alice depends heavily on HP regeneration and long sustain fights, while Baxia directly reduces enemy shield and HP regen effects.",
+        "worksBestWhen": [
+          "Baxia applies his skills during Alice's sustain window.",
+          "Baxia stays close enough to keep pressure on Alice.",
+          "Team follows up while Alice's healing is reduced."
+        ],
+        "failureCases": [
+          "Baxia cannot reach Alice.",
+          "Alice avoids Baxia and dives the backline.",
+          "Baxia's team does not follow up."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "alice",
+    "counterHeroId": "karrie",
+    "reasons": [
+      "Karrie can repeatedly damage Alice's high-HP sustain build with Max HP-based true damage."
+    ],
+    "counterTypes": [
+      "true-damage",
+      "max-hp-damage",
+      "tank-shred"
+    ],
+    "proof": [
+      {
+        "id": "karrie-true-damage-vs-alice-hp-sustain",
+        "category": "damage-type-advantage",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Alice becomes durable through HP and sustain, while Karrie can repeatedly deal Max HP-based true damage from safe distance.",
+        "worksBestWhen": [
+          "Karrie has core attack-speed items.",
+          "Karrie attacks from safe distance.",
+          "Team applies anti-heal or crowd control together with Karrie's DPS."
+        ],
+        "failureCases": [
+          "Alice dives Karrie directly.",
+          "Karrie is underfarmed.",
+          "Alice's team zones Karrie away."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "alice",
+    "counterHeroId": "lunox",
+    "reasons": [
+      "Lunox can burst durable heroes with magic penetration before Alice drains a long fight."
+    ],
+    "counterTypes": [
+      "penetration",
+      "burst",
+      "mobility"
+    ],
+    "proof": [
+      {
+        "id": "lunox-penetration-vs-alice-sustain-fight",
+        "category": "damage-type-advantage",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Alice wants extended drain fights, while Lunox can use high magic penetration and burst to damage durable heroes before sustain takes over.",
+        "worksBestWhen": [
+          "Lunox bursts Alice before long sustain happens.",
+          "Lunox uses escape timing correctly.",
+          "Alice is forced to commit forward."
+        ],
+        "failureCases": [
+          "Alice survives the first burst.",
+          "Lunox is caught after using escape.",
+          "Lunox lacks item power."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "alice",
+    "counterHeroId": "alpha",
+    "reasons": [
+      "Alpha's repeated true damage can pressure Alice's durability in extended fights."
+    ],
+    "counterTypes": [
+      "true-damage",
+      "anti-durable",
+      "sustain-fighter"
+    ],
+    "proof": [
+      {
+        "id": "alpha-beta-true-damage-vs-alice-durability",
+        "category": "damage-type-advantage",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Alice is durable in long fights, while Alpha can repeatedly trigger true damage to pressure durable heroes and contest sustain with support.",
+        "worksBestWhen": [
+          "Alpha repeatedly triggers Beta true damage.",
+          "Alpha fights with anti-heal support or item.",
+          "Alice is controlled or slowed during the fight."
+        ],
+        "failureCases": [
+          "Alice out-sustains Alpha.",
+          "Alpha misses skills.",
+          "Alice fights with multiple targets around her."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "alice",
+    "counterHeroId": "valir",
+    "reasons": [
+      "Valir can push, slow, and disengage Alice before she drains grouped enemies."
+    ],
+    "counterTypes": [
+      "disengage",
+      "kiting",
+      "anti-close-range"
+    ],
+    "proof": [
+      {
+        "id": "valir-disengage-vs-alice-drain-fight",
+        "category": "kiting",
+        "priority": "primary",
+        "impact": "medium",
+        "summary": "Alice wants to stay close and drain grouped enemies, while Valir can push, slow, and disengage her from the teamfight.",
+        "worksBestWhen": [
+          "Valir saves knockback for Alice's dive.",
+          "Team spreads out instead of grouping.",
+          "Anti-heal is also applied."
+        ],
+        "failureCases": [
+          "Alice flanks Valir.",
+          "Valir wastes knockback early.",
+          "Team groups inside Alice's AoE."
+        ]
+      }
+    ]
+  }
+]

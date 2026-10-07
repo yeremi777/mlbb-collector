@@ -1,0 +1,152 @@
+[
+  {
+    "targetHeroId": "clint",
+    "counterHeroId": "lolita",
+    "reasons": [
+      "Lolita can reduce Clint's front-facing poke value by reflecting ranged basic attacks and projectiles.",
+      "Clint relies on repeated enhanced basic attacks after skill casts, which gives Lolita clear shield timing."
+    ],
+    "counterTypes": [
+      "protect",
+      "anti-engage",
+      "teamfight"
+    ],
+    "proof": [
+      {
+        "id": "lolita-guardian-reflection-vs-clint-double-shot",
+        "category": "skill-interaction",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Clint wants to convert skill casts into long-range enhanced basic attacks, while Lolita can reflect that pressure from the shield direction.",
+        "worksBestWhen": [
+          "Lolita shields before Clint's enhanced shot connects.",
+          "The team fights through objective fronts or narrow lanes."
+        ],
+        "failureCases": [
+          "Clint fires from outside Lolita's shield angle.",
+          "Lolita uses shield too early and Clint waits."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "clint",
+    "counterHeroId": "natalia",
+    "reasons": [
+      "Natalia can force Clint to respect bush control instead of freely poking from side angles.",
+      "Clint is vulnerable when isolated or after using Trapping Recoil."
+    ],
+    "counterTypes": [
+      "pickoff",
+      "vision-control",
+      "burst"
+    ],
+    "proof": [
+      {
+        "id": "natalia-bush-pressure-vs-clint-poke-space",
+        "category": "vision-awareness",
+        "priority": "primary",
+        "impact": "medium",
+        "summary": "Clint wants stable long-range poke windows, while Natalia threatens hidden approach routes that force him to play closer to peel.",
+        "worksBestWhen": [
+          "Natalia controls bushes around gold lane or river.",
+          "Clint has already used Trapping Recoil."
+        ],
+        "failureCases": [
+          "Clint stays near tank or support protection.",
+          "Natalia is revealed before reaching him."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "clint",
+    "counterHeroId": "lancelot",
+    "reasons": [
+      "Lancelot can approach Clint from non-linear angles and dodge predictable poke windows.",
+      "This matchup works when Lancelot times mobility after Clint uses escape or control."
+    ],
+    "counterTypes": [
+      "mobility",
+      "burst",
+      "execution-dependent"
+    ],
+    "proof": [
+      {
+        "id": "lancelot-mobility-vs-clint-straight-line-poke",
+        "category": "mobility-advantage",
+        "priority": "condition",
+        "impact": "medium",
+        "summary": "Clint wants enemies to approach through his poke and Trapping Recoil range, while Lancelot can use mobility to bypass straight-line pressure if executed well.",
+        "worksBestWhen": [
+          "Lancelot approaches after Clint uses Trapping Recoil.",
+          "Lancelot has nearby targets for mobility chaining."
+        ],
+        "failureCases": [
+          "Clint lands immobilize during Lancelot's entry.",
+          "Lancelot dives without enough damage or reset path."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "clint",
+    "counterHeroId": "saber",
+    "reasons": [
+      "Saber can punish Clint before Clint gets repeated poke cycles.",
+      "Targeted airborne burst is useful when Clint's escape tool or defensive support is unavailable."
+    ],
+    "counterTypes": [
+      "pickoff",
+      "burst",
+      "cooldown-punish"
+    ],
+    "proof": [
+      {
+        "id": "saber-burst-vs-clint-backline-position",
+        "category": "skill-interaction",
+        "priority": "primary",
+        "impact": "medium",
+        "summary": "Clint wants to keep distance and poke repeatedly, while Saber can force a short lock-and-burst window when Clint is exposed.",
+        "worksBestWhen": [
+          "Saber attacks from fog or flank angle.",
+          "Clint has used Trapping Recoil or is away from peel."
+        ],
+        "failureCases": [
+          "Clint stays protected behind frontline vision.",
+          "Saber cannot burst Clint before counter-engage arrives."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "clint",
+    "counterHeroId": "franco",
+    "reasons": [
+      "Franco can punish Clint's long-range poke posture if Clint steps forward without minion or tank cover.",
+      "Hook or suppression can remove Clint's spacing before he can kite backward."
+    ],
+    "counterTypes": [
+      "pickoff",
+      "vision-control",
+      "execution-dependent"
+    ],
+    "proof": [
+      {
+        "id": "franco-hook-vs-clint-poke-positioning",
+        "category": "positioning-requirement",
+        "priority": "condition",
+        "impact": "medium",
+        "summary": "Clint wants safe poke spacing, while Franco can punish exposed positioning with hook or suppression if he controls vision.",
+        "worksBestWhen": [
+          "Franco hides outside Clint's vision before the hook angle.",
+          "Clint is not standing behind minions or frontline."
+        ],
+        "failureCases": [
+          "Franco misses hook and loses pressure.",
+          "Clint keeps enough distance to poke without entering pickoff range."
+        ]
+      }
+    ]
+  }
+]

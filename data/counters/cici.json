@@ -1,0 +1,162 @@
+[
+  {
+    "targetHeroId": "cici",
+    "counterHeroId": "franco",
+    "reasons": [
+      "Franco's suppression is one of the cleanest ways to stop Cici's moving damage window.",
+      "Cici can keep attacking through many ordinary interruptions, so hard single-target suppression is especially valuable."
+    ],
+    "counterTypes": [
+      "crowd-control-counter",
+      "pickoff",
+      "cooldown-punish"
+    ],
+    "proof": [
+      {
+        "id": "franco-bloody-hunt-vs-cici-yoyo-uptime",
+        "category": "skill-interaction",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Cici wants to keep moving during Yo-Yo Blitz, while Franco can suppress her and create a burst window where she cannot freely kite.",
+        "worksBestWhen": [
+          "Franco waits until Cici commits forward.",
+          "The team follows immediately during suppression.",
+          "Cici has limited terrain or movement space."
+        ],
+        "failureCases": [
+          "Franco misses hook or suppresses without damage follow-up.",
+          "Cici keeps distance and baits Franco's cooldowns.",
+          "Franco targets Cici while her team can instantly peel."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "cici",
+    "counterHeroId": "kaja",
+    "reasons": [
+      "Kaja can lock Cici during her mobility pattern and drag her away from safe skirmish spacing.",
+      "This works because Cici's strength is continuous movement, not burst immunity."
+    ],
+    "counterTypes": [
+      "crowd-control-counter",
+      "pickoff",
+      "anti-dive"
+    ],
+    "proof": [
+      {
+        "id": "kaja-divine-judgment-vs-cici-skirmish-spacing",
+        "category": "crowd-control-counter",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Cici wants to extend fights with movement and spell vamp, while Kaja can suppress and reposition her into a team burst zone.",
+        "worksBestWhen": [
+          "Kaja waits for Cici to use Buoyant Bounce aggressively.",
+          "Kaja's team can burst Cici before she rebuilds distance.",
+          "Cici has no immediate peel behind her."
+        ],
+        "failureCases": [
+          "Kaja engages without nearby follow-up.",
+          "Cici stays behind a frontline and avoids Kaja's range.",
+          "Kaja is forced to use suppression defensively before Cici commits."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "cici",
+    "counterHeroId": "baxia",
+    "reasons": [
+      "Cici's Delight stacks and Yo-Yo Blitz skirmishing rely heavily on spell-vamp value.",
+      "Baxia can reduce healing received, making Cici's extended trades less reliable."
+    ],
+    "counterTypes": [
+      "anti-sustain",
+      "anti-heal",
+      "frontline"
+    ],
+    "proof": [
+      {
+        "id": "baxia-anti-heal-vs-cici-delight-sustain",
+        "category": "sustain-anti-sustain",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Cici wants to heal through long trades, while Baxia reduces healing received and makes her sustain-based fighting pattern easier to outvalue.",
+        "worksBestWhen": [
+          "Baxia stays close enough to keep anti-heal pressure active.",
+          "The team avoids chasing Cici alone through long terrain.",
+          "Baxia's allies add burst or control while Cici's healing is reduced."
+        ],
+        "failureCases": [
+          "Cici kites Baxia without committing to extended trades.",
+          "Baxia cannot reach her because of peel or terrain.",
+          "Cici disengages until Baxia's pressure window ends."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "cici",
+    "counterHeroId": "alpha",
+    "reasons": [
+      "Alpha can fight Cici in longer trades because his kit provides repeated true-damage pressure and his own sustain.",
+      "Alpha can pressure Cici through extended trades because his repeated true-damage output helps bypass ordinary durability and directly contests Cici's sustain-based skirmish pattern."
+    ],
+    "counterTypes": [
+      "true-damage",
+      "anti-sustain",
+      "frontline"
+    ],
+    "proof": [
+      {
+        "id": "alpha-beta-true-damage-vs-cici-sustain-trades",
+        "category": "damage-type-advantage",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Cici wants to kite and sustain through extended trades, while Alpha can keep pressure with repeated true damage from Beta and contest her in a direct fighter matchup.",
+        "worksBestWhen": [
+          "Alpha can keep Cici within skill range.",
+          "Alpha lands repeated skill rotations instead of chasing blindly.",
+          "Anti-heal or team follow-up is available to reduce Cici's spell-vamp value."
+        ],
+        "failureCases": [
+          "Cici keeps spacing and forces Alpha to miss skill rotations.",
+          "Alpha chases without cooldowns.",
+          "Cici gets peel or extra movement space from terrain."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "cici",
+    "counterHeroId": "karrie",
+    "reasons": [
+      "Karrie can pressure Cici with repeated attacks that trigger true-damage marks during extended fights.",
+      "This works best with protection because Cici can still threaten Karrie if she reaches close range."
+    ],
+    "counterTypes": [
+      "true-damage",
+      "kiting",
+      "tank-shred"
+    ],
+    "proof": [
+      {
+        "id": "karrie-lightwheel-mark-vs-cici-extended-fight",
+        "category": "damage-type-advantage",
+        "priority": "secondary",
+        "impact": "medium",
+        "summary": "Cici wants extended sustain fights, while Karrie can pressure her with repeated true-damage marks if Karrie has enough space to attack safely.",
+        "worksBestWhen": [
+          "Karrie has frontline or support protection.",
+          "Cici has already used mobility aggressively.",
+          "Karrie can keep attacking long enough to trigger Lightwheel Mark."
+        ],
+        "failureCases": [
+          "Cici reaches Karrie before Karrie stacks damage.",
+          "Karrie fights without peel.",
+          "Cici disengages before repeated attacks convert."
+        ]
+      }
+    ]
+  }
+]

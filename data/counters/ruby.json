@@ -1,0 +1,152 @@
+[
+  {
+    "targetHeroId": "ruby",
+    "counterHeroId": "baxia",
+    "reasons": [
+      "Baxia directly reduces Ruby's healing value, making her extended fight pattern much weaker.",
+      "Ruby depends heavily on sustain from repeated skill hits, so anti-heal pressure is a direct answer."
+    ],
+    "counterTypes": [
+      "anti-sustain",
+      "frontline",
+      "teamfight"
+    ],
+    "proof": [
+      {
+        "id": "baxia-anti-heal-vs-ruby-spell-vamp",
+        "category": "sustain-anti-sustain",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Ruby wants to heal through repeated skill hits, while Baxia reduces healing and shield effects during the fight.",
+        "worksBestWhen": [
+          "Baxia applies anti-sustain before Ruby lands multiple AoE skills.",
+          "The team focuses Ruby while her healing is reduced."
+        ],
+        "failureCases": [
+          "Ruby avoids Baxia and hits multiple squishy targets.",
+          "Baxia cannot stay close enough to apply pressure."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "ruby",
+    "counterHeroId": "valir",
+    "reasons": [
+      "Valir can push Ruby away before she chains area crowd control.",
+      "Ruby becomes less effective if she cannot stay close enough to repeatedly hit skills and heal."
+    ],
+    "counterTypes": [
+      "disengage",
+      "kiting",
+      "anti-engage"
+    ],
+    "proof": [
+      {
+        "id": "valir-knockback-vs-ruby-close-range-sustain",
+        "category": "kiting",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Ruby wants close-range control and sustain, while Valir can deny melee uptime with knockback and slow.",
+        "worksBestWhen": [
+          "Valir saves knockback for Ruby's engage.",
+          "Valir positions outside Ruby's pull range."
+        ],
+        "failureCases": [
+          "Ruby flanks or Flicker-engages before Valir reacts.",
+          "Valir wastes knockback on a frontline bait."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "ruby",
+    "counterHeroId": "karrie",
+    "reasons": [
+      "Karrie can pressure Ruby's durability with repeated true-damage marks.",
+      "Ruby struggles if Karrie stays outside her hook and control range."
+    ],
+    "counterTypes": [
+      "true-damage",
+      "kiting",
+      "item-power-spike"
+    ],
+    "proof": [
+      {
+        "id": "karrie-true-damage-vs-ruby-sustain-fighter",
+        "category": "damage-type-advantage",
+        "priority": "secondary",
+        "impact": "medium",
+        "summary": "Ruby wants to outlast enemies, while Karrie can cut through durable sustain fighters from range.",
+        "worksBestWhen": [
+          "Karrie has peel and does not stand inside Ruby's pull range.",
+          "Karrie has enough attack speed to stack marks reliably."
+        ],
+        "failureCases": [
+          "Ruby catches Karrie with Flicker or teammate setup.",
+          "Karrie is behind item timing."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "ruby",
+    "counterHeroId": "dyrroth",
+    "reasons": [
+      "Dyrroth can punish Ruby before she gets repeated skill casts and lifesteal value.",
+      "His defense reduction can make Ruby's short trades riskier."
+    ],
+    "counterTypes": [
+      "burst",
+      "penetration",
+      "cooldown-punish"
+    ],
+    "proof": [
+      {
+        "id": "dyrroth-short-burst-trade-vs-ruby-sustain-loop",
+        "category": "cooldown-window",
+        "priority": "secondary",
+        "impact": "medium",
+        "summary": "Ruby wants to stretch fights, while Dyrroth can force a short burst trade before Ruby stabilizes through repeated skill healing.",
+        "worksBestWhen": [
+          "Dyrroth trades early and avoids Ruby's repeated crowd-control chain.",
+          "Dyrroth has enhanced skill timing ready."
+        ],
+        "failureCases": [
+          "Dyrroth overextends into Ruby's crowd control.",
+          "Ruby gets anti-burst items and teammate follow-up."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "ruby",
+    "counterHeroId": "gatotkaca",
+    "reasons": [
+      "Gatotkaca is a better reviewed replacement for Pharsa because his disruption directly interferes with Ruby's close-range fighting pattern.",
+      "His taunt and area engage can interrupt Ruby's rhythm and force her to spend time attacking him instead of freely controlling the backline."
+    ],
+    "counterTypes": [
+      "crowd-control-counter",
+      "frontline",
+      "teamfight"
+    ],
+    "proof": [
+      {
+        "id": "gatotkaca-taunt-disruption-vs-ruby-sustain-control",
+        "category": "teamfight-role-counter",
+        "priority": "secondary",
+        "impact": "medium",
+        "summary": "Ruby wants to chain close-range control and sustain through skill hits, while Gatotkaca can disrupt the fight with taunt, frontline presence, and area engage.",
+        "worksBestWhen": [
+          "Gatotkaca enters after Ruby commits to a close-range fight.",
+          "The team uses the taunt or knock-up window to focus Ruby or protect the backline."
+        ],
+        "failureCases": [
+          "Ruby avoids Gatotkaca and pulls a softer target instead.",
+          "Gatotkaca engages without teammate damage or anti-heal support."
+        ]
+      }
+    ]
+  }
+]

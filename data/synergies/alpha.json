@@ -1,0 +1,152 @@
+[
+  {
+    "anchorHeroId": "alpha",
+    "synergyHeroId": "tigreal",
+    "reasons": [
+      "Tigreal can group enemies and give Alpha a clear Spear of Alpha follow-up.",
+      "Alpha benefits because his area damage and sustain work better when enemies are controlled nearby."
+    ],
+    "synergyTypes": [
+      "engage-follow-up",
+      "cc-chain",
+      "teamfight-combo"
+    ],
+    "proof": [
+      {
+        "id": "tigreal-engage-sets-alpha-follow-up",
+        "category": "engage-follow-up",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Tigreal starts the grouped engage, and Alpha follows with Spear of Alpha plus Beta damage.",
+        "worksBestWhen": [
+          "Alpha waits for Tigreal's confirmed engage before using ultimate.",
+          "Alpha has enough health to continue fighting after entering."
+        ],
+        "failureCases": [
+          "Alpha ults before enemies are grouped.",
+          "Alpha is kited after entering."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "alpha",
+    "synergyHeroId": "atlas",
+    "reasons": [
+      "Atlas can drag enemies into a compact area for Alpha's follow-up.",
+      "Alpha can enter after the drag and apply repeated area damage and true-damage pressure."
+    ],
+    "synergyTypes": [
+      "setup-combo",
+      "aoe-follow-up",
+      "teamfight-combo"
+    ],
+    "proof": [
+      {
+        "id": "atlas-drag-sets-alpha-aoe-follow-up",
+        "category": "setup-combo",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Atlas pulls enemies together, while Alpha follows with close-range area damage and control.",
+        "worksBestWhen": [
+          "Alpha saves Spear of Alpha until Atlas's drag finishes.",
+          "Alpha can reach the landing area immediately."
+        ],
+        "failureCases": [
+          "Atlas misses.",
+          "Alpha cannot reach the landing area."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "alpha",
+    "synergyHeroId": "angela",
+    "reasons": [
+      "Angela helps Alpha survive while he stays in melee range.",
+      "Alpha's sustain pattern becomes more reliable when he receives extra protection during the first commit."
+    ],
+    "synergyTypes": [
+      "shielding",
+      "healing-sustain",
+      "protect"
+    ],
+    "proof": [
+      {
+        "id": "angela-protects-alpha-sustained-fight",
+        "category": "protection",
+        "priority": "secondary",
+        "impact": "medium",
+        "summary": "Angela protects Alpha's extended-fight window while Alpha keeps applying Beta damage.",
+        "worksBestWhen": [
+          "Angela attaches when Alpha commits into multiple enemies.",
+          "Alpha continues fighting during the protection window."
+        ],
+        "failureCases": [
+          "Alpha is bursted before Angela attaches.",
+          "Alpha is chain-controlled after entering."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "alpha",
+    "synergyHeroId": "mathilda",
+    "reasons": [
+      "Mathilda helps Alpha reach targets or reset after using Spear of Alpha.",
+      "The shield and movement support improve Alpha's reliability in skirmishes."
+    ],
+    "synergyTypes": [
+      "mobility-enable",
+      "shielding",
+      "dive-support"
+    ],
+    "proof": [
+      {
+        "id": "mathilda-mobility-supports-alpha-engage",
+        "category": "mobility-enabler",
+        "priority": "secondary",
+        "impact": "medium",
+        "summary": "Mathilda provides mobility and shield support so Alpha can enter or leave fights more safely.",
+        "worksBestWhen": [
+          "Mathilda stays near Alpha's engage path.",
+          "Alpha uses the mobility support to reach a target he can keep fighting."
+        ],
+        "failureCases": [
+          "Alpha engages beyond Mathilda's support range.",
+          "Enemies disengage before Alpha can continue damage."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "alpha",
+    "synergyHeroId": "minotaur",
+    "reasons": [
+      "Minotaur adds healing and knock-up control around Alpha's melee fight.",
+      "This helps Alpha stay active long enough for repeated skill cycles."
+    ],
+    "synergyTypes": [
+      "cc-chain",
+      "healing-sustain",
+      "frontline-enabler"
+    ],
+    "proof": [
+      {
+        "id": "minotaur-sustain-control-enables-alpha",
+        "category": "healing-sustain",
+        "priority": "secondary",
+        "impact": "medium",
+        "summary": "Minotaur stabilizes the fight with healing and control while Alpha continues close-range damage.",
+        "worksBestWhen": [
+          "Minotaur and Alpha enter together instead of staggered.",
+          "Alpha fights inside Minotaur's control and sustain area."
+        ],
+        "failureCases": [
+          "Alpha is isolated away from Minotaur's healing or control area.",
+          "Minotaur's control misses during Alpha's commit."
+        ]
+      }
+    ]
+  }
+]

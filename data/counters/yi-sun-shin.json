@@ -1,0 +1,152 @@
+[
+  {
+    "targetHeroId": "yi-sun-shin",
+    "counterHeroId": "franco",
+    "reasons": [
+      "Franco can punish Yi-Sun-Shin with hook or suppression when Yi-Sun-Shin steps into objective zones.",
+      "Suppression is especially useful because Yi-Sun-Shin's normal mobility timing does not solve hard lockdown."
+    ],
+    "counterTypes": [
+      "pickoff",
+      "crowd-control-counter",
+      "vision-control"
+    ],
+    "proof": [
+      {
+        "id": "franco-suppression-vs-yi-sun-shin-objective-path",
+        "category": "crowd-control-counter",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Yi-Sun-Shin wants flexible mobility and safe jungle tempo, while Franco can force one caught position into a suppression pickoff.",
+        "worksBestWhen": [
+          "Franco controls river bushes near Turtle or Lord.",
+          "Franco saves suppression after Yi-Sun-Shin uses his mobility."
+        ],
+        "failureCases": [
+          "Franco misses hook and loses zone control.",
+          "Yi-Sun-Shin plays behind tank vision and keeps mobility available."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "yi-sun-shin",
+    "counterHeroId": "hilda",
+    "reasons": [
+      "Hilda can pressure Yi-Sun-Shin early by invading bushes and contesting jungle paths.",
+      "Yi-Sun-Shin is weaker when his jungle tempo is delayed before he reaches item momentum."
+    ],
+    "counterTypes": [
+      "game-phase",
+      "vision-control",
+      "anti-jungle"
+    ],
+    "proof": [
+      {
+        "id": "hilda-early-invade-vs-yi-sun-shin-jungle-tempo",
+        "category": "game-phase",
+        "priority": "primary",
+        "impact": "medium",
+        "summary": "Yi-Sun-Shin wants clean jungle scaling, while Hilda can disrupt early rotations with bush sustain, movement pressure, and repeated skirmish threat.",
+        "worksBestWhen": [
+          "Hilda invades with mid or roam support.",
+          "Hilda tracks buff timers and forces Yi-Sun-Shin away from farm."
+        ],
+        "failureCases": [
+          "Hilda invades alone into multiple enemies.",
+          "Yi-Sun-Shin's team protects jungle entrances well."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "yi-sun-shin",
+    "counterHeroId": "saber",
+    "reasons": [
+      "Saber can punish Yi-Sun-Shin when his mobility is unavailable or after he enters too far for enhanced basic attacks.",
+      "Yi-Sun-Shin is vulnerable to targeted burst if caught without frontline protection."
+    ],
+    "counterTypes": [
+      "pickoff",
+      "burst",
+      "cooldown-punish"
+    ],
+    "proof": [
+      {
+        "id": "saber-burst-vs-yi-sun-shin-mobility-cooldown",
+        "category": "cooldown-window",
+        "priority": "primary",
+        "impact": "medium",
+        "summary": "Yi-Sun-Shin wants to weave in and out with weapon switching, while Saber can punish the cooldown window after his mobility is spent.",
+        "worksBestWhen": [
+          "Saber waits for Yi-Sun-Shin's mobility before using ultimate.",
+          "Saber attacks from fog near jungle entrances."
+        ],
+        "failureCases": [
+          "Yi-Sun-Shin keeps mobility and team peel available.",
+          "Saber dives before Yi-Sun-Shin commits."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "yi-sun-shin",
+    "counterHeroId": "lolita",
+    "reasons": [
+      "Lolita can protect allies from ranged basic attacks and projectile pressure during siege or objective fights.",
+      "This reduces some of Yi-Sun-Shin's ranged poke value before his team can commit."
+    ],
+    "counterTypes": [
+      "protect",
+      "range-advantage",
+      "teamfight"
+    ],
+    "proof": [
+      {
+        "id": "lolita-shield-vs-yi-sun-shin-ranged-pressure",
+        "category": "skill-interaction",
+        "priority": "secondary",
+        "impact": "medium",
+        "summary": "Yi-Sun-Shin can pressure from range, while Lolita can block many ranged basic attacks and projectile patterns for her team.",
+        "worksBestWhen": [
+          "Lolita faces Yi-Sun-Shin during objective standoffs.",
+          "The team uses Lolita's shield to cross dangerous space."
+        ],
+        "failureCases": [
+          "Yi-Sun-Shin attacks from side angles.",
+          "Yi-Sun-Shin waits out the shield or uses melee timing."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "yi-sun-shin",
+    "counterHeroId": "khufra",
+    "reasons": [
+      "Khufra can make Yi-Sun-Shin's dash paths more dangerous near objectives and jungle walls.",
+      "This counter is timing-dependent because Yi-Sun-Shin has mobility tools that can avoid poor Khufra timing."
+    ],
+    "counterTypes": [
+      "anti-dash",
+      "anti-engage",
+      "positioning-requirement"
+    ],
+    "proof": [
+      {
+        "id": "khufra-path-control-vs-yi-sun-shin-traceless",
+        "category": "positioning-requirement",
+        "priority": "condition",
+        "impact": "medium",
+        "summary": "Yi-Sun-Shin uses mobility for repositioning, while Khufra can threaten blink movement if he controls the path and times the punish correctly.",
+        "worksBestWhen": [
+          "Khufra guards choke points before Yi-Sun-Shin enters.",
+          "Khufra waits out or predicts the mobility timing."
+        ],
+        "failureCases": [
+          "Yi-Sun-Shin uses mobility at the correct moment.",
+          "Khufra commits his anti-dash timing too early."
+        ]
+      }
+    ]
+  }
+]

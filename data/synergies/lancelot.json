@@ -1,0 +1,157 @@
+[
+  {
+    "anchorHeroId": "lancelot",
+    "synergyHeroId": "mathilda",
+    "reasons": [
+      "Mathilda gives Lancelot extra mobility and shielding during his dive path.",
+      "Lancelot benefits from Mathilda's support because he can enter or exit fights with more flexible timing."
+    ],
+    "synergyTypes": [
+      "mobility-enable",
+      "shielding",
+      "dive-support"
+    ],
+    "proof": [
+      {
+        "id": "mathilda-mobility-for-lancelot-dive",
+        "category": "mobility-enabler",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Mathilda gives Lancelot extra mobility and shielding, helping him enter or exit while preserving burst timing.",
+        "worksBestWhen": [
+          "Mathilda positions near Lancelot's intended dive route.",
+          "Lancelot coordinates dash timing instead of wasting mobility."
+        ],
+        "failureCases": [
+          "Lancelot dives before Mathilda is in range.",
+          "Enemy hard control waits for the end of Lancelot's immune frames.",
+          "Mathilda's field expires before Lancelot uses it."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "lancelot",
+    "synergyHeroId": "angela",
+    "reasons": [
+      "Angela can attach to Lancelot during dive attempts and protect him while he commits to burst.",
+      "Lancelot benefits from extra shielding and sustain when he has to enter deep enemy space."
+    ],
+    "synergyTypes": [
+      "shielding",
+      "dive-support",
+      "healing-sustain"
+    ],
+    "proof": [
+      {
+        "id": "angela-protection-for-lancelot-dive",
+        "category": "protection",
+        "priority": "secondary",
+        "impact": "medium",
+        "summary": "Lancelot supplies the mobility burst, while Angela improves his survival during the entry and exit window.",
+        "worksBestWhen": [
+          "Angela attaches before Lancelot enters deep.",
+          "Lancelot targets a hero he can realistically finish."
+        ],
+        "failureCases": [
+          "Lancelot misses reset windows.",
+          "Angela attaches after Lancelot has already disengaged.",
+          "Enemy anti-dive control is saved for his exit."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "lancelot",
+    "synergyHeroId": "floryn",
+    "reasons": [
+      "Floryn can support Lancelot even when he dives beyond normal support range.",
+      "Lancelot benefits from global sustain after deep burst attempts where he still needs to escape."
+    ],
+    "synergyTypes": [
+      "healing-sustain",
+      "dive-support",
+      "game-phase"
+    ],
+    "proof": [
+      {
+        "id": "floryn-global-sustain-for-lancelot-dive",
+        "category": "healing-sustain",
+        "priority": "secondary",
+        "impact": "medium",
+        "summary": "Lancelot dives into enemy space, while Floryn can still support him from distance.",
+        "worksBestWhen": [
+          "Floryn tracks Lancelot's commit timing.",
+          "Lancelot uses sustain support to exit rather than overstay."
+        ],
+        "failureCases": [
+          "Lancelot is burst before global support arrives.",
+          "Floryn's key ability is unavailable.",
+          "Lancelot dives into multiple control tools."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "lancelot",
+    "synergyHeroId": "selena",
+    "reasons": [
+      "Selena can create vision and stun setup before Lancelot commits to a pickoff.",
+      "Lancelot can follow Selena's confirmed target with mobility burst."
+    ],
+    "synergyTypes": [
+      "vision-setup",
+      "pickoff-combo",
+      "burst-follow-up"
+    ],
+    "proof": [
+      {
+        "id": "selena-setup-for-lancelot-pickoff",
+        "category": "vision-setup",
+        "priority": "secondary",
+        "impact": "medium",
+        "summary": "Selena prepares the pickoff path, while Lancelot follows with mobility burst on the confirmed target.",
+        "worksBestWhen": [
+          "Selena controls rotation paths.",
+          "Lancelot waits for confirmed stun or vision."
+        ],
+        "failureCases": [
+          "Lancelot enters without vision.",
+          "Selena misses the setup.",
+          "The enemy groups tightly and peels the target."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "lancelot",
+    "synergyHeroId": "tigreal",
+    "reasons": [
+      "Tigreal's grouped control can give Lancelot a safer moment to enter a teamfight.",
+      "Lancelot can follow Tigreal's crowd-control window with burst onto priority targets."
+    ],
+    "synergyTypes": [
+      "engage-follow-up",
+      "cc-chain",
+      "burst-follow-up"
+    ],
+    "proof": [
+      {
+        "id": "tigreal-engage-for-lancelot-follow-up",
+        "category": "engage-follow-up",
+        "priority": "secondary",
+        "impact": "medium",
+        "summary": "Tigreal starts the control sequence, while Lancelot follows into the enemy formation for burst.",
+        "worksBestWhen": [
+          "Lancelot waits for Tigreal's displacement before entering.",
+          "The enemy group contains high-value damage targets."
+        ],
+        "failureCases": [
+          "Tigreal engages too far from Lancelot.",
+          "Lancelot loses his reset path after the first dash.",
+          "Enemy tanks block access to the real target."
+        ]
+      }
+    ]
+  }
+]

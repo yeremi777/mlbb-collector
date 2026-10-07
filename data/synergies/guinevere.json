@@ -1,0 +1,152 @@
+[
+  {
+    "anchorHeroId": "guinevere",
+    "synergyHeroId": "khufra",
+    "reasons": [
+      "Khufra's airborne control creates a clean entry point for Guinevere's burst.",
+      "Khufra's anti-blink pressure makes it harder for enemies to escape Guinevere's combo."
+    ],
+    "synergyTypes": [
+      "cc-chain",
+      "setup-combo",
+      "burst-follow-up"
+    ],
+    "proof": [
+      {
+        "id": "guinevere-khufra-airborne-control-chain",
+        "category": "crowd-control-chain",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Khufra starts the control chain, and Guinevere follows with airborne-based magic burst.",
+        "worksBestWhen": [
+          "Khufra confirms control before Guinevere commits.",
+          "Guinevere saves Violet Requiem for a controlled or airborne target."
+        ],
+        "failureCases": [
+          "Guinevere jumps before Khufra lands control.",
+          "Enemy uses immunity or displacement after the first control effect."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "guinevere",
+    "synergyHeroId": "gatotkaca",
+    "reasons": [
+      "Gatotkaca can knock enemies airborne with a large engage, giving Guinevere a strong follow-up window.",
+      "Guinevere can add burst after Gatotkaca forces enemies into a controlled area."
+    ],
+    "synergyTypes": [
+      "cc-chain",
+      "engage-follow-up",
+      "teamfight-combo"
+    ],
+    "proof": [
+      {
+        "id": "guinevere-gatotkaca-airborne-engage-chain",
+        "category": "crowd-control-chain",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Gatotkaca starts with airborne engage, while Guinevere follows with her own airborne burst combo.",
+        "worksBestWhen": [
+          "Gatotkaca lands Avatar of Guardian on priority targets.",
+          "Guinevere waits until enemies are controlled before committing."
+        ],
+        "failureCases": [
+          "Gatotkaca misses the engage zone.",
+          "Guinevere enters after enemies already recover or spread out."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "guinevere",
+    "synergyHeroId": "ruby",
+    "reasons": [
+      "Ruby can pull and stun enemies, setting up Guinevere's jump and ultimate.",
+      "Ruby's repeated control helps keep enemies inside Guinevere's burst window."
+    ],
+    "synergyTypes": [
+      "cc-chain",
+      "setup-combo",
+      "teamfight-combo"
+    ],
+    "proof": [
+      {
+        "id": "guinevere-ruby-pull-control-burst-setup",
+        "category": "setup-combo",
+        "priority": "primary",
+        "impact": "medium",
+        "summary": "Ruby controls target positioning, while Guinevere follows with magic burst before the target can escape.",
+        "worksBestWhen": [
+          "Ruby pulls enemies into Guinevere's entry range.",
+          "Guinevere waits for Ruby's control before using her main commit."
+        ],
+        "failureCases": [
+          "Ruby pulls enemies away from Guinevere's jump angle.",
+          "Enemy defensive skills survive the combined control window."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "guinevere",
+    "synergyHeroId": "kaja",
+    "reasons": [
+      "Kaja can suppress and drag a single target, giving Guinevere a fixed target for burst.",
+      "Guinevere benefits from Kaja removing the target's ability to dodge during the setup window."
+    ],
+    "synergyTypes": [
+      "pickoff-combo",
+      "setup-combo",
+      "burst-follow-up"
+    ],
+    "proof": [
+      {
+        "id": "guinevere-kaja-suppression-burst-pickoff",
+        "category": "pickoff-combo",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Kaja isolates the target, while Guinevere follows with magic burst on the controlled enemy.",
+        "worksBestWhen": [
+          "Kaja suppresses a priority target instead of a tank.",
+          "Guinevere positions close enough to follow the drag."
+        ],
+        "failureCases": [
+          "Kaja catches the wrong target.",
+          "Guinevere commits before Kaja confirms suppression."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "guinevere",
+    "synergyHeroId": "tigreal",
+    "reasons": [
+      "Tigreal can group and stun enemies, giving Guinevere a better chance to land a multi-target burst combo.",
+      "Guinevere can follow Tigreal's engage after enemies are already pulled into one area."
+    ],
+    "synergyTypes": [
+      "engage-follow-up",
+      "cc-chain",
+      "teamfight-combo"
+    ],
+    "proof": [
+      {
+        "id": "guinevere-tigreal-grouped-engage-burst-follow-up",
+        "category": "engage-follow-up",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Tigreal creates a grouped control window, and Guinevere follows with jump-based magic burst.",
+        "worksBestWhen": [
+          "Tigreal engages after Guinevere is in follow-up range.",
+          "Guinevere waits for grouped control before committing."
+        ],
+        "failureCases": [
+          "Tigreal engages too far away from Guinevere.",
+          "Enemy spreads out or uses defensive tools after the pull."
+        ]
+      }
+    ]
+  }
+]

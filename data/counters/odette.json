@@ -1,0 +1,152 @@
+[
+  {
+    "targetHeroId": "odette",
+    "counterHeroId": "saber",
+    "reasons": [
+      "Saber's airborne ultimate can interrupt Odette's channel if timed during Swan Song.",
+      "Saber also threatens Odette before she can set up."
+    ],
+    "counterTypes": [
+      "crowd-control-counter",
+      "burst",
+      "pickoff"
+    ],
+    "proof": [
+      {
+        "id": "saber-triple-sweep-vs-odette-swan-song",
+        "category": "crowd-control-counter",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Odette wants to channel Swan Song safely, while Saber can knock her airborne and interrupt the key channel window.",
+        "worksBestWhen": [
+          "Saber waits for Odette to commit Swan Song.",
+          "Saber has access to Odette through flank or vision control."
+        ],
+        "failureCases": [
+          "Saber is forced to use ultimate before Odette commits.",
+          "Odette's team zones Saber away from her casting position."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "odette",
+    "counterHeroId": "franco",
+    "reasons": [
+      "Franco's suppression can interrupt or prevent Odette's key channel window.",
+      "He can also hook Odette before she reaches a safe ultimate position."
+    ],
+    "counterTypes": [
+      "suppress",
+      "crowd-control-counter",
+      "pickoff"
+    ],
+    "proof": [
+      {
+        "id": "franco-bloody-hunt-vs-odette-channel",
+        "category": "crowd-control-counter",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Odette wants to keep channeling in place, while Franco can suppress or hook her during the setup or channel window.",
+        "worksBestWhen": [
+          "Franco saves Bloody Hunt for Swan Song.",
+          "Franco threatens hook angles before Odette sets up."
+        ],
+        "failureCases": [
+          "Franco misses hook and cannot enter suppression range.",
+          "Odette stays far behind frontline."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "odette",
+    "counterHeroId": "kaja",
+    "reasons": [
+      "Kaja can suppress and drag Odette out of her ideal Swan Song position.",
+      "This is a strong anti-channel answer when Kaja has flank access."
+    ],
+    "counterTypes": [
+      "suppress",
+      "pickoff",
+      "anti-channel"
+    ],
+    "proof": [
+      {
+        "id": "kaja-divine-judgment-vs-odette-swan-song",
+        "category": "crowd-control-counter",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Odette's teamfight value depends on maintaining Swan Song position, while Kaja can suppress and drag her away from the fight.",
+        "worksBestWhen": [
+          "Kaja hides vision and waits until Odette commits.",
+          "Kaja has teammates ready to punish Odette after the drag."
+        ],
+        "failureCases": [
+          "Odette stays too far behind frontline.",
+          "Kaja is revealed early and cannot reach Odette."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "odette",
+    "counterHeroId": "chou",
+    "reasons": [
+      "Chou can interrupt or displace Odette with airborne and knockback tools.",
+      "This counter is stronger in skilled hands because Chou must reach Odette through her team."
+    ],
+    "counterTypes": [
+      "crowd-control-counter",
+      "displacement",
+      "execution-dependent"
+    ],
+    "proof": [
+      {
+        "id": "chou-displacement-vs-odette-channel",
+        "category": "execution-difficulty",
+        "priority": "primary",
+        "impact": "medium",
+        "summary": "Odette wants to channel from a stable position, while Chou can break her positioning with airborne and displacement if he reaches her.",
+        "worksBestWhen": [
+          "Chou approaches from a flank.",
+          "Chou times the combo after Odette commits Swan Song."
+        ],
+        "failureCases": [
+          "Chou is zoned before reaching Odette.",
+          "Chou mistimes the combo or is peeled away."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "odette",
+    "counterHeroId": "kadita",
+    "reasons": [
+      "Kadita can use control-immunity movement to enter or escape Odette's damage zone and threaten burst.",
+      "This is more conditional than suppression counters because Kadita still needs timing and damage setup."
+    ],
+    "counterTypes": [
+      "mobility",
+      "burst",
+      "execution-dependent"
+    ],
+    "proof": [
+      {
+        "id": "kadita-ocean-oddity-vs-odette-swan-song",
+        "category": "mobility-advantage",
+        "priority": "secondary",
+        "impact": "medium",
+        "summary": "Odette wants enemies trapped inside Swan Song, while Kadita can cross dangerous space with control immunity and punish Odette's stationary cast.",
+        "worksBestWhen": [
+          "Kadita engages from fog.",
+          "Kadita attacks after Odette uses defensive tools."
+        ],
+        "failureCases": [
+          "Kadita enters too early and gets peeled.",
+          "Kadita misses the setup and is caught inside Odette's team."
+        ]
+      }
+    ]
+  }
+]

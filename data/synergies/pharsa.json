@@ -1,0 +1,153 @@
+[
+  {
+    "anchorHeroId": "pharsa",
+    "synergyHeroId": "tigreal",
+    "reasons": [
+      "Tigreal can pull and stun grouped enemies, giving Pharsa a clear long-range damage window.",
+      "Pharsa can follow Tigreal's engage from safe range instead of standing inside the first contact."
+    ],
+    "synergyTypes": [
+      "engage-follow-up",
+      "aoe-follow-up",
+      "teamfight-combo"
+    ],
+    "proof": [
+      {
+        "id": "pharsa-tigreal-grouped-engage-follow-up",
+        "category": "engage-follow-up",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Tigreal creates the grouped control setup, while Pharsa punishes the caught area with long-range burst.",
+        "worksBestWhen": [
+          "Tigreal engages after Pharsa is in range.",
+          "Pharsa saves her ultimate for the real crowd-control window."
+        ],
+        "failureCases": [
+          "Tigreal engages outside Pharsa's follow-up range.",
+          "Enemies spread before Tigreal commits."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "pharsa",
+    "synergyHeroId": "atlas",
+    "reasons": [
+      "Atlas can pull multiple enemies into a small area, which gives Pharsa a strong area-damage follow-up target.",
+      "Pharsa can cast from behind the fight while Atlas absorbs the first engage risk."
+    ],
+    "synergyTypes": [
+      "setup-combo",
+      "aoe-follow-up",
+      "teamfight-combo"
+    ],
+    "proof": [
+      {
+        "id": "pharsa-atlas-fatal-links-area-burst",
+        "category": "setup-combo",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Atlas groups enemies, and Pharsa converts the grouped setup into repeated area damage from range.",
+        "worksBestWhen": [
+          "Atlas catches multiple enemy cores or backline heroes.",
+          "Pharsa has vision and space to cast safely."
+        ],
+        "failureCases": [
+          "Atlas misses the pull or catches only a tank.",
+          "Pharsa is forced to cancel or reposition before damage lands."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "pharsa",
+    "synergyHeroId": "gatotkaca",
+    "reasons": [
+      "Gatotkaca can create a frontline airborne setup that gives Pharsa a clear long-range damage window.",
+      "Pharsa can stay in the backline while Gatotkaca enters first, so her damage role remains safe and natural."
+    ],
+    "synergyTypes": [
+      "engage-follow-up",
+      "cc-chain",
+      "frontline-enabler",
+      "teamfight-combo"
+    ],
+    "proof": [
+      {
+        "id": "pharsa-gatotkaca-airborne-frontline-follow-up",
+        "category": "engage-follow-up",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Gatotkaca creates a frontline airborne setup, while Pharsa follows from safe range with long-range area damage.",
+        "worksBestWhen": [
+          "Gatotkaca lands his engage on multiple enemies or a priority target.",
+          "Pharsa is already positioned before Gatotkaca commits."
+        ],
+        "failureCases": [
+          "Gatotkaca misses the landing zone.",
+          "Pharsa is forced to reposition before her damage lands."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "pharsa",
+    "synergyHeroId": "khufra",
+    "reasons": [
+      "Khufra can start fights from distance and create a control window for Pharsa's follow-up damage.",
+      "Khufra's frontline pressure helps keep enemy divers away from Pharsa while she attacks from range."
+    ],
+    "synergyTypes": [
+      "engage-follow-up",
+      "cc-chain",
+      "frontline-enabler"
+    ],
+    "proof": [
+      {
+        "id": "pharsa-khufra-long-range-engage-follow-up",
+        "category": "engage-follow-up",
+        "priority": "primary",
+        "impact": "medium",
+        "summary": "Khufra creates the first disruption, and Pharsa follows from safe range with burst damage.",
+        "worksBestWhen": [
+          "Khufra engages from fog or a flank.",
+          "Pharsa positions before Khufra starts the fight."
+        ],
+        "failureCases": [
+          "Khufra engages without Pharsa nearby.",
+          "Enemy assassins bypass Khufra and reach Pharsa."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "pharsa",
+    "synergyHeroId": "lolita",
+    "reasons": [
+      "Lolita can protect Pharsa's teamfight position against ranged pressure.",
+      "Lolita's setup and zoning give Pharsa more time to cast safely from behind the frontline."
+    ],
+    "synergyTypes": [
+      "protect",
+      "backline-protection",
+      "teamfight-combo"
+    ],
+    "proof": [
+      {
+        "id": "pharsa-lolita-backline-cast-protection",
+        "category": "protection",
+        "priority": "secondary",
+        "impact": "medium",
+        "summary": "Lolita protects the formation while Pharsa pressures enemies from long range.",
+        "worksBestWhen": [
+          "Lolita holds her shield for meaningful ranged damage.",
+          "Pharsa casts from behind Lolita's frontline angle."
+        ],
+        "failureCases": [
+          "Enemies dive from the side instead of firing through Lolita.",
+          "Lolita uses her protection before Pharsa starts dealing damage."
+        ]
+      }
+    ]
+  }
+]

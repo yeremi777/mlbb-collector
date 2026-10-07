@@ -1,0 +1,152 @@
+[
+  {
+    "targetHeroId": "harley",
+    "counterHeroId": "lolita",
+    "reasons": [
+      "Lolita can block Harley's projectile-based follow-up damage and reduce his ability to burst protected backline targets.",
+      "Her shield is especially useful when Harley marks a marksman or mage behind the frontline."
+    ],
+    "counterTypes": [
+      "protect",
+      "anti-burst",
+      "projectile-block"
+    ],
+    "proof": [
+      {
+        "id": "lolita-guardians-bulwark-vs-harley-poker-trick",
+        "category": "skill-interaction",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Harley relies on projectile follow-up after blinking in, while Lolita can block incoming ranged basic attacks and projectiles for protected allies.",
+        "worksBestWhen": [
+          "Lolita faces Harley's damage direction.",
+          "Lolita protects the teammate Harley marks with Deadly Magic."
+        ],
+        "failureCases": [
+          "Harley attacks from an angle outside Lolita's shield.",
+          "Harley waits until Guardian's Bulwark is unavailable."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "harley",
+    "counterHeroId": "kaja",
+    "reasons": [
+      "Kaja can punish Harley after Space Escape is used by suppressing and dragging him into teammate damage.",
+      "Suppression is valuable because Harley depends on fast movement and timing to escape after burst."
+    ],
+    "counterTypes": [
+      "pickoff",
+      "crowd-control-counter",
+      "cooldown-punish"
+    ],
+    "proof": [
+      {
+        "id": "kaja-divine-judgment-vs-harley-space-escape",
+        "category": "crowd-control-counter",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Harley wants to blink in and return to safety, while Kaja can suppress and drag him before he finishes the burst-and-return cycle.",
+        "worksBestWhen": [
+          "Kaja waits for Harley to commit Space Escape.",
+          "Kaja or his team tracks Harley's return location."
+        ],
+        "failureCases": [
+          "Harley pokes from max range and never enters Kaja's threat range.",
+          "Kaja uses Divine Judgment before Harley commits."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "harley",
+    "counterHeroId": "franco",
+    "reasons": [
+      "Franco can catch Harley's predictable return path or suppress him after Harley commits.",
+      "This counter is strongest when Franco has vision of Harley's hat position."
+    ],
+    "counterTypes": [
+      "pickoff",
+      "crowd-control-counter",
+      "cooldown-punish"
+    ],
+    "proof": [
+      {
+        "id": "franco-bloody-hunt-vs-harley-return-window",
+        "category": "crowd-control-counter",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Harley depends on Space Escape to leave after burst, while Franco can punish the entry or return timing with hook pressure and suppression.",
+        "worksBestWhen": [
+          "Franco tracks the hat location.",
+          "Franco holds suppression for Harley's committed engage."
+        ],
+        "failureCases": [
+          "Harley keeps distance and baits Franco's hook.",
+          "Harley returns before Franco can reach him."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "harley",
+    "counterHeroId": "eudora",
+    "reasons": [
+      "Eudora can punish Harley when his blink is unavailable or when he returns predictably to his hat.",
+      "Her targeted stun makes Harley's squishy burst pattern risky if he mispositions."
+    ],
+    "counterTypes": [
+      "burst",
+      "cooldown-punish",
+      "pickoff"
+    ],
+    "proof": [
+      {
+        "id": "eudora-stun-vs-harley-space-escape-cooldown",
+        "category": "cooldown-window",
+        "priority": "primary",
+        "impact": "medium",
+        "summary": "Harley is most vulnerable after using Space Escape, and Eudora can punish that small window with targeted stun and burst.",
+        "worksBestWhen": [
+          "Eudora waits near the expected return path.",
+          "Harley has already used Space Escape."
+        ],
+        "failureCases": [
+          "Harley bursts Eudora first.",
+          "Harley avoids entering Eudora's cast range."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "harley",
+    "counterHeroId": "saber",
+    "reasons": [
+      "Saber can punish Harley as a fragile assassin-mage with targeted airborne burst.",
+      "This is strongest when Harley has already used Space Escape or lacks Purify."
+    ],
+    "counterTypes": [
+      "pickoff",
+      "burst",
+      "crowd-control-counter"
+    ],
+    "proof": [
+      {
+        "id": "saber-triple-sweep-vs-harley-commit",
+        "category": "skill-interaction",
+        "priority": "primary",
+        "impact": "medium",
+        "summary": "Harley relies on mobility to escape, while Saber can target-lock, knock airborne, and burst him during a committed window.",
+        "worksBestWhen": [
+          "Saber waits until Harley's blink route is known.",
+          "Harley has already used Space Escape aggressively."
+        ],
+        "failureCases": [
+          "Harley baits Saber's ultimate.",
+          "Harley keeps enough distance to avoid Saber's engage."
+        ]
+      }
+    ]
+  }
+]

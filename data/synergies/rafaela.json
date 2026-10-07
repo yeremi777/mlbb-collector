@@ -1,0 +1,152 @@
+[
+  {
+    "anchorHeroId": "rafaela",
+    "synergyHeroId": "bruno",
+    "reasons": [
+      "Rafaela helps Bruno survive lane pressure and reposition during trades, while Bruno supplies the main damage.",
+      "Bruno can use Rafaela's speed support to keep safer attack spacing after short trades."
+    ],
+    "synergyTypes": [
+      "healing-sustain",
+      "mobility-enable",
+      "laning-synergy"
+    ],
+    "proof": [
+      {
+        "id": "rafaela-support-for-bruno-lane-trades",
+        "category": "laning-synergy",
+        "priority": "primary",
+        "impact": "medium",
+        "summary": "Rafaela supports Bruno's gold-lane trading pattern with heal and speed, helping him kite or chase after a successful hit.",
+        "worksBestWhen": [
+          "Rafaela stays near Bruno during early lane contests.",
+          "Bruno uses the speed window to keep safe attack spacing."
+        ],
+        "failureCases": [
+          "Bruno is caught by hard engage before Rafaela can heal.",
+          "Rafaela roams too far while Bruno is under pressure."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "rafaela",
+    "synergyHeroId": "layla",
+    "reasons": [
+      "Rafaela helps Layla compensate for weak self-peel by giving heal and movement support.",
+      "Layla can keep firing from range more safely when Rafaela helps her reposition."
+    ],
+    "synergyTypes": [
+      "backline-protection",
+      "healing-sustain",
+      "mobility-enable"
+    ],
+    "proof": [
+      {
+        "id": "rafaela-protection-for-layla-backline-spacing",
+        "category": "protection",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Rafaela improves Layla's survival and spacing, letting Layla keep firing from range instead of being forced out immediately.",
+        "worksBestWhen": [
+          "Rafaela saves speed support for enemy dive or chase timing.",
+          "Layla stays behind the frontline."
+        ],
+        "failureCases": [
+          "Enemy assassins reach Layla before Rafaela can respond.",
+          "Layla overextends because of the speed boost."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "rafaela",
+    "synergyHeroId": "zilong",
+    "reasons": [
+      "Rafaela's speed and heal help Zilong chase, disengage, and continue pressure after a pickoff attempt.",
+      "Zilong benefits from Rafaela's support when he needs to enter or leave a side-lane skirmish quickly."
+    ],
+    "synergyTypes": [
+      "mobility-enable",
+      "pickoff-combo",
+      "healing-sustain"
+    ],
+    "proof": [
+      {
+        "id": "rafaela-speed-for-zilong-pickoff-chase",
+        "category": "mobility-enabler",
+        "priority": "primary",
+        "impact": "medium",
+        "summary": "Rafaela enables Zilong's chase pattern by helping him close distance or escape after forcing a target out of position.",
+        "worksBestWhen": [
+          "Zilong commits after Rafaela has support skills available.",
+          "Rafaela follows the pickoff without entering the enemy backline too deeply."
+        ],
+        "failureCases": [
+          "Zilong dives too far for Rafaela to support.",
+          "Enemy control stops Zilong before the chase matters."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "rafaela",
+    "synergyHeroId": "balmond",
+    "reasons": [
+      "Rafaela helps Balmond stay active in extended skirmishes while he creates frontline pressure.",
+      "Balmond can use Rafaela's speed and heal to continue chasing or reset after absorbing damage."
+    ],
+    "synergyTypes": [
+      "healing-sustain",
+      "frontline-enabler",
+      "teamfight-combo"
+    ],
+    "proof": [
+      {
+        "id": "rafaela-sustain-for-balmond-frontline-pressure",
+        "category": "healing-sustain",
+        "priority": "secondary",
+        "impact": "medium",
+        "summary": "Rafaela's sustain and speed help Balmond stay close to enemies and keep pressuring during longer fights.",
+        "worksBestWhen": [
+          "Balmond uses Rafaela's speed to either chase or reset.",
+          "Rafaela does not stand inside Balmond's frontline path."
+        ],
+        "failureCases": [
+          "Enemy anti-heal reduces the sustain value.",
+          "Balmond is kited beyond Rafaela's support range."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "rafaela",
+    "synergyHeroId": "alucard",
+    "reasons": [
+      "Rafaela helps Alucard chase and survive longer in brawls, giving him more time to use lifesteal and damage.",
+      "Alucard benefits from movement support when he needs to stay attached to a target."
+    ],
+    "synergyTypes": [
+      "healing-sustain",
+      "mobility-enable",
+      "dive-support"
+    ],
+    "proof": [
+      {
+        "id": "rafaela-support-for-alucard-brawl-chase",
+        "category": "healing-sustain",
+        "priority": "secondary",
+        "impact": "medium",
+        "summary": "Rafaela supports Alucard's dive-brawl pattern by helping him stay close and recover during extended melee fights.",
+        "worksBestWhen": [
+          "Alucard enters after Rafaela is near enough to support.",
+          "Rafaela uses speed support to help Alucard stick to targets or disengage."
+        ],
+        "failureCases": [
+          "Alucard dives too far ahead.",
+          "Enemy burst or anti-heal removes the sustain advantage."
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,155 @@
+[
+  {
+    "anchorHeroId": "lolita",
+    "synergyHeroId": "hanabi",
+    "reasons": [
+      "Lolita can provide shield support and frontline protection that helps Hanabi keep attacking safely.",
+      "Hanabi can deal bouncing basic-attack damage from behind Lolita while Lolita blocks or absorbs incoming ranged pressure."
+    ],
+    "synergyTypes": [
+      "shielding",
+      "backline-protection",
+      "laning-synergy",
+      "teamfight-combo"
+    ],
+    "proof": [
+      {
+        "id": "lolita-shield-protection-for-hanabi-backline-damage",
+        "category": "shielding",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Lolita gives nearby ally shielding and frontline protection, while Hanabi benefits from shield uptime to keep attacking more safely in lane and teamfights.",
+        "worksBestWhen": [
+          "Hanabi stays close enough to receive Lolita's shield value.",
+          "Lolita positions between Hanabi and the enemy's main ranged pressure.",
+          "The team plays patiently around Hanabi's protected damage window."
+        ],
+        "failureCases": [
+          "Hanabi is forced away from Lolita's shield range.",
+          "Enemy divers flank around Lolita and reach Hanabi directly.",
+          "The enemy breaks Hanabi's shield before the key crowd-control threat arrives."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "lolita",
+    "synergyHeroId": "bruno",
+    "reasons": [
+      "Lolita protects Bruno in lane and teamfights, giving him safer windows to trade and scale.",
+      "Bruno can deal damage from behind Lolita while she blocks ranged pressure from the front."
+    ],
+    "synergyTypes": [
+      "backline-protection",
+      "laning-synergy",
+      "frontline-enabler"
+    ],
+    "proof": [
+      {
+        "id": "lolita-frontline-for-bruno-protected-trades",
+        "category": "protection",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Lolita blocks ranged pressure and stands in front, while Bruno deals damage from behind her protection.",
+        "worksBestWhen": [
+          "Lolita shields the direction of enemy poke.",
+          "Bruno keeps safe spacing behind Lolita."
+        ],
+        "failureCases": [
+          "Enemy divers attack Bruno from behind.",
+          "Lolita is forced to use shield before the main poke arrives."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "lolita",
+    "synergyHeroId": "layla",
+    "reasons": [
+      "Lolita gives Layla the protection she needs to keep firing from long range.",
+      "Layla benefits from Lolita's shield and control because she wants to stay protected behind the frontline."
+    ],
+    "synergyTypes": [
+      "backline-protection",
+      "protect",
+      "frontline-enabler"
+    ],
+    "proof": [
+      {
+        "id": "lolita-protection-for-layla-long-range-backline",
+        "category": "protection",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Lolita protects Layla from ranged pressure and creates a safer front line for Layla's long-range damage.",
+        "worksBestWhen": [
+          "Layla stays behind Lolita's shield angle.",
+          "Lolita saves control for enemies trying to dive Layla."
+        ],
+        "failureCases": [
+          "Layla positions outside Lolita's protection.",
+          "Enemy assassins flank around the shield."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "lolita",
+    "synergyHeroId": "pharsa",
+    "reasons": [
+      "Lolita can protect space and create control windows while Pharsa follows from long range.",
+      "Pharsa benefits when Lolita blocks pressure and gives her time to cast from safer positioning."
+    ],
+    "synergyTypes": [
+      "engage-follow-up",
+      "poke-siege",
+      "teamfight-combo"
+    ],
+    "proof": [
+      {
+        "id": "lolita-control-for-pharsa-ranged-follow-up",
+        "category": "engage-follow-up",
+        "priority": "primary",
+        "impact": "medium",
+        "summary": "Lolita creates a protected frontline or stun window, while Pharsa punishes enemies from safe range.",
+        "worksBestWhen": [
+          "Lolita controls enemies before Pharsa commits damage.",
+          "Pharsa stays outside enemy dive range."
+        ],
+        "failureCases": [
+          "Lolita's engage is dodged.",
+          "Pharsa is forced to reposition before the follow-up."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "lolita",
+    "synergyHeroId": "odette",
+    "reasons": [
+      "Lolita can create an AoE control window that helps Odette land her teamfight damage.",
+      "Odette benefits when Lolita slows or controls enemies before Odette commits to her damage window."
+    ],
+    "synergyTypes": [
+      "cc-chain",
+      "setup-combo",
+      "aoe-follow-up"
+    ],
+    "proof": [
+      {
+        "id": "lolita-control-for-odette-aoe-follow-up",
+        "category": "crowd-control-chain",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Lolita controls or slows enemies through her engage window, while Odette follows with AoE damage when enemies cannot easily escape.",
+        "worksBestWhen": [
+          "Lolita confirms enough control before Odette commits.",
+          "Odette avoids being interrupted during her damage window."
+        ],
+        "failureCases": [
+          "Enemy control interrupts Odette.",
+          "Lolita's setup is avoided or baited."
+        ]
+      }
+    ]
+  }
+]

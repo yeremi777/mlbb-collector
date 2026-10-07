@@ -1,0 +1,152 @@
+[
+  {
+    "anchorHeroId": "helcurt",
+    "synergyHeroId": "angela",
+    "reasons": [
+      "Angela can attach to Helcurt during his dive window, giving him shield and movement support while he commits to a backline pickoff.",
+      "Helcurt benefits from Angela's protection because his burst plan often requires entering close range and surviving long enough to finish or escape."
+    ],
+    "synergyTypes": [
+      "shielding",
+      "dive-support",
+      "mobility-enable"
+    ],
+    "proof": [
+      {
+        "id": "helcurt-angela-heartguard-dive-support",
+        "category": "shielding",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Helcurt creates the dive and pickoff angle, while Angela strengthens the commit with shield and movement support.",
+        "worksBestWhen": [
+          "Angela saves Heartguard for Helcurt's real dive.",
+          "Helcurt enters after the target has limited peel nearby."
+        ],
+        "failureCases": [
+          "Angela attaches too early and Helcurt does not commit.",
+          "Helcurt dives into layered hard control without follow-up."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "helcurt",
+    "synergyHeroId": "kaja",
+    "reasons": [
+      "Kaja can isolate one target and give Helcurt a clear burst target instead of forcing Helcurt to search blindly for an opening.",
+      "Helcurt can follow Kaja's catch with fast damage during the target's limited response window."
+    ],
+    "synergyTypes": [
+      "pickoff-combo",
+      "setup-combo",
+      "burst-follow-up"
+    ],
+    "proof": [
+      {
+        "id": "helcurt-kaja-single-target-pickoff",
+        "category": "pickoff-combo",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Kaja creates the single-target control window, while Helcurt follows with burst before the target can reposition or receive peel.",
+        "worksBestWhen": [
+          "Kaja catches a priority target instead of a frontline tank.",
+          "Helcurt is close enough to follow immediately."
+        ],
+        "failureCases": [
+          "Kaja catches a low-value target.",
+          "Helcurt is late and the enemy team peels the target."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "helcurt",
+    "synergyHeroId": "mathilda",
+    "reasons": [
+      "Mathilda can give Helcurt an extra mobility route and shield support before or after he commits.",
+      "Helcurt can convert Mathilda's movement support into a stronger backline entry or safer reset path."
+    ],
+    "synergyTypes": [
+      "mobility-enable",
+      "shielding",
+      "dive-support"
+    ],
+    "proof": [
+      {
+        "id": "helcurt-mathilda-guiding-wind-dive-route",
+        "category": "mobility-enabler",
+        "priority": "primary",
+        "impact": "medium",
+        "summary": "Mathilda supports Helcurt's dive path with mobility and shielding, helping him enter or leave after a pickoff attempt.",
+        "worksBestWhen": [
+          "Mathilda positions near Helcurt's intended dive path.",
+          "Helcurt uses the mobility support to reach a priority target instead of overchasing."
+        ],
+        "failureCases": [
+          "Mathilda is too far away to provide the route.",
+          "Helcurt dives after Mathilda's support skills are already spent."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "helcurt",
+    "synergyHeroId": "selena",
+    "reasons": [
+      "Selena can provide trap vision and long-range stun setup before Helcurt commits.",
+      "Helcurt can use Selena's vision and control information to choose a safer burst angle."
+    ],
+    "synergyTypes": [
+      "vision-setup",
+      "pickoff-combo",
+      "cc-chain"
+    ],
+    "proof": [
+      {
+        "id": "helcurt-selena-vision-pickoff-setup",
+        "category": "vision-setup",
+        "priority": "primary",
+        "impact": "medium",
+        "summary": "Selena scouts and threatens a stun, while Helcurt uses that information to commit on a safer isolated target.",
+        "worksBestWhen": [
+          "Selena controls bushes or jungle entrances before Helcurt enters.",
+          "Helcurt commits only after Selena confirms target position."
+        ],
+        "failureCases": [
+          "Selena misses the setup and Helcurt dives blind.",
+          "The enemy groups tightly and denies single-target isolation."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "helcurt",
+    "synergyHeroId": "floryn",
+    "reasons": [
+      "Floryn can support Helcurt from distance when he dives away from normal support range.",
+      "Helcurt benefits from Floryn's global sustain because his pickoff pattern often needs survival after the first commit."
+    ],
+    "synergyTypes": [
+      "healing-sustain",
+      "dive-support",
+      "cooldown-dependent"
+    ],
+    "proof": [
+      {
+        "id": "helcurt-floryn-global-heal-dive-sustain",
+        "category": "healing-sustain",
+        "priority": "secondary",
+        "impact": "medium",
+        "summary": "Helcurt creates a dive or pickoff window, while Floryn can support him from distance with healing during or after the commit.",
+        "worksBestWhen": [
+          "Helcurt commits after building a real pickoff angle.",
+          "Floryn saves her key healing for Helcurt's real fight window."
+        ],
+        "failureCases": [
+          "Helcurt is bursted before healing can matter.",
+          "Floryn's key healing is unavailable during Helcurt's commit."
+        ]
+      }
+    ]
+  }
+]

@@ -96,7 +96,7 @@ Both clients send `INGEST_USER_AGENT`, default `mlbb-collector/1.0 (+github.com/
 
 | Variable | Default | Meaning |
 |---|---|---|
-| `DATABASE_URL` | required | as in `api` |
+| `DB_*` | | as in `api` |
 | `INGEST_TIMEZONE` | `Asia/Jakarta` | the zone whose today is a run's date |
 | `INGEST_USER_AGENT` | as above | sent to both upstreams |
 | `MOONTON_BASE_URL` | `https://api.gms.moontontech.com/api/gms/source/2669606` | for pointing a run at a stub |
@@ -121,13 +121,14 @@ A non-default base URL is logged as a warning on every run.
 ## Verification
 
 ```bash
+set -a; . ./.env; set +a; export PGHOST=$DB_HOST PGPORT=$DB_PORT PGDATABASE=$DB_NAME PGUSER=$DB_USERNAME PGPASSWORD=$DB_PASSWORD PGSSLMODE=$DB_SSLMODE   # psql below reads these
 go vet ./...
 go test ./...                                                      # AC-5 to AC-8, AC-10
 make migrate-reset && make migrate-up                              # AC-1, run by the user
 make ingest && make ingest                                         # AC-2, AC-3, run by the user
-psql "$DATABASE_URL" -c "SELECT rank_tier, window_days, count(*) FROM raw.hero_rank_snapshots WHERE snapshot_date = current_date GROUP BY 1, 2 ORDER BY 1, 2"   # AC-2
-psql "$DATABASE_URL" -tAc "SELECT sum(appearance_share) FROM raw.hero_rank_snapshots WHERE rank_tier = 'all' AND window_days = 1 AND snapshot_date = current_date"   # AC-2
-psql "$DATABASE_URL" -c "DELETE FROM raw.hero_rank_snapshots WHERE snapshot_date = current_date AND (window_days = 15 OR (window_days = 30 AND rank_tier IN ('epic','legend','mythic','honor')))"   # AC-4 setup, run by the user against a disposable database
+psql -c "SELECT rank_tier, window_days, count(*) FROM raw.hero_rank_snapshots WHERE snapshot_date = current_date GROUP BY 1, 2 ORDER BY 1, 2"   # AC-2
+psql -tAc "SELECT sum(appearance_share) FROM raw.hero_rank_snapshots WHERE rank_tier = 'all' AND window_days = 1 AND snapshot_date = current_date"   # AC-2
+psql -c "DELETE FROM raw.hero_rank_snapshots WHERE snapshot_date = current_date AND (window_days = 15 OR (window_days = 30 AND rank_tier IN ('epic','legend','mythic','honor')))"   # AC-4 setup, run by the user against a disposable database
 go run ./cmd/ingest stats                                          # AC-4, logs 10 fetched, 20 skipped
 LIQUIPEDIA_BASE_URL=http://127.0.0.1:1 go run ./cmd/ingest all; test $? -eq 1   # AC-9
 make ingest-install && make ingest-install && make ingest-status   # AC-11

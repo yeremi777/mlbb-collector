@@ -1,0 +1,152 @@
+[
+  {
+    "targetHeroId": "aurora",
+    "counterHeroId": "diggie",
+    "reasons": [
+      "Diggie directly reduces Aurora's freeze-based teamfight value.",
+      "Time Journey can protect nearby allies during Aurora's main control window."
+    ],
+    "counterTypes": [
+      "anti-cc",
+      "cleanse",
+      "protect"
+    ],
+    "proof": [
+      {
+        "id": "diggie-time-journey-vs-aurora-freeze-combo",
+        "category": "crowd-control-counter",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Aurora wants to freeze multiple enemies and burst them, while Diggie can cleanse debuffs and grant control immunity to nearby allies.",
+        "worksBestWhen": [
+          "Diggie saves ultimate for Aurora's real freeze combo.",
+          "Teammates stay close enough to receive protection."
+        ],
+        "failureCases": [
+          "Aurora baits Diggie's ultimate before committing.",
+          "Aurora catches Diggie first."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "aurora",
+    "counterHeroId": "kagura",
+    "reasons": [
+      "Kagura has a built-in debuff removal and dash to escape control timing.",
+      "She can poke Aurora from angles without fully committing into freeze range."
+    ],
+    "counterTypes": [
+      "cleanse",
+      "mobility",
+      "poke"
+    ],
+    "proof": [
+      {
+        "id": "kagura-rasho-umbrella-flee-vs-aurora-freeze",
+        "category": "skill-interaction",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Aurora wants to catch enemies with freeze timing, while Kagura can remove debuffs, dash, and reposition before counter-poking.",
+        "worksBestWhen": [
+          "Kagura keeps her cleanse available for Aurora's freeze setup.",
+          "Kagura avoids standing near grouped teammates."
+        ],
+        "failureCases": [
+          "Kagura uses mobility before Aurora commits.",
+          "Aurora triggers Kagura after baiting her cleanse."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "aurora",
+    "counterHeroId": "lancelot",
+    "reasons": [
+      "Lancelot can dodge key Aurora skill timing with invulnerable or untargetable frames.",
+      "He can punish Aurora after her freeze combo or passive window is forced."
+    ],
+    "counterTypes": [
+      "mobility",
+      "burst",
+      "cooldown-punish"
+    ],
+    "proof": [
+      {
+        "id": "lancelot-immunity-windows-vs-aurora-freeze",
+        "category": "mobility-advantage",
+        "priority": "primary",
+        "impact": "medium",
+        "summary": "Aurora wants reliable freeze timing, while Lancelot can avoid important damage and control windows and re-enter after cooldowns.",
+        "worksBestWhen": [
+          "Lancelot waits for Aurora's freeze skill to be committed.",
+          "Lancelot can force Aurora's passive before the main fight."
+        ],
+        "failureCases": [
+          "Lancelot mistimes immunity and gets frozen.",
+          "Aurora stays protected behind frontline control."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "aurora",
+    "counterHeroId": "franco",
+    "reasons": [
+      "Franco can pick Aurora before she sets up teamfight control.",
+      "Suppression helps force Aurora out of position and lets teammates follow up after her passive is triggered."
+    ],
+    "counterTypes": [
+      "suppression",
+      "pickoff",
+      "cooldown-punish"
+    ],
+    "proof": [
+      {
+        "id": "franco-pickoff-vs-aurora-safe-casting",
+        "category": "positioning-requirement",
+        "priority": "condition",
+        "impact": "medium",
+        "summary": "Aurora is dangerous when she controls the fight from safe range, while Franco can punish poor positioning with hook or suppression.",
+        "worksBestWhen": [
+          "Franco catches Aurora before she has full team protection.",
+          "Teammates wait out or re-engage after Aurora's passive."
+        ],
+        "failureCases": [
+          "Franco hooks a tank instead of Aurora.",
+          "Aurora freezes Franco's team during the attempted pickoff."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "aurora",
+    "counterHeroId": "kaja",
+    "reasons": [
+      "Kaja can isolate Aurora before she controls a teamfight.",
+      "Suppression gives a reliable pickoff tool if Aurora is exposed."
+    ],
+    "counterTypes": [
+      "suppression",
+      "pickoff",
+      "anti-mage"
+    ],
+    "proof": [
+      {
+        "id": "kaja-divine-judgment-vs-aurora-backline",
+        "category": "skill-interaction",
+        "priority": "primary",
+        "impact": "medium",
+        "summary": "Aurora wants to cast from a protected position, while Kaja can suppress and drag her into a burst window.",
+        "worksBestWhen": [
+          "Kaja flanks or Flicker-engages onto Aurora.",
+          "The team is ready to finish after Aurora's passive is forced."
+        ],
+        "failureCases": [
+          "Kaja cannot reach Aurora.",
+          "Aurora's team peels immediately after the drag."
+        ]
+      }
+    ]
+  }
+]

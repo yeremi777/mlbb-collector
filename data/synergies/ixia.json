@@ -1,0 +1,157 @@
+[
+  {
+    "anchorHeroId": "ixia",
+    "synergyHeroId": "tigreal",
+    "reasons": [
+      "Tigreal can group enemies before Ixia commits Full Barrage, giving her a clearer fan-shaped damage angle.",
+      "Ixia can wait for Tigreal's confirmed crowd control before entering her stationary damage window."
+    ],
+    "synergyTypes": [
+      "engage-follow-up",
+      "cc-chain",
+      "teamfight-combo"
+    ],
+    "proof": [
+      {
+        "id": "tigreal-setup-for-ixia-full-barrage",
+        "category": "engage-follow-up",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Tigreal creates the grouped engage, while Ixia converts the control window into sustained backline damage.",
+        "worksBestWhen": [
+          "Tigreal engages after Ixia is close enough to aim Full Barrage.",
+          "The fight happens around an objective, turret, or choke where enemies cannot easily spread."
+        ],
+        "failureCases": [
+          "Tigreal engages outside Ixia's firing angle.",
+          "Ixia is suppressed or dived during Full Barrage.",
+          "The enemy spreads before Ixia activates her ultimate."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "ixia",
+    "synergyHeroId": "atlas",
+    "reasons": [
+      "Atlas can pull multiple enemies into one area, giving Ixia a strong multi-target Full Barrage setup.",
+      "Ixia benefits when Atlas forces enemies to stay grouped before she commits to her stationary firing window."
+    ],
+    "synergyTypes": [
+      "setup-combo",
+      "cc-chain",
+      "teamfight-combo"
+    ],
+    "proof": [
+      {
+        "id": "atlas-pull-for-ixia-barrage",
+        "category": "setup-combo",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Atlas creates the multi-target setup, while Ixia follows with fan-shaped sustained damage.",
+        "worksBestWhen": [
+          "Atlas catches multiple valuable targets.",
+          "Ixia waits until Atlas finishes the pull before activating Full Barrage."
+        ],
+        "failureCases": [
+          "Atlas catches only a low-value frontline target.",
+          "Ixia is too far to follow the setup.",
+          "The enemy saves suppression or hard dive for Ixia."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "ixia",
+    "synergyHeroId": "diggie",
+    "reasons": [
+      "Diggie can protect Ixia during Full Barrage with shield and control immunity support.",
+      "Ixia gains more reliable damage uptime when Diggie saves protection for the enemy engage window."
+    ],
+    "synergyTypes": [
+      "protect",
+      "shielding",
+      "backline-protection"
+    ],
+    "proof": [
+      {
+        "id": "diggie-protection-for-ixia-barrage",
+        "category": "protection",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Diggie protects Ixia's immobile damage window by shielding nearby allies and reducing the value of enemy crowd control.",
+        "worksBestWhen": [
+          "Diggie stays close enough to cover Ixia before Full Barrage starts.",
+          "Diggie saves Time Journey for the real engage instead of poke damage."
+        ],
+        "failureCases": [
+          "Enemy suppression targets Ixia.",
+          "Ixia activates Full Barrage outside Diggie's protection range.",
+          "Diggie uses Time Journey before the enemy commits."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "ixia",
+    "synergyHeroId": "minotaur",
+    "reasons": [
+      "Minotaur gives Ixia a frontline that can absorb pressure before she commits to Full Barrage.",
+      "His healing and crowd control help Ixia survive long enough to finish her firing window."
+    ],
+    "synergyTypes": [
+      "frontline-enabler",
+      "healing-sustain",
+      "cc-chain"
+    ],
+    "proof": [
+      {
+        "id": "minotaur-frontline-for-ixia",
+        "category": "frontline-enabler",
+        "priority": "secondary",
+        "impact": "high",
+        "summary": "Minotaur creates front space and sustain so Ixia can fire from a safer backline angle.",
+        "worksBestWhen": [
+          "Minotaur holds enemy divers before they reach Ixia.",
+          "Ixia waits for Minotaur's frontline position before activating Full Barrage."
+        ],
+        "failureCases": [
+          "Minotaur dives too far and leaves Ixia exposed.",
+          "Enemy assassins flank around the frontline.",
+          "Ixia stands too close before the fight starts."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "ixia",
+    "synergyHeroId": "lolita",
+    "reasons": [
+      "Lolita can protect Ixia from ranged pressure while Ixia prepares a safe firing angle.",
+      "Ixia benefits from Lolita's frontline cover because she cannot freely reposition during Full Barrage."
+    ],
+    "synergyTypes": [
+      "backline-protection",
+      "shielding",
+      "frontline-enabler"
+    ],
+    "proof": [
+      {
+        "id": "lolita-cover-for-ixia",
+        "category": "protection",
+        "priority": "secondary",
+        "impact": "medium",
+        "summary": "Lolita helps protect Ixia's setup position from ranged pressure before and during her damage window.",
+        "worksBestWhen": [
+          "Lolita positions between Ixia and enemy projectile pressure.",
+          "Ixia fires from behind the protected angle."
+        ],
+        "failureCases": [
+          "Enemy divers bypass Lolita's shield angle.",
+          "Ixia is suppressed or flanked.",
+          "Lolita's shield is unavailable before Ixia commits."
+        ]
+      }
+    ]
+  }
+]

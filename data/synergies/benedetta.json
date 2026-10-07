@@ -1,0 +1,157 @@
+[
+  {
+    "anchorHeroId": "benedetta",
+    "synergyHeroId": "angela",
+    "reasons": [
+      "Angela can attach to Benedetta during a dive, giving extra protection while Benedetta enters and exits fights.",
+      "Benedetta's mobility makes Angela's attached pressure harder for enemies to isolate."
+    ],
+    "synergyTypes": [
+      "dive-support",
+      "shielding",
+      "healing-sustain"
+    ],
+    "proof": [
+      {
+        "id": "angela-heartguard-for-benedetta-dive",
+        "category": "protection",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Benedetta dives or chases with mobility, while Angela adds a shield and support layer during the high-risk entry window.",
+        "worksBestWhen": [
+          "Angela attaches before Benedetta commits deeply.",
+          "Benedetta uses mobility to stay active instead of disengaging too early."
+        ],
+        "failureCases": [
+          "Benedetta is burst before Angela finishes channeling.",
+          "Benedetta dives beyond team follow-up.",
+          "The enemy waits out Angela's shield before re-engaging."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "benedetta",
+    "synergyHeroId": "floryn",
+    "reasons": [
+      "Floryn can support Benedetta during side-lane or dive fights without needing to stand beside her.",
+      "Benedetta benefits from extra healing because her value often depends on surviving long enough to reset position."
+    ],
+    "synergyTypes": [
+      "healing-sustain",
+      "dive-support",
+      "game-phase"
+    ],
+    "proof": [
+      {
+        "id": "floryn-healing-for-benedetta-skirmish",
+        "category": "healing-sustain",
+        "priority": "secondary",
+        "impact": "medium",
+        "summary": "Benedetta creates mobile pressure, while Floryn provides healing support that helps her survive extended skirmishes.",
+        "worksBestWhen": [
+          "Floryn saves healing for Benedetta's commit or escape window.",
+          "Benedetta takes fights near meaningful objectives or side-lane pressure."
+        ],
+        "failureCases": [
+          "Anti-heal reduces Floryn's value.",
+          "Benedetta dives without a retreat path.",
+          "Floryn uses heal before Benedetta is actually pressured."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "benedetta",
+    "synergyHeroId": "mathilda",
+    "reasons": [
+      "Mathilda adds another movement and shield layer to Benedetta's mobile fight pattern.",
+      "This synergy helps Benedetta enter, reposition, or disengage after forcing enemy skills."
+    ],
+    "synergyTypes": [
+      "mobility-enable",
+      "shielding",
+      "dive-support"
+    ],
+    "proof": [
+      {
+        "id": "mathilda-mobility-with-benedetta",
+        "category": "mobility-enabler",
+        "priority": "secondary",
+        "impact": "medium",
+        "summary": "Benedetta uses her own dashes to pressure, while Mathilda gives the team extra shield and movement options around the dive.",
+        "worksBestWhen": [
+          "Mathilda times Guiding Wind around Benedetta's commit.",
+          "Benedetta uses the movement option to escape after forcing cooldowns."
+        ],
+        "failureCases": [
+          "Both heroes spend mobility tools at the same time with no follow-up.",
+          "Benedetta overcommits after receiving shield.",
+          "The enemy chains hard CC after the dash windows end."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "benedetta",
+    "synergyHeroId": "faramis",
+    "reasons": [
+      "Benedetta can commit aggressively when Faramis gives the team a safety layer during grouped fights.",
+      "Faramis helps reduce the risk of Benedetta being punished after she dives into the enemy formation."
+    ],
+    "synergyTypes": [
+      "protect",
+      "teamfight-combo",
+      "dive-support"
+    ],
+    "proof": [
+      {
+        "id": "faramis-protection-for-benedetta-dive",
+        "category": "protection",
+        "priority": "secondary",
+        "impact": "medium",
+        "summary": "Benedetta pressures the enemy backline, while Faramis gives teamfight insurance if the dive turns into a full commit.",
+        "worksBestWhen": [
+          "Benedetta fights near Faramis's teamfight area.",
+          "Faramis casts protection before the team collapses."
+        ],
+        "failureCases": [
+          "Benedetta fights too far from the team.",
+          "Faramis is picked off before the fight.",
+          "The team disengages instead of using the protection window."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "benedetta",
+    "synergyHeroId": "atlas",
+    "reasons": [
+      "Atlas can group enemies, giving Benedetta a clear path for Alecto: Final Blow.",
+      "Benedetta can follow Atlas's engage from an angle instead of starting the fight alone."
+    ],
+    "synergyTypes": [
+      "engage-follow-up",
+      "aoe-follow-up",
+      "teamfight-combo"
+    ],
+    "proof": [
+      {
+        "id": "atlas-grouping-for-benedetta-final-blow",
+        "category": "engage-follow-up",
+        "priority": "primary",
+        "impact": "medium",
+        "summary": "Atlas groups enemies with AoE CC, while Benedetta follows through the controlled area with dash damage and zone pressure.",
+        "worksBestWhen": [
+          "Benedetta waits for Atlas to commit first.",
+          "Atlas catches targets along a path Benedetta can dash through."
+        ],
+        "failureCases": [
+          "Benedetta enters before Atlas lands CC.",
+          "Atlas pulls enemies away from Benedetta's angle.",
+          "The enemy saves mobility after Atlas's pull."
+        ]
+      }
+    ]
+  }
+]

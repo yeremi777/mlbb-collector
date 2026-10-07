@@ -1,0 +1,159 @@
+[
+  {
+    "anchorHeroId": "chip",
+    "synergyHeroId": "luo-yi",
+    "reasons": [
+      "Luo Yi adds a second map-movement tool on top of Chip's portal system.",
+      "After Chip creates a portal collapse, Luo Yi can punish grouped enemies with Yin-Yang Reaction pull and stun."
+    ],
+    "synergyTypes": [
+      "mobility-enable",
+      "cc-chain",
+      "teamfight-combo",
+      "execution-dependent"
+    ],
+    "proof": [
+      {
+        "id": "chip-luo-yi-double-map-collapse",
+        "category": "mobility-enabler",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Chip creates portal access into a fight, while Luo Yi adds another teleport layer and pull/stun follow-up after enemies are grouped.",
+        "worksBestWhen": [
+          "The team communicates whether Chip Shortcut or Luo Yi Diversion starts the play.",
+          "Luo Yi prepares Yin/Yang marks before the portal fight begins.",
+          "Teammates enter together instead of one by one."
+        ],
+        "failureCases": [
+          "Double teleport causes split timing.",
+          "Luo Yi and Chip choose different fight locations.",
+          "The team arrives without damage cooldowns ready."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "chip",
+    "synergyHeroId": "zetian",
+    "reasons": [
+      "Zetian reveals enemy positions, helping Chip choose a portal target.",
+      "Her global control and allied movement support make Chip's portal timing easier to convert into a collapse."
+    ],
+    "synergyTypes": [
+      "vision-setup",
+      "mobility-enable",
+      "teamfight-combo"
+    ],
+    "proof": [
+      {
+        "id": "zetian-vision-for-chip-shortcut",
+        "category": "vision-setup",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Zetian reveals and briefly controls enemies globally, while Chip converts that information into a portal engage.",
+        "worksBestWhen": [
+          "Zetian casts ultimate before Chip chooses the Shortcut target.",
+          "Chip targets an isolated or objective-side enemy."
+        ],
+        "failureCases": [
+          "Chip portals into enemy bait.",
+          "Zetian's global window ends before teammates arrive.",
+          "The team enters the portal without coordination."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "chip",
+    "synergyHeroId": "yi-sun-shin",
+    "reasons": [
+      "Yi Sun-shin gives Chip global enemy-location information before Chip commits Shortcut.",
+      "Chip can use the reveal to choose safer objective-side or isolated portal targets."
+    ],
+    "synergyTypes": [
+      "vision-setup",
+      "objective-control",
+      "pickoff-combo"
+    ],
+    "proof": [
+      {
+        "id": "yi-sun-shin-reveal-for-chip-portal",
+        "category": "vision-setup",
+        "priority": "secondary",
+        "impact": "high",
+        "summary": "Yi Sun-shin reveals enemy positions, while Chip uses that information to choose a safer portal-collapse target.",
+        "worksBestWhen": [
+          "Yi Sun-shin reveals before Chip casts Shortcut.",
+          "The revealed target is isolated or near an objective."
+        ],
+        "failureCases": [
+          "Chip waits too long after the reveal.",
+          "The revealed target has backup nearby.",
+          "Teammates cannot enter the portal quickly enough."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "chip",
+    "synergyHeroId": "claude",
+    "reasons": [
+      "Claude can convert Chip's portal collapse into Blazing Duet AoE damage.",
+      "Claude's repositioning tools help him enter and reset around Chip's portal fight."
+    ],
+    "synergyTypes": [
+      "aoe-follow-up",
+      "mobility-enable",
+      "teamfight-combo"
+    ],
+    "proof": [
+      {
+        "id": "chip-portal-for-claude-blazing-duet",
+        "category": "teamfight-combo",
+        "priority": "secondary",
+        "impact": "medium",
+        "summary": "Chip creates the portal fight, while Claude follows with mobile AoE marksman damage.",
+        "worksBestWhen": [
+          "Claude has Blazing Duet and Battle Mirror Image ready.",
+          "Chip targets a fight where Claude will not be instantly controlled."
+        ],
+        "failureCases": [
+          "Claude enters too early.",
+          "Claude lacks item damage.",
+          "The portal places Claude inside hard crowd control."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "chip",
+    "synergyHeroId": "yu-zhong",
+    "reasons": [
+      "Yu Zhong can start deep disruption, and Chip can bring the rest of the team to finish the fight.",
+      "Chip helps Yu Zhong's backline pressure become a coordinated teamfight instead of a solo dive."
+    ],
+    "synergyTypes": [
+      "dive-support",
+      "frontline-enabler",
+      "teamfight-combo"
+    ],
+    "proof": [
+      {
+        "id": "yu-zhong-disruption-for-chip-collapse",
+        "category": "frontline-enabler",
+        "priority": "secondary",
+        "impact": "medium",
+        "summary": "Yu Zhong disrupts deep targets, while Chip turns that disruption into a team arrival point.",
+        "worksBestWhen": [
+          "Yu Zhong starts pressure before Chip opens the portal.",
+          "Teammates arrive together through Chip's portal."
+        ],
+        "failureCases": [
+          "Yu Zhong dives too early.",
+          "Chip portals teammates into counter-engage.",
+          "Yu Zhong and Chip target different areas."
+        ]
+      }
+    ]
+  }
+]

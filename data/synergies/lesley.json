@@ -1,0 +1,152 @@
+[
+  {
+    "anchorHeroId": "lesley",
+    "synergyHeroId": "lolita",
+    "reasons": [
+      "Lolita can block important ranged pressure, giving Lesley more freedom to hold sniper spacing.",
+      "Lolita's frontline zoning helps Lesley deal damage without being forced into short-range trades."
+    ],
+    "synergyTypes": [
+      "backline-protection",
+      "protect",
+      "peel"
+    ],
+    "proof": [
+      {
+        "id": "lesley-lolita-sniper-lane-protection",
+        "category": "protection",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Lolita protects Lesley's backline angle, allowing Lesley to keep firing from safe distance.",
+        "worksBestWhen": [
+          "Lolita blocks real damage windows, not bait skills.",
+          "Lesley positions behind the shield angle."
+        ],
+        "failureCases": [
+          "Enemies flank Lesley instead of attacking from the front.",
+          "Lolita's shield is used before the enemy commits."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "lesley",
+    "synergyHeroId": "diggie",
+    "reasons": [
+      "Diggie can protect Lesley from heavy crowd-control engage during critical fight windows.",
+      "Lesley benefits from anti-engage support because her damage pattern depends on staying alive and spaced."
+    ],
+    "synergyTypes": [
+      "protect",
+      "backline-protection",
+      "cooldown-dependent"
+    ],
+    "proof": [
+      {
+        "id": "lesley-diggie-anti-engage-backline-protection",
+        "category": "protection",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Diggie reduces the value of enemy crowd-control engage so Lesley can keep distance and continue firing.",
+        "worksBestWhen": [
+          "Diggie saves his protection for the main enemy engage.",
+          "Lesley stays close enough to receive the protection."
+        ],
+        "failureCases": [
+          "Diggie's key skill is baited before the real fight.",
+          "Lesley is caught outside Diggie's protection range."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "lesley",
+    "synergyHeroId": "franco",
+    "reasons": [
+      "Franco can pull a target into Lesley's firing range, creating a simple pickoff window.",
+      "Lesley can follow Franco's catch safely without needing to overstep first."
+    ],
+    "synergyTypes": [
+      "pickoff-combo",
+      "setup-combo",
+      "burst-follow-up"
+    ],
+    "proof": [
+      {
+        "id": "lesley-franco-hook-sniper-pickoff",
+        "category": "pickoff-combo",
+        "priority": "primary",
+        "impact": "medium",
+        "summary": "Franco isolates a target, and Lesley converts the catch with long-range damage or finishing shots.",
+        "worksBestWhen": [
+          "Franco hooks a squishy or low-mobility target.",
+          "Lesley is already positioned to follow up."
+        ],
+        "failureCases": [
+          "Franco hooks a tank or bait target.",
+          "Lesley has no vision or angle to shoot."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "lesley",
+    "synergyHeroId": "rafaela",
+    "reasons": [
+      "Rafaela's heal and movement-speed support help Lesley maintain distance in lane and teamfights.",
+      "Rafaela's slow and vision pressure can make it easier for Lesley to kite and finish targets."
+    ],
+    "synergyTypes": [
+      "healing-sustain",
+      "mobility-enable",
+      "peel"
+    ],
+    "proof": [
+      {
+        "id": "lesley-rafaela-kite-sustain-support",
+        "category": "healing-sustain",
+        "priority": "secondary",
+        "impact": "medium",
+        "summary": "Rafaela supports Lesley's spacing with healing and speed, making backline kiting more reliable.",
+        "worksBestWhen": [
+          "Rafaela saves speed support for enemy dive attempts.",
+          "Lesley uses the movement window to reposition instead of chasing too deep."
+        ],
+        "failureCases": [
+          "Burst damage kills Lesley before healing matters.",
+          "Rafaela is forced to heal other teammates during Lesley's danger window."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "lesley",
+    "synergyHeroId": "tigreal",
+    "reasons": [
+      "Tigreal can hold the frontline and force enemies to respect his engage, giving Lesley space to deal damage.",
+      "Tigreal's crowd-control setup creates safer shooting windows against enemies who would otherwise dive Lesley."
+    ],
+    "synergyTypes": [
+      "frontline-enabler",
+      "engage-follow-up",
+      "protect"
+    ],
+    "proof": [
+      {
+        "id": "lesley-tigreal-frontline-sniper-space",
+        "category": "frontline-enabler",
+        "priority": "secondary",
+        "impact": "medium",
+        "summary": "Tigreal creates space and control pressure, while Lesley attacks from behind the frontline.",
+        "worksBestWhen": [
+          "Tigreal zones enemy divers before they reach Lesley.",
+          "Lesley follows from safe distance rather than stepping into the engage."
+        ],
+        "failureCases": [
+          "Tigreal engages too far forward and leaves Lesley unprotected.",
+          "Enemy assassins flank around the frontline."
+        ]
+      }
+    ]
+  }
+]

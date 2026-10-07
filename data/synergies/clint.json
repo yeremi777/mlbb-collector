@@ -1,0 +1,152 @@
+[
+  {
+    "anchorHeroId": "clint",
+    "synergyHeroId": "lolita",
+    "reasons": [
+      "Lolita protects Clint from projectile pressure and gives him a stable front wall to play behind.",
+      "Clint can use his ranged poke more safely while Lolita blocks the enemy's return damage angle."
+    ],
+    "synergyTypes": [
+      "backline-protection",
+      "frontline-enabler",
+      "laning-synergy"
+    ],
+    "proof": [
+      {
+        "id": "lolita-frontline-for-clint-poke-spacing",
+        "category": "protection",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Lolita blocks incoming ranged pressure while Clint uses his long-range poke and burst from safer spacing.",
+        "worksBestWhen": [
+          "Lolita angles her shield toward the main ranged threat.",
+          "Clint plays behind Lolita instead of stepping into engage range."
+        ],
+        "failureCases": [
+          "Enemy divers attack Clint from behind or the side.",
+          "Lolita's shield is unavailable during the enemy's poke window."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "clint",
+    "synergyHeroId": "tigreal",
+    "reasons": [
+      "Tigreal can lock enemies in place, allowing Clint to land burst follow-up without overextending.",
+      "Clint can punish controlled targets from range after Tigreal starts the fight."
+    ],
+    "synergyTypes": [
+      "engage-follow-up",
+      "cc-chain",
+      "burst-follow-up"
+    ],
+    "proof": [
+      {
+        "id": "tigreal-setup-for-clint-burst-follow-up",
+        "category": "engage-follow-up",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Tigreal creates the crowd-control setup, while Clint follows with ranged burst on controlled targets.",
+        "worksBestWhen": [
+          "Tigreal engages inside Clint's follow-up range.",
+          "Clint saves key damage for the confirmed setup."
+        ],
+        "failureCases": [
+          "Tigreal catches targets behind terrain or outside Clint's range.",
+          "Clint is pressured before he can follow up."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "clint",
+    "synergyHeroId": "rafaela",
+    "reasons": [
+      "Rafaela helps Clint maintain spacing with heal and movement support during poke trades.",
+      "Clint benefits from Rafaela's disengage support when enemies try to collapse on his backline position."
+    ],
+    "synergyTypes": [
+      "healing-sustain",
+      "mobility-enable",
+      "positioning-dependent"
+    ],
+    "proof": [
+      {
+        "id": "rafaela-positioning-support-for-clint-poke",
+        "category": "positioning-requirement",
+        "priority": "secondary",
+        "impact": "medium",
+        "summary": "Rafaela improves Clint's ability to reposition between poke cycles, making it easier for him to avoid being collapsed on.",
+        "worksBestWhen": [
+          "Rafaela supports Clint before enemy dive reaches him.",
+          "Clint uses the speed window defensively, not only to chase."
+        ],
+        "failureCases": [
+          "Enemy assassins burst Clint before Rafaela can react.",
+          "Clint steps too far forward after winning a trade."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "clint",
+    "synergyHeroId": "minotaur",
+    "reasons": [
+      "Minotaur gives Clint frontline cover, healing, and peel so Clint can keep dealing damage safely.",
+      "Clint can punish enemies who enter Minotaur's control zone."
+    ],
+    "synergyTypes": [
+      "frontline-enabler",
+      "healing-sustain",
+      "peel"
+    ],
+    "proof": [
+      {
+        "id": "minotaur-peel-for-clint-backline-poke",
+        "category": "frontline-enabler",
+        "priority": "primary",
+        "impact": "medium",
+        "summary": "Minotaur creates space and absorbs pressure while Clint punishes enemies who enter his poke range.",
+        "worksBestWhen": [
+          "Minotaur guards Clint against enemy dive.",
+          "Clint positions behind Minotaur's control zone."
+        ],
+        "failureCases": [
+          "Minotaur engages away from Clint and leaves him exposed.",
+          "Enemy flankers avoid the frontline and reach Clint directly."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "clint",
+    "synergyHeroId": "angela",
+    "reasons": [
+      "Angela gives Clint a defensive safety layer when enemies commit onto him.",
+      "Clint can counter-burst or reposition after Angela helps him survive the first dive window."
+    ],
+    "synergyTypes": [
+      "shielding",
+      "protect",
+      "cooldown-dependent"
+    ],
+    "proof": [
+      {
+        "id": "angela-protection-for-clint-counter-burst",
+        "category": "protection",
+        "priority": "secondary",
+        "impact": "medium",
+        "summary": "Angela protects Clint during enemy dive timing, helping him survive long enough to reposition and counter-burst.",
+        "worksBestWhen": [
+          "Angela saves protection for the enemy's real engage.",
+          "Clint still has escape or damage cooldowns after Angela joins."
+        ],
+        "failureCases": [
+          "Angela uses her protection too early.",
+          "Clint is caught by repeated crowd control after the shield window."
+        ]
+      }
+    ]
+  }
+]

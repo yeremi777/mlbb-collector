@@ -1,0 +1,157 @@
+[
+  {
+    "anchorHeroId": "argus",
+    "synergyHeroId": "angela",
+    "reasons": [
+      "Angela can protect Argus before or after his all-in window, helping him keep pressure in melee range.",
+      "Argus benefits from added shielding and sustain while forcing enemies to answer his dive."
+    ],
+    "synergyTypes": [
+      "shielding",
+      "dive-support",
+      "healing-sustain"
+    ],
+    "proof": [
+      {
+        "id": "angela-protection-for-argus-all-in",
+        "category": "protection",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Argus creates melee pressure, while Angela adds protection and sustain to extend his all-in window.",
+        "worksBestWhen": [
+          "Angela attaches before Argus is forced to use his ultimate.",
+          "Argus commits while enemy burst is already drawn out."
+        ],
+        "failureCases": [
+          "Argus uses his ultimate too late.",
+          "Angela is unavailable during the side-lane fight.",
+          "The enemy kites Argus without fully committing damage."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "argus",
+    "synergyHeroId": "floryn",
+    "reasons": [
+      "Floryn can support Argus even when he pressures a side area away from the main team.",
+      "Argus benefits from global sustain when he commits to a fight and needs to survive after forcing enemy cooldowns."
+    ],
+    "synergyTypes": [
+      "healing-sustain",
+      "dive-support",
+      "game-phase"
+    ],
+    "proof": [
+      {
+        "id": "floryn-global-sustain-for-argus-side-pressure",
+        "category": "healing-sustain",
+        "priority": "secondary",
+        "impact": "medium",
+        "summary": "Argus pressures away from the team, while Floryn can still contribute sustain during his commit window.",
+        "worksBestWhen": [
+          "Floryn tracks Argus's ultimate timing.",
+          "Argus fights when he can hit targets during his survival window."
+        ],
+        "failureCases": [
+          "Argus is crowd-controlled and cannot deal damage.",
+          "Floryn's key support skill is unavailable.",
+          "Argus overextends after the sustain window ends."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "argus",
+    "synergyHeroId": "rafaela",
+    "reasons": [
+      "Rafaela can help Argus chase targets or disengage after committing.",
+      "Argus benefits from movement support because he needs to stay in melee range to keep pressure."
+    ],
+    "synergyTypes": [
+      "mobility-enable",
+      "healing-sustain",
+      "peel"
+    ],
+    "proof": [
+      {
+        "id": "rafaela-speed-for-argus-chase",
+        "category": "mobility-enabler",
+        "priority": "secondary",
+        "impact": "medium",
+        "summary": "Argus needs to stay in melee range, while Rafaela helps him keep contact or escape after the fight.",
+        "worksBestWhen": [
+          "Rafaela supports Argus before enemies fully kite him.",
+          "Argus enters after enemy dash skills are spent."
+        ],
+        "failureCases": [
+          "Argus is kited outside basic-attack range.",
+          "Rafaela is too far from the side fight.",
+          "Enemy burst waits until Argus's survival window ends."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "argus",
+    "synergyHeroId": "mathilda",
+    "reasons": [
+      "Mathilda can help Argus enter or exit fights with shield and mobility support.",
+      "Argus benefits from extra approach tools because he can be kited before reaching priority targets."
+    ],
+    "synergyTypes": [
+      "mobility-enable",
+      "shielding",
+      "dive-support"
+    ],
+    "proof": [
+      {
+        "id": "mathilda-mobility-for-argus-entry",
+        "category": "mobility-enabler",
+        "priority": "secondary",
+        "impact": "medium",
+        "summary": "Argus supplies the melee threat, while Mathilda helps solve his approach and escape problem.",
+        "worksBestWhen": [
+          "Mathilda positions ahead of Argus's engage path.",
+          "Argus saves his catch tool for confirmed follow-up."
+        ],
+        "failureCases": [
+          "Argus takes the mobility path into layered crowd control.",
+          "Mathilda is forced away before Argus commits.",
+          "Enemy disengage tools are still available."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "argus",
+    "synergyHeroId": "diggie",
+    "reasons": [
+      "Diggie can protect Argus from normal crowd-control chains while Argus needs uninterrupted melee uptime.",
+      "Argus benefits when Diggie keeps him free to attack during his survival and healing window."
+    ],
+    "synergyTypes": [
+      "protect",
+      "shielding",
+      "cooldown-dependent"
+    ],
+    "proof": [
+      {
+        "id": "diggie-protection-for-argus-uptime",
+        "category": "protection",
+        "priority": "secondary",
+        "impact": "medium",
+        "summary": "Argus wants uninterrupted melee uptime, while Diggie can reduce crowd-control disruption for nearby teammates.",
+        "worksBestWhen": [
+          "Diggie saves Time Journey for the real enemy control chain.",
+          "Argus is close enough to receive the protection."
+        ],
+        "failureCases": [
+          "Argus fights outside Diggie's range.",
+          "Enemy suppression bypasses the protection.",
+          "Diggie uses ultimate before Argus commits."
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,152 @@
+[
+  {
+    "anchorHeroId": "valir",
+    "synergyHeroId": "tigreal",
+    "reasons": [
+      "Tigreal can group enemies so Valir can apply area pressure more reliably.",
+      "Valir can follow Tigreal's engage with fireball damage and zone control."
+    ],
+    "synergyTypes": [
+      "engage-follow-up",
+      "aoe-follow-up",
+      "teamfight-combo"
+    ],
+    "proof": [
+      {
+        "id": "valir-tigreal-grouped-fire-follow-up",
+        "category": "engage-follow-up",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Tigreal starts the grouped fight, while Valir adds AoE poke and displacement pressure.",
+        "worksBestWhen": [
+          "Tigreal engages after Valir is in spell range.",
+          "Valir saves key skills for the grouped control window."
+        ],
+        "failureCases": [
+          "Tigreal engages too deep.",
+          "Enemies spread and avoid grouped damage."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "valir",
+    "synergyHeroId": "atlas",
+    "reasons": [
+      "Atlas can pull enemies together, making Valir's area damage and follow-up control easier to apply.",
+      "Valir can add zoning after Atlas's engage to prevent enemies from freely resetting."
+    ],
+    "synergyTypes": [
+      "setup-combo",
+      "aoe-follow-up",
+      "teamfight-combo"
+    ],
+    "proof": [
+      {
+        "id": "valir-atlas-grouped-zone-pressure",
+        "category": "setup-combo",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Atlas creates the grouped setup, and Valir follows with fire-based zone pressure.",
+        "worksBestWhen": [
+          "Atlas catches multiple enemies.",
+          "Valir is positioned outside the first danger zone."
+        ],
+        "failureCases": [
+          "Atlas misses the engage.",
+          "Valir is forced to use disengage before Atlas commits."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "valir",
+    "synergyHeroId": "belerick",
+    "reasons": [
+      "Belerick can stand in front and absorb pressure while Valir attacks from behind.",
+      "Valir's push and slow help Belerick keep enemies inside a front-to-back fight."
+    ],
+    "synergyTypes": [
+      "frontline-enabler",
+      "peel",
+      "teamfight-combo"
+    ],
+    "proof": [
+      {
+        "id": "valir-belerick-frontline-zone-control",
+        "category": "frontline-enabler",
+        "priority": "secondary",
+        "impact": "medium",
+        "summary": "Belerick anchors the frontline, while Valir controls enemies trying to enter or leave the fight.",
+        "worksBestWhen": [
+          "Belerick plays as the first contact.",
+          "Valir holds disengage tools for enemy dive attempts."
+        ],
+        "failureCases": [
+          "Belerick is kited before Valir can follow.",
+          "Valir is flanked instead of protected by the frontline."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "valir",
+    "synergyHeroId": "lolita",
+    "reasons": [
+      "Lolita can protect Valir from ranged poke while he controls space.",
+      "Valir's anti-engage pressure gives Lolita's team a stronger defensive formation."
+    ],
+    "synergyTypes": [
+      "protect",
+      "backline-protection",
+      "poke-siege"
+    ],
+    "proof": [
+      {
+        "id": "valir-lolita-formation-protection",
+        "category": "protection",
+        "priority": "secondary",
+        "impact": "medium",
+        "summary": "Lolita blocks ranged pressure, while Valir punishes enemies who try to dive around the shield.",
+        "worksBestWhen": [
+          "Lolita blocks important projectiles and ranged attacks.",
+          "Valir positions behind the shield but keeps angle for knockback."
+        ],
+        "failureCases": [
+          "Enemies flank from multiple sides.",
+          "Lolita's shield is baited before the real damage window."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "valir",
+    "synergyHeroId": "hanabi",
+    "reasons": [
+      "Valir can push or slow threats that try to dive Hanabi.",
+      "Hanabi benefits from Valir's front-to-back control because she wants time to keep attacking grouped enemies."
+    ],
+    "synergyTypes": [
+      "peel",
+      "backline-protection",
+      "teamfight-combo"
+    ],
+    "proof": [
+      {
+        "id": "valir-hanabi-backline-peel-control",
+        "category": "peel",
+        "priority": "secondary",
+        "impact": "medium",
+        "summary": "Valir protects the backline with displacement and slows, giving Hanabi more time to deal teamfight damage.",
+        "worksBestWhen": [
+          "Valir holds peel tools for enemy dive.",
+          "Hanabi keeps formation behind Valir and the frontline."
+        ],
+        "failureCases": [
+          "Enemy assassins bypass Valir's angle.",
+          "Valir spends disengage before Hanabi is threatened."
+        ]
+      }
+    ]
+  }
+]

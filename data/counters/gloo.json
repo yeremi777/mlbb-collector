@@ -1,0 +1,157 @@
+[
+  {
+    "targetHeroId": "gloo",
+    "counterHeroId": "faramis",
+    "reasons": [
+      "Faramis can punish Gloo when Gloo splits into multiple small Goos.",
+      "Ghost Bursters-style multi-unit damage is a specific answer to Gloo's split-body state."
+    ],
+    "counterTypes": [
+      "skill-interaction",
+      "teamfight",
+      "anti-split"
+    ],
+    "proof": [
+      {
+        "id": "faramis-ghost-bursters-vs-gloo-split",
+        "category": "skill-interaction",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Gloo wants to split into multiple Goos and create chaos, while Faramis can punish clustered or multiple nearby units with Ghost Bursters-style damage.",
+        "worksBestWhen": [
+          "Faramis casts when Gloo uses Spread, Spread.",
+          "Gloo's small Goos are grouped close enough for the damage interaction."
+        ],
+        "failureCases": [
+          "Faramis casts before Gloo splits.",
+          "Gloo avoids grouping the small Goos near Faramis.",
+          "Faramis is caught before he can respond."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "gloo",
+    "counterHeroId": "vexana",
+    "reasons": [
+      "Vexana can punish Gloo's split form with area or chain-style magic damage.",
+      "Her teamfight damage can pressure grouped Goos during Gloo's Spread, Spread window."
+    ],
+    "counterTypes": [
+      "skill-interaction",
+      "poke",
+      "teamfight"
+    ],
+    "proof": [
+      {
+        "id": "vexana-aoe-magic-vs-gloo-split",
+        "category": "skill-interaction",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Gloo wants to create pressure through multiple small Goos, while Vexana can punish grouped units with AoE magic damage during that state.",
+        "worksBestWhen": [
+          "Vexana saves her damage for Gloo's split timing.",
+          "Gloo's Goos are near allied units or grouped targets."
+        ],
+        "failureCases": [
+          "Vexana spends skills before Gloo splits.",
+          "Gloo attaches before Vexana can punish.",
+          "Vexana is forced to retreat and cannot cast into the split area."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "gloo",
+    "counterHeroId": "lunox",
+    "reasons": [
+      "Lunox can burst Gloo and pressure his durability before he safely attaches.",
+      "Power of Order: Brilliance gives Lunox a defensive answer to dangerous Gloo commitment windows."
+    ],
+    "counterTypes": [
+      "burst",
+      "penetration",
+      "mobility"
+    ],
+    "proof": [
+      {
+        "id": "lunox-burst-and-brilliance-vs-gloo-commit",
+        "category": "damage-type-advantage",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Gloo wants to sustain, split, and attach, while Lunox can pressure him with high magic burst and use Brilliance to avoid being punished during a bad timing window.",
+        "worksBestWhen": [
+          "Lunox attacks before Gloo successfully attaches.",
+          "Lunox saves Brilliance for Gloo's commit or follow-up."
+        ],
+        "failureCases": [
+          "Lunox bursts Gloo while he is already attached to an ally.",
+          "Gloo reaches Lunox after Brilliance is used.",
+          "Lunox is controlled before she can activate defensive timing."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "gloo",
+    "counterHeroId": "baxia",
+    "reasons": [
+      "Baxia reduces sustain value, which pressures Gloo's extended-fight plan.",
+      "His tank mobility lets him contest Gloo without being an easy fragile target."
+    ],
+    "counterTypes": [
+      "anti-sustain",
+      "frontline",
+      "anti-engage"
+    ],
+    "proof": [
+      {
+        "id": "baxia-anti-regen-vs-gloo-sustain",
+        "category": "sustain-anti-sustain",
+        "priority": "secondary",
+        "impact": "medium",
+        "summary": "Gloo wants to survive extended fights through recovery and attach pressure, while Baxia reduces sustain value and can contest him as a mobile frontline.",
+        "worksBestWhen": [
+          "Baxia applies anti-regen before Gloo gets full recovery value.",
+          "The team avoids damaging Gloo carelessly during attach."
+        ],
+        "failureCases": [
+          "Baxia cannot keep contact with Gloo.",
+          "Gloo attaches to a high-value ally.",
+          "Baxia's team damages attached Gloo and hurts the host."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "gloo",
+    "counterHeroId": "akai",
+    "reasons": [
+      "Akai's tank mobility and displacement can reset Gloo's preferred fight shape.",
+      "He can help separate Gloo from priority allies or interrupt Gloo's close-range pressure."
+    ],
+    "counterTypes": [
+      "disengage",
+      "frontline",
+      "teamfight"
+    ],
+    "proof": [
+      {
+        "id": "akai-displacement-vs-gloo-close-fight",
+        "category": "teamfight-role-counter",
+        "priority": "condition",
+        "impact": "medium",
+        "summary": "Gloo wants messy close-range fights and attachment opportunities, while Akai can displace and reset positioning to protect priority targets.",
+        "worksBestWhen": [
+          "Akai saves control for Gloo's real engage.",
+          "Team spreads and avoids panic damage during attach."
+        ],
+        "failureCases": [
+          "Akai knocks Gloo toward a vulnerable ally.",
+          "Akai uses control before Gloo commits.",
+          "Gloo's team follows up better during the displacement."
+        ]
+      }
+    ]
+  }
+]

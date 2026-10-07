@@ -1,0 +1,157 @@
+[
+  {
+    "targetHeroId": "karina",
+    "counterHeroId": "kaja",
+    "reasons": [
+      "Kaja can suppress Karina during her dive and stop her reset chain."
+    ],
+    "counterTypes": [
+      "suppression",
+      "pickoff",
+      "anti-dive"
+    ],
+    "proof": [
+      {
+        "id": "kaja-suppression-vs-karina-reset",
+        "category": "crowd-control-counter",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Karina wants fast target access and reset momentum, while Kaja's suppression creates a hard lock window that her mobility cannot solve.",
+        "worksBestWhen": [
+          "Kaja saves Divine Judgment for Karina's entry.",
+          "Teammates burst Karina during suppression.",
+          "Kaja waits until Karina commits instead of using ultimate too early."
+        ],
+        "failureCases": [
+          "Karina waits until Kaja uses ultimate.",
+          "Kaja lacks follow-up damage.",
+          "Karina kills a different target before Kaja reaches her."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "karina",
+    "counterHeroId": "franco",
+    "reasons": [
+      "Franco can punish Karina's predictable dive path with Bloody Hunt."
+    ],
+    "counterTypes": [
+      "suppression",
+      "pickoff",
+      "vision-control"
+    ],
+    "proof": [
+      {
+        "id": "franco-suppression-vs-karina-reset",
+        "category": "crowd-control-counter",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Karina wants to enter after enemies are low, while Franco can suppress her before she gets reset value.",
+        "worksBestWhen": [
+          "Franco holds ultimate until Karina commits.",
+          "Franco's team has burst ready.",
+          "Franco controls bush or flank vision."
+        ],
+        "failureCases": [
+          "Franco misses hook and loses zone pressure.",
+          "Karina waits out Franco's ultimate.",
+          "Franco gets bursted before casting."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "karina",
+    "counterHeroId": "khufra",
+    "reasons": [
+      "Khufra can block or punish Karina's blink-style entry if she crosses through Bouncing Ball."
+    ],
+    "counterTypes": [
+      "anti-dash",
+      "anti-dive",
+      "frontline"
+    ],
+    "proof": [
+      {
+        "id": "khufra-bouncing-ball-vs-karina-entry",
+        "category": "skill-interaction",
+        "priority": "primary",
+        "impact": "medium",
+        "summary": "Karina relies on mobility and target access, while Khufra's Bouncing Ball punishes blink attempts across his zone.",
+        "worksBestWhen": [
+          "Khufra protects the low-HP target Karina wants.",
+          "Khufra saves Bouncing Ball for Karina's entry.",
+          "Karina is forced to enter through the frontline."
+        ],
+        "failureCases": [
+          "Karina waits until Bouncing Ball ends.",
+          "Karina enters from a different angle.",
+          "Khufra is pulled away from the backline."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "karina",
+    "counterHeroId": "barats",
+    "reasons": [
+      "Barats can suppress Karina and stop her reset window if he catches her during entry."
+    ],
+    "counterTypes": [
+      "suppression",
+      "anti-dive",
+      "frontline"
+    ],
+    "proof": [
+      {
+        "id": "barats-detona-welcome-vs-karina-reset",
+        "category": "crowd-control-counter",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Karina wants to dive in, burst, and reset, while Barats can suppress her with Detona's Welcome and hold her for team follow-up.",
+        "worksBestWhen": [
+          "Barats saves Detona's Welcome for Karina's commit.",
+          "Karina has already entered and cannot safely disengage.",
+          "Barats' team focuses Karina during suppression."
+        ],
+        "failureCases": [
+          "Karina waits out or dodges Detona's Welcome.",
+          "Barats uses ultimate on another target.",
+          "Karina bursts a different target before Barats can catch her."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "karina",
+    "counterHeroId": "valir",
+    "reasons": [
+      "Valir can push Karina away and slow her during entry."
+    ],
+    "counterTypes": [
+      "disengage",
+      "kiting",
+      "anti-dive"
+    ],
+    "proof": [
+      {
+        "id": "valir-disengage-vs-karina-entry",
+        "category": "cooldown-window",
+        "priority": "condition",
+        "impact": "medium",
+        "summary": "Karina needs a clean entry and reset, while Valir can deny that first entry with knockback and escape timing.",
+        "worksBestWhen": [
+          "Valir holds Searing Torrent for Karina.",
+          "Valir plays near teammates instead of alone.",
+          "Valir does not waste Vengeance Flame before Karina commits."
+        ],
+        "failureCases": [
+          "Karina flanks from fog.",
+          "Valir uses knockback too early.",
+          "Karina waits for Valir's cooldowns."
+        ]
+      }
+    ]
+  }
+]

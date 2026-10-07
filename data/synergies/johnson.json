@@ -1,0 +1,157 @@
+[
+  {
+    "anchorHeroId": "johnson",
+    "synergyHeroId": "odette",
+    "reasons": [
+      "Johnson can deliver Odette into the middle of a fight, giving her a direct area-damage follow-up window.",
+      "Odette can convert Johnson's crash disruption into teamfight damage when enemies are caught near the impact point."
+    ],
+    "synergyTypes": [
+      "setup-combo",
+      "teamfight-combo",
+      "aoe-follow-up"
+    ],
+    "proof": [
+      {
+        "id": "johnson-delivers-odette-swan-song",
+        "category": "setup-combo",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Johnson starts the surprise engage, while Odette follows with area damage during the enemy disruption window.",
+        "worksBestWhen": [
+          "Johnson lands on grouped targets.",
+          "Odette casts after the crash connects."
+        ],
+        "failureCases": [
+          "Johnson misses the crash.",
+          "Odette is interrupted.",
+          "Enemies spread before impact."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "johnson",
+    "synergyHeroId": "kadita",
+    "reasons": [
+      "Johnson can deliver Kadita into a sudden burst angle after the crash.",
+      "Kadita can immediately punish enemies in the crash area with fast magic burst."
+    ],
+    "synergyTypes": [
+      "setup-combo",
+      "burst-follow-up",
+      "pickoff-combo"
+    ],
+    "proof": [
+      {
+        "id": "johnson-crash-sets-kadita-burst",
+        "category": "engage-follow-up",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Johnson creates the delivery and disruption, while Kadita adds fast burst in the crash area.",
+        "worksBestWhen": [
+          "Johnson targets backline or grouped squishy heroes.",
+          "Kadita has full combo available."
+        ],
+        "failureCases": [
+          "Johnson crashes into only a tank.",
+          "Kadita mistimes the burst.",
+          "Enemies save escape tools for the landing."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "johnson",
+    "synergyHeroId": "aurora",
+    "reasons": [
+      "Johnson's crash gives Aurora a clean window to freeze or burst enemies after impact.",
+      "Aurora can layer control after the crash so the target has less time to escape."
+    ],
+    "synergyTypes": [
+      "cc-chain",
+      "burst-follow-up",
+      "pickoff-combo"
+    ],
+    "proof": [
+      {
+        "id": "johnson-crash-into-aurora-freeze",
+        "category": "crowd-control-chain",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Johnson creates the first disruption, while Aurora layers freeze and burst onto the crash target.",
+        "worksBestWhen": [
+          "Aurora rides with Johnson or waits near the crash path.",
+          "Johnson hits priority targets."
+        ],
+        "failureCases": [
+          "Aurora is too far to follow.",
+          "Johnson misses or crashes into the wrong target.",
+          "Enemy vision reveals Johnson's route."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "johnson",
+    "synergyHeroId": "julian",
+    "reasons": [
+      "Johnson's crash can hold enemies in place long enough for Julian to layer enhanced-skill crowd control or burst.",
+      "Julian can follow the crash with Chain or Enhanced Chain to extend the control window."
+    ],
+    "synergyTypes": [
+      "setup-combo",
+      "cc-chain",
+      "burst-follow-up"
+    ],
+    "proof": [
+      {
+        "id": "johnson-crash-enables-julian-enhanced-skill",
+        "category": "setup-combo",
+        "priority": "primary",
+        "impact": "medium",
+        "summary": "Johnson creates the delivery and initial disruption, while Julian follows with enhanced-skill crowd control or burst.",
+        "worksBestWhen": [
+          "Julian prepares the correct enhanced skill before riding or following.",
+          "Johnson crashes into targets that cannot immediately dash away."
+        ],
+        "failureCases": [
+          "Julian enters with the wrong enhanced-skill order.",
+          "Johnson misses the crash.",
+          "Enemies leave the Enhanced Chain area before the airborne trigger."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "johnson",
+    "synergyHeroId": "eudora",
+    "reasons": [
+      "Johnson can deliver Eudora into range for a simple single-target burst follow-up.",
+      "Eudora can add stun and burst immediately after Johnson crashes into a priority target."
+    ],
+    "synergyTypes": [
+      "pickoff-combo",
+      "burst-follow-up",
+      "cc-chain"
+    ],
+    "proof": [
+      {
+        "id": "johnson-delivers-eudora-pickoff-burst",
+        "category": "pickoff-combo",
+        "priority": "secondary",
+        "impact": "medium",
+        "summary": "Johnson delivers Eudora into range, and Eudora adds stun and burst to secure the picked target.",
+        "worksBestWhen": [
+          "Johnson crashes into a squishy hero.",
+          "Eudora keeps full combo ready."
+        ],
+        "failureCases": [
+          "Johnson hits a tank.",
+          "Eudora lacks burst damage.",
+          "The enemy has magic defense or cleanse timing."
+        ]
+      }
+    ]
+  }
+]

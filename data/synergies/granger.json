@@ -1,0 +1,152 @@
+[
+  {
+    "anchorHeroId": "granger",
+    "synergyHeroId": "khufra",
+    "reasons": [
+      "Khufra gives Granger a frontline engage that creates easier burst targets.",
+      "Khufra's anti-blink control helps protect Granger from mobile divers."
+    ],
+    "synergyTypes": [
+      "frontline-enabler",
+      "engage-follow-up",
+      "burst-follow-up"
+    ],
+    "proof": [
+      {
+        "id": "granger-khufra-frontline-burst-angle",
+        "category": "frontline-enabler",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Khufra creates space and control, while Granger uses that space to fire burst damage safely.",
+        "worksBestWhen": [
+          "Granger stays behind Khufra's engage line.",
+          "Khufra controls mobile enemies before they reach Granger."
+        ],
+        "failureCases": [
+          "Granger steps too far forward after Khufra engages.",
+          "Enemy flankers avoid Khufra and reach Granger directly."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "granger",
+    "synergyHeroId": "tigreal",
+    "reasons": [
+      "Tigreal's pull and stun give Granger clearer targets for burst damage.",
+      "Granger can follow Tigreal's engage from safer distance instead of entering the frontline."
+    ],
+    "synergyTypes": [
+      "engage-follow-up",
+      "cc-chain",
+      "burst-follow-up"
+    ],
+    "proof": [
+      {
+        "id": "granger-tigreal-pull-stun-burst-window",
+        "category": "engage-follow-up",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Tigreal groups and stuns enemies, while Granger fires burst damage into the controlled target area.",
+        "worksBestWhen": [
+          "Tigreal engages after Granger is close enough to shoot.",
+          "Granger holds burst until targets are controlled."
+        ],
+        "failureCases": [
+          "Tigreal engages outside Granger's range.",
+          "Enemy divers attack Granger while he focuses the grouped targets."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "granger",
+    "synergyHeroId": "kaja",
+    "reasons": [
+      "Kaja can suppress and drag a priority target into Granger's firing range.",
+      "Granger's burst is easier to confirm on a target that cannot freely dodge."
+    ],
+    "synergyTypes": [
+      "pickoff-combo",
+      "setup-combo",
+      "burst-follow-up"
+    ],
+    "proof": [
+      {
+        "id": "granger-kaja-suppression-pickoff-burst",
+        "category": "pickoff-combo",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Kaja isolates the target with suppression, while Granger adds ranged burst to finish the pickoff.",
+        "worksBestWhen": [
+          "Kaja catches a fragile or high-priority target.",
+          "Granger is already positioned to follow the drag path."
+        ],
+        "failureCases": [
+          "Kaja catches a tank with defensive backup.",
+          "Granger lacks line of sight or range for immediate follow-up."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "granger",
+    "synergyHeroId": "lolita",
+    "reasons": [
+      "Lolita protects Granger from ranged projectiles and poke while he looks for burst angles.",
+      "Lolita's shield and frontline pressure let Granger play behind a safer formation."
+    ],
+    "synergyTypes": [
+      "backline-protection",
+      "shielding",
+      "peel"
+    ],
+    "proof": [
+      {
+        "id": "granger-lolita-projectile-angle-protection",
+        "category": "protection",
+        "priority": "primary",
+        "impact": "medium",
+        "summary": "Granger needs safe sightlines, and Lolita helps protect those sightlines from projectile pressure.",
+        "worksBestWhen": [
+          "Lolita faces the main projectile threat.",
+          "Granger fires from behind Lolita instead of exposing himself."
+        ],
+        "failureCases": [
+          "Enemy assassins flank around Lolita.",
+          "Granger moves outside Lolita's protection angle."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "granger",
+    "synergyHeroId": "mathilda",
+    "reasons": [
+      "Mathilda gives Granger reposition support when divers pressure him.",
+      "Mathilda's shield and movement utility help Granger keep firing after adjusting position."
+    ],
+    "synergyTypes": [
+      "mobility-enable",
+      "shielding",
+      "peel"
+    ],
+    "proof": [
+      {
+        "id": "granger-mathilda-reposition-firing-angle",
+        "category": "mobility-enabler",
+        "priority": "primary",
+        "impact": "medium",
+        "summary": "Mathilda improves Granger's ability to reposition, escape pressure, and maintain a useful firing angle.",
+        "worksBestWhen": [
+          "Mathilda stays close enough for Granger to use the reposition.",
+          "Granger saves movement options for enemy dive."
+        ],
+        "failureCases": [
+          "Granger ignores the reposition timing.",
+          "Mathilda dives away from Granger instead of supporting his angle."
+        ]
+      }
+    ]
+  }
+]

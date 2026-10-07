@@ -1,0 +1,162 @@
+[
+  {
+    "targetHeroId": "kalea",
+    "counterHeroId": "khufra",
+    "reasons": [
+      "Khufra is a strong direct answer because Kalea's Tidal Strike and enhanced attacks include dash-style interactions.",
+      "Khufra can punish Kalea's movement timing when she tries to engage or land into the fight."
+    ],
+    "counterTypes": [
+      "anti-dash",
+      "crowd-control-counter",
+      "anti-engage"
+    ],
+    "proof": [
+      {
+        "id": "khufra-bouncing-ball-vs-kalea-dash-engage",
+        "category": "skill-interaction",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Kalea wants to use dash and airborne mobility to start fights, while Khufra can punish or block her movement timing.",
+        "worksBestWhen": [
+          "Khufra saves Bouncing Ball for Kalea's Tidal Strike or landing.",
+          "Khufra protects the backline target Kalea wants to grab.",
+          "Khufra positions near Kalea's expected entry route."
+        ],
+        "failureCases": [
+          "Kalea baits Khufra's anti-dash first.",
+          "Khufra is displaced before Kalea commits.",
+          "Kalea waits for Khufra to use Bouncing Ball elsewhere."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "kalea",
+    "counterHeroId": "phoveus",
+    "reasons": [
+      "Kalea's enhanced basic attacks and Tidal Strike can create punish windows for Phoveus when she repeatedly uses movement-based actions near him.",
+      "This counter becomes stronger when Kalea must enter forward with dash mobility instead of peeling defensively."
+    ],
+    "counterTypes": [
+      "anti-dash",
+      "teamfight",
+      "cooldown-punish"
+    ],
+    "proof": [
+      {
+        "id": "phoveus-anti-dash-vs-kalea-movement-chain",
+        "category": "skill-interaction",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Kalea uses multiple movement-based actions to engage and reposition, while Phoveus can punish repeated blink, dash, or displacement actions near him.",
+        "worksBestWhen": [
+          "Phoveus stays near the target Kalea wants to engage.",
+          "Kalea is forced to dash forward rather than peel defensively.",
+          "Phoveus has enough follow-up to punish after the trigger."
+        ],
+        "failureCases": [
+          "Kalea plays patiently and avoids giving repeated triggers.",
+          "Phoveus is kited before he can convert the punish.",
+          "Kalea uses her mobility to disengage instead of entering near Phoveus."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "kalea",
+    "counterHeroId": "diggie",
+    "reasons": [
+      "Diggie reduces the value of Kalea's airborne and grab-based teamfight setup.",
+      "Kalea wants to displace a target into a bad position, while Diggie can protect allies around that timing."
+    ],
+    "counterTypes": [
+      "anti-cc",
+      "cleanse",
+      "protect"
+    ],
+    "proof": [
+      {
+        "id": "diggie-time-journey-vs-kalea-tsunami-slam",
+        "category": "crowd-control-counter",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Kalea wants to start fights with airborne control and Tsunami Slam displacement, while Diggie can protect teammates from the crowd-control payoff.",
+        "worksBestWhen": [
+          "Diggie saves ultimate for Kalea's real engage.",
+          "Diggie stays near the ally Kalea wants to grab.",
+          "Diggie avoids getting displaced before casting protection."
+        ],
+        "failureCases": [
+          "Kalea baits Diggie ultimate with a smaller engage.",
+          "Kalea catches Diggie first.",
+          "Diggie is too far from the displaced ally."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "kalea",
+    "counterHeroId": "baxia",
+    "reasons": [
+      "Kalea's passive includes healing herself and nearby low-HP allies.",
+      "Baxia reduces healing value, making Kalea's support-fighter sustain less reliable."
+    ],
+    "counterTypes": [
+      "anti-sustain",
+      "anti-heal",
+      "frontline"
+    ],
+    "proof": [
+      {
+        "id": "baxia-anti-heal-vs-kalea-water-zone-healing",
+        "category": "sustain-anti-sustain",
+        "priority": "primary",
+        "impact": "medium",
+        "summary": "Kalea wants to heal through enhanced basic attacks and support nearby allies, while Baxia reduces healing received and weakens that sustain value.",
+        "worksBestWhen": [
+          "Baxia stays close enough to pressure Kalea's healing cycle.",
+          "The team focuses targets while heal reduction is active.",
+          "Baxia contests the fight before Kalea resets through Water Zones."
+        ],
+        "failureCases": [
+          "Kalea heals from safe angles behind frontline.",
+          "Baxia cannot keep up with Kalea's mobility.",
+          "Kalea disengages before Baxia can keep anti-heal pressure active."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "kalea",
+    "counterHeroId": "valentina",
+    "reasons": [
+      "Valentina can copy Kalea's Tsunami Slam and turn Kalea's own displacement threat into a counter-engage tool.",
+      "This is useful because Kalea's ultimate has strong fight-starting value through grab, displacement, airborne control, and crowd-control immunity during the cast."
+    ],
+    "counterTypes": [
+      "ultimate-copy",
+      "teamfight",
+      "counter-engage"
+    ],
+    "proof": [
+      {
+        "id": "valentina-i-am-you-vs-kalea-tsunami-slam",
+        "category": "skill-interaction",
+        "priority": "secondary",
+        "impact": "medium",
+        "summary": "Kalea wants to create teamfight value with Tsunami Slam displacement, while Valentina can copy that ultimate and threaten a similar grab or counter-engage against Kalea's team.",
+        "worksBestWhen": [
+          "Valentina copies Kalea before the decisive teamfight.",
+          "Valentina has a safe angle to cast the copied Tsunami Slam.",
+          "Valentina's team can follow up after the copied displacement."
+        ],
+        "failureCases": [
+          "Valentina copies Kalea but cannot reach a valuable target.",
+          "Kalea's team forces Valentina to use the copied ultimate defensively.",
+          "Valentina is caught before casting the copied ultimate."
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,162 @@
+[
+  {
+    "targetHeroId": "suyou",
+    "counterHeroId": "khufra",
+    "reasons": [
+      "Khufra directly punishes Suyou's dash entry and mobility-based fight pattern.",
+      "Suyou is much less threatening when his engage path is blocked or interrupted."
+    ],
+    "counterTypes": [
+      "anti-dash",
+      "anti-dive",
+      "crowd-control-counter"
+    ],
+    "proof": [
+      {
+        "id": "khufra-bouncing-ball-vs-suyou-mobility",
+        "category": "skill-interaction",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Suyou uses mobility to enter and reposition, while Khufra can punish blink or dash movement and stop clean backline access.",
+        "worksBestWhen": [
+          "Khufra saves anti-dash for Suyou's committed engage.",
+          "Khufra protects the target Suyou wants to burst.",
+          "Khufra positions around choke points or backline access paths."
+        ],
+        "failureCases": [
+          "Suyou baits Khufra's control first.",
+          "Khufra engages elsewhere and leaves the backline open.",
+          "Suyou enters from a flank Khufra cannot cover."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "suyou",
+    "counterHeroId": "minsitthar",
+    "reasons": [
+      "Minsitthar can limit Suyou's directional mobility inside King's Calling.",
+      "This is valuable because Suyou depends on choosing entry and exit paths."
+    ],
+    "counterTypes": [
+      "anti-dash",
+      "anti-dive",
+      "teamfight"
+    ],
+    "proof": [
+      {
+        "id": "minsitthar-kings-calling-vs-suyou-entry-paths",
+        "category": "skill-interaction",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Suyou wants flexible tap or hold mobility, while Minsitthar can create an anti-blink zone that restricts his fight options.",
+        "worksBestWhen": [
+          "Minsitthar casts ultimate around Suyou's target.",
+          "The team bursts Suyou before he exits the zone.",
+          "Minsitthar waits until Suyou commits instead of using the field early."
+        ],
+        "failureCases": [
+          "Suyou waits out the field.",
+          "Minsitthar casts too far from Suyou's real target.",
+          "Suyou's team forces Minsitthar to use ultimate defensively."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "suyou",
+    "counterHeroId": "obsidia",
+    "reasons": [
+      "Obsidia's Hunt of Bone directly restricts displacement skills on the tethered target, which is highly relevant against Suyou's mobility-based engage and escape pattern.",
+      "Hunt of Bone is valuable against Suyou because its tether window restricts displacement skills, making it harder for Suyou to freely enter, reposition, or escape during his mobility-based combo."
+    ],
+    "counterTypes": [
+      "anti-dash",
+      "pickoff",
+      "cooldown-punish"
+    ],
+    "proof": [
+      {
+        "id": "obsidia-hunt-of-bone-vs-suyou-displacement",
+        "category": "skill-interaction",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Suyou wants to use mobility and form switching to enter, reposition, and escape, while Obsidia's Hunt of Bone can tether him and prevent displacement skills during the punish window.",
+        "worksBestWhen": [
+          "Obsidia lands Hunt of Bone after Suyou commits forward.",
+          "Suyou's defensive form timing or escape route is already forced.",
+          "Obsidia's team can follow up while Suyou is tethered."
+        ],
+        "failureCases": [
+          "Obsidia misses Hunt of Bone.",
+          "Suyou waits out the tether window before committing.",
+          "Suyou's team protects him while Obsidia is pulled along."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "suyou",
+    "counterHeroId": "franco",
+    "reasons": [
+      "Franco can suppress Suyou before he finishes his skill rotation.",
+      "This is useful because Suyou's strength comes from chaining choices, not from surviving hard lock."
+    ],
+    "counterTypes": [
+      "pickoff",
+      "crowd-control-counter",
+      "cooldown-punish"
+    ],
+    "proof": [
+      {
+        "id": "franco-bloody-hunt-vs-suyou-skill-rotation",
+        "category": "crowd-control-counter",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Suyou wants to rotate through flexible skill forms, while Franco can lock him in place and create a direct burst window.",
+        "worksBestWhen": [
+          "Franco waits until Suyou commits forward.",
+          "Suyou is separated from backup.",
+          "Franco's team can burst Suyou during suppression."
+        ],
+        "failureCases": [
+          "Franco misses hook or suppresses after Suyou has already disengaged.",
+          "Suyou's team immediately counter-engages Franco.",
+          "Franco uses suppression before Suyou commits."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "suyou",
+    "counterHeroId": "kaja",
+    "reasons": [
+      "Kaja can punish Suyou's dive by dragging him away from his target.",
+      "Suyou's physical damage reduction does not prevent him from being repositioned during suppression."
+    ],
+    "counterTypes": [
+      "pickoff",
+      "crowd-control-counter",
+      "anti-dive"
+    ],
+    "proof": [
+      {
+        "id": "kaja-divine-judgment-vs-suyou-dive",
+        "category": "crowd-control-counter",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Suyou wants to dive or skirmish on chosen targets, while Kaja can suppress and drag him into a punish zone.",
+        "worksBestWhen": [
+          "Kaja saves ultimate for Suyou's real entry.",
+          "The team chains damage during suppression.",
+          "Kaja stands near Suyou's intended target."
+        ],
+        "failureCases": [
+          "Suyou forces Kaja to use ultimate defensively.",
+          "Kaja cannot reach Suyou through frontline pressure.",
+          "Suyou delays entry until Kaja's control is unavailable."
+        ]
+      }
+    ]
+  }
+]

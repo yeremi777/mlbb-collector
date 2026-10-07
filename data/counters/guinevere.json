@@ -1,0 +1,151 @@
+[
+  {
+    "targetHeroId": "guinevere",
+    "counterHeroId": "diggie",
+    "reasons": [
+      "Diggie protects allies from Guinevere's crowd-control chain and reduces the value of her airborne combo.",
+      "Guinevere relies on confirmed setup, while Diggie makes the follow-up less reliable."
+    ],
+    "counterTypes": [
+      "anti-cc",
+      "cleanse",
+      "protect"
+    ],
+    "proof": [
+      {
+        "id": "diggie-time-journey-vs-guinevere-airborne-combo",
+        "category": "skill-interaction",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Guinevere wants to knock targets airborne and burst with her ultimate, while Diggie can cleanse and protect nearby allies during the setup window.",
+        "worksBestWhen": [
+          "Diggie saves Time Journey for Guinevere's real engage.",
+          "Diggie stays near the teammate Guinevere wants to catch."
+        ],
+        "failureCases": [
+          "Guinevere baits Diggie ultimate before committing.",
+          "Guinevere catches Diggie first."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "guinevere",
+    "counterHeroId": "khufra",
+    "reasons": [
+      "Khufra can punish Guinevere's jump engage if she relies on movement to start the combo.",
+      "Bouncing Ball makes it risky for Guinevere to enter through predictable paths."
+    ],
+    "counterTypes": [
+      "anti-dash",
+      "anti-engage",
+      "frontline"
+    ],
+    "proof": [
+      {
+        "id": "khufra-bouncing-ball-vs-guinevere-jump",
+        "category": "skill-interaction",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Guinevere wants to start fights through jump movement, while Khufra's Bouncing Ball can punish blink or dash attempts near him.",
+        "worksBestWhen": [
+          "Khufra holds Bouncing Ball until Guinevere commits.",
+          "Khufra positions near Guinevere's preferred target."
+        ],
+        "failureCases": [
+          "Guinevere waits out Bouncing Ball.",
+          "Guinevere enters from fog before Khufra reacts."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "guinevere",
+    "counterHeroId": "wanwan",
+    "reasons": [
+      "Wanwan can remove control effects from herself and reposition, which can break Guinevere's airborne combo timing.",
+      "This counter is execution-dependent because Wanwan must react before Guinevere completes the burst sequence."
+    ],
+    "counterTypes": [
+      "cleanse",
+      "mobility",
+      "execution-dependent"
+    ],
+    "proof": [
+      {
+        "id": "wanwan-needles-in-flowers-vs-guinevere-airborne",
+        "category": "mobility-advantage",
+        "priority": "condition",
+        "impact": "medium",
+        "summary": "Guinevere wants to chain airborne control into burst, while Wanwan can self-cleanse and reposition if she times the response correctly.",
+        "worksBestWhen": [
+          "Wanwan saves Needles in Flowers for Guinevere's real setup.",
+          "Wanwan avoids standing where Guinevere's jump can be easily predicted."
+        ],
+        "failureCases": [
+          "Guinevere catches Wanwan before she reacts.",
+          "Wanwan wastes cleanse before Guinevere commits."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "guinevere",
+    "counterHeroId": "franco",
+    "reasons": [
+      "Franco can suppress Guinevere before she starts her combo or after she overcommits.",
+      "Suppression is valuable because Guinevere can be hard to interrupt during some combo windows."
+    ],
+    "counterTypes": [
+      "pickoff",
+      "cooldown-punish"
+    ],
+    "proof": [
+      {
+        "id": "franco-bloody-hunt-vs-guinevere-combo",
+        "category": "crowd-control-counter",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Guinevere wants to enter and burst through a chained combo, while Franco can suppress her and stop the setup or punish the failed engage.",
+        "worksBestWhen": [
+          "Franco saves Bloody Hunt for Guinevere's commit.",
+          "Franco's team bursts during suppression."
+        ],
+        "failureCases": [
+          "Guinevere catches Franco before he reacts.",
+          "Franco suppresses after Guinevere has already completed her burst."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "guinevere",
+    "counterHeroId": "valir",
+    "reasons": [
+      "Valir can push Guinevere away before she gets a clean engage angle.",
+      "His self-cleanse timing also helps him survive if Guinevere tries to start the combo on him."
+    ],
+    "counterTypes": [
+      "disengage",
+      "poke",
+      "anti-engage"
+    ],
+    "proof": [
+      {
+        "id": "valir-searing-torrent-vs-guinevere-engage",
+        "category": "skill-interaction",
+        "priority": "primary",
+        "impact": "medium",
+        "summary": "Guinevere wants to close distance for airborne setup, while Valir can knock her back and use cleanse timing to avoid being locked.",
+        "worksBestWhen": [
+          "Valir saves knockback for Guinevere's jump.",
+          "Valir avoids predictable positions near walls or bushes."
+        ],
+        "failureCases": [
+          "Guinevere engages from fog before Valir reacts.",
+          "Valir wastes knockback before Guinevere commits."
+        ]
+      }
+    ]
+  }
+]

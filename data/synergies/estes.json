@@ -1,0 +1,157 @@
+[
+  {
+    "anchorHeroId": "estes",
+    "synergyHeroId": "fredrinn",
+    "reasons": [
+      "Fredrinn gives Estes a durable jungle/frontline anchor who can stay in the fight long enough to benefit from repeated healing.",
+      "Estes can sustain Fredrinn and nearby teammates while Fredrinn absorbs pressure around objectives."
+    ],
+    "synergyTypes": [
+      "frontline-enabler",
+      "healing-sustain",
+      "teamfight-combo"
+    ],
+    "proof": [
+      {
+        "id": "estes-sustains-fredrinn-frontline",
+        "category": "frontline-enabler",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Fredrinn absorbs pressure and holds the frontline, while Estes sustains him and nearby teammates through extended fights.",
+        "worksBestWhen": [
+          "Fredrinn fights within Estes' healing range.",
+          "The team groups around objective fights."
+        ],
+        "failureCases": [
+          "Fredrinn dives too far away.",
+          "Estes is picked off before the fight.",
+          "Enemy anti-heal and burst are applied early."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "estes",
+    "synergyHeroId": "barats",
+    "reasons": [
+      "Barats can act as a durable frontline body while Estes extends his fight duration.",
+      "Estes helps Barats survive long enough to pressure targets and hold space for the team."
+    ],
+    "synergyTypes": [
+      "frontline-enabler",
+      "healing-sustain",
+      "pickoff-combo"
+    ],
+    "proof": [
+      {
+        "id": "estes-extends-barats-frontline-duration",
+        "category": "frontline-enabler",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Barats gives Estes a durable frontliner to sustain, while Estes helps Barats survive long enough to pressure or isolate targets.",
+        "worksBestWhen": [
+          "Barats controls the fight near Estes.",
+          "The team follows Barats' target focus."
+        ],
+        "failureCases": [
+          "Barats overextends away from Estes.",
+          "The enemy bursts Estes first.",
+          "Anti-heal reduces the sustain loop."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "estes",
+    "synergyHeroId": "alpha",
+    "reasons": [
+      "Alpha likes extended melee skirmishes, and Estes adds extra sustain so Alpha can keep trading through long fights.",
+      "Estes can keep Alpha healthy while Alpha applies sustained melee pressure near the frontline."
+    ],
+    "synergyTypes": [
+      "healing-sustain",
+      "frontline-enabler",
+      "teamfight-combo"
+    ],
+    "proof": [
+      {
+        "id": "estes-supports-alpha-extended-skirmish",
+        "category": "healing-sustain",
+        "priority": "secondary",
+        "impact": "medium",
+        "summary": "Alpha brings sustained melee pressure, while Estes strengthens his ability to keep fighting near the team.",
+        "worksBestWhen": [
+          "Alpha fights within Estes' healing area.",
+          "The team commits to extended fights instead of scattered dives."
+        ],
+        "failureCases": [
+          "Alpha dives out of range.",
+          "Enemy anti-heal is applied early.",
+          "Estes is forced away before Alpha finishes the fight."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "estes",
+    "synergyHeroId": "hanabi",
+    "reasons": [
+      "Hanabi is a cover-dependent teamfight marksman, so Estes' grouped sustain directly supports her main fight pattern.",
+      "Estes gives Hanabi more time to use bouncing basic attacks from behind the frontline."
+    ],
+    "synergyTypes": [
+      "healing-sustain",
+      "backline-protection",
+      "teamfight-combo"
+    ],
+    "proof": [
+      {
+        "id": "estes-sustains-hanabi-grouped-teamfight",
+        "category": "protection",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Estes sustains Hanabi in grouped fights, giving her more time to use bouncing basic attacks and teamfight damage from behind cover.",
+        "worksBestWhen": [
+          "Hanabi stays near Estes and the frontline.",
+          "The team plays grouped objective fights."
+        ],
+        "failureCases": [
+          "Hanabi is flanked or isolated.",
+          "Enemy burst kills Hanabi before healing matters.",
+          "Anti-heal reduces Estes' sustain value."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "estes",
+    "synergyHeroId": "ixia",
+    "reasons": [
+      "Ixia's Full Barrage creates a large teamfight damage window but requires cover while she fires.",
+      "Estes sustains Ixia and the frontline formation that protects her during the stationary damage window."
+    ],
+    "synergyTypes": [
+      "healing-sustain",
+      "backline-protection",
+      "teamfight-combo"
+    ],
+    "proof": [
+      {
+        "id": "estes-protects-ixia-full-barrage-window",
+        "category": "protection",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Ixia creates a stationary damage zone with Full Barrage, while Estes sustains the formation that protects her during that immobile window.",
+        "worksBestWhen": [
+          "Ixia casts Full Barrage behind frontline cover.",
+          "Estes and the team group around her firing zone."
+        ],
+        "failureCases": [
+          "Ixia is flanked during Full Barrage.",
+          "The enemy uses suppression or displacement timing.",
+          "Anti-heal reduces Estes' sustain value."
+        ]
+      }
+    ]
+  }
+]

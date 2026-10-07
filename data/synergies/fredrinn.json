@@ -1,0 +1,162 @@
+[
+  {
+    "anchorHeroId": "fredrinn",
+    "synergyHeroId": "estes",
+    "reasons": [
+      "Estes sustains Fredrinn through long fights while Fredrinn absorbs damage and builds Combo Points.",
+      "Fredrinn is a strong healing target because he stays in front and converts damage taken into fight pressure."
+    ],
+    "synergyTypes": [
+      "healing-sustain",
+      "frontline-enabler",
+      "teamfight-combo"
+    ],
+    "proof": [
+      {
+        "id": "estes-sustains-fredrinn-crystal-energy-fights",
+        "category": "healing-sustain",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Estes sustains Fredrinn through long fights, helping Fredrinn stay alive long enough to use taunt pressure and Appraiser's Wrath.",
+        "worksBestWhen": [
+          "Fredrinn fights near Estes and the main team.",
+          "Estes saves his ultimate for Fredrinn's committed frontline window.",
+          "Fredrinn can continue hitting enemies to build Combo Points."
+        ],
+        "failureCases": [
+          "Fredrinn dives too far from Estes.",
+          "Enemy anti-heal cuts the sustain value.",
+          "Fredrinn is kited and cannot convert Crystal Energy into pressure."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "fredrinn",
+    "synergyHeroId": "floryn",
+    "reasons": [
+      "Floryn helps Fredrinn survive frontline damage even when he is fighting away from the main support position.",
+      "Global healing supports Fredrinn's jungle skirmishes and objective contests."
+    ],
+    "synergyTypes": [
+      "healing-sustain",
+      "frontline-enabler",
+      "teamfight-combo"
+    ],
+    "proof": [
+      {
+        "id": "floryn-bloom-sustains-fredrinn-objective-fights",
+        "category": "healing-sustain",
+        "priority": "secondary",
+        "impact": "high",
+        "summary": "Floryn's global healing lets Fredrinn stay active in extended fights and recover during objective pressure.",
+        "worksBestWhen": [
+          "Floryn saves Bloom until Fredrinn has taken meaningful damage.",
+          "Fredrinn is not isolated from all follow-up damage.",
+          "Fredrinn can keep enemies near him after the heal."
+        ],
+        "failureCases": [
+          "Fredrinn dies before Bloom lands.",
+          "Anti-heal reduces the recovery.",
+          "Fredrinn cannot reach enemies to continue his combo chain."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "fredrinn",
+    "synergyHeroId": "angela",
+    "reasons": [
+      "Angela can attach to Fredrinn and protect him during his frontline commit.",
+      "Fredrinn gives Angela a durable host who can carry her support into the center of the fight."
+    ],
+    "synergyTypes": [
+      "shielding",
+      "protect",
+      "frontline-enabler"
+    ],
+    "proof": [
+      {
+        "id": "angela-heartguard-protects-fredrinn-frontline",
+        "category": "shielding",
+        "priority": "secondary",
+        "impact": "high",
+        "summary": "Angela shields Fredrinn during his engage and helps him survive long enough to convert damage taken into fight pressure.",
+        "worksBestWhen": [
+          "Angela attaches before Fredrinn commits.",
+          "Fredrinn has Combo Points or cooldowns ready.",
+          "Fredrinn stays within team follow-up range."
+        ],
+        "failureCases": [
+          "Angela attaches after Fredrinn has already spent his main skills.",
+          "Fredrinn is isolated too far from team follow-up.",
+          "Enemy suppression or burst removes Fredrinn before Angela's value builds."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "fredrinn",
+    "synergyHeroId": "carmilla",
+    "reasons": [
+      "Carmilla's linked enemies make Fredrinn's taunt and area pressure more valuable in grouped fights.",
+      "Fredrinn can hold the center of the fight while Carmilla's link spreads control and damage value."
+    ],
+    "synergyTypes": [
+      "damage-amplification",
+      "cc-chain",
+      "teamfight-combo"
+    ],
+    "proof": [
+      {
+        "id": "carmilla-link-amplifies-fredrinn-teamfight-pressure",
+        "category": "damage-amplification",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Carmilla links enemies, while Fredrinn taunts and pressures the linked group with frontline control and Appraiser's Wrath threat.",
+        "worksBestWhen": [
+          "Carmilla links multiple enemies before Fredrinn spends his burst window.",
+          "Fredrinn has enough Combo Points for meaningful follow-up.",
+          "Fredrinn keeps enemies within the linked fight area."
+        ],
+        "failureCases": [
+          "Enemies spread out and reduce the link value.",
+          "Carmilla links only frontliners.",
+          "Fredrinn is kited away from the linked targets."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "fredrinn",
+    "synergyHeroId": "mathilda",
+    "reasons": [
+      "Mathilda helps Fredrinn reach the fight or reposition when enemies try to kite him.",
+      "Mathilda's shield gives Fredrinn a safer first-entry window before his own sustain loop starts."
+    ],
+    "synergyTypes": [
+      "mobility-enable",
+      "shielding",
+      "frontline-enabler"
+    ],
+    "proof": [
+      {
+        "id": "mathilda-enables-fredrinn-entry-reset",
+        "category": "mobility-enabler",
+        "priority": "secondary",
+        "impact": "medium",
+        "summary": "Mathilda gives Fredrinn movement and shield support, helping him enter or reset positioning in extended fights.",
+        "worksBestWhen": [
+          "Mathilda helps Fredrinn reach enemies while staying aligned with team follow-up.",
+          "Fredrinn enters with teammates ready to follow.",
+          "Fredrinn can hit enemies after repositioning."
+        ],
+        "failureCases": [
+          "Fredrinn enters but cannot hit enemies to build Combo Points.",
+          "Mathilda's mobility path creates a bad engage angle.",
+          "Enemy kiting still prevents Fredrinn from converting pressure."
+        ]
+      }
+    ]
+  }
+]

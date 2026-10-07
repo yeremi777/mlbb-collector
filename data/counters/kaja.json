@@ -1,0 +1,157 @@
+[
+  {
+    "targetHeroId": "kaja",
+    "counterHeroId": "valir",
+    "reasons": [
+      "Valir can push Kaja away before Kaja reaches suppression range.",
+      "Valir's ultimate helps him remove dangerous control pressure and reposition, making it harder for Kaja to get a clean pickoff."
+    ],
+    "counterTypes": [
+      "anti-engage",
+      "disengage",
+      "kiting"
+    ],
+    "proof": [
+      {
+        "id": "valir-searing-torrent-vs-kaja-divine-judgment-range",
+        "category": "skill-interaction",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Kaja wants to enter short range for Divine Judgment, while Valir can knock enemies back with Searing Torrent and reset spacing during Kaja's engage attempt.",
+        "worksBestWhen": [
+          "Valir holds Searing Torrent until Kaja commits forward.",
+          "Valir positions behind frontline and does not get flanked."
+        ],
+        "failureCases": [
+          "Kaja catches Valir from fog or Flicker range.",
+          "Valir wastes knockback before Kaja commits.",
+          "Kaja targets another backliner instead of Valir."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "kaja",
+    "counterHeroId": "chou",
+    "reasons": [
+      "Chou can use timed control immunity to avoid Kaja's engage window.",
+      "Chou can kick Kaja away or punish him after Kaja commits too deeply."
+    ],
+    "counterTypes": [
+      "control-immunity",
+      "pickoff",
+      "anti-engage"
+    ],
+    "proof": [
+      {
+        "id": "chou-shunpo-vs-kaja-divine-judgment",
+        "category": "skill-interaction",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Kaja relies on a short-range lock, while Chou can time Shunpo's control immunity and then displace Kaja away from the target.",
+        "worksBestWhen": [
+          "Chou tracks Kaja's engage angle.",
+          "Chou saves Shunpo and ultimate for Kaja's commit."
+        ],
+        "failureCases": [
+          "Kaja catches Chou before Shunpo is available.",
+          "Chou kicks the wrong target.",
+          "Kaja baits Chou's immunity before committing Divine Judgment."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "kaja",
+    "counterHeroId": "franco",
+    "reasons": [
+      "Franco can suppress Kaja before Kaja finishes a clean pickoff setup.",
+      "Hook pressure makes Kaja's short-range approach riskier."
+    ],
+    "counterTypes": [
+      "crowd-control-counter",
+      "pickoff",
+      "anti-engage"
+    ],
+    "proof": [
+      {
+        "id": "franco-bloody-hunt-vs-kaja-short-range-pickoff",
+        "category": "crowd-control-counter",
+        "priority": "primary",
+        "impact": "medium",
+        "summary": "Kaja wants to isolate one target, while Franco can answer with his own suppression or hook Kaja before Kaja reaches the backline.",
+        "worksBestWhen": [
+          "Franco watches Kaja's flank path.",
+          "Franco suppresses Kaja after Kaja commits and before follow-up damage lands."
+        ],
+        "failureCases": [
+          "Franco misses hook.",
+          "Kaja catches Franco's damage dealer instead.",
+          "Franco suppresses Kaja too late after the target is already dragged."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "kaja",
+    "counterHeroId": "khufra",
+    "reasons": [
+      "Khufra makes Kaja's dash-in and dash-out movement less safe.",
+      "Khufra can stand between Kaja and the backline to force Kaja into a bad engage angle."
+    ],
+    "counterTypes": [
+      "anti-dash",
+      "anti-engage",
+      "frontline"
+    ],
+    "proof": [
+      {
+        "id": "khufra-bouncing-ball-vs-kaja-engage-path",
+        "category": "positioning-requirement",
+        "priority": "primary",
+        "impact": "medium",
+        "summary": "Kaja wants a clean path into short range, while Khufra can zone mobility paths and punish blink-style movement around the backline.",
+        "worksBestWhen": [
+          "Khufra holds Bouncing Ball near the carry Kaja wants.",
+          "Khufra blocks flank routes instead of chasing too far forward."
+        ],
+        "failureCases": [
+          "Kaja walks around Khufra and catches from another angle.",
+          "Khufra uses anti-dash tools too early.",
+          "Kaja targets a teammate outside Khufra's protection range."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "kaja",
+    "counterHeroId": "minsitthar",
+    "reasons": [
+      "Minsitthar can make Kaja's escape and follow-up movement more difficult inside King's Calling.",
+      "His zone control punishes Kaja if Kaja dives too deeply after a pickoff attempt."
+    ],
+    "counterTypes": [
+      "anti-dash",
+      "zone-control",
+      "teamfight"
+    ],
+    "proof": [
+      {
+        "id": "minsitthar-kings-calling-vs-kaja-dash-commit",
+        "category": "skill-interaction",
+        "priority": "primary",
+        "impact": "medium",
+        "summary": "Kaja wants to dash in, drag, and leave; Minsitthar's King's Calling creates a zone where directional Blink skills cannot be used, making Kaja's commit more punishable.",
+        "worksBestWhen": [
+          "Minsitthar casts King's Calling after Kaja commits.",
+          "Teammates collapse quickly while Kaja is trapped in the zone."
+        ],
+        "failureCases": [
+          "Kaja catches a target before Minsitthar can set the zone.",
+          "Kaja stays outside the King's Calling area.",
+          "Minsitthar misses the timing and Kaja escapes."
+        ]
+      }
+    ]
+  }
+]

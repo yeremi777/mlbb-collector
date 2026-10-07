@@ -1,0 +1,152 @@
+[
+  {
+    "anchorHeroId": "minsitthar",
+    "synergyHeroId": "pharsa",
+    "reasons": [
+      "Minsitthar's trap zone makes it easier for Pharsa to land long-range artillery damage.",
+      "Pharsa can follow Minsitthar's setup from safe distance instead of standing inside the fight."
+    ],
+    "synergyTypes": [
+      "engage-follow-up",
+      "poke-siege",
+      "aoe-follow-up"
+    ],
+    "proof": [
+      {
+        "id": "minsitthar-pharsa-king-calling-artillery-follow-up",
+        "category": "engage-follow-up",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Minsitthar restricts enemy movement, while Pharsa punishes the trapped area from long range.",
+        "worksBestWhen": [
+          "Pharsa is already close enough to follow when Minsitthar casts King’s Calling.",
+          "Minsitthar traps priority targets instead of only frontline tanks."
+        ],
+        "failureCases": [
+          "Minsitthar misses the initial catch.",
+          "Enemies spread before Pharsa can land damage."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "minsitthar",
+    "synergyHeroId": "odette",
+    "reasons": [
+      "Minsitthar keeps enemies inside a restricted area, giving Odette a better Swan Song damage window.",
+      "Odette's AoE damage becomes more valuable when enemies cannot freely dash away."
+    ],
+    "synergyTypes": [
+      "teamfight-combo",
+      "aoe-follow-up",
+      "cc-chain"
+    ],
+    "proof": [
+      {
+        "id": "minsitthar-odette-restricted-zone-swan-song",
+        "category": "teamfight-combo",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Minsitthar creates the restricted teamfight zone, while Odette converts that zone into sustained AoE damage.",
+        "worksBestWhen": [
+          "Odette waits for Minsitthar's zone before channeling.",
+          "Minsitthar traps enemies close enough for Swan Song value."
+        ],
+        "failureCases": [
+          "Odette is interrupted before her damage completes.",
+          "Enemies escape the area before Odette commits."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "minsitthar",
+    "synergyHeroId": "aurora",
+    "reasons": [
+      "Aurora adds freeze control on top of Minsitthar's movement restriction.",
+      "Her AoE freeze and burst make Minsitthar's trapped area harder for enemies to survive."
+    ],
+    "synergyTypes": [
+      "cc-chain",
+      "aoe-follow-up",
+      "teamfight-combo"
+    ],
+    "proof": [
+      {
+        "id": "minsitthar-aurora-freeze-zone-chain",
+        "category": "crowd-control-chain",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Minsitthar restricts enemy escape tools, while Aurora adds freeze control and AoE burst into the same area.",
+        "worksBestWhen": [
+          "Aurora saves her freeze and burst for enemies already trapped by Minsitthar.",
+          "Minsitthar catches enemies who rely on movement to escape."
+        ],
+        "failureCases": [
+          "Aurora casts before enemies are committed inside King’s Calling.",
+          "Enemy spacing avoids being hit by both control layers."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "minsitthar",
+    "synergyHeroId": "vexana",
+    "reasons": [
+      "Minsitthar's zone helps Vexana land delayed AoE damage more reliably.",
+      "Vexana adds extra control and summoned frontline pressure after Minsitthar starts the fight."
+    ],
+    "synergyTypes": [
+      "aoe-follow-up",
+      "cc-chain",
+      "teamfight-combo"
+    ],
+    "proof": [
+      {
+        "id": "minsitthar-vexana-delayed-aoe-trap-follow-up",
+        "category": "teamfight-combo",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Minsitthar keeps enemies inside a punishable area, while Vexana follows with delayed AoE damage and control.",
+        "worksBestWhen": [
+          "Vexana casts after Minsitthar confirms the enemy position.",
+          "Minsitthar traps targets near the center of Vexana's damage area."
+        ],
+        "failureCases": [
+          "Vexana casts too early and enemies walk out.",
+          "Minsitthar catches targets outside Vexana's range."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "minsitthar",
+    "synergyHeroId": "luo-yi",
+    "reasons": [
+      "Minsitthar's zone keeps enemies close enough for Luo Yi to trigger Yin-Yang Reaction more consistently.",
+      "Luo Yi can add pull, stun, and repeated area pressure when enemies are forced to stay near each other."
+    ],
+    "synergyTypes": [
+      "setup-combo",
+      "cc-chain",
+      "aoe-follow-up"
+    ],
+    "proof": [
+      {
+        "id": "minsitthar-luo-yi-yin-yang-zone-setup",
+        "category": "setup-combo",
+        "priority": "primary",
+        "impact": "medium",
+        "summary": "Minsitthar restricts enemy mobility, while Luo Yi punishes clustered enemies with Yin-Yang Reaction control and damage.",
+        "worksBestWhen": [
+          "Minsitthar traps more than one enemy or traps a target near other marked enemies.",
+          "Luo Yi prepares opposite marks before Minsitthar fully commits."
+        ],
+        "failureCases": [
+          "Enemies are too spread out for Yin-Yang Reaction.",
+          "Luo Yi misses the mark timing and cannot trigger the reaction during the trap window."
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,155 @@
+[
+  {
+    "targetHeroId": "joy",
+    "counterHeroId": "minsitthar",
+    "reasons": [
+      "Minsitthar directly attacks Joy's repeated dash identity.",
+      "King's Calling prevents movement skills inside the field, making Joy's rhythm chain much harder to execute."
+    ],
+    "counterTypes": [
+      "anti-dash",
+      "anti-engage",
+      "teamfight"
+    ],
+    "proof": [
+      {
+        "id": "minsitthar-kings-calling-vs-joy-dash-rhythm",
+        "category": "skill-interaction",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Joy wants to chain dashes through enemies or crystals, while Minsitthar's ultimate creates a field where enemies cannot use movement skills.",
+        "worksBestWhen": [
+          "Minsitthar casts after Joy commits into the fight.",
+          "Allies are ready to punish Joy inside the field."
+        ],
+        "failureCases": [
+          "Joy baits King's Calling then re-enters later.",
+          "Minsitthar misses the field or catches only low-value targets."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "joy",
+    "counterHeroId": "khufra",
+    "reasons": [
+      "Khufra's Bouncing Ball punishes Joy when she tries to dash through him.",
+      "He can protect backliners from Joy's entry path."
+    ],
+    "counterTypes": [
+      "anti-dash",
+      "frontline",
+      "anti-dive"
+    ],
+    "proof": [
+      {
+        "id": "khufra-bouncing-ball-vs-joy-dash-chain",
+        "category": "skill-interaction",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Joy depends on repeated dash movement, while Khufra can knock up enemies that attempt to blink across him.",
+        "worksBestWhen": [
+          "Khufra stands between Joy and the carry.",
+          "Khufra activates Bouncing Ball during Joy's dash chain."
+        ],
+        "failureCases": [
+          "Joy routes around Khufra instead of through him.",
+          "Khufra uses anti-dash too early."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "joy",
+    "counterHeroId": "kaja",
+    "reasons": [
+      "Kaja can suppress Joy during her commit window and prevent her from freely finishing the dash and ultimate sequence.",
+      "Dragging Joy away from her intended path breaks her fight rhythm."
+    ],
+    "counterTypes": [
+      "suppression",
+      "pickoff",
+      "anti-dive"
+    ],
+    "proof": [
+      {
+        "id": "kaja-divine-judgment-vs-joy-rhythm",
+        "category": "crowd-control-counter",
+        "priority": "primary",
+        "impact": "medium",
+        "summary": "Joy wants continuous movement and timing, while Kaja's suppression stops her and gives the team a clear punish window.",
+        "worksBestWhen": [
+          "Kaja waits until Joy has committed forward.",
+          "Teammates burst Joy during suppression."
+        ],
+        "failureCases": [
+          "Joy keeps distance until Kaja's ultimate is used.",
+          "Kaja is unable to reach Joy before she completes her damage window."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "joy",
+    "counterHeroId": "franco",
+    "reasons": [
+      "Franco's suppression can stop Joy even when normal crowd-control timing is hard.",
+      "Hook threat also limits Joy's flank routes before teamfights."
+    ],
+    "counterTypes": [
+      "suppression",
+      "pickoff",
+      "cooldown-punish"
+    ],
+    "proof": [
+      {
+        "id": "franco-bloody-hunt-vs-joy-commit",
+        "category": "crowd-control-counter",
+        "priority": "secondary",
+        "impact": "medium",
+        "summary": "Joy is difficult to control while moving, but Franco can suppress her when she commits or catch her before she starts her rhythm chain.",
+        "worksBestWhen": [
+          "Franco holds Bloody Hunt for Joy's entry.",
+          "The team has burst ready during suppression."
+        ],
+        "failureCases": [
+          "Joy avoids Franco's range and attacks another angle.",
+          "Franco misses hook or suppresses a less important hero."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "joy",
+    "counterHeroId": "obsidia",
+    "reasons": [
+      "Obsidia can directly punish Joy's dash-based rhythm if Hunt of Bone hits, because Joy depends on repeated movement skills to build her damage and ultimate window.",
+      "Compared with Esmeralda, Obsidia has a clearer hard-counter interaction, while Esmeralda is more of a sustain and shield skirmish answer."
+    ],
+    "counterTypes": [
+      "anti-dash",
+      "pickoff",
+      "burst",
+      "execution-dependent"
+    ],
+    "proof": [
+      {
+        "id": "obsidia-hunt-of-bone-vs-joy-dash-rhythm",
+        "category": "skill-interaction",
+        "priority": "primary",
+        "impact": "medium",
+        "summary": "Joy wants to chain repeated dashes to build her rhythm and unlock her ultimate, while Obsidia's Hunt of Bone can tether Joy and prevent displacement skills if it lands.",
+        "worksBestWhen": [
+          "Obsidia casts Hunt of Bone after Joy commits forward.",
+          "Joy has not yet completed her full rhythm chain.",
+          "Obsidia has teammate follow-up or enough damage to punish during the tether."
+        ],
+        "failureCases": [
+          "Obsidia misses Hunt of Bone.",
+          "Joy baits the ultimate, then re-enters after cooldown.",
+          "Joy completes her rhythm and damage window before Obsidia can lock her."
+        ]
+      }
+    ]
+  }
+]

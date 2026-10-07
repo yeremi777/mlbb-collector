@@ -1,0 +1,152 @@
+[
+  {
+    "targetHeroId": "faramis",
+    "counterHeroId": "franco",
+    "reasons": [
+      "Franco is an absolute-style counter when he suppresses Faramis before Nether Realm is used.",
+      "If Faramis is locked before casting ultimate, his team loses the main teamfight safety tool."
+    ],
+    "counterTypes": [
+      "pickoff",
+      "cooldown-punish"
+    ],
+    "proof": [
+      {
+        "id": "franco-bloody-hunt-vs-faramis-nether-realm",
+        "category": "crowd-control-counter",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Faramis wants to stay alive and positioned near allies before casting Nether Realm, while Franco can suppress him and let the team burst him before that timing.",
+        "worksBestWhen": [
+          "Franco catches Faramis before Nether Realm is activated.",
+          "Franco's team has immediate burst follow-up."
+        ],
+        "failureCases": [
+          "Faramis casts Nether Realm before Franco reaches him.",
+          "Franco suppresses another target and leaves Faramis free."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "faramis",
+    "counterHeroId": "kaja",
+    "reasons": [
+      "Kaja can suppress and drag Faramis away from his team before Nether Realm.",
+      "This directly attacks Faramis's positioning requirement because Faramis needs to be near allies to maximize his ultimate."
+    ],
+    "counterTypes": [
+      "pickoff",
+      "anti-engage"
+    ],
+    "proof": [
+      {
+        "id": "kaja-divine-judgment-vs-faramis-formation",
+        "category": "crowd-control-counter",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Faramis wants to cast Nether Realm around grouped allies, while Kaja can suppress and pull him out of formation before the teamfight starts.",
+        "worksBestWhen": [
+          "Kaja catches Faramis before ultimate activation.",
+          "Allies collapse immediately during suppression."
+        ],
+        "failureCases": [
+          "Faramis pre-casts Nether Realm.",
+          "Kaja catches Faramis but the team cannot burst him."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "faramis",
+    "counterHeroId": "yin",
+    "reasons": [
+      "Yin isolates Faramis from the teammates he wants to protect with Nether Realm.",
+      "If Faramis uses Nether Realm inside Yin's domain, the value is mostly self-focused instead of protecting the whole team."
+    ],
+    "counterTypes": [
+      "pickoff",
+      "teamfight"
+    ],
+    "proof": [
+      {
+        "id": "yin-my-turn-vs-faramis-nether-realm",
+        "category": "skill-interaction",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Faramis wants to stay with allies and cast Nether Realm for a grouped teamfight, while Yin can isolate Faramis in his domain so he cannot protect teammates outside it.",
+        "worksBestWhen": [
+          "Yin targets Faramis before Nether Realm is cast.",
+          "Yin has enough damage or durability to survive the domain fight.",
+          "Faramis is separated from peel or vision."
+        ],
+        "failureCases": [
+          "Faramis casts Nether Realm before Yin pulls him.",
+          "Yin cannot kill or pressure Faramis inside the domain.",
+          "Faramis's team wins the outside fight while Yin is isolated."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "faramis",
+    "counterHeroId": "akai",
+    "reasons": [
+      "Akai can disrupt grouped formations with Heavy Spin, reducing the value of Faramis's teamfight protection.",
+      "This is stronger than a pure anti-heal angle because Faramis is mainly a grouped teamfight protection hero, not a dedicated healer."
+    ],
+    "counterTypes": [
+      "disengage",
+      "teamfight",
+      "anti-engage"
+    ],
+    "proof": [
+      {
+        "id": "akai-heavy-spin-vs-faramis-formation",
+        "category": "teamfight-role-counter",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Faramis wants allies grouped inside Nether Realm, while Akai can knock enemies away, separate formations, and disrupt the teamfight area.",
+        "worksBestWhen": [
+          "Akai uses Heavy Spin after Faramis's team groups for the fight.",
+          "Akai pushes priority targets away from Faramis or out of the protected area.",
+          "Akai's team follows the displacement with burst or objective control."
+        ],
+        "failureCases": [
+          "Akai spins too early before Faramis commits.",
+          "Akai pushes enemies to safety instead of splitting them.",
+          "Faramis's team re-enters the fight after Heavy Spin ends."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "faramis",
+    "counterHeroId": "valentina",
+    "reasons": [
+      "Valentina can copy Faramis's ultimate and reduce his unique teamfight advantage.",
+      "She is more conditional than suppression or isolation counters because she must copy the correct ultimate and her team must use the copied timing well."
+    ],
+    "counterTypes": [
+      "teamfight",
+      "cooldown-punish"
+    ],
+    "proof": [
+      {
+        "id": "valentina-i-am-you-vs-faramis-nether-realm",
+        "category": "teamfight-role-counter",
+        "priority": "secondary",
+        "impact": "medium",
+        "summary": "Faramis wants Nether Realm to define the teamfight, while Valentina can threaten to mirror the same kind of teamfight tool if she copies his ultimate.",
+        "worksBestWhen": [
+          "Valentina safely copies Faramis before the fight.",
+          "Valentina's team coordinates around the copied ultimate timing."
+        ],
+        "failureCases": [
+          "Valentina copies the wrong target.",
+          "Faramis forces a fight while Valentina cannot copy or cast effectively."
+        ]
+      }
+    ]
+  }
+]

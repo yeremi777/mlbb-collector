@@ -1,0 +1,151 @@
+[
+  {
+    "targetHeroId": "khufra",
+    "counterHeroId": "diggie",
+    "reasons": [
+      "Diggie reduces the value of Khufra's engage by protecting allies during the crowd-control window.",
+      "Khufra depends on converting engage into team follow-up, while Diggie disrupts that conversion."
+    ],
+    "counterTypes": [
+      "anti-cc",
+      "cleanse",
+      "teamfight"
+    ],
+    "proof": [
+      {
+        "id": "diggie-time-journey-vs-khufra-engage",
+        "category": "skill-interaction",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Khufra wants to start fights with crowd control, while Diggie can remove debuffs and grant control immunity to nearby allies.",
+        "worksBestWhen": [
+          "Diggie saves ultimate for Khufra's real engage.",
+          "Diggie positions near the teammates Khufra wants to catch."
+        ],
+        "failureCases": [
+          "Khufra baits Time Journey before the real engage.",
+          "Khufra catches Diggie first."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "khufra",
+    "counterHeroId": "valir",
+    "reasons": [
+      "Valir can push Khufra away before Khufra finishes a clean engage.",
+      "Valir's range and spacing tools make it harder for Khufra to reach priority targets."
+    ],
+    "counterTypes": [
+      "disengage",
+      "poke",
+      "anti-engage"
+    ],
+    "proof": [
+      {
+        "id": "valir-searing-torrent-vs-khufra-engage",
+        "category": "range-advantage",
+        "priority": "primary",
+        "impact": "medium",
+        "summary": "Khufra wants to force close-range engage, while Valir can poke and knock him back to deny the start of the fight.",
+        "worksBestWhen": [
+          "Valir saves knockback for Khufra's real engage.",
+          "Valir stays behind frontline and avoids blind corridors."
+        ],
+        "failureCases": [
+          "Khufra engages from fog before Valir reacts.",
+          "Valir uses knockback too early."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "khufra",
+    "counterHeroId": "karrie",
+    "reasons": [
+      "Karrie pressures Khufra's tank durability through true damage based on Max HP.",
+      "She works best when she can hit Khufra safely without being caught by his engage."
+    ],
+    "counterTypes": [
+      "true-damage",
+      "tank-shred",
+      "kiting"
+    ],
+    "proof": [
+      {
+        "id": "karrie-lightwheel-vs-khufra-frontline",
+        "category": "damage-type-advantage",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Khufra wants to absorb pressure as a frontline tank, while Karrie's true-damage Max HP stacks punish durable targets.",
+        "worksBestWhen": [
+          "Karrie has peel and keeps distance from Khufra's engage angle.",
+          "Karrie attacks after Khufra uses engage or anti-dash cooldowns."
+        ],
+        "failureCases": [
+          "Khufra catches Karrie before she stacks damage.",
+          "Karrie attacks from a predictable angle without frontline."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "khufra",
+    "counterHeroId": "lunox",
+    "reasons": [
+      "Lunox can punish Khufra after his engage tools are spent.",
+      "Her defensive timing helps her survive if Khufra fails to lock her before she responds."
+    ],
+    "counterTypes": [
+      "burst",
+      "mobility",
+      "cooldown-punish"
+    ],
+    "proof": [
+      {
+        "id": "lunox-brilliance-vs-khufra-engage-window",
+        "category": "cooldown-window",
+        "priority": "condition",
+        "impact": "medium",
+        "summary": "Khufra is strongest during his engage and anti-dash window, while Lunox can use defensive timing and burst to punish him after that window.",
+        "worksBestWhen": [
+          "Lunox waits out Khufra's main crowd-control commit.",
+          "Lunox positions where Khufra cannot instantly wall-stun her."
+        ],
+        "failureCases": [
+          "Khufra catches Lunox before she can activate defensive timing.",
+          "Lunox uses defensive timing or mobility too early."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "khufra",
+    "counterHeroId": "dyrroth",
+    "reasons": [
+      "Dyrroth can reduce Khufra's physical defense and make him easier to burst.",
+      "This is strongest in skirmishes where Dyrroth can reach Khufra without being chain-controlled."
+    ],
+    "counterTypes": [
+      "penetration",
+      "burst"
+    ],
+    "proof": [
+      {
+        "id": "dyrroth-defense-reduction-vs-khufra-tank",
+        "category": "damage-type-advantage",
+        "priority": "secondary",
+        "impact": "medium",
+        "summary": "Khufra wants to soak damage as a frontline tank, while Dyrroth's defense reduction makes that frontline role easier to punish.",
+        "worksBestWhen": [
+          "Dyrroth times burst after reducing defense.",
+          "Dyrroth avoids committing while Khufra's full control chain is ready."
+        ],
+        "failureCases": [
+          "Khufra locks Dyrroth before Dyrroth completes his damage window.",
+          "Dyrroth dives too far without follow-up."
+        ]
+      }
+    ]
+  }
+]

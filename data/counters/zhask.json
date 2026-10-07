@@ -1,0 +1,154 @@
+[
+  {
+    "targetHeroId": "zhask",
+    "counterHeroId": "kadita",
+    "reasons": [
+      "Kadita is a strong Zhask counter because Zhask is vulnerable if he is caught before casting Dominator's Descent.",
+      "Kadita can quickly cross space, knock Zhask airborne, and burst him before he becomes untargetable."
+    ],
+    "counterTypes": [
+      "burst",
+      "mobility",
+      "cooldown-punish"
+    ],
+    "proof": [
+      {
+        "id": "kadita-burst-vs-zhask-before-dominator-descent",
+        "category": "cooldown-window",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Zhask is fragile before he enters Dominator's Descent, while Kadita can quickly cross space, set up airborne control, and burst him before he becomes untargetable.",
+        "worksBestWhen": [
+          "Kadita attacks from bush or fog before Zhask casts Dominator's Descent.",
+          "Kadita tracks Zhask's ultimate cooldown.",
+          "Kadita waits until Zhask exits fusion if he has already used ultimate."
+        ],
+        "failureCases": [
+          "Zhask casts Dominator's Descent before Kadita's burst lands.",
+          "Kadita dives into the enhanced spawn while Zhask is untargetable.",
+          "Kadita misses the setup and loses her burst window."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "zhask",
+    "counterHeroId": "franco",
+    "reasons": [
+      "Franco can punish Zhask before he enters Dominator's Descent or after he exits.",
+      "Franco is preferred above Kaja here because hook plus suppression gives stronger pickoff threat from fog and objective bushes."
+    ],
+    "counterTypes": [
+      "suppress",
+      "pickoff",
+      "cooldown-punish"
+    ],
+    "proof": [
+      {
+        "id": "franco-suppression-vs-zhask-fusion-window",
+        "category": "cooldown-window",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Zhask becomes hard to punish during fusion, but Franco can hook or suppress him during the vulnerable windows before Dominator's Descent or after it ends.",
+        "worksBestWhen": [
+          "Franco saves hook and Bloody Hunt for Zhask's non-fusion state.",
+          "Franco controls bushes near objectives where Zhask wants to set spawn."
+        ],
+        "failureCases": [
+          "Franco commits while Zhask is already fused and untargetable.",
+          "Franco hooks the spawn or a frontline target instead of Zhask."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "zhask",
+    "counterHeroId": "pharsa",
+    "reasons": [
+      "Pharsa can pressure Zhask's setup zone from long range without walking directly into Nightmaric Spawn.",
+      "She can force Zhask to reposition or use Dominator's Descent defensively."
+    ],
+    "counterTypes": [
+      "range-advantage",
+      "poke",
+      "burst"
+    ],
+    "proof": [
+      {
+        "id": "pharsa-range-pressure-vs-zhask-spawn-zone",
+        "category": "range-advantage",
+        "priority": "primary",
+        "impact": "medium",
+        "summary": "Zhask wants enemies to fight near his spawn, while Pharsa can damage and zone from outside many of Zhask's preferred threat areas.",
+        "worksBestWhen": [
+          "Pharsa keeps distance and uses terrain to cast safely.",
+          "Pharsa pressures before Zhask fully controls the objective area."
+        ],
+        "failureCases": [
+          "Zhask's team dives Pharsa before she can cast safely.",
+          "Pharsa wastes damage into the enhanced spawn instead of pressuring Zhask's vulnerable timing."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "zhask",
+    "counterHeroId": "lancelot",
+    "reasons": [
+      "Lancelot can dodge some spawn pressure and punish Zhask when Dominator's Descent is unavailable.",
+      "This remains valid but is less direct than Kadita or Franco because Lancelot can also be punished if he dives into enhanced spawn timing."
+    ],
+    "counterTypes": [
+      "mobility",
+      "burst",
+      "cooldown-punish"
+    ],
+    "proof": [
+      {
+        "id": "lancelot-mobility-vs-zhask-spawn-zone",
+        "category": "mobility-advantage",
+        "priority": "secondary",
+        "impact": "medium",
+        "summary": "Zhask creates a fixed danger zone around Nightmaric Spawn, while Lancelot can use mobility and invulnerability windows to enter and punish when Zhask's ultimate is down.",
+        "worksBestWhen": [
+          "Lancelot waits for Zhask's ultimate or spawn reposition window to be unavailable.",
+          "Lancelot avoids fighting the enhanced spawn directly."
+        ],
+        "failureCases": [
+          "Lancelot dives while Dominator's Descent is ready.",
+          "Zhask's team protects the spawn zone and locks Lancelot after his dash chain."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "zhask",
+    "counterHeroId": "kaja",
+    "reasons": [
+      "Kaja is valid because suppression and drag can punish Zhask outside Dominator's Descent.",
+      "Franco is still the stronger recommendation, but Kaja works as a similar suppression alternative when he can reach Zhask."
+    ],
+    "counterTypes": [
+      "suppress",
+      "pickoff",
+      "cooldown-punish"
+    ],
+    "proof": [
+      {
+        "id": "kaja-divine-judgment-vs-zhask-non-fusion-window",
+        "category": "cooldown-window",
+        "priority": "primary",
+        "impact": "medium",
+        "summary": "Zhask is punishable before or after Dominator's Descent, and Kaja can suppress and drag him during that vulnerable window.",
+        "worksBestWhen": [
+          "Kaja catches Zhask before fusion.",
+          "Kaja has teammate burst ready."
+        ],
+        "failureCases": [
+          "Zhask enters Dominator's Descent before Kaja reaches him.",
+          "Kaja has to pass through Zhask's frontline and spawn zone first."
+        ]
+      }
+    ]
+  }
+]

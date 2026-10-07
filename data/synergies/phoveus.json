@@ -1,0 +1,157 @@
+[
+  {
+    "anchorHeroId": "phoveus",
+    "synergyHeroId": "tigreal",
+    "reasons": [
+      "Tigreal can disrupt enemy positioning and create the movement-heavy fight windows Phoveus wants.",
+      "Phoveus can follow Tigreal's grouped fight after enemies are forced into bad positions."
+    ],
+    "synergyTypes": [
+      "cc-chain",
+      "setup-combo",
+      "teamfight-combo"
+    ],
+    "proof": [
+      {
+        "id": "phoveus-pressure-after-tigreal-displacement",
+        "category": "skill-interaction",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Tigreal disrupts enemy positioning, while Phoveus punishes movement and displacement windows inside the same teamfight.",
+        "worksBestWhen": [
+          "Tigreal engages before enemies spread out.",
+          "Phoveus stays close enough to benefit from movement-triggered opportunities."
+        ],
+        "failureCases": [
+          "Tigreal engages outside Phoveus's follow-up range.",
+          "Enemies save mobility until after Phoveus commits.",
+          "Phoveus is kited before reaching the fight."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "phoveus",
+    "synergyHeroId": "atlas",
+    "reasons": [
+      "Atlas can force a grouped fight where enemies are more likely to use movement skills to escape.",
+      "Phoveus can capitalize on the movement chaos after Atlas starts the engage."
+    ],
+    "synergyTypes": [
+      "setup-combo",
+      "cc-chain",
+      "teamfight-combo"
+    ],
+    "proof": [
+      {
+        "id": "phoveus-follow-up-after-atlas-teamfight-control",
+        "category": "teamfight-combo",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Atlas forces enemies into a grouped control window, and Phoveus punishes their movement responses during the follow-up.",
+        "worksBestWhen": [
+          "Atlas engages with Phoveus nearby.",
+          "Phoveus waits for enemy escape skills or displacement windows."
+        ],
+        "failureCases": [
+          "Atlas catches only targets Phoveus cannot reach.",
+          "Enemy team disengages before Phoveus enters.",
+          "Phoveus commits before Atlas forces movement."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "phoveus",
+    "synergyHeroId": "ruby",
+    "reasons": [
+      "Ruby's repeated control can keep enemies close enough for Phoveus to pressure them.",
+      "Phoveus benefits from extended close-range fights where enemies repeatedly reposition or attempt to escape."
+    ],
+    "synergyTypes": [
+      "cc-chain",
+      "setup-combo",
+      "frontline-enabler"
+    ],
+    "proof": [
+      {
+        "id": "phoveus-pressure-during-ruby-control-chain",
+        "category": "crowd-control-chain",
+        "priority": "secondary",
+        "impact": "medium",
+        "summary": "Ruby keeps enemies disrupted in close range, while Phoveus uses the fight duration to punish movement and re-entry attempts.",
+        "worksBestWhen": [
+          "Ruby and Phoveus fight around the same target area.",
+          "Ruby holds control until Phoveus can join."
+        ],
+        "failureCases": [
+          "Ruby pulls targets away from Phoveus.",
+          "Phoveus is too far to benefit from the control chain.",
+          "Enemy ranged heroes kite both fighters."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "phoveus",
+    "synergyHeroId": "chou",
+    "reasons": [
+      "Chou can force one target into a bad position, giving Phoveus a focused follow-up target.",
+      "Phoveus benefits when Chou's pickoff creates a close-range fight instead of a scattered teamfight."
+    ],
+    "synergyTypes": [
+      "pickoff-combo",
+      "cc-chain",
+      "execution-dependent"
+    ],
+    "proof": [
+      {
+        "id": "phoveus-follow-up-after-chou-kick",
+        "category": "pickoff-combo",
+        "priority": "secondary",
+        "impact": "medium",
+        "summary": "Chou isolates or displaces a target, and Phoveus follows the forced fight to punish movement and escape attempts.",
+        "worksBestWhen": [
+          "Chou kicks a target toward Phoveus or team follow-up.",
+          "Phoveus is already near the expected landing area."
+        ],
+        "failureCases": [
+          "Chou kicks the target away from Phoveus.",
+          "The target uses immunity or escape after the kick.",
+          "Phoveus arrives too late."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "phoveus",
+    "synergyHeroId": "jawhead",
+    "reasons": [
+      "Jawhead can force a target into Phoveus's threat area.",
+      "Phoveus benefits when Jawhead's throw or displacement starts a committed close-range skirmish."
+    ],
+    "synergyTypes": [
+      "setup-combo",
+      "pickoff-combo",
+      "execution-dependent"
+    ],
+    "proof": [
+      {
+        "id": "phoveus-follow-up-after-jawhead-throw",
+        "category": "setup-combo",
+        "priority": "secondary",
+        "impact": "medium",
+        "summary": "Jawhead creates a forced-position target, and Phoveus follows with movement-punish pressure.",
+        "worksBestWhen": [
+          "Jawhead throws enemies toward Phoveus or team damage.",
+          "Phoveus waits for the displacement before committing."
+        ],
+        "failureCases": [
+          "Jawhead throws the target away from the team.",
+          "Phoveus is not close enough to follow.",
+          "The enemy immediately disengages after the throw."
+        ]
+      }
+    ]
+  }
+]

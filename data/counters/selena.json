@@ -1,0 +1,158 @@
+[
+  {
+    "targetHeroId": "selena",
+    "counterHeroId": "lolita",
+    "reasons": [
+      "Lolita can block Selena's Abyssal Arrow path, directly reducing Selena's strongest pickoff setup.",
+      "A blocked arrow greatly lowers Selena's ability to convert fog-of-war pressure into a kill."
+    ],
+    "counterTypes": [
+      "anti-projectile",
+      "protect",
+      "teamfight"
+    ],
+    "proof": [
+      {
+        "id": "lolita-guardian-bulwark-vs-selena-abyssal-arrow",
+        "category": "skill-interaction",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Selena wants to start fights with Abyssal Arrow, while Lolita can block the projectile path and protect the target Selena wants to stun.",
+        "worksBestWhen": [
+          "Lolita faces Selena's likely arrow angle.",
+          "The team plays behind Lolita when contesting bushes or river paths."
+        ],
+        "failureCases": [
+          "Selena shoots from side fog.",
+          "Lolita turns shield toward another threat.",
+          "Selena waits for shield cooldown before committing."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "selena",
+    "counterHeroId": "kagura",
+    "reasons": [
+      "Kagura can cleanse Selena's debuff and control setup with Rasho Umbrella Flee.",
+      "Kagura can punish Selena after Selena misses Abyssal Arrow, because Selena's threat drops heavily when the arrow is unavailable."
+    ],
+    "counterTypes": [
+      "cleanse",
+      "mobility",
+      "burst"
+    ],
+    "proof": [
+      {
+        "id": "kagura-rasho-umbrella-flee-vs-selena-arrow-stun",
+        "category": "crowd-control-counter",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Selena wants one long stun to start a pickoff, while Kagura can cleanse debuffs and reposition with Rasho Umbrella Flee, reducing Selena's stun-conversion value.",
+        "worksBestWhen": [
+          "Kagura saves Skill 2 for Selena arrow or trap-trigger follow-up.",
+          "Kagura does not waste cleanse only for poke damage."
+        ],
+        "failureCases": [
+          "Selena baits Kagura's Skill 2 before throwing the real arrow.",
+          "Kagura is hit while Skill 2 is on cooldown.",
+          "Selena chains with teammate crowd control after Kagura uses her cleanse."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "selena",
+    "counterHeroId": "diggie",
+    "reasons": [
+      "Diggie can protect teammates from Selena's stun follow-up.",
+      "Time Journey is especially valuable when Selena's team relies on arrow into instant burst."
+    ],
+    "counterTypes": [
+      "anti-cc",
+      "cleanse",
+      "protect"
+    ],
+    "proof": [
+      {
+        "id": "diggie-time-journey-vs-selena-arrow-pickoff",
+        "category": "crowd-control-counter",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Selena wants to convert a stun into burst, while Diggie can remove debuffs from nearby allies and give control immunity plus shield during the danger window.",
+        "worksBestWhen": [
+          "Diggie saves Time Journey for Selena's real pickoff attempt.",
+          "Diggie stays close enough to the likely target."
+        ],
+        "failureCases": [
+          "Selena catches Diggie first.",
+          "Selena baits Time Journey with a low-value arrow.",
+          "The stunned ally is too far from Diggie."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "selena",
+    "counterHeroId": "wanwan",
+    "reasons": [
+      "Wanwan can instantly remove Selena's stun with Needles in Flowers, reducing Selena's arrow-to-burst conversion.",
+      "Wanwan's mobility makes it harder for Selena to finish the follow-up after the cleanse window."
+    ],
+    "counterTypes": [
+      "cleanse",
+      "mobility",
+      "cooldown-punish"
+    ],
+    "proof": [
+      {
+        "id": "wanwan-needles-in-flowers-vs-selena-arrow-stun",
+        "category": "crowd-control-counter",
+        "priority": "primary",
+        "impact": "medium",
+        "summary": "Selena wants to land Abyssal Arrow and convert the stun into trap-mark burst, while Wanwan can remove control effects from herself with Needles in Flowers and reposition before Selena completes the follow-up.",
+        "worksBestWhen": [
+          "Wanwan saves Skill 2 for Abyssal Arrow instead of using it early.",
+          "Wanwan reacts quickly after being stunned.",
+          "Wanwan avoids walking blindly into trap-heavy bushes."
+        ],
+        "failureCases": [
+          "Wanwan's Skill 2 is on cooldown.",
+          "Selena's team bursts Wanwan before she can reset.",
+          "Selena baits Wanwan's cleanse first, then re-engages with teammate control."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "selena",
+    "counterHeroId": "hilda",
+    "reasons": [
+      "Hilda can check bushes and pressure Selena's early roam paths.",
+      "Her durability and bush sustain help reduce Selena's trap and arrow fog-of-war value."
+    ],
+    "counterTypes": [
+      "vision-control",
+      "invade",
+      "frontline"
+    ],
+    "proof": [
+      {
+        "id": "hilda-bush-pressure-vs-selena-trap-angles",
+        "category": "vision-awareness",
+        "priority": "condition",
+        "impact": "medium",
+        "summary": "Selena wants hidden trap and arrow angles, while Hilda can contest bushes and reduce Selena's free setup space.",
+        "worksBestWhen": [
+          "Hilda invades with backup.",
+          "Hilda checks bushes before squishy teammates walk forward."
+        ],
+        "failureCases": [
+          "Hilda face-checks alone.",
+          "Selena chains trap and arrow with teammate follow-up.",
+          "Hilda's team ignores the vision she opens."
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,152 @@
+[
+  {
+    "anchorHeroId": "hayabusa",
+    "synergyHeroId": "angela",
+    "reasons": [
+      "Angela can attach to Hayabusa during his dive and give him a safer burst window when he commits onto a backline target.",
+      "Hayabusa benefits from extra protection because his main value often happens after he has already entered enemy threat range."
+    ],
+    "synergyTypes": [
+      "shielding",
+      "dive-support",
+      "protect"
+    ],
+    "proof": [
+      {
+        "id": "hayabusa-dive-with-angela-heartguard",
+        "category": "shielding",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Hayabusa creates the assassination window, while Angela adds protection during the dive.",
+        "worksBestWhen": [
+          "Angela attaches before or during Hayabusa's real commit.",
+          "Hayabusa keeps a usable shadow or escape route after the burst attempt."
+        ],
+        "failureCases": [
+          "Hayabusa dives into layered crowd control.",
+          "Hayabusa loses his shadow exit path before the protection can matter."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "hayabusa",
+    "synergyHeroId": "mathilda",
+    "reasons": [
+      "Mathilda can help Hayabusa approach or disengage with extra mobility support.",
+      "Hayabusa's dive pattern becomes safer when he has another movement route besides his own shadows."
+    ],
+    "synergyTypes": [
+      "mobility-enable",
+      "shielding",
+      "dive-support"
+    ],
+    "proof": [
+      {
+        "id": "mathilda-guiding-wind-for-hayabusa-dive",
+        "category": "mobility-enabler",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Mathilda gives Hayabusa extra mobility and shield support, making his dive and reset pattern more reliable.",
+        "worksBestWhen": [
+          "Mathilda positions near Hayabusa's entry route or escape route.",
+          "Hayabusa commits after Mathilda can support the path."
+        ],
+        "failureCases": [
+          "Hayabusa commits too deep before Mathilda can provide a usable route.",
+          "The enemy controls Hayabusa before he can use the mobility support."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "hayabusa",
+    "synergyHeroId": "kaja",
+    "reasons": [
+      "Kaja can suppress and drag a priority target, giving Hayabusa a clean single-target follow-up window.",
+      "Hayabusa's burst is more reliable when the target is controlled and separated from safe positioning."
+    ],
+    "synergyTypes": [
+      "pickoff-combo",
+      "setup-combo",
+      "burst-follow-up"
+    ],
+    "proof": [
+      {
+        "id": "kaja-suppression-sets-hayabusa-burst",
+        "category": "pickoff-combo",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Kaja starts the pickoff with suppression, and Hayabusa follows with burst before the target can reposition.",
+        "worksBestWhen": [
+          "Kaja catches a damage dealer or mobile target before Hayabusa commits.",
+          "Hayabusa is close enough to follow the drag immediately."
+        ],
+        "failureCases": [
+          "Kaja pulls the target into too many enemy bodies, reducing Hayabusa's clean isolation window.",
+          "Hayabusa's damage is split across nearby enemies."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "hayabusa",
+    "synergyHeroId": "franco",
+    "reasons": [
+      "Franco can pull or suppress one target, giving Hayabusa a direct burst target without forcing Hayabusa to start the engage alone.",
+      "The pair works well around bushes, river, and objective entrances where one caught target can become a fast kill."
+    ],
+    "synergyTypes": [
+      "pickoff-combo",
+      "setup-combo",
+      "burst-follow-up"
+    ],
+    "proof": [
+      {
+        "id": "franco-catch-enables-hayabusa-pickoff",
+        "category": "pickoff-combo",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Franco creates the catch, while Hayabusa follows with burst and cleanup.",
+        "worksBestWhen": [
+          "Franco catches a target away from minions or frontliners.",
+          "Hayabusa waits for the confirmed hook or suppression before entering."
+        ],
+        "failureCases": [
+          "Franco catches a durable frontline target.",
+          "Hayabusa's burst is split across nearby enemies."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "hayabusa",
+    "synergyHeroId": "floryn",
+    "reasons": [
+      "Floryn can support Hayabusa even when he dives far from the team because her healing can reach allies anywhere on the map.",
+      "Hayabusa benefits from global backup when he commits to side-lane pickoffs, jungle invades, or deep backline executions."
+    ],
+    "synergyTypes": [
+      "healing-sustain",
+      "protect",
+      "dive-support"
+    ],
+    "proof": [
+      {
+        "id": "floryn-global-heal-supports-hayabusa-dive",
+        "category": "healing-sustain",
+        "priority": "secondary",
+        "impact": "medium",
+        "summary": "Hayabusa can dive or rotate far from the team, while Floryn's global healing gives him emergency sustain during or after the commit.",
+        "worksBestWhen": [
+          "Floryn saves Bloom for Hayabusa's real kill attempt or escape window.",
+          "Hayabusa has enough exit path to use the healing value."
+        ],
+        "failureCases": [
+          "Hayabusa is suppressed, chain-controlled, or bursted before the heal matters.",
+          "Floryn uses Bloom too early for minor poke damage."
+        ]
+      }
+    ]
+  }
+]

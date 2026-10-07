@@ -1,0 +1,162 @@
+[
+  {
+    "targetHeroId": "zetian",
+    "counterHeroId": "diggie",
+    "reasons": [
+      "Diggie directly reduces the value of Zetian's global stun engage.",
+      "Zetian's ultimate is strongest when it enables teamwide follow-up, while Diggie can protect the team during that window."
+    ],
+    "counterTypes": [
+      "anti-cc",
+      "cleanse",
+      "teamfight"
+    ],
+    "proof": [
+      {
+        "id": "diggie-time-journey-vs-zetian-global-stun",
+        "category": "skill-interaction",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Zetian wants to use global stun and vision to start or swing fights, while Diggie can cleanse or protect nearby allies against the crowd-control payoff.",
+        "worksBestWhen": [
+          "Diggie saves ultimate for Fury of the Phoenix.",
+          "Diggie is near the allies who are about to be engaged on.",
+          "Diggie's team avoids spreading so far that Time Journey cannot protect the key target."
+        ],
+        "failureCases": [
+          "Zetian baits Diggie ultimate before committing global stun.",
+          "Diggie is too far from the key target.",
+          "Zetian's team engages after Diggie's protection ends."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "zetian",
+    "counterHeroId": "natalia",
+    "reasons": [
+      "Natalia can threaten Zetian before Zetian's global fight setup becomes valuable.",
+      "This matchup is condition-heavy because Zetian's ultimate can reveal enemy heroes during its effect, reducing surprise windows."
+    ],
+    "counterTypes": [
+      "pickoff",
+      "burst",
+      "vision-awareness"
+    ],
+    "proof": [
+      {
+        "id": "natalia-ambush-vs-zetian-global-vision-window",
+        "category": "vision-awareness",
+        "priority": "condition",
+        "impact": "high",
+        "summary": "Zetian is vulnerable when caught before her teamfight setup, while Natalia can pressure her from fog; however, Zetian's global vision can reveal the timing if available.",
+        "worksBestWhen": [
+          "Natalia attacks after Zetian's ultimate is down.",
+          "Natalia approaches from unwarded side angles.",
+          "Zetian's passive protection or team peel has been forced."
+        ],
+        "failureCases": [
+          "Zetian uses global vision before Natalia commits.",
+          "Natalia dives into Celestial Robe protection and team peel.",
+          "Natalia's path is tracked before the ambush starts."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "zetian",
+    "counterHeroId": "hayabusa",
+    "reasons": [
+      "Hayabusa can punish Zetian as a backline utility mage when her passive protection or team peel is unavailable.",
+      "Zetian wants to cast safely over time, while mobile assassins can force her into defensive timing."
+    ],
+    "counterTypes": [
+      "mobility",
+      "burst",
+      "pickoff"
+    ],
+    "proof": [
+      {
+        "id": "hayabusa-shadow-pressure-vs-zetian-backline",
+        "category": "mobility-advantage",
+        "priority": "primary",
+        "impact": "medium",
+        "summary": "Zetian wants safe casting space, while Hayabusa can enter from side angles and pressure her before she controls the teamfight.",
+        "worksBestWhen": [
+          "Hayabusa tracks Zetian's passive protection and nearby peel.",
+          "Zetian is isolated from tank support.",
+          "Hayabusa has shadows available to exit after the burst."
+        ],
+        "failureCases": [
+          "Zetian's team holds crowd control for Hayabusa's return path.",
+          "Hayabusa dives during Zetian's protected setup.",
+          "Hayabusa cannot isolate Zetian from her frontline."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "zetian",
+    "counterHeroId": "harley",
+    "reasons": [
+      "Harley can force Zetian into a short burst check before she gets extended value from Phoenix Descent and global setup.",
+      "This is strongest when Zetian's Celestial Robe cooldown has been baited or is unavailable."
+    ],
+    "counterTypes": [
+      "burst",
+      "mobility",
+      "cooldown-punish"
+    ],
+    "proof": [
+      {
+        "id": "harley-burst-window-vs-zetian-celestial-robe",
+        "category": "cooldown-window",
+        "priority": "condition",
+        "impact": "medium",
+        "summary": "Zetian wants to survive long enough to enable her team, while Harley can punish defensive cooldown windows with fast in-out burst.",
+        "worksBestWhen": [
+          "Harley confirms Zetian's passive protection has been triggered.",
+          "Harley has escape ready after burst.",
+          "Zetian is separated from immediate peel."
+        ],
+        "failureCases": [
+          "Harley dives into grouped enemies.",
+          "Zetian survives the burst and turns with global stun.",
+          "Harley commits before checking Zetian's protection state."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "zetian",
+    "counterHeroId": "franco",
+    "reasons": [
+      "Franco can punish Zetian's backline positioning with hook and suppression if she steps too far forward for Phoenix Strike or Phoenix Descent.",
+      "This works best when Franco baits or waits out Celestial Robe's protection."
+    ],
+    "counterTypes": [
+      "pickoff",
+      "crowd-control-counter",
+      "cooldown-punish"
+    ],
+    "proof": [
+      {
+        "id": "franco-pickoff-vs-zetian-casting-position",
+        "category": "cooldown-window",
+        "priority": "condition",
+        "impact": "medium",
+        "summary": "Zetian wants controlled casting space, while Franco can pick her off if her passive protection is unavailable or if she mispositions.",
+        "worksBestWhen": [
+          "Franco tracks Celestial Robe cooldown.",
+          "Franco attacks from fog with team follow-up.",
+          "Zetian steps forward to cast or follow up."
+        ],
+        "failureCases": [
+          "Zetian's passive protection interrupts the pick attempt.",
+          "Franco hooks a frontline target instead.",
+          "Franco suppresses without enough follow-up damage."
+        ]
+      }
+    ]
+  }
+]

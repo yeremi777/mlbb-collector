@@ -1,0 +1,163 @@
+[
+  {
+    "anchorHeroId": "marcel",
+    "synergyHeroId": "odette",
+    "reasons": [
+      "Marcel's Golden Hour does not interrupt Odette's Swan Song, making her a clean teamfight follow-up hero for Marcel.",
+      "Odette can use Marcel's controlled fight area to keep enemies inside her AoE damage zone longer."
+    ],
+    "synergyTypes": [
+      "teamfight-combo",
+      "aoe-follow-up",
+      "setup-combo",
+      "positioning-dependent"
+    ],
+    "proof": [
+      {
+        "id": "marcel-golden-hour-enables-odette-swan-song",
+        "category": "skill-interaction",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Marcel freezes the fight area with Golden Hour, while Odette can continue Swan Song as a large AoE channel inside the controlled zone.",
+        "worksBestWhen": [
+          "Odette starts or prepares Swan Song before Marcel's Golden Hour fully controls the fight.",
+          "Marcel places Golden Hour where Odette's AoE can cover enemy heroes."
+        ],
+        "failureCases": [
+          "Odette is hit by high-level crowd control before channeling.",
+          "Enemies are outside Swan Song's area when Golden Hour begins.",
+          "Marcel casts too far away from Odette's follow-up position."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "marcel",
+    "synergyHeroId": "yve",
+    "reasons": [
+      "Marcel's Golden Hour does not interrupt Yve's Real World Manipulation, and Yve can keep applying area control during the same fight window.",
+      "Yve's Starfield gives Marcel's team a strong zoning layer around the frozen fight zone."
+    ],
+    "synergyTypes": [
+      "teamfight-combo",
+      "poke-siege",
+      "aoe-follow-up",
+      "positioning-dependent"
+    ],
+    "proof": [
+      {
+        "id": "marcel-golden-hour-overlaps-yve-starfield",
+        "category": "skill-interaction",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Marcel controls the battlefield with Golden Hour, while Yve continues Real World Manipulation to apply area damage, slow, and zone pressure.",
+        "worksBestWhen": [
+          "Yve places Starfield before or during Marcel's teamfight setup.",
+          "Marcel's Golden Hour overlaps the area Yve wants to control."
+        ],
+        "failureCases": [
+          "Yve is suppressed before or during Real World Manipulation.",
+          "Marcel freezes an area outside Yve's Starfield value.",
+          "The team does not follow up after the area-control window."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "marcel",
+    "synergyHeroId": "lunox",
+    "reasons": [
+      "Marcel's Golden Hour does not affect untargetable units, and Lunox can use Brilliance to stay active around the freeze timing.",
+      "Lunox can survive or reposition through Marcel's control window, then convert into Darkening and Chaos Assault burst after enemies become punishable."
+    ],
+    "synergyTypes": [
+      "setup-combo",
+      "burst-follow-up",
+      "positioning-dependent",
+      "cooldown-dependent"
+    ],
+    "proof": [
+      {
+        "id": "marcel-golden-hour-brilliance-lunox-followup",
+        "category": "skill-interaction",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Marcel creates the Frozen Moment field, while Lunox can use Brilliance to avoid being locked by the field and prepare burst follow-up after the timing window.",
+        "worksBestWhen": [
+          "Lunox has Brilliance ready before Marcel commits Golden Hour.",
+          "Lunox waits until enemies are punishable before using Darkening damage."
+        ],
+        "failureCases": [
+          "Lunox is in the wrong ultimate state.",
+          "Brilliance is on cooldown.",
+          "Lunox casts damage while enemies are still protected by Golden Hour immunity."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "marcel",
+    "synergyHeroId": "pharsa",
+    "reasons": [
+      "Pharsa can follow Marcel's teamfight control from long range instead of entering the Golden Hour area herself.",
+      "Feathered Air Strike lets Pharsa time repeated bombardments around the end of Marcel's freeze window."
+    ],
+    "synergyTypes": [
+      "poke-siege",
+      "burst-follow-up",
+      "teamfight-combo",
+      "positioning-dependent"
+    ],
+    "proof": [
+      {
+        "id": "marcel-control-window-for-pharsa-air-strike",
+        "category": "engage-follow-up",
+        "priority": "secondary",
+        "impact": "medium",
+        "summary": "Marcel controls enemy timing and positioning, while Pharsa follows from safe range with repeated Feathered Air Strike casts after the freeze window becomes punishable.",
+        "worksBestWhen": [
+          "Pharsa positions before Marcel casts Golden Hour.",
+          "Pharsa times her bombardment near the end of Frozen Moment instead of wasting damage too early."
+        ],
+        "failureCases": [
+          "Pharsa casts while enemies are still immune inside Golden Hour.",
+          "Enemy divers pressure Pharsa before she can cast safely.",
+          "Marcel's team engages outside Pharsa's ultimate range."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "marcel",
+    "synergyHeroId": "ixia",
+    "reasons": [
+      "Ixia can cover a large fan-shaped area with Full Barrage after Marcel controls the fight zone.",
+      "Ixia can punish enemies as they leave or recover from Marcel's Frozen Moment window when she is protected during Barrage state."
+    ],
+    "synergyTypes": [
+      "teamfight-combo",
+      "aoe-follow-up",
+      "positioning-dependent",
+      "cooldown-dependent"
+    ],
+    "proof": [
+      {
+        "id": "marcel-frozen-window-sets-ixia-barrage-angle",
+        "category": "positioning-requirement",
+        "priority": "condition",
+        "impact": "medium",
+        "summary": "Marcel creates the controlled fight area, while Ixia positions Full Barrage to cover enemies as they leave or recover from the Frozen Moment window.",
+        "worksBestWhen": [
+          "Ixia sets up outside the Golden Hour area.",
+          "Ixia fires as enemies exit or recover from the freeze timing.",
+          "Marcel's team protects Ixia during Barrage state."
+        ],
+        "failureCases": [
+          "Ixia's basic attacks or skill hits are delayed by Golden Hour.",
+          "Ixia is forced to reposition because she cannot move during Barrage state.",
+          "Enemy divers reach Ixia before the fan-shaped damage matters."
+        ]
+      }
+    ]
+  }
+]

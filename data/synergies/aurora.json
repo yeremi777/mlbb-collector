@@ -1,0 +1,157 @@
+[
+  {
+    "anchorHeroId": "aurora",
+    "synergyHeroId": "tigreal",
+    "reasons": [
+      "Tigreal can group or knock up enemies, giving Aurora a clear freeze and burst window.",
+      "Aurora can layer control after Tigreal starts the fight to extend the enemy's disabled state."
+    ],
+    "synergyTypes": [
+      "engage-follow-up",
+      "cc-chain",
+      "teamfight-combo"
+    ],
+    "proof": [
+      {
+        "id": "aurora-freeze-after-tigreal-engage",
+        "category": "crowd-control-chain",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Tigreal starts the crowd-control sequence, while Aurora layers freeze and burst onto the controlled enemies.",
+        "worksBestWhen": [
+          "Aurora waits for Tigreal's real engage.",
+          "The enemy team is grouped in a choke point."
+        ],
+        "failureCases": [
+          "Tigreal engages before Aurora is in range.",
+          "Aurora uses freeze before the main engage.",
+          "The enemy spreads before Tigreal reaches them."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "aurora",
+    "synergyHeroId": "atlas",
+    "reasons": [
+      "Atlas can pull enemies together, allowing Aurora to freeze or burst multiple targets at once.",
+      "Aurora can punish the grouped pull area with reliable magic control."
+    ],
+    "synergyTypes": [
+      "setup-combo",
+      "cc-chain",
+      "teamfight-combo"
+    ],
+    "proof": [
+      {
+        "id": "atlas-pull-sets-aurora-freeze-burst",
+        "category": "setup-combo",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Atlas creates the grouped target area, and Aurora converts it into freeze control and magic burst.",
+        "worksBestWhen": [
+          "Atlas catches multiple enemies.",
+          "Aurora saves her key skill for the pull finish."
+        ],
+        "failureCases": [
+          "Atlas misses or catches only the tank.",
+          "Aurora is too far to follow.",
+          "Enemies cleanse or disengage after the pull."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "aurora",
+    "synergyHeroId": "johnson",
+    "reasons": [
+      "Johnson can deliver Aurora into a surprise engage angle where her freeze and burst are easier to apply.",
+      "Aurora can follow the crash with control before enemies fully reposition."
+    ],
+    "synergyTypes": [
+      "setup-combo",
+      "burst-follow-up",
+      "pickoff-combo"
+    ],
+    "proof": [
+      {
+        "id": "johnson-delivers-aurora-freeze-pickoff",
+        "category": "setup-combo",
+        "priority": "primary",
+        "impact": "medium",
+        "summary": "Johnson creates the sudden arrival and crash disruption, while Aurora adds freeze and burst follow-up.",
+        "worksBestWhen": [
+          "Aurora rides with Johnson or is already waiting near the crash path.",
+          "Johnson targets enemy damage dealers."
+        ],
+        "failureCases": [
+          "Johnson misses the crash.",
+          "Aurora's follow-up is delayed.",
+          "The enemy has vision of the car path."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "aurora",
+    "synergyHeroId": "franco",
+    "reasons": [
+      "Franco can isolate a target with hook or suppression, letting Aurora land controlled burst without starting the fight herself.",
+      "Aurora can freeze and burst the target after Franco brings them into range."
+    ],
+    "synergyTypes": [
+      "pickoff-combo",
+      "cc-chain",
+      "burst-follow-up"
+    ],
+    "proof": [
+      {
+        "id": "franco-pickoff-enables-aurora-burst",
+        "category": "pickoff-combo",
+        "priority": "primary",
+        "impact": "medium",
+        "summary": "Franco catches one target, and Aurora follows with freeze and burst to secure the pick.",
+        "worksBestWhen": [
+          "Franco hooks a priority target.",
+          "Aurora holds skills until the target is displaced."
+        ],
+        "failureCases": [
+          "Franco hooks a tank.",
+          "Aurora is out of range.",
+          "The enemy counter-engages on Aurora."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "aurora",
+    "synergyHeroId": "kaja",
+    "reasons": [
+      "Kaja's suppression can hold a target long enough for Aurora to add freeze and burst damage.",
+      "Aurora can follow Kaja's pull with reliable single-target magic burst."
+    ],
+    "synergyTypes": [
+      "pickoff-combo",
+      "cc-chain",
+      "burst-follow-up"
+    ],
+    "proof": [
+      {
+        "id": "kaja-suppression-sets-aurora-burst",
+        "category": "pickoff-combo",
+        "priority": "primary",
+        "impact": "medium",
+        "summary": "Kaja pulls and suppresses the target, while Aurora follows with burst control to finish the pick.",
+        "worksBestWhen": [
+          "Kaja targets a squishy or mobile hero.",
+          "Aurora positions close enough to follow immediately."
+        ],
+        "failureCases": [
+          "Kaja catches a high-durability target.",
+          "Aurora uses cooldowns before the pull.",
+          "The enemy punishes Aurora's short follow-up range."
+        ]
+      }
+    ]
+  }
+]

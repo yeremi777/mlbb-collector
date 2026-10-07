@@ -1,0 +1,155 @@
+[
+  {
+    "anchorHeroId": "hanabi",
+    "synergyHeroId": "angela",
+    "reasons": [
+      "Angela's shield support helps Hanabi maintain safer damage uptime during enemy engage windows.",
+      "Hanabi benefits strongly from external shielding because her shield state supports a control-resistance style of fighting."
+    ],
+    "synergyTypes": [
+      "shielding",
+      "protect",
+      "backline-protection"
+    ],
+    "proof": [
+      {
+        "id": "hanabi-angela-shield-control-window",
+        "category": "shielding",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Angela can shield Hanabi during a danger window, helping Hanabi keep attacking while resisting control pressure through shield uptime.",
+        "worksBestWhen": [
+          "Angela shields Hanabi during real enemy engage.",
+          "Hanabi has enough positioning space to keep attacking."
+        ],
+        "failureCases": [
+          "Angela attaches too early and the shield expires before danger.",
+          "Enemy burst breaks through before Hanabi can use the window."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "hanabi",
+    "synergyHeroId": "lolita",
+    "reasons": [
+      "Lolita can block ranged attacks and projectiles that threaten Hanabi's backline position.",
+      "Lolita's protective formation gives Hanabi more time to attack in front-to-back fights."
+    ],
+    "synergyTypes": [
+      "backline-protection",
+      "protect",
+      "peel"
+    ],
+    "proof": [
+      {
+        "id": "hanabi-lolita-backline-firing-lane-protection",
+        "category": "protection",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Lolita protects Hanabi's firing lane, letting Hanabi continue dealing damage from behind the frontline.",
+        "worksBestWhen": [
+          "Lolita blocks important ranged damage.",
+          "Hanabi positions behind Lolita instead of beside her."
+        ],
+        "failureCases": [
+          "Enemy divers flank from behind.",
+          "Lolita's shield is baited before Hanabi's real damage window."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "hanabi",
+    "synergyHeroId": "diggie",
+    "reasons": [
+      "Diggie can protect Hanabi from heavy crowd-control engage during important teamfight windows.",
+      "Hanabi benefits from anti-engage support because her teamfight value depends on continuous basic-attack uptime."
+    ],
+    "synergyTypes": [
+      "protect",
+      "backline-protection",
+      "cooldown-dependent"
+    ],
+    "proof": [
+      {
+        "id": "hanabi-diggie-anti-control-teamfight-protection",
+        "category": "protection",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Diggie helps Hanabi survive enemy control attempts so she can keep attacking from the backline.",
+        "worksBestWhen": [
+          "Diggie saves protection for the main engage.",
+          "Hanabi stays close enough to receive protection."
+        ],
+        "failureCases": [
+          "Diggie's key skill is baited early.",
+          "Hanabi is caught outside the protection area."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "hanabi",
+    "synergyHeroId": "estes",
+    "reasons": [
+      "Estes can keep Hanabi healthy during front-to-back teamfights, helping her maintain basic-attack uptime.",
+      "Hanabi benefits from sustained teamfight formations because she wants time to attack safely and punish grouped enemies."
+    ],
+    "synergyTypes": [
+      "healing-sustain",
+      "backline-protection",
+      "teamfight-combo",
+      "positioning-dependent"
+    ],
+    "proof": [
+      {
+        "id": "hanabi-estes-sustain-priority-teamfight",
+        "category": "healing-sustain",
+        "priority": "secondary",
+        "impact": "medium",
+        "summary": "Hanabi plays as a backline teamfight marksman, while Estes adds healing that helps her stay active through longer fights.",
+        "worksBestWhen": [
+          "Hanabi stays close enough to receive Estes's healing.",
+          "The team plays a grouped front-to-back formation.",
+          "Hanabi already has safe spacing and does not need to chase forward."
+        ],
+        "failureCases": [
+          "Hanabi is instantly bursted before healing matters.",
+          "Enemy anti-heal reduces Estes's value.",
+          "Hanabi positions too far from Estes or gets flanked."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "hanabi",
+    "synergyHeroId": "tigreal",
+    "reasons": [
+      "Tigreal can group enemies, increasing Hanabi's chance to get strong teamfight bounce value.",
+      "Tigreal's frontline control gives Hanabi safer time to attack after the engage."
+    ],
+    "synergyTypes": [
+      "engage-follow-up",
+      "teamfight-combo",
+      "aoe-follow-up"
+    ],
+    "proof": [
+      {
+        "id": "hanabi-tigreal-grouped-teamfight-follow-up",
+        "category": "teamfight-combo",
+        "priority": "primary",
+        "impact": "medium",
+        "summary": "Tigreal groups and controls enemies, while Hanabi attacks from behind to punish clustered targets.",
+        "worksBestWhen": [
+          "Tigreal catches multiple enemies.",
+          "Hanabi is already in safe attack range."
+        ],
+        "failureCases": [
+          "Tigreal engages too far away from Hanabi.",
+          "Enemies spread and deny bounce value."
+        ]
+      }
+    ]
+  }
+]

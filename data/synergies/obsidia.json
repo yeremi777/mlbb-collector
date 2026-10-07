@@ -1,0 +1,157 @@
+[
+  {
+    "anchorHeroId": "obsidia",
+    "synergyHeroId": "kaja",
+    "reasons": [
+      "Kaja can suppress and drag a target, giving Obsidia a safe target to tether or basic attack.",
+      "Obsidia can follow the displaced target with Hunt of Bone and Bone Shard pressure."
+    ],
+    "synergyTypes": [
+      "pickoff-combo",
+      "cc-chain",
+      "burst-follow-up"
+    ],
+    "proof": [
+      {
+        "id": "kaja-suppression-for-obsidia-tether",
+        "category": "pickoff-combo",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Kaja suppresses and drags the target, while Obsidia follows with tether and sustained ranged pressure.",
+        "worksBestWhen": [
+          "Kaja catches a mobile or high-value target.",
+          "Obsidia is already close enough to follow."
+        ],
+        "failureCases": [
+          "Kaja catches a tank.",
+          "Obsidia is too far from the dragged target.",
+          "Enemy peel blocks Obsidia after suppression ends."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "obsidia",
+    "synergyHeroId": "kalea",
+    "reasons": [
+      "Kalea can grab and move a target into Obsidia's attack range.",
+      "Obsidia can use Kalea's forced-position setup to connect Hunt of Bone more reliably."
+    ],
+    "synergyTypes": [
+      "pickoff-combo",
+      "cc-chain",
+      "protect"
+    ],
+    "proof": [
+      {
+        "id": "kalea-displacement-for-obsidia-hunt",
+        "category": "pickoff-combo",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Kalea grabs and moves a target, while Obsidia follows with Hunt of Bone and Bone Shard pressure.",
+        "worksBestWhen": [
+          "Kalea throws the target toward Obsidia.",
+          "Obsidia waits until Kalea confirms the displacement."
+        ],
+        "failureCases": [
+          "Kalea throws the target away from Obsidia.",
+          "Obsidia chases too far after tethering.",
+          "Enemy burst reaches Obsidia before Kalea can peel."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "obsidia",
+    "synergyHeroId": "saber",
+    "reasons": [
+      "Saber gives Obsidia a simple single-target airborne opener.",
+      "Obsidia can follow Saber's lock with tether and ranged damage if the target survives the first burst."
+    ],
+    "synergyTypes": [
+      "pickoff-combo",
+      "cc-chain",
+      "burst-follow-up"
+    ],
+    "proof": [
+      {
+        "id": "saber-lock-for-obsidia-followup",
+        "category": "pickoff-combo",
+        "priority": "primary",
+        "impact": "medium",
+        "summary": "Saber locks a target airborne, while Obsidia follows with Hunt of Bone to continue the pickoff.",
+        "worksBestWhen": [
+          "Saber targets a squishy or mobile damage dealer.",
+          "Obsidia stays close enough to follow after Triple Sweep."
+        ],
+        "failureCases": [
+          "Saber uses ultimate on a tank.",
+          "Obsidia is too far to follow.",
+          "Enemy peel blocks Obsidia after Saber's burst."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "obsidia",
+    "synergyHeroId": "lolita",
+    "reasons": [
+      "Lolita protects Obsidia's basic-attack and tether window from ranged pressure.",
+      "Obsidia needs safe spacing to keep attacking, so frontline cover improves her damage uptime."
+    ],
+    "synergyTypes": [
+      "backline-protection",
+      "shielding",
+      "frontline-enabler"
+    ],
+    "proof": [
+      {
+        "id": "lolita-cover-for-obsidia",
+        "category": "protection",
+        "priority": "secondary",
+        "impact": "high",
+        "summary": "Lolita protects Obsidia's backline damage window after the pickoff or during front-to-back fights.",
+        "worksBestWhen": [
+          "Lolita holds shield angle between Obsidia and enemy ranged damage.",
+          "Obsidia attacks from behind the protection instead of chasing early."
+        ],
+        "failureCases": [
+          "Enemy divers bypass Lolita.",
+          "Obsidia walks outside the protected angle.",
+          "Lolita's shield is unavailable during Obsidia's commit."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "obsidia",
+    "synergyHeroId": "zetian",
+    "reasons": [
+      "Zetian reveals and briefly controls targets globally, giving Obsidia a safer moment to choose a tether target.",
+      "Obsidia can use Zetian's global window to start Hunt of Bone with better target information."
+    ],
+    "synergyTypes": [
+      "vision-setup",
+      "mobility-enable",
+      "pickoff-combo"
+    ],
+    "proof": [
+      {
+        "id": "zetian-vision-for-obsidia-tether",
+        "category": "vision-setup",
+        "priority": "secondary",
+        "impact": "medium",
+        "summary": "Zetian reveals and briefly stuns targets globally, giving Obsidia a safer moment to choose a tether target.",
+        "worksBestWhen": [
+          "Obsidia is already near enough to use the reveal.",
+          "The team protects Obsidia while she follows the tether."
+        ],
+        "failureCases": [
+          "Obsidia is too far from the revealed target.",
+          "The enemy collapses on Obsidia after she commits.",
+          "Zetian's global ultimate is used without a follow-up path."
+        ]
+      }
+    ]
+  }
+]

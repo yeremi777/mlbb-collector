@@ -1,0 +1,152 @@
+[
+  {
+    "anchorHeroId": "faramis",
+    "synergyHeroId": "atlas",
+    "reasons": [
+      "Atlas can start a heavy grouped engage, giving Faramis a clear moment to use Nether Realm.",
+      "Faramis protects the team during the dangerous follow-up window after Atlas commits."
+    ],
+    "synergyTypes": [
+      "teamfight-combo",
+      "engage-follow-up",
+      "protection"
+    ],
+    "proof": [
+      {
+        "id": "faramis-atlas-nether-realm-engage-insurance",
+        "category": "teamfight-combo",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Atlas creates the grouped engage, while Faramis gives allies survival value during the teamfight collapse window.",
+        "worksBestWhen": [
+          "Atlas engages while Faramis is close enough to cover the follow-up.",
+          "Faramis casts Nether Realm before allies are finished by burst."
+        ],
+        "failureCases": [
+          "Atlas engages before Faramis is in position.",
+          "Enemy waits out Nether Realm before re-engaging."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "faramis",
+    "synergyHeroId": "tigreal",
+    "reasons": [
+      "Tigreal forces grouped fights where Faramis's teamwide protection has high value.",
+      "Faramis helps teammates survive the counter-burst that often follows Tigreal's engage."
+    ],
+    "synergyTypes": [
+      "teamfight-combo",
+      "engage-follow-up",
+      "protection"
+    ],
+    "proof": [
+      {
+        "id": "faramis-tigreal-implosion-team-protection",
+        "category": "teamfight-combo",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Tigreal starts the crowd-control fight, while Faramis protects the team so the follow-up does not collapse immediately.",
+        "worksBestWhen": [
+          "Tigreal and Faramis coordinate engage timing.",
+          "Faramis stays close enough to cover teammates following Tigreal."
+        ],
+        "failureCases": [
+          "Tigreal engages without team follow-up.",
+          "Faramis casts too late after allies are already out of the fight."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "faramis",
+    "synergyHeroId": "gloo",
+    "reasons": [
+      "Gloo is a sustain-heavy frontline hero who can stay inside extended fights, making Faramis's protection window valuable.",
+      "Faramis can protect Gloo during the risky part of his commit while Gloo applies sticky pressure and absorbs attention."
+    ],
+    "synergyTypes": [
+      "protection",
+      "frontline-enabler",
+      "healing-sustain"
+    ],
+    "proof": [
+      {
+        "id": "faramis-gloo-frontline-survival-insurance",
+        "category": "frontline-enabler",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Gloo wants to keep fighting and disrupting enemies, while Faramis adds survival insurance during Gloo's commit window.",
+        "worksBestWhen": [
+          "Gloo starts pressure while Faramis is close enough to cover the teamfight.",
+          "Faramis casts Nether Realm before Gloo or nearby allies are finished by burst."
+        ],
+        "failureCases": [
+          "Gloo attaches or commits too far away from the team.",
+          "Enemy disengages and waits out Faramis's protection."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "faramis",
+    "synergyHeroId": "alpha",
+    "reasons": [
+      "Alpha wants extended fights where he can keep using skill damage, Beta follow-up, and sustain.",
+      "Faramis gives Alpha extra safety when Alpha commits with Spear of Alpha or fights multiple enemies."
+    ],
+    "synergyTypes": [
+      "protection",
+      "frontline-enabler",
+      "healing-sustain"
+    ],
+    "proof": [
+      {
+        "id": "faramis-alpha-sustain-fighter-protection-window",
+        "category": "protection",
+        "priority": "primary",
+        "impact": "medium",
+        "summary": "Alpha wants to stay in the fight long enough to apply sustain and true-damage pressure, while Faramis reduces the risk of Alpha being burst during his commit.",
+        "worksBestWhen": [
+          "Alpha commits while Faramis's Nether Realm is available.",
+          "Alpha fights near teammates instead of diving alone."
+        ],
+        "failureCases": [
+          "Alpha engages outside Faramis's protection area.",
+          "Enemy kites Alpha and waits out the protection window."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "faramis",
+    "synergyHeroId": "thamuz",
+    "reasons": [
+      "Thamuz wants long brawls, and Faramis helps him survive the most dangerous burst window.",
+      "Faramis allows Thamuz to keep pressuring enemies during a teamfight instead of retreating immediately."
+    ],
+    "synergyTypes": [
+      "protection",
+      "frontline-enabler",
+      "healing-sustain"
+    ],
+    "proof": [
+      {
+        "id": "faramis-thamuz-brawl-protection-window",
+        "category": "frontline-enabler",
+        "priority": "primary",
+        "impact": "medium",
+        "summary": "Thamuz extends fights through frontline pressure, while Faramis adds protection that helps him continue fighting.",
+        "worksBestWhen": [
+          "Thamuz fights near the team, not isolated far from Faramis.",
+          "Faramis casts Nether Realm while Thamuz can still deal damage."
+        ],
+        "failureCases": [
+          "Thamuz chases too far from Faramis.",
+          "Enemy disengages until Nether Realm expires."
+        ]
+      }
+    ]
+  }
+]

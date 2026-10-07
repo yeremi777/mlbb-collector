@@ -1,0 +1,157 @@
+[
+  {
+    "anchorHeroId": "yu-zhong",
+    "synergyHeroId": "angela",
+    "reasons": [
+      "Angela can attach to Yu Zhong as he dives, adding shield and support during his backline disruption.",
+      "Yu Zhong's extended-fight sustain becomes harder to punish when Angela adds extra survival and slow pressure."
+    ],
+    "synergyTypes": [
+      "dive-support",
+      "shielding",
+      "healing-sustain"
+    ],
+    "proof": [
+      {
+        "id": "angela-supports-yu-zhong-dive",
+        "category": "protection",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Yu Zhong starts the dive and absorbs pressure, while Angela attaches to keep him alive through the engage and extended fight.",
+        "worksBestWhen": [
+          "Angela attaches as Yu Zhong commits, not after he is already too low.",
+          "Yu Zhong dives toward priority targets instead of wasting the shield on empty space."
+        ],
+        "failureCases": [
+          "Angela is forced to attach to another teammate first.",
+          "Yu Zhong dives too deep without team follow-up.",
+          "The enemy saves burst until Angela's shield is gone."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "yu-zhong",
+    "synergyHeroId": "floryn",
+    "reasons": [
+      "Floryn's healing can support Yu Zhong even when he dives away from the backline.",
+      "Yu Zhong benefits from extra recovery because his value increases when he survives long enough to stack Sha Residue and disrupt multiple enemies."
+    ],
+    "synergyTypes": [
+      "healing-sustain",
+      "dive-support",
+      "teamfight-combo"
+    ],
+    "proof": [
+      {
+        "id": "floryn-healing-for-yu-zhong-dive",
+        "category": "healing-sustain",
+        "priority": "secondary",
+        "impact": "high",
+        "summary": "Yu Zhong creates a deep teamfight, while Floryn adds healing support that helps him survive the commit and continue applying pressure.",
+        "worksBestWhen": [
+          "Floryn saves Bloom for Yu Zhong's real dive or low-HP turn window.",
+          "Yu Zhong keeps fighting around teammates who can follow his disruption."
+        ],
+        "failureCases": [
+          "Yu Zhong is burst before healing arrives.",
+          "Anti-heal reduces the sustain value.",
+          "Yu Zhong dives so far that the team cannot capitalize."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "yu-zhong",
+    "synergyHeroId": "mathilda",
+    "reasons": [
+      "Mathilda can help Yu Zhong or nearby teammates reposition around his dive path.",
+      "Her shield and movement support make Yu Zhong's engage easier to follow and harder to isolate."
+    ],
+    "synergyTypes": [
+      "mobility-enable",
+      "shielding",
+      "dive-support"
+    ],
+    "proof": [
+      {
+        "id": "mathilda-mobility-around-yu-zhong-dive",
+        "category": "mobility-enabler",
+        "priority": "secondary",
+        "impact": "medium",
+        "summary": "Yu Zhong disrupts the enemy formation, while Mathilda helps the team keep up with or escape around his dive.",
+        "worksBestWhen": [
+          "Mathilda positions near the teammate group that wants to follow Yu Zhong.",
+          "Yu Zhong starts fights where teammates can use the mobility route."
+        ],
+        "failureCases": [
+          "Yu Zhong dives alone.",
+          "Mathilda is forced to use mobility defensively before the engage.",
+          "The enemy separates Yu Zhong from his follow-up damage."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "yu-zhong",
+    "synergyHeroId": "luo-yi",
+    "reasons": [
+      "Luo Yi can create map-entry opportunities that help Yu Zhong arrive from unexpected angles.",
+      "Yu Zhong's disruption can keep enemies close enough for Luo Yi's follow-up marks and reactions."
+    ],
+    "synergyTypes": [
+      "mobility-enable",
+      "teamfight-combo",
+      "positioning-dependent"
+    ],
+    "proof": [
+      {
+        "id": "luo-yi-diversion-for-yu-zhong-flank",
+        "category": "mobility-enabler",
+        "priority": "condition",
+        "impact": "medium",
+        "summary": "Luo Yi enables a coordinated entry angle, while Yu Zhong uses that position to dive and disrupt the enemy backline.",
+        "worksBestWhen": [
+          "The team coordinates around Luo Yi's teleport timing.",
+          "Yu Zhong enters from a flank instead of running through predictable front vision."
+        ],
+        "failureCases": [
+          "The teleport is scouted.",
+          "Yu Zhong enters before teammates are ready.",
+          "Luo Yi has no follow-up charges after the teleport."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "yu-zhong",
+    "synergyHeroId": "faramis",
+    "reasons": [
+      "Faramis gives teamfight insurance when Yu Zhong commits deeply into the enemy formation.",
+      "Yu Zhong can force enemies to spend damage and control inside a fight window where Faramis keeps the team from collapsing immediately."
+    ],
+    "synergyTypes": [
+      "protect",
+      "teamfight-combo",
+      "dive-support"
+    ],
+    "proof": [
+      {
+        "id": "faramis-protection-for-yu-zhong-commit",
+        "category": "protection",
+        "priority": "secondary",
+        "impact": "medium",
+        "summary": "Yu Zhong forces a deep fight, while Faramis gives the team a safety layer if the engage becomes a heavy all-in.",
+        "worksBestWhen": [
+          "Yu Zhong fights inside Faramis's protection area.",
+          "Faramis saves his ultimate for the real teamfight collapse point."
+        ],
+        "failureCases": [
+          "Yu Zhong dives outside the protection area.",
+          "Faramis is caught before casting.",
+          "The team disengages instead of fighting during the protection window."
+        ]
+      }
+    ]
+  }
+]

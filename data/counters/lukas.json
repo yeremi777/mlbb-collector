@@ -1,0 +1,162 @@
+[
+  {
+    "targetHeroId": "lukas",
+    "counterHeroId": "karrie",
+    "reasons": [
+      "Lukas becomes more threatening when he transforms and gains stronger brawling stats, so Karrie's tank-shred profile is valuable.",
+      "Karrie can punish Lukas if she maintains distance and avoids being locked by his crowd-control chain."
+    ],
+    "counterTypes": [
+      "true-damage",
+      "tank-shred",
+      "kiting"
+    ],
+    "proof": [
+      {
+        "id": "karrie-lightwheel-mark-vs-lukas-sacred-beast",
+        "category": "damage-type-advantage",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Lukas wants to survive long brawls with enhanced stats and HP recovery, while Karrie can pressure durable fighters with repeated true-damage output.",
+        "worksBestWhen": [
+          "Karrie has peel and space to keep attacking.",
+          "Lukas has already used dash or control tools.",
+          "Karrie avoids fighting in melee range."
+        ],
+        "failureCases": [
+          "Lukas reaches Karrie before she can kite.",
+          "Karrie fights alone without frontline protection.",
+          "Lukas's team forces Karrie to stop attacking before marks convert."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "lukas",
+    "counterHeroId": "baxia",
+    "reasons": [
+      "Lukas gains HP recovery when his enhanced combo hits heroes, so anti-heal reduces his extended-fight reliability.",
+      "Baxia can stand in the frontline and reduce the value of Lukas's sustain pattern."
+    ],
+    "counterTypes": [
+      "anti-sustain",
+      "anti-heal",
+      "frontline"
+    ],
+    "proof": [
+      {
+        "id": "baxia-anti-heal-vs-lukas-hp-recovery",
+        "category": "sustain-anti-sustain",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Lukas wants to recover HP while brawling, while Baxia reduces healing received and makes extended trades less favorable for him.",
+        "worksBestWhen": [
+          "Baxia stays near Lukas during the brawl.",
+          "The team focuses Lukas while his recovery is reduced.",
+          "Baxia prevents Lukas from freely reaching the backline."
+        ],
+        "failureCases": [
+          "Lukas ignores Baxia and dives the backline.",
+          "Baxia cannot keep contact with Lukas.",
+          "Lukas disengages until the anti-heal pressure is lower."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "lukas",
+    "counterHeroId": "alpha",
+    "reasons": [
+      "Alpha can contest Lukas in extended fights because Alpha has repeated true-damage output and sustain.",
+      "Lukas gains more value when fights become long brawls, so Alpha's repeated Beta-assisted damage gives a direct damage-profile answer into that pattern."
+    ],
+    "counterTypes": [
+      "true-damage",
+      "anti-sustain",
+      "frontline"
+    ],
+    "proof": [
+      {
+        "id": "alpha-beta-true-damage-vs-lukas-brawl",
+        "category": "damage-type-advantage",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Lukas wants to stay in extended melee fights with HP recovery and Sacred Beast form pressure, while Alpha can keep dealing true damage through repeated Beta-assisted skill rotations.",
+        "worksBestWhen": [
+          "Alpha fights Lukas before Lukas fully controls the teamfight.",
+          "Alpha lands repeated skills instead of only trading basic attacks.",
+          "Anti-heal or team focus is available to reduce Lukas's recovery."
+        ],
+        "failureCases": [
+          "Lukas enters Sacred Beast form with strong team backup.",
+          "Alpha misses skills and loses the true-damage cycle.",
+          "Lukas uses mobility to bypass Alpha and reach the backline."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "lukas",
+    "counterHeroId": "kaja",
+    "reasons": [
+      "Kaja can lock Lukas during his committed dive and drag him away from the backline.",
+      "Suppression is valuable because Lukas's brawling strength requires uptime."
+    ],
+    "counterTypes": [
+      "pickoff",
+      "crowd-control-counter",
+      "anti-dive"
+    ],
+    "proof": [
+      {
+        "id": "kaja-divine-judgment-vs-lukas-uptime",
+        "category": "crowd-control-counter",
+        "priority": "primary",
+        "impact": "medium",
+        "summary": "Lukas wants to transform, dash in, and keep fighting, while Kaja can suppress him and deny that continuous uptime.",
+        "worksBestWhen": [
+          "Kaja waits for Lukas to commit to a target.",
+          "The team focuses Lukas during suppression.",
+          "Kaja avoids using suppression before Lukas's real engage."
+        ],
+        "failureCases": [
+          "Kaja uses ultimate before Lukas transforms or commits.",
+          "Lukas's team counter-engages during Kaja's pick attempt.",
+          "Kaja cannot reach Lukas through frontline pressure."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "lukas",
+    "counterHeroId": "valentina",
+    "reasons": [
+      "Valentina can copy Lukas's ultimate state in a way that is specifically documented for Lukas, including current ultimate availability and Hero's Resolve.",
+      "This can turn Lukas's own teamfight transformation value into a mirrored transformation threat when Valentina's team can use the copied form."
+    ],
+    "counterTypes": [
+      "teamfight",
+      "ultimate-copy",
+      "execution-dependent"
+    ],
+    "proof": [
+      {
+        "id": "valentina-i-am-you-vs-lukas-unleash-the-beast",
+        "category": "skill-interaction",
+        "priority": "secondary",
+        "impact": "medium",
+        "summary": "Lukas wants to be the unique Sacred Beast form threat in teamfights, while Valentina can copy his ultimate availability and Resolve state to create a mirrored transformation threat for her own team.",
+        "worksBestWhen": [
+          "Lukas has Unleash the Beast available or enough Resolve value when copied.",
+          "Valentina's team can use the copied form to contest the same teamfight timing.",
+          "Valentina does not copy too early before the fight starts."
+        ],
+        "failureCases": [
+          "Valentina copies Lukas when his ultimate state has low value.",
+          "Valentina is bursted before using the copied ultimate.",
+          "The team lacks follow-up and the copied form only becomes temporary value."
+        ]
+      }
+    ]
+  }
+]

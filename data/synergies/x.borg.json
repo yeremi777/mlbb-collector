@@ -1,0 +1,156 @@
+[
+  {
+    "anchorHeroId": "x.borg",
+    "synergyHeroId": "tigreal",
+    "reasons": [
+      "Tigreal can group enemies so X.Borg can apply Fire Missiles pressure and threaten Last Insanity in a clear AoE window.",
+      "X.Borg benefits from enemies being held in place while he commits his explosive damage."
+    ],
+    "synergyTypes": [
+      "setup-combo",
+      "aoe-follow-up",
+      "teamfight-combo"
+    ],
+    "proof": [
+      {
+        "id": "xborg-tigreal-grouped-control-last-insanity",
+        "category": "setup-combo",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Tigreal creates a grouped control window, while X.Borg follows with sustained AoE pressure and Last Insanity threat.",
+        "worksBestWhen": [
+          "X.Borg has Firaga Armor before committing.",
+          "Tigreal confirms the engage before X.Borg spends Last Insanity."
+        ],
+        "failureCases": [
+          "X.Borg dives before enemies are controlled.",
+          "X.Borg loses Firaga Armor before the setup is ready.",
+          "The enemy spreads before Last Insanity connects."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "x.borg",
+    "synergyHeroId": "atlas",
+    "reasons": [
+      "Atlas can pull enemies into one place, giving X.Borg a stronger Last Insanity detonation target.",
+      "The grouped engage lets X.Borg apply AoE pressure to several enemies at once."
+    ],
+    "synergyTypes": [
+      "setup-combo",
+      "aoe-follow-up",
+      "teamfight-combo"
+    ],
+    "proof": [
+      {
+        "id": "xborg-atlas-fatal-links-detonation-window",
+        "category": "setup-combo",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Atlas compresses the enemy formation, and X.Borg punishes the formation with AoE true-damage pressure.",
+        "worksBestWhen": [
+          "X.Borg has Firaga Armor and ultimate ready.",
+          "Atlas catches multiple targets before X.Borg commits."
+        ],
+        "failureCases": [
+          "X.Borg enters after the control window ends.",
+          "Atlas catches targets outside X.Borg's reach.",
+          "The enemy forces X.Borg into Armorless State before he can commit."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "x.borg",
+    "synergyHeroId": "carmilla",
+    "reasons": [
+      "Carmilla's linked-target setup increases the value of X.Borg's area pressure when enemies stay close.",
+      "X.Borg can keep burning and zoning linked enemies during a clustered teamfight."
+    ],
+    "synergyTypes": [
+      "teamfight-combo",
+      "aoe-follow-up",
+      "damage-amplification"
+    ],
+    "proof": [
+      {
+        "id": "xborg-carmilla-linked-aoe-pressure",
+        "category": "teamfight-combo",
+        "priority": "primary",
+        "impact": "medium",
+        "summary": "Carmilla links enemies in a fight, while X.Borg adds repeated AoE pressure and detonation threat.",
+        "worksBestWhen": [
+          "Carmilla confirms the link before X.Borg commits forward.",
+          "X.Borg keeps enemies in the burn zone long enough to pressure them."
+        ],
+        "failureCases": [
+          "The enemy breaks the link quickly.",
+          "X.Borg cannot reach the linked enemies.",
+          "X.Borg loses armor before the fight becomes grouped."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "x.borg",
+    "synergyHeroId": "angela",
+    "reasons": [
+      "Angela can support X.Borg when he commits with Firaga Armor, helping him survive long enough to finish his damage cycle.",
+      "The attached support improves X.Borg's ability to stay inside the fight after engaging."
+    ],
+    "synergyTypes": [
+      "shielding",
+      "dive-support",
+      "mobility-enable"
+    ],
+    "proof": [
+      {
+        "id": "xborg-angela-attached-commit-protection",
+        "category": "protection",
+        "priority": "secondary",
+        "impact": "medium",
+        "summary": "X.Borg's engage depends on surviving the commit window, and Angela adds protection and movement support.",
+        "worksBestWhen": [
+          "Angela attaches before X.Borg is forced into Armorless State.",
+          "X.Borg enters when his armor and ultimate are available."
+        ],
+        "failureCases": [
+          "X.Borg enters without armor.",
+          "X.Borg wastes Last Insanity into mobile targets.",
+          "Angela attaches after X.Borg has already been forced out."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "x.borg",
+    "synergyHeroId": "floryn",
+    "reasons": [
+      "Floryn's global heal helps X.Borg survive after armor loss or during extended objective fights.",
+      "X.Borg can keep pressuring fights while receiving support from a safe distance."
+    ],
+    "synergyTypes": [
+      "healing-sustain",
+      "frontline-enabler"
+    ],
+    "proof": [
+      {
+        "id": "xborg-floryn-global-heal-armor-transition",
+        "category": "healing-sustain",
+        "priority": "secondary",
+        "impact": "medium",
+        "summary": "X.Borg often plays extended fights around his armor state, and Floryn can stabilize him globally.",
+        "worksBestWhen": [
+          "Floryn saves Bloom for the moment X.Borg is focused.",
+          "X.Borg still has enough distance or armor state to keep fighting after the heal."
+        ],
+        "failureCases": [
+          "X.Borg is burst down during the armorless window.",
+          "Floryn heals before the enemy commits damage.",
+          "X.Borg overextends after armor loss."
+        ]
+      }
+    ]
+  }
+]

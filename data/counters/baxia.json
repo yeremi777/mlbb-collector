@@ -1,0 +1,152 @@
+[
+  {
+    "targetHeroId": "baxia",
+    "counterHeroId": "karrie",
+    "reasons": [
+      "Karrie directly punishes Baxia's high durability and frontline role.",
+      "Baxia can reduce sustain, but he cannot stop Karrie's core true-damage threat if she is protected."
+    ],
+    "counterTypes": [
+      "true-damage",
+      "max-hp-damage",
+      "tank-shred"
+    ],
+    "proof": [
+      {
+        "id": "karrie-lightwheel-mark-vs-baxia-frontline",
+        "category": "damage-type-advantage",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Baxia wants to absorb damage as a tank/frontline, while Karrie's Lightwheel Mark deals repeated max-HP true damage.",
+        "worksBestWhen": [
+          "Karrie has peel and enough space to stack marks.",
+          "Baxia is forced to frontline instead of reaching Karrie directly."
+        ],
+        "failureCases": [
+          "Baxia reaches Karrie with teammate follow-up.",
+          "Karrie is zoned before she can trigger Lightwheel Mark."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "baxia",
+    "counterHeroId": "lunox",
+    "reasons": [
+      "Lunox can pressure Baxia with target-HP scaling magic damage.",
+      "This makes her valuable into Baxia's tanky frontline style."
+    ],
+    "counterTypes": [
+      "max-hp-damage",
+      "burst",
+      "penetration"
+    ],
+    "proof": [
+      {
+        "id": "lunox-chaos-assault-vs-baxia-durability",
+        "category": "damage-type-advantage",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Baxia wants to survive through durability and damage reduction, while Lunox can repeatedly threaten him with Chaos Assault's target-HP damage.",
+        "worksBestWhen": [
+          "Lunox stays out of Baxia's direct engage path.",
+          "Baxia's mobility tool has already been used."
+        ],
+        "failureCases": [
+          "Baxia reaches Lunox before she can kite.",
+          "Lunox gets forced to spend defensive tools before damaging Baxia."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "baxia",
+    "counterHeroId": "dyrroth",
+    "reasons": [
+      "Dyrroth can pressure Baxia with aggressive trades and defense-reduction style damage.",
+      "This is strongest in isolated skirmishes before Baxia's teamfight utility fully matters."
+    ],
+    "counterTypes": [
+      "penetration",
+      "burst",
+      "lane-pressure"
+    ],
+    "proof": [
+      {
+        "id": "dyrroth-burst-vs-baxia-isolated-fight",
+        "category": "damage-type-advantage",
+        "priority": "secondary",
+        "impact": "medium",
+        "summary": "Baxia wants to absorb frontline pressure, while Dyrroth can force sharp burst trades that reduce Baxia's comfort in close-range duels.",
+        "worksBestWhen": [
+          "Dyrroth fights with rage or enhanced skill timing ready.",
+          "Baxia is isolated away from team follow-up."
+        ],
+        "failureCases": [
+          "Dyrroth takes a long fight into Baxia's team.",
+          "Baxia disengages and waits for backup."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "baxia",
+    "counterHeroId": "valir",
+    "reasons": [
+      "Valir can slow and knock Baxia back before Baxia reaches priority targets.",
+      "Baxia is less effective if he spends his mobility only to be pushed away."
+    ],
+    "counterTypes": [
+      "kiting",
+      "disengage",
+      "anti-engage"
+    ],
+    "proof": [
+      {
+        "id": "valir-kiting-vs-baxia-roll-engage",
+        "category": "kiting",
+        "priority": "primary",
+        "impact": "medium",
+        "summary": "Baxia wants to roll or run into the enemy formation, while Valir can push him away and deny clean engage timing.",
+        "worksBestWhen": [
+          "Valir saves Searing Torrent for Baxia's entry.",
+          "The team uses Valir's disengage to reposition."
+        ],
+        "failureCases": [
+          "Baxia flanks from fog.",
+          "Valir's knockback is used too early."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "baxia",
+    "counterHeroId": "lesley",
+    "reasons": [
+      "Lesley can chip Baxia from range and threaten damage that ignores defensive value.",
+      "This works best as a late-game spacing counter, not as a direct early brawl."
+    ],
+    "counterTypes": [
+      "true-damage",
+      "range-advantage",
+      "poke"
+    ],
+    "proof": [
+      {
+        "id": "lesley-true-damage-poke-vs-baxia-frontline",
+        "category": "damage-type-advantage",
+        "priority": "secondary",
+        "impact": "medium",
+        "summary": "Baxia wants to absorb frontline damage, while Lesley's true-damage sniper pattern can punish tanks from safer range.",
+        "worksBestWhen": [
+          "Lesley has space and vision.",
+          "Baxia cannot directly roll onto Lesley."
+        ],
+        "failureCases": [
+          "Baxia reaches Lesley with team follow-up.",
+          "Lesley is forced into early fights before her damage is online."
+        ]
+      }
+    ]
+  }
+]

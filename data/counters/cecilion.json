@@ -1,0 +1,157 @@
+[
+  {
+    "targetHeroId": "cecilion",
+    "counterHeroId": "natalia",
+    "reasons": [
+      "Natalia punishes Cecilion's need for safe backline positioning.",
+      "Her camouflage and silence pressure can stop Cecilion from freely cycling long-range poke."
+    ],
+    "counterTypes": [
+      "pickoff",
+      "vision-control",
+      "burst"
+    ],
+    "proof": [
+      {
+        "id": "natalia-camouflage-pickoff-vs-cecilion-backline",
+        "category": "vision-awareness",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Cecilion wants to cast safely from distance, while Natalia can approach through fog or bush and force a close-range pickoff before Cecilion stabilizes.",
+        "worksBestWhen": [
+          "Natalia tracks Cecilion's rotation path.",
+          "Cecilion is separated from peel."
+        ],
+        "failureCases": [
+          "Cecilion stays grouped behind tank vision.",
+          "Natalia reveals too early.",
+          "Cecilion survives the first burst with defensive tools."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "cecilion",
+    "counterHeroId": "harley",
+    "reasons": [
+      "Harley can enter quickly, mark Cecilion with burst pressure, then return with Space Escape.",
+      "This directly punishes Cecilion's fragile mage positioning without requiring long chase time."
+    ],
+    "counterTypes": [
+      "burst",
+      "mobility",
+      "cooldown-punish"
+    ],
+    "proof": [
+      {
+        "id": "harley-deadly-magic-vs-cecilion-backline",
+        "category": "skill-interaction",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Cecilion wants to stay at long casting range, while Harley can blink in with Space Escape, apply Deadly Magic burst pressure, and return before Cecilion fully answers.",
+        "worksBestWhen": [
+          "Harley attacks from side vision or fog.",
+          "Cecilion has no Flicker, Winter item, or strong peel nearby."
+        ],
+        "failureCases": [
+          "Harley's ultimate is blocked or fails to isolate Cecilion.",
+          "Cecilion is protected by instant CC or tank peel.",
+          "Harley returns to a bad hat position."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "cecilion",
+    "counterHeroId": "hayabusa",
+    "reasons": [
+      "Hayabusa can bypass frontline spacing and punish Cecilion when he is isolated.",
+      "His burst is strongest when Cecilion is separated from nearby allies."
+    ],
+    "counterTypes": [
+      "mobility",
+      "burst",
+      "anti-backline"
+    ],
+    "proof": [
+      {
+        "id": "hayabusa-shadow-burst-vs-cecilion-isolation",
+        "category": "mobility-advantage",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Cecilion wants stable long-range space, while Hayabusa can use shadow mobility to reach and burst him during isolated windows.",
+        "worksBestWhen": [
+          "Cecilion is alone or separated.",
+          "Hayabusa enters after enemy CC is used."
+        ],
+        "failureCases": [
+          "Cecilion groups tightly with allies.",
+          "Hayabusa's ultimate damage spreads to multiple targets.",
+          "Hayabusa enters without escape shadows."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "cecilion",
+    "counterHeroId": "kaja",
+    "reasons": [
+      "Kaja can punish Cecilion if he steps too far forward.",
+      "Suppression gives a clean lock window against a mage who depends on distance."
+    ],
+    "counterTypes": [
+      "suppression",
+      "pickoff",
+      "anti-backline"
+    ],
+    "proof": [
+      {
+        "id": "kaja-divine-judgment-vs-cecilion-positioning",
+        "category": "crowd-control-counter",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Cecilion wants to remain unreachable, while Kaja can suppress and drag him into follow-up damage if Cecilion enters range.",
+        "worksBestWhen": [
+          "Kaja hides vision before engaging.",
+          "Allies are ready to burst Cecilion during suppression."
+        ],
+        "failureCases": [
+          "Cecilion never enters Kaja's range.",
+          "Kaja uses ultimate on a lower-value target.",
+          "Cecilion has strong peel nearby."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "cecilion",
+    "counterHeroId": "chou",
+    "reasons": [
+      "Chou can isolate Cecilion from safe backline terrain.",
+      "This counter depends heavily on flank angle and execution."
+    ],
+    "counterTypes": [
+      "pickoff",
+      "displacement",
+      "positioning-requirement"
+    ],
+    "proof": [
+      {
+        "id": "chou-flank-kick-vs-cecilion-backline",
+        "category": "positioning-requirement",
+        "priority": "condition",
+        "impact": "medium",
+        "summary": "Cecilion wants protected backline spacing, while Chou can flank and displace him into a punish position.",
+        "worksBestWhen": [
+          "Chou approaches from side vision.",
+          "Cecilion's Flicker or defensive tool is unavailable."
+        ],
+        "failureCases": [
+          "Chou engages through visible front angles.",
+          "Cecilion is protected by counter-CC.",
+          "Chou cannot convert the kick into team damage."
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,160 @@
+[
+  {
+    "targetHeroId": "miya",
+    "counterHeroId": "belerick",
+    "reasons": [
+      "Belerick punishes Miya's repeated basic attacks with return damage.",
+      "Blade Armor and Vengeance can make Miya's attack-speed window dangerous for herself."
+    ],
+    "counterTypes": [
+      "anti-basic-attack",
+      "item-counter",
+      "frontline"
+    ],
+    "proof": [
+      {
+        "id": "belerick-reflect-vs-miya-basic-attacks",
+        "category": "skill-interaction",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Miya depends on fast repeated basic attacks, while Belerick punishes continuous incoming damage and can amplify return damage with defensive tools.",
+        "worksBestWhen": [
+          "Miya keeps attacking Belerick continuously.",
+          "Belerick has Blade Armor or Vengeance ready.",
+          "Belerick's team can finish Miya after she is forced to retreat."
+        ],
+        "failureCases": [
+          "Miya ignores Belerick and attacks other targets.",
+          "Miya waits out Vengeance before attacking.",
+          "Miya has enough lifesteal, positioning, and team peel."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "miya",
+    "counterHeroId": "lolita",
+    "reasons": [
+      "Lolita can block Miya's ranged basic-attack damage window.",
+      "Team protection denies Miya's backline DPS during fights."
+    ],
+    "counterTypes": [
+      "protect",
+      "anti-projectile",
+      "anti-marksman"
+    ],
+    "proof": [
+      {
+        "id": "lolita-shield-vs-miya-ranged-dps",
+        "category": "skill-interaction",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Miya's main damage comes from ranged basic attacks, while Lolita can block ranged attacks and projectiles with her shield.",
+        "worksBestWhen": [
+          "Lolita faces Miya directly with shield active.",
+          "Miya is forced to attack into Lolita's shield.",
+          "Lolita's team follows up while Miya's damage is blocked."
+        ],
+        "failureCases": [
+          "Miya attacks from another angle.",
+          "Lolita faces the wrong direction.",
+          "Miya waits for Lolita's shield to end."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "miya",
+    "counterHeroId": "natalia",
+    "reasons": [
+      "Natalia can deny Miya's basic-attack damage window with Smoke Bomb's basic-attack immunity.",
+      "Natalia can pressure Miya from hidden angles before Miya reaches safe free-hit positioning."
+    ],
+    "counterTypes": [
+      "basic-attack-immunity",
+      "pickoff",
+      "anti-marksman"
+    ],
+    "proof": [
+      {
+        "id": "natalia-smoke-bomb-vs-miya-basic-attacks",
+        "category": "skill-interaction",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Miya wants repeated basic-attack uptime, while Natalia can use Smoke Bomb to become immune to enemy basic attacks during the key trade window.",
+        "worksBestWhen": [
+          "Natalia reaches Miya before Miya is protected by frontline.",
+          "Natalia saves Smoke Bomb for Miya's basic-attack response.",
+          "Miya's ultimate or defensive spell is unavailable or forced early."
+        ],
+        "failureCases": [
+          "Miya uses Hidden Moonlight to reposition before Natalia commits.",
+          "Natalia is revealed or controlled before reaching Miya.",
+          "Miya has strong peel and does not fight inside Smoke Bomb."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "miya",
+    "counterHeroId": "pharsa",
+    "reasons": [
+      "Pharsa can zone and burst Miya from outside Miya's comfortable basic-attack range."
+    ],
+    "counterTypes": [
+      "range-advantage",
+      "burst",
+      "zoning"
+    ],
+    "proof": [
+      {
+        "id": "pharsa-range-burst-vs-miya-free-hit",
+        "category": "range-advantage",
+        "priority": "primary",
+        "impact": "medium",
+        "summary": "Miya wants safe basic-attack uptime, while Pharsa can threaten her from long range before Miya can freely hit.",
+        "worksBestWhen": [
+          "Pharsa keeps long distance.",
+          "Miya is forced to walk into Pharsa's ultimate area.",
+          "Pharsa's team provides vision or crowd-control setup."
+        ],
+        "failureCases": [
+          "Miya reaches Pharsa's position.",
+          "Pharsa is caught while casting ultimate.",
+          "Pharsa misses burst damage or lacks vision."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "miya",
+    "counterHeroId": "lunox",
+    "reasons": [
+      "Lunox can burst Miya and avoid extended basic-attack trades with survival tools."
+    ],
+    "counterTypes": [
+      "burst",
+      "mobility",
+      "anti-squishy"
+    ],
+    "proof": [
+      {
+        "id": "lunox-burst-vs-miya-basic-attack-trade",
+        "category": "damage-type-advantage",
+        "priority": "primary",
+        "impact": "medium",
+        "summary": "Miya wants extended basic-attack trades, while Lunox can enter for high magic burst and use survival tools to avoid staying in Miya's DPS window.",
+        "worksBestWhen": [
+          "Lunox catches Miya before Miya free-hits.",
+          "Lunox uses escape or invulnerability timing correctly.",
+          "Miya has no support protection."
+        ],
+        "failureCases": [
+          "Lunox wastes her escape skill.",
+          "Miya survives the first burst.",
+          "Miya has full late-game items and safe positioning."
+        ]
+      }
+    ]
+  }
+]

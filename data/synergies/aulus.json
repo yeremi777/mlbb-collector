@@ -1,0 +1,157 @@
+[
+  {
+    "anchorHeroId": "aulus",
+    "synergyHeroId": "angela",
+    "reasons": [
+      "Angela can attach to Aulus when he commits into a fight, giving him extra durability.",
+      "Aulus benefits from support that follows him while he chases or dives."
+    ],
+    "synergyTypes": [
+      "shielding",
+      "healing-sustain",
+      "dive-support"
+    ],
+    "proof": [
+      {
+        "id": "aulus-commit-window-with-angela-support",
+        "category": "protection",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Angela reinforces Aulus during his commit window, helping him continue fighting through the frontline.",
+        "worksBestWhen": [
+          "Angela attaches before Aulus enters the main fight.",
+          "Aulus uses the added shield to stay in team range instead of overchasing."
+        ],
+        "failureCases": [
+          "Angela channels too late.",
+          "Aulus dives beyond follow-up.",
+          "Enemy burst or anti-sustain removes the protection value."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "aulus",
+    "synergyHeroId": "floryn",
+    "reasons": [
+      "Floryn's global healing can support Aulus while he farms, rotates, or fights away from the support.",
+      "Aulus benefits from extra sustain because his fight value rises when he survives long enough to keep attacking."
+    ],
+    "synergyTypes": [
+      "healing-sustain",
+      "dive-support",
+      "game-phase"
+    ],
+    "proof": [
+      {
+        "id": "aulus-extended-fight-with-floryn-global-heal",
+        "category": "healing-sustain",
+        "priority": "secondary",
+        "impact": "medium",
+        "summary": "Floryn gives Aulus remote sustain support, helping him survive extended fights or jungle pressure.",
+        "worksBestWhen": [
+          "Floryn saves her team heal for Aulus's real fight timing.",
+          "Aulus commits when Floryn's ultimate is available."
+        ],
+        "failureCases": [
+          "Aulus is burst before the heal can change the fight.",
+          "Floryn uses ultimate too early.",
+          "Aulus fights too deep without teammate follow-up."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "aulus",
+    "synergyHeroId": "mathilda",
+    "reasons": [
+      "Mathilda helps Aulus enter or reset after committing.",
+      "Her shield gives Aulus more safety when he starts a close-range fight."
+    ],
+    "synergyTypes": [
+      "mobility-enable",
+      "shielding",
+      "dive-support"
+    ],
+    "proof": [
+      {
+        "id": "aulus-chase-reset-with-mathilda",
+        "category": "mobility-enabler",
+        "priority": "secondary",
+        "impact": "medium",
+        "summary": "Mathilda gives Aulus movement and shielding, helping him connect to targets and survive the first trade.",
+        "worksBestWhen": [
+          "Mathilda uses Guiding Wind for Aulus's engage or disengage.",
+          "Aulus enters after his damage tools are ready."
+        ],
+        "failureCases": [
+          "Aulus runs ahead before Mathilda can support.",
+          "Mathilda is forced to save another teammate.",
+          "Enemy crowd control stops Aulus before he reaches targets."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "aulus",
+    "synergyHeroId": "tigreal",
+    "reasons": [
+      "Tigreal can start the fight so Aulus does not need to be the first hero entering.",
+      "Aulus can follow Tigreal's grouped engage with sustained physical damage."
+    ],
+    "synergyTypes": [
+      "engage-follow-up",
+      "teamfight-combo",
+      "frontline-enabler"
+    ],
+    "proof": [
+      {
+        "id": "aulus-follow-up-after-tigreal-setup",
+        "category": "engage-follow-up",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Tigreal creates the crowd-control window, while Aulus follows into the fight with sustained physical damage.",
+        "worksBestWhen": [
+          "Tigreal engages after Aulus is close enough to follow.",
+          "Aulus waits for the setup instead of forcing the first entry."
+        ],
+        "failureCases": [
+          "Tigreal engages before Aulus arrives.",
+          "Aulus is kited after the crowd control ends.",
+          "Enemy burst removes Aulus before he can continue fighting."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "aulus",
+    "synergyHeroId": "rafaela",
+    "reasons": [
+      "Rafaela's speed support helps Aulus chase or reposition during skirmishes.",
+      "Her healing gives Aulus more staying power before and during extended fights."
+    ],
+    "synergyTypes": [
+      "mobility-enable",
+      "healing-sustain",
+      "dive-support"
+    ],
+    "proof": [
+      {
+        "id": "aulus-chase-sustain-with-rafaela",
+        "category": "mobility-enabler",
+        "priority": "secondary",
+        "impact": "medium",
+        "summary": "Rafaela helps Aulus stay connected to targets and survive longer in extended fights.",
+        "worksBestWhen": [
+          "Rafaela follows Aulus's fight path.",
+          "Aulus uses the speed boost to connect instead of overextending."
+        ],
+        "failureCases": [
+          "Aulus is chain-controlled before he can move.",
+          "Rafaela is too far away to support.",
+          "The enemy disengages after Aulus commits."
+        ]
+      }
+    ]
+  }
+]

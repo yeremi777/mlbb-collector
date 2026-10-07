@@ -1,0 +1,152 @@
+[
+  {
+    "anchorHeroId": "uranus",
+    "synergyHeroId": "estes",
+    "reasons": [
+      "Estes can amplify Uranus's extended-fight identity with team healing.",
+      "Uranus can stand forward and create space while Estes supports the formation behind him."
+    ],
+    "synergyTypes": [
+      "healing-sustain",
+      "frontline-enabler",
+      "teamfight-combo"
+    ],
+    "proof": [
+      {
+        "id": "uranus-estes-extended-frontline-sustain",
+        "category": "healing-sustain",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Uranus absorbs pressure over time, while Estes keeps the frontline and nearby teammates healthy.",
+        "worksBestWhen": [
+          "The team fights in a connected formation.",
+          "Uranus stays within healing range during major fights."
+        ],
+        "failureCases": [
+          "Uranus dives too far away from Estes.",
+          "Enemy anti-heal or burst reduces sustain value."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "uranus",
+    "synergyHeroId": "rafaela",
+    "reasons": [
+      "Rafaela's healing and speed help Uranus keep pressure without fully disengaging.",
+      "Uranus benefits from speed support when chasing or repositioning as a disruptive frontline."
+    ],
+    "synergyTypes": [
+      "healing-sustain",
+      "mobility-enable",
+      "frontline-enabler"
+    ],
+    "proof": [
+      {
+        "id": "uranus-rafaela-speed-frontline-sustain",
+        "category": "mobility-enabler",
+        "priority": "secondary",
+        "impact": "medium",
+        "summary": "Rafaela helps Uranus stay active in long fights through movement and healing support.",
+        "worksBestWhen": [
+          "Rafaela follows Uranus's pressure path.",
+          "Uranus uses speed support to zone instead of chasing into isolation."
+        ],
+        "failureCases": [
+          "Uranus overextends beyond the team.",
+          "Enemy burst forces Rafaela to heal other targets first."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "uranus",
+    "synergyHeroId": "angela",
+    "reasons": [
+      "Angela can attach to Uranus when he becomes the main fight anchor.",
+      "Her shield and speed support can help Uranus stay disruptive while absorbing pressure."
+    ],
+    "synergyTypes": [
+      "shielding",
+      "healing-sustain",
+      "mobility-enable"
+    ],
+    "proof": [
+      {
+        "id": "uranus-angela-frontline-anchor-shielding",
+        "category": "shielding",
+        "priority": "secondary",
+        "impact": "medium",
+        "summary": "Uranus creates frontline pressure, while Angela adds survivability and movement during his commit window.",
+        "worksBestWhen": [
+          "Uranus is the main hero holding space for the team.",
+          "Angela attaches during a decisive fight, not during passive lane pressure."
+        ],
+        "failureCases": [
+          "Uranus is only split-pushing away from the team.",
+          "Angela's attach is mistimed when Uranus is not under meaningful pressure."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "uranus",
+    "synergyHeroId": "floryn",
+    "reasons": [
+      "Floryn can support Uranus when he pressures side angles or extended fights.",
+      "Uranus's sustain plan becomes more stable when additional healing covers burst windows."
+    ],
+    "synergyTypes": [
+      "healing-sustain",
+      "protect",
+      "cooldown-dependent"
+    ],
+    "proof": [
+      {
+        "id": "uranus-floryn-extended-fight-healing",
+        "category": "healing-sustain",
+        "priority": "secondary",
+        "impact": "medium",
+        "summary": "Floryn adds sustain support to Uranus's long-fight frontline plan.",
+        "worksBestWhen": [
+          "Floryn saves healing for the moment Uranus absorbs heavy damage.",
+          "Uranus uses the sustain window to hold space, not to chase alone."
+        ],
+        "failureCases": [
+          "Enemy burst or anti-heal removes sustain value.",
+          "Uranus is too deep when the team cannot follow."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "uranus",
+    "synergyHeroId": "hanabi",
+    "reasons": [
+      "Uranus can occupy the frontline and absorb attention while Hanabi attacks from behind.",
+      "Hanabi benefits from Uranus forcing a front-to-back fight where enemies stay grouped longer."
+    ],
+    "synergyTypes": [
+      "frontline-enabler",
+      "backline-protection",
+      "teamfight-combo"
+    ],
+    "proof": [
+      {
+        "id": "uranus-hanabi-frontline-backline-teamfight",
+        "category": "frontline-enabler",
+        "priority": "secondary",
+        "impact": "medium",
+        "summary": "Uranus creates durable frontline space, while Hanabi uses that space to deal backline teamfight damage.",
+        "worksBestWhen": [
+          "Uranus zones divers away from Hanabi.",
+          "Hanabi keeps safe spacing behind Uranus."
+        ],
+        "failureCases": [
+          "Enemy assassins bypass Uranus.",
+          "Uranus pressures too far forward and leaves Hanabi exposed."
+        ]
+      }
+    ]
+  }
+]

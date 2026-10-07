@@ -1,0 +1,162 @@
+[
+  {
+    "anchorHeroId": "zetian",
+    "synergyHeroId": "atlas",
+    "reasons": [
+      "Atlas creates a grouped teamfight setup that gives Zetian a clear AoE follow-up window.",
+      "Zetian can add magic pressure and global control timing after Atlas pulls enemies into one area."
+    ],
+    "synergyTypes": [
+      "setup-combo",
+      "cc-chain",
+      "teamfight-combo"
+    ],
+    "proof": [
+      {
+        "id": "atlas-grouping-for-zetian-aoe",
+        "category": "setup-combo",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Atlas creates a grouped teamfight setup, while Zetian follows with AoE control and magic damage.",
+        "worksBestWhen": [
+          "Atlas catches multiple valuable targets.",
+          "Zetian is close enough to follow the pull.",
+          "The team saves damage for the grouped-control window."
+        ],
+        "failureCases": [
+          "Atlas catches only a frontline tank.",
+          "Zetian is too far away to follow.",
+          "Enemy disengage breaks the setup before Zetian commits."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "zetian",
+    "synergyHeroId": "tigreal",
+    "reasons": [
+      "Tigreal can pull and stun nearby enemies, giving Zetian a clean AoE follow-up window.",
+      "Tigreal also provides frontline presence so Zetian can cast from safer spacing."
+    ],
+    "synergyTypes": [
+      "setup-combo",
+      "cc-chain",
+      "teamfight-combo"
+    ],
+    "proof": [
+      {
+        "id": "tigreal-setup-for-zetian-aoe",
+        "category": "setup-combo",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Tigreal pulls and stuns nearby enemies, giving Zetian a clear AoE follow-up window.",
+        "worksBestWhen": [
+          "Tigreal engages after Zetian is close enough to follow.",
+          "Tigreal catches multiple enemies, not only the frontline.",
+          "Zetian saves major cooldowns for the confirmed pull/stun."
+        ],
+        "failureCases": [
+          "Tigreal's channel is interrupted before the pull completes.",
+          "Zetian is too far away to follow.",
+          "Enemy heroes spread before Tigreal finds an angle."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "zetian",
+    "synergyHeroId": "carmilla",
+    "reasons": [
+      "Carmilla links enemies so Zetian's AoE magic pressure and control can punish multiple targets together.",
+      "Zetian benefits when Carmilla starts the teamfight by connecting enemies before the main damage window."
+    ],
+    "synergyTypes": [
+      "damage-amplification",
+      "cc-chain",
+      "teamfight-combo"
+    ],
+    "proof": [
+      {
+        "id": "carmilla-link-for-zetian-teamfight",
+        "category": "damage-amplification",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Carmilla links enemies, while Zetian adds AoE magic pressure and control into the linked teamfight.",
+        "worksBestWhen": [
+          "Carmilla links multiple enemies before Zetian commits major cooldowns.",
+          "Zetian casts into the linked group.",
+          "The team follows quickly before the link value ends."
+        ],
+        "failureCases": [
+          "Carmilla links only one target.",
+          "Zetian uses key skills before Carmilla confirms the link.",
+          "Enemies spread or disengage before shared damage and control matter."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "zetian",
+    "synergyHeroId": "chip",
+    "reasons": [
+      "Chip converts Zetian's global reveal and control window into actual team arrival.",
+      "Zetian can expose enemy positions, while Chip gives the team a direct way to collapse on the chosen target."
+    ],
+    "synergyTypes": [
+      "vision-setup",
+      "mobility-enable",
+      "teamfight-combo"
+    ],
+    "proof": [
+      {
+        "id": "chip-collapse-from-zetian-global-window",
+        "category": "mobility-enabler",
+        "priority": "secondary",
+        "impact": "high",
+        "summary": "Zetian reveals and briefly controls enemies globally, while Chip turns that window into a portal collapse.",
+        "worksBestWhen": [
+          "Zetian casts ultimate before Chip chooses the Shortcut target.",
+          "Chip targets an isolated or objective-side enemy.",
+          "Teammates enter the portal together."
+        ],
+        "failureCases": [
+          "Chip portals into enemy bait.",
+          "Zetian's global window ends before teammates arrive.",
+          "The team enters one by one and gets punished."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "zetian",
+    "synergyHeroId": "yi-sun-shin",
+    "reasons": [
+      "Yi Sun-shin adds global reveal from a different role and damage profile than Zetian.",
+      "Zetian can use Yi Sun-shin's reveal to choose whether to commit her global control window for collapse or objective control."
+    ],
+    "synergyTypes": [
+      "vision-setup",
+      "objective-control",
+      "game-phase"
+    ],
+    "proof": [
+      {
+        "id": "yi-sun-shin-reveal-for-zetian-global-control",
+        "category": "vision-setup",
+        "priority": "secondary",
+        "impact": "medium",
+        "summary": "Yi Sun-shin reveals enemy positions first, then Zetian can choose whether to commit her global stun and movement window for collapse or objective control.",
+        "worksBestWhen": [
+          "Yi Sun-shin reveals before Lord, Turtle, or jungle invade timing.",
+          "Zetian saves ultimate until the team identifies the best target or enemy formation.",
+          "The team has enough engage or mobility to act on the information."
+        ],
+        "failureCases": [
+          "Both global skills are used at the same time without a follow-up plan.",
+          "The team lacks engage after the reveal.",
+          "Enemy heroes group safely and avoid isolated rotations."
+        ]
+      }
+    ]
+  }
+]

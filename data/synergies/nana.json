@@ -1,0 +1,162 @@
+[
+  {
+    "anchorHeroId": "nana",
+    "synergyHeroId": "atlas",
+    "reasons": [
+      "Atlas can pull multiple enemies into one area, giving Nana a strong target for Molina Blitz.",
+      "Nana can layer slow, stun, and magic burst after Atlas starts the teamfight."
+    ],
+    "synergyTypes": [
+      "teamfight-combo",
+      "setup-combo",
+      "cc-chain"
+    ],
+    "proof": [
+      {
+        "id": "atlas-fatal-links-sets-nana-molina-blitz",
+        "category": "teamfight-combo",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Atlas groups enemies with hard engage, and Nana follows with AoE magic damage plus crowd-control layering.",
+        "worksBestWhen": [
+          "Atlas catches multiple enemies.",
+          "Nana is in range to cast after the pull.",
+          "The team has damage ready during the follow-up control."
+        ],
+        "failureCases": [
+          "Atlas engages before Nana is in range.",
+          "Enemies cleanse or disengage after the pull.",
+          "Nana is caught before she can cast."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "nana",
+    "synergyHeroId": "tigreal",
+    "reasons": [
+      "Tigreal can pull and stun enemies, giving Nana a stable area for Molina Blitz follow-up.",
+      "Nana adds secondary control after Tigreal's engage to extend the punishment window."
+    ],
+    "synergyTypes": [
+      "cc-chain",
+      "engage-follow-up",
+      "teamfight-combo"
+    ],
+    "proof": [
+      {
+        "id": "tigreal-implosion-sets-nana-cc-followup",
+        "category": "crowd-control-chain",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Tigreal starts the grouped crowd-control window, and Nana layers Molina Blitz plus Molina Smooch pressure into the same area.",
+        "worksBestWhen": [
+          "Tigreal catches two or more enemies.",
+          "Nana waits for Tigreal's control before casting ultimate.",
+          "Nana stays backline-safe while following up."
+        ],
+        "failureCases": [
+          "Tigreal's engage misses or is interrupted.",
+          "Enemies spread before Nana's follow-up lands.",
+          "Enemy cleanse or anti-CC reduces the chain value."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "nana",
+    "synergyHeroId": "franco",
+    "reasons": [
+      "Franco can pull a target that Nana has slowed or transformed.",
+      "Nana can prepare Molina around Franco's catch zone to extend the pickoff chain."
+    ],
+    "synergyTypes": [
+      "pickoff-combo",
+      "cc-chain",
+      "setup-combo"
+    ],
+    "proof": [
+      {
+        "id": "franco-hook-converts-nana-molina-control",
+        "category": "pickoff-combo",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Nana limits a target's movement with Molina, and Franco converts that control into a hook or suppression pickoff.",
+        "worksBestWhen": [
+          "Nana places Molina near the target's movement path.",
+          "Franco waits for the slow or transform before hooking.",
+          "The team collapses on the pulled target."
+        ],
+        "failureCases": [
+          "Hook is blocked by a tank.",
+          "Molina hits a low-value target.",
+          "Franco pulls the target away from Nana's follow-up damage."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "nana",
+    "synergyHeroId": "saber",
+    "reasons": [
+      "Saber can burst a target that Nana has transformed or slowed.",
+      "Nana's control gives Saber a clearer single-target entry window."
+    ],
+    "synergyTypes": [
+      "setup-combo",
+      "burst-follow-up",
+      "pickoff-combo"
+    ],
+    "proof": [
+      {
+        "id": "saber-triple-sweep-follows-nana-control",
+        "category": "setup-combo",
+        "priority": "secondary",
+        "impact": "high",
+        "summary": "Nana sets the target with movement control, and Saber follows with Triple Sweep to finish the pick.",
+        "worksBestWhen": [
+          "Nana's control lands on a fragile priority target.",
+          "Saber has burst cooldowns ready.",
+          "Saber waits for the setup before entering."
+        ],
+        "failureCases": [
+          "Nana controls a tank or low-value target.",
+          "Saber enters after the control ends.",
+          "Enemy peel reaches Saber during the dive."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "nana",
+    "synergyHeroId": "gusion",
+    "reasons": [
+      "Nana's Molina Smooch can reduce the target's magic defense, supporting Gusion's magic burst follow-up.",
+      "The slow or transform effect can make Gusion's dagger combo easier to connect."
+    ],
+    "synergyTypes": [
+      "damage-amplification",
+      "burst-follow-up",
+      "pickoff-combo"
+    ],
+    "proof": [
+      {
+        "id": "gusion-magic-burst-follows-nana-molina",
+        "category": "damage-amplification",
+        "priority": "secondary",
+        "impact": "high",
+        "summary": "Nana weakens and controls the target with Molina Smooch, while Gusion follows with magic burst during the setup window.",
+        "worksBestWhen": [
+          "Nana lands Molina Smooch on the priority target.",
+          "Gusion has full combo cooldowns ready.",
+          "The target is fragile enough for burst conversion."
+        ],
+        "failureCases": [
+          "Gusion misses key dagger damage.",
+          "The target cleanses or escapes before the combo connects.",
+          "Enemy frontline shields or peels the target."
+        ]
+      }
+    ]
+  }
+]

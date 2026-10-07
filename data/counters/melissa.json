@@ -1,0 +1,152 @@
+[
+  {
+    "targetHeroId": "melissa",
+    "counterHeroId": "lolita",
+    "reasons": [
+      "Lolita can block ranged basic attacks and projectiles, which reduces Melissa's poke and teamfight damage windows.",
+      "Guardian's Bulwark helps protect allies when Melissa links targets and tries to attack through Muddles."
+    ],
+    "counterTypes": [
+      "protect",
+      "anti-projectile",
+      "teamfight"
+    ],
+    "proof": [
+      {
+        "id": "lolita-guardian-bulwark-vs-melissa-poke",
+        "category": "skill-interaction",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Melissa wants to deal sustained ranged damage through basic attacks and Muddles pressure, while Lolita can block incoming ranged basic attacks and projectiles for her team.",
+        "worksBestWhen": [
+          "Lolita angles her shield between Melissa and priority allies.",
+          "Lolita saves shield for Melissa's real damage window."
+        ],
+        "failureCases": [
+          "Melissa attacks from a side angle.",
+          "Lolita drops shield too early or gets displaced."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "melissa",
+    "counterHeroId": "pharsa",
+    "reasons": [
+      "Pharsa can attack Melissa from outside Melissa's comfortable Go Away zone.",
+      "Long-range burst forces Melissa to reposition instead of freely holding lane or teamfight space."
+    ],
+    "counterTypes": [
+      "range-advantage",
+      "burst",
+      "poke"
+    ],
+    "proof": [
+      {
+        "id": "pharsa-feathered-air-strike-vs-melissa-range",
+        "category": "range-advantage",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Melissa is strong against enemies that must enter her repel zone, while Pharsa can damage her from long range without committing into Go Away.",
+        "worksBestWhen": [
+          "Pharsa casts from safe terrain or behind frontline.",
+          "Pharsa targets Melissa before Melissa can lifesteal or reposition."
+        ],
+        "failureCases": [
+          "Melissa dodges air strikes and closes with team support.",
+          "Pharsa is caught while channeling or repositioning."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "melissa",
+    "counterHeroId": "xavier",
+    "reasons": [
+      "Xavier can pressure Melissa from outside normal marksman trade range.",
+      "Mystic Field and Dawning Light punish Melissa when she is stationary during damage output."
+    ],
+    "counterTypes": [
+      "range-advantage",
+      "poke",
+      "cooldown-punish"
+    ],
+    "proof": [
+      {
+        "id": "xavier-long-range-control-vs-melissa-trades",
+        "category": "range-advantage",
+        "priority": "primary",
+        "impact": "medium",
+        "summary": "Melissa wants extended basic-attack trades, while Xavier can poke from far range and punish her positioning without entering her self-peel circle.",
+        "worksBestWhen": [
+          "Xavier keeps distance and plays behind vision.",
+          "Xavier follows ally crowd control with Mystic Field or Dawning Light."
+        ],
+        "failureCases": [
+          "Melissa dodges skillshots and forces Xavier into short-range fights.",
+          "Xavier is flanked by assassins while focusing Melissa."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "melissa",
+    "counterHeroId": "franco",
+    "reasons": [
+      "Franco can punish Melissa before she sets up Go Away.",
+      "A hook or suppression can drag Melissa out of her safe marksman formation."
+    ],
+    "counterTypes": [
+      "pickoff",
+      "suppression",
+      "positioning-requirement"
+    ],
+    "proof": [
+      {
+        "id": "franco-hook-vs-melissa-positioning",
+        "category": "positioning-requirement",
+        "priority": "primary",
+        "impact": "medium",
+        "summary": "Melissa wants to maintain controlled spacing, while Franco can break that spacing by forcing a pickoff before she starts her repel zone.",
+        "worksBestWhen": [
+          "Franco hooks from fog or after Melissa uses mobility.",
+          "Teammates immediately follow the catch."
+        ],
+        "failureCases": [
+          "Melissa blocks the engage with Go Away or stays behind minions.",
+          "Franco misses hook and gives Melissa free damage time."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "melissa",
+    "counterHeroId": "lesley",
+    "reasons": [
+      "Lesley can trade with long-range burst instead of walking into Melissa's short self-peel zone.",
+      "Her true-damage poke can punish Melissa before Melissa establishes sustained DPS."
+    ],
+    "counterTypes": [
+      "range-advantage",
+      "poke",
+      "true-damage"
+    ],
+    "proof": [
+      {
+        "id": "lesley-lethal-shot-vs-melissa-trades",
+        "category": "range-advantage",
+        "priority": "secondary",
+        "impact": "medium",
+        "summary": "Melissa wants repeated linked attacks, while Lesley can use longer-range poke windows to damage her without committing to an extended trade.",
+        "worksBestWhen": [
+          "Lesley pokes when Lethal Shot is ready.",
+          "Lesley avoids being linked by Muddles for extended trades."
+        ],
+        "failureCases": [
+          "Melissa lands Muddles and forces Lesley into continuous DPS exchange.",
+          "Lesley is caught without camouflage or spacing."
+        ]
+      }
+    ]
+  }
+]

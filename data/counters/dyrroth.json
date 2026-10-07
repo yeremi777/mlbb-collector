@@ -1,0 +1,152 @@
+[
+  {
+    "targetHeroId": "dyrroth",
+    "counterHeroId": "valir",
+    "reasons": [
+      "Valir can deny Dyrroth's preferred short-range burst by pushing him away.",
+      "Dyrroth is much less threatening when he spends his dash but cannot stay attached to the target."
+    ],
+    "counterTypes": [
+      "kiting",
+      "disengage",
+      "anti-dive"
+    ],
+    "proof": [
+      {
+        "id": "valir-searing-torrent-vs-dyrroth-melee-burst",
+        "category": "kiting",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Dyrroth wants to dash in and force a melee burst trade, while Valir can knock him back, slow him, and create space.",
+        "worksBestWhen": [
+          "Valir saves Searing Torrent for Dyrroth's commit.",
+          "Valir keeps minion and frontline spacing so Dyrroth cannot dash freely."
+        ],
+        "failureCases": [
+          "Dyrroth flanks and reaches Valir before knockback is available.",
+          "Valir wastes disengage on a fake engage."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "dyrroth",
+    "counterHeroId": "minsitthar",
+    "reasons": [
+      "Minsitthar can punish Dyrroth's dash-reliant engage by denying blink or dash movement inside his ultimate zone.",
+      "This turns Dyrroth's all-in into a trapped fight if the team follows up."
+    ],
+    "counterTypes": [
+      "anti-dash",
+      "teamfight",
+      "cooldown-punish"
+    ],
+    "proof": [
+      {
+        "id": "minsitthar-kings-calling-vs-dyrroth-spectre-step",
+        "category": "skill-interaction",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Dyrroth needs Spectre Step to enter and reposition, while Minsitthar's King's Calling can disable dash or blink skills in the fight area.",
+        "worksBestWhen": [
+          "Minsitthar casts ultimate where Dyrroth must commit.",
+          "Allies focus Dyrroth while his mobility is restricted."
+        ],
+        "failureCases": [
+          "Dyrroth baits King's Calling and disengages.",
+          "Minsitthar casts too late after Dyrroth has already finished his burst."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "dyrroth",
+    "counterHeroId": "ruby",
+    "reasons": [
+      "Ruby can disrupt Dyrroth's melee rhythm with repeated pull and stun control.",
+      "Her sustain and control make it harder for Dyrroth to finish a clean one-combo duel."
+    ],
+    "counterTypes": [
+      "crowd-control-counter",
+      "sustain",
+      "anti-dive"
+    ],
+    "proof": [
+      {
+        "id": "ruby-control-vs-dyrroth-melee-combo",
+        "category": "crowd-control-counter",
+        "priority": "primary",
+        "impact": "medium",
+        "summary": "Dyrroth wants an uninterrupted melee burst, while Ruby can stun, pull, and interrupt his positioning during the trade.",
+        "worksBestWhen": [
+          "Ruby keeps enough spacing to avoid taking the full burst instantly.",
+          "Ruby fights with minions or allies nearby to extend her sustain window."
+        ],
+        "failureCases": [
+          "Dyrroth lands full burst before Ruby can sustain.",
+          "Ruby uses control before Dyrroth commits."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "dyrroth",
+    "counterHeroId": "kaja",
+    "reasons": [
+      "Kaja can punish Dyrroth when he dives too far forward.",
+      "Suppression prevents Dyrroth from freely continuing his combo or escaping after entry."
+    ],
+    "counterTypes": [
+      "pickoff",
+      "crowd-control-counter",
+      "anti-dive"
+    ],
+    "proof": [
+      {
+        "id": "kaja-divine-judgment-vs-dyrroth-dive",
+        "category": "crowd-control-counter",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Dyrroth wants to commit forward for burst, while Kaja can suppress and drag him into team follow-up.",
+        "worksBestWhen": [
+          "Kaja waits until Dyrroth spends his dash.",
+          "The team is ready to burst during Divine Judgment."
+        ],
+        "failureCases": [
+          "Dyrroth avoids Kaja and targets another side of the fight.",
+          "Kaja uses suppression before Dyrroth commits."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "dyrroth",
+    "counterHeroId": "pharsa",
+    "reasons": [
+      "Pharsa can punish Dyrroth from outside his melee burst range.",
+      "Dyrroth has to find a flank or force cooldowns before he can threaten Pharsa."
+    ],
+    "counterTypes": [
+      "range-advantage",
+      "poke",
+      "burst"
+    ],
+    "proof": [
+      {
+        "id": "pharsa-range-vs-dyrroth-melee-entry",
+        "category": "range-advantage",
+        "priority": "primary",
+        "impact": "medium",
+        "summary": "Dyrroth wants short-range all-in trades, while Pharsa can pressure from long range and make him spend time crossing space.",
+        "worksBestWhen": [
+          "Pharsa has vision around flank routes.",
+          "A frontline prevents Dyrroth from directly reaching her."
+        ],
+        "failureCases": [
+          "Dyrroth reaches Pharsa during her channel.",
+          "Pharsa lacks vision and gets flanked."
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,152 @@
+[
+  {
+    "targetHeroId": "hayabusa",
+    "counterHeroId": "khufra",
+    "reasons": [
+      "Khufra punishes Hayabusa's shadow-based repositioning because Hayabusa depends on mobility to enter, reset, and escape.",
+      "When Khufra controls the return path, Hayabusa has a harder time choosing a safe isolated burst target."
+    ],
+    "counterTypes": [
+      "anti-dash",
+      "crowd-control-counter",
+      "anti-dive"
+    ],
+    "proof": [
+      {
+        "id": "khufra-bouncing-ball-vs-hayabusa-shadows",
+        "category": "skill-interaction",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Hayabusa wants to move through shadows for safe engage and escape, while Khufra can punish blink-style movement and force Hayabusa to fight in a worse position.",
+        "worksBestWhen": [
+          "Khufra saves his anti-dash timing for Hayabusa's real commit.",
+          "Khufra positions between Hayabusa and the expected return-shadow path."
+        ],
+        "failureCases": [
+          "Hayabusa baits Khufra's anti-dash skill before committing.",
+          "Khufra reacts after Hayabusa has already finished the burst and escaped."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "hayabusa",
+    "counterHeroId": "kaja",
+    "reasons": [
+      "Kaja can suppress Hayabusa after he commits, preventing the normal shadow reset or escape timing.",
+      "Suppression is valuable against Hayabusa because his assassination pattern depends on a short and safe execution window."
+    ],
+    "counterTypes": [
+      "pickoff",
+      "crowd-control-counter",
+      "anti-dive"
+    ],
+    "proof": [
+      {
+        "id": "kaja-divine-judgment-vs-hayabusa-commit",
+        "category": "crowd-control-counter",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Hayabusa wants to choose a fast burst window, while Kaja can lock him during the commit and allow teammates to collapse.",
+        "worksBestWhen": [
+          "Kaja waits until Hayabusa has used shadow movement aggressively.",
+          "Kaja has teammate burst ready during the suppression window."
+        ],
+        "failureCases": [
+          "Kaja uses suppression before Hayabusa commits.",
+          "Hayabusa only pokes from distance and keeps a safe return shadow."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "hayabusa",
+    "counterHeroId": "saber",
+    "reasons": [
+      "Saber can punish Hayabusa when he becomes targetable after committing with shadow movement.",
+      "Hayabusa is vulnerable if his return shadow or escape timing is already spent."
+    ],
+    "counterTypes": [
+      "burst",
+      "pickoff",
+      "cooldown-punish"
+    ],
+    "proof": [
+      {
+        "id": "saber-triple-sweep-vs-hayabusa-cooldown-window",
+        "category": "cooldown-window",
+        "priority": "primary",
+        "impact": "medium",
+        "summary": "Hayabusa is safest while mobile, but Saber can punish the moment Hayabusa appears after using his shadow tools aggressively.",
+        "worksBestWhen": [
+          "Saber hides vision and waits for Hayabusa to enter burst range.",
+          "Hayabusa has already used Quad Shadow aggressively."
+        ],
+        "failureCases": [
+          "Hayabusa keeps a safe return shadow available.",
+          "Saber commits while Hayabusa is untargetable or protected by teammates."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "hayabusa",
+    "counterHeroId": "phoveus",
+    "reasons": [
+      "Phoveus can punish dash-heavy patterns, which makes Hayabusa's repeated repositioning more risky.",
+      "Hayabusa gives Phoveus more counter-engage chances when he has to use shadows aggressively near a fight."
+    ],
+    "counterTypes": [
+      "anti-dash",
+      "teamfight",
+      "cooldown-punish"
+    ],
+    "proof": [
+      {
+        "id": "phoveus-anti-dash-vs-hayabusa-shadow-mobility",
+        "category": "mobility-advantage",
+        "priority": "primary",
+        "impact": "medium",
+        "summary": "Hayabusa's strength is repeated repositioning, while Phoveus punishes dash-heavy movement patterns and can turn those entries into counter-engage windows.",
+        "worksBestWhen": [
+          "Phoveus fights near the target area Hayabusa wants to dive.",
+          "Hayabusa must use shadows aggressively instead of only poking."
+        ],
+        "failureCases": [
+          "Hayabusa avoids Phoveus and targets the opposite side of the fight.",
+          "Phoveus is too far from the backline target to punish the dash pattern."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "hayabusa",
+    "counterHeroId": "franco",
+    "reasons": [
+      "Franco can punish Hayabusa when his return path is predictable through hook or suppression follow-up.",
+      "Hayabusa is fragile if locked long enough for teammates to burst him after his mobility is committed."
+    ],
+    "counterTypes": [
+      "pickoff",
+      "crowd-control-counter",
+      "vision-control"
+    ],
+    "proof": [
+      {
+        "id": "franco-bloody-hunt-vs-hayabusa-return-path",
+        "category": "crowd-control-counter",
+        "priority": "primary",
+        "impact": "medium",
+        "summary": "Hayabusa wants to enter and exit quickly, while Franco can convert a caught timing into a suppression pickoff.",
+        "worksBestWhen": [
+          "Franco tracks Hayabusa's shadow positions.",
+          "Franco saves suppression until Hayabusa has committed his escape tools."
+        ],
+        "failureCases": [
+          "Franco misses hook and has no follow-up threat.",
+          "Hayabusa plays patiently and avoids direct vision."
+        ]
+      }
+    ]
+  }
+]

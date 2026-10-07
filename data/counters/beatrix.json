@@ -1,0 +1,157 @@
+[
+  {
+    "targetHeroId": "beatrix",
+    "counterHeroId": "lolita",
+    "reasons": [
+      "Lolita can reduce Beatrix's poke and burst value by blocking many ranged projectile patterns.",
+      "Her shield protection is especially useful during siege or objective fights where Beatrix wants free weapon pressure."
+    ],
+    "counterTypes": [
+      "protect",
+      "anti-projectile",
+      "teamfight"
+    ],
+    "proof": [
+      {
+        "id": "lolita-shield-vs-beatrix-ranged-pressure",
+        "category": "skill-interaction",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Beatrix wants ranged weapon pressure, while Lolita can deny many ranged or projectile attack patterns and protect her team.",
+        "worksBestWhen": [
+          "Lolita faces Beatrix's firing angle.",
+          "Team plays behind Lolita during siege or objective fights."
+        ],
+        "failureCases": [
+          "Beatrix attacks from a side angle.",
+          "Lolita wastes shield too early.",
+          "Beatrix waits out the shield or changes angle."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "beatrix",
+    "counterHeroId": "franco",
+    "reasons": [
+      "Franco can punish Beatrix when she steps forward to aim or free-hit.",
+      "Hook and suppression remove Beatrix's ability to reposition or continue weapon pressure during the catch."
+    ],
+    "counterTypes": [
+      "pickoff",
+      "crowd-control-counter",
+      "anti-backline"
+    ],
+    "proof": [
+      {
+        "id": "franco-hook-suppression-vs-beatrix-positioning",
+        "category": "crowd-control-counter",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Beatrix wants controlled spacing and weapon uptime, while Franco can force a single-target catch with hook or suppression.",
+        "worksBestWhen": [
+          "Franco hides vision and catches Beatrix after Tactical Reposition.",
+          "Team can burst Beatrix during suppression."
+        ],
+        "failureCases": [
+          "Franco misses hook.",
+          "Beatrix stays behind minions and frontline.",
+          "Franco suppresses a tank while Beatrix remains free."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "beatrix",
+    "counterHeroId": "natalia",
+    "reasons": [
+      "Natalia pressures Beatrix before she can set up safe weapon spacing.",
+      "Backline assassination threat forces Beatrix to play closer to peel."
+    ],
+    "counterTypes": [
+      "pickoff",
+      "vision-control",
+      "burst"
+    ],
+    "proof": [
+      {
+        "id": "natalia-conceal-pickoff-vs-beatrix-spacing",
+        "category": "vision-awareness",
+        "priority": "primary",
+        "impact": "medium",
+        "summary": "Beatrix wants safe ranged control, while Natalia can attack from concealment and punish isolated positioning.",
+        "worksBestWhen": [
+          "Natalia enters from side bushes.",
+          "Beatrix has no nearby peel."
+        ],
+        "failureCases": [
+          "Natalia is revealed early.",
+          "Beatrix stays grouped with tank or support.",
+          "Natalia cannot burst before help arrives."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "beatrix",
+    "counterHeroId": "saber",
+    "reasons": [
+      "Saber can punish Beatrix when she is isolated or after she uses repositioning.",
+      "His lock-burst profile is reliable against fragile marksmen if he reaches them."
+    ],
+    "counterTypes": [
+      "burst",
+      "pickoff",
+      "cooldown-punish"
+    ],
+    "proof": [
+      {
+        "id": "saber-triple-sweep-vs-beatrix-isolation",
+        "category": "skill-interaction",
+        "priority": "secondary",
+        "impact": "medium",
+        "summary": "Beatrix wants to choose weapon range, while Saber can force a lock-and-burst sequence before she can continue attacking.",
+        "worksBestWhen": [
+          "Saber attacks from fog.",
+          "Beatrix's defensive spell or support peel is unavailable."
+        ],
+        "failureCases": [
+          "Saber dives through the enemy frontline.",
+          "Beatrix survives with defensive item or peel.",
+          "Saber is revealed before engaging."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "beatrix",
+    "counterHeroId": "kaja",
+    "reasons": [
+      "Kaja can suppress and drag Beatrix out of safe firing position.",
+      "This is useful when Beatrix is protected behind frontline but still reachable by Flicker or flank."
+    ],
+    "counterTypes": [
+      "pickoff",
+      "crowd-control-counter",
+      "anti-backline"
+    ],
+    "proof": [
+      {
+        "id": "kaja-divine-judgment-vs-beatrix-free-hit",
+        "category": "crowd-control-counter",
+        "priority": "condition",
+        "impact": "medium",
+        "summary": "Beatrix wants uninterrupted ranged damage, while Kaja can force a single-target catch and remove her from safe spacing.",
+        "worksBestWhen": [
+          "Kaja has flank or Flicker access.",
+          "Team bursts Beatrix immediately after pull."
+        ],
+        "failureCases": [
+          "Beatrix positions outside Kaja's reach.",
+          "Kaja is zoned before engaging.",
+          "Beatrix's team counter-engages after the pull."
+        ]
+      }
+    ]
+  }
+]

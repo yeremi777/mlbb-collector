@@ -1,0 +1,157 @@
+[
+  {
+    "anchorHeroId": "gatotkaca",
+    "synergyHeroId": "pharsa",
+    "reasons": [
+      "Gatotkaca can force enemies into a crowd-control window, giving Pharsa a safer long-range burst opportunity.",
+      "Pharsa can punish the area Gatotkaca controls without standing inside the first engage."
+    ],
+    "synergyTypes": [
+      "engage-follow-up",
+      "aoe-follow-up",
+      "teamfight-combo"
+    ],
+    "proof": [
+      {
+        "id": "gatotkaca-setup-for-pharsa-burst",
+        "category": "engage-follow-up",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Gatotkaca creates the engage and grouping window, while Pharsa follows with ranged magic damage into the controlled area.",
+        "worksBestWhen": [
+          "Gatotkaca engages after Pharsa is ready and in follow-up range.",
+          "Pharsa saves her main burst for Gatotkaca's knock-up or taunt window."
+        ],
+        "failureCases": [
+          "Gatotkaca dives too far away from Pharsa.",
+          "Enemies spread before Gatotkaca lands.",
+          "Pharsa is forced to reposition instead of casting."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "gatotkaca",
+    "synergyHeroId": "odette",
+    "reasons": [
+      "Gatotkaca can start the fight and hold enemy attention, giving Odette a better window to cast AoE damage.",
+      "Odette benefits when Gatotkaca forces enemies to stay near the teamfight center."
+    ],
+    "synergyTypes": [
+      "setup-combo",
+      "aoe-follow-up",
+      "teamfight-combo"
+    ],
+    "proof": [
+      {
+        "id": "gatotkaca-frontline-setup-for-odette",
+        "category": "setup-combo",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Gatotkaca starts or stabilizes the teamfight, while Odette converts the controlled area into sustained AoE magic pressure.",
+        "worksBestWhen": [
+          "Gatotkaca lands on multiple enemies or forces a tight fight area.",
+          "Odette casts after enemies are already slowed, taunted, or knocked airborne."
+        ],
+        "failureCases": [
+          "Odette is interrupted before her damage finishes.",
+          "Gatotkaca catches only a low-value target.",
+          "The enemy saves displacement or suppression for Odette."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "gatotkaca",
+    "synergyHeroId": "irithel",
+    "reasons": [
+      "Gatotkaca can create frontline space that helps Irithel keep moving and attacking from behind him.",
+      "His taunt and knock-up can punish enemies that try to dive Irithel's damage position."
+    ],
+    "synergyTypes": [
+      "frontline-enabler",
+      "backline-protection",
+      "teamfight-combo"
+    ],
+    "proof": [
+      {
+        "id": "gatotkaca-frontline-for-irithel-kiting",
+        "category": "frontline-enabler",
+        "priority": "primary",
+        "impact": "medium",
+        "summary": "Gatotkaca disrupts enemy engage paths, allowing Irithel to maintain mobile basic attacks from safer spacing.",
+        "worksBestWhen": [
+          "Gatotkaca peels near Irithel instead of diving too far away.",
+          "Irithel plays around Gatotkaca's frontline zone."
+        ],
+        "failureCases": [
+          "Gatotkaca leaves Irithel exposed.",
+          "Enemy assassins bypass Gatotkaca's engage.",
+          "Irithel is caught before she can kite."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "gatotkaca",
+    "synergyHeroId": "luo-yi",
+    "reasons": [
+      "Gatotkaca can force a teamfight area where Luo Yi can add follow-up control and displacement pressure.",
+      "Luo Yi can extend Gatotkaca's engage value when enemies are already grouped or forced into narrow paths."
+    ],
+    "synergyTypes": [
+      "cc-chain",
+      "setup-combo",
+      "teamfight-combo"
+    ],
+    "proof": [
+      {
+        "id": "gatotkaca-engage-into-luo-yi-control",
+        "category": "crowd-control-chain",
+        "priority": "secondary",
+        "impact": "medium",
+        "summary": "Gatotkaca starts the fight, while Luo Yi adds a second layer of control and positioning pressure around the same fight area.",
+        "worksBestWhen": [
+          "Luo Yi prepares positioning before Gatotkaca commits.",
+          "The fight happens in a narrow area where enemies cannot easily spread."
+        ],
+        "failureCases": [
+          "Luo Yi is too far to follow the engage.",
+          "Gatotkaca and Luo Yi pressure different targets.",
+          "Enemy mobility resets before the follow-up control lands."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "gatotkaca",
+    "synergyHeroId": "claude",
+    "reasons": [
+      "Gatotkaca can absorb the first fight layer so Claude has a safer timing to enter with AoE damage.",
+      "Claude can follow Gatotkaca's disruption once enemy control and attention are drawn forward."
+    ],
+    "synergyTypes": [
+      "engage-follow-up",
+      "aoe-follow-up",
+      "teamfight-combo"
+    ],
+    "proof": [
+      {
+        "id": "gatotkaca-engage-for-claude-blazing-duet",
+        "category": "engage-follow-up",
+        "priority": "secondary",
+        "impact": "medium",
+        "summary": "Gatotkaca controls or distracts the enemy formation, while Claude follows with AoE damage after the engage starts.",
+        "worksBestWhen": [
+          "Claude waits for Gatotkaca to force key crowd control first.",
+          "Gatotkaca disrupts the enemy formation long enough for Claude to enter."
+        ],
+        "failureCases": [
+          "Claude enters before Gatotkaca creates space.",
+          "Enemy burst is saved for Claude.",
+          "Gatotkaca misses the main damage threats."
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,162 @@
+[
+  {
+    "anchorHeroId": "melissa",
+    "synergyHeroId": "lolita",
+    "reasons": [
+      "Lolita can protect Melissa from projectile pressure and front for her during siege or objective fights.",
+      "Melissa can keep attacking from safer spacing when Lolita holds the defensive line."
+    ],
+    "synergyTypes": [
+      "backline-protection",
+      "peel",
+      "shielding"
+    ],
+    "proof": [
+      {
+        "id": "lolita-protects-melissa-free-hit-position",
+        "category": "protection",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Lolita protects Melissa's firing position, while Melissa uses that safe space to keep applying Muddles-linked basic attack pressure.",
+        "worksBestWhen": [
+          "Lolita stands between Melissa and enemy poke.",
+          "Melissa keeps safe spacing behind Lolita.",
+          "Melissa saves Go Away! for real dive pressure."
+        ],
+        "failureCases": [
+          "Enemy divers flank around Lolita.",
+          "Melissa wastes Go Away! before the real dive.",
+          "Lolita is forced to engage away from Melissa."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "melissa",
+    "synergyHeroId": "tigreal",
+    "reasons": [
+      "Tigreal can pull enemies together, giving Melissa easier multi-target Muddles pressure.",
+      "Melissa can free-hit after Tigreal's engage while enemies are controlled or displaced."
+    ],
+    "synergyTypes": [
+      "engage-follow-up",
+      "teamfight-combo",
+      "aoe-follow-up"
+    ],
+    "proof": [
+      {
+        "id": "tigreal-grouping-enables-melissa-linked-damage",
+        "category": "engage-follow-up",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Tigreal groups enemies, and Melissa follows with linked basic attack damage from safer backline spacing.",
+        "worksBestWhen": [
+          "Tigreal engages after Melissa is already in attack range.",
+          "Melissa has Muddles available before the fight starts.",
+          "The team protects Melissa from flank threats."
+        ],
+        "failureCases": [
+          "Tigreal engages beyond Melissa's range.",
+          "Melissa is zoned by another diver during the setup.",
+          "Enemies spread out after the control ends."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "melissa",
+    "synergyHeroId": "atlas",
+    "reasons": [
+      "Atlas can drag multiple enemies into one spot, making Melissa's Muddles placement and basic attack follow-up stronger.",
+      "Melissa can stay behind the engage and punish enemies after Atlas forces them into a bad formation."
+    ],
+    "synergyTypes": [
+      "setup-combo",
+      "teamfight-combo",
+      "aoe-follow-up"
+    ],
+    "proof": [
+      {
+        "id": "atlas-fatal-links-sets-up-melissa-damage",
+        "category": "setup-combo",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Atlas creates the grouped teamfight setup, while Melissa converts it into sustained backline damage.",
+        "worksBestWhen": [
+          "Atlas catches enemies while Melissa is already nearby.",
+          "Melissa has safe terrain or peel behind her.",
+          "Melissa has Muddles and attack uptime ready."
+        ],
+        "failureCases": [
+          "Atlas engages before Melissa arrives.",
+          "Melissa is forced to use Go Away! defensively rather than attacking.",
+          "Enemies disengage before Melissa can link and attack."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "melissa",
+    "synergyHeroId": "diggie",
+    "reasons": [
+      "Diggie can protect Melissa from crowd-control engage, which helps her keep attacking from the backline.",
+      "Melissa's self-peel handles melee approach while Diggie helps cover control-heavy initiation."
+    ],
+    "synergyTypes": [
+      "protect",
+      "backline-protection",
+      "cooldown-dependent"
+    ],
+    "proof": [
+      {
+        "id": "diggie-protects-melissa-from-cc-engage",
+        "category": "protection",
+        "priority": "secondary",
+        "impact": "high",
+        "summary": "Diggie helps Melissa survive crowd-control engage so she can continue attacking from the backline.",
+        "worksBestWhen": [
+          "Diggie saves anti-CC timing for the real enemy engage.",
+          "Melissa keeps Go Away! for divers and avoids early usage.",
+          "Melissa is positioned close enough to benefit from Diggie's protection."
+        ],
+        "failureCases": [
+          "Diggie is baited before the main fight.",
+          "Melissa is burst before protection is active.",
+          "Enemies attack from multiple angles and split the protection value."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "melissa",
+    "synergyHeroId": "floryn",
+    "reasons": [
+      "Floryn's global heal helps Melissa survive poke or dive damage while keeping her backline position.",
+      "Melissa benefits from sustain because she wants extended firing windows rather than short burst trades."
+    ],
+    "synergyTypes": [
+      "healing-sustain",
+      "backline-protection",
+      "late-game"
+    ],
+    "proof": [
+      {
+        "id": "floryn-sustain-keeps-melissa-firing",
+        "category": "healing-sustain",
+        "priority": "secondary",
+        "impact": "medium",
+        "summary": "Floryn keeps Melissa healthy during siege or teamfight pressure, helping Melissa stay on the map and continue dealing sustained damage.",
+        "worksBestWhen": [
+          "Floryn saves Bloom for the dive or burst window.",
+          "Melissa maintains safe spacing and does not overextend.",
+          "The team protects Melissa's firing angle."
+        ],
+        "failureCases": [
+          "Melissa is one-shot before Bloom matters.",
+          "Anti-heal reduces the sustain value.",
+          "Floryn uses Bloom while Melissa is not under real threat."
+        ]
+      }
+    ]
+  }
+]

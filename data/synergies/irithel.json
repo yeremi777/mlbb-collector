@@ -1,0 +1,157 @@
+[
+  {
+    "anchorHeroId": "irithel",
+    "synergyHeroId": "lolita",
+    "reasons": [
+      "Lolita can protect Irithel from projectile pressure while Irithel keeps moving and attacking.",
+      "Irithel benefits from a frontline protector who can block poke and peel enemy dive."
+    ],
+    "synergyTypes": [
+      "backline-protection",
+      "peel",
+      "frontline-enabler"
+    ],
+    "proof": [
+      {
+        "id": "lolita-protection-for-irithel-kiting",
+        "category": "protection",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Irithel needs safe spacing, while Lolita creates a defensive zone that helps her keep attacking from the backline.",
+        "worksBestWhen": [
+          "Lolita stays between Irithel and enemy poke.",
+          "Irithel positions behind Lolita instead of standing alone."
+        ],
+        "failureCases": [
+          "Enemies dive from multiple angles.",
+          "Lolita uses protection before the real engage.",
+          "Irithel is caught outside Lolita's zone."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "irithel",
+    "synergyHeroId": "tigreal",
+    "reasons": [
+      "Tigreal can group and control enemies so Irithel can attack from safer distance.",
+      "Irithel can use Tigreal's engage window to deal sustained physical damage without starting the fight herself."
+    ],
+    "synergyTypes": [
+      "engage-follow-up",
+      "frontline-enabler",
+      "teamfight-combo"
+    ],
+    "proof": [
+      {
+        "id": "tigreal-engage-for-irithel-follow-up",
+        "category": "engage-follow-up",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Tigreal creates a control window, while Irithel uses the created space to deal sustained physical damage.",
+        "worksBestWhen": [
+          "Tigreal engages after Irithel is ready to follow.",
+          "Irithel keeps distance instead of walking into the engage."
+        ],
+        "failureCases": [
+          "Tigreal engages too far away.",
+          "Enemies flank Irithel while Tigreal is forward.",
+          "Irithel lacks enough item timing for meaningful follow-up."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "irithel",
+    "synergyHeroId": "minotaur",
+    "reasons": [
+      "Minotaur can provide frontline control and sustain so Irithel survives longer in extended fights.",
+      "Irithel benefits when Minotaur keeps divers away and gives her time to keep attacking while moving."
+    ],
+    "synergyTypes": [
+      "frontline-enabler",
+      "healing-sustain",
+      "cc-chain"
+    ],
+    "proof": [
+      {
+        "id": "minotaur-frontline-sustain-for-irithel",
+        "category": "frontline-enabler",
+        "priority": "secondary",
+        "impact": "medium",
+        "summary": "Minotaur protects the fight space with control and sustain, while Irithel outputs damage from behind him.",
+        "worksBestWhen": [
+          "Minotaur keeps engage threats away from Irithel.",
+          "Irithel follows from the backline instead of overextending."
+        ],
+        "failureCases": [
+          "Minotaur is forced to engage away from Irithel.",
+          "Burst assassins bypass the frontline.",
+          "Irithel is too far to use the created window."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "irithel",
+    "synergyHeroId": "rafaela",
+    "reasons": [
+      "Rafaela's healing and movement support help Irithel kite, chase, or retreat while maintaining attacks.",
+      "Irithel benefits from extra movement speed because her damage pattern depends on safe repositioning."
+    ],
+    "synergyTypes": [
+      "healing-sustain",
+      "mobility-enable",
+      "peel"
+    ],
+    "proof": [
+      {
+        "id": "rafaela-speed-heal-for-irithel-kite",
+        "category": "healing-sustain",
+        "priority": "secondary",
+        "impact": "medium",
+        "summary": "Rafaela adds movement and sustain, allowing Irithel to maintain spacing during extended fights.",
+        "worksBestWhen": [
+          "Rafaela stays close enough to support Irithel's kiting path.",
+          "Irithel uses movement speed to keep spacing rather than overchase."
+        ],
+        "failureCases": [
+          "Rafaela is picked off before the fight.",
+          "Enemy burst kills Irithel before healing matters.",
+          "Irithel is hard-controlled during the kite."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "irithel",
+    "synergyHeroId": "angela",
+    "reasons": [
+      "Angela can reinforce Irithel during enemy dives or extended fights.",
+      "Irithel can keep dealing damage longer when Angela adds shielding and sustain during the pressure window."
+    ],
+    "synergyTypes": [
+      "shielding",
+      "healing-sustain",
+      "backline-protection"
+    ],
+    "proof": [
+      {
+        "id": "angela-protection-for-irithel-backline",
+        "category": "shielding",
+        "priority": "secondary",
+        "impact": "medium",
+        "summary": "Angela adds a protection layer that helps Irithel survive while continuing to move and attack.",
+        "worksBestWhen": [
+          "Angela saves protection for enemy dive timing.",
+          "Irithel remains within follow-up range of her team."
+        ],
+        "failureCases": [
+          "Angela attaches too late.",
+          "Irithel is isolated before protection arrives.",
+          "The enemy applies layered crowd control."
+        ]
+      }
+    ]
+  }
+]

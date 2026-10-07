@@ -1,0 +1,152 @@
+[
+  {
+    "targetHeroId": "eudora",
+    "counterHeroId": "diggie",
+    "reasons": [
+      "Diggie can reduce the value of Eudora's stun setup with team control immunity and shielding.",
+      "Eudora's burst is less reliable when her target is protected during the combo window."
+    ],
+    "counterTypes": [
+      "anti-cc",
+      "cleanse",
+      "teamfight"
+    ],
+    "proof": [
+      {
+        "id": "diggie-time-journey-vs-eudora-stun-burst",
+        "category": "crowd-control-counter",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Eudora wants to stun and burst a target, while Diggie can protect nearby allies with control immunity and shield during the key engage window.",
+        "worksBestWhen": [
+          "Diggie saves Time Journey for Eudora's real combo.",
+          "Allies stay close enough to receive Diggie's protection."
+        ],
+        "failureCases": [
+          "Eudora baits Diggie's ultimate before committing.",
+          "Eudora catches Diggie first or attacks while Time Journey is unavailable."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "eudora",
+    "counterHeroId": "kagura",
+    "reasons": [
+      "Kagura can cleanse debuffs and reposition, making Eudora's single-target combo harder to complete.",
+      "Kagura can punish Eudora's short cast range if Eudora misses stun timing."
+    ],
+    "counterTypes": [
+      "cleanse",
+      "mobility",
+      "burst"
+    ],
+    "proof": [
+      {
+        "id": "kagura-rasho-umbrella-flee-vs-eudora-combo",
+        "category": "mobility-advantage",
+        "priority": "primary",
+        "impact": "medium",
+        "summary": "Eudora wants a clean stun-to-burst sequence, while Kagura can cleanse and dash to break the expected combo timing.",
+        "worksBestWhen": [
+          "Kagura saves her cleanse and dash for Eudora's stun attempt.",
+          "Kagura keeps umbrella spacing before entering Eudora's range."
+        ],
+        "failureCases": [
+          "Kagura uses her escape too early.",
+          "Eudora catches Kagura when umbrella positioning is poor."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "eudora",
+    "counterHeroId": "chou",
+    "reasons": [
+      "Chou can use control immunity timing to reduce the reliability of Eudora's stun.",
+      "If Chou reaches Eudora first, he can isolate her before she executes her burst combo."
+    ],
+    "counterTypes": [
+      "control-immunity",
+      "pickoff",
+      "cooldown-punish"
+    ],
+    "proof": [
+      {
+        "id": "chou-shunpo-vs-eudora-ball-lightning",
+        "category": "cooldown-window",
+        "priority": "condition",
+        "impact": "medium",
+        "summary": "Eudora wants enemies to enter stun range without immunity, while Chou can time Shunpo to pass through the crowd-control window and punish her immobility.",
+        "worksBestWhen": [
+          "Chou tracks Eudora's stun cooldown.",
+          "Chou flanks instead of walking directly through Eudora's vision."
+        ],
+        "failureCases": [
+          "Chou mistimes Shunpo and gets stunned.",
+          "Eudora stays protected behind tank vision."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "eudora",
+    "counterHeroId": "lancelot",
+    "reasons": [
+      "Lancelot can dodge or avoid Eudora's predictable stun-burst timing with mobility and invulnerability windows.",
+      "Eudora is vulnerable if Lancelot reaches her after her stun is unavailable."
+    ],
+    "counterTypes": [
+      "mobility",
+      "burst",
+      "execution-dependent"
+    ],
+    "proof": [
+      {
+        "id": "lancelot-mobility-vs-eudora-stun-timing",
+        "category": "mobility-advantage",
+        "priority": "condition",
+        "impact": "medium",
+        "summary": "Eudora wants to lock a target in a predictable combo window, while Lancelot can use mobility and timing to avoid the stun and punish her cooldown.",
+        "worksBestWhen": [
+          "Lancelot waits for Eudora's stun attempt or enters from fog.",
+          "Lancelot has enough damage to punish Eudora quickly."
+        ],
+        "failureCases": [
+          "Lancelot dives directly into Eudora's stun range.",
+          "Eudora holds stun until Lancelot's mobility is unavailable."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "eudora",
+    "counterHeroId": "natalia",
+    "reasons": [
+      "Natalia can pressure Eudora from conceal before Eudora chooses a burst target.",
+      "Silence and pickoff pressure can stop Eudora from freely setting up bush ambushes."
+    ],
+    "counterTypes": [
+      "pickoff",
+      "vision-control",
+      "burst"
+    ],
+    "proof": [
+      {
+        "id": "natalia-conceal-vs-eudora-bush-burst",
+        "category": "vision-awareness",
+        "priority": "condition",
+        "impact": "medium",
+        "summary": "Eudora wants to control vision and ambush targets with stun burst, while Natalia can reverse that pressure by threatening Eudora from conceal.",
+        "worksBestWhen": [
+          "Natalia controls the flank before Eudora sets an ambush.",
+          "Eudora is away from tank or support protection."
+        ],
+        "failureCases": [
+          "Natalia is revealed before reaching Eudora.",
+          "Eudora stuns Natalia first or stays grouped with peel."
+        ]
+      }
+    ]
+  }
+]

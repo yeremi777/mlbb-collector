@@ -1,0 +1,152 @@
+[
+  {
+    "targetHeroId": "gord",
+    "counterHeroId": "chou",
+    "reasons": [
+      "Chou can reach Gord's backline position and interrupt his safe casting pattern.",
+      "Gord is vulnerable when mobile fighters force him to reposition instead of channeling damage freely."
+    ],
+    "counterTypes": [
+      "pickoff",
+      "mobility",
+      "crowd-control-counter"
+    ],
+    "proof": [
+      {
+        "id": "chou-flank-pickoff-vs-gord-channeling",
+        "category": "skill-interaction",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Gord wants to stand at range and cast, while Chou can dive, displace, and prevent him from safely channeling damage.",
+        "worksBestWhen": [
+          "Chou flanks instead of walking through Gord's frontline.",
+          "Chou saves control for Gord's ultimate or escape attempt."
+        ],
+        "failureCases": [
+          "Gord stays behind strong peel.",
+          "Chou engages through multiple control skills before reaching Gord."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "gord",
+    "counterHeroId": "saber",
+    "reasons": [
+      "Saber can punish Gord's immobility with targeted burst.",
+      "Gord has difficulty surviving if Saber reaches him before Gord controls the approach."
+    ],
+    "counterTypes": [
+      "pickoff",
+      "burst",
+      "cooldown-punish"
+    ],
+    "proof": [
+      {
+        "id": "saber-targeted-burst-vs-gord-immobility",
+        "category": "damage-type-advantage",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Gord wants to cast safely from distance, while Saber can convert one backline access window into airborne burst.",
+        "worksBestWhen": [
+          "Saber waits in fog or bush.",
+          "Gord has already used his stun or control skill."
+        ],
+        "failureCases": [
+          "Gord has Purify, stasis timing, or strong peel.",
+          "Saber dives into grouped enemies without follow-up."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "gord",
+    "counterHeroId": "natalia",
+    "reasons": [
+      "Natalia can threaten Gord from unexpected angles and punish him before he sets up long-range damage.",
+      "Conceal and silence pressure force Gord to play farther back, reducing his zone control."
+    ],
+    "counterTypes": [
+      "vision-control",
+      "pickoff",
+      "burst"
+    ],
+    "proof": [
+      {
+        "id": "natalia-conceal-pickoff-vs-gord-backline-casting",
+        "category": "vision-awareness",
+        "priority": "primary",
+        "impact": "medium",
+        "summary": "Gord relies on safe casting space, while Natalia pressures that space with concealed backline access and silence threat.",
+        "worksBestWhen": [
+          "Natalia attacks after Gord uses his stun.",
+          "Natalia has vision control around mid bushes."
+        ],
+        "failureCases": [
+          "Gord's team keeps reveal or trap coverage.",
+          "Natalia is forced to approach through grouped enemies."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "gord",
+    "counterHeroId": "lolita",
+    "reasons": [
+      "Lolita can reduce Gord's poke value by blocking or absorbing projectile-style pressure for her team.",
+      "This gives her team a safer path to walk through Gord's zoning during siege or objectives."
+    ],
+    "counterTypes": [
+      "protect",
+      "range-advantage",
+      "teamfight"
+    ],
+    "proof": [
+      {
+        "id": "lolita-shield-vs-gord-ranged-pressure",
+        "category": "skill-interaction",
+        "priority": "primary",
+        "impact": "medium",
+        "summary": "Gord wants to wear enemies down with ranged skills, while Lolita can protect a team from projectile-based pressure and help them cross space.",
+        "worksBestWhen": [
+          "Lolita faces Gord's casting direction.",
+          "The team walks behind Lolita's shield during siege or objective fights."
+        ],
+        "failureCases": [
+          "Gord angles skills around the shield.",
+          "Gord catches Lolita after her shield timing ends."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "gord",
+    "counterHeroId": "hayabusa",
+    "reasons": [
+      "Hayabusa can bypass Gord's range by approaching from shadows and threatening single-target burst.",
+      "Gord is especially vulnerable when isolated or when his control skill is unavailable."
+    ],
+    "counterTypes": [
+      "mobility",
+      "pickoff",
+      "cooldown-punish"
+    ],
+    "proof": [
+      {
+        "id": "hayabusa-shadow-dive-vs-gord-isolation",
+        "category": "mobility-advantage",
+        "priority": "secondary",
+        "impact": "medium",
+        "summary": "Gord wants predictable front-to-back fights, while Hayabusa can attack from side angles and punish isolated positioning.",
+        "worksBestWhen": [
+          "Hayabusa has vision of Gord's position before diving.",
+          "Gord is separated from tank peel."
+        ],
+        "failureCases": [
+          "Gord stays grouped and Hayabusa's ultimate damage gets split.",
+          "Hayabusa dives without tracking enemy crowd control."
+        ]
+      }
+    ]
+  }
+]

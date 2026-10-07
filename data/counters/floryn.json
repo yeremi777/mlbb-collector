@@ -1,0 +1,152 @@
+[
+  {
+    "targetHeroId": "floryn",
+    "counterHeroId": "baxia",
+    "reasons": [
+      "Baxia directly reduces the value of Floryn's healing-based teamfight impact.",
+      "He can pressure fights while applying anti-heal through his hero mechanics, not only through items."
+    ],
+    "counterTypes": [
+      "anti-heal",
+      "frontline",
+      "anti-sustain"
+    ],
+    "proof": [
+      {
+        "id": "baxia-anti-heal-vs-floryn-healing",
+        "category": "sustain-anti-sustain",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Floryn wants to extend fights with healing, while Baxia reduces shield and HP regeneration effects when his skills hit enemies.",
+        "worksBestWhen": [
+          "Baxia reaches the heroes Floryn is trying to save.",
+          "Baxia starts fights before Floryn's team can reset."
+        ],
+        "failureCases": [
+          "Baxia cannot touch Floryn's protected backline.",
+          "Floryn heals allies outside Baxia's pressure range."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "floryn",
+    "counterHeroId": "franco",
+    "reasons": [
+      "Franco can punish Floryn's lack of escape by hooking or suppressing her before she can safely use her healing tools.",
+      "Suppression is strong when the goal is to remove the healer before the main fight."
+    ],
+    "counterTypes": [
+      "pickoff",
+      "crowd-control-counter",
+      "cooldown-punish"
+    ],
+    "proof": [
+      {
+        "id": "franco-bloody-hunt-vs-floryn-backline",
+        "category": "crowd-control-counter",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Floryn wants safe backline positioning, while Franco can isolate and suppress her long enough for teammates to burst her.",
+        "worksBestWhen": [
+          "Franco has bush control or vision setup.",
+          "The team is ready to follow the hook or suppression."
+        ],
+        "failureCases": [
+          "Franco hooks a tank instead of Floryn.",
+          "Floryn stays behind minions or frontline and avoids pickoff angles."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "floryn",
+    "counterHeroId": "natalia",
+    "reasons": [
+      "Natalia threatens Floryn from fog and bushes, forcing Floryn to play farther back.",
+      "Silence and burst pressure can prevent Floryn from freely casting during a fight."
+    ],
+    "counterTypes": [
+      "pickoff",
+      "vision-control",
+      "burst"
+    ],
+    "proof": [
+      {
+        "id": "natalia-camouflage-vs-floryn-positioning",
+        "category": "vision-awareness",
+        "priority": "primary",
+        "impact": "medium",
+        "summary": "Floryn is vulnerable when isolated, while Natalia can camouflage from bushes and use an enhanced attack to silence and burst a backline support.",
+        "worksBestWhen": [
+          "Natalia controls side bushes and tracks Floryn's rotation.",
+          "Floryn's frontline is separated from her."
+        ],
+        "failureCases": [
+          "Floryn's team reveals or bodyguards Natalia's route.",
+          "Natalia fails to kill quickly and becomes trapped."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "floryn",
+    "counterHeroId": "saber",
+    "reasons": [
+      "Saber can delete Floryn if she steps too far forward without defensive tools.",
+      "His airborne burst is useful against immobile supports."
+    ],
+    "counterTypes": [
+      "pickoff",
+      "burst",
+      "cooldown-punish"
+    ],
+    "proof": [
+      {
+        "id": "saber-triple-sweep-vs-floryn-immobility",
+        "category": "skill-interaction",
+        "priority": "primary",
+        "impact": "medium",
+        "summary": "Floryn needs to stay alive to heal allies, while Saber can lock and burst her during a short pickoff window.",
+        "worksBestWhen": [
+          "Saber finds Floryn before the main fight begins.",
+          "Floryn has no nearby peel or defensive battle spell."
+        ],
+        "failureCases": [
+          "Saber dives into multiple defenders.",
+          "Floryn survives the combo and her team collapses on Saber."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "floryn",
+    "counterHeroId": "hayabusa",
+    "reasons": [
+      "Hayabusa can bypass frontline spacing and pressure Floryn from unexpected angles.",
+      "He is strongest when Floryn's team lacks reliable peel or reveal."
+    ],
+    "counterTypes": [
+      "mobility",
+      "pickoff",
+      "backline-dive"
+    ],
+    "proof": [
+      {
+        "id": "hayabusa-shadow-dive-vs-floryn-backline",
+        "category": "mobility-advantage",
+        "priority": "primary",
+        "impact": "medium",
+        "summary": "Floryn wants to remain protected behind allies, while Hayabusa's shadow mobility lets him reach the backline and force her defensive resources.",
+        "worksBestWhen": [
+          "Hayabusa enters after Floryn's team has used key crowd control.",
+          "Minions and extra targets are limited so his burst focuses correctly."
+        ],
+        "failureCases": [
+          "Hayabusa's damage splits onto other units.",
+          "Floryn is protected by hard crowd control or anti-dive supports."
+        ]
+      }
+    ]
+  }
+]

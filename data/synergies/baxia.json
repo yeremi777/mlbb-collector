@@ -1,0 +1,155 @@
+[
+  {
+    "anchorHeroId": "baxia",
+    "synergyHeroId": "angela",
+    "reasons": [
+      "Angela can attach to Baxia during a fast engage, improving his durability and chase while he disrupts the enemy formation.",
+      "Baxia can enter first while Angela supports his forward position."
+    ],
+    "synergyTypes": [
+      "dive-support",
+      "shielding",
+      "mobility-enable"
+    ],
+    "proof": [
+      {
+        "id": "baxia-angela-attached-fast-engage",
+        "category": "protection",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Baxia starts fights aggressively, and Angela adds attached support during his entry.",
+        "worksBestWhen": [
+          "Angela attaches before Baxia rolls into the fight.",
+          "Baxia's team is close enough to follow his disruption."
+        ],
+        "failureCases": [
+          "Baxia enters too far ahead of the team.",
+          "Angela attaches after Baxia has already absorbed too much damage.",
+          "The enemy disengages after Baxia commits."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "baxia",
+    "synergyHeroId": "floryn",
+    "reasons": [
+      "Floryn can heal Baxia globally while he rotates, invades, or contests objectives away from the backline.",
+      "Baxia's frontline pressure becomes safer when global healing can support his forward plays."
+    ],
+    "synergyTypes": [
+      "healing-sustain",
+      "frontline-enabler"
+    ],
+    "proof": [
+      {
+        "id": "baxia-floryn-global-objective-frontline",
+        "category": "healing-sustain",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Baxia often fights forward, and Floryn can still support him from anywhere.",
+        "worksBestWhen": [
+          "Floryn times Bloom during Baxia's objective contest.",
+          "Baxia uses the heal to stay in front rather than chase too far."
+        ],
+        "failureCases": [
+          "Baxia is isolated and focused by burst damage.",
+          "Floryn heals before Baxia is pressured.",
+          "Baxia enters without nearby follow-up."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "baxia",
+    "synergyHeroId": "rafaela",
+    "reasons": [
+      "Rafaela's healing and movement speed help Baxia keep tempo during rotations and extended frontlining.",
+      "Baxia can pressure faster when Rafaela supports his movement between fights."
+    ],
+    "synergyTypes": [
+      "healing-sustain",
+      "mobility-enable",
+      "frontline-enabler"
+    ],
+    "proof": [
+      {
+        "id": "baxia-rafaela-rotation-speed-sustain",
+        "category": "mobility-enabler",
+        "priority": "secondary",
+        "impact": "medium",
+        "summary": "Baxia pressures the map through movement and durability, while Rafaela supports rotation and sustain.",
+        "worksBestWhen": [
+          "Rafaela stays close enough to speed and heal Baxia before objectives.",
+          "Baxia uses the movement support to arrive first, not to overextend alone."
+        ],
+        "failureCases": [
+          "Baxia rotates alone without team follow-up.",
+          "Rafaela is caught while trying to keep up.",
+          "The enemy avoids direct fights and clears waves instead."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "baxia",
+    "synergyHeroId": "yve",
+    "reasons": [
+      "Baxia can occupy the frontline and slow enemy movement while Yve controls a large fight zone from safer range.",
+      "Baxia helps hold enemies near the area where Yve wants to apply poke and slow pressure."
+    ],
+    "synergyTypes": [
+      "poke-siege",
+      "objective-control",
+      "teamfight-combo"
+    ],
+    "proof": [
+      {
+        "id": "baxia-yve-frontline-zone-control",
+        "category": "objective-control",
+        "priority": "secondary",
+        "impact": "medium",
+        "summary": "Baxia holds space near objectives, and Yve punishes enemies forced to move through that space.",
+        "worksBestWhen": [
+          "Baxia zones the frontline while Yve casts from a safe position.",
+          "Yve has vision and protection before using her large zone control."
+        ],
+        "failureCases": [
+          "Enemies dive Yve before Baxia can hold the front.",
+          "Baxia chases away from Yve's zone.",
+          "The team starts the objective before Yve is positioned."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "baxia",
+    "synergyHeroId": "lunox",
+    "reasons": [
+      "Baxia can front and reduce enemy sustain value while Lunox supplies the damage needed to finish durable targets.",
+      "Lunox benefits when Baxia keeps enemies occupied long enough for her to cast safely."
+    ],
+    "synergyTypes": [
+      "burst-follow-up",
+      "frontline-enabler"
+    ],
+    "proof": [
+      {
+        "id": "baxia-lunox-frontline-burst-follow-up",
+        "category": "engage-follow-up",
+        "priority": "secondary",
+        "impact": "medium",
+        "summary": "Baxia forces the fight and weakens sustain-based frontliners, while Lunox follows with magic burst pressure.",
+        "worksBestWhen": [
+          "Baxia keeps enemies occupied long enough for Lunox to free-hit.",
+          "Lunox positions safely behind Baxia's frontline pressure."
+        ],
+        "failureCases": [
+          "Lunox is forced away before she can follow Baxia's engage.",
+          "Baxia dives beyond Lunox's range.",
+          "The enemy collapses on Lunox instead of hitting Baxia."
+        ]
+      }
+    ]
+  }
+]

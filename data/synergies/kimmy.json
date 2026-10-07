@@ -1,0 +1,152 @@
+[
+  {
+    "anchorHeroId": "kimmy",
+    "synergyHeroId": "lolita",
+    "reasons": [
+      "Lolita protects Kimmy's firing lane by blocking projectile pressure that would force Kimmy to stop poking.",
+      "Lolita's frontline protection gives Kimmy more time to keep moving and dealing continuous damage from behind the formation."
+    ],
+    "synergyTypes": [
+      "backline-protection",
+      "shielding",
+      "peel"
+    ],
+    "proof": [
+      {
+        "id": "kimmy-lolita-projectile-protection",
+        "category": "protection",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Kimmy needs a safe angle to keep firing, while Lolita can protect the front angle and reduce projectile pressure aimed at Kimmy.",
+        "worksBestWhen": [
+          "Lolita stands between Kimmy and the main ranged damage threat.",
+          "Kimmy plays behind Lolita instead of stepping past the shield angle."
+        ],
+        "failureCases": [
+          "Enemy assassins flank around Lolita's shield.",
+          "Lolita uses the shield too early or faces the wrong direction."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "kimmy",
+    "synergyHeroId": "angela",
+    "reasons": [
+      "Angela can attach to Kimmy during enemy dive windows, giving Kimmy shield and healing support while she continues moving.",
+      "Angela's slow support helps Kimmy kite nearby threats and maintain continuous damage uptime."
+    ],
+    "synergyTypes": [
+      "shielding",
+      "healing-sustain",
+      "protect"
+    ],
+    "proof": [
+      {
+        "id": "kimmy-angela-heartguard-kite-support",
+        "category": "shielding",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Angela gives Kimmy extra safety during enemy commit windows, letting Kimmy keep fighting while protected by shield, heal, and slow support.",
+        "worksBestWhen": [
+          "Angela saves her attach for the enemy's real dive.",
+          "Kimmy keeps moving while Angela slows nearby threats."
+        ],
+        "failureCases": [
+          "Angela attaches after Kimmy is already controlled or burst down.",
+          "Enemy burst waits until Angela's shield value is gone."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "kimmy",
+    "synergyHeroId": "mathilda",
+    "reasons": [
+      "Mathilda gives Kimmy an extra reposition option when enemies dive her firing angle.",
+      "Mathilda's shield and movement support help Kimmy keep attacking after adjusting her spacing."
+    ],
+    "synergyTypes": [
+      "mobility-enable",
+      "shielding",
+      "peel"
+    ],
+    "proof": [
+      {
+        "id": "kimmy-mathilda-guiding-wind-reposition",
+        "category": "mobility-enabler",
+        "priority": "primary",
+        "impact": "medium",
+        "summary": "Kimmy depends on spacing for damage uptime, and Mathilda can help her reposition without fully giving up the fight.",
+        "worksBestWhen": [
+          "Mathilda stays close enough for Kimmy to use the mobility option.",
+          "Kimmy uses the reposition to maintain range rather than chase too far."
+        ],
+        "failureCases": [
+          "Kimmy misses the reposition timing.",
+          "Mathilda dives too deep and leaves Kimmy without peel."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "kimmy",
+    "synergyHeroId": "tigreal",
+    "reasons": [
+      "Tigreal can group and stun enemies, giving Kimmy easier targets for sustained spray damage and ultimate follow-up.",
+      "Tigreal's hard engage forces enemies to answer the frontline instead of freely diving Kimmy."
+    ],
+    "synergyTypes": [
+      "engage-follow-up",
+      "aoe-follow-up",
+      "teamfight-combo"
+    ],
+    "proof": [
+      {
+        "id": "kimmy-tigreal-grouped-engage-follow-up",
+        "category": "engage-follow-up",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Tigreal creates a grouped crowd-control window, while Kimmy follows from range with continuous damage.",
+        "worksBestWhen": [
+          "Tigreal engages after Kimmy is already in follow-up range.",
+          "Kimmy saves her stronger damage window for enemies held by Tigreal's crowd control."
+        ],
+        "failureCases": [
+          "Tigreal engages too far ahead of Kimmy.",
+          "Enemy backline avoids the grouped engage and dives Kimmy directly."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "kimmy",
+    "synergyHeroId": "floryn",
+    "reasons": [
+      "Floryn can support Kimmy even when Kimmy is separated in mid or gold lane positioning.",
+      "Global healing helps Kimmy survive poke, dive, or low-health retreat windows."
+    ],
+    "synergyTypes": [
+      "healing-sustain",
+      "protect",
+      "shielding"
+    ],
+    "proof": [
+      {
+        "id": "kimmy-floryn-global-heal-spacing-support",
+        "category": "healing-sustain",
+        "priority": "primary",
+        "impact": "medium",
+        "summary": "Kimmy often plays around spacing and chip damage, and Floryn's global heal can keep Kimmy alive without requiring tight formation.",
+        "worksBestWhen": [
+          "Floryn saves her ultimate for enemy commit or heavy poke.",
+          "Kimmy retreats while still staying within a safe damage angle."
+        ],
+        "failureCases": [
+          "Kimmy is burst down before the heal matters.",
+          "Anti-heal or heavy burst reduces the value of sustain."
+        ]
+      }
+    ]
+  }
+]

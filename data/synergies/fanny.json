@@ -1,0 +1,154 @@
+[
+  {
+    "anchorHeroId": "fanny",
+    "synergyHeroId": "angela",
+    "reasons": [
+      "Angela can support Fanny during high-risk dives without needing to physically keep up with her cable movement.",
+      "Fanny benefits from Angela's protection when she commits into the enemy backline for a burst window."
+    ],
+    "synergyTypes": [
+      "dive-support",
+      "shielding",
+      "healing-sustain"
+    ],
+    "proof": [
+      {
+        "id": "angela-attach-for-fanny-high-mobility-dive",
+        "category": "protection",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Angela follows Fanny's dive through her attachment mechanic, adding protection and sustain during Fanny's burst window.",
+        "worksBestWhen": [
+          "Angela attaches when Fanny is ready to commit.",
+          "Fanny has enough energy and wall path to exit after the dive."
+        ],
+        "failureCases": [
+          "Fanny runs out of energy after Angela joins.",
+          "Enemy suppression or airborne control interrupts Fanny's movement."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "fanny",
+    "synergyHeroId": "kaja",
+    "reasons": [
+      "Kaja can lock a priority target, giving Fanny a predictable target to burst without chasing through the whole fight.",
+      "Fanny can use her mobility to follow Kaja's target lock and finish the isolated enemy quickly."
+    ],
+    "synergyTypes": [
+      "pickoff-combo",
+      "setup-combo",
+      "burst-follow-up"
+    ],
+    "proof": [
+      {
+        "id": "kaja-lock-for-fanny-burst-pickoff",
+        "category": "setup-combo",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Kaja isolates and controls a target, while Fanny uses her mobility and burst to finish the target quickly.",
+        "worksBestWhen": [
+          "Kaja locks a squishy target near terrain Fanny can cable through.",
+          "Fanny waits for the confirmed lock before diving."
+        ],
+        "failureCases": [
+          "Kaja pulls a durable target.",
+          "Fanny's cable path is blocked or energy is too low."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "fanny",
+    "synergyHeroId": "franco",
+    "reasons": [
+      "Franco can create a single-target catch, allowing Fanny to quickly finish the isolated enemy.",
+      "Fanny can stay out of vision until Franco confirms the pickoff angle."
+    ],
+    "synergyTypes": [
+      "pickoff-combo",
+      "cc-chain",
+      "burst-follow-up"
+    ],
+    "proof": [
+      {
+        "id": "franco-catch-for-fanny-fast-burst",
+        "category": "pickoff-combo",
+        "priority": "primary",
+        "impact": "medium",
+        "summary": "Franco starts the pickoff, while Fanny follows with fast burst once the target is controlled or pulled out of position.",
+        "worksBestWhen": [
+          "Franco catches a target near a wall path.",
+          "Fanny waits outside vision until the catch lands."
+        ],
+        "failureCases": [
+          "Franco hooks a frontline target.",
+          "Fanny enters before Franco confirms the catch."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "fanny",
+    "synergyHeroId": "mathilda",
+    "reasons": [
+      "Mathilda can support aggressive movement and provide extra safety around Fanny's dive routes.",
+      "Fanny benefits from additional mobility and protection options when coordinating a fast entry or exit."
+    ],
+    "synergyTypes": [
+      "mobility-enable",
+      "dive-support",
+      "shielding"
+    ],
+    "proof": [
+      {
+        "id": "mathilda-mobility-support-for-fanny-dive-route",
+        "category": "mobility-enabler",
+        "priority": "secondary",
+        "impact": "medium",
+        "summary": "Mathilda improves dive coordination by adding mobility and protection options around Fanny's fast entry or exit.",
+        "worksBestWhen": [
+          "Mathilda supports Fanny's intended route instead of forcing a separate engage.",
+          "Fanny keeps enough energy to disengage after using the extra support."
+        ],
+        "failureCases": [
+          "The team cannot follow Fanny's fast tempo.",
+          "Enemy hard control waits for Fanny's landing path."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "fanny",
+    "synergyHeroId": "floryn",
+    "reasons": [
+      "Floryn can support Fanny from anywhere on the map, which fits Fanny's high-mobility dive pattern.",
+      "Global healing can help Fanny survive after a risky cable dive, especially when she needs to exit after bursting a target."
+    ],
+    "synergyTypes": [
+      "healing-sustain",
+      "dive-support",
+      "cooldown-dependent"
+    ],
+    "proof": [
+      {
+        "id": "floryn-global-heal-for-fanny-cable-dive",
+        "category": "healing-sustain",
+        "priority": "secondary",
+        "impact": "medium",
+        "summary": "Fanny can dive far from her team, while Floryn's global heal can still reach her during the commit or escape window.",
+        "worksBestWhen": [
+          "Floryn saves global heal for Fanny's real dive timing.",
+          "Fanny has enough energy to exit after receiving the heal.",
+          "Fanny targets isolated or fragile enemies instead of diving into full crowd control."
+        ],
+        "failureCases": [
+          "Fanny is suppressed or chain-controlled before the heal matters.",
+          "Fanny runs out of energy after committing.",
+          "Floryn's global heal is used too early or on another fight."
+        ]
+      }
+    ]
+  }
+]

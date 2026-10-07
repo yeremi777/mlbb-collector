@@ -1,0 +1,162 @@
+[
+  {
+    "anchorHeroId": "alice",
+    "synergyHeroId": "tigreal",
+    "reasons": [
+      "Tigreal can group enemies into one fight area, giving Alice a strong entry point for AoE pressure.",
+      "Alice can follow Tigreal's control window with Crimson Gleam entry and Throne of Ruin disruption."
+    ],
+    "synergyTypes": [
+      "cc-chain",
+      "engage-follow-up",
+      "teamfight-combo"
+    ],
+    "proof": [
+      {
+        "id": "tigreal-implosion-sets-alice-teamfight-entry",
+        "category": "crowd-control-chain",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Tigreal groups and stuns enemies, while Alice enters the cluster to apply AoE damage, sustain, and control.",
+        "worksBestWhen": [
+          "Tigreal engages before Alice commits.",
+          "Alice has her entry and main fight tools ready.",
+          "The fight happens around an objective or chokepoint."
+        ],
+        "failureCases": [
+          "Enemies spread out before Tigreal engages.",
+          "Alice arrives after the control window ends.",
+          "Enemy burst or anti-heal cuts down Alice's sustain after entry."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "alice",
+    "synergyHeroId": "atlas",
+    "reasons": [
+      "Atlas can pull multiple enemies together, creating a grouped target zone for Alice's AoE follow-up.",
+      "Alice can use the engage window to enter and pressure several enemies at once."
+    ],
+    "synergyTypes": [
+      "engage-follow-up",
+      "cc-chain",
+      "teamfight-combo"
+    ],
+    "proof": [
+      {
+        "id": "atlas-fatal-links-groups-enemies-for-alice",
+        "category": "engage-follow-up",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Atlas creates a multi-target engage, and Alice follows into the pulled area with sustained AoE pressure.",
+        "worksBestWhen": [
+          "Atlas catches several enemies in the engage.",
+          "Alice positions close enough to follow instantly.",
+          "The team focuses the grouped targets after Alice enters."
+        ],
+        "failureCases": [
+          "Atlas catches only one low-value target.",
+          "Alice enters before Atlas confirms the pull.",
+          "Enemy disengage breaks the teamfight formation."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "alice",
+    "synergyHeroId": "khufra",
+    "reasons": [
+      "Khufra can control enemy movement and punish dash-based escape attempts near Alice's fight zone.",
+      "Alice benefits when enemies are kept near her AoE pressure instead of freely repositioning."
+    ],
+    "synergyTypes": [
+      "cc-chain",
+      "setup-combo",
+      "teamfight-combo"
+    ],
+    "proof": [
+      {
+        "id": "khufra-control-holds-targets-for-alice-zone",
+        "category": "crowd-control-chain",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Khufra disrupts enemy movement with knock-up, wall-slam, and anti-mobility pressure, while Alice follows with AoE sustain and control.",
+        "worksBestWhen": [
+          "Khufra engages near terrain or a contested objective.",
+          "Alice follows during Khufra's control window.",
+          "Enemy heroes rely on movement skills to escape Alice's zone."
+        ],
+        "failureCases": [
+          "There is no useful terrain for the engage.",
+          "Khufra uses his control defensively before Alice enters.",
+          "Enemies avoid grouping around Alice's fight area."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "alice",
+    "synergyHeroId": "angela",
+    "reasons": [
+      "Angela can attach to Alice and shield her during a deep engage.",
+      "Alice can use the added protection to stay inside the enemy formation and continue applying AoE pressure."
+    ],
+    "synergyTypes": [
+      "shielding",
+      "dive-support",
+      "healing-sustain"
+    ],
+    "proof": [
+      {
+        "id": "angela-heartguard-supports-alice-deep-entry",
+        "category": "protection",
+        "priority": "secondary",
+        "impact": "high",
+        "summary": "Alice commits into dangerous fight zones, and Angela can shield and support her during that deep-entry window.",
+        "worksBestWhen": [
+          "Angela attaches before Alice commits into the enemy formation.",
+          "Alice enters with key cooldowns ready.",
+          "The team follows while Alice draws pressure."
+        ],
+        "failureCases": [
+          "Alice enters before Angela can attach.",
+          "Enemy burst breaks the shield before Alice stabilizes.",
+          "Alice dives beyond follow-up damage and is isolated after the shield ends."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "alice",
+    "synergyHeroId": "floryn",
+    "reasons": [
+      "Floryn can support Alice during deep engages because Bloom can heal allied heroes regardless of their map position.",
+      "Alice benefits from global healing when she repositions into the enemy backline or fights beyond normal support range."
+    ],
+    "synergyTypes": [
+      "healing-sustain",
+      "shielding",
+      "dive-support"
+    ],
+    "proof": [
+      {
+        "id": "floryn-bloom-supports-alice-deep-fight",
+        "category": "healing-sustain",
+        "priority": "secondary",
+        "impact": "medium",
+        "summary": "Alice may dive beyond normal support range, while Floryn can still stabilize her with global healing and support value during the commit.",
+        "worksBestWhen": [
+          "Floryn saves Bloom for Alice's real engage or objective fight.",
+          "Alice has enough HP and cooldowns to keep fighting after the heal lands.",
+          "The team times follow-up around Alice's deep pressure."
+        ],
+        "failureCases": [
+          "Alice is burst before Bloom can stabilize her.",
+          "Floryn uses Bloom before Alice commits.",
+          "Anti-heal or heavy burst reduces the sustain value."
+        ]
+      }
+    ]
+  }
+]

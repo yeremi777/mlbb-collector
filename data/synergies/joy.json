@@ -1,0 +1,162 @@
+[
+  {
+    "anchorHeroId": "joy",
+    "synergyHeroId": "angela",
+    "reasons": [
+      "Angela can attach to Joy and provide protection while Joy dives through enemy formations.",
+      "Joy's high mobility gives Angela an aggressive host that can carry support effects into the backline."
+    ],
+    "synergyTypes": [
+      "shielding",
+      "dive-support",
+      "protect"
+    ],
+    "proof": [
+      {
+        "id": "angela-shields-joy-dash-ultimate-window",
+        "category": "shielding",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Angela shields and supports Joy during her dash and ultimate window, helping Joy survive aggressive backline pressure.",
+        "worksBestWhen": [
+          "Angela attaches before Joy fully commits.",
+          "Joy has a clear dash path and rhythm timing.",
+          "Joy has valid targets to continue her sequence."
+        ],
+        "failureCases": [
+          "Joy fails to continue her dash chain.",
+          "Angela attaches after Joy has already taken lethal damage.",
+          "Enemy suppression or burst stops Joy before her ultimate value."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "joy",
+    "synergyHeroId": "floryn",
+    "reasons": [
+      "Floryn's global healing can support Joy even when Joy dives far from the backline.",
+      "Joy's extended movement-based fight pattern benefits from healing during the middle of the dive."
+    ],
+    "synergyTypes": [
+      "healing-sustain",
+      "dive-support",
+      "teamfight-combo"
+    ],
+    "proof": [
+      {
+        "id": "floryn-bloom-supports-joy-dive-window",
+        "category": "healing-sustain",
+        "priority": "secondary",
+        "impact": "high",
+        "summary": "Floryn helps Joy survive long enough to complete her dash rhythm and ultimate damage window.",
+        "worksBestWhen": [
+          "Floryn times Bloom after Joy is committed and taking damage.",
+          "Joy enters with a clear route through enemy heroes.",
+          "Joy has enough rhythm timing to activate full value."
+        ],
+        "failureCases": [
+          "Joy is burst before Bloom matters.",
+          "Joy misses dash timing and cannot activate full value.",
+          "Enemy anti-heal weakens the sustain."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "joy",
+    "synergyHeroId": "mathilda",
+    "reasons": [
+      "Mathilda can help Joy enter or reset position with mobility support.",
+      "Mathilda's shield helps Joy survive before she completes her rhythm-based damage window."
+    ],
+    "synergyTypes": [
+      "mobility-enable",
+      "shielding",
+      "dive-support"
+    ],
+    "proof": [
+      {
+        "id": "mathilda-guiding-wind-helps-joy-entry",
+        "category": "mobility-enabler",
+        "priority": "secondary",
+        "impact": "medium",
+        "summary": "Mathilda improves Joy's entry and survivability before Joy starts her main dash sequence.",
+        "worksBestWhen": [
+          "Mathilda does not force Joy into a bad angle.",
+          "Joy uses the mobility support to reach valid dash targets.",
+          "Joy keeps enough cooldown timing to continue her sequence."
+        ],
+        "failureCases": [
+          "Joy loses rhythm after taking the dash.",
+          "Mathilda's support expires before Joy commits.",
+          "Enemy control catches Joy before she can continue."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "joy",
+    "synergyHeroId": "atlas",
+    "reasons": [
+      "Atlas can group enemies, giving Joy more targets to dash through and damage during her ultimate window.",
+      "Joy can follow Atlas's engage after enemies are pulled into a predictable area."
+    ],
+    "synergyTypes": [
+      "setup-combo",
+      "teamfight-combo",
+      "aoe-follow-up"
+    ],
+    "proof": [
+      {
+        "id": "atlas-groups-targets-for-joy-dash-chain",
+        "category": "setup-combo",
+        "priority": "secondary",
+        "impact": "medium",
+        "summary": "Atlas creates a grouped teamfight, while Joy uses the clustered enemies to continue her dash and AoE damage pattern.",
+        "worksBestWhen": [
+          "Atlas engages after Joy is close enough to enter.",
+          "Joy waits for the grouped window before committing ultimate pressure.",
+          "Joy has a safe path through the grouped enemies."
+        ],
+        "failureCases": [
+          "Atlas engages while Joy is too far away.",
+          "Enemies disengage after Atlas's control ends.",
+          "Joy dashes into crowd control before her damage window."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "joy",
+    "synergyHeroId": "chip",
+    "reasons": [
+      "Chip's portals can bring Joy or her team into a fight quickly, which helps Joy join cross-map skirmishes.",
+      "Joy benefits from sudden team arrival because enemies have less time to spread out before she starts her dash pattern."
+    ],
+    "synergyTypes": [
+      "mobility-enable",
+      "dive-support",
+      "teamfight-combo"
+    ],
+    "proof": [
+      {
+        "id": "chip-portal-delivers-joy-to-skirmish",
+        "category": "mobility-enabler",
+        "priority": "condition",
+        "impact": "medium",
+        "summary": "Chip enables fast fight access through portals, giving Joy a faster route into skirmishes where she can dash through enemies.",
+        "worksBestWhen": [
+          "The portal target is a real winning fight.",
+          "Joy enters after teammates arrive, not alone into five enemies.",
+          "Joy has valid dash targets after arriving."
+        ],
+        "failureCases": [
+          "The portal delivers Joy into heavy crowd control.",
+          "Joy has no valid targets to continue her dash chain.",
+          "Teammates do not use the portal together."
+        ]
+      }
+    ]
+  }
+]

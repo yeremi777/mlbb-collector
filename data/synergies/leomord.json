@@ -1,0 +1,157 @@
+[
+  {
+    "anchorHeroId": "leomord",
+    "synergyHeroId": "angela",
+    "reasons": [
+      "Angela can attach to Leomord during his mounted engage, giving him extra protection while he dives.",
+      "Leomord's chase style benefits from Angela's support because he often fights inside enemy territory."
+    ],
+    "synergyTypes": [
+      "shielding",
+      "dive-support",
+      "mobility-enable"
+    ],
+    "proof": [
+      {
+        "id": "angela-heartguard-supports-leomord-mounted-engage",
+        "category": "shielding",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Leomord commits with Barbiel, while Angela adds shield and attached support to help him survive the chase.",
+        "worksBestWhen": [
+          "Angela saves Heartguard for Leomord's mounted engage.",
+          "Leomord enters after the enemy has spent key control."
+        ],
+        "failureCases": [
+          "Angela is interrupted before attaching.",
+          "Leomord dives too deep without cleanup targets.",
+          "Enemy anti-heal or burst removes the shield value quickly."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "leomord",
+    "synergyHeroId": "floryn",
+    "reasons": [
+      "Floryn can heal Leomord globally while he chases deep with Barbiel.",
+      "Leomord benefits from mid-fight sustain because his cleanup pattern depends on staying alive through the first counter-hit."
+    ],
+    "synergyTypes": [
+      "healing-sustain",
+      "dive-support",
+      "cooldown-dependent"
+    ],
+    "proof": [
+      {
+        "id": "floryn-global-heal-supports-leomord-chase",
+        "category": "healing-sustain",
+        "priority": "secondary",
+        "impact": "medium",
+        "summary": "Leomord extends the fight with mounted chase, while Floryn gives global healing to keep the cleanup attempt alive.",
+        "worksBestWhen": [
+          "Floryn holds Bloom for Leomord's commit.",
+          "Leomord dives after enemies are already damaged."
+        ],
+        "failureCases": [
+          "Leomord is chain-controlled before healing lands.",
+          "Floryn uses ultimate too early.",
+          "Leomord enters against full-health grouped enemies."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "leomord",
+    "synergyHeroId": "tigreal",
+    "reasons": [
+      "Tigreal can start the fight and lower enemy mobility before Leomord enters for cleanup.",
+      "Leomord can follow Tigreal's engage once enemies are grouped or displaced."
+    ],
+    "synergyTypes": [
+      "engage-follow-up",
+      "frontline-enabler",
+      "teamfight-combo"
+    ],
+    "proof": [
+      {
+        "id": "tigreal-engage-sets-leomord-cleanup",
+        "category": "engage-follow-up",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Tigreal creates the teamfight opening, while Leomord enters after the control window to chase damaged enemies.",
+        "worksBestWhen": [
+          "Tigreal engages before Leomord mounts in.",
+          "Leomord waits for enemy HP to drop before overcommitting."
+        ],
+        "failureCases": [
+          "Leomord enters before the setup and gets focused.",
+          "Tigreal catches only durable targets.",
+          "Enemy disengages before Leomord reaches them."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "leomord",
+    "synergyHeroId": "carmilla",
+    "reasons": [
+      "Carmilla's link can help Leomord's team pressure multiple enemies during Leomord's cleanup timing.",
+      "Leomord's cleave and chase benefit when enemies are forced to respect shared damage and control pressure."
+    ],
+    "synergyTypes": [
+      "teamfight-combo",
+      "damage-amplification",
+      "cc-chain"
+    ],
+    "proof": [
+      {
+        "id": "carmilla-link-supports-leomord-cleanup-fight",
+        "category": "teamfight-combo",
+        "priority": "secondary",
+        "impact": "medium",
+        "summary": "Carmilla links enemies in a fight, while Leomord uses mounted mobility to pressure the linked group and chase low-health targets.",
+        "worksBestWhen": [
+          "Carmilla links multiple enemies before Leomord commits.",
+          "Leomord enters after allied damage has softened the group."
+        ],
+        "failureCases": [
+          "Carmilla misses the link.",
+          "Leomord chases one target away from the linked fight.",
+          "Enemy burst kills Leomord before cleanup begins."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "leomord",
+    "synergyHeroId": "minotaur",
+    "reasons": [
+      "Minotaur gives Leomord a stable front line and healing support during extended fights.",
+      "Minotaur's control can create the opening Leomord needs to enter with Barbiel."
+    ],
+    "synergyTypes": [
+      "frontline-enabler",
+      "healing-sustain",
+      "cc-chain"
+    ],
+    "proof": [
+      {
+        "id": "minotaur-frontline-enables-leomord-entry",
+        "category": "frontline-enabler",
+        "priority": "secondary",
+        "impact": "medium",
+        "summary": "Minotaur absorbs and disrupts the fight, while Leomord follows once enemies are controlled or damaged enough to chase.",
+        "worksBestWhen": [
+          "Minotaur starts the fight near an objective or choke.",
+          "Leomord waits for Minotaur's control before committing."
+        ],
+        "failureCases": [
+          "Minotaur and Leomord dive different targets.",
+          "Leomord enters before Minotaur has control ready.",
+          "Enemy kites backward and avoids Leomord's mounted pressure."
+        ]
+      }
+    ]
+  }
+]

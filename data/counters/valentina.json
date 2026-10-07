@@ -1,0 +1,157 @@
+[
+  {
+    "targetHeroId": "valentina",
+    "counterHeroId": "popol-and-kupa",
+    "reasons": [
+      "Popol and Kupa's value depends on the Popol-Kupa unit relationship, traps, and ongoing kit synergy.",
+      "Valentina copying only the ultimate is less threatening than copying a simple high-impact teamfight ultimate."
+    ],
+    "counterTypes": [
+      "low-copy-value",
+      "vision-control",
+      "pickoff"
+    ],
+    "proof": [
+      {
+        "id": "popol-and-kupa-low-copy-value-vs-valentina",
+        "category": "skill-interaction",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Valentina wants to copy a high-impact ultimate, while Popol and Kupa's full value depends on Kupa, traps, and kit synergy that is harder to reproduce through only the copied ultimate.",
+        "worksBestWhen": [
+          "Popol uses traps to control Valentina's dash paths.",
+          "The team avoids giving Valentina easier high-impact ultimates from other heroes."
+        ],
+        "failureCases": [
+          "Valentina copies a stronger ultimate from another enemy.",
+          "Popol is caught before trap control matters.",
+          "Valentina snowballs through lane pressure instead of copy value."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "valentina",
+    "counterHeroId": "natan",
+    "reasons": [
+      "Natan's value depends on sustained attack pattern, scaling, and Reverse-Clone synergy.",
+      "Valentina's copied ultimate does not automatically give her Natan's full attack-speed DPS identity."
+    ],
+    "counterTypes": [
+      "low-copy-value",
+      "range-advantage",
+      "damage-scaling"
+    ],
+    "proof": [
+      {
+        "id": "natan-low-copy-value-vs-valentina",
+        "category": "skill-interaction",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Valentina wants copied ultimates that give immediate fight impact, while Natan's ultimate value is tied to his own basic-attack and clone DPS pattern.",
+        "worksBestWhen": [
+          "Natan keeps spacing and forces Valentina to fight at range.",
+          "Natan's team avoids giving Valentina better ultimates to copy."
+        ],
+        "failureCases": [
+          "Valentina copies a stronger ultimate from another hero.",
+          "Natan is caught before scaling.",
+          "Valentina wins early skirmishes before Natan has damage."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "valentina",
+    "counterHeroId": "fanny",
+    "reasons": [
+      "Fanny's real value depends heavily on cable mobility and Prey Mark setup, not only the ultimate button.",
+      "Valentina copying Cut Throat alone is less valuable without Fanny's full mobility kit."
+    ],
+    "counterTypes": [
+      "low-copy-value",
+      "mobility",
+      "pickoff"
+    ],
+    "proof": [
+      {
+        "id": "fanny-low-copy-value-vs-valentina",
+        "category": "skill-interaction",
+        "priority": "secondary",
+        "impact": "medium",
+        "summary": "Valentina wants easy copied-ultimate value, while Fanny's ultimate depends on setup that Valentina cannot fully reproduce without Steel Cable and Fanny's full kit.",
+        "worksBestWhen": [
+          "Fanny pressures Valentina from unexpected angles.",
+          "The draft avoids giving Valentina easier copied ultimates."
+        ],
+        "failureCases": [
+          "Fanny misplays energy or cable path.",
+          "Valentina copies a stronger ultimate from another hero.",
+          "Valentina catches Fanny after she commits."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "valentina",
+    "counterHeroId": "aamon",
+    "reasons": [
+      "Aamon's ultimate is less reliable as a copied tool because its best damage depends on shard setup and target HP condition.",
+      "Aamon can pressure Valentina as a burst assassin when she is isolated."
+    ],
+    "counterTypes": [
+      "low-copy-value",
+      "burst",
+      "pickoff"
+    ],
+    "proof": [
+      {
+        "id": "aamon-low-copy-value-vs-valentina",
+        "category": "skill-interaction",
+        "priority": "secondary",
+        "impact": "medium",
+        "summary": "Valentina wants a copied ultimate that works immediately, while Aamon's Endless Shards gains value from shard setup and execution timing.",
+        "worksBestWhen": [
+          "Aamon attacks Valentina after she uses mobility.",
+          "The team avoids giving Valentina stronger copy targets."
+        ],
+        "failureCases": [
+          "Valentina copies another high-impact ultimate.",
+          "Aamon fails to build execution pressure.",
+          "Valentina groups tightly with peel."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "valentina",
+    "counterHeroId": "paquito",
+    "reasons": [
+      "Paquito's value comes from repeated skill chaining and passive-enhanced combos, not only his ultimate.",
+      "This makes copied ultimate value more execution-dependent than simple teamfight ultimates."
+    ],
+    "counterTypes": [
+      "low-copy-value",
+      "burst",
+      "anti-mage"
+    ],
+    "proof": [
+      {
+        "id": "paquito-low-copy-value-vs-valentina",
+        "category": "execution-difficulty",
+        "priority": "condition",
+        "impact": "medium",
+        "summary": "Valentina wants simple high-impact ultimates, while Paquito's threat depends on full combo rhythm that copied ultimate alone does not reproduce.",
+        "worksBestWhen": [
+          "Paquito pressures Valentina before she controls the lane.",
+          "The team avoids drafting easy copied ultimates beside him."
+        ],
+        "failureCases": [
+          "Valentina copies a stronger ultimate from another hero.",
+          "Paquito cannot reach Valentina.",
+          "Valentina pokes him down before he commits."
+        ]
+      }
+    ]
+  }
+]

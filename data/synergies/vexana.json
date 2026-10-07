@@ -1,0 +1,157 @@
+[
+  {
+    "anchorHeroId": "vexana",
+    "synergyHeroId": "tigreal",
+    "reasons": [
+      "Tigreal can group and knock up enemies, giving Vexana a clean window to land Eternal Guard and follow-up magic damage.",
+      "Vexana can add airborne follow-up and summon pressure after Tigreal starts the teamfight."
+    ],
+    "synergyTypes": [
+      "engage-follow-up",
+      "cc-chain",
+      "teamfight-combo"
+    ],
+    "proof": [
+      {
+        "id": "vexana-follows-tigreal-grouped-control",
+        "category": "engage-follow-up",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Tigreal creates the grouped crowd-control setup, while Vexana adds airborne follow-up and summon pressure.",
+        "worksBestWhen": [
+          "Vexana waits for Tigreal's engage before casting ultimate.",
+          "The fight happens in a narrow area."
+        ],
+        "failureCases": [
+          "Tigreal engages out of Vexana's range.",
+          "Vexana casts too early.",
+          "Enemy assassins dive Vexana before the combo."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "vexana",
+    "synergyHeroId": "atlas",
+    "reasons": [
+      "Atlas can pull enemies together, making Vexana's area control and Eternal Guard placement easier to convert.",
+      "Vexana can punish the grouped pull area with magic control and summon pressure."
+    ],
+    "synergyTypes": [
+      "setup-combo",
+      "teamfight-combo",
+      "aoe-follow-up"
+    ],
+    "proof": [
+      {
+        "id": "atlas-pull-sets-vexana-eternal-guard",
+        "category": "setup-combo",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Atlas compresses the enemy formation, while Vexana punishes the grouped area with airborne and summon pressure.",
+        "worksBestWhen": [
+          "Atlas catches multiple enemies.",
+          "Vexana keeps enough distance to avoid counter-engage."
+        ],
+        "failureCases": [
+          "Atlas pulls enemies away from Vexana.",
+          "Vexana is crowd-controlled before casting.",
+          "Enemy disengage separates the grouped targets."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "vexana",
+    "synergyHeroId": "johnson",
+    "reasons": [
+      "Johnson's crash can force a fight start, giving Vexana a direct target area for Eternal Guard and follow-up control.",
+      "Vexana can follow the crash with area control while enemies are disrupted."
+    ],
+    "synergyTypes": [
+      "setup-combo",
+      "burst-follow-up",
+      "teamfight-combo"
+    ],
+    "proof": [
+      {
+        "id": "johnson-crash-gives-vexana-cast-window",
+        "category": "setup-combo",
+        "priority": "secondary",
+        "impact": "medium",
+        "summary": "Johnson creates the sudden engage, while Vexana follows with area control and summon pressure.",
+        "worksBestWhen": [
+          "Johnson crashes into grouped or priority targets.",
+          "Vexana is close enough to cast immediately."
+        ],
+        "failureCases": [
+          "Johnson crashes too far from Vexana.",
+          "Vexana lacks vision and arrives late.",
+          "The enemy collapses onto Vexana after Johnson commits."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "vexana",
+    "synergyHeroId": "franco",
+    "reasons": [
+      "Franco can isolate one enemy, allowing Vexana to layer control and summon damage on a stationary target.",
+      "Vexana can save Eternal Guard for Franco's confirmed catch."
+    ],
+    "synergyTypes": [
+      "pickoff-combo",
+      "cc-chain",
+      "burst-follow-up"
+    ],
+    "proof": [
+      {
+        "id": "franco-catch-enables-vexana-eternal-guard",
+        "category": "pickoff-combo",
+        "priority": "primary",
+        "impact": "medium",
+        "summary": "Franco catches or suppresses a target, while Vexana adds magic burst and Eternal Guard follow-up.",
+        "worksBestWhen": [
+          "Franco pulls a priority target into Vexana range.",
+          "Vexana saves ultimate for confirmed catch."
+        ],
+        "failureCases": [
+          "Franco hooks a tank.",
+          "Vexana casts late after the target escapes.",
+          "The enemy counter-engages on Vexana."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "vexana",
+    "synergyHeroId": "belerick",
+    "reasons": [
+      "Belerick can taunt and hold enemies near him, giving Vexana time to land delayed area skills and summon pressure.",
+      "Vexana can cast from safer distance while Belerick disrupts enemies in front."
+    ],
+    "synergyTypes": [
+      "frontline-enabler",
+      "cc-chain",
+      "teamfight-combo"
+    ],
+    "proof": [
+      {
+        "id": "belerick-frontline-enables-vexana-control",
+        "category": "frontline-enabler",
+        "priority": "secondary",
+        "impact": "medium",
+        "summary": "Belerick disrupts enemies in front, while Vexana follows with magic control from safer distance.",
+        "worksBestWhen": [
+          "Belerick engages before Vexana commits cooldowns.",
+          "Vexana keeps backline spacing."
+        ],
+        "failureCases": [
+          "Belerick is ignored and enemies dive Vexana.",
+          "Vexana casts into empty space.",
+          "The fight moves away from Eternal Guard."
+        ]
+      }
+    ]
+  }
+]

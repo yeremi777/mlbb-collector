@@ -1,0 +1,152 @@
+[
+  {
+    "targetHeroId": "estes",
+    "counterHeroId": "baxia",
+    "reasons": [
+      "Baxia directly reduces shield and HP regeneration effects when his skills hit enemies.",
+      "This weakens the main value Estes brings in grouped fights."
+    ],
+    "counterTypes": [
+      "anti-sustain",
+      "anti-heal",
+      "frontline"
+    ],
+    "proof": [
+      {
+        "id": "baxia-anti-regen-vs-estes-healing",
+        "category": "sustain-anti-sustain",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Estes wants to win through repeated healing, while Baxia's kit reduces enemy HP regeneration and shield value during fights.",
+        "worksBestWhen": [
+          "Baxia consistently applies skill hits to Estes's healed targets.",
+          "The team follows up while the anti-regen window is active."
+        ],
+        "failureCases": [
+          "Baxia cannot reach the healed core.",
+          "Estes's team disengages until the pressure window ends."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "estes",
+    "counterHeroId": "luo-yi",
+    "reasons": [
+      "Luo Yi punishes teams that group tightly around Estes.",
+      "Yin-Yang Reaction can pull and stun marked enemies, making clustered healing formations risky."
+    ],
+    "counterTypes": [
+      "teamfight",
+      "positioning-requirement",
+      "crowd-control-counter"
+    ],
+    "proof": [
+      {
+        "id": "luo-yi-yin-yang-reaction-vs-estes-grouping",
+        "category": "teamfight-role-counter",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Estes wants allies close enough to benefit from team healing, while Luo Yi punishes close spacing with Yin-Yang Reaction control and burst.",
+        "worksBestWhen": [
+          "Estes's team groups tightly around objectives.",
+          "Luo Yi has clear angles to apply opposite marks."
+        ],
+        "failureCases": [
+          "Estes's team spreads properly.",
+          "Luo Yi misses mark timing or lacks follow-up damage."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "estes",
+    "counterHeroId": "carmilla",
+    "reasons": [
+      "Carmilla punishes grouped enemies, which is the same formation Estes prefers.",
+      "Curse of Blood can link enemies and amplify teamfight follow-up against stacked targets."
+    ],
+    "counterTypes": [
+      "teamfight",
+      "crowd-control-counter",
+      "damage-spread"
+    ],
+    "proof": [
+      {
+        "id": "carmilla-curse-of-blood-vs-estes-grouped-sustain",
+        "category": "teamfight-role-counter",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Estes encourages grouped sustain fights, while Carmilla can link clustered enemies and make AoE damage and control more punishing.",
+        "worksBestWhen": [
+          "Carmilla lands Curse of Blood on multiple grouped targets.",
+          "The team has AoE damage or CC to follow the link."
+        ],
+        "failureCases": [
+          "Estes's team spreads before the link lands.",
+          "Carmilla engages without follow-up."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "estes",
+    "counterHeroId": "atlas",
+    "reasons": [
+      "Atlas punishes the grouped formation Estes wants.",
+      "Fatal Links can drag multiple targets together and create a burst window before Estes can stabilize the fight."
+    ],
+    "counterTypes": [
+      "teamfight",
+      "anti-grouping",
+      "engage"
+    ],
+    "proof": [
+      {
+        "id": "atlas-fatal-links-vs-estes-grouped-healing",
+        "category": "teamfight-role-counter",
+        "priority": "primary",
+        "impact": "medium",
+        "summary": "Estes wants a stable grouped formation, while Atlas can catch multiple grouped heroes and force a decisive engage.",
+        "worksBestWhen": [
+          "Atlas finds a flank or Flicker angle.",
+          "Estes's team stacks around Lord, Turtle, or turret defense."
+        ],
+        "failureCases": [
+          "Estes's team spreads and tracks Atlas.",
+          "Atlas is suppressed or interrupted before completing the play."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "estes",
+    "counterHeroId": "saber",
+    "reasons": [
+      "Estes is much weaker when he is removed before the fight becomes extended.",
+      "Saber can force a fast pickoff instead of letting Estes out-heal gradual damage."
+    ],
+    "counterTypes": [
+      "pickoff",
+      "burst",
+      "backline-access"
+    ],
+    "proof": [
+      {
+        "id": "saber-pickoff-vs-estes-sustain-window",
+        "category": "damage-type-advantage",
+        "priority": "secondary",
+        "impact": "medium",
+        "summary": "Estes wants time to sustain teammates, while Saber can quickly threaten Estes before healing value accumulates.",
+        "worksBestWhen": [
+          "Saber finds Estes outside tank protection.",
+          "The team follows immediately after Estes is forced out or eliminated."
+        ],
+        "failureCases": [
+          "Estes has strong peel or defensive item timing.",
+          "Saber dives too early into grouped enemies."
+        ]
+      }
+    ]
+  }
+]

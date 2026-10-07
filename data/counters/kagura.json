@@ -1,0 +1,152 @@
+[
+  {
+    "targetHeroId": "kagura",
+    "counterHeroId": "kaja",
+    "reasons": [
+      "Kaja can suppress Kagura and prevent her from relying on umbrella movement or cleanse timing after being caught.",
+      "Suppression is valuable because Kagura normally survives through debuff removal, spacing, and repositioning."
+    ],
+    "counterTypes": [
+      "pickoff",
+      "crowd-control-counter",
+      "anti-dive"
+    ],
+    "proof": [
+      {
+        "id": "kaja-divine-judgment-vs-kagura-umbrella-escape",
+        "category": "crowd-control-counter",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Kagura wants to escape or cleanse with umbrella mobility, while Kaja can force a suppression pickoff window that prevents the normal reset.",
+        "worksBestWhen": [
+          "Kaja waits for Kagura to step forward for umbrella poke.",
+          "Kaja has follow-up damage ready."
+        ],
+        "failureCases": [
+          "Kagura keeps distance and never enters Kaja range.",
+          "Kaja engages without team damage."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "kagura",
+    "counterHeroId": "franco",
+    "reasons": [
+      "Franco is a stronger reviewed replacement for Saber because suppression is harder for Kagura to answer than normal airborne burst.",
+      "If Franco catches Kagura after she steps forward, he can lock her before she repositions with umbrella tools."
+    ],
+    "counterTypes": [
+      "pickoff",
+      "crowd-control-counter",
+      "cooldown-punish"
+    ],
+    "proof": [
+      {
+        "id": "franco-bloody-hunt-vs-kagura-second-skill",
+        "category": "crowd-control-counter",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Kagura's second skill helps her escape many control windows, but Franco's suppression can still force a pickoff when she is caught in range.",
+        "worksBestWhen": [
+          "Franco holds suppression until Kagura has stepped forward or used her movement timing.",
+          "Franco has teammate burst ready after the lock."
+        ],
+        "failureCases": [
+          "Kagura keeps distance and pokes from outside Franco's threat range.",
+          "Franco misses hook or uses suppression without follow-up damage."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "kagura",
+    "counterHeroId": "lolita",
+    "reasons": [
+      "Lolita can reduce Kagura's umbrella poke value in front-to-back fights by protecting her team from ranged projectile pressure.",
+      "This helps the team walk through Kagura's zoning during siege or objective setup."
+    ],
+    "counterTypes": [
+      "protect",
+      "range-advantage",
+      "teamfight"
+    ],
+    "proof": [
+      {
+        "id": "lolita-shield-vs-kagura-umbrella-poke",
+        "category": "skill-interaction",
+        "priority": "primary",
+        "impact": "medium",
+        "summary": "Kagura wants to control space with umbrella poke, while Lolita can reduce projectile pressure and protect the team during approach windows.",
+        "worksBestWhen": [
+          "Lolita faces Kagura's umbrella path.",
+          "The team groups behind Lolita during siege or objective setup."
+        ],
+        "failureCases": [
+          "Kagura attacks from side angles.",
+          "Kagura waits out the shield and repositions the umbrella around it."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "kagura",
+    "counterHeroId": "hayabusa",
+    "reasons": [
+      "Hayabusa can threaten Kagura from angles that make umbrella zoning harder to maintain.",
+      "Kagura is punishable when her umbrella is away or her escape timing has already been used."
+    ],
+    "counterTypes": [
+      "mobility",
+      "pickoff",
+      "cooldown-punish"
+    ],
+    "proof": [
+      {
+        "id": "hayabusa-shadow-angle-vs-kagura-spacing",
+        "category": "mobility-advantage",
+        "priority": "secondary",
+        "impact": "medium",
+        "summary": "Kagura wants controlled spacing, while Hayabusa can use shadow movement to bypass expected front-line zoning and punish cooldown windows.",
+        "worksBestWhen": [
+          "Hayabusa tracks Kagura's escape cooldown.",
+          "Kagura is separated from support or tank peel."
+        ],
+        "failureCases": [
+          "Kagura saves Rasho Umbrella Flee for Hayabusa.",
+          "Hayabusa's ultimate damage is split by nearby enemies."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "kagura",
+    "counterHeroId": "chou",
+    "reasons": [
+      "Chou can threaten Kagura with flank displacement if he baits or waits out her cleanse and movement timing.",
+      "This matchup is execution-heavy because Kagura can escape bad Chou timing."
+    ],
+    "counterTypes": [
+      "pickoff",
+      "mobility",
+      "execution-dependent"
+    ],
+    "proof": [
+      {
+        "id": "chou-flank-kick-vs-kagura-cleanse-timing",
+        "category": "execution-difficulty",
+        "priority": "condition",
+        "impact": "medium",
+        "summary": "Kagura can cleanse and reposition, so Chou must bait that tool or catch her after it is unavailable before committing to the pickoff.",
+        "worksBestWhen": [
+          "Chou flanks and waits for Kagura's movement skill.",
+          "Chou has teammate burst ready after the displacement."
+        ],
+        "failureCases": [
+          "Kagura cleanses or dodges Chou's setup.",
+          "Chou approaches from vision and gets poked down."
+        ]
+      }
+    ]
+  }
+]

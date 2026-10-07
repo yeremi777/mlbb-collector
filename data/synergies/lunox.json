@@ -1,0 +1,157 @@
+[
+  {
+    "anchorHeroId": "lunox",
+    "synergyHeroId": "kaja",
+    "reasons": [
+      "Kaja can suppress and drag a target into Lunox's burst range.",
+      "Lunox benefits from a fixed target because her damage window is strongest when the enemy cannot immediately disengage."
+    ],
+    "synergyTypes": [
+      "pickoff-combo",
+      "burst-follow-up",
+      "cc-chain"
+    ],
+    "proof": [
+      {
+        "id": "kaja-suppression-sets-lunox-burst-window",
+        "category": "pickoff-combo",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Kaja locks a target with suppression, while Lunox follows with high magic burst during the control window.",
+        "worksBestWhen": [
+          "Kaja catches a priority target instead of a frontliner.",
+          "Lunox has Chaos burst ready before Kaja commits."
+        ],
+        "failureCases": [
+          "Kaja pulls the target away from Lunox.",
+          "Lunox has already used her key damage or survival skill.",
+          "Enemy peel interrupts Lunox after Kaja engages."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "lunox",
+    "synergyHeroId": "franco",
+    "reasons": [
+      "Franco can hook or suppress one target, giving Lunox a safe opening to burst.",
+      "Lunox can punish the target Franco displaces before the enemy team fully responds."
+    ],
+    "synergyTypes": [
+      "pickoff-combo",
+      "cc-chain",
+      "burst-follow-up"
+    ],
+    "proof": [
+      {
+        "id": "franco-isolation-sets-lunox-burst",
+        "category": "pickoff-combo",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Franco isolates a target with displacement or suppression, while Lunox delivers burst into the locked target.",
+        "worksBestWhen": [
+          "Franco hooks a damage dealer or fragile target.",
+          "Lunox waits nearby with damage cooldowns ready."
+        ],
+        "failureCases": [
+          "Franco hooks a tank.",
+          "Lunox is not in range after the hook.",
+          "Enemy counter-engage reaches Lunox immediately."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "lunox",
+    "synergyHeroId": "chou",
+    "reasons": [
+      "Chou can displace a priority target into Lunox's burst range.",
+      "Lunox can punish the target immediately after Chou's kick creates a fixed position."
+    ],
+    "synergyTypes": [
+      "pickoff-combo",
+      "setup-combo",
+      "burst-follow-up"
+    ],
+    "proof": [
+      {
+        "id": "chou-kick-sets-lunox-darkening-burst",
+        "category": "setup-combo",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Chou isolates and kicks a target into a punishable position, while Lunox uses Darkening burst to finish the pickoff.",
+        "worksBestWhen": [
+          "Chou kicks a squishy or high-value target toward Lunox.",
+          "Lunox waits for Chou's confirmed displacement before spending burst."
+        ],
+        "failureCases": [
+          "Chou kicks the target away from Lunox.",
+          "Lunox is forced to use Brilliance before the target arrives.",
+          "Enemy peel blocks Lunox's follow-up."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "lunox",
+    "synergyHeroId": "kalea",
+    "reasons": [
+      "Kalea can help isolate or hold a target long enough for Lunox to enter her burst window.",
+      "Kalea also provides sustain utility, which helps Lunox survive after committing forward."
+    ],
+    "synergyTypes": [
+      "pickoff-combo",
+      "cc-chain",
+      "healing-sustain"
+    ],
+    "proof": [
+      {
+        "id": "kalea-control-sets-lunox-burst-window",
+        "category": "pickoff-combo",
+        "priority": "secondary",
+        "impact": "medium",
+        "summary": "Kalea creates a local control window, while Lunox follows with Darkening burst on the controlled target.",
+        "worksBestWhen": [
+          "Kalea catches a priority target close enough for Lunox to follow.",
+          "Lunox has Darkening available and does not need to use Brilliance first."
+        ],
+        "failureCases": [
+          "Kalea controls a target outside Lunox's range.",
+          "Lunox is zoned before she can enter.",
+          "The enemy team counter-engages after Lunox commits."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "lunox",
+    "synergyHeroId": "carmilla",
+    "reasons": [
+      "Carmilla's linked ultimate can make Lunox's damage pressure matter across multiple enemies.",
+      "Lunox benefits when enemies are linked or grouped because she can pressure one target while still contributing to the larger fight."
+    ],
+    "synergyTypes": [
+      "damage-amplification",
+      "teamfight-combo",
+      "cc-chain"
+    ],
+    "proof": [
+      {
+        "id": "carmilla-link-amplifies-lunox-teamfight-damage",
+        "category": "damage-amplification",
+        "priority": "secondary",
+        "impact": "medium",
+        "summary": "Carmilla links enemies, while Lunox applies magic damage and slow pressure into the linked fight.",
+        "worksBestWhen": [
+          "Carmilla lands Curse of Blood on multiple heroes.",
+          "Lunox uses burst after the link is active."
+        ],
+        "failureCases": [
+          "Carmilla links only one target.",
+          "Lunox is forced to use Brilliance defensively before dealing damage.",
+          "Enemies split and avoid shared pressure."
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,149 @@
+[
+  {
+    "targetHeroId": "kimmy",
+    "counterHeroId": "lolita",
+    "reasons": [
+      "Lolita reduces Kimmy's poke value by blocking ranged attacks and projectiles from the shield direction.",
+      "Kimmy needs stable line access to keep damaging safely, while Lolita forces her to reposition or delay her damage window."
+    ],
+    "counterTypes": [
+      "protect",
+      "frontline"
+    ],
+    "proof": [
+      {
+        "id": "lolita-guardian-bulwark-vs-kimmy-poke",
+        "category": "skill-interaction",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Kimmy wants to pressure with repeated ranged attacks and skill damage, while Lolita can block incoming ranged basic attacks and projectiles from the shield direction.",
+        "worksBestWhen": [
+          "Lolita faces Kimmy before Kimmy commits her poke window.",
+          "Allies stay behind Lolita's shield instead of standing outside its protection."
+        ],
+        "failureCases": [
+          "Kimmy angles around the shield.",
+          "Kimmy's team forces Lolita to use shield for another threat."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "kimmy",
+    "counterHeroId": "saber",
+    "reasons": [
+      "Saber punishes Kimmy when she is isolated or lacks defensive support.",
+      "Saber's targeted burst reduces Kimmy's chance to kite through a long fight."
+    ],
+    "counterTypes": [
+      "pickoff",
+      "burst",
+      "cooldown-punish"
+    ],
+    "proof": [
+      {
+        "id": "saber-triple-sweep-vs-kimmy-kiting",
+        "category": "crowd-control-counter",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Kimmy wants extended movement-based damage, while Saber can lock her with a targeted airborne burst window before she gets enough time to kite.",
+        "worksBestWhen": [
+          "Saber waits until Kimmy is separated from peel.",
+          "Saber engages after Kimmy has used repositioning or defensive tools."
+        ],
+        "failureCases": [
+          "Kimmy stays near tank or support protection.",
+          "Saber dives into grouped enemies without follow-up."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "kimmy",
+    "counterHeroId": "kaja",
+    "reasons": [
+      "Kaja can punish Kimmy's forward positioning when she steps up to maintain damage.",
+      "Suppression limits Kimmy's ability to keep moving, attacking, or repositioning during the catch window."
+    ],
+    "counterTypes": [
+      "pickoff",
+      "anti-engage"
+    ],
+    "proof": [
+      {
+        "id": "kaja-divine-judgment-vs-kimmy-spacing",
+        "category": "crowd-control-counter",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Kimmy depends on movement and spacing, while Kaja can suppress and drag her into allied burst.",
+        "worksBestWhen": [
+          "Kaja hides vision before engaging.",
+          "Kaja's team is close enough to burst Kimmy during suppression."
+        ],
+        "failureCases": [
+          "Kimmy plays behind frontline vision.",
+          "Kaja suppresses without allied follow-up."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "kimmy",
+    "counterHeroId": "chou",
+    "reasons": [
+      "Chou can close distance and kick Kimmy out of her safe damage position.",
+      "His displacement is useful against a ranged damage dealer who depends on spacing rather than durability."
+    ],
+    "counterTypes": [
+      "pickoff",
+      "mobility"
+    ],
+    "proof": [
+      {
+        "id": "chou-way-of-dragon-vs-kimmy-spacing",
+        "category": "skill-interaction",
+        "priority": "primary",
+        "impact": "medium",
+        "summary": "Kimmy wants to kite while dealing damage, while Chou can use mobility and displacement to isolate her from her team.",
+        "worksBestWhen": [
+          "Chou approaches from flank vision.",
+          "Chou saves his combo for Kimmy instead of wasting it on the frontline."
+        ],
+        "failureCases": [
+          "Kimmy holds safe backline position.",
+          "Chou is forced to engage through multiple peel skills."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "kimmy",
+    "counterHeroId": "natalia",
+    "reasons": [
+      "Natalia pressures Kimmy from unseen angles and punishes her before she gets a stable poke angle.",
+      "Natalia's stealth threat forces Kimmy to respect bushes and flank routes instead of freely poking."
+    ],
+    "counterTypes": [
+      "pickoff",
+      "vision-control",
+      "burst"
+    ],
+    "proof": [
+      {
+        "id": "natalia-conceal-vs-kimmy-poke-angle",
+        "category": "vision-awareness",
+        "priority": "primary",
+        "impact": "medium",
+        "summary": "Kimmy is strongest when she sees the fight and keeps spacing, while Natalia threatens her from concealment and forces Kimmy to respect flank vision.",
+        "worksBestWhen": [
+          "Natalia tracks Kimmy's rotation before teamfights.",
+          "Natalia attacks after Kimmy is separated from peel."
+        ],
+        "failureCases": [
+          "Kimmy's team controls bushes and flank routes.",
+          "Natalia enters after Kimmy's tank has already marked her position."
+        ]
+      }
+    ]
+  }
+]

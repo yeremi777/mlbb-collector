@@ -1,0 +1,152 @@
+[
+  {
+    "targetHeroId": "layla",
+    "counterHeroId": "lolita",
+    "reasons": [
+      "Lolita can protect allies from Layla's front-facing ranged basic attacks and projectile pressure.",
+      "Layla wants long-range uptime, while Lolita can force her to wait, reposition, or attack from another angle."
+    ],
+    "counterTypes": [
+      "protect",
+      "teamfight",
+      "anti-engage"
+    ],
+    "proof": [
+      {
+        "id": "lolita-guardian-reflection-vs-layla-long-range-attacks",
+        "category": "skill-interaction",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Layla wants to attack safely from long range, while Lolita can reflect incoming ranged basic attacks and projectiles from the shield direction.",
+        "worksBestWhen": [
+          "Lolita faces Layla before Layla commits damage.",
+          "Allies stay behind Lolita during siege or objective fights."
+        ],
+        "failureCases": [
+          "Layla attacks from a side angle outside the shield.",
+          "Lolita's shield is baited before the real teamfight."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "layla",
+    "counterHeroId": "natalia",
+    "reasons": [
+      "Natalia can threaten Layla from conceal and punish her lack of safe escape.",
+      "Layla is dangerous at range but vulnerable when assassins reach her without peel."
+    ],
+    "counterTypes": [
+      "pickoff",
+      "vision-control",
+      "burst"
+    ],
+    "proof": [
+      {
+        "id": "natalia-conceal-pickoff-vs-layla-range-safety",
+        "category": "vision-awareness",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Layla wants maximum distance and clear sightlines, while Natalia threatens unseen backline access before Layla can freely attack.",
+        "worksBestWhen": [
+          "Natalia controls bushes before Layla rotates.",
+          "Layla is separated from tank or support peel."
+        ],
+        "failureCases": [
+          "Layla stays grouped with protection.",
+          "Natalia is revealed before reaching the backline."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "layla",
+    "counterHeroId": "saber",
+    "reasons": [
+      "Saber can punish Layla's immobility with targeted airborne burst.",
+      "Layla depends on distance and protection, so she is vulnerable when caught without peel."
+    ],
+    "counterTypes": [
+      "pickoff",
+      "burst",
+      "anti-dive"
+    ],
+    "proof": [
+      {
+        "id": "saber-triple-sweep-vs-layla-immobility",
+        "category": "skill-interaction",
+        "priority": "primary",
+        "impact": "medium",
+        "summary": "Layla wants to stay far away and attack safely, while Saber can close the gap and lock her with airborne burst if she is exposed.",
+        "worksBestWhen": [
+          "Saber attacks from fog or flank angle.",
+          "Layla's defensive spell or team peel is unavailable."
+        ],
+        "failureCases": [
+          "Layla is protected by tank crowd control.",
+          "Saber cannot burst Layla before counter-engage."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "layla",
+    "counterHeroId": "franco",
+    "reasons": [
+      "Franco can punish Layla's static backline positioning with hook or suppression.",
+      "A successful pick removes Layla's range advantage before the fight starts."
+    ],
+    "counterTypes": [
+      "pickoff",
+      "vision-control",
+      "execution-dependent"
+    ],
+    "proof": [
+      {
+        "id": "franco-hook-vs-layla-backline-position",
+        "category": "positioning-requirement",
+        "priority": "condition",
+        "impact": "medium",
+        "summary": "Layla wants to keep distance behind her team, while Franco can punish exposed positioning with hook or suppression from fog.",
+        "worksBestWhen": [
+          "Franco controls bush vision near Layla's rotation.",
+          "The team follows up immediately after Layla is hooked."
+        ],
+        "failureCases": [
+          "Franco misses hook.",
+          "Layla stays behind minions or frontline protection."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "layla",
+    "counterHeroId": "belerick",
+    "reasons": [
+      "Belerick can punish repeated basic attacks and protect allies from Layla's damage focus.",
+      "Layla may struggle to freely hit priority targets when Belerick zones and absorbs damage."
+    ],
+    "counterTypes": [
+      "frontline",
+      "protect",
+      "teamfight"
+    ],
+    "proof": [
+      {
+        "id": "belerick-frontline-vs-layla-basic-attack-dps",
+        "category": "teamfight-role-counter",
+        "priority": "secondary",
+        "impact": "medium",
+        "summary": "Layla wants to output repeated basic attacks from range, while Belerick can absorb pressure, punish basic-attack focus, and protect teammates.",
+        "worksBestWhen": [
+          "Belerick stands between Layla and the backline.",
+          "Belerick has item durability before forcing Layla to hit him."
+        ],
+        "failureCases": [
+          "Layla kites Belerick from maximum range.",
+          "Belerick cannot reach or zone Layla's attack angle."
+        ]
+      }
+    ]
+  }
+]

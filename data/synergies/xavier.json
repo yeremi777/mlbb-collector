@@ -1,0 +1,162 @@
+[
+  {
+    "anchorHeroId": "xavier",
+    "synergyHeroId": "tigreal",
+    "reasons": [
+      "Tigreal can pull and stun enemies into one area, giving Xavier a clear window to cast Mystic Field or Dawning Light.",
+      "Tigreal provides frontline engage after starting the combo, so Xavier can follow from safer range with less exposure."
+    ],
+    "synergyTypes": [
+      "engage-follow-up",
+      "cc-chain",
+      "teamfight-combo"
+    ],
+    "proof": [
+      {
+        "id": "tigreal-implosion-sets-up-xavier-dawning-light",
+        "category": "engage-follow-up",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Tigreal groups and controls enemies, while Xavier follows from range with immobilize, poke, or Dawning Light burst.",
+        "worksBestWhen": [
+          "Xavier is already in range before Tigreal commits.",
+          "Tigreal catches multiple enemies or a priority carry.",
+          "Xavier saves Dawning Light for the real grouped-control window."
+        ],
+        "failureCases": [
+          "Tigreal engages outside Xavier's angle.",
+          "Xavier casts too early before enemies are grouped.",
+          "Tigreal's channel is interrupted before the pull or stun finishes."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "xavier",
+    "synergyHeroId": "atlas",
+    "reasons": [
+      "Atlas can drag chained enemies to a chosen location, giving Xavier a predictable target area for Mystic Field and Dawning Light.",
+      "Atlas provides frontline engage while Xavier plays behind the fight and focuses on skill placement."
+    ],
+    "synergyTypes": [
+      "setup-combo",
+      "aoe-follow-up",
+      "teamfight-combo"
+    ],
+    "proof": [
+      {
+        "id": "atlas-fatal-links-creates-xavier-skill-line",
+        "category": "setup-combo",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Atlas creates a forced-position setup with Fatal Links, and Xavier follows with long-range control or burst into the dropped enemy group.",
+        "worksBestWhen": [
+          "Atlas catches enemies before Xavier casts his major cooldowns.",
+          "Xavier waits for the drag location before firing Dawning Light.",
+          "Atlas drops enemies in Xavier's skill line."
+        ],
+        "failureCases": [
+          "Atlas catches only one low-value target.",
+          "Xavier fires before Atlas finishes the second phase.",
+          "Enemies use Purify, immunity, or disengage after the drop."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "xavier",
+    "synergyHeroId": "minotaur",
+    "reasons": [
+      "Minotaur gives Xavier both frontline cover and teamfight crowd control, supporting Xavier's safe-casting style.",
+      "Xavier can follow Minotaur's knock-up/control with Mystic Field or Dawning Light while staying behind the frontline."
+    ],
+    "synergyTypes": [
+      "frontline-enabler",
+      "cc-chain",
+      "protect"
+    ],
+    "proof": [
+      {
+        "id": "minotaur-frontline-control-enables-xavier-casting",
+        "category": "frontline-enabler",
+        "priority": "secondary",
+        "impact": "high",
+        "summary": "Minotaur protects the front and creates control windows, giving Xavier room to cast repeated poke and follow-up burst.",
+        "worksBestWhen": [
+          "Minotaur positions between Xavier and enemy divers.",
+          "Xavier follows after Minotaur starts the control window.",
+          "Xavier keeps a safe casting angle behind the frontline."
+        ],
+        "failureCases": [
+          "Minotaur engages too far forward and leaves Xavier open.",
+          "Xavier is flanked from the side.",
+          "Xavier casts without waiting for Minotaur's setup."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "xavier",
+    "synergyHeroId": "lolita",
+    "reasons": [
+      "Lolita protects Xavier from projectile pressure while he positions for poke and long-range damage.",
+      "Lolita can also create a stun window that Xavier can follow with long-range skills."
+    ],
+    "synergyTypes": [
+      "backline-protection",
+      "peel",
+      "setup-combo"
+    ],
+    "proof": [
+      {
+        "id": "lolita-protection-and-stun-window-for-xavier",
+        "category": "protection",
+        "priority": "secondary",
+        "impact": "medium",
+        "summary": "Lolita protects Xavier's casting position and can create a follow-up stun window for Xavier's long-range skills.",
+        "worksBestWhen": [
+          "Lolita plays near Xavier during siege or objective fights.",
+          "Xavier uses the protection to cast safely.",
+          "Xavier follows Lolita's control window from range."
+        ],
+        "failureCases": [
+          "Enemy assassins flank around Lolita.",
+          "Lolita engages away from Xavier.",
+          "Xavier is positioned outside Lolita's protection angle."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "xavier",
+    "synergyHeroId": "mathilda",
+    "reasons": [
+      "Mathilda gives Xavier a reposition option when enemies dive him, helping him keep the distance needed to cast.",
+      "Mathilda's shield support helps Xavier survive long enough to continue his poke cycle."
+    ],
+    "synergyTypes": [
+      "mobility-enable",
+      "shielding",
+      "backline-protection"
+    ],
+    "proof": [
+      {
+        "id": "mathilda-guiding-wind-resets-xavier-spacing",
+        "category": "mobility-enabler",
+        "priority": "secondary",
+        "impact": "medium",
+        "summary": "Mathilda gives Xavier shield and reposition support so he can reset spacing and continue casting.",
+        "worksBestWhen": [
+          "Mathilda saves Guiding Wind for Xavier's danger window.",
+          "Xavier uses the dash defensively to reset distance.",
+          "Xavier keeps line-of-sight for follow-up spells."
+        ],
+        "failureCases": [
+          "Xavier dashes into enemy range.",
+          "Mathilda uses the field before Xavier is threatened.",
+          "Hard crowd control catches Xavier before he can reposition."
+        ]
+      }
+    ]
+  }
+]

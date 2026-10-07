@@ -1,0 +1,157 @@
+[
+  {
+    "targetHeroId": "mathilda",
+    "counterHeroId": "minsitthar",
+    "reasons": [
+      "Minsitthar can restrict Mathilda's blink-style mobility inside King's Calling.",
+      "This limits Mathilda's ability to freely engage, disengage, or enable allies through mobility."
+    ],
+    "counterTypes": [
+      "anti-dash",
+      "anti-engage",
+      "teamfight"
+    ],
+    "proof": [
+      {
+        "id": "minsitthar-kings-calling-vs-mathilda-mobility",
+        "category": "skill-interaction",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Mathilda wants to create mobility advantages with Guiding Wind and Circling Eagle, while Minsitthar can punish fights inside King's Calling by limiting blink movement.",
+        "worksBestWhen": [
+          "Minsitthar casts King's Calling after Mathilda commits.",
+          "The team fights inside the anti-blink zone."
+        ],
+        "failureCases": [
+          "Mathilda baits King's Calling and disengages.",
+          "Minsitthar casts too early or misses the key targets.",
+          "Mathilda plays only for poke and does not enter the field."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "mathilda",
+    "counterHeroId": "khufra",
+    "reasons": [
+      "Khufra can punish Mathilda's mobility path with Bouncing Ball.",
+      "He can protect the target Mathilda wants to dive by turning her engage into a crowd-control window."
+    ],
+    "counterTypes": [
+      "anti-dash",
+      "anti-engage",
+      "crowd-control-counter"
+    ],
+    "proof": [
+      {
+        "id": "khufra-bouncing-ball-vs-mathilda-engage",
+        "category": "skill-interaction",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Mathilda wants to create a fast engage route, while Khufra can turn that mobility path into a crowd-control trap.",
+        "worksBestWhen": [
+          "Khufra positions between Mathilda and her target.",
+          "Khufra waits for the actual mobility commit."
+        ],
+        "failureCases": [
+          "Mathilda uses mobility outside Khufra's range.",
+          "Khufra wastes Bouncing Ball before Mathilda commits.",
+          "Mathilda's team pokes instead of diving."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "mathilda",
+    "counterHeroId": "kaja",
+    "reasons": [
+      "Kaja can suppress Mathilda after she dives or enables an engage.",
+      "Dragging Mathilda away can break her team's tempo and remove her shield or mobility support."
+    ],
+    "counterTypes": [
+      "pickoff",
+      "anti-dive",
+      "crowd-control-counter"
+    ],
+    "proof": [
+      {
+        "id": "kaja-divine-judgment-vs-mathilda-dive",
+        "category": "crowd-control-counter",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Mathilda relies on fast entry and exit, while Kaja can lock her during the commitment window and force a pickoff.",
+        "worksBestWhen": [
+          "Kaja saves ultimate for Mathilda's real engage.",
+          "Kaja has team follow-up ready."
+        ],
+        "failureCases": [
+          "Mathilda baits the ultimate and escapes.",
+          "Kaja catches Mathilda but cannot finish her.",
+          "Enemy team counter-engages during Kaja's dive."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "mathilda",
+    "counterHeroId": "franco",
+    "reasons": [
+      "Franco can suppress Mathilda after she uses mobility to enter.",
+      "Hook pressure makes Mathilda less free to stand forward and prepare engages."
+    ],
+    "counterTypes": [
+      "pickoff",
+      "anti-dive",
+      "crowd-control-counter"
+    ],
+    "proof": [
+      {
+        "id": "franco-suppression-vs-mathilda-commit",
+        "category": "skill-interaction",
+        "priority": "primary",
+        "impact": "medium",
+        "summary": "Mathilda wants to move in and out quickly, while Franco can punish the moment she becomes reachable with hook or suppression.",
+        "worksBestWhen": [
+          "Franco tracks Mathilda's dash and ultimate cooldown.",
+          "Franco waits near the target Mathilda wants to enable."
+        ],
+        "failureCases": [
+          "Franco misses hook and has no Flicker setup.",
+          "Mathilda dives with multiple allies and Franco cannot isolate her.",
+          "Franco suppresses the wrong target."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "mathilda",
+    "counterHeroId": "valir",
+    "reasons": [
+      "Valir can push back and slow dive attempts, making Mathilda's engage harder to complete.",
+      "His disengage tools punish teams that rely on Mathilda to start short-range fights."
+    ],
+    "counterTypes": [
+      "disengage",
+      "kiting",
+      "anti-engage"
+    ],
+    "proof": [
+      {
+        "id": "valir-disengage-vs-mathilda-engage",
+        "category": "kiting",
+        "priority": "condition",
+        "impact": "medium",
+        "summary": "Mathilda wants to bring herself or an ally into fight range, while Valir can reset spacing and punish short-range commitment.",
+        "worksBestWhen": [
+          "Valir positions behind frontline.",
+          "Valir holds disengage until Mathilda commits."
+        ],
+        "failureCases": [
+          "Valir is caught before he can cast.",
+          "Mathilda's team attacks from multiple angles.",
+          "Valir wastes his peel before the real engage."
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,157 @@
+[
+  {
+    "targetHeroId": "aulus",
+    "counterHeroId": "karrie",
+    "reasons": [
+      "Karrie punishes durable melee fighters with repeated mark damage.",
+      "Aulus struggles if he cannot reach Karrie through peel before she stacks sustained damage."
+    ],
+    "counterTypes": [
+      "true-damage",
+      "tank-shred",
+      "kiting"
+    ],
+    "proof": [
+      {
+        "id": "karrie-lightwheel-mark-vs-aulus-frontline",
+        "category": "damage-type-advantage",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Aulus wants to scale into durable melee DPS, while Karrie can shred frontliners if she is protected.",
+        "worksBestWhen": [
+          "Karrie has peel and enough attack-speed timing.",
+          "Aulus is forced to walk through frontline."
+        ],
+        "failureCases": [
+          "Aulus reaches Karrie directly.",
+          "Karrie is under-farmed.",
+          "Aulus's team dives Karrie together."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "aulus",
+    "counterHeroId": "valir",
+    "reasons": [
+      "Valir can keep Aulus away from melee range.",
+      "Aulus loses much of his value if he cannot stay close enough to keep attacking."
+    ],
+    "counterTypes": [
+      "kiting",
+      "disengage",
+      "anti-engage"
+    ],
+    "proof": [
+      {
+        "id": "valir-kiting-vs-aulus-melee-uptime",
+        "category": "kiting",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Aulus wants extended melee access, while Valir can slow, push, and reset spacing before Aulus gets full value.",
+        "worksBestWhen": [
+          "Valir holds peel for Aulus's actual entry.",
+          "Team backs away rather than brawling in Aulus's range."
+        ],
+        "failureCases": [
+          "Valir is flanked.",
+          "Aulus enters after Valir's peel cooldown is used.",
+          "Valir's team lacks damage follow-up."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "aulus",
+    "counterHeroId": "baxia",
+    "reasons": [
+      "Baxia reduces HP regeneration and shield value, helping limit Aulus's extended-fight sustain.",
+      "Baxia can contest Aulus's entry without being an easy burst target."
+    ],
+    "counterTypes": [
+      "anti-sustain",
+      "frontline",
+      "anti-dive"
+    ],
+    "proof": [
+      {
+        "id": "baxia-anti-regen-vs-aulus-extended-fight",
+        "category": "sustain-anti-sustain",
+        "priority": "secondary",
+        "impact": "medium",
+        "summary": "Aulus wants to stay in fights and keep attacking, while Baxia reduces recovery value and makes extended fights less comfortable.",
+        "worksBestWhen": [
+          "Baxia applies anti-regen early in the fight.",
+          "Team kites while Baxia frontlines."
+        ],
+        "failureCases": [
+          "Aulus ignores Baxia and reaches backline.",
+          "Baxia is isolated without follow-up.",
+          "Aulus has enough item lead to overpower Baxia anyway."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "aulus",
+    "counterHeroId": "lunox",
+    "reasons": [
+      "Lunox can threaten durable melee heroes with magic burst and HP-sensitive damage.",
+      "She can punish Aulus before he reaches the backline."
+    ],
+    "counterTypes": [
+      "penetration",
+      "burst",
+      "tank-shred"
+    ],
+    "proof": [
+      {
+        "id": "lunox-burst-vs-aulus-frontline",
+        "category": "damage-type-advantage",
+        "priority": "secondary",
+        "impact": "medium",
+        "summary": "Aulus wants to tank through fights and keep swinging, while Lunox can pressure him with magic burst before he gets sustained uptime.",
+        "worksBestWhen": [
+          "Lunox maintains spacing.",
+          "Team protects her from Aulus's run-down."
+        ],
+        "failureCases": [
+          "Lunox is caught without defensive tools.",
+          "Aulus reaches her with team follow-up.",
+          "Lunox wastes burst on a low-priority target."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "aulus",
+    "counterHeroId": "franco",
+    "reasons": [
+      "Franco can suppress Aulus during his engage or late-fight carry window.",
+      "Aulus is easier to punish when locked before he can keep attacking."
+    ],
+    "counterTypes": [
+      "pickoff",
+      "crowd-control-counter",
+      "cooldown-punish"
+    ],
+    "proof": [
+      {
+        "id": "franco-suppression-vs-aulus-melee-uptime",
+        "category": "crowd-control-counter",
+        "priority": "condition",
+        "impact": "medium",
+        "summary": "Aulus wants sustained melee uptime, while Franco can stop one key entry window with suppression and create a burst opportunity.",
+        "worksBestWhen": [
+          "Franco saves Bloody Hunt for Aulus after he commits.",
+          "Team has enough damage to finish during lock."
+        ],
+        "failureCases": [
+          "Franco suppresses too early without follow-up.",
+          "Aulus survives and continues fighting.",
+          "Franco is zoned before reaching Aulus."
+        ]
+      }
+    ]
+  }
+]

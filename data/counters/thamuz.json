@@ -1,0 +1,151 @@
+[
+  {
+    "targetHeroId": "thamuz",
+    "counterHeroId": "baxia",
+    "reasons": [
+      "Baxia directly reduces the value of Thamuz's sustain-based fighting.",
+      "Thamuz wants long brawls, while Baxia makes those brawls less favorable by cutting healing and shield value."
+    ],
+    "counterTypes": [
+      "anti-sustain",
+      "anti-heal",
+      "frontline"
+    ],
+    "proof": [
+      {
+        "id": "baxia-mark-vs-thamuz-sustain",
+        "category": "sustain-anti-sustain",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Thamuz relies on extended sustain during his ultimate window, while Baxia reduces healing and shield effects around him.",
+        "worksBestWhen": [
+          "Baxia keeps contact with Thamuz during his sustain window.",
+          "Baxia's team follows up instead of letting Thamuz reset."
+        ],
+        "failureCases": [
+          "Thamuz avoids Baxia and dives the backline.",
+          "Baxia is under-farmed and cannot survive the brawl."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "thamuz",
+    "counterHeroId": "dyrroth",
+    "reasons": [
+      "Dyrroth can reduce Thamuz's defensive value and punish him before the fight becomes a long sustain battle.",
+      "The matchup is strongest in lane or small skirmishes where Dyrroth can force short burst trades."
+    ],
+    "counterTypes": [
+      "penetration",
+      "burst"
+    ],
+    "proof": [
+      {
+        "id": "dyrroth-defense-reduction-vs-thamuz-brawl",
+        "category": "damage-type-advantage",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Thamuz wants durable extended trades, while Dyrroth's defense reduction and burst pressure make him vulnerable before sustain fully takes over.",
+        "worksBestWhen": [
+          "Dyrroth trades around enhanced skill timing.",
+          "Dyrroth forces short trades before Thamuz gets full sustain value."
+        ],
+        "failureCases": [
+          "Dyrroth misuses burst before Thamuz activates sustain.",
+          "Thamuz drags the fight long enough for Dyrroth's damage window to expire."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "thamuz",
+    "counterHeroId": "karrie",
+    "reasons": [
+      "Karrie punishes Thamuz's durability with true damage based on target Max HP.",
+      "She is strongest when she can kite Thamuz instead of standing inside his close-range brawl."
+    ],
+    "counterTypes": [
+      "true-damage",
+      "max-hp-damage",
+      "kiting"
+    ],
+    "proof": [
+      {
+        "id": "karrie-lightwheel-vs-thamuz-durability",
+        "category": "damage-type-advantage",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Thamuz wants to survive through durability and sustain, while Karrie's true-damage Max HP mechanic pressures him even when he builds tanky.",
+        "worksBestWhen": [
+          "Karrie has peel and space to keep attacking.",
+          "Karrie avoids being forced into melee range."
+        ],
+        "failureCases": [
+          "Thamuz reaches Karrie before she stacks damage.",
+          "Karrie is isolated without frontline protection."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "thamuz",
+    "counterHeroId": "valir",
+    "reasons": [
+      "Valir can push Thamuz away and slow down his attempt to force an extended melee fight.",
+      "Thamuz becomes less threatening when he cannot stay attached to priority targets."
+    ],
+    "counterTypes": [
+      "kiting",
+      "disengage",
+      "poke"
+    ],
+    "proof": [
+      {
+        "id": "valir-searing-torrent-vs-thamuz-engage",
+        "category": "kiting",
+        "priority": "primary",
+        "impact": "medium",
+        "summary": "Thamuz wants to walk into sustained melee range, while Valir can knock him back and reset spacing before Thamuz finishes the brawl.",
+        "worksBestWhen": [
+          "Valir saves knockback for Thamuz's commit.",
+          "Valir positions behind frontline instead of trading alone."
+        ],
+        "failureCases": [
+          "Thamuz flanks Valir from fog.",
+          "Valir wastes knockback before Thamuz commits."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "thamuz",
+    "counterHeroId": "lunox",
+    "reasons": [
+      "Lunox can punish Thamuz with magic burst while using defensive timing to avoid his strongest brawl window.",
+      "She works well when Thamuz overcommits into her damage window."
+    ],
+    "counterTypes": [
+      "burst",
+      "mobility",
+      "cooldown-punish"
+    ],
+    "proof": [
+      {
+        "id": "lunox-brilliance-vs-thamuz-commit",
+        "category": "cooldown-window",
+        "priority": "condition",
+        "impact": "medium",
+        "summary": "Thamuz wants to keep enemies inside his sustained fight, while Lunox can use defensive timing to avoid or punish the commit.",
+        "worksBestWhen": [
+          "Lunox holds defensive timing until Thamuz commits.",
+          "Teammates help keep Thamuz from sticking to her."
+        ],
+        "failureCases": [
+          "Lunox uses defensive timing too early.",
+          "Thamuz catches Lunox without escape or peel."
+        ]
+      }
+    ]
+  }
+]
