@@ -9,6 +9,7 @@ import (
 	"math"
 	"slices"
 	"strings"
+	"time"
 
 	"github.com/yeremi777/mlbb-collector/internal/ai"
 	"github.com/yeremi777/mlbb-collector/internal/hero"
@@ -27,17 +28,21 @@ func providerFailure(format string, args ...any) *Error {
 	return &Error{Code: "ai_provider_error", Message: fmt.Sprintf(format, args...)}
 }
 
-// Config tunes an Analyzer.
-type Config struct{}
+// Config tunes an Analyzer. Timeout bounds all provider work of one request:
+// every provider asked and the detail repair.
+type Config struct {
+	Timeout time.Duration
+}
 
 // Analyzer scores and explains Counters and Synergies by asking provider.
 type Analyzer struct {
 	provider ai.Provider
+	timeout  time.Duration
 }
 
 // New asks provider.
-func New(provider ai.Provider, _ Config) *Analyzer {
-	return &Analyzer{provider: provider}
+func New(provider ai.Provider, cfg Config) *Analyzer {
+	return &Analyzer{provider: provider, timeout: cfg.Timeout}
 }
 
 // Ranked is one Counter hero or Synergy hero with its Score and Confidence,
@@ -80,10 +85,15 @@ func (a *Analyzer) SynergyDetail(ctx context.Context, anchor hero.Hero, m Matchu
 	return a.detail(ctx, synergyDetailMessages(anchor, m, language), m, language)
 }
 
+// complete asks the provider, answering ai_provider_timeout once ctx's
+// deadline has passed.
 func (a *Analyzer) complete(ctx context.Context, messages []ai.Message) (map[string]any, error) {
 	payload, err := a.provider.CompleteJSON(ctx, messages)
 	if err == nil {
 		return payload, nil
+	}
+	if errors.Is(ctx.Err(), context.DeadlineExceeded) {
+		return nil, &Error{Code: "ai_provider_timeout", Message: "AI provider did not answer in time."}
 	}
 	var pe *ai.Error
 	if errors.As(err, &pe) {
@@ -93,6 +103,8 @@ func (a *Analyzer) complete(ctx context.Context, messages []ai.Message) (map[str
 }
 
 func (a *Analyzer) score(ctx context.Context, messages []ai.Message, idKey string, ms []Matchup) ([]Ranked, error) {
+	ctx, cancel := context.WithTimeout(ctx, a.timeout)
+	defer cancel()
 	payload, err := a.complete(ctx, messages)
 	if err != nil {
 		return nil, err
@@ -158,6 +170,8 @@ func (a *Analyzer) detail(ctx context.Context, messages []ai.Message, m Matchup,
 	for i, p := range m.Proof {
 		proofIDs[i] = p.ID
 	}
+	ctx, cancel := context.WithTimeout(ctx, a.timeout)
+	defer cancel()
 	payload, err := a.complete(ctx, messages)
 	if err != nil {
 		return Detail{}, err

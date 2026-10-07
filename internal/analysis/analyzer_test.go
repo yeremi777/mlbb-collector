@@ -6,6 +6,7 @@ import (
 	"errors"
 	"reflect"
 	"testing"
+	"time"
 
 	"github.com/yeremi777/mlbb-collector/internal/ai"
 	"github.com/yeremi777/mlbb-collector/internal/hero"
@@ -54,7 +55,7 @@ func TestScoringRanksByScoreThenConfidenceThenHeroID(t *testing.T) {
 		{"counterHeroId":"valir","score":80,"confidence":70},
 		{"counterHeroId":"diggie","score":90,"confidence":60},
 		{"counterHeroId":"akai","score":80,"confidence":70}]}`}}
-	got, err := New(provider, Config{}).ScoreCounters(context.Background(), hero.Hero{UID: "tigreal"}, threeCounters(), "en")
+	got, err := New(provider, testConfig).ScoreCounters(context.Background(), hero.Hero{UID: "tigreal"}, threeCounters(), "en")
 	if err != nil {
 		t.Fatal(err)
 	}
@@ -71,7 +72,7 @@ func TestScoringRanksByScoreThenConfidenceThenHeroID(t *testing.T) {
 		{"synergyHeroId":"valir","score":80,"confidence":75},
 		{"synergyHeroId":"diggie","score":80,"confidence":60},
 		{"synergyHeroId":"akai","score":80,"confidence":70}]}`}}
-	got, err = New(provider, Config{}).ScoreSynergies(context.Background(), hero.Hero{UID: "tigreal"}, threeCounters(), "en")
+	got, err = New(provider, testConfig).ScoreSynergies(context.Background(), hero.Hero{UID: "tigreal"}, threeCounters(), "en")
 	if err != nil {
 		t.Fatal(err)
 	}
@@ -108,7 +109,7 @@ func TestScoringRejectsAnAnswerBreakingARule(t *testing.T) {
 	} {
 		t.Run(tt.name, func(t *testing.T) {
 			provider := &scriptedProvider{answers: []string{tt.answer}}
-			_, err := New(provider, Config{}).ScoreCounters(context.Background(), hero.Hero{UID: "tigreal"}, threeCounters(), "en")
+			_, err := New(provider, testConfig).ScoreCounters(context.Background(), hero.Hero{UID: "tigreal"}, threeCounters(), "en")
 			assertError(t, err, "ai_provider_error", tt.message)
 		})
 	}
@@ -118,7 +119,7 @@ const validDiggieDetail = `{"score":90,"confidence":80,"summary":"Cleanses the e
 
 func TestDetailFillsMissingOptionalArrays(t *testing.T) {
 	provider := &scriptedProvider{answers: []string{validDiggieDetail}}
-	got, err := New(provider, Config{}).CounterDetail(context.Background(), hero.Hero{UID: "tigreal"}, threeCounters()[1], "en")
+	got, err := New(provider, testConfig).CounterDetail(context.Background(), hero.Hero{UID: "tigreal"}, threeCounters()[1], "en")
 	if err != nil {
 		t.Fatal(err)
 	}
@@ -144,7 +145,7 @@ func TestDetailRepairsAnInvalidAnswerOnce(t *testing.T) {
 	} {
 		t.Run(tt.name, func(t *testing.T) {
 			provider := &scriptedProvider{answers: []string{tt.first, validDiggieDetail}}
-			got, err := New(provider, Config{}).CounterDetail(context.Background(), hero.Hero{UID: "tigreal"}, threeCounters()[1], "en")
+			got, err := New(provider, testConfig).CounterDetail(context.Background(), hero.Hero{UID: "tigreal"}, threeCounters()[1], "en")
 			if err != nil || got.Score != 90 || len(provider.received) != 2 {
 				t.Fatalf("got %+v, %v after %d requests; want the repaired answer after 2", got, err, len(provider.received))
 			}
@@ -157,7 +158,7 @@ func TestDetailRepairsAnInvalidAnswerOnce(t *testing.T) {
 			}
 
 			provider = &scriptedProvider{answers: []string{tt.first, tt.first}}
-			_, err = New(provider, Config{}).CounterDetail(context.Background(), hero.Hero{UID: "tigreal"}, threeCounters()[1], "en")
+			_, err = New(provider, testConfig).CounterDetail(context.Background(), hero.Hero{UID: "tigreal"}, threeCounters()[1], "en")
 			assertError(t, err, "ai_provider_error", "Invalid detail response from model after retry: "+tt.cause)
 			if len(provider.received) != 2 {
 				t.Errorf("a second invalid answer: %d requests, want 2", len(provider.received))
@@ -169,7 +170,7 @@ func TestDetailRepairsAnInvalidAnswerOnce(t *testing.T) {
 func TestDetailFailsAtOnceOnAnUnknownEvidenceID(t *testing.T) {
 	provider := &scriptedProvider{answers: []string{
 		`{"score":90,"confidence":80,"summary":"s","strengths":["x"],"evidenceIds":["made-up"]}`, validDiggieDetail}}
-	_, err := New(provider, Config{}).CounterDetail(context.Background(), hero.Hero{UID: "tigreal"}, threeCounters()[1], "en")
+	_, err := New(provider, testConfig).CounterDetail(context.Background(), hero.Hero{UID: "tigreal"}, threeCounters()[1], "en")
 	assertError(t, err, "ai_provider_error", "Detail response referenced unknown evidence ids.")
 	if len(provider.received) != 1 {
 		t.Errorf("%d requests, want 1: no repair", len(provider.received))
@@ -177,7 +178,7 @@ func TestDetailFailsAtOnceOnAnUnknownEvidenceID(t *testing.T) {
 
 	provider = &scriptedProvider{answers: []string{`{"score":90}`,
 		`{"score":90,"confidence":80,"summary":"s","strengths":["x"],"evidenceIds":["made-up"]}`}}
-	_, err = New(provider, Config{}).CounterDetail(context.Background(), hero.Hero{UID: "tigreal"}, threeCounters()[1], "en")
+	_, err = New(provider, testConfig).CounterDetail(context.Background(), hero.Hero{UID: "tigreal"}, threeCounters()[1], "en")
 	assertError(t, err, "ai_provider_error", "Detail response referenced unknown evidence ids.")
 }
 
@@ -189,9 +190,68 @@ func TestRepairMessagesEqualDevs(t *testing.T) {
 		"wrong-types":     `{"score":90,"confidence":80,"summary":"s","strengths":"Cleanses the engage."}`,
 	} {
 		provider := &scriptedProvider{answers: []string{first, `{"score":90,"confidence":80,"summary":"s","strengths":["x"]}`}}
-		if _, err := New(provider, Config{}).CounterDetail(context.Background(), target, diggie, "en"); err != nil {
+		if _, err := New(provider, testConfig).CounterDetail(context.Background(), target, diggie, "en"); err != nil {
 			t.Fatal(err)
 		}
 		assertGoldenMessages(t, "counter-detail-repair-"+name+".en.json", provider.received[1])
+	}
+}
+
+var testConfig = Config{Timeout: time.Minute}
+
+// stalledProvider answers like a provider whose request outlasts ctx, after
+// answering the first of answers at once.
+type stalledProvider struct {
+	answers  []string
+	requests int
+}
+
+func (p *stalledProvider) Name() string { return "Stalled" }
+
+func (p *stalledProvider) CompleteJSON(ctx context.Context, messages []ai.Message) (map[string]any, error) {
+	p.requests++
+	if len(p.answers) > 0 {
+		answer := p.answers[0]
+		p.answers = p.answers[1:]
+		return (&scriptedProvider{answers: []string{answer}}).CompleteJSON(ctx, messages)
+	}
+	<-ctx.Done()
+	return nil, &ai.Error{Message: "Stalled request timed out.", Retryable: true}
+}
+
+func TestTheDeadlineBoundsAllProviderWork(t *testing.T) {
+	cfg := Config{Timeout: 50 * time.Millisecond}
+	target, ms := hero.Hero{UID: "tigreal"}, threeCounters()
+	for name, tt := range map[string]struct {
+		run      func() (int, error)
+		requests int
+	}{
+		"scoring": {func() (int, error) {
+			p := &stalledProvider{}
+			_, err := New(p, cfg).ScoreCounters(context.Background(), target, ms, "en")
+			return p.requests, err
+		}, 1},
+		"a chain, which asks no further provider": {func() (int, error) {
+			first, second := &stalledProvider{}, &stalledProvider{}
+			_, err := New(ai.Chain(first, second), cfg).ScoreSynergies(context.Background(), target, ms, "en")
+			return first.requests + second.requests, err
+		}, 1},
+		"the detail repair": {func() (int, error) {
+			p := &stalledProvider{answers: []string{`{"score":90}`}}
+			_, err := New(p, cfg).CounterDetail(context.Background(), target, ms[1], "en")
+			return p.requests, err
+		}, 2},
+	} {
+		t.Run(name, func(t *testing.T) {
+			start := time.Now()
+			requests, err := tt.run()
+			if elapsed := time.Since(start); elapsed > time.Second {
+				t.Errorf("answered after %v, want about 50ms", elapsed)
+			}
+			assertError(t, err, "ai_provider_timeout", "AI provider did not answer in time.")
+			if requests != tt.requests {
+				t.Errorf("%d requests, want %d", requests, tt.requests)
+			}
+		})
 	}
 }
