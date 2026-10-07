@@ -60,7 +60,7 @@ Enabling limiting without `REDIS_URL` or `RATE_LIMIT_SALT`, or with an unparseab
 go vet ./...
 go test ./...                                                     # AC-1 to AC-8 against a local Redis
 RATE_LIMIT_ENABLED=true REDIS_URL=redis://127.0.0.1:6379/15 RATE_LIMIT_SALT=x AI_PROVIDERS=mock AI_ANALYSIS_CACHE_TTL_SECONDS=0 make api
-for i in 1 2 3 4 5 6; do curl -s -o /dev/null -w '%{http_code}\n' -XPOST -H 'X-Forwarded-For: 10.0.0.1' localhost:8080/api/counters/analyze-score -d '{"targetHeroId":"tigreal"}'; done   # AC-1: five 200s, then 429
+for i in 1 2 3 4 5 6; do curl -s -o /dev/null -w '%{http_code}\n' -XPOST -H 'X-Forwarded-For: 10.0.0.1' 127.0.0.1:8080/api/counters/analyze-score -d '{"targetHeroId":"tigreal"}'; done   # AC-1: five 200s, then 429
 redis-cli -n 15 --scan --pattern 'rate:analyze:*'                 # AC-8 key shape
 RATE_LIMIT_ENABLED=true REDIS_URL=redis://127.0.0.1:6379/15 go run ./cmd/api; test $? -ne 0   # AC-7
 ```

@@ -3,20 +3,16 @@ info:
   title: MLBB Collector
   version: 1.0.0
   description: >
-    Serves the authored Mobile Legends: Bang Bang hero, counter, and synergy
-    dataset, and scores or explains counters and synergies with an AI provider
-    from that dataset only. A fan-made project, not affiliated with or endorsed
-    by Moonton.
-servers:
-  - url: http://127.0.0.1:8080
+    Mobile Legends: Bang Bang heroes, counters, and synergies, with AI scoring.
+    Fan-made; not affiliated with Moonton.
 tags:
   - name: health
   - name: heroes
-    description: Hero catalog and the counters and synergies authored for each hero.
+    description: Heroes, their counters, and their synergies.
   - name: counters
-    description: AI scoring and explanation of counters.
+    description: AI counter scoring.
   - name: synergies
-    description: AI scoring and explanation of synergies.
+    description: AI synergy scoring.
 
 paths:
   /health:
@@ -40,21 +36,21 @@ paths:
       tags: [heroes]
       summary: List heroes
       description: >
-        Heroes in Moonton ID order, filtered and paginated. An invalid `page` or
-        `size` falls back to its default; `size` above 100 is clamped to 100.
+        Ordered by Moonton ID. An invalid `page` or `size` uses the default;
+        `size` is capped at 100.
       operationId: listHeroes
       parameters:
         - name: search
           in: query
-          description: Keeps heroes whose name contains this text, case-insensitively.
+          description: Name contains this text, case-insensitive.
           schema: { type: string }
         - name: role
           in: query
-          description: Keeps heroes with this role, case-insensitively.
+          description: Has this role, case-insensitive.
           schema: { $ref: "#/components/schemas/Role" }
         - name: lane
           in: query
-          description: Keeps heroes with this lane, case-insensitively.
+          description: Plays this lane, case-insensitive.
           schema: { $ref: "#/components/schemas/Lane" }
         - name: page
           in: query
@@ -89,7 +85,7 @@ paths:
     get:
       tags: [heroes]
       summary: List a hero's counters
-      description: Counters whose target hero is `heroId`, ordered by counter hero ID.
+      description: Ordered by counter hero ID.
       operationId: listCounters
       parameters:
         - $ref: "#/components/parameters/HeroId"
@@ -111,7 +107,7 @@ paths:
     get:
       tags: [heroes]
       summary: List a hero's synergies
-      description: Synergies whose anchor hero is `heroId`, ordered by synergy hero ID.
+      description: Ordered by synergy hero ID.
       operationId: listSynergies
       parameters:
         - $ref: "#/components/parameters/HeroId"
@@ -145,7 +141,7 @@ paths:
                 language: { $ref: "#/components/schemas/Language" }
       responses:
         "200":
-          description: Counters ranked by score, then confidence, then hero ID.
+          description: Ranked by score, then confidence, then hero ID.
           content:
             application/json:
               schema:
@@ -230,7 +226,7 @@ paths:
                 language: { $ref: "#/components/schemas/Language" }
       responses:
         "200":
-          description: Synergies ranked by score, then confidence, then hero ID.
+          description: Ranked by score, then confidence, then hero ID.
           content:
             application/json:
               schema:
@@ -305,7 +301,7 @@ components:
       name: heroId
       in: path
       required: true
-      description: The hero's slug.
+      description: Hero slug.
       schema: { type: string, examples: [tigreal] }
 
   schemas:
@@ -328,7 +324,7 @@ components:
       type: object
       required: [uid, mlid, name, roles, lanes, images]
       properties:
-        uid: { type: string, description: The hero's slug., examples: [tigreal] }
+        uid: { type: string, description: Hero slug., examples: [tigreal] }
         mlid: { type: string, pattern: "^[1-9][0-9]*$", description: The number Moonton assigns the hero, as a string., examples: ["6"] }
         name: { type: string, examples: [Tigreal] }
         roles:
@@ -340,7 +336,7 @@ components:
           items: { $ref: "#/components/schemas/Lane" }
         images:
           type: object
-          description: Image URLs by variant, currently `head`.
+          description: Image URLs by variant (`head`).
           additionalProperties: { type: string }
 
     HeroPage:

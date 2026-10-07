@@ -1,6 +1,7 @@
-// Command seed makes the public tables match the authored dataset in data/
-// (ADR-0001). It loads and validates the whole dataset before it connects, so
-// an invalid dataset never reaches the database.
+// Command seed makes the public tables of the database named by the DB_*
+// variables match the authored dataset in data/ (ADR-0001). It validates the
+// whole dataset before it connects, so an invalid dataset never reaches the
+// database.
 package main
 
 import (
@@ -8,46 +9,45 @@ import (
 	"flag"
 	"fmt"
 	"os"
+	"time"
 
 	"github.com/jackc/pgx/v5"
 
 	"github.com/yeremi777/mlbb-collector/internal/config"
+	"github.com/yeremi777/mlbb-collector/internal/database"
 	"github.com/yeremi777/mlbb-collector/internal/dataset"
 	"github.com/yeremi777/mlbb-collector/internal/seed"
 )
 
+const seedTimeout = 2 * time.Minute
+
 func main() {
-	if err := run(os.Args[1:]); err != nil {
+	dir := flag.String("data", "data", "dataset directory")
+	flag.Parse()
+
+	if err := run(*dir); err != nil {
 		fmt.Fprintln(os.Stderr, "seed:", err)
 		os.Exit(1)
 	}
 }
 
-func run(args []string) error {
-	flags := flag.NewFlagSet("seed", flag.ContinueOnError)
-	dir := flags.String("data", "data", "dataset directory")
-	if err := flags.Parse(args); err != nil {
+func run(dir string) error {
+	db, err := config.LoadDatabase(os.Getenv)
+	if err != nil {
 		return err
 	}
-	if err := config.LoadDotEnv(); err != nil {
+	ds, err := dataset.Load(dir)
+	if err != nil {
 		return err
 	}
+	ctx, cancel := context.WithTimeout(context.Background(), seedTimeout)
+	defer cancel()
+	conn, err := database.Connect(ctx, db.DSN())
+	if err != nil {
+		return err
+	}
+	defer conn.Close(context.Background())
 
-	ds, err := dataset.Load(*dir)
-	if err != nil {
-		return err
-	}
-	url, err := config.DatabaseURL()
-	if err != nil {
-		return err
-	}
-
-	ctx := context.Background()
-	conn, err := pgx.Connect(ctx, url)
-	if err != nil {
-		return fmt.Errorf("connect: %w", err)
-	}
-	defer conn.Close(ctx)
 	if err := pgx.BeginFunc(ctx, conn, func(tx pgx.Tx) error { return seed.Sync(ctx, tx, ds) }); err != nil {
 		return err
 	}

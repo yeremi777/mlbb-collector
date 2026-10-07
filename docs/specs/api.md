@@ -20,10 +20,11 @@
 | `GET /api/heroes/{heroId}` | Hero | 404 `hero_not_found` |
 | `GET /api/heroes/{heroId}/counters` | array of Counter | 404 `hero_not_found`, 404 `counter_data_not_found` |
 | `GET /api/heroes/{heroId}/synergies` | array of Synergy | 404 `hero_not_found`, 404 `synergy_data_not_found` |
-| `GET /docs` | Scalar page rendering `docs/openapi.yaml`, with `APP_URL` as its server | |
-| `GET /docs/openapi.yaml` | the spec file with its `servers` entry set to `APP_URL`, `application/yaml` | |
+| `GET /docs`, `GET /docs/`, `GET /docs/index.html` | Swagger UI's standalone page rendering `docs/openapi.yaml`; its top bar shows the Swagger logo on the left and the dark-mode toggle in the right corner, without the Explore box, and the page starts dark when the operating system prefers dark | |
+| `GET /docs/openapi.yaml` | the spec file as written, `application/yaml` | |
+| `GET /` | 302 redirect to `/docs` | |
 
-`docs/openapi.yaml` is the contract for every route and body except the two `/docs` routes that serve it. It is written by hand, and a test fails when a registered route other than those two is missing from it, or a path in it is not registered.
+`docs/openapi.yaml` is the contract for every route and body except the docs routes and redirect above. It declares no servers, so the docs page calls OpenAPI's default `/`, the address it was opened on, whether `localhost` or `127.0.0.1`. `/docs/index.html` serves the page because browsers that once saw `dev`'s permanent redirect from `/docs` go there without asking. It is written by hand, and a test fails when a registered route other than those is missing from it, or a path in it is not registered.
 
 ### Bodies
 
@@ -70,7 +71,7 @@ A request whose `Origin` is `http://localhost:3000` or one of the comma-separate
 
 ## Configuration
 
-Read once at startup into one typed config, from the environment and an optional `.env`. A missing required value or an unparseable one stops startup with an error naming the variable.
+Read once at startup into one typed config, from the environment, which `make` fills from `.env`. A missing required value stops startup with `<VAR> is not set; copy .env.example to .env`, and an unparseable one with an error naming the variable.
 
 | Variable | Default | Meaning |
 |---|---|---|
@@ -78,15 +79,15 @@ Read once at startup into one typed config, from the environment and an optional
 | `DB_PORT` | required | Postgres port, 1 to 65535 |
 | `DB_PASSWORD` | empty | Postgres password |
 | `DB_SSLMODE` | required | `disable`, `allow`, `prefer`, `require`, `verify-ca`, or `verify-full` |
-| `APP_PORT` | `8080` | listen port, 1 to 65535 |
-| `APP_URL` | `http://127.0.0.1:8080` | the service's public base URL, an absolute `http` or `https` URL; the server the docs show |
+| `APP_PORT` | required | listen port, 1 to 65535 |
+| `APP_URL` | required | the service's public base URL, an absolute `http` or `https` URL; a port in it must be `APP_PORT`; printed at startup as `url` and `docs` |
 | `FRONTEND_ORIGIN` | empty | extra CORS origins, comma-separated |
 
 ## Server
 
-- The server listens on `127.0.0.1:APP_PORT`.
+- The server listens on `127.0.0.1:APP_PORT` and logs `api listening url=<APP_URL> docs=<APP_URL>/docs`.
 - Startup pings Postgres and fails when it cannot reach it.
-- Read-header timeout 5s, read timeout 10s, idle timeout 60s. The write timeout is `AI_TIMEOUT_SECONDS` (default 20, owned by `analysis`) plus 10s, so an analyze response is never cut off.
+- Read-header timeout 5s, read timeout 10s, idle timeout 60s. The write timeout is `AI_TIMEOUT_SECONDS` (default 60, owned by `analysis`) plus 10s, so an analyze response is never cut off.
 - `SIGINT` or `SIGTERM` stops accepting connections and lets in-flight requests finish for up to 25s.
 
 ## Acceptance criteria
@@ -96,21 +97,23 @@ Read once at startup into one typed config, from the environment and an optional
 - AC-3: An unknown path answers 404 `not_found` and a wrong method on a known path answers 405 `method_not_allowed`, both in the error body shape.
 - AC-4: A handler test forces a repository error and gets 500 `internal_error` with no detail from the error in the body.
 - AC-5: The route test passes: every registered route except `/docs` and `/docs/openapi.yaml` is in `docs/openapi.yaml`, and every path in it other than the four analyze routes `analysis` owns is registered.
-- AC-6: `GET /docs` renders the spec in Scalar, and `GET /docs/openapi.yaml` lists `APP_URL` as its only server.
-- AC-7: Startup without `DB_HOST`, with `DB_SSLMODE=off`, with `APP_PORT=abc`, or with `APP_URL=localhost`, exits non-zero naming the variable. Startup with an unreachable database exits non-zero.
+- AC-6: `GET /docs`, `/docs/`, and `/docs/index.html` render the spec in Swagger UI from both `localhost` and `127.0.0.1`, and `GET /docs/openapi.yaml` declares no servers.
+- AC-7: Startup without `DB_HOST` or `APP_URL`, with `APP_PORT=abc`, with `APP_URL=localhost`, or with an `APP_URL` port other than `APP_PORT`, exits non-zero naming the variable. Startup with an unreachable database, or a `DB_SSLMODE` Postgres does not accept, exits non-zero.
 - AC-8: After `SIGTERM` during a request that is still running, the request completes and the process exits 0.
 
 ## Verification
 
 ```bash
+set -a; . ./.env; set +a                                   # the commands below read the .env variables
 go vet ./...
 go test ./...                                              # AC-3, AC-4, AC-5
+make test-db-up && make test-integration                     # repository queries against the throwaway Postgres
 make api                                                   # this API on :8080
 API_PORT=8081 go run ./cmd/api                             # dev's API, from the mlbb-analyzer-service checkout on branch dev, same DB_* settings
-for p in /health /api/heroes '/api/heroes?search=ali' '/api/heroes?role=TANK' '/api/heroes?lane=roam&page=2&size=5' '/api/heroes?page=0&size=500' '/api/heroes?page=99' '/api/heroes?size=abc' /api/heroes/tigreal /api/heroes/x.borg /api/heroes/nope /api/heroes/tigreal/counters /api/heroes/x.borg/counters /api/heroes/hirara/counters /api/heroes/nope/counters /api/heroes/tigreal/synergies /api/heroes/x.borg/synergies /api/heroes/hirara/synergies /api/heroes/nope/synergies; do diff <(curl -si "localhost:8080$p" | grep -iv '^date:') <(curl -si "localhost:8081$p" | grep -iv '^date:') >/dev/null || echo "DIFF $p"; done   # AC-1, prints nothing
-for o in http://localhost:3000 https://evil.example; do diff <(curl -si -H "Origin: $o" localhost:8080/health | grep -i '^access-control\|^vary') <(curl -si -H "Origin: $o" localhost:8081/health | grep -i '^access-control\|^vary') || echo "DIFF $o"; done   # AC-2
-curl -si -X OPTIONS -H 'Origin: http://localhost:3000' -H 'Access-Control-Request-Headers: content-type' localhost:8080/api/heroes   # AC-2, 204
-curl -s localhost:8080/nope; curl -s -X DELETE localhost:8080/api/heroes   # AC-3
-open http://localhost:8080/docs                            # AC-6
-DB_HOST= go run ./cmd/api; DB_SSLMODE=off go run ./cmd/api; APP_PORT=abc go run ./cmd/api; APP_URL=localhost go run ./cmd/api   # AC-7
+for p in /health /api/heroes '/api/heroes?search=ali' '/api/heroes?role=TANK' '/api/heroes?lane=roam&page=2&size=5' '/api/heroes?page=0&size=500' '/api/heroes?page=99' '/api/heroes?size=abc' /api/heroes/tigreal /api/heroes/x.borg /api/heroes/nope /api/heroes/tigreal/counters /api/heroes/x.borg/counters /api/heroes/hirara/counters /api/heroes/nope/counters /api/heroes/tigreal/synergies /api/heroes/x.borg/synergies /api/heroes/hirara/synergies /api/heroes/nope/synergies; do diff <(curl -si "127.0.0.1:8080$p" | grep -iv '^date:') <(curl -si "127.0.0.1:8081$p" | grep -iv '^date:') >/dev/null || echo "DIFF $p"; done   # AC-1, prints nothing
+for o in http://localhost:3000 https://evil.example; do diff <(curl -si -H "Origin: $o" 127.0.0.1:8080/health | grep -i '^access-control\|^vary') <(curl -si -H "Origin: $o" 127.0.0.1:8081/health | grep -i '^access-control\|^vary') || echo "DIFF $o"; done   # AC-2
+curl -si -X OPTIONS -H 'Origin: http://localhost:3000' -H 'Access-Control-Request-Headers: content-type' 127.0.0.1:8080/api/heroes   # AC-2, 204
+curl -s 127.0.0.1:8080/nope; curl -s -X DELETE 127.0.0.1:8080/api/heroes   # AC-3
+open http://127.0.0.1:8080/docs                            # AC-6
+DB_HOST= go run ./cmd/api; APP_URL= go run ./cmd/api; DB_SSLMODE=off go run ./cmd/api; APP_PORT=abc go run ./cmd/api; APP_URL=localhost go run ./cmd/api   # AC-7
 ```

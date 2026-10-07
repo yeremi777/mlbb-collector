@@ -90,7 +90,7 @@ Both clients send `INGEST_USER_AGENT`, default `mlbb-collector/1.0 (+github.com/
 
 ## Schedule
 
-`deploy/cron/crontab` holds one marked block: `CRON_TZ=Asia/Jakarta` and `ingest all` at 07:00 and 13:00, run from the checkout so `.env` is read, appending to `log/ingest.log`. `make ingest-install` builds `bin/ingest` and writes the block into the user's crontab with this checkout's path, replacing an earlier copy of the block; `make ingest-status` prints the installed block.
+`deploy/cron/crontab` holds one marked block: `CRON_TZ=Asia/Jakarta` and `ingest all` at 07:00 and 13:00, run from the checkout with `.env` loaded into its environment, appending to `log/ingest.log`. `make ingest-install` builds `bin/ingest` and writes the block into the user's crontab with this checkout's path, replacing an earlier copy of the block; `make ingest-status` prints the installed block.
 
 ## Configuration
 
@@ -123,7 +123,8 @@ A non-default base URL is logged as a warning on every run.
 ```bash
 set -a; . ./.env; set +a; export PGHOST=$DB_HOST PGPORT=$DB_PORT PGDATABASE=$DB_NAME PGUSER=$DB_USERNAME PGPASSWORD=$DB_PASSWORD PGSSLMODE=$DB_SSLMODE   # psql below reads these
 go vet ./...
-go test ./...                                                      # AC-5 to AC-8, AC-10
+go test ./...                                                      # AC-5, AC-8, AC-10
+make test-db-up && make test-integration                             # AC-5 to AC-7 against the throwaway Postgres
 make migrate-reset && make migrate-up                              # AC-1, run by the user
 make ingest && make ingest                                         # AC-2, AC-3, run by the user
 psql -c "SELECT rank_tier, window_days, count(*) FROM raw.hero_rank_snapshots WHERE snapshot_date = current_date GROUP BY 1, 2 ORDER BY 1, 2"   # AC-2
