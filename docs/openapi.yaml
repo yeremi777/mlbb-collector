@@ -1,0 +1,499 @@
+openapi: 3.1.0
+info:
+  title: MLBB Collector
+  version: 1.0.0
+  description: >
+    Serves the authored Mobile Legends: Bang Bang hero, counter, and synergy
+    dataset, and scores or explains counters and synergies with an AI provider
+    from that dataset only. A fan-made project, not affiliated with or endorsed
+    by Moonton.
+servers:
+  - url: http://127.0.0.1:8080
+tags:
+  - name: health
+  - name: heroes
+    description: Hero catalog and the counters and synergies authored for each hero.
+  - name: counters
+    description: AI scoring and explanation of counters.
+  - name: synergies
+    description: AI scoring and explanation of synergies.
+
+paths:
+  /health:
+    get:
+      tags: [health]
+      summary: Liveness
+      operationId: health
+      responses:
+        "200":
+          description: The service is up.
+          content:
+            application/json:
+              schema:
+                type: object
+                required: [status]
+                properties:
+                  status: { type: string, const: ok }
+
+  /api/heroes:
+    get:
+      tags: [heroes]
+      summary: List heroes
+      description: >
+        Heroes in Moonton ID order, filtered and paginated. An invalid `page` or
+        `size` falls back to its default; `size` above 100 is clamped to 100.
+      operationId: listHeroes
+      parameters:
+        - name: search
+          in: query
+          description: Keeps heroes whose name contains this text, case-insensitively.
+          schema: { type: string }
+        - name: role
+          in: query
+          description: Keeps heroes with this role, case-insensitively.
+          schema: { $ref: "#/components/schemas/Role" }
+        - name: lane
+          in: query
+          description: Keeps heroes with this lane, case-insensitively.
+          schema: { $ref: "#/components/schemas/Lane" }
+        - name: page
+          in: query
+          schema: { type: integer, minimum: 1, default: 1 }
+        - name: size
+          in: query
+          schema: { type: integer, minimum: 1, maximum: 100, default: 10 }
+      responses:
+        "200":
+          description: One page of heroes.
+          content:
+            application/json:
+              schema: { $ref: "#/components/schemas/HeroPage" }
+
+  /api/heroes/{heroId}:
+    get:
+      tags: [heroes]
+      summary: Get a hero
+      operationId: getHero
+      parameters:
+        - $ref: "#/components/parameters/HeroId"
+      responses:
+        "200":
+          description: The hero.
+          content:
+            application/json:
+              schema: { $ref: "#/components/schemas/Hero" }
+        "404":
+          $ref: "#/components/responses/HeroNotFound"
+
+  /api/heroes/{heroId}/counters:
+    get:
+      tags: [heroes]
+      summary: List a hero's counters
+      description: Counters whose target hero is `heroId`, ordered by counter hero ID.
+      operationId: listCounters
+      parameters:
+        - $ref: "#/components/parameters/HeroId"
+      responses:
+        "200":
+          description: The hero's counters.
+          content:
+            application/json:
+              schema:
+                type: array
+                items: { $ref: "#/components/schemas/Counter" }
+        "404":
+          description: "`hero_not_found` or `counter_data_not_found`."
+          content:
+            application/json:
+              schema: { $ref: "#/components/schemas/Error" }
+
+  /api/heroes/{heroId}/synergies:
+    get:
+      tags: [heroes]
+      summary: List a hero's synergies
+      description: Synergies whose anchor hero is `heroId`, ordered by synergy hero ID.
+      operationId: listSynergies
+      parameters:
+        - $ref: "#/components/parameters/HeroId"
+      responses:
+        "200":
+          description: The hero's synergies.
+          content:
+            application/json:
+              schema:
+                type: array
+                items: { $ref: "#/components/schemas/Synergy" }
+        "404":
+          description: "`hero_not_found` or `synergy_data_not_found`."
+          content:
+            application/json:
+              schema: { $ref: "#/components/schemas/Error" }
+
+  /api/counters/analyze-score:
+    post:
+      tags: [counters]
+      summary: Score every counter of a target hero
+      operationId: analyzeCounterScore
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                targetHeroId: { type: string, examples: [tigreal] }
+                language: { $ref: "#/components/schemas/Language" }
+      responses:
+        "200":
+          description: Counters ranked by score, then confidence, then hero ID.
+          content:
+            application/json:
+              schema:
+                type: object
+                required: [targetHeroId, source, recommendations]
+                properties:
+                  targetHeroId: { type: string }
+                  source: { type: string, const: ai }
+                  recommendations:
+                    type: array
+                    items:
+                      type: object
+                      required: [rank, counterHeroId, score, confidence]
+                      properties:
+                        rank: { type: integer, minimum: 1 }
+                        counterHeroId: { type: string }
+                        score: { $ref: "#/components/schemas/Rating" }
+                        confidence: { $ref: "#/components/schemas/Rating" }
+        "404":
+          description: "`target_hero_not_found` or `counter_data_not_found`."
+          content:
+            application/json:
+              schema: { $ref: "#/components/schemas/Error" }
+        "422": { $ref: "#/components/responses/InvalidRequest" }
+        "429": { $ref: "#/components/responses/RateLimitExceeded" }
+        "502": { $ref: "#/components/responses/ProviderError" }
+        "503": { $ref: "#/components/responses/RateLimitUnavailable" }
+        "504": { $ref: "#/components/responses/ProviderUnavailable" }
+
+  /api/counters/analyze-detail:
+    post:
+      tags: [counters]
+      summary: Explain one counter
+      operationId: analyzeCounterDetail
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                targetHeroId: { type: string, examples: [tigreal] }
+                counterHeroId: { type: string, examples: [diggie] }
+                language: { $ref: "#/components/schemas/Language" }
+      responses:
+        "200":
+          description: The counter's score and explanation.
+          content:
+            application/json:
+              schema:
+                allOf:
+                  - type: object
+                    required: [targetHeroId, counterHeroId]
+                    properties:
+                      targetHeroId: { type: string }
+                      counterHeroId: { type: string }
+                  - $ref: "#/components/schemas/Detail"
+        "404":
+          description: "`target_hero_not_found`, `counter_data_not_found`, `counter_hero_not_found`, or `counter_matchup_not_found`."
+          content:
+            application/json:
+              schema: { $ref: "#/components/schemas/Error" }
+        "422": { $ref: "#/components/responses/InvalidRequest" }
+        "429": { $ref: "#/components/responses/RateLimitExceeded" }
+        "502": { $ref: "#/components/responses/ProviderError" }
+        "503": { $ref: "#/components/responses/RateLimitUnavailable" }
+        "504": { $ref: "#/components/responses/ProviderUnavailable" }
+
+  /api/synergies/analyze-score:
+    post:
+      tags: [synergies]
+      summary: Score every synergy of an anchor hero
+      operationId: analyzeSynergyScore
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                anchorHeroId: { type: string, examples: [tigreal] }
+                language: { $ref: "#/components/schemas/Language" }
+      responses:
+        "200":
+          description: Synergies ranked by score, then confidence, then hero ID.
+          content:
+            application/json:
+              schema:
+                type: object
+                required: [anchorHeroId, source, recommendations]
+                properties:
+                  anchorHeroId: { type: string }
+                  source: { type: string, const: ai }
+                  recommendations:
+                    type: array
+                    items:
+                      type: object
+                      required: [rank, synergyHeroId, score, confidence]
+                      properties:
+                        rank: { type: integer, minimum: 1 }
+                        synergyHeroId: { type: string }
+                        score: { $ref: "#/components/schemas/Rating" }
+                        confidence: { $ref: "#/components/schemas/Rating" }
+        "404":
+          description: "`anchor_hero_not_found` or `synergy_data_not_found`."
+          content:
+            application/json:
+              schema: { $ref: "#/components/schemas/Error" }
+        "422": { $ref: "#/components/responses/InvalidRequest" }
+        "429": { $ref: "#/components/responses/RateLimitExceeded" }
+        "502": { $ref: "#/components/responses/ProviderError" }
+        "503": { $ref: "#/components/responses/RateLimitUnavailable" }
+        "504": { $ref: "#/components/responses/ProviderUnavailable" }
+
+  /api/synergies/analyze-detail:
+    post:
+      tags: [synergies]
+      summary: Explain one synergy
+      operationId: analyzeSynergyDetail
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                anchorHeroId: { type: string, examples: [tigreal] }
+                synergyHeroId: { type: string, examples: [pharsa] }
+                language: { $ref: "#/components/schemas/Language" }
+      responses:
+        "200":
+          description: The synergy's score and explanation.
+          content:
+            application/json:
+              schema:
+                allOf:
+                  - type: object
+                    required: [anchorHeroId, synergyHeroId]
+                    properties:
+                      anchorHeroId: { type: string }
+                      synergyHeroId: { type: string }
+                  - $ref: "#/components/schemas/Detail"
+        "404":
+          description: "`anchor_hero_not_found`, `synergy_data_not_found`, `synergy_hero_not_found`, or `synergy_matchup_not_found`."
+          content:
+            application/json:
+              schema: { $ref: "#/components/schemas/Error" }
+        "422": { $ref: "#/components/responses/InvalidRequest" }
+        "429": { $ref: "#/components/responses/RateLimitExceeded" }
+        "502": { $ref: "#/components/responses/ProviderError" }
+        "503": { $ref: "#/components/responses/RateLimitUnavailable" }
+        "504": { $ref: "#/components/responses/ProviderUnavailable" }
+
+components:
+  parameters:
+    HeroId:
+      name: heroId
+      in: path
+      required: true
+      description: The hero's slug.
+      schema: { type: string, examples: [tigreal] }
+
+  schemas:
+    Role:
+      type: string
+      enum: [tank, fighter, assassin, mage, marksman, support]
+    Lane:
+      type: string
+      enum: [gold, exp, mid, roam, jungle]
+    Language:
+      type: string
+      enum: [en, id]
+      default: en
+    Rating:
+      type: integer
+      minimum: 0
+      maximum: 100
+
+    Hero:
+      type: object
+      required: [uid, mlid, name, roles, lanes, images]
+      properties:
+        uid: { type: string, description: The hero's slug., examples: [tigreal] }
+        mlid: { type: string, pattern: "^[1-9][0-9]*$", description: The number Moonton assigns the hero, as a string., examples: ["6"] }
+        name: { type: string, examples: [Tigreal] }
+        roles:
+          type: array
+          minItems: 1
+          items: { $ref: "#/components/schemas/Role" }
+        lanes:
+          type: array
+          items: { $ref: "#/components/schemas/Lane" }
+        images:
+          type: object
+          description: Image URLs by variant, currently `head`.
+          additionalProperties: { type: string }
+
+    HeroPage:
+      type: object
+      required: [items, page, size, total, pages]
+      properties:
+        items:
+          type: array
+          items: { $ref: "#/components/schemas/Hero" }
+        page: { type: integer, minimum: 1 }
+        size: { type: integer, minimum: 1, maximum: 100 }
+        total: { type: integer, minimum: 0 }
+        pages: { type: integer, minimum: 0 }
+
+    ProofBase:
+      type: object
+      required: [id, category, priority, impact, summary, worksBestWhen, failureCases]
+      properties:
+        id: { type: string }
+        priority: { type: string, enum: [primary, secondary, condition] }
+        impact: { type: string, enum: [high, medium, low] }
+        summary: { type: string }
+        worksBestWhen:
+          type: array
+          minItems: 1
+          items: { type: string }
+        failureCases:
+          type: array
+          minItems: 1
+          items: { type: string }
+
+    CounterProof:
+      allOf:
+        - $ref: "#/components/schemas/ProofBase"
+        - type: object
+          properties:
+            category:
+              type: string
+              enum: [skill-interaction, crowd-control-counter, damage-type-advantage, item-power-spike, mobility-advantage, range-advantage, kiting, sustain-anti-sustain, positioning-requirement, cooldown-window, vision-awareness, teamfight-role-counter, game-phase, execution-difficulty]
+
+    SynergyProof:
+      allOf:
+        - $ref: "#/components/schemas/ProofBase"
+        - type: object
+          properties:
+            category:
+              type: string
+              enum: [skill-interaction, crowd-control-chain, engage-follow-up, setup-combo, damage-amplification, protection, peel, frontline-enabler, mobility-enabler, vision-setup, healing-sustain, shielding, poke-siege, pickoff-combo, teamfight-combo, objective-control, laning-synergy, game-phase, positioning-requirement, cooldown-window, execution-difficulty]
+
+    Counter:
+      type: object
+      required: [targetHeroId, counterHero, reasons, counterTypes, proof]
+      properties:
+        targetHeroId: { type: string, examples: [tigreal] }
+        counterHero: { $ref: "#/components/schemas/Hero" }
+        reasons:
+          type: array
+          minItems: 1
+          items: { type: string }
+        counterTypes:
+          type: array
+          minItems: 1
+          items: { type: string }
+        proof:
+          type: array
+          minItems: 1
+          items: { $ref: "#/components/schemas/CounterProof" }
+
+    Synergy:
+      type: object
+      required: [anchorHeroId, synergyHero, reasons, synergyTypes, proof]
+      properties:
+        anchorHeroId: { type: string, examples: [tigreal] }
+        synergyHero: { $ref: "#/components/schemas/Hero" }
+        reasons:
+          type: array
+          minItems: 1
+          items: { type: string }
+        synergyTypes:
+          type: array
+          minItems: 1
+          items: { type: string }
+        proof:
+          type: array
+          minItems: 1
+          items: { $ref: "#/components/schemas/SynergyProof" }
+
+    Detail:
+      type: object
+      required: [source, score, confidence, summary, strengths, conditions, failureCases, evidenceIds]
+      properties:
+        source: { type: string, const: ai }
+        score: { $ref: "#/components/schemas/Rating" }
+        confidence: { $ref: "#/components/schemas/Rating" }
+        summary: { type: string }
+        strengths:
+          type: array
+          minItems: 1
+          items: { type: string }
+        conditions:
+          type: array
+          items: { type: string }
+        failureCases:
+          type: array
+          items: { type: string }
+        evidenceIds:
+          type: array
+          description: Proof IDs of this counter or synergy that the explanation draws on.
+          items: { type: string }
+
+    Error:
+      type: object
+      required: [error]
+      properties:
+        error:
+          type: object
+          required: [code, message]
+          properties:
+            code: { type: string, examples: [hero_not_found] }
+            message: { type: string, examples: [Hero was not found in the dataset.] }
+
+  responses:
+    HeroNotFound:
+      description: "`hero_not_found`."
+      content:
+        application/json:
+          schema: { $ref: "#/components/schemas/Error" }
+    InvalidRequest:
+      description: "`invalid_request`: the body is not valid JSON, or `language` is not `en` or `id`."
+      content:
+        application/json:
+          schema: { $ref: "#/components/schemas/Error" }
+    RateLimitExceeded:
+      description: "`rate_limit_exceeded`."
+      headers:
+        Retry-After:
+          description: Seconds until the quota resets.
+          schema: { type: integer }
+      content:
+        application/json:
+          schema: { $ref: "#/components/schemas/Error" }
+    RateLimitUnavailable:
+      description: "`rate_limit_unavailable`: rate limiting is enabled and Redis cannot be reached."
+      content:
+        application/json:
+          schema: { $ref: "#/components/schemas/Error" }
+    ProviderError:
+      description: "`ai_provider_error`: every provider failed, or the model's answer was invalid."
+      content:
+        application/json:
+          schema: { $ref: "#/components/schemas/Error" }
+    ProviderUnavailable:
+      description: "`ai_provider_not_configured` or `ai_provider_timeout`."
+      content:
+        application/json:
+          schema: { $ref: "#/components/schemas/Error" }
