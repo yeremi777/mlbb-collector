@@ -22,6 +22,7 @@ import (
 	"github.com/yeremi777/mlbb-collector/internal/database"
 	"github.com/yeremi777/mlbb-collector/internal/hero"
 	"github.com/yeremi777/mlbb-collector/internal/httpx"
+	"github.com/yeremi777/mlbb-collector/internal/ratelimit"
 	"github.com/yeremi777/mlbb-collector/internal/synergy"
 )
 
@@ -36,8 +37,8 @@ func main() {
 }
 
 // register adds every route the API serves to mux. A nil analyzer means no AI
-// provider is configured.
-func register(mux httpx.Mux, db database.Querier, analyzer *analysis.Analyzer, spec []byte) {
+// provider is configured, and a nil limiter limits nothing.
+func register(mux httpx.Mux, db database.Querier, analyzer *analysis.Analyzer, limiter *ratelimit.Limiter, spec []byte) {
 	mux.HandleFunc("GET /health", func(w http.ResponseWriter, _ *http.Request) {
 		httpx.WriteJSON(w, http.StatusOK, map[string]string{"status": "ok"})
 	})
@@ -46,7 +47,7 @@ func register(mux httpx.Mux, db database.Querier, analyzer *analysis.Analyzer, s
 	counters, synergies := counter.NewRepository(db), synergy.NewRepository(db)
 	counter.NewHandler(heroes, counters).Register(mux)
 	synergy.NewHandler(heroes, synergies).Register(mux)
-	analysis.NewHandler(heroes, counters, synergies, analyzer).Register(mux)
+	analysis.NewHandler(heroes, counters, synergies, analyzer, limiter).Register(mux)
 	httpx.Docs(mux, spec)
 }
 
@@ -67,8 +68,15 @@ func run() error {
 	if analyzer == nil {
 		slog.Warn("no AI provider is usable; the analyze routes answer ai_provider_not_configured", "AI_PROVIDERS", cfg.AI.Providers)
 	}
+	var limiter *ratelimit.Limiter
+	if cfg.RateLimit.Enabled {
+		redisOptions := cfg.Redis.Options()
+		limiter = ratelimit.New(redisOptions, cfg.RateLimit.Limiter)
+		defer limiter.Close()
+		slog.Info("analyze requests are rate limited", "redis", redisOptions.Addr, "db", redisOptions.DB)
+	}
 	mux := http.NewServeMux()
-	register(mux, pool, analyzer, docs.Spec())
+	register(mux, pool, analyzer, limiter, docs.Spec())
 	srv := &http.Server{
 		Addr:              net.JoinHostPort("127.0.0.1", strconv.Itoa(cfg.Port)),
 		Handler:           httpx.CORS(cfg.FrontendOrigins, httpx.Router(mux)),
