@@ -70,10 +70,8 @@ func run() error {
 	}
 	var limiter *ratelimit.Limiter
 	if cfg.RateLimit.Enabled {
-		redisOptions := cfg.Redis.Options()
-		limiter = ratelimit.New(redisOptions, cfg.RateLimit.Limiter)
+		limiter = ratelimit.New(cfg.Redis.Options(), cfg.RateLimit.Limiter)
 		defer limiter.Close()
-		slog.Info("analyze requests are rate limited", "redis", redisOptions.Addr, "db", redisOptions.DB)
 	}
 	mux := http.NewServeMux()
 	register(mux, pool, analyzer, limiter, docs.Spec())
