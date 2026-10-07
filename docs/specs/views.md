@@ -66,14 +66,14 @@ The rows of `hero_counter_daily` at the newest Snapshot date per Target hero, Ra
 - AC-5: `hero_current` has 30 rows per hero in the newest Snapshot; a hero absent from `public.heroes` appears with NULL `hero_uid`.
 - AC-6: With Patches released on D and D-3, a Snapshot dated D-1 has the D-3 Patch as `patch_as_of`, `days_since_patch` 2, and `window_crosses_patch` true for the 3-day Window and above, false for the 1-day Window. A Snapshot dated before every Patch has the three Patch columns NULL.
 - AC-7: Ranks in `hero_current` never compare rows of different Snapshot dates.
-- AC-8: View tests insert fixture rows into `raw` and `public` inside a rolled-back transaction and assert AC-2 to AC-7.
+- AC-8: View tests insert fixture rows into `raw` and `public` of the throwaway test database, inside a rolled-back transaction, and assert AC-2 to AC-7.
 
 ## Verification
 
 ```bash
 set -a; . ./.env; set +a; export PGHOST=$DB_HOST PGPORT=$DB_PORT PGDATABASE=$DB_NAME PGUSER=$DB_USERNAME PGPASSWORD=$DB_PASSWORD PGSSLMODE=$DB_SSLMODE   # psql below reads these
 go vet ./...
-go test ./...                                                      # AC-2 to AC-8
+make test-db-up && make test-integration                             # AC-2 to AC-8
 make migrate-reset && make migrate-up                              # AC-1, run by the user
 psql -tAc "SELECT count(*) FROM staging.hero_counter_daily WHERE win_rate_delta <= 0"   # AC-3, returns 0
 psql -tAc "SELECT main_hero_id, count(*) FROM marts.hero_current WHERE snapshot_date = (SELECT max(snapshot_date) FROM marts.hero_current) GROUP BY 1 HAVING count(*) <> 30"   # AC-5, returns nothing
