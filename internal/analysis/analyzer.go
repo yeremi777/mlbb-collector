@@ -29,20 +29,24 @@ func providerFailure(format string, args ...any) *Error {
 }
 
 // Config tunes an Analyzer. Timeout bounds all provider work of one request:
-// every provider asked and the detail repair.
+// every provider asked and the detail repair. Valid results are cached for
+// CacheTTL, at most CacheMaxEntries of them; a zero value caches nothing.
 type Config struct {
-	Timeout time.Duration
+	Timeout         time.Duration
+	CacheTTL        time.Duration
+	CacheMaxEntries int
 }
 
 // Analyzer scores and explains Counters and Synergies by asking provider.
 type Analyzer struct {
 	provider ai.Provider
 	timeout  time.Duration
+	cache    *cache
 }
 
 // New asks provider.
 func New(provider ai.Provider, cfg Config) *Analyzer {
-	return &Analyzer{provider: provider, timeout: cfg.Timeout}
+	return &Analyzer{provider: provider, timeout: cfg.Timeout, cache: newCache(cfg.CacheTTL, cfg.CacheMaxEntries, time.Now)}
 }
 
 // Ranked is one Counter hero or Synergy hero with its Score and Confidence,
@@ -67,22 +71,22 @@ type Detail struct {
 
 // ScoreCounters scores every Counter of the target hero in one request.
 func (a *Analyzer) ScoreCounters(ctx context.Context, target hero.Hero, ms []Matchup, language string) ([]Ranked, error) {
-	return a.score(ctx, counterScoringMessages(target, ms, language), "counterHeroId", ms)
+	return a.score(ctx, cacheKey{"counter-score", target.UID, "", language}, counterScoringMessages(target, ms, language), "counterHeroId", ms)
 }
 
 // ScoreSynergies scores every Synergy of the anchor hero in one request.
 func (a *Analyzer) ScoreSynergies(ctx context.Context, anchor hero.Hero, ms []Matchup, language string) ([]Ranked, error) {
-	return a.score(ctx, synergyScoringMessages(anchor, ms, language), "synergyHeroId", ms)
+	return a.score(ctx, cacheKey{"synergy-score", anchor.UID, "", language}, synergyScoringMessages(anchor, ms, language), "synergyHeroId", ms)
 }
 
 // CounterDetail explains one Counter of the target hero.
 func (a *Analyzer) CounterDetail(ctx context.Context, target hero.Hero, m Matchup, language string) (Detail, error) {
-	return a.detail(ctx, counterDetailMessages(target, m, language), m, language)
+	return a.detail(ctx, cacheKey{"counter-detail", target.UID, m.Partner.UID, language}, counterDetailMessages(target, m, language), m, language)
 }
 
 // SynergyDetail explains one Synergy of the anchor hero.
 func (a *Analyzer) SynergyDetail(ctx context.Context, anchor hero.Hero, m Matchup, language string) (Detail, error) {
-	return a.detail(ctx, synergyDetailMessages(anchor, m, language), m, language)
+	return a.detail(ctx, cacheKey{"synergy-detail", anchor.UID, m.Partner.UID, language}, synergyDetailMessages(anchor, m, language), m, language)
 }
 
 // complete asks the provider, answering ai_provider_timeout once ctx's
@@ -102,7 +106,10 @@ func (a *Analyzer) complete(ctx context.Context, messages []ai.Message) (map[str
 	return nil, providerFailure("%v", err)
 }
 
-func (a *Analyzer) score(ctx context.Context, messages []ai.Message, idKey string, ms []Matchup) ([]Ranked, error) {
+func (a *Analyzer) score(ctx context.Context, key cacheKey, messages []ai.Message, idKey string, ms []Matchup) ([]Ranked, error) {
+	if cached, ok := a.cache.get(key); ok {
+		return cached.ranked, nil
+	}
 	ctx, cancel := context.WithTimeout(ctx, a.timeout)
 	defer cancel()
 	payload, err := a.complete(ctx, messages)
@@ -123,6 +130,7 @@ func (a *Analyzer) score(ctx context.Context, messages []ai.Message, idKey strin
 	for i := range ranked {
 		ranked[i].Rank = i + 1
 	}
+	a.cache.set(key, result{ranked: ranked})
 	return ranked, nil
 }
 
@@ -165,7 +173,10 @@ func isRating(f float64) bool { return f >= 0 && f <= 100 && f == math.Trunc(f) 
 
 // detail asks for the explanation, and sends an invalid answer back once with
 // a repair instruction unless it cites an unknown Proof ID.
-func (a *Analyzer) detail(ctx context.Context, messages []ai.Message, m Matchup, language string) (Detail, error) {
+func (a *Analyzer) detail(ctx context.Context, key cacheKey, messages []ai.Message, m Matchup, language string) (Detail, error) {
+	if cached, ok := a.cache.get(key); ok {
+		return cached.detail, nil
+	}
 	proofIDs := make([]string, len(m.Proof))
 	for i, p := range m.Proof {
 		proofIDs[i] = p.ID
@@ -178,6 +189,7 @@ func (a *Analyzer) detail(ctx context.Context, messages []ai.Message, m Matchup,
 	}
 	d, err := validateDetail(payload, proofIDs)
 	if err == nil {
+		a.cache.set(key, result{detail: d})
 		return d, nil
 	}
 	if _, fatal := err.(*Error); fatal {
@@ -189,6 +201,7 @@ func (a *Analyzer) detail(ctx context.Context, messages []ai.Message, m Matchup,
 	}
 	d, err = validateDetail(payload, proofIDs)
 	if err == nil {
+		a.cache.set(key, result{detail: d})
 		return d, nil
 	}
 	if ae, ok := err.(*Error); ok {
