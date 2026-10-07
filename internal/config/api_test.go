@@ -33,6 +33,11 @@ func TestLoadAPI(t *testing.T) {
 		t.Errorf("got %+v\nwant %+v", got, want)
 	}
 
+	vars["APP_URL"] = "https://api.example"
+	if got, err := LoadAPI(env(vars)); err != nil || got.URL != "https://api.example" {
+		t.Errorf("APP_URL without a port: got %q, %v; want it accepted", got.URL, err)
+	}
+
 	vars["AI_TIMEOUT_SECONDS"] = "20"
 	if got, err := LoadAPI(env(vars)); err != nil || got.WriteTimeout != 30*time.Second {
 		t.Errorf("AI_TIMEOUT_SECONDS=20: write timeout %v, %v; want 30s", got.WriteTimeout, err)
@@ -49,6 +54,7 @@ func TestLoadAPIRejectsMissingOrBadValues(t *testing.T) {
 		{"APP_URL", "localhost", `APP_URL "localhost" is not an absolute http or https URL`},
 		{"APP_URL", "ftp://api.example", `APP_URL "ftp://api.example" is not an absolute http or https URL`},
 		{"AI_TIMEOUT_SECONDS", "0", `AI_TIMEOUT_SECONDS "0" is not a positive number of seconds`},
+		{"APP_URL", "http://127.0.0.1:8082", `APP_URL "http://127.0.0.1:8082" names port 8082, but APP_PORT is 8080`},
 	} {
 		vars := validAPIEnv()
 		vars[tt.key] = tt.value

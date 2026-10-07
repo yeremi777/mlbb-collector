@@ -41,8 +41,14 @@ func LoadAPI(getenv func(string) string) (API, error) {
 		return API{}, fmt.Errorf("APP_PORT %q is not a port number", getenv("APP_PORT"))
 	}
 	appURL := getenv("APP_URL")
-	if u, err := url.Parse(appURL); err != nil || (u.Scheme != "http" && u.Scheme != "https") || u.Host == "" {
+	u, err := url.Parse(appURL)
+	if err != nil || (u.Scheme != "http" && u.Scheme != "https") || u.Host == "" {
 		return API{}, fmt.Errorf("APP_URL %q is not an absolute http or https URL", appURL)
+	}
+	// A URL that names a port is this server itself, so it must be the port
+	// the server listens on; one without a port is a proxy in front of it.
+	if p := u.Port(); p != "" && p != strconv.Itoa(port) {
+		return API{}, fmt.Errorf("APP_URL %q names port %s, but APP_PORT is %d", appURL, p, port)
 	}
 	aiTimeout := defaultAITimeout
 	if raw := getenv("AI_TIMEOUT_SECONDS"); raw != "" {

@@ -50,10 +50,6 @@ func run() error {
 	if err != nil {
 		return err
 	}
-	spec, err := docs.SpecFor(cfg.URL)
-	if err != nil {
-		return err
-	}
 
 	ctx := context.Background()
 	pool, err := database.OpenPool(ctx, cfg.Database.DSN())
@@ -63,7 +59,7 @@ func run() error {
 	defer pool.Close()
 
 	mux := http.NewServeMux()
-	register(mux, pool, spec)
+	register(mux, pool, docs.Spec())
 	srv := &http.Server{
 		Addr:              net.JoinHostPort("127.0.0.1", strconv.Itoa(cfg.Port)),
 		Handler:           httpx.CORS(cfg.FrontendOrigins, httpx.Router(mux)),
@@ -77,7 +73,7 @@ func run() error {
 	defer cancel()
 	served := make(chan error, 1)
 	go func() { served <- srv.ListenAndServe() }()
-	slog.Info("api listening", "addr", srv.Addr, "docs", cfg.URL+"/docs")
+	slog.Info("api listening", "url", cfg.URL, "docs", cfg.URL+"/docs")
 
 	select {
 	case err := <-served:
