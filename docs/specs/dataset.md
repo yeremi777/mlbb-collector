@@ -125,16 +125,16 @@ Primary key is the hero pair.
 - AC-6: Seeding a second time leaves every count and `max(updated_at)` of every table unchanged.
 - AC-7: Seeding from a copy of `data/` with one Counter removed deletes that Counter and its Proof; seeding from a copy with one Hero removed deletes that Hero and every Counter and Synergy naming it.
 - AC-8: Seeding from an invalid dataset exits non-zero without connecting to the database. A seed that fails inside the transaction leaves every table as it was.
-- AC-9: Integration tests run against a throwaway Postgres (`make test-db-up`) whose schema they rebuild from the migrations, never the `.env` database, and refuse a database whose name does not start with `test`. Each test runs inside a transaction that is rolled back.
+- AC-9: Integration tests run against `test_mlbb_collector` on the `.env` Postgres server, created once by the user, whose schema they rebuild from the migrations and empty afterwards, never the `.env` database, and refuse a database whose name does not start with `test`. Each test runs inside a transaction that is rolled back.
 
 ## Verification
 
 ```bash
-set -a; . ./.env; set +a; export PGHOST=$DB_HOST PGPORT=$DB_PORT PGDATABASE=$DB_NAME PGUSER=$DB_USERNAME PGPASSWORD=$DB_PASSWORD PGSSLMODE=$DB_SSLMODE   # psql below reads these
+set -a; . <(grep '^DB_' .env); set +a; export PGHOST=$DB_HOST PGPORT=$DB_PORT PGDATABASE=$DB_NAME PGUSER=$DB_USERNAME PGPASSWORD=$DB_PASSWORD PGSSLMODE=$DB_SSLMODE   # psql below reads these
 git -C ~/Documents/Local/mlbb-analyzer-service archive dev data/static | tar -x -C "$TMPDIR" && diff -r -x counters.json -x synergies.json -x raw -x README.md "$TMPDIR/data/static" data   # AC-1
 go vet ./...
 go test ./...                                                     # AC-2, AC-3
-make test-db-up && make test-integration                            # AC-9
+make test-integration                                              # AC-9
 make migrate-reset && make migrate-up                             # AC-4, run by the user
 make seed && make seed                                            # AC-5, AC-6, run by the user
 psql -c "SELECT 'heroes', count(*), max(updated_at) FROM heroes UNION ALL SELECT 'counters', count(*), max(updated_at) FROM counters UNION ALL SELECT 'counter_proofs', count(*), max(updated_at) FROM counter_proofs UNION ALL SELECT 'synergies', count(*), max(updated_at) FROM synergies UNION ALL SELECT 'synergy_proofs', count(*), max(updated_at) FROM synergy_proofs"   # AC-5, AC-6

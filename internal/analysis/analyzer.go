@@ -89,6 +89,13 @@ func (a *Analyzer) SynergyDetail(ctx context.Context, anchor hero.Hero, m Matchu
 	return a.detail(ctx, cacheKey{"synergy-detail", anchor.UID, m.Partner.UID, language}, synergyDetailMessages(anchor, m, language), m, language)
 }
 
+// cached reports whether key's result is answered from the cache, without
+// asking a provider.
+func (a *Analyzer) cached(key cacheKey) bool {
+	_, ok := a.cache.get(key)
+	return ok
+}
+
 // complete asks the provider, answering ai_provider_timeout once ctx's
 // deadline has passed.
 func (a *Analyzer) complete(ctx context.Context, messages []ai.Message) (map[string]any, error) {

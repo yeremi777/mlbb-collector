@@ -1,7 +1,7 @@
 //go:build integration
 
-// Package dbtest runs integration tests against a throwaway test database,
-// never the .env one.
+// Package dbtest runs integration tests against a test database, never the
+// .env one.
 package dbtest
 
 import (
@@ -20,8 +20,9 @@ import (
 var conn *pgx.Conn
 
 // Main rebuilds the schema of the database named by TEST_DB_DSN from the
-// migrations, runs the package's tests, and exits. It refuses any database
-// whose name does not start with "test".
+// migrations, runs the package's tests, empties the database again so no
+// table outlives the run, and exits. It refuses any database whose name does
+// not start with "test".
 func Main(m *testing.M) {
 	dsn := os.Getenv("TEST_DB_DSN")
 	if dsn == "" {
@@ -39,20 +40,31 @@ func Main(m *testing.M) {
 		fmt.Fprintf(os.Stderr, "refusing to reset database %q: its name must start with \"test\" (%v)\n", name, err)
 		os.Exit(1)
 	}
+	code := 1
 	if err := applyMigrations(ctx, c); err != nil {
 		fmt.Fprintln(os.Stderr, err)
-		os.Exit(1)
+	} else {
+		conn = c
+		code = m.Run()
 	}
-	conn = c
-	code := m.Run()
+	if err := emptySchema(ctx, c); err != nil {
+		fmt.Fprintln(os.Stderr, "empty the test database:", err)
+		code = 1
+	}
 	c.Close(ctx)
 	os.Exit(code)
 }
 
-// applyMigrations runs the goose Up section of every migration, oldest
-// first, on an empty schema.
+// emptySchema drops every table, leaving an empty public schema.
+func emptySchema(ctx context.Context, c *pgx.Conn) error {
+	_, err := c.Exec(ctx, "DROP SCHEMA public CASCADE; CREATE SCHEMA public")
+	return err
+}
+
+// applyMigrations empties the schema and runs the goose Up section of every
+// migration, oldest first.
 func applyMigrations(ctx context.Context, c *pgx.Conn) error {
-	if _, err := c.Exec(ctx, "DROP SCHEMA public CASCADE; CREATE SCHEMA public"); err != nil {
+	if err := emptySchema(ctx, c); err != nil {
 		return err
 	}
 	_, here, _, _ := runtime.Caller(0)

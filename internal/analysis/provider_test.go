@@ -70,7 +70,7 @@ func (s datasetStores) ForAnchor(_ context.Context, anchor string) ([]synergy.Wi
 func (s datasetStores) post(t *testing.T, analyzer *Analyzer, path, body string) *httptest.ResponseRecorder {
 	t.Helper()
 	mux := http.NewServeMux()
-	NewHandler(s, s, s, analyzer).Register(mux)
+	NewHandler(s, s, s, analyzer, nil).Register(mux)
 	rec := httptest.NewRecorder()
 	mux.ServeHTTP(rec, httptest.NewRequest(http.MethodPost, path, strings.NewReader(body)))
 	return rec

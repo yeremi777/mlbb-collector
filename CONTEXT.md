@@ -120,3 +120,4 @@ A Patch's headline changes as Liquipedia lists them.
 - "counter" meant both the authored pair the API serves and Moonton's `sub_hero` pair. Resolved: the authored pair is a **Counter**; Moonton's is a **Measured counter**.
 - "hero id" meant both the slug and Moonton's number. Resolved: the slug is the **Hero ID**; the number is the **Moonton ID**. The field names `uid` and `mlid` remain in the dataset files, the tables, and the API.
 - "pick rate" was used for `main_hero_appearance_rate`, which is a share of all picks, not a rate. Resolved: the term is **Appearance share**.
+- "window" meant both how many days a statistic covers and how long a rate-limit counter lasts. Resolved: the days are the **Window**; the counter's span is the rate-limit window.

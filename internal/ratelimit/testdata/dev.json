@@ -1,0 +1,275 @@
+{
+ "redis": [
+  {
+   "key": "rate:analyze:analyze-counter-detail:client:11111111-2222-4333-8444-555555555555",
+   "value": "6",
+   "ttl": 60
+  },
+  {
+   "key": "rate:analyze:analyze-counter-detail:ip:b8490699e4a8c59db1d2919e1240b913e177c35d7c780efba119e3dcf5284b6f",
+   "value": "6",
+   "ttl": 60
+  },
+  {
+   "key": "rate:analyze:analyze-counter-score:client:3f2c1d4e-5b6a-4c7d-8e9f-0a1b2c3d4e5f",
+   "value": "2",
+   "ttl": 60
+  },
+  {
+   "key": "rate:analyze:analyze-counter-score:ip:0adc40d14633a2f5d2ad44894035f9b5c1024c02af57516ade46f35bde593f7f",
+   "value": "1",
+   "ttl": 60
+  },
+  {
+   "key": "rate:analyze:analyze-counter-score:ip:3674fbe2cf6700526edd66ca7f4e02f96f833b2e38d4225c0a57641ca60977d0",
+   "value": "2",
+   "ttl": 60
+  },
+  {
+   "key": "rate:analyze:analyze-counter-score:ip:4326f7f52204e3fa3654951a0ad371fc6dc8bb288a1abd45471ef23cd3a3af38",
+   "value": "1",
+   "ttl": 60
+  },
+  {
+   "key": "rate:analyze:analyze-synergy-detail:client:aaaaaaaa-bbbb-4ccc-8ddd-eeeeeeeeeeee",
+   "value": "1",
+   "ttl": 60
+  },
+  {
+   "key": "rate:analyze:analyze-synergy-detail:ip:7f2acc1edc3023cf95826d2dbc7e82801f241948cd3ab3fd3ad790e30e64d6c5",
+   "value": "1",
+   "ttl": 60
+  },
+  {
+   "key": "rate:analyze:analyze-synergy-score:client:<issued-1>",
+   "value": "1",
+   "ttl": 60
+  },
+  {
+   "key": "rate:analyze:analyze-synergy-score:client:11111111-2222-4333-8444-555555555555",
+   "value": "1",
+   "ttl": 60
+  },
+  {
+   "key": "rate:analyze:analyze-synergy-score:client:<issued-2>",
+   "value": "1",
+   "ttl": 60
+  },
+  {
+   "key": "rate:analyze:analyze-synergy-score:client:3f2c1d4e-5b6a-4c7d-8e9f-0a1b2c3d4e5f",
+   "value": "1",
+   "ttl": 60
+  },
+  {
+   "key": "rate:analyze:analyze-synergy-score:ip:133c57e17d47f522e52370e81287d17f79cd63f9c97bd375d999831c31dfc223",
+   "value": "1",
+   "ttl": 60
+  },
+  {
+   "key": "rate:analyze:analyze-synergy-score:ip:3674fbe2cf6700526edd66ca7f4e02f96f833b2e38d4225c0a57641ca60977d0",
+   "value": "1",
+   "ttl": 60
+  },
+  {
+   "key": "rate:analyze:analyze-synergy-score:ip:74b16aaebc506ec8578584a1f0e7a08aa62bf32a3076e558516dda38b0627306",
+   "value": "1",
+   "ttl": 60
+  },
+  {
+   "key": "rate:analyze:analyze-synergy-score:ip:a174d77e7025312015cf523d31b59ac6bb3d9fe667c4163552bf3664ca7e4211",
+   "value": "1",
+   "ttl": 60
+  }
+ ],
+ "requests": [
+  {
+   "route": "analyze-counter-score",
+   "remoteAddr": "192.0.2.9:4000",
+   "forwardedFor": "10.0.0.1",
+   "cookie": "3f2c1d4e-5b6a-4c7d-8e9f-0a1b2c3d4e5f"
+  },
+  {
+   "route": "analyze-counter-score",
+   "remoteAddr": "192.0.2.9:4000",
+   "forwardedFor": "10.0.0.1",
+   "cookie": "3f2c1d4e-5b6a-4c7d-8e9f-0a1b2c3d4e5f"
+  },
+  {
+   "route": "analyze-counter-score",
+   "remoteAddr": "192.0.2.9:4000",
+   "forwardedFor": "10.0.0.1",
+   "cookie": "3f2c1d4e-5b6a-4c7d-8e9f-0a1b2c3d4e5f"
+  },
+  {
+   "route": "analyze-counter-score",
+   "remoteAddr": "192.0.2.9:4000",
+   "forwardedFor": "10.0.0.2",
+   "cookie": "3f2c1d4e-5b6a-4c7d-8e9f-0a1b2c3d4e5f"
+  },
+  {
+   "route": "analyze-counter-detail",
+   "remoteAddr": "192.0.2.9:4000",
+   "forwardedFor": "10.0.0.3",
+   "cookie": "11111111-2222-4333-8444-555555555555"
+  },
+  {
+   "route": "analyze-counter-detail",
+   "remoteAddr": "192.0.2.9:4000",
+   "forwardedFor": "10.0.0.3",
+   "cookie": "11111111-2222-4333-8444-555555555555"
+  },
+  {
+   "route": "analyze-counter-detail",
+   "remoteAddr": "192.0.2.9:4000",
+   "forwardedFor": "10.0.0.3",
+   "cookie": "11111111-2222-4333-8444-555555555555"
+  },
+  {
+   "route": "analyze-counter-detail",
+   "remoteAddr": "192.0.2.9:4000",
+   "forwardedFor": "10.0.0.3",
+   "cookie": "11111111-2222-4333-8444-555555555555"
+  },
+  {
+   "route": "analyze-counter-detail",
+   "remoteAddr": "192.0.2.9:4000",
+   "forwardedFor": "10.0.0.3",
+   "cookie": "11111111-2222-4333-8444-555555555555"
+  },
+  {
+   "route": "analyze-counter-detail",
+   "remoteAddr": "192.0.2.9:4000",
+   "forwardedFor": "10.0.0.3",
+   "cookie": "11111111-2222-4333-8444-555555555555"
+  },
+  {
+   "route": "analyze-counter-detail",
+   "remoteAddr": "192.0.2.9:4000",
+   "forwardedFor": "10.0.0.3",
+   "cookie": "11111111-2222-4333-8444-555555555555"
+  },
+  {
+   "route": "analyze-synergy-score",
+   "remoteAddr": "192.0.2.9:4000",
+   "forwardedFor": "10.0.0.4, 10.9.9.9",
+   "cookie": "{11111111-2222-4333-8444-555555555555}"
+  },
+  {
+   "route": "analyze-synergy-detail",
+   "remoteAddr": "192.0.2.1:1234",
+   "forwardedFor": "",
+   "cookie": "urn:uuid:aaaaaaaa-bbbb-4ccc-8ddd-eeeeeeeeeeee"
+  },
+  {
+   "route": "analyze-synergy-score",
+   "remoteAddr": "192.0.2.9:4000",
+   "forwardedFor": "10.0.0.5",
+   "cookie": ""
+  },
+  {
+   "route": "analyze-synergy-score",
+   "remoteAddr": "192.0.2.9:4000",
+   "forwardedFor": "10.0.0.6",
+   "cookie": "nope"
+  },
+  {
+   "route": "analyze-synergy-score",
+   "remoteAddr": "192.0.2.9:4000",
+   "forwardedFor": "10.0.0.1",
+   "cookie": "3f2c1d4e-5b6a-4c7d-8e9f-0a1b2c3d4e5f"
+  },
+  {
+   "route": "analyze-counter-score",
+   "remoteAddr": "192.0.2.9:4000",
+   "forwardedFor": "10.0.0.7",
+   "cookie": "3f2c1d4e5b6a4c7d8e9f0a1b2c3d4e5f"
+  }
+ ],
+ "responses": [
+  {
+   "outcome": "allowed",
+   "retryAfter": 0,
+   "setCookie": ""
+  },
+  {
+   "outcome": "allowed",
+   "retryAfter": 0,
+   "setCookie": ""
+  },
+  {
+   "outcome": "exceeded",
+   "retryAfter": 60,
+   "setCookie": ""
+  },
+  {
+   "outcome": "exceeded",
+   "retryAfter": 60,
+   "setCookie": ""
+  },
+  {
+   "outcome": "allowed",
+   "retryAfter": 0,
+   "setCookie": ""
+  },
+  {
+   "outcome": "allowed",
+   "retryAfter": 0,
+   "setCookie": ""
+  },
+  {
+   "outcome": "allowed",
+   "retryAfter": 0,
+   "setCookie": ""
+  },
+  {
+   "outcome": "allowed",
+   "retryAfter": 0,
+   "setCookie": ""
+  },
+  {
+   "outcome": "allowed",
+   "retryAfter": 0,
+   "setCookie": ""
+  },
+  {
+   "outcome": "allowed",
+   "retryAfter": 0,
+   "setCookie": ""
+  },
+  {
+   "outcome": "exceeded",
+   "retryAfter": 60,
+   "setCookie": ""
+  },
+  {
+   "outcome": "allowed",
+   "retryAfter": 0,
+   "setCookie": ""
+  },
+  {
+   "outcome": "allowed",
+   "retryAfter": 0,
+   "setCookie": ""
+  },
+  {
+   "outcome": "allowed",
+   "retryAfter": 0,
+   "setCookie": "mlbb_analyzer_client_id=<issued-1>; Path=/; Max-Age=3600; HttpOnly; SameSite=Lax"
+  },
+  {
+   "outcome": "allowed",
+   "retryAfter": 0,
+   "setCookie": "mlbb_analyzer_client_id=<issued-2>; Path=/; Max-Age=3600; HttpOnly; SameSite=Lax"
+  },
+  {
+   "outcome": "allowed",
+   "retryAfter": 0,
+   "setCookie": ""
+  },
+  {
+   "outcome": "exceeded",
+   "retryAfter": 60,
+   "setCookie": ""
+  }
+ ]
+}

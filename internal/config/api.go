@@ -8,23 +8,25 @@ import (
 	"time"
 )
 
-// API is what the API server needs: its database, where it listens and is
-// reached, the browser origins it serves, how it asks AI providers, and how
-// long a response may take.
+// API is what the API server needs: its database, listen port and URL, browser
+// origins, AI and rate-limit settings, the Redis that holds the counters, and
+// how long a response may take.
 type API struct {
 	Database        Database
 	Port            int
 	URL             string
 	FrontendOrigins []string
 	AI              AI
+	RateLimit       RateLimit
+	Redis           Redis
 	// WriteTimeout bounds writing one response: the AI deadline plus margin,
 	// so an analysis answer is never cut off.
 	WriteTimeout time.Duration
 }
 
-// LoadAPI reads the DB_* and APP_* variables, FRONTEND_ORIGIN, and the AI
-// variables LoadAI reads. FRONTEND_ORIGIN may be empty and the AI variables
-// unset; every other variable is required.
+// LoadAPI reads APP_PORT and APP_URL, both required, FRONTEND_ORIGIN, which may
+// be empty, and the variables LoadDatabase, LoadAI, LoadRateLimit, and, only
+// when rate limiting is enabled, LoadRedis read.
 func LoadAPI(getenv func(string) string) (API, error) {
 	db, err := LoadDatabase(getenv)
 	if err != nil {
@@ -53,6 +55,16 @@ func LoadAPI(getenv func(string) string) (API, error) {
 	if err != nil {
 		return API{}, err
 	}
+	rateLimit, err := LoadRateLimit(getenv)
+	if err != nil {
+		return API{}, err
+	}
+	var redisConfig Redis
+	if rateLimit.Enabled {
+		if redisConfig, err = LoadRedis(getenv); err != nil {
+			return API{}, err
+		}
+	}
 	var origins []string
 	for _, o := range strings.Split(getenv("FRONTEND_ORIGIN"), ",") {
 		if o = strings.TrimSpace(o); o != "" {
@@ -65,6 +77,8 @@ func LoadAPI(getenv func(string) string) (API, error) {
 		URL:             appURL,
 		FrontendOrigins: origins,
 		AI:              aiConfig,
+		RateLimit:       rateLimit,
+		Redis:           redisConfig,
 		WriteTimeout:    aiConfig.Timeout + 10*time.Second,
 	}, nil
 }

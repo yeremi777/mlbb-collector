@@ -3,13 +3,17 @@ package analysis
 import (
 	"context"
 	"errors"
+	"fmt"
 	"net/http"
 	"net/http/httptest"
+	"slices"
 	"strings"
 	"testing"
+	"time"
 
 	"github.com/yeremi777/mlbb-collector/internal/counter"
 	"github.com/yeremi777/mlbb-collector/internal/hero"
+	"github.com/yeremi777/mlbb-collector/internal/ratelimit"
 	"github.com/yeremi777/mlbb-collector/internal/synergy"
 )
 
@@ -47,10 +51,22 @@ func (f fakeMatchups) ForAnchor(_ context.Context, anchor string) ([]synergy.Wit
 		Proof: []synergy.Proof{{ID: "pharsa-proof"}}}}, nil
 }
 
+// fakeLimiter records the routes it counts and refuses each with err.
+type fakeLimiter struct {
+	err    error
+	routes []string
+}
+
+func (f *fakeLimiter) Enforce(_ http.ResponseWriter, _ *http.Request, route string) error {
+	f.routes = append(f.routes, route)
+	return f.err
+}
+
 type route struct {
 	heroes   fakeHeroes
 	matchups fakeMatchups
 	provider *scriptedProvider // nil: no provider configured
+	limiter  *fakeLimiter      // nil: an allowing limiter
 }
 
 func (rt route) post(t *testing.T, path, body string) *httptest.ResponseRecorder {
@@ -59,8 +75,11 @@ func (rt route) post(t *testing.T, path, body string) *httptest.ResponseRecorder
 	if rt.provider != nil {
 		analyzer = New(rt.provider, testConfig)
 	}
+	if rt.limiter == nil {
+		rt.limiter = &fakeLimiter{}
+	}
 	mux := http.NewServeMux()
-	NewHandler(rt.heroes, rt.matchups, rt.matchups, analyzer).Register(mux)
+	NewHandler(rt.heroes, rt.matchups, rt.matchups, analyzer, rt.limiter).Register(mux)
 	rec := httptest.NewRecorder()
 	mux.ServeHTTP(rec, httptest.NewRequest(http.MethodPost, path, strings.NewReader(body)))
 	return rec
@@ -134,7 +153,7 @@ func TestEachCheckAnswersBeforeTheNext(t *testing.T) {
 	)
 	for _, c := range checks {
 		t.Run(c.path+" "+c.name, func(t *testing.T) {
-			rt := route{heroes: c.heroes, matchups: c.matchups}
+			rt := route{heroes: c.heroes, matchups: c.matchups, limiter: &fakeLimiter{}}
 			if !c.noProvider {
 				rt.provider = &scriptedProvider{}
 			}
@@ -144,6 +163,9 @@ func TestEachCheckAnswersBeforeTheNext(t *testing.T) {
 			}
 			if rt.provider != nil && len(rt.provider.received) != 0 {
 				t.Errorf("the provider was asked %d times, want none", len(rt.provider.received))
+			}
+			if len(rt.limiter.routes) != 0 {
+				t.Errorf("the limiter counted %v, want nothing", rt.limiter.routes)
 			}
 		})
 	}
@@ -184,10 +206,68 @@ func TestTheRoutesAnswerTheAnalysis(t *testing.T) {
 
 func TestATimeoutAnswers504(t *testing.T) {
 	mux := http.NewServeMux()
-	NewHandler(fakeHeroes{}, fakeMatchups{}, fakeMatchups{}, New(&stalledProvider{}, Config{Timeout: 1})).Register(mux)
+	NewHandler(fakeHeroes{}, fakeMatchups{}, fakeMatchups{}, New(&stalledProvider{}, Config{Timeout: 1}), &fakeLimiter{}).Register(mux)
 	rec := httptest.NewRecorder()
 	mux.ServeHTTP(rec, httptest.NewRequest(http.MethodPost, "/api/counters/analyze-score", strings.NewReader(`{"targetHeroId":"tigreal"}`)))
 	if want := errorBody("ai_provider_timeout", "AI provider did not answer in time."); rec.Code != 504 || rec.Body.String() != want {
 		t.Errorf("got %d %s, want 504 %s", rec.Code, rec.Body.String(), want)
+	}
+}
+
+func TestOnlyAnUncachedRequestIsCounted(t *testing.T) {
+	for _, tt := range []struct{ path, body, answer, route string }{
+		{"/api/counters/analyze-score", `{"targetHeroId":"tigreal"}`,
+			`{"recommendations":[{"counterHeroId":"diggie","score":90,"confidence":80}]}`, "analyze-counter-score"},
+		{"/api/synergies/analyze-score", `{"anchorHeroId":"tigreal","language":"id"}`,
+			`{"recommendations":[{"synergyHeroId":"pharsa","score":95,"confidence":85}]}`, "analyze-synergy-score"},
+		{"/api/counters/analyze-detail", `{"targetHeroId":"tigreal","counterHeroId":"diggie"}`,
+			`{"score":90,"confidence":80,"summary":"s","strengths":["x"],"evidenceIds":["diggie-proof"]}`, "analyze-counter-detail"},
+		{"/api/synergies/analyze-detail", `{"anchorHeroId":"tigreal","synergyHeroId":"pharsa","language":"en"}`,
+			`{"score":95,"confidence":85,"summary":"s","strengths":["x"],"evidenceIds":[]}`, "analyze-synergy-detail"},
+	} {
+		t.Run(tt.path, func(t *testing.T) {
+			provider := &scriptedProvider{answers: []string{tt.answer}}
+			limiter := &fakeLimiter{}
+			analyzer := New(provider, Config{Timeout: time.Minute, CacheTTL: time.Minute, CacheMaxEntries: 8})
+			mux := http.NewServeMux()
+			NewHandler(fakeHeroes{}, fakeMatchups{}, fakeMatchups{}, analyzer, limiter).Register(mux)
+			for range 2 {
+				rec := httptest.NewRecorder()
+				mux.ServeHTTP(rec, httptest.NewRequest(http.MethodPost, tt.path, strings.NewReader(tt.body)))
+				if rec.Code != 200 {
+					t.Fatalf("got %d %s", rec.Code, rec.Body.String())
+				}
+			}
+			if !slices.Equal(limiter.routes, []string{tt.route}) {
+				t.Errorf("the limiter counted %v, want %s once", limiter.routes, tt.route)
+			}
+		})
+	}
+}
+
+func TestARefusedRequestIsNotAnalyzed(t *testing.T) {
+	for _, tt := range []struct {
+		name       string
+		err        error
+		status     int
+		retryAfter string
+		want       string
+	}{
+		{"over quota", &ratelimit.ExceededError{RetryAfter: 42}, 429, "42",
+			errorBody("rate_limit_exceeded", "Too many analyze requests. Please try again later.")},
+		{"redis down", fmt.Errorf("%w: dial refused", ratelimit.ErrUnavailable), 503, "",
+			errorBody("rate_limit_unavailable", "Rate limit storage is unavailable. Please try again later.")},
+	} {
+		t.Run(tt.name, func(t *testing.T) {
+			rt := route{provider: &scriptedProvider{}, limiter: &fakeLimiter{err: tt.err}}
+			rec := rt.post(t, "/api/counters/analyze-detail", `{"targetHeroId":"tigreal","counterHeroId":"diggie"}`)
+			if rec.Code != tt.status || rec.Body.String() != tt.want || rec.Header().Get("Retry-After") != tt.retryAfter {
+				t.Errorf("got %d %s Retry-After %q, want %d %s Retry-After %q",
+					rec.Code, rec.Body.String(), rec.Header().Get("Retry-After"), tt.status, tt.want, tt.retryAfter)
+			}
+			if len(rt.provider.received) != 0 {
+				t.Errorf("the provider was asked %d times, want none", len(rt.provider.received))
+			}
+		})
 	}
 }
