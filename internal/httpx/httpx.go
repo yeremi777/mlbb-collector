@@ -98,3 +98,36 @@ func CORS(origins []string, next http.Handler) http.Handler {
 		next.ServeHTTP(w, r)
 	})
 }
+
+// Mux is where routes register: an *http.ServeMux in the server.
+type Mux interface {
+	HandleFunc(pattern string, handler func(http.ResponseWriter, *http.Request))
+}
+
+// docsPage renders /docs/openapi.yaml with Scalar.
+const docsPage = `<!doctype html>
+<html>
+<head>
+<title>MLBB Collector API</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+<script id="api-reference" data-url="/docs/openapi.yaml"></script>
+<script src="https://cdn.jsdelivr.net/npm/@scalar/api-reference@1"></script>
+</body>
+</html>
+`
+
+// Docs serves the OpenAPI contract at /docs/openapi.yaml and a Scalar page
+// rendering it at /docs.
+func Docs(mux Mux, spec []byte) {
+	mux.HandleFunc("GET /docs", func(w http.ResponseWriter, _ *http.Request) {
+		w.Header().Set("Content-Type", "text/html; charset=utf-8")
+		_, _ = w.Write([]byte(docsPage))
+	})
+	mux.HandleFunc("GET /docs/openapi.yaml", func(w http.ResponseWriter, _ *http.Request) {
+		w.Header().Set("Content-Type", "application/yaml")
+		_, _ = w.Write(spec)
+	})
+}

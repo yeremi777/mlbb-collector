@@ -12,6 +12,7 @@ import (
 	"slices"
 	"strconv"
 	"strings"
+	"time"
 
 	"github.com/joho/godotenv"
 )
@@ -56,4 +57,62 @@ func DatabaseURL() (string, error) {
 		RawQuery: url.Values{"sslmode": {values["DB_SSLMODE"]}}.Encode(),
 	}
 	return u.String(), nil
+}
+
+// API is the API server's configuration.
+type API struct {
+	DatabaseURL     string
+	Port            int
+	URL             string
+	FrontendOrigins []string
+	// WriteTimeout bounds writing one response: the AI deadline plus margin,
+	// so an analysis answer is never cut off.
+	WriteTimeout time.Duration
+}
+
+// LoadAPI reads and validates the API server's configuration.
+func LoadAPI() (API, error) {
+	dbURL, err := DatabaseURL()
+	if err != nil {
+		return API{}, err
+	}
+
+	port := envOr("APP_PORT", "8080")
+	n, err := strconv.Atoi(port)
+	if err != nil || n < 1 || n > 65535 {
+		return API{}, fmt.Errorf("APP_PORT: want a port from 1 to 65535, got %q", port)
+	}
+
+	appURL := envOr("APP_URL", "http://127.0.0.1:8080")
+	if u, err := url.Parse(appURL); err != nil || (u.Scheme != "http" && u.Scheme != "https") || u.Host == "" {
+		return API{}, fmt.Errorf("APP_URL: want an absolute http or https URL, got %q", appURL)
+	}
+
+	aiTimeout := envOr("AI_TIMEOUT_SECONDS", "60")
+	seconds, err := strconv.Atoi(aiTimeout)
+	if err != nil || seconds < 1 {
+		return API{}, fmt.Errorf("AI_TIMEOUT_SECONDS: want a positive number of seconds, got %q", aiTimeout)
+	}
+
+	var origins []string
+	for _, o := range strings.Split(os.Getenv("FRONTEND_ORIGIN"), ",") {
+		if o = strings.TrimSpace(o); o != "" {
+			origins = append(origins, o)
+		}
+	}
+
+	return API{
+		DatabaseURL:     dbURL,
+		Port:            n,
+		URL:             appURL,
+		FrontendOrigins: origins,
+		WriteTimeout:    time.Duration(seconds)*time.Second + 10*time.Second,
+	}, nil
+}
+
+func envOr(key, fallback string) string {
+	if v := os.Getenv(key); v != "" {
+		return v
+	}
+	return fallback
 }

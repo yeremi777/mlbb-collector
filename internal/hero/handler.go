@@ -20,7 +20,7 @@ type Handler struct{ heroes store }
 func NewHandler(heroes store) Handler { return Handler{heroes: heroes} }
 
 // Register adds the hero routes to mux.
-func (h Handler) Register(mux *http.ServeMux) {
+func (h Handler) Register(mux httpx.Mux) {
 	mux.HandleFunc("GET /api/heroes", h.list)
 	mux.HandleFunc("GET /api/heroes/{heroId}", h.get)
 }

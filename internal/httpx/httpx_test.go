@@ -107,3 +107,18 @@ func TestCORS(t *testing.T) {
 		t.Errorf("preflight from another origin reached CORS handling: %d %v", otherPreflight.Code, otherPreflight.Header())
 	}
 }
+
+func TestDocs(t *testing.T) {
+	mux := http.NewServeMux()
+	Docs(mux, []byte("openapi: 3.1.0\n"))
+
+	page := serve(mux, http.MethodGet, "/docs", nil)
+	if page.Code != http.StatusOK || page.Header().Get("Content-Type") != "text/html; charset=utf-8" {
+		t.Errorf("/docs: got %d %q", page.Code, page.Header().Get("Content-Type"))
+	}
+
+	spec := serve(mux, http.MethodGet, "/docs/openapi.yaml", nil)
+	if spec.Code != http.StatusOK || spec.Header().Get("Content-Type") != "application/yaml" || spec.Body.String() != "openapi: 3.1.0\n" {
+		t.Errorf("/docs/openapi.yaml: got %d %q %q", spec.Code, spec.Header().Get("Content-Type"), spec.Body.String())
+	}
+}

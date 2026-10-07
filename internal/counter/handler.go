@@ -29,7 +29,7 @@ func NewHandler(heroes heroStore, counters counterStore) Handler {
 }
 
 // Register adds the Counter route to mux.
-func (h Handler) Register(mux *http.ServeMux) {
+func (h Handler) Register(mux httpx.Mux) {
 	mux.HandleFunc("GET /api/heroes/{heroId}/counters", h.list)
 }
 

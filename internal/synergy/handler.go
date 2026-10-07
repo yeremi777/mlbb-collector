@@ -29,7 +29,7 @@ func NewHandler(heroes heroStore, synergies synergyStore) Handler {
 }
 
 // Register adds the Synergy route to mux.
-func (h Handler) Register(mux *http.ServeMux) {
+func (h Handler) Register(mux httpx.Mux) {
 	mux.HandleFunc("GET /api/heroes/{heroId}/synergies", h.list)
 }
 

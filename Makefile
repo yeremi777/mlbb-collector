@@ -10,10 +10,15 @@ DB_DSN = host='$(DB_HOST)' port='$(DB_PORT)' dbname='$(DB_NAME)' user='$(DB_USER
 GOOSE = goose -dir $(MIGRATIONS_DIR) postgres "$(DB_DSN)"
 
 .DEFAULT_GOAL := help
-.PHONY: help seed test test-integration vet fmt tidy migrate-up migrate-down migrate-reset migrate-status migrate-create db-env
+.PHONY: help api seed test test-integration vet fmt tidy migrate-up migrate-down migrate-reset migrate-status migrate-create db-env
 
 help: ## List the targets
 	@awk 'BEGIN {FS = ":.*## "} /^[a-z-]+:.*## / {printf "  %-17s %s\n", $$1, $$2}' $(MAKEFILE_LIST)
+
+## Run
+
+api: db-env ## Serve the API on APP_PORT, with its docs at APP_URL/docs
+	go run ./cmd/api
 
 ## Dataset
 
