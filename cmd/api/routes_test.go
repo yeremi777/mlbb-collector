@@ -41,24 +41,20 @@ func documentedRoutes(t *testing.T) []string {
 
 func TestEveryRouteIsDocumentedAndEveryDocumentedRouteExists(t *testing.T) {
 	rec := &recorder{}
-	register(rec, nil, []byte("openapi: 3.1.0\n"))
+	register(rec, nil, nil, []byte("openapi: 3.1.0\n"))
 	if len(rec.patterns) == 0 {
 		t.Fatal("register registered nothing")
 	}
 
 	documented := documentedRoutes(t)
 	servesDocs := []string{"GET /docs", "GET /docs/openapi.yaml", "GET /{$}", "GET /docs/{$}", "GET /docs/index.html"}
-	analysisOwns := []string{
-		"POST /api/counters/analyze-score", "POST /api/counters/analyze-detail",
-		"POST /api/synergies/analyze-score", "POST /api/synergies/analyze-detail",
-	}
 	for _, p := range rec.patterns {
 		if !slices.Contains(servesDocs, p) && !slices.Contains(documented, p) {
 			t.Errorf("%s is registered but not in docs/openapi.yaml", p)
 		}
 	}
 	for _, d := range documented {
-		if !slices.Contains(rec.patterns, d) && !slices.Contains(analysisOwns, d) {
+		if !slices.Contains(rec.patterns, d) {
 			t.Errorf("%s is in docs/openapi.yaml but not registered", d)
 		}
 	}

@@ -1,4 +1,5 @@
-// Command api serves the hero catalog, Counters, and Synergies over HTTP.
+// Command api serves the hero catalog, Counters, and Synergies over HTTP, and
+// scores and explains them with an AI provider.
 package main
 
 import (
@@ -15,6 +16,7 @@ import (
 	"time"
 
 	"github.com/yeremi777/mlbb-collector/docs"
+	"github.com/yeremi777/mlbb-collector/internal/analysis"
 	"github.com/yeremi777/mlbb-collector/internal/config"
 	"github.com/yeremi777/mlbb-collector/internal/counter"
 	"github.com/yeremi777/mlbb-collector/internal/database"
@@ -33,15 +35,18 @@ func main() {
 	}
 }
 
-// register adds every route the API serves to mux.
-func register(mux httpx.Mux, db database.Querier, spec []byte) {
+// register adds every route the API serves to mux. A nil analyzer means no AI
+// provider is configured.
+func register(mux httpx.Mux, db database.Querier, analyzer *analysis.Analyzer, spec []byte) {
 	mux.HandleFunc("GET /health", func(w http.ResponseWriter, _ *http.Request) {
 		httpx.WriteJSON(w, http.StatusOK, map[string]string{"status": "ok"})
 	})
 	heroes := hero.NewRepository(db)
 	hero.NewHandler(heroes).Register(mux)
-	counter.NewHandler(heroes, counter.NewRepository(db)).Register(mux)
-	synergy.NewHandler(heroes, synergy.NewRepository(db)).Register(mux)
+	counters, synergies := counter.NewRepository(db), synergy.NewRepository(db)
+	counter.NewHandler(heroes, counters).Register(mux)
+	synergy.NewHandler(heroes, synergies).Register(mux)
+	analysis.NewHandler(heroes, counters, synergies, analyzer).Register(mux)
 	httpx.Docs(mux, spec)
 }
 
@@ -58,8 +63,12 @@ func run() error {
 	}
 	defer pool.Close()
 
+	analyzer := analysis.NewFromConfig(cfg.AI)
+	if analyzer == nil {
+		slog.Warn("no AI provider is usable; the analyze routes answer ai_provider_not_configured", "AI_PROVIDERS", cfg.AI.Providers)
+	}
 	mux := http.NewServeMux()
-	register(mux, pool, docs.Spec())
+	register(mux, pool, analyzer, docs.Spec())
 	srv := &http.Server{
 		Addr:              net.JoinHostPort("127.0.0.1", strconv.Itoa(cfg.Port)),
 		Handler:           httpx.CORS(cfg.FrontendOrigins, httpx.Router(mux)),
