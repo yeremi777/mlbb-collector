@@ -481,7 +481,7 @@ components:
       description: "`rate_limit_exceeded`: the address or browser has used its quota for this route."
       headers:
         Retry-After:
-          description: Seconds until the refusing counter's rate-limit window ends.
+          description: Seconds until the quota resets.
           schema: { type: integer }
       content:
         application/json:
@@ -504,7 +504,5 @@ components:
 
   headers:
     ClientCookie:
-      description: >
-        The browser's rate-limit ID, an HttpOnly UUID cookie. Issued when rate
-        limiting is enabled and the request carried no valid one.
-      schema: { type: string, examples: ["mlbb_analyzer_client_id=6f1c2a54-0d6e-4b8a-9a7e-3c5d1f2e8b90; Path=/; Max-Age=2592000; HttpOnly; SameSite=Lax"] }
+      description: The browser's HttpOnly rate-limit ID, set when rate limiting is enabled and the request carried no valid one.
+      schema: { type: string, examples: ["mlbb_collector_client_id=6f1c2a54-0d6e-4b8a-9a7e-3c5d1f2e8b90; Path=/; Max-Age=2592000; HttpOnly; SameSite=Lax"] }

@@ -16,8 +16,8 @@ import (
 	"github.com/redis/go-redis/v9"
 )
 
-// Config is how many requests a counter allows, for how long, and the
-// browser cookie that names a client.
+// Config is a counter's quota and rate-limit window, the browser cookie's
+// settings, and the salt that hashes addresses.
 type Config struct {
 	MaxRequests      int
 	WindowSeconds    int
@@ -41,7 +41,7 @@ func (e *ExceededError) Error() string {
 }
 
 // checkAndIncrement refuses at the limit, else increments, starting the
-// window on the first request. It answers {allowed, count, ttl}.
+// rate-limit window on the first request. It answers {allowed, count, ttl}.
 var checkAndIncrement = redis.NewScript(`
 local count = redis.call("GET", KEYS[1])
 if count and tonumber(count) >= tonumber(ARGV[1]) then
@@ -101,6 +101,8 @@ func (l *Limiter) Enforce(w http.ResponseWriter, r *http.Request, route string) 
 	return l.increment(r, "rate:analyze:"+route+":client:"+clientID, maxRequests)
 }
 
+// increment counts r under key, refusing with *ExceededError at maxRequests
+// or ErrUnavailable when Redis fails.
 func (l *Limiter) increment(r *http.Request, key string, maxRequests int) error {
 	result, err := checkAndIncrement.Run(r.Context(), l.client, []string{key}, maxRequests, l.cfg.WindowSeconds).Int64Slice()
 	if err != nil || len(result) != 3 {

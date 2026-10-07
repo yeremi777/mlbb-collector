@@ -2,7 +2,7 @@
 
 ## Goal
 
-When enabled, the four analyze routes count each uncached request against a per-address and a per-browser quota in Redis and refuse requests over it, with the same responses, cookie, and Redis keys as `mlbb-analyzer-service` branch `dev`.
+When enabled, the four analyze routes count each uncached request against a per-address and a per-browser quota in Redis and refuse a request over either, with the same responses, cookie attributes, and Redis keys as `mlbb-analyzer-service` branch `dev`.
 
 ## Non-goals
 
@@ -31,17 +31,19 @@ A Redis failure refuses the request with 503; it never lets the request through 
 | Variable | Default | Meaning |
 |---|---|---|
 | `RATE_LIMIT_ENABLED` | `false` | `true` turns limiting on |
-| `REDIS_URL` | required when enabled | Redis connection URL |
+| `REDIS_HOST` | required when enabled | Redis host |
+| `REDIS_PORT` | `6379` | Redis port |
+| `REDIS_DB` | `0` | Redis database number |
 | `RATE_LIMIT_SALT` | required when enabled | HMAC key for addresses |
 | `RATE_LIMIT_ANALYZE_MAX_REQUESTS` | `5` | score requests per rate-limit window |
 | `RATE_LIMIT_ANALYZE_WINDOW_SECONDS` | `18000` | rate-limit window length |
 | `RATE_LIMIT_ANALYZE_DETAIL_MULTIPLIER` | `3` | detail allowance as a multiple of the score allowance |
-| `RATE_LIMIT_COOKIE_NAME` | `mlbb_analyzer_client_id` | browser cookie name |
+| `RATE_LIMIT_COOKIE_NAME` | `mlbb_collector_client_id` | browser cookie name |
 | `RATE_LIMIT_COOKIE_MAX_AGE_SECONDS` | `2592000` | cookie lifetime |
 | `RATE_LIMIT_COOKIE_SECURE` | `false` | `true` for HTTPS deployments |
 | `RATE_LIMIT_COOKIE_SAMESITE` | `lax` | `lax`, `strict`, or `none` |
 
-Numbers are whole numbers of at least 1, flags are `true` or `false`, and `RATE_LIMIT_COOKIE_SAMESITE` is matched without case. Enabling limiting without `REDIS_URL` or `RATE_LIMIT_SALT`, with an unparseable value, or with `RATE_LIMIT_COOKIE_SAMESITE=none` and `RATE_LIMIT_COOKIE_SECURE` not `true`, stops startup with an error naming the variable; browsers drop a `SameSite=None` cookie that is not `Secure`.
+The `REDIS_*` variables are read only when limiting is enabled. `REDIS_DB` is a whole number of 0 or more and `REDIS_PORT` a port number; the other numbers are whole numbers of at least 1, flags are `true` or `false`, and `RATE_LIMIT_COOKIE_SAMESITE` is matched without case. Enabling limiting without `REDIS_HOST` or `RATE_LIMIT_SALT`, with an unparseable value, or with `RATE_LIMIT_COOKIE_SAMESITE=none` and `RATE_LIMIT_COOKIE_SECURE` not `true`, stops startup with an error naming the variable; browsers drop a `SameSite=None` cookie that is not `Secure`.
 
 ## Acceptance criteria
 
@@ -53,16 +55,16 @@ Numbers are whole numbers of at least 1, flags are `true` or `false`, and `RATE_
 - AC-6: With `RATE_LIMIT_ENABLED=false`, no Redis connection is opened and no cookie is set.
 - AC-7: Enabling without `RATE_LIMIT_SALT` stops startup naming it, and enabling with `RATE_LIMIT_COOKIE_SAMESITE=none` and `RATE_LIMIT_COOKIE_SECURE=false` stops startup naming both.
 - AC-8: For the same sequence of requests, the Redis keys, counter values, and TTLs equal those `dev` writes.
-- AC-9: Integration tests run against the Redis database named by `TEST_REDIS_URL`, which `make test-integration` sets to `redis://127.0.0.1:6379/15`, refuse database 0, and empty only that database.
+- AC-9: Integration tests use database `TEST_REDIS_DB` (15 under `make test-integration`) on the `REDIS_HOST` and `REDIS_PORT` server, refuse to run when it equals `REDIS_DB`, and empty only that database.
 
 ## Verification
 
 ```bash
 make vet
-make test-integration                                             # AC-1 to AC-9 against db 15 of the local Redis
-make api RATE_LIMIT_ENABLED=true REDIS_URL=redis://127.0.0.1:6379/15 RATE_LIMIT_SALT=x AI_PROVIDERS=mock AI_ANALYSIS_CACHE_TTL_SECONDS=0   # then:
+make test-integration                                             # AC-1 to AC-9 against db 15 of the .env Redis
+make api RATE_LIMIT_ENABLED=true REDIS_DB=15 RATE_LIMIT_SALT=x AI_PROVIDERS=mock AI_ANALYSIS_CACHE_TTL_SECONDS=0   # then:
 for i in 1 2 3 4 5 6; do curl -s -o /dev/null -w '%{http_code}\n' -XPOST -H 'X-Forwarded-For: 10.0.0.1' 127.0.0.1:8080/api/counters/analyze-score -d '{"targetHeroId":"tigreal"}'; done   # AC-1: five 200s, then 429
 redis-cli -n 15 --scan --pattern 'rate:analyze:*'                 # AC-8 key shape
-make api RATE_LIMIT_ENABLED=true REDIS_URL=redis://127.0.0.1:6379/15 RATE_LIMIT_SALT=; test $? -ne 0   # AC-7
-make api RATE_LIMIT_ENABLED=true REDIS_URL=redis://127.0.0.1:6379/15 RATE_LIMIT_SALT=x RATE_LIMIT_COOKIE_SAMESITE=none RATE_LIMIT_COOKIE_SECURE=false; test $? -ne 0   # AC-7
+make api RATE_LIMIT_ENABLED=true REDIS_DB=15 RATE_LIMIT_SALT=; test $? -ne 0   # AC-7
+make api RATE_LIMIT_ENABLED=true REDIS_DB=15 RATE_LIMIT_SALT=x RATE_LIMIT_COOKIE_SAMESITE=none RATE_LIMIT_COOKIE_SECURE=false; test $? -ne 0   # AC-7
 ```
