@@ -3,6 +3,7 @@ package analysis
 import (
 	"bytes"
 	"encoding/json"
+	"slices"
 
 	"github.com/yeremi777/mlbb-collector/internal/ai"
 	"github.com/yeremi777/mlbb-collector/internal/hero"
@@ -103,6 +104,19 @@ strengths must be a non-empty array and must come from provided reasons and proo
 conditions must come from proof.worksBestWhen when available.
 failureCases must come from proof.failureCases when available.
 evidenceIds must only list proof ids present in the input.`
+
+const detailRepairInstruction = `The previous JSON did not match the required detail response schema.
+
+Return corrected JSON only with exactly these keys:
+- score: integer 0-100
+- confidence: integer 0-100
+- summary: non-empty string
+- strengths: non-empty array of strings from the provided reasons/proof
+- conditions: array of strings from proof.worksBestWhen
+- failureCases: array of strings from proof.failureCases
+- evidenceIds: array of proof ids present in the input
+
+Do not add matchup facts outside the provided dataset context.`
 
 // languageInstructions name the language of the explanatory prose. Both name
 // counterHeroId for Synergies too, as dev's do.
@@ -227,4 +241,13 @@ func synergyScoringMessages(anchor hero.Hero, ms []Matchup, language string) []a
 func synergyDetailMessages(anchor hero.Hero, m Matchup, language string) []ai.Message {
 	payload := map[string]any{"anchorHero": heroCtx(anchor), "synergy": synergyCtx(m, true), "outputLanguage": language}
 	return []ai.Message{{Role: "system", Content: synergyDetailInstruction}, userMessage(language, payload)}
+}
+
+// detailRepairMessages sends the invalid answer back with why it failed.
+func detailRepairMessages(messages []ai.Message, payload map[string]any, cause error, language string) []ai.Message {
+	return append(slices.Clone(messages),
+		ai.Message{Role: "assistant", Content: compactJSON(payload)},
+		ai.Message{Role: "user", Content: detailRepairInstruction + "\n\n" + languageInstructions[language] +
+			"\n\nValidation error:\n" + cause.Error()},
+	)
 }
