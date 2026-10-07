@@ -122,3 +122,19 @@ func TestDocs(t *testing.T) {
 		t.Errorf("/docs/openapi.yaml: got %d %q %q", spec.Code, spec.Header().Get("Content-Type"), spec.Body.String())
 	}
 }
+
+func TestDocsRedirectsNearMisses(t *testing.T) {
+	mux := http.NewServeMux()
+	Docs(mux, []byte("openapi: 3.1.0\n"))
+	h := Router(mux)
+
+	for _, target := range []string{"/", "/docs/", "/docs/index.html"} {
+		rec := serve(h, http.MethodGet, target, nil)
+		if rec.Code != http.StatusFound || rec.Header().Get("Location") != "/docs" {
+			t.Errorf("%s: got %d to %q, want 302 to /docs", target, rec.Code, rec.Header().Get("Location"))
+		}
+	}
+	if rec := serve(h, http.MethodGet, "/docs/other", nil); rec.Code != http.StatusNotFound {
+		t.Errorf("/docs/other: got %d, want the JSON 404", rec.Code)
+	}
+}

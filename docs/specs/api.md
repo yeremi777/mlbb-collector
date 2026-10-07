@@ -22,8 +22,9 @@
 | `GET /api/heroes/{heroId}/synergies` | array of Synergy | 404 `hero_not_found`, 404 `synergy_data_not_found` |
 | `GET /docs` | Scalar page rendering `docs/openapi.yaml`, with `APP_URL` as its server | |
 | `GET /docs/openapi.yaml` | the spec file with its `servers` entry set to `APP_URL`, `application/yaml` | |
+| `GET /`, `GET /docs/`, `GET /docs/index.html` | 302 redirect to `/docs` | |
 
-`docs/openapi.yaml` is the contract for every route and body except the two `/docs` routes that serve it. It is written by hand, and a test fails when a registered route other than those two is missing from it, or a path in it is not registered.
+`docs/openapi.yaml` is the contract for every route and body except the docs routes and redirects above. It is written by hand, and a test fails when a registered route other than those is missing from it, or a path in it is not registered.
 
 ### Bodies
 

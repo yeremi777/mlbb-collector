@@ -47,7 +47,7 @@ func TestEveryRouteIsDocumentedAndEveryDocumentedRouteExists(t *testing.T) {
 	}
 
 	documented := documentedRoutes(t)
-	servesDocs := []string{"GET /docs", "GET /docs/openapi.yaml"}
+	servesDocs := []string{"GET /docs", "GET /docs/openapi.yaml", "GET /{$}", "GET /docs/{$}", "GET /docs/index.html"}
 	analysisOwns := []string{
 		"POST /api/counters/analyze-score", "POST /api/counters/analyze-detail",
 		"POST /api/synergies/analyze-score", "POST /api/synergies/analyze-detail",

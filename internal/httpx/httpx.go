@@ -119,9 +119,18 @@ const docsPage = `<!doctype html>
 </html>
 `
 
+// docsRedirects are addresses people reach for the docs by: the server's
+// root, a trailing slash, and the Swagger UI address dev served.
+var docsRedirects = []string{"GET /{$}", "GET /docs/{$}", "GET /docs/index.html"}
+
 // Docs serves the OpenAPI contract at /docs/openapi.yaml and a Scalar page
-// rendering it at /docs.
+// rendering it at /docs, and sends the docsRedirects addresses to /docs.
 func Docs(mux Mux, spec []byte) {
+	for _, pattern := range docsRedirects {
+		mux.HandleFunc(pattern, func(w http.ResponseWriter, r *http.Request) {
+			http.Redirect(w, r, "/docs", http.StatusFound)
+		})
+	}
 	mux.HandleFunc("GET /docs", func(w http.ResponseWriter, _ *http.Request) {
 		w.Header().Set("Content-Type", "text/html; charset=utf-8")
 		_, _ = w.Write([]byte(docsPage))
