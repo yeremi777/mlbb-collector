@@ -1,0 +1,32 @@
+{
+  "route": "/api/counters/analyze-score",
+  "request": {
+    "targetHeroId": "tigreal"
+  },
+  "providers": [
+    {
+      "provider": "openrouter",
+      "answers": [
+        {
+          "status": 500,
+          "body": "{\"error\":{\"message\":\"upstream is down\"}}"
+        }
+      ]
+    }
+  ],
+  "status": 502,
+  "body": "{\"error\":{\"code\":\"ai_provider_error\",\"message\":\"OpenRouter returned HTTP 500: upstream is down\"}}\n",
+  "received": [
+    {
+      "provider": "openrouter",
+      "path": "/chat/completions",
+      "headers": {
+        "Authorization": "Bearer test-key",
+        "Content-Type": "application/json",
+        "HTTP-Referer": "http://127.0.0.1:8000",
+        "X-OpenRouter-Title": "MLBB Analyzer Service"
+      },
+      "body": "{\"messages\":[{\"role\":\"system\",\"content\":\"You are scoring Mobile Legends hero counter recommendations.\\n\\nUse only the provided dataset context.\\nDo not invent hero skills, item requirements, patch facts, or matchup facts.\\nDo not use outside knowledge unless the caller explicitly includes it.\\n\\nFor each counter in the batch, return:\\n- counterHeroId: must match an id from the input\\n- score: 0-100 matchup strength\\n- confidence: 0-100 evidence confidence\\n\\nScore guidance:\\n- 95-100: hard counter or very direct mechanic counter\\n- 85-94: strong and reliable counter\\n- 75-84: good counter with meaningful conditions\\n- 65-74: situational counter\\n- below 65: weak, incomplete, or too conditional\\n\\nHigh context increases confidence, not necessarily score.\\nDirect skill interactions and direct crowd-control counters should score higher than generic damage or item-dependent counters.\\n\\nRespond with JSON only in this shape:\\n{\\\"recommendations\\\":[{\\\"counterHeroId\\\":\\\"...\\\",\\\"score\\\":0,\\\"confidence\\\":0}]}\\nInclude every counterHeroId from the input exactly once.\"},{\"role\":\"user\",\"content\":\"Write all user-visible explanation text (summary, strengths, conditions, failureCases) in English. Keep every identifier exactly as given: counterHeroId, evidenceIds, and proof ids.\\n\\nDataset context:\\n{\\\"matchups\\\":[{\\\"counterHeroId\\\":\\\"akai\\\",\\\"reasons\\\":[\\\"Akai can disrupt Tigreal's setup timing and separate Tigreal from follow-up damage.\\\"],\\\"counterTypes\\\":[\\\"disruption\\\",\\\"knockback\\\",\\\"anti-setter\\\"],\\\"proof\\\":[{\\\"id\\\":\\\"akai-heavy-spin-vs-tigreal-setter-engage\\\",\\\"category\\\":\\\"teamfight-role-counter\\\",\\\"priority\\\":\\\"primary\\\",\\\"impact\\\":\\\"high\\\",\\\"summary\\\":\\\"Tigreal wants to catch grouped enemies as a setter tank, while Akai can disrupt formations, push Tigreal away, and separate him from team follow-up.\\\"}],\\\"counterHero\\\":{\\\"uid\\\":\\\"akai\\\",\\\"name\\\":\\\"Akai\\\",\\\"roles\\\":[\\\"tank\\\"],\\\"lanes\\\":[\\\"roam\\\"]}},{\\\"counterHeroId\\\":\\\"diggie\\\",\\\"reasons\\\":[\\\"Diggie reduces the impact of Tigreal's crowd-control engage.\\\",\\\"Time Journey helps teammates survive Tigreal's setup window.\\\"],\\\"counterTypes\\\":[\\\"anti-cc\\\",\\\"cleanse\\\",\\\"teamfight\\\"],\\\"proof\\\":[{\\\"id\\\":\\\"diggie-time-journey-vs-tigreal-engage\\\",\\\"category\\\":\\\"skill-interaction\\\",\\\"priority\\\":\\\"primary\\\",\\\"impact\\\":\\\"high\\\",\\\"summary\\\":\\\"Tigreal's main threat is an AoE crowd-control engage, while Diggie's ultimate gives nearby allies cleanse and control immunity during the engage window.\\\"}],\\\"counterHero\\\":{\\\"uid\\\":\\\"diggie\\\",\\\"name\\\":\\\"Diggie\\\",\\\"roles\\\":[\\\"support\\\"],\\\"lanes\\\":[\\\"roam\\\"]}},{\\\"counterHeroId\\\":\\\"karrie\\\",\\\"reasons\\\":[\\\"Karrie can punish durable frontliners with sustained true damage.\\\"],\\\"counterTypes\\\":[\\\"tank-shred\\\",\\\"true-damage\\\",\\\"item-power-spike\\\"],\\\"proof\\\":[{\\\"id\\\":\\\"karrie-true-damage-vs-tigreal-tank\\\",\\\"category\\\":\\\"damage-type-advantage\\\",\\\"priority\\\":\\\"primary\\\",\\\"impact\\\":\\\"medium\\\",\\\"summary\\\":\\\"Tigreal is a high-HP tank, while Karrie's true damage and Max HP-based damage can melt durable frontliners in extended fights.\\\"}],\\\"counterHero\\\":{\\\"uid\\\":\\\"karrie\\\",\\\"name\\\":\\\"Karrie\\\",\\\"roles\\\":[\\\"marksman\\\"],\\\"lanes\\\":[\\\"gold\\\"]}},{\\\"counterHeroId\\\":\\\"lunox\\\",\\\"reasons\\\":[\\\"Lunox can damage Tigreal's tanky build with magic penetration while using survival tools against engage.\\\"],\\\"counterTypes\\\":[\\\"penetration\\\",\\\"burst\\\",\\\"mobility\\\"],\\\"proof\\\":[{\\\"id\\\":\\\"lunox-penetration-vs-tigreal-tank-engage\\\",\\\"category\\\":\\\"damage-type-advantage\\\",\\\"priority\\\":\\\"primary\\\",\\\"impact\\\":\\\"medium\\\",\\\"summary\\\":\\\"Tigreal is a durable engage tank, while Lunox can damage tanky heroes with magic penetration and avoid some engage danger with survival tools.\\\"}],\\\"counterHero\\\":{\\\"uid\\\":\\\"lunox\\\",\\\"name\\\":\\\"Lunox\\\",\\\"roles\\\":[\\\"mage\\\"],\\\"lanes\\\":[\\\"mid\\\"]}},{\\\"counterHeroId\\\":\\\"valir\\\",\\\"reasons\\\":[\\\"Valir can interrupt and push back frontline engage attempts.\\\",\\\"Long-range poke makes it harder for Tigreal to start clean fights.\\\"],\\\"counterTypes\\\":[\\\"anti-engage\\\",\\\"disengage\\\",\\\"poke\\\"],\\\"proof\\\":[{\\\"id\\\":\\\"valir-knockback-vs-tigreal-engage\\\",\\\"category\\\":\\\"skill-interaction\\\",\\\"priority\\\":\\\"primary\\\",\\\"impact\\\":\\\"high\\\",\\\"summary\\\":\\\"Valir's knockback can push Tigreal away and interrupt short-range engage attempts before Tigreal gets an ideal setup.\\\"}],\\\"counterHero\\\":{\\\"uid\\\":\\\"valir\\\",\\\"name\\\":\\\"Valir\\\",\\\"roles\\\":[\\\"mage\\\"],\\\"lanes\\\":[\\\"mid\\\"]}}],\\\"outputLanguage\\\":\\\"en\\\",\\\"targetHero\\\":{\\\"uid\\\":\\\"tigreal\\\",\\\"name\\\":\\\"Tigreal\\\",\\\"roles\\\":[\\\"tank\\\"],\\\"lanes\\\":[\\\"roam\\\"]}}\"}],\"model\":\"test/model\",\"response_format\":{\"type\":\"json_object\"},\"temperature\":0.2}"
+    }
+  ]
+}

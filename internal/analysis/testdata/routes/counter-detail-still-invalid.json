@@ -1,0 +1,48 @@
+{
+  "route": "/api/counters/analyze-detail",
+  "request": {
+    "targetHeroId": "tigreal",
+    "counterHeroId": "diggie"
+  },
+  "providers": [
+    {
+      "provider": "openrouter",
+      "answers": [
+        {
+          "status": 200,
+          "body": "{\"choices\":[{\"message\":{\"content\":\"{\\\"score\\\":90,\\\"confidence\\\":82,\\\"summary\\\":\\\"s\\\"}\"}}]}"
+        },
+        {
+          "status": 200,
+          "body": "{\"choices\":[{\"message\":{\"content\":\"{\\\"score\\\":101,\\\"confidence\\\":82,\\\"summary\\\":\\\"s\\\",\\\"strengths\\\":[\\\"x\\\"]}\"}}]}"
+        }
+      ]
+    }
+  ],
+  "status": 502,
+  "body": "{\"error\":{\"code\":\"ai_provider_error\",\"message\":\"Invalid detail response from model after retry: detail payload missing required fields: score, confidence, non-empty summary, non-empty strengths\"}}\n",
+  "received": [
+    {
+      "provider": "openrouter",
+      "path": "/chat/completions",
+      "headers": {
+        "Authorization": "Bearer test-key",
+        "Content-Type": "application/json",
+        "HTTP-Referer": "http://127.0.0.1:8000",
+        "X-OpenRouter-Title": "MLBB Analyzer Service"
+      },
+      "body": "{\"messages\":[{\"role\":\"system\",\"content\":\"You are explaining one Mobile Legends hero counter matchup.\\n\\nUse only the provided dataset context.\\nDo not invent hero skills, item requirements, patch facts, or matchup facts.\\nDo not use outside knowledge unless the caller explicitly includes it.\\n\\nReturn JSON only in this shape:\\n{\\n  \\\"score\\\": 0,\\n  \\\"confidence\\\": 0,\\n  \\\"summary\\\": \\\"concise explanation\\\",\\n  \\\"strengths\\\": [\\\"concrete strengths from provided evidence\\\"],\\n  \\\"conditions\\\": [\\\"works-best conditions from provided evidence\\\"],\\n  \\\"failureCases\\\": [\\\"failure cases from provided evidence\\\"],\\n  \\\"evidenceIds\\\": [\\\"proof ids used\\\"]\\n}\\n\\nAll keys are required. Use an empty array for optional arrays only when the dataset has no matching evidence.\\nstrengths must be a non-empty array and must come from provided reasons and proof.\\nconditions must come from proof.worksBestWhen when available.\\nfailureCases must come from proof.failureCases when available.\\nevidenceIds must only list proof ids present in the input.\"},{\"role\":\"user\",\"content\":\"Write all user-visible explanation text (summary, strengths, conditions, failureCases) in English. Keep every identifier exactly as given: counterHeroId, evidenceIds, and proof ids.\\n\\nDataset context:\\n{\\\"matchup\\\":{\\\"counterHeroId\\\":\\\"diggie\\\",\\\"reasons\\\":[\\\"Diggie reduces the impact of Tigreal's crowd-control engage.\\\",\\\"Time Journey helps teammates survive Tigreal's setup window.\\\"],\\\"counterTypes\\\":[\\\"anti-cc\\\",\\\"cleanse\\\",\\\"teamfight\\\"],\\\"proof\\\":[{\\\"id\\\":\\\"diggie-time-journey-vs-tigreal-engage\\\",\\\"category\\\":\\\"skill-interaction\\\",\\\"priority\\\":\\\"primary\\\",\\\"impact\\\":\\\"high\\\",\\\"summary\\\":\\\"Tigreal's main threat is an AoE crowd-control engage, while Diggie's ultimate gives nearby allies cleanse and control immunity during the engage window.\\\",\\\"worksBestWhen\\\":[\\\"Diggie saves ultimate for Tigreal's real engage.\\\",\\\"Diggie stays close enough to protect the teammates Tigreal wants to catch.\\\",\\\"Diggie helps check likely engage paths before the team groups.\\\"],\\\"failureCases\\\":[\\\"Tigreal baits Diggie's ultimate before committing.\\\",\\\"Tigreal catches Diggie out of position.\\\",\\\"Tigreal engages while Diggie's ultimate is on cooldown.\\\"]}],\\\"counterHero\\\":{\\\"uid\\\":\\\"diggie\\\",\\\"name\\\":\\\"Diggie\\\",\\\"roles\\\":[\\\"support\\\"],\\\"lanes\\\":[\\\"roam\\\"]}},\\\"outputLanguage\\\":\\\"en\\\",\\\"targetHero\\\":{\\\"uid\\\":\\\"tigreal\\\",\\\"name\\\":\\\"Tigreal\\\",\\\"roles\\\":[\\\"tank\\\"],\\\"lanes\\\":[\\\"roam\\\"]}}\"}],\"model\":\"test/model\",\"response_format\":{\"type\":\"json_object\"},\"temperature\":0.2}"
+    },
+    {
+      "provider": "openrouter",
+      "path": "/chat/completions",
+      "headers": {
+        "Authorization": "Bearer test-key",
+        "Content-Type": "application/json",
+        "HTTP-Referer": "http://127.0.0.1:8000",
+        "X-OpenRouter-Title": "MLBB Analyzer Service"
+      },
+      "body": "{\"messages\":[{\"role\":\"system\",\"content\":\"You are explaining one Mobile Legends hero counter matchup.\\n\\nUse only the provided dataset context.\\nDo not invent hero skills, item requirements, patch facts, or matchup facts.\\nDo not use outside knowledge unless the caller explicitly includes it.\\n\\nReturn JSON only in this shape:\\n{\\n  \\\"score\\\": 0,\\n  \\\"confidence\\\": 0,\\n  \\\"summary\\\": \\\"concise explanation\\\",\\n  \\\"strengths\\\": [\\\"concrete strengths from provided evidence\\\"],\\n  \\\"conditions\\\": [\\\"works-best conditions from provided evidence\\\"],\\n  \\\"failureCases\\\": [\\\"failure cases from provided evidence\\\"],\\n  \\\"evidenceIds\\\": [\\\"proof ids used\\\"]\\n}\\n\\nAll keys are required. Use an empty array for optional arrays only when the dataset has no matching evidence.\\nstrengths must be a non-empty array and must come from provided reasons and proof.\\nconditions must come from proof.worksBestWhen when available.\\nfailureCases must come from proof.failureCases when available.\\nevidenceIds must only list proof ids present in the input.\"},{\"role\":\"user\",\"content\":\"Write all user-visible explanation text (summary, strengths, conditions, failureCases) in English. Keep every identifier exactly as given: counterHeroId, evidenceIds, and proof ids.\\n\\nDataset context:\\n{\\\"matchup\\\":{\\\"counterHeroId\\\":\\\"diggie\\\",\\\"reasons\\\":[\\\"Diggie reduces the impact of Tigreal's crowd-control engage.\\\",\\\"Time Journey helps teammates survive Tigreal's setup window.\\\"],\\\"counterTypes\\\":[\\\"anti-cc\\\",\\\"cleanse\\\",\\\"teamfight\\\"],\\\"proof\\\":[{\\\"id\\\":\\\"diggie-time-journey-vs-tigreal-engage\\\",\\\"category\\\":\\\"skill-interaction\\\",\\\"priority\\\":\\\"primary\\\",\\\"impact\\\":\\\"high\\\",\\\"summary\\\":\\\"Tigreal's main threat is an AoE crowd-control engage, while Diggie's ultimate gives nearby allies cleanse and control immunity during the engage window.\\\",\\\"worksBestWhen\\\":[\\\"Diggie saves ultimate for Tigreal's real engage.\\\",\\\"Diggie stays close enough to protect the teammates Tigreal wants to catch.\\\",\\\"Diggie helps check likely engage paths before the team groups.\\\"],\\\"failureCases\\\":[\\\"Tigreal baits Diggie's ultimate before committing.\\\",\\\"Tigreal catches Diggie out of position.\\\",\\\"Tigreal engages while Diggie's ultimate is on cooldown.\\\"]}],\\\"counterHero\\\":{\\\"uid\\\":\\\"diggie\\\",\\\"name\\\":\\\"Diggie\\\",\\\"roles\\\":[\\\"support\\\"],\\\"lanes\\\":[\\\"roam\\\"]}},\\\"outputLanguage\\\":\\\"en\\\",\\\"targetHero\\\":{\\\"uid\\\":\\\"tigreal\\\",\\\"name\\\":\\\"Tigreal\\\",\\\"roles\\\":[\\\"tank\\\"],\\\"lanes\\\":[\\\"roam\\\"]}}\"},{\"role\":\"assistant\",\"content\":\"{\\\"confidence\\\":82,\\\"score\\\":90,\\\"summary\\\":\\\"s\\\"}\"},{\"role\":\"user\",\"content\":\"The previous JSON did not match the required detail response schema.\\n\\nReturn corrected JSON only with exactly these keys:\\n- score: integer 0-100\\n- confidence: integer 0-100\\n- summary: non-empty string\\n- strengths: non-empty array of strings from the provided reasons/proof\\n- conditions: array of strings from proof.worksBestWhen\\n- failureCases: array of strings from proof.failureCases\\n- evidenceIds: array of proof ids present in the input\\n\\nDo not add matchup facts outside the provided dataset context.\\n\\nWrite all user-visible explanation text (summary, strengths, conditions, failureCases) in English. Keep every identifier exactly as given: counterHeroId, evidenceIds, and proof ids.\\n\\nValidation error:\\ndetail payload missing required fields: score, confidence, non-empty summary, non-empty strengths\"}],\"model\":\"test/model\",\"response_format\":{\"type\":\"json_object\"},\"temperature\":0.2}"
+    }
+  ]
+}
