@@ -1,0 +1,154 @@
+[
+  {
+    "anchorHeroId": "eudora",
+    "synergyHeroId": "franco",
+    "reasons": [
+      "Franco can isolate a target, giving Eudora a simple burst window after the catch.",
+      "Eudora can follow Franco's pickoff with immediate magic burst before the target escapes."
+    ],
+    "synergyTypes": [
+      "pickoff-combo",
+      "setup-combo",
+      "burst-follow-up"
+    ],
+    "proof": [
+      {
+        "id": "franco-catch-for-eudora-burst-pickoff",
+        "category": "pickoff-combo",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Franco starts the pickoff by catching or locking one target, while Eudora follows with single-target burst.",
+        "worksBestWhen": [
+          "Franco catches a damage dealer or fragile target.",
+          "Eudora waits near the pickoff angle instead of showing early."
+        ],
+        "failureCases": [
+          "Franco catches a tank instead of a priority target.",
+          "Eudora is too far away to follow the hook or suppression."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "eudora",
+    "synergyHeroId": "kaja",
+    "reasons": [
+      "Kaja can pull and lock a priority target, making Eudora's burst combo easier to execute.",
+      "Eudora can finish the target after Kaja creates a confirmed single-target setup."
+    ],
+    "synergyTypes": [
+      "pickoff-combo",
+      "setup-combo",
+      "burst-follow-up"
+    ],
+    "proof": [
+      {
+        "id": "kaja-pull-for-eudora-single-target-burst",
+        "category": "setup-combo",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Kaja provides the hard pickoff setup, while Eudora supplies the burst needed to finish the isolated target.",
+        "worksBestWhen": [
+          "Kaja targets a fragile enemy.",
+          "Eudora saves her stun and ultimate for Kaja's confirmed pull."
+        ],
+        "failureCases": [
+          "Kaja pulls a durable frontline target.",
+          "The target survives because Eudora's burst is unavailable."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "eudora",
+    "synergyHeroId": "tigreal",
+    "reasons": [
+      "Tigreal can group and control enemies, allowing Eudora to burst a locked target inside the fight.",
+      "Eudora can add immediate damage when Tigreal starts a reliable crowd-control window."
+    ],
+    "synergyTypes": [
+      "engage-follow-up",
+      "cc-chain",
+      "aoe-follow-up"
+    ],
+    "proof": [
+      {
+        "id": "tigreal-engage-for-eudora-burst-chain",
+        "category": "crowd-control-chain",
+        "priority": "primary",
+        "impact": "medium",
+        "summary": "Tigreal creates the crowd-control opening, while Eudora adds immediate burst to remove one target during the control chain.",
+        "worksBestWhen": [
+          "Tigreal catches a priority target, not only tanks.",
+          "Eudora stays hidden until the engage starts."
+        ],
+        "failureCases": [
+          "Eudora reveals too early and gets zoned.",
+          "Tigreal engages outside Eudora's range."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "eudora",
+    "synergyHeroId": "atlas",
+    "reasons": [
+      "Atlas can force enemies into a grouped control window, giving Eudora a safer chance to burst a key target.",
+      "Eudora can punish the target Atlas displaces into her damage range."
+    ],
+    "synergyTypes": [
+      "setup-combo",
+      "teamfight-combo",
+      "burst-follow-up"
+    ],
+    "proof": [
+      {
+        "id": "atlas-setup-for-eudora-priority-burst",
+        "category": "setup-combo",
+        "priority": "primary",
+        "impact": "medium",
+        "summary": "Atlas creates the initiation and displacement setup, while Eudora follows with targeted burst after enemies are pulled in.",
+        "worksBestWhen": [
+          "Atlas catches a squishy target inside the group.",
+          "Eudora does not waste burst on a low-value target."
+        ],
+        "failureCases": [
+          "Atlas only catches frontliners.",
+          "Eudora's burst is interrupted or blocked."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "eudora",
+    "synergyHeroId": "saber",
+    "reasons": [
+      "Saber can lock a priority target with airborne control, giving Eudora a short but clear burst window.",
+      "Eudora adds magic burst after Saber starts the pickoff, helping remove fragile targets before they can escape."
+    ],
+    "synergyTypes": [
+      "pickoff-combo",
+      "burst-follow-up",
+      "setup-combo"
+    ],
+    "proof": [
+      {
+        "id": "saber-airborne-lock-for-eudora-burst",
+        "category": "pickoff-combo",
+        "priority": "primary",
+        "impact": "medium",
+        "summary": "Saber starts a single-target pickoff with airborne control, while Eudora follows with stun and burst damage during the target's vulnerable window.",
+        "worksBestWhen": [
+          "Saber targets a fragile enemy damage dealer.",
+          "Eudora is already close enough to follow immediately after Saber commits.",
+          "Both heroes save their burst for the same priority target."
+        ],
+        "failureCases": [
+          "Saber targets a tank or high-durability hero.",
+          "Eudora is too far away when Saber uses ultimate.",
+          "The enemy has defensive support ready before the burst lands."
+        ]
+      }
+    ]
+  }
+]

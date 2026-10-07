@@ -1,0 +1,152 @@
+[
+  {
+    "targetHeroId": "irithel",
+    "counterHeroId": "belerick",
+    "reasons": [
+      "Belerick directly punishes repeated basic attacks, which are central to Irithel's damage.",
+      "His taunt can force Irithel into bad attack patterns if she is too close."
+    ],
+    "counterTypes": [
+      "frontline",
+      "anti-basic-attack",
+      "crowd-control-counter"
+    ],
+    "proof": [
+      {
+        "id": "belerick-deadly-thorns-vs-irithel-basic-attacks",
+        "category": "skill-interaction",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Irithel relies on repeated ranged basic attacks, while Belerick can retaliate when damaged and disrupt her free-hit window with taunt.",
+        "worksBestWhen": [
+          "Belerick builds durable and positions between Irithel and allied backline.",
+          "Belerick forces Irithel to hit him during her damage window."
+        ],
+        "failureCases": [
+          "Irithel keeps maximum distance and Belerick cannot reach her.",
+          "Belerick is ignored while Irithel attacks safer targets."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "irithel",
+    "counterHeroId": "lolita",
+    "reasons": [
+      "Lolita can reduce Irithel's ranged basic attack value by blocking incoming ranged basic attacks and projectiles.",
+      "This is especially useful in front-to-back teamfights."
+    ],
+    "counterTypes": [
+      "protect",
+      "projectile-block",
+      "anti-marksman"
+    ],
+    "proof": [
+      {
+        "id": "lolita-guardians-bulwark-vs-irithel-heavy-crossbow",
+        "category": "skill-interaction",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Irithel wants to output continuous ranged attacks, while Lolita can block ranged basic attacks and projectiles during the damage window.",
+        "worksBestWhen": [
+          "Lolita faces Irithel during Heavy Crossbow.",
+          "Lolita protects the damage dealer behind her."
+        ],
+        "failureCases": [
+          "Irithel flanks around the shield.",
+          "Irithel waits for Lolita's shield to expire before committing."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "irithel",
+    "counterHeroId": "natalia",
+    "reasons": [
+      "Natalia can threaten Irithel from camouflage before Irithel has space to kite.",
+      "Silence and backline pressure make it harder for Irithel to freely reposition."
+    ],
+    "counterTypes": [
+      "pickoff",
+      "vision-control",
+      "burst"
+    ],
+    "proof": [
+      {
+        "id": "natalia-camouflage-vs-irithel-backline",
+        "category": "vision-awareness",
+        "priority": "primary",
+        "impact": "medium",
+        "summary": "Irithel is dangerous when she sees the fight early and kites forward, while Natalia can attack from camouflage and force Irithel to play with vision discipline.",
+        "worksBestWhen": [
+          "Natalia approaches through bushes.",
+          "Natalia targets Irithel before teamfight formation is complete."
+        ],
+        "failureCases": [
+          "Irithel's team provides reveal or peel.",
+          "Irithel stays grouped around her frontline."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "irithel",
+    "counterHeroId": "saber",
+    "reasons": [
+      "Saber can punish Irithel's lack of hard defensive tools with targeted airborne burst.",
+      "This is strong when Irithel is separated from peel."
+    ],
+    "counterTypes": [
+      "pickoff",
+      "burst",
+      "crowd-control-counter"
+    ],
+    "proof": [
+      {
+        "id": "saber-triple-sweep-vs-irithel-kiting",
+        "category": "skill-interaction",
+        "priority": "primary",
+        "impact": "medium",
+        "summary": "Irithel wants space to kite, while Saber can bypass spacing with targeted airborne burst.",
+        "worksBestWhen": [
+          "Saber attacks after Irithel's frontline has used peel.",
+          "Irithel is isolated from support protection."
+        ],
+        "failureCases": [
+          "Irithel has Purify, defensive item timing, or reliable tank protection.",
+          "Saber commits while Irithel's team is ready to counter-engage."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "irithel",
+    "counterHeroId": "kaja",
+    "reasons": [
+      "Kaja can isolate Irithel and deny her ability to kite during the suppression window.",
+      "This works best when Kaja has follow-up damage nearby."
+    ],
+    "counterTypes": [
+      "pickoff",
+      "suppress",
+      "anti-carry"
+    ],
+    "proof": [
+      {
+        "id": "kaja-divine-judgment-vs-irithel-kiting",
+        "category": "crowd-control-counter",
+        "priority": "primary",
+        "impact": "medium",
+        "summary": "Irithel's safety depends on spacing and movement, while Kaja can suppress and drag her out of position.",
+        "worksBestWhen": [
+          "Kaja has Flicker or flank access.",
+          "Teammates are ready to burst Irithel during the drag."
+        ],
+        "failureCases": [
+          "Kaja cannot reach Irithel.",
+          "Kaja wastes Divine Judgment on a tank instead of Irithel."
+        ]
+      }
+    ]
+  }
+]

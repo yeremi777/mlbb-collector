@@ -1,0 +1,157 @@
+[
+  {
+    "targetHeroId": "alucard",
+    "counterHeroId": "franco",
+    "reasons": [
+      "Franco's suppression stops Alucard from attacking and lifestealing during his sustain window."
+    ],
+    "counterTypes": [
+      "suppression",
+      "pickoff",
+      "anti-dive"
+    ],
+    "proof": [
+      {
+        "id": "franco-suppression-vs-alucard-lifesteal",
+        "category": "crowd-control-counter",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Alucard needs to keep attacking to lifesteal, while Franco's ultimate suppresses him and creates a burst window before he can heal.",
+        "worksBestWhen": [
+          "Franco saves ultimate for Alucard's dive.",
+          "Franco's team follows up immediately.",
+          "Alucard is locked before he can lifesteal."
+        ],
+        "failureCases": [
+          "Franco misses hook or wastes ultimate.",
+          "Alucard waits until Franco's suppression is used.",
+          "Franco has no team follow-up."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "alucard",
+    "counterHeroId": "kaja",
+    "reasons": [
+      "Kaja can suppress and drag Alucard out of his sustain window for team burst."
+    ],
+    "counterTypes": [
+      "suppression",
+      "pickoff",
+      "anti-dive"
+    ],
+    "proof": [
+      {
+        "id": "kaja-suppression-vs-alucard-dive",
+        "category": "crowd-control-counter",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Alucard wants to dive and heal through continuous attacks, while Kaja can suppress and drag him into team damage before he sustains.",
+        "worksBestWhen": [
+          "Kaja uses ultimate when Alucard dives.",
+          "Kaja drags Alucard into team damage.",
+          "Team focuses Alucard during suppression."
+        ],
+        "failureCases": [
+          "Kaja dies first.",
+          "Kaja uses ultimate on the wrong target.",
+          "Alucard survives the pickoff."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "alucard",
+    "counterHeroId": "akai",
+    "reasons": [
+      "Akai can push Alucard away from targets during the lifesteal window."
+    ],
+    "counterTypes": [
+      "disengage",
+      "knockback",
+      "anti-melee"
+    ],
+    "proof": [
+      {
+        "id": "akai-heavy-spin-vs-alucard-lifesteal-window",
+        "category": "skill-interaction",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Alucard heals by continuously attacking, while Akai can push him away from targets and break his damage and lifesteal uptime.",
+        "worksBestWhen": [
+          "Akai uses ultimate after Alucard commits.",
+          "Akai pushes Alucard away from squishy teammates.",
+          "Team damages Alucard while he is displaced."
+        ],
+        "failureCases": [
+          "Akai ultimate is on cooldown.",
+          "Akai pushes Alucard toward allies by mistake.",
+          "Alucard waits out Akai ultimate."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "alucard",
+    "counterHeroId": "baxia",
+    "reasons": [
+      "Baxia reduces Alucard's lifesteal and sustain value during extended fights."
+    ],
+    "counterTypes": [
+      "anti-sustain",
+      "anti-heal",
+      "frontline"
+    ],
+    "proof": [
+      {
+        "id": "baxia-anti-regen-vs-alucard-lifesteal",
+        "category": "sustain-anti-sustain",
+        "priority": "primary",
+        "impact": "medium",
+        "summary": "Alucard depends heavily on lifesteal and sustain, while Baxia can reduce HP regen effects and make his healing less effective.",
+        "worksBestWhen": [
+          "Baxia applies anti-regen while Alucard is fighting.",
+          "Team focuses Alucard during reduced healing.",
+          "Baxia builds enough durability to survive Alucard's damage."
+        ],
+        "failureCases": [
+          "Alucard avoids Baxia and dives backline.",
+          "Baxia has no follow-up damage.",
+          "Alucard is too fed."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "alucard",
+    "counterHeroId": "karrie",
+    "reasons": [
+      "Karrie can melt Alucard with repeated true damage while using positioning and Wind of Nature."
+    ],
+    "counterTypes": [
+      "true-damage",
+      "kiting",
+      "item-power-spike"
+    ],
+    "proof": [
+      {
+        "id": "karrie-true-damage-vs-alucard-melee-sustain",
+        "category": "damage-type-advantage",
+        "priority": "primary",
+        "impact": "medium",
+        "summary": "Alucard is a melee sustain fighter, while Karrie can deal repeated true damage from range and use positioning or Wind of Nature against his physical burst.",
+        "worksBestWhen": [
+          "Karrie has core attack-speed items.",
+          "Karrie uses Wind of Nature at the correct time.",
+          "Alucard is forced to chase through frontline."
+        ],
+        "failureCases": [
+          "Alucard reaches Karrie before Wind of Nature is used.",
+          "Wind of Nature is on cooldown.",
+          "Karrie has no peel."
+        ]
+      }
+    ]
+  }
+]

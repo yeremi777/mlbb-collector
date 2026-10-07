@@ -1,0 +1,162 @@
+[
+  {
+    "anchorHeroId": "yin",
+    "synergyHeroId": "franco",
+    "reasons": [
+      "Franco can start a pickoff with hook or suppression, giving Yin a safer target to isolate.",
+      "Yin benefits from the enemy already being displaced or locked before he commits My Turn."
+    ],
+    "synergyTypes": [
+      "pickoff-combo",
+      "setup-combo",
+      "cc-chain"
+    ],
+    "proof": [
+      {
+        "id": "franco-catch-enables-yin-domain-pickoff",
+        "category": "pickoff-combo",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Franco creates the first catch, then Yin converts that catch into a duel isolation attempt.",
+        "worksBestWhen": [
+          "Franco catches a priority squishy target.",
+          "Yin waits until the target is close enough and not protected by teammates.",
+          "Yin has enough damage to win the duel."
+        ],
+        "failureCases": [
+          "Franco hooks a tank or low-value target.",
+          "Yin's ultimate fails to pull the target.",
+          "The enemy team collapses on Yin after the domain ends."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "yin",
+    "synergyHeroId": "kaja",
+    "reasons": [
+      "Kaja's suppression creates a reliable single-target setup for Yin to approach and isolate.",
+      "Yin can use Kaja's lock to reduce the risk of missing the initial engage."
+    ],
+    "synergyTypes": [
+      "pickoff-combo",
+      "setup-combo",
+      "cc-chain"
+    ],
+    "proof": [
+      {
+        "id": "kaja-suppression-sets-up-yin-domain",
+        "category": "setup-combo",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Kaja locks the target first, and Yin follows by dragging the same target into his domain for the duel.",
+        "worksBestWhen": [
+          "Kaja targets a carry or fragile damage dealer.",
+          "Yin has My Turn ready.",
+          "Yin chooses a target away from immediate protection."
+        ],
+        "failureCases": [
+          "Kaja's target survives until teammates can respond after the domain.",
+          "Yin enters domain without enough damage to finish.",
+          "The target has defensive timing ready before suppression starts."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "yin",
+    "synergyHeroId": "selena",
+    "reasons": [
+      "Selena can create long-range pickoff pressure, giving Yin an easier target to chase.",
+      "Yin can convert Selena's stun or trap information into a committed domain duel."
+    ],
+    "synergyTypes": [
+      "pickoff-combo",
+      "vision-setup",
+      "burst-follow-up"
+    ],
+    "proof": [
+      {
+        "id": "selena-abyssal-setup-for-yin-pickoff",
+        "category": "pickoff-combo",
+        "priority": "primary",
+        "impact": "medium",
+        "summary": "Selena finds or stuns a target, while Yin follows up by isolating that target before the enemy team can protect them.",
+        "worksBestWhen": [
+          "Selena hits a target outside the enemy formation.",
+          "Yin is close enough to follow before the stun window ends.",
+          "The target is vulnerable enough for Yin's duel."
+        ],
+        "failureCases": [
+          "Selena misses the setup.",
+          "The target is too tanky for Yin to finish inside the domain.",
+          "Yin commits while enemy backup is already nearby."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "yin",
+    "synergyHeroId": "mathilda",
+    "reasons": [
+      "Mathilda can help Yin close distance or reposition with Guiding Wind.",
+      "The shield and movement support can help Yin enter fights without spending all mobility before My Turn."
+    ],
+    "synergyTypes": [
+      "mobility-enable",
+      "dive-support",
+      "shielding"
+    ],
+    "proof": [
+      {
+        "id": "mathilda-guiding-wind-enables-yin-entry",
+        "category": "mobility-enabler",
+        "priority": "secondary",
+        "impact": "medium",
+        "summary": "Mathilda gives Yin a cleaner entry path, helping him reach the target he wants to isolate.",
+        "worksBestWhen": [
+          "Mathilda positions ahead of Yin before the engage.",
+          "Yin uses the mobility help to reach a real priority target.",
+          "Yin keeps My Turn for the correct target."
+        ],
+        "failureCases": [
+          "Yin takes the dash into a bad fight.",
+          "Mathilda's field is unavailable or out of range.",
+          "The enemy disengages before Yin can cast My Turn."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "yin",
+    "synergyHeroId": "xavier",
+    "reasons": [
+      "Xavier's Mystic Field can immobilize enemies, making it easier for Yin to approach and commit My Turn.",
+      "Xavier provides long-range follow-up after Yin returns from a successful pickoff or forces enemies to react to the isolation."
+    ],
+    "synergyTypes": [
+      "cc-chain",
+      "pickoff-combo",
+      "burst-follow-up"
+    ],
+    "proof": [
+      {
+        "id": "xavier-mystic-field-sets-up-yin-isolation",
+        "category": "crowd-control-chain",
+        "priority": "secondary",
+        "impact": "medium",
+        "summary": "Xavier controls the target area with Mystic Field, and Yin uses that control window to force a duel.",
+        "worksBestWhen": [
+          "Xavier lands Mystic Field before Yin commits.",
+          "Yin chooses a target that can be killed in the domain.",
+          "Xavier has a clear line to follow after the domain ends."
+        ],
+        "failureCases": [
+          "Xavier's field misses or is avoided.",
+          "Yin enters domain while Xavier cannot follow.",
+          "The target survives and Yin exits into enemy counter-engage."
+        ]
+      }
+    ]
+  }
+]

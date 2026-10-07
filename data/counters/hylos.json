@@ -1,0 +1,152 @@
+[
+  {
+    "targetHeroId": "hylos",
+    "counterHeroId": "karrie",
+    "reasons": [
+      "Karrie is a clear anti-Hylos answer because Hylos has high HP and wants extended frontline fights.",
+      "Karrie punishes that by repeatedly stacking Max HP true damage."
+    ],
+    "counterTypes": [
+      "tank-shred",
+      "true-damage",
+      "kiting"
+    ],
+    "proof": [
+      {
+        "id": "karrie-lightwheel-mark-vs-hylos-high-hp",
+        "category": "damage-type-advantage",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Hylos wants to absorb damage and stay close, while Karrie can convert repeated hits into Max HP true damage.",
+        "worksBestWhen": [
+          "Karrie avoids being slowed inside Ring of Punishment.",
+          "Karrie has peel from teammates."
+        ],
+        "failureCases": [
+          "Hylos reaches Karrie early and stacks slows or attack-speed reduction.",
+          "Karrie is forced to fight without frontline protection."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "hylos",
+    "counterHeroId": "lunox",
+    "reasons": [
+      "Lunox can pressure Hylos with magic penetration and burst instead of taking a long front-to-back fight.",
+      "Her defensive windows help against Hylos's run-down engage."
+    ],
+    "counterTypes": [
+      "penetration",
+      "burst",
+      "mobility"
+    ],
+    "proof": [
+      {
+        "id": "lunox-chaos-burst-vs-hylos-frontline",
+        "category": "damage-type-advantage",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Hylos becomes difficult to kill through normal damage, while Lunox can use penetration, sustain, invincibility, and blink options to trade more safely.",
+        "worksBestWhen": [
+          "Lunox avoids standing inside Ring of Punishment for too long.",
+          "Lunox saves defensive timing for Hylos's real engage."
+        ],
+        "failureCases": [
+          "Hylos forces Lunox's defensive state early.",
+          "Hylos re-engages with teammates after Lunox's escape is down."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "hylos",
+    "counterHeroId": "dyrroth",
+    "reasons": [
+      "Dyrroth can reduce Hylos's Physical Defense and pressure him before he fully controls the fight.",
+      "This is strongest in early skirmishes or coordinated burst windows."
+    ],
+    "counterTypes": [
+      "penetration",
+      "burst",
+      "anti-frontline"
+    ],
+    "proof": [
+      {
+        "id": "dyrroth-defense-reduction-vs-hylos",
+        "category": "damage-type-advantage",
+        "priority": "secondary",
+        "impact": "medium",
+        "summary": "Hylos wants to stay in range and slowly win, while Dyrroth can create a defense-reduction burst window.",
+        "worksBestWhen": [
+          "Dyrroth has follow-up damage.",
+          "Dyrroth does not overstay inside Ring of Punishment."
+        ],
+        "failureCases": [
+          "Hylos survives the burst and turns the fight into a long slow-stacking trade.",
+          "Dyrroth dives too deep into Hylos's team."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "hylos",
+    "counterHeroId": "valir",
+    "reasons": [
+      "Valir can push Hylos away and slow his run-down attempt.",
+      "This reduces Hylos's ability to keep Ring of Punishment active on priority targets."
+    ],
+    "counterTypes": [
+      "disengage",
+      "kiting",
+      "anti-engage"
+    ],
+    "proof": [
+      {
+        "id": "valir-searing-torrent-vs-hylos-run-down",
+        "category": "kiting",
+        "priority": "primary",
+        "impact": "medium",
+        "summary": "Hylos wants to stay close for repeated aura value, while Valir's pushback and slows help keep him away from carries.",
+        "worksBestWhen": [
+          "Valir saves pushback until Hylos commits.",
+          "Valir plays behind teammates instead of letting Hylos walk directly into him."
+        ],
+        "failureCases": [
+          "Hylos flanks Valir.",
+          "Hylos absorbs Valir's cooldown before the real engage."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "hylos",
+    "counterHeroId": "baxia",
+    "reasons": [
+      "Baxia can reduce HP Regen and shield value while also serving as a durable frontline into Hylos.",
+      "This matchup is more about reducing Hylos's sustain plan than instantly killing him."
+    ],
+    "counterTypes": [
+      "anti-sustain",
+      "frontline",
+      "anti-engage"
+    ],
+    "proof": [
+      {
+        "id": "baxia-mark-vs-hylos-sustain-fight",
+        "category": "sustain-anti-sustain",
+        "priority": "secondary",
+        "impact": "medium",
+        "summary": "Hylos benefits from long fights and recovery tools, while Baxia can reduce enemy Shield and HP Regen after marking him.",
+        "worksBestWhen": [
+          "Baxia keeps Hylos marked during objective fights.",
+          "Baxia prevents Hylos from freely running at the backline."
+        ],
+        "failureCases": [
+          "Hylos ignores Baxia and reaches the enemy marksman or mage.",
+          "Baxia cannot keep pressure on Hylos during the important fight window."
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,150 @@
+[
+  {
+    "targetHeroId": "badang",
+    "counterHeroId": "franco",
+    "reasons": [
+      "Franco can suppress Badang and interrupt the value of his wall-combo damage window.",
+      "Franco can punish Badang after he commits into melee range."
+    ],
+    "counterTypes": [
+      "pickoff",
+      "cooldown-punish"
+    ],
+    "proof": [
+      {
+        "id": "franco-bloody-hunt-vs-badang-fist-crack",
+        "category": "crowd-control-counter",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Badang wants to commit with wall control and repeated-hit burst, while Franco can suppress him and interrupt the damage window.",
+        "worksBestWhen": [
+          "Franco saves Bloody Hunt for Badang's commit.",
+          "Franco's team bursts Badang while he is suppressed."
+        ],
+        "failureCases": [
+          "Badang catches Franco first.",
+          "Franco wastes suppression before Badang commits."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "badang",
+    "counterHeroId": "kaja",
+    "reasons": [
+      "Kaja can drag Badang away before or after his wall-combo setup.",
+      "Suppression is reliable when Badang commits too deep and loses exit options."
+    ],
+    "counterTypes": [
+      "pickoff",
+      "anti-engage"
+    ],
+    "proof": [
+      {
+        "id": "kaja-divine-judgment-vs-badang-wall-combo",
+        "category": "crowd-control-counter",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Badang wants a stationary burst window near his obstacle, while Kaja can suppress and pull him away from the target area.",
+        "worksBestWhen": [
+          "Kaja waits until Badang commits.",
+          "Allies collapse while Badang is displaced."
+        ],
+        "failureCases": [
+          "Badang forces Kaja to use ultimate defensively on another target.",
+          "Kaja suppresses after Badang has already finished his burst."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "badang",
+    "counterHeroId": "diggie",
+    "reasons": [
+      "Diggie helps allies survive Badang's control chain by reducing the value of the lock window.",
+      "Badang is weaker when the target escapes or receives protection before Fist Crack finishes."
+    ],
+    "counterTypes": [
+      "anti-cc",
+      "cleanse",
+      "protect"
+    ],
+    "proof": [
+      {
+        "id": "diggie-time-journey-vs-badang-wall-combo",
+        "category": "skill-interaction",
+        "priority": "primary",
+        "impact": "medium",
+        "summary": "Badang wants to keep enemies trapped near his obstacle, while Diggie can protect nearby allies with cleanse and control immunity during the engage window.",
+        "worksBestWhen": [
+          "Diggie saves Time Journey for Badang's real wall combo.",
+          "Diggie stays near the ally Badang wants to trap."
+        ],
+        "failureCases": [
+          "Badang catches Diggie first.",
+          "Badang baits Diggie's ultimate before committing."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "badang",
+    "counterHeroId": "valir",
+    "reasons": [
+      "Valir can push Badang away before he reaches the wall-combo angle.",
+      "Badang becomes less threatening if he cannot keep the target pinned near an obstacle."
+    ],
+    "counterTypes": [
+      "disengage",
+      "kiting",
+      "poke"
+    ],
+    "proof": [
+      {
+        "id": "valir-searing-torrent-vs-badang-engage",
+        "category": "kiting",
+        "priority": "primary",
+        "impact": "medium",
+        "summary": "Badang wants to enter close range and trap targets, while Valir can knock him back and reset the spacing before the combo is completed.",
+        "worksBestWhen": [
+          "Valir saves knockback for Badang's approach.",
+          "Valir positions away from walls and tight corridors."
+        ],
+        "failureCases": [
+          "Badang flanks Valir from fog.",
+          "Valir wastes knockback before Badang commits."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "badang",
+    "counterHeroId": "wanwan",
+    "reasons": [
+      "Wanwan can remove control effects from herself and reposition, making Badang's lock window harder to complete.",
+      "This is execution-dependent because she must react before the full wall burst finishes."
+    ],
+    "counterTypes": [
+      "anti-cc",
+      "mobility",
+      "execution-dependent"
+    ],
+    "proof": [
+      {
+        "id": "wanwan-needles-in-flowers-vs-badang-lock",
+        "category": "mobility-advantage",
+        "priority": "condition",
+        "impact": "medium",
+        "summary": "Badang wants to trap and burst a target in place, while Wanwan can cleanse control effects and use mobility to escape the setup.",
+        "worksBestWhen": [
+          "Wanwan saves Needles in Flowers for Badang's real control window.",
+          "Wanwan keeps distance from walls and obstacles."
+        ],
+        "failureCases": [
+          "Badang catches Wanwan before she can react.",
+          "Wanwan is trapped in terrain with no safe escape path."
+        ]
+      }
+    ]
+  }
+]

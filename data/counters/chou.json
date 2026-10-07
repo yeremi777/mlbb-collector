@@ -1,0 +1,152 @@
+[
+  {
+    "targetHeroId": "chou",
+    "counterHeroId": "diggie",
+    "reasons": [
+      "Diggie can reduce the value of Chou's pickoff by protecting nearby allies during the crowd-control window.",
+      "Chou becomes less valuable if his kick does not convert into a kill."
+    ],
+    "counterTypes": [
+      "anti-cc",
+      "protect",
+      "teamfight"
+    ],
+    "proof": [
+      {
+        "id": "diggie-time-journey-vs-chou-pickoff",
+        "category": "crowd-control-counter",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Chou wants to isolate one target with crowd control, while Diggie can protect teammates with debuff removal, shield, and control immunity during the engage window.",
+        "worksBestWhen": [
+          "Diggie saves Time Journey for Chou's real engage.",
+          "Diggie stays near the target Chou wants to kick."
+        ],
+        "failureCases": [
+          "Chou baits Diggie's ultimate first.",
+          "Chou isolates Diggie before the teamfight starts."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "chou",
+    "counterHeroId": "khufra",
+    "reasons": [
+      "Khufra can punish Chou's dash-based approach and make it harder for him to reach the backline.",
+      "Chou must spend more time baiting before he can safely engage."
+    ],
+    "counterTypes": [
+      "anti-dash",
+      "crowd-control-counter",
+      "anti-engage"
+    ],
+    "proof": [
+      {
+        "id": "khufra-bouncing-ball-vs-chou-dash-engage",
+        "category": "skill-interaction",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Chou relies on mobility to enter and reposition, while Khufra punishes blink movement and protects the carry's space.",
+        "worksBestWhen": [
+          "Khufra predicts Chou's dash or engage path.",
+          "Khufra stays near the carry Chou wants to kick."
+        ],
+        "failureCases": [
+          "Chou baits Bouncing Ball first.",
+          "Chou uses control immunity timing to avoid the key punish."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "chou",
+    "counterHeroId": "minsitthar",
+    "reasons": [
+      "Minsitthar's field limits directional blink skills, making Chou's entry and escape less flexible.",
+      "This is strong around objectives or carries because Chou wants dash access to one priority target."
+    ],
+    "counterTypes": [
+      "anti-dash",
+      "teamfight",
+      "positioning-requirement"
+    ],
+    "proof": [
+      {
+        "id": "minsitthar-kings-calling-vs-chou-dash-pattern",
+        "category": "skill-interaction",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Chou wants to dash in and out around one target, while Minsitthar can create a zone that restricts directional blink movement.",
+        "worksBestWhen": [
+          "Minsitthar places the field around the carry or objective.",
+          "Chou is forced to fight inside the zone."
+        ],
+        "failureCases": [
+          "Chou waits outside King's Calling.",
+          "Minsitthar wastes ultimate before Chou commits."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "chou",
+    "counterHeroId": "valir",
+    "reasons": [
+      "Valir can push Chou away and slow his approach before Chou reaches displacement range.",
+      "Valir's self-protection makes Chou's solo pickoff harder when Valir keeps spacing."
+    ],
+    "counterTypes": [
+      "disengage",
+      "kiting",
+      "anti-engage"
+    ],
+    "proof": [
+      {
+        "id": "valir-knockback-vs-chou-close-range-pickoff",
+        "category": "kiting",
+        "priority": "primary",
+        "impact": "medium",
+        "summary": "Chou wants close-range displacement, while Valir can deny the approach with knockback, slow, and self-cleanse-style timing.",
+        "worksBestWhen": [
+          "Valir holds knockback until Chou commits.",
+          "Valir positions behind allies and does not stand alone."
+        ],
+        "failureCases": [
+          "Chou flanks from fog and catches Valir first.",
+          "Valir uses knockback too early."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "chou",
+    "counterHeroId": "kaja",
+    "reasons": [
+      "Kaja can punish Chou after he uses his mobility or commits too deep for a kick.",
+      "Suppression is useful because Chou normally relies on mobility and timing to escape after displacement."
+    ],
+    "counterTypes": [
+      "pickoff",
+      "crowd-control-counter",
+      "cooldown-punish"
+    ],
+    "proof": [
+      {
+        "id": "kaja-divine-judgment-vs-chou-after-commit",
+        "category": "crowd-control-counter",
+        "priority": "primary",
+        "impact": "medium",
+        "summary": "Chou wants to control the fight timing, while Kaja can lock him during a bad engage or after his control-immunity timing is unavailable.",
+        "worksBestWhen": [
+          "Kaja waits until Chou's control immunity dash is unavailable.",
+          "Kaja has team follow-up ready."
+        ],
+        "failureCases": [
+          "Chou baits Kaja ultimate with timing.",
+          "Kaja is too far away to punish Chou's kick."
+        ]
+      }
+    ]
+  }
+]

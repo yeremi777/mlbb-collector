@@ -1,0 +1,152 @@
+[
+  {
+    "targetHeroId": "roger",
+    "counterHeroId": "khufra",
+    "reasons": [
+      "Khufra can punish Roger's chase and mobility path.",
+      "Bouncing Ball is strong into dive heroes who need blink-style movement across the frontline."
+    ],
+    "counterTypes": [
+      "anti-dash",
+      "crowd-control-counter",
+      "anti-dive"
+    ],
+    "proof": [
+      {
+        "id": "khufra-bouncing-ball-vs-roger-wolf-dive",
+        "category": "crowd-control-counter",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Roger wants to dive and chase with wolf-form mobility, while Khufra can interrupt blink-style movement and slow the entry path.",
+        "worksBestWhen": [
+          "Khufra positions between Roger and the carry.",
+          "Khufra waits for Roger's commit instead of using Bouncing Ball too early."
+        ],
+        "failureCases": [
+          "Roger waits out Khufra's anti-dash window.",
+          "Khufra is controlled before Roger enters."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "roger",
+    "counterHeroId": "kaja",
+    "reasons": [
+      "Kaja can suppress Roger before or after he dives.",
+      "This prevents Roger from freely using movement and execute timing."
+    ],
+    "counterTypes": [
+      "suppression",
+      "pickoff",
+      "anti-dive"
+    ],
+    "proof": [
+      {
+        "id": "kaja-divine-judgment-vs-roger-wolf-commit",
+        "category": "crowd-control-counter",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Roger wants to enter, chase, and finish targets, while Kaja can suppress him and drag him into team damage.",
+        "worksBestWhen": [
+          "Kaja waits until Roger commits wolf form.",
+          "Team burst is ready during suppression."
+        ],
+        "failureCases": [
+          "Roger baits Kaja ultimate with human-form poke.",
+          "Kaja cannot reach Roger through frontline spacing."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "roger",
+    "counterHeroId": "franco",
+    "reasons": [
+      "Franco can suppress Roger during his dive timing.",
+      "Hook and suppression force Roger to respect fog and reduce his freedom to invade."
+    ],
+    "counterTypes": [
+      "suppression",
+      "pickoff",
+      "cooldown-punish"
+    ],
+    "proof": [
+      {
+        "id": "franco-bloody-hunt-vs-roger-dive-timing",
+        "category": "crowd-control-counter",
+        "priority": "primary",
+        "impact": "medium",
+        "summary": "Roger wants to choose when to enter wolf form and chase, while Franco can punish predictable paths with hook or suppression.",
+        "worksBestWhen": [
+          "Franco tracks Roger's jungle entry path.",
+          "Franco saves Bloody Hunt for Roger's commit."
+        ],
+        "failureCases": [
+          "Roger dodges hook and waits out suppression threat.",
+          "Franco catches Roger when Roger's team can counter-engage."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "roger",
+    "counterHeroId": "valir",
+    "reasons": [
+      "Valir can knock Roger back when Roger tries to enter wolf-form melee range.",
+      "Slow and range pressure make it harder for Roger to stick to targets."
+    ],
+    "counterTypes": [
+      "kiting",
+      "disengage",
+      "range-advantage"
+    ],
+    "proof": [
+      {
+        "id": "valir-searing-torrent-vs-roger-wolf-chase",
+        "category": "kiting",
+        "priority": "primary",
+        "impact": "medium",
+        "summary": "Roger wants to close distance and finish low-HP targets, while Valir can push him away and slow his chase.",
+        "worksBestWhen": [
+          "Valir saves Searing Torrent for Roger's actual dive.",
+          "Valir stays near teammates who can punish the displaced Roger."
+        ],
+        "failureCases": [
+          "Roger flanks Valir from fog.",
+          "Valir wastes knockback on Roger's poke phase."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "roger",
+    "counterHeroId": "silvanna",
+    "reasons": [
+      "Silvanna can restrain Roger after he commits.",
+      "Her ultimate can limit Roger's ability to freely chase or reset out of the fight."
+    ],
+    "counterTypes": [
+      "lockdown",
+      "anti-dive",
+      "pickoff"
+    ],
+    "proof": [
+      {
+        "id": "silvanna-imperial-justice-vs-roger-chase-reset",
+        "category": "skill-interaction",
+        "priority": "primary",
+        "impact": "medium",
+        "summary": "Roger wants to dive in and reposition for execute pressure, while Silvanna can trap him in a restricted zone after his commit.",
+        "worksBestWhen": [
+          "Silvanna catches Roger after he uses mobility.",
+          "Teammates can follow up inside the ultimate zone."
+        ],
+        "failureCases": [
+          "Roger times untargetability to avoid the engage.",
+          "Silvanna traps Roger while his team wins the surrounding fight."
+        ]
+      }
+    ]
+  }
+]

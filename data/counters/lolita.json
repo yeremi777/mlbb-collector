@@ -1,0 +1,152 @@
+[
+  {
+    "targetHeroId": "lolita",
+    "counterHeroId": "diggie",
+    "reasons": [
+      "Diggie directly reduces Lolita's main teamfight threat by protecting allies from Noumenon Blast's crowd control.",
+      "Time Journey makes Lolita's charged engage less reliable when Diggie saves it for the real fight."
+    ],
+    "counterTypes": [
+      "anti-cc",
+      "cleanse",
+      "teamfight"
+    ],
+    "proof": [
+      {
+        "id": "diggie-time-journey-vs-lolita-noumenon-blast",
+        "category": "crowd-control-counter",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Lolita wants to win teamfights with Noumenon Blast's AoE stun, while Diggie can protect nearby allies with control immunity and shield during the engage window.",
+        "worksBestWhen": [
+          "Diggie saves Time Journey for Noumenon Blast.",
+          "Allies stay close enough to receive Diggie's protection."
+        ],
+        "failureCases": [
+          "Lolita baits Time Journey before the real engage.",
+          "Diggie is zoned or killed before Lolita channels."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "lolita",
+    "counterHeroId": "esmeralda",
+    "reasons": [
+      "Esmeralda can pressure shield-heavy frontlines because her kit interacts strongly with shields.",
+      "Lolita's shield-based protection loses value when Esmeralda reaches her or shielded allies."
+    ],
+    "counterTypes": [
+      "anti-sustain",
+      "frontline",
+      "teamfight"
+    ],
+    "proof": [
+      {
+        "id": "esmeralda-shield-interaction-vs-lolita-protection",
+        "category": "skill-interaction",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Lolita wants to protect herself and allies with shield value, while Esmeralda can ignore shield effects and convert shield interaction into her own durability.",
+        "worksBestWhen": [
+          "Esmeralda reaches Lolita or shielded allies.",
+          "The fight lasts long enough for Esmeralda to cycle skills."
+        ],
+        "failureCases": [
+          "Lolita keeps Esmeralda away with team crowd control.",
+          "Esmeralda dives alone into layered control."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "lolita",
+    "counterHeroId": "franco",
+    "reasons": [
+      "Franco is a conditional counter because Iron Hook is not stopped by Lolita's normal projectile-reflection plan.",
+      "Suppression can lock Lolita before she protects allies or finishes a strong Noumenon Blast setup."
+    ],
+    "counterTypes": [
+      "pickoff",
+      "anti-engage",
+      "execution-dependent"
+    ],
+    "proof": [
+      {
+        "id": "franco-hook-suppression-vs-lolita-shield-setup",
+        "category": "skill-interaction",
+        "priority": "primary",
+        "impact": "medium",
+        "summary": "Lolita wants to block ranged pressure with Guardian's Reflection, but Franco can threaten pickoff with hook and suppression if he times the engage correctly.",
+        "worksBestWhen": [
+          "Franco hooks Lolita before she sets up a full teamfight.",
+          "Franco has team follow-up after hook or suppression."
+        ],
+        "failureCases": [
+          "Franco misses hook and gives Lolita time to counter-engage.",
+          "Franco hooks a tanky Lolita without follow-up damage."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "lolita",
+    "counterHeroId": "kaja",
+    "reasons": [
+      "Kaja can suppress and drag Lolita out of position before she controls the fight.",
+      "This is useful when Lolita is acting as the main frontline or shield anchor."
+    ],
+    "counterTypes": [
+      "pickoff",
+      "anti-engage",
+      "cooldown-punish"
+    ],
+    "proof": [
+      {
+        "id": "kaja-divine-judgement-vs-lolita-frontline-anchor",
+        "category": "crowd-control-counter",
+        "priority": "primary",
+        "impact": "medium",
+        "summary": "Lolita wants to stand between her team and incoming damage, while Kaja can suppress and drag her out of position before she controls the fight.",
+        "worksBestWhen": [
+          "Kaja reaches Lolita before she finishes charging Noumenon Blast.",
+          "Kaja's team can burst or displace Lolita after the drag."
+        ],
+        "failureCases": [
+          "Kaja cannot reach Lolita safely.",
+          "Lolita's team immediately counter-engages after Kaja commits."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "lolita",
+    "counterHeroId": "valir",
+    "reasons": [
+      "Valir can make Lolita's approach harder with knockback and slow.",
+      "This does not directly counter every part of Lolita's shield, but it can deny her positioning before she reaches a strong Noumenon Blast angle."
+    ],
+    "counterTypes": [
+      "disengage",
+      "kiting",
+      "anti-engage"
+    ],
+    "proof": [
+      {
+        "id": "valir-disengage-vs-lolita-noumenon-positioning",
+        "category": "positioning-requirement",
+        "priority": "condition",
+        "impact": "medium",
+        "summary": "Lolita wants to walk forward, protect allies, and find an AoE stun angle, while Valir can push her away and slow her before she reaches the backline.",
+        "worksBestWhen": [
+          "Valir saves knockback for Lolita's forward movement.",
+          "Valir stays outside Lolita's engage angle."
+        ],
+        "failureCases": [
+          "Lolita engages from fog or with a sudden angle before Valir reacts.",
+          "Valir wastes knockback on another target."
+        ]
+      }
+    ]
+  }
+]

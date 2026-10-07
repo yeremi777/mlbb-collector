@@ -1,0 +1,157 @@
+[
+  {
+    "anchorHeroId": "hilda",
+    "synergyHeroId": "angela",
+    "reasons": [
+      "Angela can attach to Hilda during aggressive invade or backline dive timing.",
+      "Hilda becomes harder to punish when Angela adds shielding and healing after the commit."
+    ],
+    "synergyTypes": [
+      "dive-support",
+      "shielding",
+      "mobility-enable"
+    ],
+    "proof": [
+      {
+        "id": "angela-extends-hilda-dive",
+        "category": "protection",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Hilda creates early pressure and dives into danger, while Angela adds healing and shielding to extend that dive.",
+        "worksBestWhen": [
+          "Angela saves Heartguard for Hilda's real commit.",
+          "Hilda finds a backline or jungle target."
+        ],
+        "failureCases": [
+          "Hilda dives into layered crowd control.",
+          "Angela attaches too late.",
+          "Hilda cannot reach a valuable target."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "hilda",
+    "synergyHeroId": "mathilda",
+    "reasons": [
+      "Mathilda helps Hilda enter or exit fights more safely.",
+      "Hilda can use Mathilda's mobility support to pressure invade paths without being trapped after committing."
+    ],
+    "synergyTypes": [
+      "mobility-enable",
+      "shielding",
+      "dive-support"
+    ],
+    "proof": [
+      {
+        "id": "mathilda-enables-hilda-invade-mobility",
+        "category": "mobility-enabler",
+        "priority": "primary",
+        "impact": "medium",
+        "summary": "Hilda pressures fog-of-war and backline areas, while Mathilda improves her engage and retreat options.",
+        "worksBestWhen": [
+          "Hilda uses Mathilda's mobility to avoid overcommitting.",
+          "The team coordinates around early invade timing."
+        ],
+        "failureCases": [
+          "Hilda dives beyond Mathilda's support range.",
+          "Mathilda's mobility tool is unavailable.",
+          "Enemy hard control catches Hilda before she can retreat."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "hilda",
+    "synergyHeroId": "rafaela",
+    "reasons": [
+      "Rafaela's speed and healing help Hilda rotate, chase, and survive early skirmishes.",
+      "Hilda can use Rafaela's movement support to reach squishy targets during invade or collapse timing."
+    ],
+    "synergyTypes": [
+      "mobility-enable",
+      "healing-sustain",
+      "pickoff-combo"
+    ],
+    "proof": [
+      {
+        "id": "rafaela-speeds-hilda-map-pressure",
+        "category": "mobility-enabler",
+        "priority": "secondary",
+        "impact": "medium",
+        "summary": "Hilda wants fast map pressure, while Rafaela improves chase and retreat reliability.",
+        "worksBestWhen": [
+          "Rafaela speeds Hilda into invade or collapse timing.",
+          "Hilda uses the movement window to reach squishy targets."
+        ],
+        "failureCases": [
+          "Hilda engages without Rafaela nearby.",
+          "The enemy has hard lockdown.",
+          "Hilda fails to create early pressure."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "hilda",
+    "synergyHeroId": "selena",
+    "reasons": [
+      "Selena's traps and arrow pressure create early pickoff paths that Hilda can immediately follow.",
+      "Hilda can wait near Selena's vision setup and punish enemies who enter jungle or bush routes."
+    ],
+    "synergyTypes": [
+      "vision-setup",
+      "pickoff-combo",
+      "game-phase"
+    ],
+    "proof": [
+      {
+        "id": "selena-vision-sets-hilda-invade",
+        "category": "vision-setup",
+        "priority": "secondary",
+        "impact": "medium",
+        "summary": "Selena controls fog-of-war and creates catch windows, while Hilda follows from bush or invade angles.",
+        "worksBestWhen": [
+          "Selena places traps around jungle entrances.",
+          "Hilda waits near the trap or arrow path."
+        ],
+        "failureCases": [
+          "Selena misses the setup.",
+          "Hilda arrives too late.",
+          "The enemy avoids fog-of-war paths."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "hilda",
+    "synergyHeroId": "popol-and-kupa",
+    "reasons": [
+      "Popol and Kupa can place traps that give Hilda safer invade paths and better information before diving.",
+      "Hilda can use trap information to collapse on isolated targets around jungle entrances and bush routes."
+    ],
+    "synergyTypes": [
+      "vision-setup",
+      "pickoff-combo",
+      "game-phase"
+    ],
+    "proof": [
+      {
+        "id": "popol-kupa-traps-guide-hilda-invade",
+        "category": "vision-setup",
+        "priority": "primary",
+        "impact": "medium",
+        "summary": "Popol and Kupa controls approach paths with traps, while Hilda uses that information to invade, collapse, or dive isolated backline targets.",
+        "worksBestWhen": [
+          "Traps are placed before Hilda invades.",
+          "Hilda plays around jungle entrances and bush pressure."
+        ],
+        "failureCases": [
+          "Popol and Kupa place traps too late.",
+          "Hilda dives without trap information.",
+          "The enemy clears or avoids the trapped path."
+        ]
+      }
+    ]
+  }
+]

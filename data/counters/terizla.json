@@ -1,0 +1,152 @@
+[
+  {
+    "targetHeroId": "terizla",
+    "counterHeroId": "valir",
+    "reasons": [
+      "Valir can push Terizla away before Terizla reaches the center of the fight.",
+      "Terizla's damage is strongest when enemies stay near him, so Valir's spacing tools reduce his main value."
+    ],
+    "counterTypes": [
+      "kiting",
+      "disengage",
+      "anti-engage"
+    ],
+    "proof": [
+      {
+        "id": "valir-searing-torrent-vs-terizla-melee-aoe",
+        "category": "kiting",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Terizla wants close-range AoE trades, while Valir can knock him back, slow him, and force him to spend time walking instead of hitting.",
+        "worksBestWhen": [
+          "Valir keeps distance and saves knockback for Terizla's commit.",
+          "Allies avoid grouping inside Terizla's control area."
+        ],
+        "failureCases": [
+          "Terizla catches Valir from fog or after Valir wastes knockback.",
+          "Valir's team fights in a tight choke where Terizla can still land AoE."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "terizla",
+    "counterHeroId": "karrie",
+    "reasons": [
+      "Terizla's durability makes him a good target for Karrie's repeated max-HP true-damage pattern.",
+      "Karrie can punish Terizla if he is forced to walk through frontline space without reaching her."
+    ],
+    "counterTypes": [
+      "true-damage",
+      "max-hp-damage",
+      "tank-shred"
+    ],
+    "proof": [
+      {
+        "id": "karrie-lightwheel-mark-vs-terizla-frontline",
+        "category": "damage-type-advantage",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Terizla wants to survive through incoming damage while swinging in melee range, while Karrie's Lightwheel Mark punishes high-HP durable targets.",
+        "worksBestWhen": [
+          "Karrie has peel and can attack from safe range.",
+          "Terizla is forced to walk through the frontline before reaching Karrie."
+        ],
+        "failureCases": [
+          "Terizla lands his control on Karrie.",
+          "Karrie is caught before stacking Lightwheel Mark."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "terizla",
+    "counterHeroId": "lunox",
+    "reasons": [
+      "Lunox threatens Terizla with target-HP scaling magic damage.",
+      "She can punish Terizla's low mobility if she keeps enough spacing and avoids being pulled."
+    ],
+    "counterTypes": [
+      "max-hp-damage",
+      "burst",
+      "range-advantage"
+    ],
+    "proof": [
+      {
+        "id": "lunox-chaos-assault-vs-terizla-durability",
+        "category": "damage-type-advantage",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Terizla's strength is durability in close fights, while Lunox can chip and burst him with Chaos Assault before he fully controls the fight.",
+        "worksBestWhen": [
+          "Lunox plays outside Terizla's engage range.",
+          "Terizla has already used his main control or is forced to walk forward."
+        ],
+        "failureCases": [
+          "Lunox is caught by Terizla's ultimate.",
+          "Lunox uses defensive timing too early and cannot finish the trade."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "terizla",
+    "counterHeroId": "diggie",
+    "reasons": [
+      "Diggie can reduce the value of Terizla's teamfight control when Terizla tries to pull multiple allies.",
+      "This is more of a teamfight counter than a lane counter."
+    ],
+    "counterTypes": [
+      "anti-cc",
+      "cleanse",
+      "teamfight"
+    ],
+    "proof": [
+      {
+        "id": "diggie-time-journey-vs-terizla-teamfight-control",
+        "category": "crowd-control-counter",
+        "priority": "primary",
+        "impact": "medium",
+        "summary": "Terizla wants to trap enemies in his AoE control, while Diggie can protect nearby allies with shield and control immunity during the engage window.",
+        "worksBestWhen": [
+          "Diggie saves Time Journey for Terizla's real teamfight engage.",
+          "Teammates stay close enough to receive Diggie's protection."
+        ],
+        "failureCases": [
+          "Terizla baits Time Journey before committing.",
+          "Terizla catches Diggie first or fights while Diggie's ultimate is unavailable."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "terizla",
+    "counterHeroId": "pharsa",
+    "reasons": [
+      "Pharsa can damage Terizla from outside his preferred melee range.",
+      "Terizla struggles when forced to walk into long-range poke before he can start the fight."
+    ],
+    "counterTypes": [
+      "range-advantage",
+      "poke",
+      "teamfight"
+    ],
+    "proof": [
+      {
+        "id": "pharsa-feathered-air-strike-vs-terizla-short-range-fight",
+        "category": "range-advantage",
+        "priority": "primary",
+        "impact": "medium",
+        "summary": "Terizla wants enemies close enough for AoE swings and control, while Pharsa can use long-range artillery to pressure him before he reaches the fight.",
+        "worksBestWhen": [
+          "Pharsa positions behind vision and frontline.",
+          "Terizla's engage route is known."
+        ],
+        "failureCases": [
+          "Terizla reaches Pharsa through flank or fog.",
+          "Pharsa channels too close and gets interrupted."
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,152 @@
+[
+  {
+    "anchorHeroId": "bruno",
+    "synergyHeroId": "lolita",
+    "reasons": [
+      "Lolita can protect Bruno from ranged pressure and projectiles while creating space for him to trade safely.",
+      "Bruno can keep dealing damage from behind Lolita's frontline instead of exposing himself early."
+    ],
+    "synergyTypes": [
+      "backline-protection",
+      "frontline-enabler",
+      "laning-synergy"
+    ],
+    "proof": [
+      {
+        "id": "lolita-protection-for-bruno-gold-lane",
+        "category": "protection",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Lolita shields Bruno from ranged basic attacks and projectiles, letting Bruno hold a safer lane or teamfight position.",
+        "worksBestWhen": [
+          "Lolita positions between Bruno and incoming ranged damage.",
+          "Bruno keeps hitting from behind Lolita instead of stepping forward alone."
+        ],
+        "failureCases": [
+          "Enemy divers bypass Lolita's shield angle.",
+          "Bruno moves outside Lolita's protection range."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "bruno",
+    "synergyHeroId": "rafaela",
+    "reasons": [
+      "Rafaela's heal and speed support help Bruno kite, chase after a successful trade, or disengage under pressure.",
+      "Bruno benefits from Rafaela's sustain because his gold-lane trades often depend on surviving short damage windows."
+    ],
+    "synergyTypes": [
+      "healing-sustain",
+      "mobility-enable",
+      "laning-synergy"
+    ],
+    "proof": [
+      {
+        "id": "rafaela-heal-speed-for-bruno-trades",
+        "category": "healing-sustain",
+        "priority": "primary",
+        "impact": "medium",
+        "summary": "Rafaela extends Bruno's trading window by giving him recovery and movement support during lane skirmishes and teamfights.",
+        "worksBestWhen": [
+          "Rafaela times her speed support when Bruno needs to chase or escape.",
+          "Bruno does not overextend beyond Rafaela's range."
+        ],
+        "failureCases": [
+          "Bruno is burst before Rafaela can support him.",
+          "Rafaela is forced to use resources on another teammate."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "bruno",
+    "synergyHeroId": "minotaur",
+    "reasons": [
+      "Minotaur gives Bruno a frontline and healing support, while his crowd control creates safer damage windows.",
+      "Bruno can attack from behind Minotaur while Minotaur absorbs engage pressure."
+    ],
+    "synergyTypes": [
+      "frontline-enabler",
+      "healing-sustain",
+      "cc-chain"
+    ],
+    "proof": [
+      {
+        "id": "minotaur-frontline-for-bruno-backline-damage",
+        "category": "frontline-enabler",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Minotaur absorbs engage pressure and controls enemies, giving Bruno space to keep attacking from the backline.",
+        "worksBestWhen": [
+          "Minotaur holds enemy divers away from Bruno.",
+          "Bruno follows Minotaur's control instead of starting the fight alone."
+        ],
+        "failureCases": [
+          "Minotaur engages too deep and leaves Bruno exposed.",
+          "Enemy assassins reach Bruno from a side angle."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "bruno",
+    "synergyHeroId": "tigreal",
+    "reasons": [
+      "Tigreal can lock enemies long enough for Bruno to apply ranged burst damage safely.",
+      "Bruno can follow Tigreal's engage from the backline instead of entering the fight first."
+    ],
+    "synergyTypes": [
+      "engage-follow-up",
+      "cc-chain",
+      "teamfight-combo"
+    ],
+    "proof": [
+      {
+        "id": "tigreal-engage-for-bruno-ranged-burst",
+        "category": "engage-follow-up",
+        "priority": "primary",
+        "impact": "medium",
+        "summary": "Tigreal creates the engage window, while Bruno follows with ranged damage on controlled enemies.",
+        "worksBestWhen": [
+          "Tigreal catches targets inside Bruno's attack range.",
+          "Bruno keeps safe spacing behind the frontline."
+        ],
+        "failureCases": [
+          "Tigreal engages when Bruno is not ready.",
+          "Bruno is zoned away by enemy flankers."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "bruno",
+    "synergyHeroId": "angela",
+    "reasons": [
+      "Angela can protect Bruno during focused dives, helping him survive long enough to keep dealing damage.",
+      "Bruno benefits from Angela's defensive support when enemy assassins commit onto him."
+    ],
+    "synergyTypes": [
+      "shielding",
+      "healing-sustain",
+      "protect"
+    ],
+    "proof": [
+      {
+        "id": "angela-protection-for-bruno-dive-survival",
+        "category": "shielding",
+        "priority": "secondary",
+        "impact": "medium",
+        "summary": "Angela adds defensive support when Bruno is targeted, reducing the chance that he is removed before his damage matters.",
+        "worksBestWhen": [
+          "Angela saves her ultimate for enemy dive timing.",
+          "Bruno has enough space to continue attacking after being protected."
+        ],
+        "failureCases": [
+          "Bruno is caught by chain crowd control before Angela can react.",
+          "Angela attaches to Bruno while he is already too far out of position."
+        ]
+      }
+    ]
+  }
+]

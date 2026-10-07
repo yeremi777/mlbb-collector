@@ -1,0 +1,154 @@
+[
+  {
+    "targetHeroId": "johnson",
+    "counterHeroId": "grock",
+    "reasons": [
+      "Grock's wall can directly block or redirect Johnson's car path, forcing Johnson to crash early, miss the intended target, or take a worse engage angle.",
+      "Grock is especially strong around narrow jungle entrances, river paths, turret approaches, and objective choke points where Johnson's driving path is easier to predict."
+    ],
+    "counterTypes": [
+      "anti-engage",
+      "terrain-control",
+      "positioning-requirement"
+    ],
+    "proof": [
+      {
+        "id": "grock-guardian-barrier-vs-johnson-full-throttle",
+        "category": "skill-interaction",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Johnson wants to drive into a chosen target, while Grock can create a stone wall in the path and disrupt the route before Johnson reaches the backline.",
+        "worksBestWhen": [
+          "Grock predicts Johnson's route from map movement or sound cue.",
+          "Grock places the wall in narrow terrain, jungle entrances, or objective choke points.",
+          "Grock saves the wall for Johnson's real engage instead of using it for poke."
+        ],
+        "failureCases": [
+          "Johnson takes an unexpected route or crashes before Grock can react.",
+          "Grock places the wall too late or at the wrong angle.",
+          "Johnson's passenger still gets a strong follow-up after the forced crash."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "johnson",
+    "counterHeroId": "kaja",
+    "reasons": [
+      "Kaja's suppression is one of the cleanest answers to Johnson's car engage.",
+      "Kaja can also isolate Johnson or his passenger after a crash."
+    ],
+    "counterTypes": [
+      "suppression",
+      "anti-engage",
+      "pickoff"
+    ],
+    "proof": [
+      {
+        "id": "kaja-divine-judgment-vs-johnson-full-throttle",
+        "category": "skill-interaction",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Johnson wants to enter fights with Full Throttle, while Kaja's Divine Judgment can suppress and drag a key target, interrupting or punishing the engage.",
+        "worksBestWhen": [
+          "Kaja holds ultimate for Johnson's real engage path.",
+          "Kaja's team can burst the suppressed target."
+        ],
+        "failureCases": [
+          "Johnson crashes from fog before Kaja can react.",
+          "Kaja suppresses Johnson but the passenger still wins the follow-up fight."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "johnson",
+    "counterHeroId": "franco",
+    "reasons": [
+      "Franco's Bloody Hunt can stop Johnson's play after contact or punish the passenger.",
+      "Hook pressure also forces Johnson's team to approach more carefully before car setup."
+    ],
+    "counterTypes": [
+      "suppression",
+      "anti-engage",
+      "pickoff"
+    ],
+    "proof": [
+      {
+        "id": "franco-bloody-hunt-vs-johnson-crash-follow-up",
+        "category": "crowd-control-counter",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Johnson's crash creates a follow-up window, but Franco can suppress the key engage target and deny the clean continuation.",
+        "worksBestWhen": [
+          "Franco saves ultimate for Johnson or the high-damage passenger.",
+          "Franco positions near likely crash targets."
+        ],
+        "failureCases": [
+          "Johnson crashes outside Franco's reaction range.",
+          "Franco uses suppression before the real engage."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "johnson",
+    "counterHeroId": "silvanna",
+    "reasons": [
+      "Silvanna can restrain Johnson or his passenger and reduce their ability to continue the dive.",
+      "Her ultimate is especially useful when Johnson's engage path is predictable."
+    ],
+    "counterTypes": [
+      "anti-engage",
+      "lockdown",
+      "positioning-requirement"
+    ],
+    "proof": [
+      {
+        "id": "silvanna-imperial-justice-vs-johnson-crash",
+        "category": "skill-interaction",
+        "priority": "primary",
+        "impact": "medium",
+        "summary": "Johnson wants to crash and continue with a passenger, while Silvanna can trap a key target in her ultimate zone and prevent clean disengage.",
+        "worksBestWhen": [
+          "Silvanna casts after Johnson commits.",
+          "The trapped target is the passenger or a priority damage dealer."
+        ],
+        "failureCases": [
+          "Johnson crashes multiple allies before Silvanna can isolate one target.",
+          "Silvanna misses the key enemy or traps a low-value target."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "johnson",
+    "counterHeroId": "diggie",
+    "reasons": [
+      "Diggie reduces the value of Johnson's crash CC for nearby allies.",
+      "Time Journey is useful when Johnson's engage is predictable and grouped allies need protection."
+    ],
+    "counterTypes": [
+      "anti-cc",
+      "protect",
+      "teamfight"
+    ],
+    "proof": [
+      {
+        "id": "diggie-time-journey-vs-johnson-crash-cc",
+        "category": "crowd-control-counter",
+        "priority": "primary",
+        "impact": "medium",
+        "summary": "Johnson wants crash CC to start the fight, while Diggie can cleanse debuffs and grant control immunity to nearby allies during the engage window.",
+        "worksBestWhen": [
+          "Diggie stays near likely crash targets.",
+          "Diggie saves ultimate for the actual crash, not a bait."
+        ],
+        "failureCases": [
+          "Johnson catches Diggie first.",
+          "Johnson's passenger bursts before Diggie reacts."
+        ]
+      }
+    ]
+  }
+]

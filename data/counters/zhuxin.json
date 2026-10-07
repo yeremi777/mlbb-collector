@@ -1,0 +1,162 @@
+[
+  {
+    "targetHeroId": "zhuxin",
+    "counterHeroId": "franco",
+    "reasons": [
+      "Franco can punish Zhuxin while she is channeling or walking forward to keep Lantern Flare pressure.",
+      "Suppression gives a simple answer to a mage who wants continuous zone control."
+    ],
+    "counterTypes": [
+      "pickoff",
+      "crowd-control-counter",
+      "cooldown-punish"
+    ],
+    "proof": [
+      {
+        "id": "franco-suppression-vs-zhuxin-lantern-flare",
+        "category": "crowd-control-counter",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Zhuxin wants to keep enemies inside Lantern Flare long enough to stack Soul Snare, while Franco can suppress her during the channel pressure window.",
+        "worksBestWhen": [
+          "Franco hides outside Zhuxin's lantern range.",
+          "Franco's team follows up during suppression.",
+          "Zhuxin has stepped forward to maintain Lantern Flare pressure."
+        ],
+        "failureCases": [
+          "Zhuxin plays behind frontline vision.",
+          "Franco hooks a tank instead of Zhuxin.",
+          "Franco suppresses without allied burst follow-up."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "zhuxin",
+    "counterHeroId": "kaja",
+    "reasons": [
+      "Kaja can drag Zhuxin out of her preferred lantern-control position.",
+      "This is strongest when Zhuxin walks forward to keep Soul Snare pressure active."
+    ],
+    "counterTypes": [
+      "pickoff",
+      "crowd-control-counter",
+      "anti-engage"
+    ],
+    "proof": [
+      {
+        "id": "kaja-divine-judgment-vs-zhuxin-control-zone",
+        "category": "skill-interaction",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Zhuxin wants controlled spacing and sustained Lantern Flare uptime, while Kaja can suppress and drag her out of that zone.",
+        "worksBestWhen": [
+          "Kaja waits for Zhuxin to step forward.",
+          "Kaja's team has burst follow-up.",
+          "Kaja enters from an angle outside Zhuxin's main control area."
+        ],
+        "failureCases": [
+          "Zhuxin stays outside Kaja's engage range.",
+          "Kaja uses suppression on a low-value target before Zhuxin commits.",
+          "Zhuxin's team blocks Kaja from reaching her."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "zhuxin",
+    "counterHeroId": "diggie",
+    "reasons": [
+      "Diggie can reduce the value of Zhuxin's airborne capture and throw sequence.",
+      "Zhuxin wants enemies to stay trapped in her control timing, while Diggie protects the team during that timing."
+    ],
+    "counterTypes": [
+      "anti-cc",
+      "cleanse",
+      "teamfight"
+    ],
+    "proof": [
+      {
+        "id": "diggie-time-journey-vs-zhuxin-soul-snare",
+        "category": "skill-interaction",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Zhuxin wants to stack Soul Snare into airborne capture, while Diggie can protect nearby allies from the crowd-control payoff.",
+        "worksBestWhen": [
+          "Diggie saves ultimate for Zhuxin's capture window.",
+          "Diggie positions near the teammates Zhuxin is trying to lift.",
+          "Diggie avoids being forced away before Lantern Flare stacks."
+        ],
+        "failureCases": [
+          "Zhuxin baits Diggie ultimate before committing Lantern Flare.",
+          "Diggie is isolated or forced away from the captured ally.",
+          "Zhuxin catches Diggie before he can cast."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "zhuxin",
+    "counterHeroId": "pharsa",
+    "reasons": [
+      "Pharsa can pressure Zhuxin from outside the normal Lantern Flare fight area.",
+      "Zhuxin's control becomes weaker when enemies do not need to stand inside her lantern zone to deal damage."
+    ],
+    "counterTypes": [
+      "range-advantage",
+      "poke",
+      "burst"
+    ],
+    "proof": [
+      {
+        "id": "pharsa-range-pressure-vs-zhuxin-lantern-zone",
+        "category": "range-advantage",
+        "priority": "primary",
+        "impact": "medium",
+        "summary": "Zhuxin wants enemies to remain in her lantern control area, while Pharsa can attack from long range and force Zhuxin to reposition.",
+        "worksBestWhen": [
+          "Pharsa keeps vision and casts from safe terrain.",
+          "Zhuxin has already used movement speed tools.",
+          "Pharsa's team blocks dive attempts while she channels."
+        ],
+        "failureCases": [
+          "Pharsa flies into dive range without protection.",
+          "Zhuxin's team forces Pharsa out before she can channel.",
+          "Zhuxin reaches Pharsa first with Lantern Flare pressure."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "zhuxin",
+    "counterHeroId": "zetian",
+    "reasons": [
+      "Zetian can fight Zhuxin without needing to stay inside Lantern Flare's control area for too long.",
+      "Zetian's area pressure and global teamfight utility can interrupt the timing where Zhuxin wants enemies grouped and trapped by Soul Snare."
+    ],
+    "counterTypes": [
+      "range-advantage",
+      "teamfight",
+      "poke"
+    ],
+    "proof": [
+      {
+        "id": "zetian-area-pressure-vs-zhuxin-lantern-control",
+        "category": "range-advantage",
+        "priority": "secondary",
+        "impact": "medium",
+        "summary": "Zhuxin wants enemies to remain inside her lantern-control area until Soul Snare creates airborne capture, while Zetian can pressure from safer range and use teamfight-wide utility to reduce Zhuxin's setup value.",
+        "worksBestWhen": [
+          "Zetian plays behind frontline vision.",
+          "Zetian uses area pressure to force Zhuxin to reposition.",
+          "Zetian's team follows up when Zhuxin commits Lantern Flare."
+        ],
+        "failureCases": [
+          "Zhuxin reaches Zetian first with Lantern Flare control.",
+          "Zetian uses global utility without team follow-up.",
+          "Zhuxin's frontline blocks Zetian from pressuring her directly."
+        ]
+      }
+    ]
+  }
+]

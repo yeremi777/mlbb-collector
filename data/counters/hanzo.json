@@ -1,0 +1,157 @@
+[
+  {
+    "targetHeroId": "hanzo",
+    "counterHeroId": "natalia",
+    "reasons": [
+      "Natalia can search for and punish Hanzo's real body while he plays through Demon Pneuma.",
+      "Hanzo becomes much weaker when enemies can invade his hidden body position."
+    ],
+    "counterTypes": [
+      "vision-control",
+      "pickoff",
+      "invade"
+    ],
+    "proof": [
+      {
+        "id": "natalia-stealth-search-vs-hanzo-hidden-body",
+        "category": "vision-awareness",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Hanzo wants to keep his real body hidden while the demon fights, while Natalia can pressure fog areas and punish the body if she finds it.",
+        "worksBestWhen": [
+          "Natalia tracks the direction Hanzo's demon came from.",
+          "Natalia invades with nearby backup."
+        ],
+        "failureCases": [
+          "Hanzo hides body under tower or near teammates.",
+          "Natalia guesses the wrong body location.",
+          "Natalia is revealed before reaching Hanzo."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "hanzo",
+    "counterHeroId": "hilda",
+    "reasons": [
+      "Hilda can invade early, check bushes, and pressure Hanzo's jungle path.",
+      "Her durability lets her contest Hanzo's body search better than fragile heroes."
+    ],
+    "counterTypes": [
+      "invade",
+      "vision-control",
+      "frontline"
+    ],
+    "proof": [
+      {
+        "id": "hilda-invade-pressure-vs-hanzo-jungle-body",
+        "category": "vision-awareness",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Hanzo wants free jungle tempo and hidden body safety, while Hilda can invade bushes and jungle entrances to deny safe demon usage.",
+        "worksBestWhen": [
+          "Hilda invades with lane priority.",
+          "Hilda tracks Hanzo's buff and demon timing."
+        ],
+        "failureCases": [
+          "Hilda invades alone into multiple enemies.",
+          "Hanzo hides body too deep behind his team.",
+          "Hilda's team does not convert the opened vision."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "hanzo",
+    "counterHeroId": "yi-sun-shin",
+    "reasons": [
+      "Yi Sun-shin can reveal enemy positions globally, reducing Hanzo's hidden-body advantage.",
+      "His reveal helps the team decide where to collapse when Hanzo's demon appears."
+    ],
+    "counterTypes": [
+      "vision-control",
+      "map-awareness",
+      "anti-pickoff"
+    ],
+    "proof": [
+      {
+        "id": "yi-sun-shin-mountain-shocker-vs-hanzo-hidden-body",
+        "category": "vision-awareness",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Hanzo relies on hidden body positioning, while Yi Sun-shin's global reveal can expose enemy positions and help teammates locate Hanzo's real body.",
+        "worksBestWhen": [
+          "Yi Sun-shin uses reveal after Hanzo sends Demon Pneuma.",
+          "Teammates are ready to collapse on the revealed position."
+        ],
+        "failureCases": [
+          "Reveal is used with no teammate close enough to punish.",
+          "Hanzo hides under turret or near allies.",
+          "The team chases demon form instead of body."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "hanzo",
+    "counterHeroId": "aldous",
+    "reasons": [
+      "Aldous's global vision can help identify Hanzo's real-body location.",
+      "If Hanzo's body is exposed and isolated, Aldous can punish it with chase pressure."
+    ],
+    "counterTypes": [
+      "vision-control",
+      "pickoff",
+      "anti-backline"
+    ],
+    "proof": [
+      {
+        "id": "aldous-chase-fate-vs-hanzo-body-location",
+        "category": "vision-awareness",
+        "priority": "primary",
+        "impact": "medium",
+        "summary": "Hanzo wants to hide his body, while Aldous can reveal enemy positions and threaten isolated targets with Contract: Chase Fate.",
+        "worksBestWhen": [
+          "Aldous uses ultimate after Hanzo's demon appears.",
+          "Hanzo's body is far from teammates."
+        ],
+        "failureCases": [
+          "Hanzo stays protected near base, turret, or allies.",
+          "Aldous dives into a prepared trap.",
+          "Aldous lacks damage or stacks to finish."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "hanzo",
+    "counterHeroId": "selena",
+    "reasons": [
+      "Selena can use traps and long-range arrow angles to control Hanzo's likely body routes.",
+      "Her early roam pressure can punish Hanzo before he gets free jungle tempo."
+    ],
+    "counterTypes": [
+      "vision-control",
+      "pickoff",
+      "crowd-control-counter"
+    ],
+    "proof": [
+      {
+        "id": "selena-trap-arrow-vs-hanzo-body-routes",
+        "category": "vision-awareness",
+        "priority": "primary",
+        "impact": "medium",
+        "summary": "Hanzo wants safe hidden routes, while Selena can place traps, scout paths, and punish predictable body locations with Abyssal Arrow.",
+        "worksBestWhen": [
+          "Selena places traps around jungle exits and body hiding spots.",
+          "Selena coordinates with teammates before invading."
+        ],
+        "failureCases": [
+          "Selena traps the wrong side of the map.",
+          "Hanzo's team clears trap areas.",
+          "Selena misses arrow and loses invade tempo."
+        ]
+      }
+    ]
+  }
+]

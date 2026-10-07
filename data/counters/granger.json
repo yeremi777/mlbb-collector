@@ -1,0 +1,150 @@
+[
+  {
+    "targetHeroId": "granger",
+    "counterHeroId": "lolita",
+    "reasons": [
+      "Lolita reduces Granger's ranged skill-shot value by blocking incoming projectiles from the shield direction.",
+      "Granger's burst loses reliability when key shots are blocked or delayed."
+    ],
+    "counterTypes": [
+      "protect",
+      "frontline"
+    ],
+    "proof": [
+      {
+        "id": "lolita-guardian-bulwark-vs-granger-projectiles",
+        "category": "skill-interaction",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Granger wants to land ranged projectile damage, while Lolita can block incoming ranged basic attacks and projectiles from the shield direction.",
+        "worksBestWhen": [
+          "Lolita faces Granger during his burst window.",
+          "Teammates stay behind the shield during Death Sonata pressure."
+        ],
+        "failureCases": [
+          "Granger repositions around the shield.",
+          "Lolita is forced to shield another damage source."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "granger",
+    "counterHeroId": "natalia",
+    "reasons": [
+      "Natalia can punish Granger before he sets up his ranged poke or ultimate angle.",
+      "Granger is vulnerable when assassins reach him from fog and force close-range decisions."
+    ],
+    "counterTypes": [
+      "pickoff",
+      "vision-control",
+      "burst"
+    ],
+    "proof": [
+      {
+        "id": "natalia-conceal-vs-granger-backline-angle",
+        "category": "vision-awareness",
+        "priority": "primary",
+        "impact": "medium",
+        "summary": "Granger wants safe ranged angles, while Natalia pressures him from concealment and forces him to respect flank vision.",
+        "worksBestWhen": [
+          "Natalia tracks Granger's rotation before objectives.",
+          "Natalia attacks after Granger uses Rondo or stands away from peel."
+        ],
+        "failureCases": [
+          "Granger's team controls bush vision.",
+          "Natalia engages while Granger still has peel and repositioning."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "granger",
+    "counterHeroId": "khufra",
+    "reasons": [
+      "Khufra can punish Granger's Rondo repositioning if Granger dashes across Bouncing Ball.",
+      "Khufra forces Granger to shoot from safer, less aggressive angles."
+    ],
+    "counterTypes": [
+      "anti-dash",
+      "anti-engage",
+      "frontline"
+    ],
+    "proof": [
+      {
+        "id": "khufra-bouncing-ball-vs-granger-rondo",
+        "category": "skill-interaction",
+        "priority": "primary",
+        "impact": "medium",
+        "summary": "Granger uses Rondo to reposition around fights, while Khufra's Bouncing Ball punishes blink or dash attempts near him.",
+        "worksBestWhen": [
+          "Khufra holds Bouncing Ball for Granger's reposition.",
+          "Khufra approaches from fog or objective terrain."
+        ],
+        "failureCases": [
+          "Granger keeps distance and waits for Bouncing Ball to end.",
+          "Khufra dives without follow-up damage."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "granger",
+    "counterHeroId": "chou",
+    "reasons": [
+      "Chou can close distance and kick Granger out of safe ranged positioning.",
+      "This is valuable because Granger is strongest when enemies cannot force him into close-range pickoff trades."
+    ],
+    "counterTypes": [
+      "pickoff",
+      "mobility"
+    ],
+    "proof": [
+      {
+        "id": "chou-way-of-dragon-vs-granger-spacing",
+        "category": "mobility-advantage",
+        "priority": "primary",
+        "impact": "medium",
+        "summary": "Granger wants to maintain ranged spacing, while Chou can use mobility, control-immunity timing, and displacement to isolate him.",
+        "worksBestWhen": [
+          "Chou flanks rather than walking directly through Granger's poke.",
+          "Chou targets Granger after Rondo is used or forced."
+        ],
+        "failureCases": [
+          "Granger holds safe backline position.",
+          "Chou engages through too much peel."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "granger",
+    "counterHeroId": "saber",
+    "reasons": [
+      "Saber can punish Granger when he is isolated or after he uses mobility.",
+      "Targeted burst limits Granger's ability to slowly control spacing with skill shots."
+    ],
+    "counterTypes": [
+      "pickoff",
+      "burst",
+      "cooldown-punish"
+    ],
+    "proof": [
+      {
+        "id": "saber-triple-sweep-vs-granger-rondo-window",
+        "category": "crowd-control-counter",
+        "priority": "primary",
+        "impact": "medium",
+        "summary": "Granger wants space to aim and reposition, while Saber can force a targeted airborne burst window before Granger escapes.",
+        "worksBestWhen": [
+          "Saber waits for Granger to use Rondo.",
+          "Saber attacks from fog or after frontline vision is broken."
+        ],
+        "failureCases": [
+          "Granger stays protected by tank or support peel.",
+          "Saber dives before Granger's mobility is forced."
+        ]
+      }
+    ]
+  }
+]

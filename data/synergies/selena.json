@@ -1,0 +1,157 @@
+[
+  {
+    "anchorHeroId": "selena",
+    "synergyHeroId": "saber",
+    "reasons": [
+      "Selena's Abyssal Arrow can create the first stun window for Saber to safely commit.",
+      "Saber's burst turns Selena's long-range catch into a fast kill."
+    ],
+    "synergyTypes": [
+      "pickoff-combo",
+      "burst-follow-up",
+      "cc-chain"
+    ],
+    "proof": [
+      {
+        "id": "selena-arrow-sets-saber-burst",
+        "category": "pickoff-combo",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Selena catches or marks the target from range, then Saber follows with single-target burst before the target can escape.",
+        "worksBestWhen": [
+          "Selena lands a meaningful stun duration.",
+          "Saber waits near the expected catch zone."
+        ],
+        "failureCases": [
+          "Selena misses Abyssal Arrow.",
+          "Saber dives before Selena confirms the target.",
+          "The enemy target has nearby peel or immunity."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "selena",
+    "synergyHeroId": "eudora",
+    "reasons": [
+      "Selena's arrow stun gives Eudora time to walk into range and layer her burst combo.",
+      "Eudora adds reliable magic burst after Selena creates the opening."
+    ],
+    "synergyTypes": [
+      "cc-chain",
+      "burst-follow-up",
+      "pickoff-combo"
+    ],
+    "proof": [
+      {
+        "id": "selena-arrow-sets-eudora-burst",
+        "category": "crowd-control-chain",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Selena starts the pickoff with a ranged stun, while Eudora extends the control and finishes with magic burst.",
+        "worksBestWhen": [
+          "Selena catches a squishy target.",
+          "Eudora keeps burst cooldowns ready for confirmed arrows."
+        ],
+        "failureCases": [
+          "Eudora is too far away after the arrow lands.",
+          "Selena catches a tank or bait target.",
+          "The enemy cleans up Selena or Eudora after the combo."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "selena",
+    "synergyHeroId": "kadita",
+    "reasons": [
+      "Selena's stun can hold a target long enough for Kadita's delayed knock-up to connect.",
+      "Kadita brings burst follow-up that fits Selena's pickoff-first game plan."
+    ],
+    "synergyTypes": [
+      "setup-combo",
+      "burst-follow-up",
+      "execution-dependent"
+    ],
+    "proof": [
+      {
+        "id": "selena-arrow-sets-kadita-delayed-burst",
+        "category": "setup-combo",
+        "priority": "primary",
+        "impact": "medium",
+        "summary": "Selena creates the first control hit, while Kadita layers delayed area control and burst on the trapped target.",
+        "worksBestWhen": [
+          "Kadita is already moving before Selena's arrow lands.",
+          "Selena uses traps or vision to predict the target path."
+        ],
+        "failureCases": [
+          "Kadita arrives late after the stun ends.",
+          "The target is hit at a range Kadita cannot reach.",
+          "Enemy allies interrupt Kadita's combo entry."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "selena",
+    "synergyHeroId": "aldous",
+    "reasons": [
+      "Selena's traps and arrow pressure can reveal or control areas where Aldous wants to choose a target.",
+      "Aldous can use the information and control window from Selena to chase a vulnerable enemy."
+    ],
+    "synergyTypes": [
+      "vision-setup",
+      "pickoff-combo",
+      "dive-support"
+    ],
+    "proof": [
+      {
+        "id": "selena-vision-guides-aldous-pickoff",
+        "category": "vision-setup",
+        "priority": "secondary",
+        "impact": "medium",
+        "summary": "Selena improves map control and catch reliability, while Aldous uses that information to commit to a global pickoff.",
+        "worksBestWhen": [
+          "Selena traps enemy rotation paths before Aldous commits.",
+          "Aldous targets a hero already pressured or isolated by Selena."
+        ],
+        "failureCases": [
+          "Aldous ults before Selena confirms target safety.",
+          "Selena's traps are cleared or avoided.",
+          "The enemy groups around Aldous's landing point."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "selena",
+    "synergyHeroId": "franco",
+    "reasons": [
+      "Selena's traps can help control bushes and approach paths for Franco hook angles.",
+      "Selena's arrow stun can make Franco's hook or suppression follow-up easier to execute."
+    ],
+    "synergyTypes": [
+      "pickoff-combo",
+      "cc-chain",
+      "vision-setup"
+    ],
+    "proof": [
+      {
+        "id": "selena-vision-and-stun-help-franco-pickoff",
+        "category": "pickoff-combo",
+        "priority": "secondary",
+        "impact": "medium",
+        "summary": "Selena creates vision and long-range control, while Franco adds displacement or suppression to finish the pickoff.",
+        "worksBestWhen": [
+          "Selena and Franco control the same jungle corridor.",
+          "Franco follows only after Selena confirms the target path."
+        ],
+        "failureCases": [
+          "Franco hooks a tank instead of Selena's intended target.",
+          "Selena and Franco overlap control on different targets.",
+          "The enemy avoids trap-controlled bushes."
+        ]
+      }
+    ]
+  }
+]

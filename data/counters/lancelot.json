@@ -1,0 +1,133 @@
+[
+  {
+    "targetHeroId": "lancelot",
+    "counterHeroId": "khufra",
+    "reasons": [
+      "Khufra directly punishes Lancelot's dash-based movement.",
+      "Lancelot loses much of his threat when his dash path becomes unsafe."
+    ],
+    "counterTypes": ["anti-dash", "crowd-control-counter", "frontline"],
+    "proof": [
+      {
+        "id": "khufra-bouncing-ball-vs-lancelot-dashes",
+        "category": "skill-interaction",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Lancelot relies on repeated dashes to enter, dodge, and escape, while Khufra can deny dash paths and punish Lancelot when he tries to pass through the frontline.",
+        "worksBestWhen": [
+          "Khufra positions between Lancelot and the backline.",
+          "Khufra waits for Lancelot's committed dash path."
+        ],
+        "failureCases": [
+          "Lancelot waits out Khufra's anti-dash skill.",
+          "Lancelot uses minion paths or side angles to avoid Khufra."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "lancelot",
+    "counterHeroId": "minsitthar",
+    "reasons": [
+      "Minsitthar's ultimate can deny Lancelot's movement-skill chain inside the field.",
+      "This is strong when Lancelot commits into a teamfight and cannot freely dash out."
+    ],
+    "counterTypes": ["anti-dash", "teamfight", "crowd-control-counter"],
+    "proof": [
+      {
+        "id": "minsitthar-kings-calling-vs-lancelot-dashes",
+        "category": "skill-interaction",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Lancelot wants to chain dashes through the fight, while Minsitthar can create a zone where movement skills are restricted.",
+        "worksBestWhen": [
+          "Minsitthar casts the field after Lancelot commits.",
+          "Teammates are ready to punish Lancelot inside the zone."
+        ],
+        "failureCases": [
+          "Lancelot baits King's Calling first.",
+          "Lancelot stays outside the field and waits for it to expire."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "lancelot",
+    "counterHeroId": "franco",
+    "reasons": [
+      "Franco is preferred over Kaja here because Lancelot often dashes close enough for Franco to punish with direct suppression.",
+      "Suppression can punish Lancelot after his invulnerability window ends and prevents him from continuing his dash chain."
+    ],
+    "counterTypes": ["suppress", "pickoff", "cooldown-punish"],
+    "proof": [
+      {
+        "id": "franco-bloody-hunt-vs-lancelot-landing-window",
+        "category": "crowd-control-counter",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Lancelot can dodge many single skills with invulnerability or dash timing, but Franco can punish the landing window with direct suppression.",
+        "worksBestWhen": [
+          "Franco waits until Lancelot exits Thorned Rose or Phantom Execution.",
+          "Franco uses ultimate after Lancelot commits near the backline."
+        ],
+        "failureCases": [
+          "Franco casts too early into Lancelot's invulnerability.",
+          "Franco is zoned out before Lancelot dives."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "lancelot",
+    "counterHeroId": "phoveus",
+    "reasons": [
+      "Phoveus is a valid anti-dash candidate because Lancelot repeatedly uses dash-like movement.",
+      "This is strongest when Phoveus can stay near the targets Lancelot wants to dive."
+    ],
+    "counterTypes": ["anti-dash", "cooldown-punish", "teamfight"],
+    "proof": [
+      {
+        "id": "phoveus-anti-dash-vs-lancelot-dash-chain",
+        "category": "skill-interaction",
+        "priority": "primary",
+        "impact": "medium",
+        "summary": "Lancelot's repeated dash pattern can create punish windows for anti-dash heroes like Phoveus.",
+        "worksBestWhen": [
+          "Phoveus positions near Lancelot's likely dash targets.",
+          "Lancelot is forced to fight instead of disengaging."
+        ],
+        "failureCases": [
+          "Lancelot avoids fighting near Phoveus.",
+          "Lancelot bursts a backline target before Phoveus can respond."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "lancelot",
+    "counterHeroId": "obsidia",
+    "reasons": [
+      "Obsidia is suggested because her ultimate can restrict Lancelot's displacement-based gameplay, directly targeting his need to dash for engage, dodge timing, and escape resets.",
+      "Obsidia can briefly tether Lancelot and prevent displacement skills after landing her ultimate."
+    ],
+    "counterTypes": ["anti-dash", "mobility", "cooldown-punish"],
+    "proof": [
+      {
+        "id": "obsidia-hunt-of-bone-vs-lancelot-dashes",
+        "category": "skill-interaction",
+        "priority": "primary",
+        "impact": "medium",
+        "summary": "Lancelot wants to escape through repeated dash movement, while Obsidia can briefly tether him and prevent displacement skills after landing her ultimate.",
+        "worksBestWhen": [
+          "Obsidia lands Hunt of Bone after Lancelot commits.",
+          "Lancelot has already used part of his dash chain or invulnerability timing."
+        ],
+        "failureCases": [
+          "Obsidia misses the ultimate.",
+          "Lancelot avoids the tether window or bursts Obsidia before she can maintain pressure.",
+          "Obsidia is behind in farm and cannot survive Lancelot's engage."
+        ]
+      }
+    ]
+  }
+]

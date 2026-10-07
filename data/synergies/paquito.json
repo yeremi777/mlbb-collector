@@ -1,0 +1,157 @@
+[
+  {
+    "anchorHeroId": "paquito",
+    "synergyHeroId": "kaja",
+    "reasons": [
+      "Kaja can isolate a priority target, giving Paquito a clean close-range burst window.",
+      "Paquito can follow Kaja's forced movement with fast damage and control before the target resets."
+    ],
+    "synergyTypes": [
+      "pickoff-combo",
+      "burst-follow-up",
+      "cc-chain"
+    ],
+    "proof": [
+      {
+        "id": "paquito-burst-after-kaja-lock",
+        "category": "pickoff-combo",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Kaja locks or drags one target, while Paquito follows with close-range burst and crowd control.",
+        "worksBestWhen": [
+          "Kaja catches a squishy or high-value target.",
+          "Paquito is close enough to immediately follow the pull."
+        ],
+        "failureCases": [
+          "Kaja engages outside Paquito's range.",
+          "Paquito has already spent key skills.",
+          "The target survives long enough for teammates to peel."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "paquito",
+    "synergyHeroId": "franco",
+    "reasons": [
+      "Franco can create a single-target pick window for Paquito with hook or suppression.",
+      "Paquito can quickly add burst while the caught target has limited room to dodge."
+    ],
+    "synergyTypes": [
+      "pickoff-combo",
+      "burst-follow-up",
+      "execution-dependent"
+    ],
+    "proof": [
+      {
+        "id": "paquito-combo-after-franco-catch",
+        "category": "pickoff-combo",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Franco catches one enemy, and Paquito converts the confirmed target into immediate close-range burst.",
+        "worksBestWhen": [
+          "Franco catches a target near Paquito's position.",
+          "Paquito holds combo resources for the confirmed hook or suppression."
+        ],
+        "failureCases": [
+          "Franco hooks a tank instead of a priority target.",
+          "Paquito is not ready to follow.",
+          "The enemy team counter-engages after the pick attempt."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "paquito",
+    "synergyHeroId": "mathilda",
+    "reasons": [
+      "Mathilda helps Paquito enter or exit after his combo.",
+      "Mathilda's shield gives Paquito more safety during aggressive trades."
+    ],
+    "synergyTypes": [
+      "mobility-enable",
+      "dive-support",
+      "shielding"
+    ],
+    "proof": [
+      {
+        "id": "paquito-engage-reset-with-mathilda",
+        "category": "mobility-enabler",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Mathilda improves Paquito's access and safety, while Paquito converts the movement support into burst pressure.",
+        "worksBestWhen": [
+          "Mathilda uses Guiding Wind for Paquito's real commit.",
+          "Paquito saves enough skills to benefit from the added mobility."
+        ],
+        "failureCases": [
+          "Paquito dives before Mathilda can help.",
+          "Mathilda is forced to protect another teammate.",
+          "Enemy crowd control interrupts Paquito before he completes the combo."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "paquito",
+    "synergyHeroId": "angela",
+    "reasons": [
+      "Angela can attach to Paquito and add shield value while he dives.",
+      "Paquito gives Angela a clear aggressive host during skirmishes and pickoffs."
+    ],
+    "synergyTypes": [
+      "shielding",
+      "dive-support",
+      "healing-sustain"
+    ],
+    "proof": [
+      {
+        "id": "paquito-dive-with-angela-heartguard",
+        "category": "protection",
+        "priority": "secondary",
+        "impact": "medium",
+        "summary": "Angela gives Paquito additional survivability during dive windows, helping him stay longer in close-range fights.",
+        "worksBestWhen": [
+          "Angela attaches before Paquito's main commit.",
+          "Paquito uses the shield to finish a fight instead of chasing too deep."
+        ],
+        "failureCases": [
+          "Angela channels too late.",
+          "Paquito dives beyond team follow-up.",
+          "Enemy burst breaks the shield before Paquito completes his combo."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "paquito",
+    "synergyHeroId": "rafaela",
+    "reasons": [
+      "Rafaela's movement support helps Paquito chase or disengage after a combo.",
+      "Her healing helps Paquito keep fighting through short skirmishes."
+    ],
+    "synergyTypes": [
+      "mobility-enable",
+      "healing-sustain",
+      "dive-support"
+    ],
+    "proof": [
+      {
+        "id": "paquito-skirmish-speed-with-rafaela",
+        "category": "mobility-enabler",
+        "priority": "secondary",
+        "impact": "medium",
+        "summary": "Rafaela gives Paquito speed and sustain, improving his ability to enter, trade, and reset.",
+        "worksBestWhen": [
+          "Rafaela stays close enough to support Paquito's skirmish path.",
+          "Paquito uses the speed boost to land combo pressure instead of overextending."
+        ],
+        "failureCases": [
+          "Paquito dives outside Rafaela's support range.",
+          "Enemy hard crowd control stops Paquito despite the speed boost.",
+          "Rafaela is picked off before Paquito engages."
+        ]
+      }
+    ]
+  }
+]

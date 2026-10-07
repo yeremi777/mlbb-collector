@@ -1,0 +1,152 @@
+[
+  {
+    "targetHeroId": "sun",
+    "counterHeroId": "belerick",
+    "reasons": [
+      "Belerick punishes repeated basic attacks and multi-unit pressure, which fits Sun's clone-heavy damage pattern.",
+      "Sun and his doppelgangers can increase Belerick's return-damage value in grouped fights."
+    ],
+    "counterTypes": [
+      "frontline",
+      "anti-dive",
+      "teamfight"
+    ],
+    "proof": [
+      {
+        "id": "belerick-return-damage-vs-sun-clone-attacks",
+        "category": "skill-interaction",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Sun wants to overwhelm enemies with repeated clone attacks, while Belerick punishes attackers through durable frontline presence and return-damage pressure.",
+        "worksBestWhen": [
+          "Belerick stands between Sun and the backline.",
+          "Belerick has defensive items before Sun's split-push pressure becomes too large."
+        ],
+        "failureCases": [
+          "Sun avoids teamfights and wins side-lane macro instead.",
+          "Belerick is forced to chase Sun instead of protecting allies."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "sun",
+    "counterHeroId": "x.borg",
+    "reasons": [
+      "X.Borg's area damage helps clear clones and pressure the real Sun at the same time.",
+      "True-damage threat and AoE pressure reduce the value of Sun's extended clone fight."
+    ],
+    "counterTypes": [
+      "true-damage",
+      "teamfight",
+      "anti-sustain"
+    ],
+    "proof": [
+      {
+        "id": "x.borg-aoe-true-damage-vs-sun-clones",
+        "category": "damage-type-advantage",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Sun wants prolonged multi-unit melee pressure, while X.Borg can hit the area and punish grouped clone patterns with true-damage threat.",
+        "worksBestWhen": [
+          "X.Borg fights around minion waves or objective zones where Sun's clones must group.",
+          "X.Borg has armor uptime before committing."
+        ],
+        "failureCases": [
+          "Sun splits the map and avoids direct AoE fights.",
+          "X.Borg loses Firaga Armor before Sun commits."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "sun",
+    "counterHeroId": "baxia",
+    "reasons": [
+      "Baxia can reduce Sun's healing value from clone damage and durable side-lane trades.",
+      "His tank profile helps absorb repeated attacks while the team identifies the real Sun."
+    ],
+    "counterTypes": [
+      "anti-sustain",
+      "frontline",
+      "teamfight"
+    ],
+    "proof": [
+      {
+        "id": "baxia-anti-sustain-vs-sun-doppelganger-trades",
+        "category": "sustain-anti-sustain",
+        "priority": "primary",
+        "impact": "medium",
+        "summary": "Sun benefits from sustained doppelganger pressure and recovery, while Baxia reduces healing value and holds frontline space.",
+        "worksBestWhen": [
+          "Baxia stays with the team instead of chasing clones alone.",
+          "Baxia applies anti-heal pressure before Sun's extended trade begins."
+        ],
+        "failureCases": [
+          "Sun plays split-push and avoids Baxia.",
+          "Baxia cannot protect damage dealers from side entry."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "sun",
+    "counterHeroId": "ruby",
+    "reasons": [
+      "Ruby can use area crowd control and sustain-oriented skills to fight through Sun's clone pressure.",
+      "Sun's clones can make Ruby's AoE control more valuable in grouped fights."
+    ],
+    "counterTypes": [
+      "crowd-control-counter",
+      "sustain",
+      "teamfight"
+    ],
+    "proof": [
+      {
+        "id": "ruby-aoe-control-vs-sun-clone-grouping",
+        "category": "teamfight-role-counter",
+        "priority": "secondary",
+        "impact": "medium",
+        "summary": "Sun wants clone confusion and sustained melee pressure, while Ruby can control multiple nearby units and sustain through skill hits.",
+        "worksBestWhen": [
+          "Ruby fights near allies who can identify and burst the real Sun.",
+          "Ruby uses AoE control after Sun summons clones."
+        ],
+        "failureCases": [
+          "Sun split-pushes instead of grouping.",
+          "Ruby lacks anti-heal or damage follow-up."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "sun",
+    "counterHeroId": "alpha",
+    "reasons": [
+      "Alpha can fight in sustained melee and apply area damage, making him less confused by clone pressure than single-target heroes.",
+      "Beta's true-damage follow-up helps pressure Sun during extended trades."
+    ],
+    "counterTypes": [
+      "true-damage",
+      "sustain",
+      "teamfight"
+    ],
+    "proof": [
+      {
+        "id": "alpha-aoe-sustain-vs-sun-extended-clone-fight",
+        "category": "damage-type-advantage",
+        "priority": "secondary",
+        "impact": "medium",
+        "summary": "Sun wants long clone-based trades, while Alpha has AoE sustain and true-damage follow-up for extended melee fights.",
+        "worksBestWhen": [
+          "Alpha hits Sun and clones together.",
+          "Alpha has anti-heal support or teammate burst."
+        ],
+        "failureCases": [
+          "Sun avoids direct fighting and wins split-push rotations.",
+          "Alpha misses key skills and cannot sustain."
+        ]
+      }
+    ]
+  }
+]

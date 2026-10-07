@@ -1,0 +1,149 @@
+[
+  {
+    "targetHeroId": "kadita",
+    "counterHeroId": "diggie",
+    "reasons": [
+      "Diggie reduces Kadita's combo value by protecting allies from the crowd-control setup.",
+      "Kadita's burst is less reliable if her knock-up timing does not secure the target."
+    ],
+    "counterTypes": [
+      "anti-cc",
+      "cleanse",
+      "protect"
+    ],
+    "proof": [
+      {
+        "id": "diggie-time-journey-vs-kadita-combo",
+        "category": "skill-interaction",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Kadita wants to knock up grouped targets before her burst, while Diggie can cleanse and protect nearby allies during the engage window.",
+        "worksBestWhen": [
+          "Diggie saves Time Journey for Kadita's real combo.",
+          "Diggie stays close to the ally Kadita wants to burst."
+        ],
+        "failureCases": [
+          "Kadita baits Diggie's ultimate with a fake engage.",
+          "Kadita catches Diggie first."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "kadita",
+    "counterHeroId": "kaja",
+    "reasons": [
+      "Kaja can suppress Kadita before she completes her burst pattern.",
+      "Suppression is valuable because Kadita relies on timing windows to enter and escape."
+    ],
+    "counterTypes": [
+      "pickoff",
+      "anti-engage"
+    ],
+    "proof": [
+      {
+        "id": "kaja-divine-judgment-vs-kadita-combo",
+        "category": "crowd-control-counter",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Kadita wants to enter with a timed combo, while Kaja can suppress and drag her before the burst or after she overcommits.",
+        "worksBestWhen": [
+          "Kaja waits for Kadita to reveal her engage path.",
+          "Kaja's team has burst ready during suppression."
+        ],
+        "failureCases": [
+          "Kadita uses her combo from fog before Kaja can target her.",
+          "Kaja suppresses without enough follow-up damage."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "kadita",
+    "counterHeroId": "franco",
+    "reasons": [
+      "Franco can punish Kadita if she enters predictably or finishes her combo in a reachable position.",
+      "Suppression can stop Kadita's escape or second action window after she commits."
+    ],
+    "counterTypes": [
+      "pickoff",
+      "cooldown-punish"
+    ],
+    "proof": [
+      {
+        "id": "franco-bloody-hunt-vs-kadita-commit",
+        "category": "crowd-control-counter",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Kadita wants to burst and reposition around cooldowns, while Franco can suppress her and stop the escape or second action window.",
+        "worksBestWhen": [
+          "Franco holds ultimate until Kadita commits.",
+          "Franco's team immediately follows with damage."
+        ],
+        "failureCases": [
+          "Kadita bursts from fog before Franco reacts.",
+          "Franco is forced to use suppression on another diver."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "kadita",
+    "counterHeroId": "kagura",
+    "reasons": [
+      "Kagura can cleanse and reposition with her umbrella escape, making Kadita's knock-up setup harder to confirm.",
+      "Kagura pokes from safer spacing, forcing Kadita to find a cleaner flank."
+    ],
+    "counterTypes": [
+      "anti-cc",
+      "mobility",
+      "poke"
+    ],
+    "proof": [
+      {
+        "id": "kagura-rasho-umbrella-flee-vs-kadita-knockup",
+        "category": "mobility-advantage",
+        "priority": "primary",
+        "impact": "medium",
+        "summary": "Kadita wants to land a predictable knock-up into burst, while Kagura can remove debuffs and dash away from the setup window.",
+        "worksBestWhen": [
+          "Kagura saves umbrella escape for Kadita's real engage.",
+          "Kagura keeps enough distance to avoid being instantly chained."
+        ],
+        "failureCases": [
+          "Kadita catches Kagura before umbrella escape is ready.",
+          "Kagura uses escape early and has no answer to the follow-up burst."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "kadita",
+    "counterHeroId": "chou",
+    "reasons": [
+      "Chou can use control-immunity timing to avoid Kadita's control and punish after she commits.",
+      "His displacement can remove Kadita from her preferred burst angle or isolate her after a failed engage."
+    ],
+    "counterTypes": [
+      "mobility",
+      "pickoff"
+    ],
+    "proof": [
+      {
+        "id": "chou-shunpo-vs-kadita-combo-window",
+        "category": "cooldown-window",
+        "priority": "condition",
+        "impact": "medium",
+        "summary": "Kadita is dangerous during her commit window, while Chou can use control-immunity timing and displacement to survive or punish that window.",
+        "worksBestWhen": [
+          "Chou does not waste Shunpo before Kadita starts the combo.",
+          "Chou waits for Kadita's cooldowns before committing."
+        ],
+        "failureCases": [
+          "Kadita bursts from fog before Chou reacts.",
+          "Chou kicks Kadita away without allied follow-up."
+        ]
+      }
+    ]
+  }
+]

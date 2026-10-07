@@ -1,0 +1,159 @@
+[
+  {
+    "anchorHeroId": "barats",
+    "synergyHeroId": "estes",
+    "reasons": [
+      "Barats wants to stay inside fights while maintaining Big Guy stacks, and Estes helps extend that frontline uptime with healing.",
+      "Estes supports the grouped teamfight pattern where Barats anchors the fight and nearby teammates continue fighting around him."
+    ],
+    "synergyTypes": [
+      "healing-sustain",
+      "frontline-enabler",
+      "teamfight-combo"
+    ],
+    "proof": [
+      {
+        "id": "estes-healing-for-barats-frontline-uptime",
+        "category": "healing-sustain",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Barats stays in the middle of the fight with Big Guy stacks, while Estes keeps him and nearby teammates alive through extended teamfight healing.",
+        "worksBestWhen": [
+          "Barats enters with Big Guy stacks already active.",
+          "Estes stays close enough to maintain healing links without being the first target.",
+          "The team fights around Barats instead of scattering away from Estes."
+        ],
+        "failureCases": [
+          "The enemy applies anti-heal before Barats commits.",
+          "Barats loses stacks before the objective fight starts.",
+          "Estes is burst or zoned before his healing window matters.",
+          "Barats dives too far away from Estes's healing range."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "barats",
+    "synergyHeroId": "angela",
+    "reasons": [
+      "Angela can attach to Barats during his frontline commit, adding shield and sustain while he holds space.",
+      "Barats's durable body gives Angela a stable host during extended fights."
+    ],
+    "synergyTypes": [
+      "shielding",
+      "healing-sustain",
+      "frontline-enabler"
+    ],
+    "proof": [
+      {
+        "id": "angela-heartguard-for-barats-frontline",
+        "category": "shielding",
+        "priority": "secondary",
+        "impact": "high",
+        "summary": "Barats absorbs pressure as a durable frontliner, while Angela adds shield and support during his commit window.",
+        "worksBestWhen": [
+          "Angela attaches before Barats is forced too low.",
+          "Barats enters with Big Guy stacks already active."
+        ],
+        "failureCases": [
+          "Barats loses stacks before Angela commits.",
+          "Angela attaches after Barats is already chain-controlled.",
+          "The enemy ignores Barats and dives the backline instead."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "barats",
+    "synergyHeroId": "floryn",
+    "reasons": [
+      "Floryn can help Barats survive longer while he contests objectives or holds frontline.",
+      "Her healing is useful when Barats is already committed and cannot easily reset."
+    ],
+    "synergyTypes": [
+      "healing-sustain",
+      "frontline-enabler",
+      "teamfight-combo"
+    ],
+    "proof": [
+      {
+        "id": "floryn-healing-for-barats-objective-fights",
+        "category": "healing-sustain",
+        "priority": "secondary",
+        "impact": "medium",
+        "summary": "Barats stays active in the center of the fight, while Floryn adds healing support to extend his frontline uptime.",
+        "worksBestWhen": [
+          "Barats has stacks before the fight.",
+          "Floryn saves healing for the real commit, not small poke trades."
+        ],
+        "failureCases": [
+          "Anti-heal reduces Floryn's impact.",
+          "Barats is displaced away from the team.",
+          "Floryn is picked off before Barats can start the fight."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "barats",
+    "synergyHeroId": "pharsa",
+    "reasons": [
+      "Barats can suppress and displace a target with Detona's Welcome, giving Pharsa a clear ranged burst target.",
+      "Pharsa can follow Barats's pickoff without needing to stand inside the frontline."
+    ],
+    "synergyTypes": [
+      "pickoff-combo",
+      "burst-follow-up",
+      "positioning-dependent"
+    ],
+    "proof": [
+      {
+        "id": "barats-detona-welcome-for-pharsa-burst",
+        "category": "pickoff-combo",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Barats isolates or throws a target, while Pharsa follows from range with burst damage.",
+        "worksBestWhen": [
+          "Barats throws the target toward team damage.",
+          "Pharsa waits for the target-control window before using burst."
+        ],
+        "failureCases": [
+          "Barats misses the suppress window.",
+          "Pharsa is too far to follow.",
+          "The target survives and Barats is left deep without support."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "barats",
+    "synergyHeroId": "cecilion",
+    "reasons": [
+      "Barats gives Cecilion a strong frontline body to cast behind.",
+      "Barats can control enemy movement and create predictable target windows for Cecilion's ranged magic damage."
+    ],
+    "synergyTypes": [
+      "frontline-enabler",
+      "poke-siege",
+      "burst-follow-up"
+    ],
+    "proof": [
+      {
+        "id": "barats-frontline-for-cecilion-follow-up",
+        "category": "frontline-enabler",
+        "priority": "secondary",
+        "impact": "medium",
+        "summary": "Barats holds the frontline and controls space, while Cecilion follows from range with scaling magic damage.",
+        "worksBestWhen": [
+          "Barats keeps enemies in front of Cecilion's casting angle.",
+          "Cecilion keeps distance and does not walk into Barats's melee zone."
+        ],
+        "failureCases": [
+          "Barats throws the target away from Cecilion's range.",
+          "Cecilion is dived before Barats can peel.",
+          "Barats loses stacks before the fight begins."
+        ]
+      }
+    ]
+  }
+]

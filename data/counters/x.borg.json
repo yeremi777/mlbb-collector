@@ -1,0 +1,152 @@
+[
+  {
+    "targetHeroId": "x.borg",
+    "counterHeroId": "valir",
+    "reasons": [
+      "Valir can push X.Borg away during Fire Missile pressure or before Last Insanity reaches priority targets.",
+      "X.Borg wants enemies to stay in his burn path, while Valir's spacing tools deny that."
+    ],
+    "counterTypes": [
+      "kiting",
+      "disengage",
+      "anti-engage"
+    ],
+    "proof": [
+      {
+        "id": "valir-disengage-vs-xborg-forward-burn-pressure",
+        "category": "kiting",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "X.Borg wants to walk forward and maintain burn pressure, while Valir can knock him back, slow him, and reset the spacing.",
+        "worksBestWhen": [
+          "Valir saves knockback for X.Borg's forward commit.",
+          "Teammates avoid chasing through X.Borg's burn area."
+        ],
+        "failureCases": [
+          "X.Borg flanks and forces Valir to react late.",
+          "Valir uses knockback before X.Borg commits."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "x.borg",
+    "counterHeroId": "karrie",
+    "reasons": [
+      "Karrie can help burn through X.Borg's armor-based durability if she safely stacks attacks.",
+      "She is useful because X.Borg often has to stay exposed while applying pressure."
+    ],
+    "counterTypes": [
+      "true-damage",
+      "max-hp-damage",
+      "tank-shred"
+    ],
+    "proof": [
+      {
+        "id": "karrie-lightwheel-mark-vs-xborg-armor-frontline",
+        "category": "damage-type-advantage",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "X.Borg depends on armor durability and sustained presence, while Karrie's repeated Lightwheel Mark triggers punish durable frontline targets.",
+        "worksBestWhen": [
+          "Karrie keeps enough distance from Fire Missiles and Last Insanity.",
+          "The team protects Karrie during X.Borg's engage."
+        ],
+        "failureCases": [
+          "X.Borg reaches Karrie with ultimate.",
+          "Karrie cannot maintain attacks long enough to trigger Lightwheel Mark."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "x.borg",
+    "counterHeroId": "lunox",
+    "reasons": [
+      "Lunox can pressure X.Borg's armor and punish him harder once he is armorless.",
+      "Her damage profile is useful into durable targets that cannot instantly reach her."
+    ],
+    "counterTypes": [
+      "max-hp-damage",
+      "burst",
+      "cooldown-punish"
+    ],
+    "proof": [
+      {
+        "id": "lunox-chaos-assault-vs-xborg-firaga-armor",
+        "category": "damage-type-advantage",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "X.Borg wants to survive through Firaga Armor and re-equip later, while Lunox can threaten him with target-HP scaling damage and burst windows.",
+        "worksBestWhen": [
+          "Lunox focuses X.Borg after armor is weakened or broken.",
+          "Lunox avoids standing in Fire Missile burn range."
+        ],
+        "failureCases": [
+          "Lunox gets caught by Last Insanity.",
+          "X.Borg disengages armorless and safely re-equips armor."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "x.borg",
+    "counterHeroId": "pharsa",
+    "reasons": [
+      "Pharsa can pressure X.Borg from beyond his preferred burn range.",
+      "Long-range poke is useful for breaking armor before X.Borg can reach the backline."
+    ],
+    "counterTypes": [
+      "range-advantage",
+      "poke",
+      "teamfight"
+    ],
+    "proof": [
+      {
+        "id": "pharsa-range-pressure-vs-xborg-firaga-armor",
+        "category": "range-advantage",
+        "priority": "primary",
+        "impact": "medium",
+        "summary": "X.Borg wants to walk forward with armor and burn enemies over time, while Pharsa can damage him from safer distance and force armor loss before the engage.",
+        "worksBestWhen": [
+          "Pharsa has vision and frontline protection.",
+          "X.Borg is forced to approach through open space."
+        ],
+        "failureCases": [
+          "X.Borg reaches Pharsa during her channel.",
+          "Pharsa uses ultimate without vision and gets flanked."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "x.borg",
+    "counterHeroId": "franco",
+    "reasons": [
+      "Franco can punish X.Borg after armor breaks or when X.Borg commits too far forward.",
+      "Suppression gives Franco's team a clean window to burst X.Borg before he resets."
+    ],
+    "counterTypes": [
+      "pickoff",
+      "crowd-control-counter",
+      "cooldown-punish"
+    ],
+    "proof": [
+      {
+        "id": "franco-bloody-hunt-vs-xborg-armorless-window",
+        "category": "crowd-control-counter",
+        "priority": "condition",
+        "impact": "medium",
+        "summary": "X.Borg is most punishable when armorless or overcommitted, while Franco's suppression can hold him in place for team follow-up.",
+        "worksBestWhen": [
+          "Franco targets X.Borg after Firaga Armor is broken.",
+          "Franco's team is ready to burst during suppression."
+        ],
+        "failureCases": [
+          "Franco uses ultimate while X.Borg still has enough armor and backup.",
+          "X.Borg baits the suppression and re-engages after Franco's cooldown is spent."
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,157 @@
+[
+  {
+    "anchorHeroId": "vale",
+    "synergyHeroId": "tigreal",
+    "reasons": [
+      "Tigreal can group enemies into Vale's burst area.",
+      "Vale can follow Tigreal's engage from behind the front line."
+    ],
+    "synergyTypes": [
+      "engage-follow-up",
+      "aoe-follow-up",
+      "teamfight-combo"
+    ],
+    "proof": [
+      {
+        "id": "tigreal-sets-vale-aoe-burst",
+        "category": "engage-follow-up",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Tigreal creates the crowd-control start, while Vale adds AoE magic burst into the grouped target area.",
+        "worksBestWhen": [
+          "Tigreal engages after Vale is in range.",
+          "Vale saves his burst until Tigreal confirms the catch."
+        ],
+        "failureCases": [
+          "Vale casts before enemies are grouped.",
+          "Tigreal misses the engage.",
+          "Enemy assassins flank Vale during the combo."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "vale",
+    "synergyHeroId": "atlas",
+    "reasons": [
+      "Atlas can pull enemies into a compact group for Vale's AoE burst.",
+      "Vale can punish the displacement window without needing to start the fight himself."
+    ],
+    "synergyTypes": [
+      "setup-combo",
+      "aoe-follow-up",
+      "teamfight-combo"
+    ],
+    "proof": [
+      {
+        "id": "atlas-pull-sets-vale-aoe-burst",
+        "category": "setup-combo",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Atlas groups enemies, while Vale follows with burst damage and control into the same area.",
+        "worksBestWhen": [
+          "Atlas catches multiple enemies near an objective or choke.",
+          "Vale holds ultimate until the pull is confirmed."
+        ],
+        "failureCases": [
+          "Atlas catches only the tank.",
+          "Vale is too far behind to follow.",
+          "Enemy spreads before Atlas reaches them."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "vale",
+    "synergyHeroId": "minotaur",
+    "reasons": [
+      "Minotaur provides frontline control that gives Vale a safer damage window.",
+      "Vale can layer magic burst after Minotaur disrupts enemy positioning."
+    ],
+    "synergyTypes": [
+      "cc-chain",
+      "frontline-enabler",
+      "teamfight-combo"
+    ],
+    "proof": [
+      {
+        "id": "minotaur-frontline-enables-vale-burst",
+        "category": "crowd-control-chain",
+        "priority": "secondary",
+        "impact": "medium",
+        "summary": "Minotaur starts or absorbs the fight, while Vale adds ranged magic damage after enemies are slowed or knocked up.",
+        "worksBestWhen": [
+          "Minotaur controls the front line before Vale commits.",
+          "Vale positions behind Minotaur during objective fights."
+        ],
+        "failureCases": [
+          "Minotaur engages before Vale is nearby.",
+          "Vale gets flanked while focusing on the front line.",
+          "Enemy disengages after Minotaur uses key control."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "vale",
+    "synergyHeroId": "kaja",
+    "reasons": [
+      "Kaja can suppress one target and bring it into Vale's burst range.",
+      "Vale provides the damage follow-up that Kaja needs after forcing the pick."
+    ],
+    "synergyTypes": [
+      "pickoff-combo",
+      "burst-follow-up",
+      "cc-chain"
+    ],
+    "proof": [
+      {
+        "id": "kaja-suppression-sets-vale-burst",
+        "category": "pickoff-combo",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Kaja locks and drags a priority target, while Vale delivers burst during the guaranteed control window.",
+        "worksBestWhen": [
+          "Kaja catches a squishy target.",
+          "Vale saves burst until Kaja confirms suppression."
+        ],
+        "failureCases": [
+          "Kaja pulls the target outside Vale's skill angle.",
+          "Vale lacks vision or gets zoned before the follow-up.",
+          "The enemy target survives and counters after the burst."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "vale",
+    "synergyHeroId": "carmilla",
+    "reasons": [
+      "Carmilla's linked ultimate can spread part of Vale's damage and control value across multiple enemies.",
+      "Vale's AoE burst becomes more dangerous when enemies are linked and grouped."
+    ],
+    "synergyTypes": [
+      "damage-amplification",
+      "teamfight-combo",
+      "cc-chain"
+    ],
+    "proof": [
+      {
+        "id": "carmilla-link-amplifies-vale-teamfight-burst",
+        "category": "damage-amplification",
+        "priority": "primary",
+        "impact": "medium",
+        "summary": "Carmilla links enemy heroes, while Vale uses burst and control that can pressure the linked group.",
+        "worksBestWhen": [
+          "Carmilla lands Curse of Blood on multiple enemies.",
+          "Vale waits for the link before spending his main burst."
+        ],
+        "failureCases": [
+          "Carmilla links only one target.",
+          "Vale bursts before the link is active.",
+          "Enemies split apart or disengage from the linked area."
+        ]
+      }
+    ]
+  }
+]

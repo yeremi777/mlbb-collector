@@ -1,0 +1,152 @@
+[
+  {
+    "targetHeroId": "yin",
+    "counterHeroId": "diggie",
+    "reasons": [
+      "Diggie can protect Yin's intended target during the pull timing before the domain succeeds.",
+      "If Yin fails to pull the target, his ultimate becomes a much weaker threat window."
+    ],
+    "counterTypes": [
+      "anti-cc",
+      "protect",
+      "cooldown-punish"
+    ],
+    "proof": [
+      {
+        "id": "diggie-time-journey-vs-yin-domain-setup",
+        "category": "crowd-control-counter",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Yin wants to pull one enemy into his domain, while Diggie's Time Journey can give control immunity during the setup window and deny the isolation.",
+        "worksBestWhen": [
+          "Diggie predicts Yin's target and casts before the pull completes.",
+          "Diggie stays close enough to protect the ally Yin wants."
+        ],
+        "failureCases": [
+          "Yin catches a target away from Diggie.",
+          "The domain already succeeds, leaving Diggie outside the isolated fight."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "yin",
+    "counterHeroId": "melissa",
+    "reasons": [
+      "Melissa's Go Away gives her a strong self-peel answer against melee duelists.",
+      "Yin must stay close to finish the isolated duel, which Melissa can punish if her ultimate is timed well."
+    ],
+    "counterTypes": [
+      "anti-dive",
+      "disengage",
+      "kiting"
+    ],
+    "proof": [
+      {
+        "id": "melissa-go-away-vs-yin-domain-duel",
+        "category": "skill-interaction",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Yin wants a close-range isolated duel, while Melissa can repel melee enemies with Go Away and keep attacking from safer spacing.",
+        "worksBestWhen": [
+          "Melissa saves Go Away for Yin's all-in.",
+          "Melissa has enough damage to punish Yin while he is repelled."
+        ],
+        "failureCases": [
+          "Yin baits Go Away before committing.",
+          "Melissa is pulled while her ultimate is unavailable."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "yin",
+    "counterHeroId": "valir",
+    "reasons": [
+      "Valir can push Yin away before he gets an easy ultimate angle.",
+      "His cleanse and movement tools give him a chance to survive Yin's engage timing."
+    ],
+    "counterTypes": [
+      "disengage",
+      "kiting",
+      "anti-dive"
+    ],
+    "proof": [
+      {
+        "id": "valir-searing-torrent-vs-yin-engage",
+        "category": "kiting",
+        "priority": "primary",
+        "impact": "medium",
+        "summary": "Yin wants to close distance and isolate a target, while Valir can knock him away, slow him, and reset spacing before the duel begins.",
+        "worksBestWhen": [
+          "Valir keeps Searing Torrent for Yin's approach.",
+          "Valir avoids standing alone in narrow jungle paths."
+        ],
+        "failureCases": [
+          "Yin flanks from fog and reaches Valir before knockback.",
+          "Valir wastes disengage on another target."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "yin",
+    "counterHeroId": "franco",
+    "reasons": [
+      "Franco can suppress Yin before he casts My Turn or immediately punish him when he returns from the domain.",
+      "Yin is weaker if he cannot freely choose his isolation target."
+    ],
+    "counterTypes": [
+      "suppression",
+      "pickoff",
+      "cooldown-punish"
+    ],
+    "proof": [
+      {
+        "id": "franco-bloody-hunt-vs-yin-all-in",
+        "category": "crowd-control-counter",
+        "priority": "primary",
+        "impact": "medium",
+        "summary": "Yin wants to start the fight on his terms, while Franco's suppression can stop him from entering or continuing his combo window.",
+        "worksBestWhen": [
+          "Franco holds Bloody Hunt for Yin instead of using it on tanks.",
+          "Franco's team can burst Yin during suppression."
+        ],
+        "failureCases": [
+          "Yin casts domain before Franco can react.",
+          "Franco is isolated instead of the real carry."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "yin",
+    "counterHeroId": "kaja",
+    "reasons": [
+      "Kaja can drag Yin away from his intended target before Yin starts the domain fight.",
+      "Suppression is a strong answer to dive heroes that depend on one clean all-in window."
+    ],
+    "counterTypes": [
+      "suppression",
+      "pickoff",
+      "anti-dive"
+    ],
+    "proof": [
+      {
+        "id": "kaja-divine-judgment-vs-yin-isolation",
+        "category": "crowd-control-counter",
+        "priority": "primary",
+        "impact": "medium",
+        "summary": "Yin wants to isolate a priority target, while Kaja can suppress and drag Yin out of position before Yin completes his pickoff plan.",
+        "worksBestWhen": [
+          "Kaja marks Yin as the main dive threat.",
+          "Kaja has teammate burst ready after Divine Judgment."
+        ],
+        "failureCases": [
+          "Kaja uses ultimate on a less important target.",
+          "Yin waits out Kaja's ultimate before committing."
+        ]
+      }
+    ]
+  }
+]

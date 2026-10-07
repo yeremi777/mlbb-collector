@@ -1,0 +1,157 @@
+[
+  {
+    "targetHeroId": "atlas",
+    "counterHeroId": "diggie",
+    "reasons": [
+      "Diggie is the cleanest teamwide answer to Atlas's multi-target CC engage.",
+      "Time Journey protects nearby allies during the exact window Atlas wants to convert."
+    ],
+    "counterTypes": [
+      "anti-cc",
+      "cleanse",
+      "teamfight"
+    ],
+    "proof": [
+      {
+        "id": "diggie-time-journey-vs-atlas-fatal-links",
+        "category": "skill-interaction",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Atlas wants to win fights through multi-target CC, while Diggie can remove debuffs and grant nearby allies control immunity during the engage window.",
+        "worksBestWhen": [
+          "Diggie saves ultimate for Fatal Links.",
+          "Diggie positions close enough to protect the caught allies."
+        ],
+        "failureCases": [
+          "Atlas baits Time Journey before committing.",
+          "Diggie is caught first.",
+          "Atlas catches allies outside Diggie's protection range."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "atlas",
+    "counterHeroId": "kaja",
+    "reasons": [
+      "Kaja can suppress Atlas before or during the key engage window.",
+      "This is more reliable than hook-first logic because Kaja does not need to pull Atlas into grouped teammates first."
+    ],
+    "counterTypes": [
+      "suppression",
+      "pickoff",
+      "anti-engage"
+    ],
+    "proof": [
+      {
+        "id": "kaja-divine-judgment-vs-atlas-engage",
+        "category": "crowd-control-counter",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Atlas wants to channel Fatal Links after entering, while Kaja's suppression can stop Atlas's action window and drag him away from the ideal teamfight position.",
+        "worksBestWhen": [
+          "Kaja waits for Atlas to commit.",
+          "Kaja's team bursts Atlas during suppression."
+        ],
+        "failureCases": [
+          "Atlas catches Kaja first.",
+          "Kaja is too far to suppress during Atlas's engage.",
+          "Atlas baits Kaja's ultimate before committing Fatal Links."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "atlas",
+    "counterHeroId": "valir",
+    "reasons": [
+      "Valir can push Atlas away before Atlas reaches the ideal pull position.",
+      "His ultimate also gives Valir a self-cleanse and movement window, making him harder to catch personally."
+    ],
+    "counterTypes": [
+      "disengage",
+      "anti-engage",
+      "kiting"
+    ],
+    "proof": [
+      {
+        "id": "valir-searing-torrent-vs-atlas-entry",
+        "category": "skill-interaction",
+        "priority": "primary",
+        "impact": "medium",
+        "summary": "Atlas wants to enter and group enemies, while Valir can knock him back with Searing Torrent before the engage fully connects.",
+        "worksBestWhen": [
+          "Valir saves Searing Torrent for Atlas's real entry.",
+          "The team spreads instead of stacking behind Valir."
+        ],
+        "failureCases": [
+          "Atlas flanks from fog.",
+          "Valir wastes knockback too early.",
+          "Atlas catches multiple teammates even if Valir escapes."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "atlas",
+    "counterHeroId": "kagura",
+    "reasons": [
+      "Kagura is a strong self-survival answer to Atlas because she can remove debuffs and dash with brief control immunity.",
+      "She does not protect the whole team, so her value is personal survival rather than full teamfight denial."
+    ],
+    "counterTypes": [
+      "cleanse",
+      "mobility",
+      "control-immunity"
+    ],
+    "proof": [
+      {
+        "id": "kagura-rasho-umbrella-flee-vs-atlas-engage",
+        "category": "crowd-control-counter",
+        "priority": "primary",
+        "impact": "medium",
+        "summary": "Atlas wants to catch grouped targets with CC, while Kagura can use Rasho Umbrella Flee to remove debuffs, dash, and gain short control immunity.",
+        "worksBestWhen": [
+          "Kagura saves skill 2 for Atlas's real engage.",
+          "Kagura avoids standing in the same cluster as teammates."
+        ],
+        "failureCases": [
+          "Kagura uses skill 2 before Atlas commits.",
+          "Atlas catches teammates instead of Kagura.",
+          "Kagura is caught without umbrella position or cooldown."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "atlas",
+    "counterHeroId": "aurora",
+    "reasons": [
+      "Aurora can freeze Atlas before he completes his engage path.",
+      "This is a conditional counter because she should not be treated as reliably interrupting Fatal Links after Atlas has already started channeling."
+    ],
+    "counterTypes": [
+      "crowd-control-counter",
+      "anti-engage",
+      "zoning"
+    ],
+    "proof": [
+      {
+        "id": "aurora-freeze-vs-atlas-pre-channel",
+        "category": "cooldown-window",
+        "priority": "condition",
+        "impact": "medium",
+        "summary": "Atlas wants to enter first and start Fatal Links, while Aurora can punish his approach with freeze before the channel begins.",
+        "worksBestWhen": [
+          "Aurora controls the area before Atlas enters.",
+          "Atlas is visible before he starts Fatal Links."
+        ],
+        "failureCases": [
+          "Atlas starts Fatal Links before Aurora freezes him.",
+          "Atlas engages from fog or Flicker angle.",
+          "Aurora freezes a low-value target instead of Atlas."
+        ]
+      }
+    ]
+  }
+]

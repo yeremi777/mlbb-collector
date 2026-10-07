@@ -1,0 +1,157 @@
+[
+  {
+    "targetHeroId": "carmilla",
+    "counterHeroId": "diggie",
+    "reasons": [
+      "Diggie reduces Carmilla's teamfight payoff by protecting allies during her linked-control window.",
+      "Carmilla needs enemies grouped and vulnerable; Diggie makes that window less reliable."
+    ],
+    "counterTypes": [
+      "anti-cc",
+      "cleanse",
+      "teamfight"
+    ],
+    "proof": [
+      {
+        "id": "diggie-time-journey-vs-carmilla-curse-of-blood",
+        "category": "skill-interaction",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Carmilla wants to chain teamfight value through Curse of Blood, while Diggie can protect nearby teammates from key crowd-control timing.",
+        "worksBestWhen": [
+          "Diggie saves ultimate for Carmilla's real engage.",
+          "Allies stay close enough to benefit from the protection."
+        ],
+        "failureCases": [
+          "Carmilla baits Diggie's ultimate before committing.",
+          "Diggie is caught before he can cast.",
+          "Teammates split too far away from Diggie."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "carmilla",
+    "counterHeroId": "valir",
+    "reasons": [
+      "Valir can push Carmilla away before she maintains close-range contact.",
+      "His zoning and slow pressure punish Carmilla when she must walk forward to create value."
+    ],
+    "counterTypes": [
+      "disengage",
+      "kiting",
+      "anti-engage"
+    ],
+    "proof": [
+      {
+        "id": "valir-searing-torrent-vs-carmilla-close-range",
+        "category": "skill-interaction",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Carmilla wants extended close-range fights, while Valir's knockback and fire-zone control can deny her entry path.",
+        "worksBestWhen": [
+          "Valir holds knockback instead of using it only for poke.",
+          "The team kites backward after Carmilla commits."
+        ],
+        "failureCases": [
+          "Carmilla reaches Valir from fog or flank.",
+          "Valir wastes knockback before Carmilla engages.",
+          "Carmilla's team layers engage after Valir's disengage is down."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "carmilla",
+    "counterHeroId": "baxia",
+    "reasons": [
+      "Baxia reduces Carmilla's sustain value and can contest her close-range fighting pattern.",
+      "Carmilla's durability depends on repeated contact, so anti-regen pressure directly lowers her fight uptime."
+    ],
+    "counterTypes": [
+      "anti-sustain",
+      "frontline",
+      "item-counter"
+    ],
+    "proof": [
+      {
+        "id": "baxia-anti-regen-vs-carmilla-sustain",
+        "category": "sustain-anti-sustain",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Carmilla wants to survive through repeated close-range damage and healing, while Baxia applies shield and HP regeneration reduction through his skill interactions.",
+        "worksBestWhen": [
+          "Baxia keeps contact with Carmilla or her frontline.",
+          "The team focuses Carmilla while her sustain is reduced."
+        ],
+        "failureCases": [
+          "Baxia cannot reach Carmilla's actual fight area.",
+          "Carmilla disengages until anti-regen uptime ends.",
+          "Carmilla's team wins through burst before sustain reduction matters."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "carmilla",
+    "counterHeroId": "karrie",
+    "reasons": [
+      "Karrie can punish Carmilla's tanky close-range style with repeated true damage based on max HP.",
+      "Carmilla has to enter Karrie's damage range to create value, which gives Karrie stacking opportunities."
+    ],
+    "counterTypes": [
+      "tank-shred",
+      "true-damage",
+      "kiting"
+    ],
+    "proof": [
+      {
+        "id": "karrie-lightwheel-mark-vs-carmilla-frontline",
+        "category": "damage-type-advantage",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Carmilla wants to absorb damage and stay in fights, while Karrie's Lightwheel Mark converts repeated hits into max-HP true damage.",
+        "worksBestWhen": [
+          "Karrie has frontline protection.",
+          "Carmilla is forced to walk through Karrie's attack range."
+        ],
+        "failureCases": [
+          "Carmilla catches Karrie with linked CC before Karrie can stack hits.",
+          "Karrie is under-farmed or lacks attack-speed item timing.",
+          "Carmilla's team dives Karrie first."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "carmilla",
+    "counterHeroId": "lunox",
+    "reasons": [
+      "Lunox can pressure Carmilla's durability through magic penetration and burst windows.",
+      "Carmilla is less comfortable when the enemy mage can damage frontline targets without relying on long basic-attack uptime."
+    ],
+    "counterTypes": [
+      "penetration",
+      "burst",
+      "anti-frontline"
+    ],
+    "proof": [
+      {
+        "id": "lunox-penetration-vs-carmilla-durability",
+        "category": "damage-type-advantage",
+        "priority": "secondary",
+        "impact": "medium",
+        "summary": "Carmilla wants to outlast enemies in extended fights, while Lunox can use penetration-oriented magic damage to cut through her durability.",
+        "worksBestWhen": [
+          "Lunox keeps distance and avoids being linked.",
+          "Carmilla's engage tools are already committed."
+        ],
+        "failureCases": [
+          "Carmilla closes the gap before Lunox can cycle skills.",
+          "Lunox is forced to spend defensive tools early.",
+          "Carmilla's team follows up faster than Lunox can burst."
+        ]
+      }
+    ]
+  }
+]

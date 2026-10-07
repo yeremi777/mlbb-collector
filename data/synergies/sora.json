@@ -1,0 +1,162 @@
+[
+  {
+    "anchorHeroId": "sora",
+    "synergyHeroId": "angela",
+    "reasons": [
+      "Angela can attach to Sora before or during his dive, giving him a shield while he commits into close-range combat.",
+      "Angela's remote attach fits Sora's EXP-lane or backline-dive pattern because she does not need to physically walk with him before the fight starts."
+    ],
+    "synergyTypes": [
+      "dive-support",
+      "shielding",
+      "healing-sustain",
+      "mobility-enable"
+    ],
+    "proof": [
+      {
+        "id": "angela-heartguard-supports-sora-dive",
+        "category": "protection",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Sora wants to enter fights aggressively, while Angela gives him remote shielding and follow-up support during the commit window.",
+        "worksBestWhen": [
+          "Angela saves Heartguard for Sora's real engage.",
+          "Sora commits after Angela's channel starts or completes."
+        ],
+        "failureCases": [
+          "Angela's channel is interrupted before she attaches.",
+          "Sora dives too early and dies before the shield value matters.",
+          "Anti-shield or burst damage removes the protection quickly."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "sora",
+    "synergyHeroId": "mathilda",
+    "reasons": [
+      "Mathilda can give Sora an extra movement route with Guiding Wind, helping him enter, chase, or exit after committing.",
+      "The shield and movement-speed boost reduce the risk of Sora being stranded after using his own mobility tools."
+    ],
+    "synergyTypes": [
+      "mobility-enable",
+      "shielding",
+      "dive-support",
+      "positioning-dependent"
+    ],
+    "proof": [
+      {
+        "id": "mathilda-guiding-wind-enables-sora-reposition",
+        "category": "mobility-enabler",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Mathilda enables Sora's dive pattern by giving him a shield, movement speed, and a guided repositioning option.",
+        "worksBestWhen": [
+          "Mathilda stays close enough for Sora to trigger Guiding Wind.",
+          "Sora keeps one damage or control skill ready after taking the guided movement."
+        ],
+        "failureCases": [
+          "Sora is rooted before he can use the guided movement.",
+          "Mathilda uses Guiding Wind for another teammate.",
+          "The enemy predicts the guided path and counter-engages."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "sora",
+    "synergyHeroId": "kaja",
+    "reasons": [
+      "Kaja can suppress and drag a priority enemy, giving Sora a clean target to burst or chain with Torrent control.",
+      "Sora can follow Divine Judgment with form-based damage or crowd control before the target fully resets position."
+    ],
+    "synergyTypes": [
+      "pickoff-combo",
+      "setup-combo",
+      "burst-follow-up",
+      "cc-chain"
+    ],
+    "proof": [
+      {
+        "id": "kaja-divine-judgment-sets-sora-pickoff",
+        "category": "pickoff-combo",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Kaja locks one enemy with suppression, while Sora follows with Thunder burst or Torrent crowd control to finish the pickoff.",
+        "worksBestWhen": [
+          "Kaja catches a squishy or high-value target.",
+          "Sora is close enough to follow immediately after Divine Judgment."
+        ],
+        "failureCases": [
+          "Kaja catches only a tank or low-priority target.",
+          "Sora is too far away to punish the suppression window.",
+          "The enemy team counter-engages after Sora commits."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "sora",
+    "synergyHeroId": "atlas",
+    "reasons": [
+      "Atlas can group multiple enemies with Fatal Links, giving Sora a clear area to enter with Torrent control or Thunder follow-up.",
+      "Sora benefits from enemies being dragged into one predictable location because his repeated-hit and area-control tools become easier to apply."
+    ],
+    "synergyTypes": [
+      "engage-follow-up",
+      "teamfight-combo",
+      "aoe-follow-up",
+      "cc-chain"
+    ],
+    "proof": [
+      {
+        "id": "atlas-fatal-links-groups-targets-for-sora",
+        "category": "engage-follow-up",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Atlas creates the grouped engage, while Sora follows with form-based burst or crowd control on the displaced enemies.",
+        "worksBestWhen": [
+          "Atlas catches multiple priority targets.",
+          "Sora waits near enough to follow the drag immediately."
+        ],
+        "failureCases": [
+          "Atlas only catches the frontline.",
+          "Sora arrives after the enemy has already recovered.",
+          "The enemy spreads out and prevents a clean Fatal Links setup."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "sora",
+    "synergyHeroId": "floryn",
+    "reasons": [
+      "Floryn can support Sora globally with Bloom, which fits Sora when he dives away from the main formation.",
+      "Flower of Hope adds extra shield value when Floryn heals the chosen teammate, improving Sora's extended-fight durability."
+    ],
+    "synergyTypes": [
+      "healing-sustain",
+      "shielding",
+      "dive-support",
+      "game-phase"
+    ],
+    "proof": [
+      {
+        "id": "floryn-global-heal-supports-sora-commit",
+        "category": "healing-sustain",
+        "priority": "secondary",
+        "impact": "medium",
+        "summary": "Floryn gives Sora remote healing and shield support, helping him survive longer after committing into skirmishes or teamfights.",
+        "worksBestWhen": [
+          "Floryn tracks Sora's engage and saves Bloom for his real commit.",
+          "Sora is the main front or dive threat who receives Floryn's shared support value."
+        ],
+        "failureCases": [
+          "Sora is burst down before Bloom resolves.",
+          "Floryn must use Bloom for another teammate.",
+          "Anti-heal or anti-shield effects reduce the sustain value."
+        ]
+      }
+    ]
+  }
+]

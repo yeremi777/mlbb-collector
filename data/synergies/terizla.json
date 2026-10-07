@@ -1,0 +1,156 @@
+[
+  {
+    "anchorHeroId": "terizla",
+    "synergyHeroId": "carmilla",
+    "reasons": [
+      "Carmilla can link enemies so Terizla's AoE damage and control become more threatening in grouped fights.",
+      "Terizla benefits from enemies staying close enough for his heavy melee skills to hit multiple targets."
+    ],
+    "synergyTypes": [
+      "teamfight-combo",
+      "cc-chain",
+      "aoe-follow-up"
+    ],
+    "proof": [
+      {
+        "id": "terizla-carmilla-linked-enemies-aoe-punish",
+        "category": "teamfight-combo",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Carmilla links enemies in a grouped fight, while Terizla punishes the linked formation with slow, pull, and heavy AoE damage.",
+        "worksBestWhen": [
+          "Carmilla lands Curse of Blood before Terizla uses Penalty Zone.",
+          "Terizla is close enough to follow the linked targets immediately."
+        ],
+        "failureCases": [
+          "Enemies split apart and break the link.",
+          "Terizla casts before Carmilla confirms the link.",
+          "The team lacks follow-up damage after the control chain."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "terizla",
+    "synergyHeroId": "atlas",
+    "reasons": [
+      "Atlas can pull multiple enemies into one place, giving Terizla a clear target area for his teamfight skills.",
+      "Terizla can follow Atlas' grouped control with a second layer of slow and AoE damage."
+    ],
+    "synergyTypes": [
+      "setup-combo",
+      "cc-chain",
+      "teamfight-combo"
+    ],
+    "proof": [
+      {
+        "id": "terizla-atlas-grouped-engage-follow-up",
+        "category": "setup-combo",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Atlas groups enemies with a hard engage, and Terizla follows with slow, pull, and heavy AoE punishment.",
+        "worksBestWhen": [
+          "Terizla holds his ultimate until Atlas confirms the pull.",
+          "Terizla positions close enough before Atlas commits."
+        ],
+        "failureCases": [
+          "Terizla casts too early before enemies are grouped.",
+          "Atlas catches targets outside Terizla's range.",
+          "The enemy spreads before Terizla arrives."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "terizla",
+    "synergyHeroId": "tigreal",
+    "reasons": [
+      "Tigreal can pull and stun enemies in one area, letting Terizla follow with slow, pull, and heavy AoE damage.",
+      "The combined control chain gives Terizla more reliable access despite his slower movement."
+    ],
+    "synergyTypes": [
+      "engage-follow-up",
+      "cc-chain",
+      "teamfight-combo"
+    ],
+    "proof": [
+      {
+        "id": "terizla-tigreal-implosion-penalty-zone-chain",
+        "category": "engage-follow-up",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Tigreal starts a grouped crowd-control window, and Terizla follows with another AoE control and damage layer.",
+        "worksBestWhen": [
+          "Terizla is already near the fight before Tigreal commits.",
+          "Tigreal catches enough targets for Terizla's AoE to matter."
+        ],
+        "failureCases": [
+          "Tigreal engages too far away from Terizla.",
+          "Terizla is kited before reaching the controlled targets.",
+          "The enemy uses disengage after Tigreal's CC ends."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "terizla",
+    "synergyHeroId": "mathilda",
+    "reasons": [
+      "Mathilda helps compensate for Terizla's limited mobility by giving him a reposition path into or out of fights.",
+      "Terizla becomes more reliable when a teammate can help him access the fight."
+    ],
+    "synergyTypes": [
+      "mobility-enable",
+      "dive-support",
+      "positioning-dependent"
+    ],
+    "proof": [
+      {
+        "id": "terizla-mathilda-guiding-wind-access",
+        "category": "mobility-enabler",
+        "priority": "secondary",
+        "impact": "medium",
+        "summary": "Terizla is strong after reaching enemies, and Mathilda can improve his access or escape path around the fight.",
+        "worksBestWhen": [
+          "Mathilda times the movement support before Terizla is kited.",
+          "Terizla still has key cooldowns after repositioning."
+        ],
+        "failureCases": [
+          "Terizla wastes the movement path.",
+          "Mathilda positions too far from the intended fight.",
+          "Terizla enters without damage follow-up."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "terizla",
+    "synergyHeroId": "floryn",
+    "reasons": [
+      "Floryn can keep Terizla alive while he commits into melee range and absorbs enemy focus.",
+      "Global healing supports Terizla during slow, commitment-heavy teamfight entries."
+    ],
+    "synergyTypes": [
+      "healing-sustain",
+      "frontline-enabler"
+    ],
+    "proof": [
+      {
+        "id": "terizla-floryn-global-heal-commit-window",
+        "category": "healing-sustain",
+        "priority": "secondary",
+        "impact": "medium",
+        "summary": "Terizla's engage is commitment-heavy, and Floryn can heal him globally during the focus window.",
+        "worksBestWhen": [
+          "Floryn reacts when Terizla absorbs burst during his engage.",
+          "Terizla still has enough HP to continue after the heal."
+        ],
+        "failureCases": [
+          "Terizla is crowd-controlled and killed before the heal matters.",
+          "Floryn uses Bloom before Terizla commits.",
+          "The enemy disengages after forcing Terizla's cooldowns."
+        ]
+      }
+    ]
+  }
+]

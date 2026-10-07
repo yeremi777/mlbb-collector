@@ -1,0 +1,152 @@
+[
+  {
+    "anchorHeroId": "chou",
+    "synergyHeroId": "pharsa",
+    "reasons": [
+      "Chou can kick a target into a predictable location, giving Pharsa a clean long-range burst window.",
+      "Pharsa can follow from safer distance instead of entering melee range."
+    ],
+    "synergyTypes": [
+      "burst-follow-up",
+      "poke-siege",
+      "pickoff-combo"
+    ],
+    "proof": [
+      {
+        "id": "chou-kick-sets-pharsa-burst",
+        "category": "engage-follow-up",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Chou isolates a target, while Pharsa punishes the displaced target with long-range burst.",
+        "worksBestWhen": [
+          "Chou kicks the target toward Pharsa's cast area or away from cover.",
+          "Pharsa is positioned to follow before Chou starts the kick."
+        ],
+        "failureCases": [
+          "Pharsa is not in range.",
+          "The target escapes before the follow-up lands."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "chou",
+    "synergyHeroId": "lunox",
+    "reasons": [
+      "Chou can isolate one target and hold their movement long enough for Lunox to commit her burst sequence.",
+      "Lunox gives strong magic follow-up after Chou displaces a priority target into a predictable position."
+    ],
+    "synergyTypes": [
+      "burst-follow-up",
+      "pickoff-combo",
+      "cooldown-dependent"
+    ],
+    "proof": [
+      {
+        "id": "chou-kick-sets-lunox-burst",
+        "category": "pickoff-combo",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Chou creates the single-target displacement window, and Lunox follows with magic burst before the target can reset.",
+        "worksBestWhen": [
+          "Chou kicks the target toward Lunox or into her spell range.",
+          "Lunox has the correct power state ready before Chou starts the pickoff."
+        ],
+        "failureCases": [
+          "Chou kicks the target away from Lunox's range.",
+          "Lunox is forced to use defensive tools before the burst follow-up."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "chou",
+    "synergyHeroId": "gord",
+    "reasons": [
+      "Chou's knock-up or kick can hold a target long enough for Gord to land stun and damage.",
+      "Gord benefits when Chou turns a mobile enemy into a predictable target."
+    ],
+    "synergyTypes": [
+      "cc-chain",
+      "burst-follow-up",
+      "pickoff-combo"
+    ],
+    "proof": [
+      {
+        "id": "chou-control-sets-gord-damage",
+        "category": "crowd-control-chain",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Chou starts the control chain, then Gord follows with stun and sustained magic damage.",
+        "worksBestWhen": [
+          "Chou does not kick the target out of Gord's skill line.",
+          "Gord holds his stun or main damage for the displacement window."
+        ],
+        "failureCases": [
+          "Gord is forced to reposition before using his follow-up.",
+          "Chou kicks the target outside Gord's cast angle."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "chou",
+    "synergyHeroId": "kagura",
+    "reasons": [
+      "Kagura can follow Chou's displacement with umbrella burst and control.",
+      "The combo is strong when Chou delivers the target into Kagura's prepared umbrella path."
+    ],
+    "synergyTypes": [
+      "pickoff-combo",
+      "burst-follow-up",
+      "execution-dependent"
+    ],
+    "proof": [
+      {
+        "id": "chou-displacement-sets-kagura-combo",
+        "category": "pickoff-combo",
+        "priority": "primary",
+        "impact": "medium",
+        "summary": "Chou isolates the target, while Kagura finishes with umbrella damage and control.",
+        "worksBestWhen": [
+          "Kagura tracks Chou's kick direction before committing her combo.",
+          "Chou kicks the target toward Kagura's umbrella path."
+        ],
+        "failureCases": [
+          "Chou kicks the target away from Kagura's setup.",
+          "Kagura commits before the target path is clear."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "chou",
+    "synergyHeroId": "angela",
+    "reasons": [
+      "Angela gives Chou extra safety when he dives deep for a kick.",
+      "This helps Chou survive after spending mobility to start the play."
+    ],
+    "synergyTypes": [
+      "shielding",
+      "dive-support",
+      "protect"
+    ],
+    "proof": [
+      {
+        "id": "angela-protects-chou-backline-kick",
+        "category": "protection",
+        "priority": "secondary",
+        "impact": "medium",
+        "summary": "Angela protects Chou during the engage, letting him commit more safely to displacement plays.",
+        "worksBestWhen": [
+          "Angela attaches before Chou enters the enemy backline.",
+          "Chou uses the protection to secure a meaningful displacement target."
+        ],
+        "failureCases": [
+          "Chou is chain-controlled after Shunpo.",
+          "Chou kicks a low-value target."
+        ]
+      }
+    ]
+  }
+]

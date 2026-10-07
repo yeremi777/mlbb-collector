@@ -1,0 +1,157 @@
+[
+  {
+    "anchorHeroId": "gloo",
+    "synergyHeroId": "faramis",
+    "reasons": [
+      "Faramis can protect Gloo's committed frontline timing with a teamfight survival window.",
+      "Gloo's attach and disruption can keep enemies occupied while Faramis helps the team continue the fight."
+    ],
+    "synergyTypes": [
+      "protection",
+      "healing-sustain",
+      "teamfight-combo"
+    ],
+    "proof": [
+      {
+        "id": "gloo-frontline-commit-with-faramis-nether-realm",
+        "category": "protection",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Gloo commits into the enemy formation, while Faramis gives a teamfight survival layer that helps Gloo stay active during the dangerous attach or frontline window.",
+        "worksBestWhen": [
+          "Faramis saves his ultimate for Gloo's real engage or objective fight.",
+          "Gloo commits while teammates are ready to fight inside Faramis's protected area."
+        ],
+        "failureCases": [
+          "Faramis uses ultimate before Gloo commits.",
+          "Gloo attaches too far away from Faramis's protected area.",
+          "Enemy burst removes Faramis or forces him away before the teamfight starts."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "gloo",
+    "synergyHeroId": "carmilla",
+    "reasons": [
+      "Carmilla can link clustered enemies while Gloo forces them into a close-range fight.",
+      "Gloo's frontline pressure gives Carmilla a realistic chance to connect her teamfight link."
+    ],
+    "synergyTypes": [
+      "teamfight-combo",
+      "damage-amplification",
+      "cc-chain"
+    ],
+    "proof": [
+      {
+        "id": "gloo-disruption-with-carmilla-link",
+        "category": "teamfight-combo",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Gloo forces enemies to respond to his frontline pressure, while Carmilla links clustered enemies so the team can punish them together.",
+        "worksBestWhen": [
+          "Gloo starts the fight before Carmilla commits her link.",
+          "Carmilla hits multiple enemies near Gloo's pressure zone."
+        ],
+        "failureCases": [
+          "Enemies spread before Carmilla links them.",
+          "Gloo attaches to a target too far away from the team.",
+          "The team lacks damage follow-up after the link."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "gloo",
+    "synergyHeroId": "yve",
+    "reasons": [
+      "Yve can punish the area where Gloo is disrupting enemy movement.",
+      "Gloo's immobilize and displacement pressure help keep enemies inside Yve's zoning area."
+    ],
+    "synergyTypes": [
+      "teamfight-combo",
+      "aoe-follow-up",
+      "positioning-dependent"
+    ],
+    "proof": [
+      {
+        "id": "gloo-frontline-pressure-for-yve-zone",
+        "category": "teamfight-combo",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Gloo creates a disruptive frontline fight, while Yve layers area damage and slow pressure over the same space.",
+        "worksBestWhen": [
+          "Gloo fights inside Yve's cast range.",
+          "Yve waits until enemies are forced to respond to Gloo's engage."
+        ],
+        "failureCases": [
+          "Gloo chases too deep.",
+          "Yve is interrupted or flanked.",
+          "Enemies spread away from Gloo's pressure zone."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "gloo",
+    "synergyHeroId": "pharsa",
+    "reasons": [
+      "Pharsa can punish the target Gloo attaches to or disrupts from long range.",
+      "Gloo gives Pharsa a clearer target focus by forcing enemy attention into the frontline."
+    ],
+    "synergyTypes": [
+      "burst-follow-up",
+      "range",
+      "teamfight-combo"
+    ],
+    "proof": [
+      {
+        "id": "gloo-attach-target-for-pharsa-burst",
+        "category": "engage-follow-up",
+        "priority": "secondary",
+        "impact": "medium",
+        "summary": "Gloo disrupts or attaches to a target, while Pharsa follows from range with burst damage.",
+        "worksBestWhen": [
+          "Gloo commits after Pharsa is ready to cast.",
+          "Pharsa has safe vision and angle on Gloo's target."
+        ],
+        "failureCases": [
+          "Gloo attaches outside Pharsa's range.",
+          "Enemy divers pressure Pharsa before she can follow up.",
+          "Gloo is forced to detach or disengage too early."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "gloo",
+    "synergyHeroId": "angela",
+    "reasons": [
+      "Angela can reinforce Gloo when he commits into the enemy formation.",
+      "Gloo's extended frontline play gives Angela a clear host for shield and support timing."
+    ],
+    "synergyTypes": [
+      "shielding",
+      "healing-sustain",
+      "dive-support"
+    ],
+    "proof": [
+      {
+        "id": "gloo-attach-window-with-angela-support",
+        "category": "shielding",
+        "priority": "secondary",
+        "impact": "medium",
+        "summary": "Angela adds survivability to Gloo's dive or attach window, helping him stay active longer in the frontline.",
+        "worksBestWhen": [
+          "Angela attaches as Gloo begins the real engage.",
+          "Gloo does not dive beyond team follow-up range."
+        ],
+        "failureCases": [
+          "Angela channels too late.",
+          "Gloo is isolated before Angela can support.",
+          "Enemy burst or anti-sustain removes the shield value."
+        ]
+      }
+    ]
+  }
+]

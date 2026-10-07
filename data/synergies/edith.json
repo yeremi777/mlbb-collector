@@ -1,0 +1,162 @@
+[
+  {
+    "anchorHeroId": "edith",
+    "synergyHeroId": "mathilda",
+    "reasons": [
+      "Mathilda gives Edith a safer entry or escape route, helping Edith manage the timing between frontline control and Primal Wrath.",
+      "Mathilda's shield helps Edith survive the first commit before Edith turns the fight with transformation damage."
+    ],
+    "synergyTypes": [
+      "mobility-enable",
+      "shielding",
+      "dive-support"
+    ],
+    "proof": [
+      {
+        "id": "mathilda-guiding-wind-for-edith-transform-window",
+        "category": "mobility-enabler",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Mathilda gives Edith shield and mobility support so Edith can enter, reposition, or reset before using her transformation window.",
+        "worksBestWhen": [
+          "Edith plays as an EXP/frontline hero.",
+          "Mathilda saves Guiding Wind for Edith's real commit or escape window.",
+          "Edith has Primal Wrath or key control cooldowns ready."
+        ],
+        "failureCases": [
+          "Edith enters before Mathilda is in range.",
+          "Edith transforms after enemies already disengage.",
+          "The dash path pulls Edith into a bad angle."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "edith",
+    "synergyHeroId": "angela",
+    "reasons": [
+      "Angela can attach to Edith and add shielding while Edith commits as an EXP/frontline threat.",
+      "Edith can use the extra protection to survive the first burst window and continue into Primal Wrath damage."
+    ],
+    "synergyTypes": [
+      "shielding",
+      "protect",
+      "dive-support"
+    ],
+    "proof": [
+      {
+        "id": "angela-heartguard-protects-edith-frontline-commit",
+        "category": "shielding",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Angela shields and attaches to Edith, helping Edith survive the frontline commit and continue into Primal Wrath damage.",
+        "worksBestWhen": [
+          "Edith commits from EXP/frontline while Angela supports from roam.",
+          "Angela attaches before Edith takes lethal burst.",
+          "Edith has Primal Wrath or key control cooldowns ready."
+        ],
+        "failureCases": [
+          "Angela channels too late.",
+          "Edith is suppressed or chain-bursted before Angela attaches.",
+          "Edith dives too far ahead and cannot convert the shield into follow-up damage."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "edith",
+    "synergyHeroId": "floryn",
+    "reasons": [
+      "Floryn can support Edith globally while Edith plays from EXP or frontline positions away from the roamer.",
+      "Floryn's healing helps Edith survive after absorbing damage so she can continue into Primal Wrath pressure."
+    ],
+    "synergyTypes": [
+      "healing-sustain",
+      "frontline-enabler",
+      "teamfight-combo"
+    ],
+    "proof": [
+      {
+        "id": "floryn-bloom-sustains-edith-transform-timing",
+        "category": "healing-sustain",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Floryn gives Edith global healing support, helping Edith survive the first damage wave and continue fighting into Primal Wrath.",
+        "worksBestWhen": [
+          "Edith commits while Bloom is available.",
+          "Floryn saves Bloom until Edith has taken meaningful damage.",
+          "Edith has team follow-up after surviving the first burst window."
+        ],
+        "failureCases": [
+          "Edith is killed before Bloom matters.",
+          "Anti-heal reduces Floryn's recovery value.",
+          "Floryn uses Bloom before Edith's real commit."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "edith",
+    "synergyHeroId": "estes",
+    "reasons": [
+      "Estes can keep Edith alive in longer front-to-back fights where Edith needs time to control enemies and transform.",
+      "Edith gives Estes a durable frontline target who can stay near the team and keep enemies occupied."
+    ],
+    "synergyTypes": [
+      "healing-sustain",
+      "frontline-enabler",
+      "teamfight-combo"
+    ],
+    "proof": [
+      {
+        "id": "estes-sustain-extends-edith-frontline-uptime",
+        "category": "healing-sustain",
+        "priority": "secondary",
+        "impact": "high",
+        "summary": "Estes extends Edith's frontline uptime so Edith can keep controlling space and reach her Primal Wrath value.",
+        "worksBestWhen": [
+          "Edith fights near the team rather than diving too far alone.",
+          "Estes saves his strongest healing window for the main fight.",
+          "The team has damage follow-up after Edith sustains the frontline."
+        ],
+        "failureCases": [
+          "Edith is isolated outside Estes's healing area.",
+          "Enemy anti-heal reduces the sustain.",
+          "Edith and Estes sustain the fight but the team lacks damage follow-up."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "edith",
+    "synergyHeroId": "tigreal",
+    "reasons": [
+      "Tigreal can group enemies first, giving Edith a clean follow-up window for Earth Shatter or Primal Wrath.",
+      "Edith benefits from grouped enemies because her control and transformed ranged damage are easier to apply."
+    ],
+    "synergyTypes": [
+      "cc-chain",
+      "engage-follow-up",
+      "teamfight-combo"
+    ],
+    "proof": [
+      {
+        "id": "tigreal-implosion-sets-up-edith-follow-up",
+        "category": "crowd-control-chain",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Tigreal pulls and stuns enemies, while Edith follows with additional control or transformed damage.",
+        "worksBestWhen": [
+          "Tigreal catches multiple enemies or a priority carry.",
+          "Edith is close enough to follow immediately.",
+          "Edith has enough Wrath or cooldowns ready after Tigreal's engage."
+        ],
+        "failureCases": [
+          "Tigreal engages too far away from Edith.",
+          "The team lacks damage after a double-frontline commit.",
+          "Tigreal's channel is interrupted before the setup completes."
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,162 @@
+[
+  {
+    "anchorHeroId": "floryn",
+    "synergyHeroId": "fanny",
+    "reasons": [
+      "Floryn can heal Fanny even when Fanny dives far from the support's position.",
+      "Fanny benefits from global sustain after committing deep with cables or escaping after a burst attempt."
+    ],
+    "synergyTypes": [
+      "healing-sustain",
+      "dive-support",
+      "mobility-enable"
+    ],
+    "proof": [
+      {
+        "id": "floryn-global-heal-supports-fanny-dive",
+        "category": "healing-sustain",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Floryn can heal Fanny across the map, supporting Fanny's high-mobility dive pattern without forcing Floryn into unsafe positioning.",
+        "worksBestWhen": [
+          "Floryn tracks Fanny's dive timing and saves Bloom.",
+          "Fanny enters with enough energy and an escape path.",
+          "The team has vision around Fanny's target."
+        ],
+        "failureCases": [
+          "Fanny is chain-controlled before the heal matters.",
+          "Floryn uses Bloom before Fanny commits.",
+          "Fanny dives too deep without vision."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "floryn",
+    "synergyHeroId": "ling",
+    "reasons": [
+      "Floryn can sustain Ling during split-map fights without needing to stand near him.",
+      "Ling benefits from healing after spending mobility tools to pressure isolated targets."
+    ],
+    "synergyTypes": [
+      "healing-sustain",
+      "dive-support",
+      "mobility-enable"
+    ],
+    "proof": [
+      {
+        "id": "floryn-global-heal-extends-ling-dive",
+        "category": "healing-sustain",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Floryn extends Ling's dive window by healing him globally while he pressures isolated targets or backline carries.",
+        "worksBestWhen": [
+          "Ling commits after Floryn's ultimate is available.",
+          "The team has enough vision to avoid wasting Bloom on a losing dive.",
+          "Ling has an exit route after the target pressure."
+        ],
+        "failureCases": [
+          "Ling is caught by hard crowd control.",
+          "Ling dives while Bloom is unavailable.",
+          "Enemy burst exceeds Floryn's sustain window."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "floryn",
+    "synergyHeroId": "joy",
+    "reasons": [
+      "Floryn's heal helps Joy stay alive while Joy moves through enemies and completes her rhythm-based damage window.",
+      "Joy often fights away from the backline, so global sustain fits her dive pattern."
+    ],
+    "synergyTypes": [
+      "healing-sustain",
+      "dive-support",
+      "teamfight-combo"
+    ],
+    "proof": [
+      {
+        "id": "floryn-bloom-supports-joy-rhythm-window",
+        "category": "healing-sustain",
+        "priority": "secondary",
+        "impact": "medium",
+        "summary": "Floryn supports Joy's repeated dash and ultimate window with global healing while Joy continues pressuring the enemy backline.",
+        "worksBestWhen": [
+          "Joy has already entered a real fight and is taking return damage.",
+          "Floryn waits until Joy commits before using Bloom.",
+          "Joy has valid targets to continue her movement chain."
+        ],
+        "failureCases": [
+          "Joy misses rhythm timing or cannot continue dashing.",
+          "Joy is burst before Bloom lands.",
+          "The enemy disengages after Floryn commits the ultimate."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "floryn",
+    "synergyHeroId": "fredrinn",
+    "reasons": [
+      "Floryn helps Fredrinn stay alive while he absorbs damage and builds his combo pattern.",
+      "Fredrinn gives Floryn a durable frontline heal target whose value increases in extended fights."
+    ],
+    "synergyTypes": [
+      "healing-sustain",
+      "frontline-enabler",
+      "teamfight-combo"
+    ],
+    "proof": [
+      {
+        "id": "floryn-sustains-fredrinn-frontline-combo",
+        "category": "frontline-enabler",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Fredrinn gives Floryn a durable frontline heal target, while Floryn helps Fredrinn survive the damage intake needed for extended fights.",
+        "worksBestWhen": [
+          "Fredrinn is tanking in front of his team.",
+          "Floryn times Bloom after Fredrinn commits and takes damage.",
+          "Fredrinn can continue hitting enemies after the heal."
+        ],
+        "failureCases": [
+          "Fredrinn is kited and cannot convert pressure into damage.",
+          "Enemy anti-heal weakens the sustain value.",
+          "Floryn uses Bloom before Fredrinn's main fight window."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "floryn",
+    "synergyHeroId": "alice",
+    "reasons": [
+      "Floryn can support Alice during deep teamfight entries without following into danger.",
+      "Alice benefits from extra healing because her fight pattern depends on staying active after diving into enemy formation."
+    ],
+    "synergyTypes": [
+      "healing-sustain",
+      "dive-support",
+      "teamfight-combo"
+    ],
+    "proof": [
+      {
+        "id": "floryn-global-heal-supports-alice-dive",
+        "category": "healing-sustain",
+        "priority": "secondary",
+        "impact": "medium",
+        "summary": "Floryn adds global sustain to Alice's extended fight pattern, helping Alice stay active after diving into the enemy formation.",
+        "worksBestWhen": [
+          "Alice enters after enemy burst skills are partially used.",
+          "Floryn saves Bloom for Alice's committed dive.",
+          "Alice has team pressure around her dive."
+        ],
+        "failureCases": [
+          "Alice is controlled before she can sustain.",
+          "Floryn's heal is reduced by anti-heal.",
+          "Alice dives without team pressure."
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,157 @@
+[
+  {
+    "targetHeroId": "nana",
+    "counterHeroId": "harley",
+    "reasons": [
+      "Harley can enter, burst Nana, and escape before Molina fully punishes him."
+    ],
+    "counterTypes": [
+      "burst",
+      "mobility",
+      "pickoff"
+    ],
+    "proof": [
+      {
+        "id": "harley-in-out-burst-vs-nana-control",
+        "category": "mobility-advantage",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Nana relies on Molina control and passive survival, while Harley can quickly enter, apply burst, and leave before Nana fully punishes him.",
+        "worksBestWhen": [
+          "Harley baits or avoids Molina first.",
+          "Harley has enough burst damage.",
+          "Nana's passive is already down or can be forced first."
+        ],
+        "failureCases": [
+          "Harley gets transformed by Molina.",
+          "Nana's passive saves her and her team protects her.",
+          "Harley's escape path is blocked."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "nana",
+    "counterHeroId": "hayabusa",
+    "reasons": [
+      "Hayabusa can reach Nana, burst with ultimate, and avoid some counterplay during the combo."
+    ],
+    "counterTypes": [
+      "mobility",
+      "pickoff",
+      "backline-access"
+    ],
+    "proof": [
+      {
+        "id": "hayabusa-shadow-burst-vs-nana-backline",
+        "category": "mobility-advantage",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Nana controls predictable engage paths, while Hayabusa can enter quickly, burst with ultimate, and punish her if Molina is missed or already used.",
+        "worksBestWhen": [
+          "Nana is isolated.",
+          "Molina is baited or on cooldown.",
+          "Nana's passive is tracked."
+        ],
+        "failureCases": [
+          "Hayabusa's damage spreads to other targets.",
+          "Nana stays grouped with teammates.",
+          "Nana's passive saves her."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "nana",
+    "counterHeroId": "lancelot",
+    "reasons": [
+      "Lancelot can use mobility and invincibility frames to dodge Molina and burst Nana."
+    ],
+    "counterTypes": [
+      "mobility",
+      "dodge",
+      "burst"
+    ],
+    "proof": [
+      {
+        "id": "lancelot-dodge-burst-vs-nana-molina",
+        "category": "mobility-advantage",
+        "priority": "primary",
+        "impact": "medium",
+        "summary": "Nana relies on Molina control, while Lancelot has mobility and invincibility frames that can dodge control and create a fast burst window.",
+        "worksBestWhen": [
+          "Lancelot dodges Molina with correct timing.",
+          "Nana is not protected by tank or support.",
+          "Nana's passive is already down."
+        ],
+        "failureCases": [
+          "Lancelot dashes into Molina.",
+          "Nana's passive triggers and buys time.",
+          "Lancelot lacks damage."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "nana",
+    "counterHeroId": "ling",
+    "reasons": [
+      "Ling can access Nana's backline position from walls and pressure her control zones."
+    ],
+    "counterTypes": [
+      "mobility",
+      "backline-access",
+      "assassin-pressure"
+    ],
+    "proof": [
+      {
+        "id": "ling-wall-access-vs-nana-safe-position",
+        "category": "mobility-advantage",
+        "priority": "primary",
+        "impact": "medium",
+        "summary": "Nana wants to control safe zones with Molina, while Ling can access the backline from walls and pressure her position from unusual angles.",
+        "worksBestWhen": [
+          "Ling has energy and ultimate available.",
+          "Nana's Molina is already used.",
+          "Nana is isolated or poorly positioned."
+        ],
+        "failureCases": [
+          "Ling gets transformed before combo.",
+          "Nana stays near teammates.",
+          "Ling lacks energy."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "nana",
+    "counterHeroId": "diggie",
+    "reasons": [
+      "Diggie can cleanse or prevent Nana's Molina control during teamfights."
+    ],
+    "counterTypes": [
+      "cleanse",
+      "anti-cc",
+      "protect"
+    ],
+    "proof": [
+      {
+        "id": "diggie-time-journey-vs-nana-molina",
+        "category": "crowd-control-counter",
+        "priority": "primary",
+        "impact": "medium",
+        "summary": "Nana's main control threat is Molina transformation, while Diggie's ultimate can remove debuffs and give nearby allies control immunity.",
+        "worksBestWhen": [
+          "Diggie saves ultimate for Nana's control or teamfight combo.",
+          "Allies stay near Diggie.",
+          "Nana uses Molina before Diggie ultimate."
+        ],
+        "failureCases": [
+          "Diggie ultimate is on cooldown.",
+          "Nana baits Diggie ultimate first.",
+          "Allies are outside Diggie's range."
+        ]
+      }
+    ]
+  }
+]

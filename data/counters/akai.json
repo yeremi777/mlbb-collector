@@ -1,0 +1,157 @@
+[
+  {
+    "targetHeroId": "akai",
+    "counterHeroId": "kaja",
+    "reasons": [
+      "Kaja can suppress Akai and stop his Heavy Spin value."
+    ],
+    "counterTypes": [
+      "suppression",
+      "anti-engage",
+      "pickoff"
+    ],
+    "proof": [
+      {
+        "id": "kaja-suppression-vs-akai-heavy-spin",
+        "category": "crowd-control-counter",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Akai wants to spin and displace enemies, while Kaja's suppression can interrupt the engage and create a burst window.",
+        "worksBestWhen": [
+          "Kaja saves Divine Judgment for Heavy Spin.",
+          "Kaja's team follows immediately.",
+          "Kaja has vision of Akai's engage path."
+        ],
+        "failureCases": [
+          "Kaja suppresses before Akai commits.",
+          "Akai baits Kaja ultimate.",
+          "Kaja cannot reach Akai safely."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "akai",
+    "counterHeroId": "franco",
+    "reasons": [
+      "Franco can lock Akai with Bloody Hunt and stop his engage momentum."
+    ],
+    "counterTypes": [
+      "suppression",
+      "pickoff",
+      "anti-engage"
+    ],
+    "proof": [
+      {
+        "id": "franco-suppression-vs-akai-heavy-spin",
+        "category": "crowd-control-counter",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Akai needs uninterrupted spin uptime, while Franco's suppression can interrupt and hold him for follow-up.",
+        "worksBestWhen": [
+          "Franco waits until Akai commits.",
+          "Teammates are ready to burst or reposition.",
+          "Franco has vision before Akai starts the engage."
+        ],
+        "failureCases": [
+          "Franco misses hook or suppresses too early.",
+          "Akai avoids Franco and spins on the backline.",
+          "Franco is forced to use ultimate on another diver."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "akai",
+    "counterHeroId": "barats",
+    "reasons": [
+      "Barats can suppress Akai with Detona's Welcome and stop Akai's displacement chain."
+    ],
+    "counterTypes": [
+      "suppression",
+      "anti-engage",
+      "frontline"
+    ],
+    "proof": [
+      {
+        "id": "barats-detona-welcome-vs-akai-heavy-spin",
+        "category": "crowd-control-counter",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Akai wants to keep spinning through enemies, while Barats can devour and suppress him to interrupt the engage window.",
+        "worksBestWhen": [
+          "Barats holds ultimate until Akai commits.",
+          "Barats' team follows up while Akai is suppressed.",
+          "Akai cannot bait Detona's Welcome first."
+        ],
+        "failureCases": [
+          "Barats misses the ultimate timing.",
+          "Akai spins from outside Barats' reach.",
+          "Barats has no team follow-up."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "akai",
+    "counterHeroId": "nana",
+    "reasons": [
+      "Nana's Molina transform can interrupt Akai's Heavy Spin because morph or transform is one of the interruption types."
+    ],
+    "counterTypes": [
+      "crowd-control-counter",
+      "zone-control",
+      "cooldown-punish"
+    ],
+    "proof": [
+      {
+        "id": "nana-molina-vs-akai-heavy-spin",
+        "category": "skill-interaction",
+        "priority": "primary",
+        "impact": "medium",
+        "summary": "Akai wants to spin through enemies, while Nana can use transform threat to interrupt or zone his engage path.",
+        "worksBestWhen": [
+          "Nana places Molina in Akai's entry route.",
+          "Nana waits for Akai to commit before using control.",
+          "Nana's team is ready to punish Akai after transform."
+        ],
+        "failureCases": [
+          "Akai avoids Molina and flanks from another angle.",
+          "Nana wastes Molina before Akai engages.",
+          "Akai catches Nana before she sets up."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "akai",
+    "counterHeroId": "diggie",
+    "reasons": [
+      "Diggie reduces the teamfight value of Akai's knockback control."
+    ],
+    "counterTypes": [
+      "anti-cc",
+      "cleanse",
+      "protect"
+    ],
+    "proof": [
+      {
+        "id": "diggie-time-journey-vs-akai-displacement",
+        "category": "crowd-control-counter",
+        "priority": "primary",
+        "impact": "medium",
+        "summary": "Akai wants to displace and trap enemies, while Diggie can protect nearby allies from non-suppression control and reduce follow-up value.",
+        "worksBestWhen": [
+          "Diggie saves Time Journey for Heavy Spin.",
+          "Diggie stays near the allies Akai wants to isolate.",
+          "The team repositions immediately after the cleanse or protection window."
+        ],
+        "failureCases": [
+          "Akai catches Diggie first.",
+          "Akai separates allies outside Diggie's ultimate range.",
+          "Akai baits Time Journey before committing."
+        ]
+      }
+    ]
+  }
+]

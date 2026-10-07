@@ -1,0 +1,157 @@
+[
+  {
+    "targetHeroId": "yu-zhong",
+    "counterHeroId": "baxia",
+    "reasons": [
+      "Baxia directly reduces Yu Zhong's sustain value, which is central to Yu Zhong's extended-fight threat.",
+      "Baxia can stand in front of Yu Zhong and make his drain-based brawling less rewarding."
+    ],
+    "counterTypes": [
+      "anti-sustain",
+      "frontline",
+      "anti-dive"
+    ],
+    "proof": [
+      {
+        "id": "baxia-anti-regen-vs-yu-zhong-sha-residue",
+        "category": "sustain-anti-sustain",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Yu Zhong wants to restore HP through stacked Sha Residue in long fights, while Baxia reduces shield and HP regeneration effects when his skills hit enemies.",
+        "worksBestWhen": [
+          "Baxia stays near Yu Zhong during the main fight.",
+          "The team focuses Yu Zhong while anti-regen is active."
+        ],
+        "failureCases": [
+          "Yu Zhong dives past Baxia into the backline.",
+          "Baxia cannot maintain contact.",
+          "Yu Zhong disengages and re-enters after anti-regen timing."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "yu-zhong",
+    "counterHeroId": "karrie",
+    "reasons": [
+      "Karrie punishes Yu Zhong's HP-heavy bruiser style with max-HP true damage.",
+      "Yu Zhong must enter Karrie's attack range to threaten her, giving her stacking opportunities if protected."
+    ],
+    "counterTypes": [
+      "true-damage",
+      "tank-shred",
+      "kiting"
+    ],
+    "proof": [
+      {
+        "id": "karrie-lightwheel-mark-vs-yu-zhong-bruiser",
+        "category": "damage-type-advantage",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Yu Zhong wants to survive as a high-HP sustain diver, while Karrie turns repeated hits into true damage based on the target's max HP.",
+        "worksBestWhen": [
+          "Karrie has peel against Yu Zhong's dive.",
+          "Yu Zhong's Black Dragon Form is already used or mispositioned."
+        ],
+        "failureCases": [
+          "Yu Zhong reaches Karrie without peel.",
+          "Karrie is behind on item timing.",
+          "Yu Zhong's team zones Karrie out before she stacks marks."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "yu-zhong",
+    "counterHeroId": "dyrroth",
+    "reasons": [
+      "Dyrroth can punish Yu Zhong in lane with physical-defense reduction and burst.",
+      "Yu Zhong needs time to stack sustain, while Dyrroth can pressure before Yu Zhong stabilizes the fight."
+    ],
+    "counterTypes": [
+      "penetration",
+      "burst",
+      "lane-pressure"
+    ],
+    "proof": [
+      {
+        "id": "dyrroth-defense-reduction-vs-yu-zhong-trades",
+        "category": "damage-type-advantage",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Yu Zhong wants extended trades, while Dyrroth's defense reduction and burst pressure can convert short trades into burst wins.",
+        "worksBestWhen": [
+          "Dyrroth trades before Yu Zhong completes sustain stacks.",
+          "Dyrroth has lane tempo and avoids extended all-ins without cooldowns."
+        ],
+        "failureCases": [
+          "Yu Zhong survives the burst and turns the fight long.",
+          "Dyrroth misses his key engage or defense-reduction timing.",
+          "Yu Zhong uses Black Dragon Form to disrupt Dyrroth's backline instead."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "yu-zhong",
+    "counterHeroId": "x.borg",
+    "reasons": [
+      "X.Borg can pressure Yu Zhong with sustained fire damage and true-damage burst windows.",
+      "His armor mechanic gives him a buffer against Yu Zhong's dive and brawl pattern."
+    ],
+    "counterTypes": [
+      "true-damage",
+      "kiting",
+      "anti-frontline"
+    ],
+    "proof": [
+      {
+        "id": "xborg-last-insanity-vs-yu-zhong-sustain",
+        "category": "damage-type-advantage",
+        "priority": "secondary",
+        "impact": "medium",
+        "summary": "Yu Zhong wants to win bruiser fights through sustain, while X.Borg can kite, wear him down, and threaten true-damage detonation through Last Insanity.",
+        "worksBestWhen": [
+          "X.Borg keeps spacing and does not let Yu Zhong stack freely.",
+          "X.Borg times ultimate after Yu Zhong commits."
+        ],
+        "failureCases": [
+          "Yu Zhong forces X.Borg armorless too early.",
+          "X.Borg misses the true-damage detonation timing.",
+          "Yu Zhong dives past X.Borg to higher-value targets."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "yu-zhong",
+    "counterHeroId": "valir",
+    "reasons": [
+      "Valir can delay Yu Zhong's entry before Black Dragon Form or after it ends.",
+      "His knockback and slows help the team avoid extended melee contact."
+    ],
+    "counterTypes": [
+      "disengage",
+      "kiting",
+      "anti-dive"
+    ],
+    "proof": [
+      {
+        "id": "valir-kiting-vs-yu-zhong-dive",
+        "category": "kiting",
+        "priority": "condition",
+        "impact": "medium",
+        "summary": "Yu Zhong wants to dive into clustered enemies and extend the fight, while Valir can knock him back, slow his approach, and help the team kite.",
+        "worksBestWhen": [
+          "Valir holds knockback for Yu Zhong's real entry.",
+          "The team spreads during Black Dragon Form."
+        ],
+        "failureCases": [
+          "Yu Zhong enters while control immune in Black Dragon Form.",
+          "Valir is flanked or forced to waste knockback.",
+          "Yu Zhong's team follows with layered engage."
+        ]
+      }
+    ]
+  }
+]

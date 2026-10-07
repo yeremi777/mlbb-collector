@@ -1,0 +1,152 @@
+[
+  {
+    "targetHeroId": "esmeralda",
+    "counterHeroId": "baxia",
+    "reasons": [
+      "Baxia reduces the value of Esmeralda's shield-and-sustain trading pattern by weakening shield and HP regeneration effects.",
+      "He can stay near Esmeralda as a frontline body while the team follows up during her reduced-sustain window."
+    ],
+    "counterTypes": [
+      "anti-sustain",
+      "frontline",
+      "teamfight"
+    ],
+    "proof": [
+      {
+        "id": "baxia-mark-vs-esmeralda-shield-sustain",
+        "category": "sustain-anti-sustain",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Esmeralda wants extended shield-based trades, while Baxia can reduce shield and HP regeneration value after applying his mark.",
+        "worksBestWhen": [
+          "Baxia keeps applying skills during Esmeralda's active trade window.",
+          "Allies follow up while Esmeralda's sustain value is reduced."
+        ],
+        "failureCases": [
+          "Baxia misses the engage and Esmeralda reaches the backline instead.",
+          "Esmeralda avoids extended contact with Baxia and farms shield from easier targets."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "esmeralda",
+    "counterHeroId": "dyrroth",
+    "reasons": [
+      "Dyrroth can pressure Esmeralda before she scales into long shield-sustain fights.",
+      "His burst and defense-reduction style trades punish Esmeralda when she overextends without enough shield or cooldowns."
+    ],
+    "counterTypes": [
+      "penetration",
+      "burst",
+      "lane-pressure"
+    ],
+    "proof": [
+      {
+        "id": "dyrroth-burst-vs-esmeralda-long-trade",
+        "category": "damage-type-advantage",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Esmeralda wants drawn-out close fights, while Dyrroth can force a shorter burst trade before she stabilizes with shield cycling.",
+        "worksBestWhen": [
+          "Dyrroth fights early or mid game before Esmeralda becomes too durable.",
+          "Dyrroth commits after Esmeralda uses mobility or shield timing."
+        ],
+        "failureCases": [
+          "Dyrroth takes a long trade after his burst window ends.",
+          "Esmeralda survives the first combo and turns the fight with shield cycling."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "esmeralda",
+    "counterHeroId": "karrie",
+    "reasons": [
+      "Karrie's repeated max-HP true damage punishes durable heroes that rely on HP, shields, and defensive value.",
+      "Esmeralda can absorb many ordinary damage sources, but repeated Lightwheel Mark triggers reduce her comfort in extended fights."
+    ],
+    "counterTypes": [
+      "true-damage",
+      "max-hp-damage",
+      "tank-shred"
+    ],
+    "proof": [
+      {
+        "id": "karrie-lightwheel-mark-vs-esmeralda-durability",
+        "category": "damage-type-advantage",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Esmeralda wants to outlast enemies with shield and durability, while Karrie repeatedly applies max-HP true damage after stacking Lightwheel Mark.",
+        "worksBestWhen": [
+          "Karrie has safe positioning behind peel.",
+          "Karrie can keep attacking without being zoned by Esmeralda's dive."
+        ],
+        "failureCases": [
+          "Esmeralda reaches Karrie before Karrie can stack marks.",
+          "Karrie is under-farmed or lacks protection."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "esmeralda",
+    "counterHeroId": "lunox",
+    "reasons": [
+      "Lunox can threaten Esmeralda's durability with target-HP scaling magic damage.",
+      "She works best when she avoids being dragged into Esmeralda's sustained melee range."
+    ],
+    "counterTypes": [
+      "max-hp-damage",
+      "burst",
+      "penetration"
+    ],
+    "proof": [
+      {
+        "id": "lunox-chaos-assault-vs-esmeralda-sustain",
+        "category": "damage-type-advantage",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Esmeralda wants long shield-based trades, while Lunox can threaten her with repeated Chaos damage that includes target-HP scaling.",
+        "worksBestWhen": [
+          "Lunox keeps distance and does not let Esmeralda stick to her.",
+          "Lunox bursts when Esmeralda's shield or mobility cycle is already committed."
+        ],
+        "failureCases": [
+          "Esmeralda closes the gap and forces Lunox to spend defensive tools.",
+          "Lunox mistimes the burst and gets dragged into a long fight."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "esmeralda",
+    "counterHeroId": "valir",
+    "reasons": [
+      "Valir can keep Esmeralda away with knockback, slow, and repeated zoning.",
+      "His value is strongest when he prevents Esmeralda from reaching priority targets instead of trying to kill her alone."
+    ],
+    "counterTypes": [
+      "kiting",
+      "disengage",
+      "anti-dive"
+    ],
+    "proof": [
+      {
+        "id": "valir-kiting-vs-esmeralda-close-range-pressure",
+        "category": "kiting",
+        "priority": "primary",
+        "impact": "medium",
+        "summary": "Esmeralda needs to stay close to gain sustained value, while Valir can push and slow her approach to reset spacing.",
+        "worksBestWhen": [
+          "Valir saves knockback for Esmeralda's real commit.",
+          "The team uses the space Valir creates to kite backward or focus another target."
+        ],
+        "failureCases": [
+          "Valir wastes knockback before Esmeralda commits.",
+          "Esmeralda flanks from fog or reaches Valir while his tools are down."
+        ]
+      }
+    ]
+  }
+]

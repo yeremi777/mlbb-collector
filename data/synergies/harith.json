@@ -1,0 +1,152 @@
+[
+  {
+    "anchorHeroId": "harith",
+    "synergyHeroId": "angela",
+    "reasons": [
+      "Angela can attach to Harith during his aggressive dash window, giving him protection without needing to physically follow his movement.",
+      "Angela's shield, heal, and slow support help Harith keep fighting while he moves around enemies."
+    ],
+    "synergyTypes": [
+      "shielding",
+      "healing-sustain",
+      "dive-support"
+    ],
+    "proof": [
+      {
+        "id": "harith-angela-heartguard-dash-window",
+        "category": "shielding",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Harith wants to keep dashing and dealing close-range magic damage, while Angela gives him extra survival during the commit window.",
+        "worksBestWhen": [
+          "Angela attaches before Harith fully commits.",
+          "Harith fights while his main dash and ultimate window are available."
+        ],
+        "failureCases": [
+          "Harith is chain-controlled before Angela can attach.",
+          "Harith dashes too deep after Angela's shield value is already consumed."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "harith",
+    "synergyHeroId": "diggie",
+    "reasons": [
+      "Diggie protects Harith from the crowd control that usually stops his dash cycle.",
+      "Time Journey lets Harith keep moving during the enemy's main control window instead of being locked down before his damage is finished."
+    ],
+    "synergyTypes": [
+      "protect",
+      "peel",
+      "cooldown-dependent"
+    ],
+    "proof": [
+      {
+        "id": "harith-diggie-time-journey-anti-control",
+        "category": "protection",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Harith is strongest when he can continue dashing, and Diggie reduces the risk of enemy control shutting down that movement.",
+        "worksBestWhen": [
+          "Diggie saves Time Journey for the real crowd-control chain.",
+          "Harith commits while Diggie is close enough to protect him."
+        ],
+        "failureCases": [
+          "Diggie uses ultimate too early.",
+          "Harith dives outside Diggie's protection range."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "harith",
+    "synergyHeroId": "mathilda",
+    "reasons": [
+      "Mathilda gives Harith another reposition option when his dash cycle becomes risky.",
+      "Her shield and movement support help Harith enter, chase, or escape after short burst trades."
+    ],
+    "synergyTypes": [
+      "mobility-enable",
+      "shielding",
+      "dive-support"
+    ],
+    "proof": [
+      {
+        "id": "harith-mathilda-guiding-wind-reset-route",
+        "category": "mobility-enabler",
+        "priority": "primary",
+        "impact": "medium",
+        "summary": "Harith already has mobility, but Mathilda adds a safety route when Harith needs to reset or chase after using his own movement tools.",
+        "worksBestWhen": [
+          "Mathilda stays close enough for Harith to use the movement support.",
+          "Harith uses the extra mobility to reset spacing rather than overextend."
+        ],
+        "failureCases": [
+          "Mathilda dives away from Harith.",
+          "Harith uses his own mobility too early and cannot benefit from the reset."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "harith",
+    "synergyHeroId": "floryn",
+    "reasons": [
+      "Floryn's global healing fits Harith because Harith can dash far from his backline while still receiving support.",
+      "Flower of Hope can add shield value when Harith is healed, supporting his risky close-range fighting pattern."
+    ],
+    "synergyTypes": [
+      "healing-sustain",
+      "shielding",
+      "protect"
+    ],
+    "proof": [
+      {
+        "id": "harith-floryn-global-heal-mobile-dive",
+        "category": "healing-sustain",
+        "priority": "primary",
+        "impact": "medium",
+        "summary": "Harith often fights in mobile, shifting positions, and Floryn can support him through global heal and shield effects without needing to stand beside him.",
+        "worksBestWhen": [
+          "Floryn saves Bloom for Harith's real commit or low-HP reset window.",
+          "Harith uses the heal to continue fighting or safely disengage."
+        ],
+        "failureCases": [
+          "Harith is instantly burst before the heal matters.",
+          "Anti-heal or heavy burst reduces the value of Floryn's sustain."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "harith",
+    "synergyHeroId": "tigreal",
+    "reasons": [
+      "Tigreal can group enemies so Harith has a cleaner area to dash into and damage.",
+      "Tigreal's crowd control buys Harith time to start his damage cycle before enemies spread out."
+    ],
+    "synergyTypes": [
+      "engage-follow-up",
+      "cc-chain",
+      "teamfight-combo"
+    ],
+    "proof": [
+      {
+        "id": "harith-tigreal-grouped-cc-dash-follow-up",
+        "category": "engage-follow-up",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Tigreal creates the grouped crowd-control window, while Harith follows with dash-based magic damage.",
+        "worksBestWhen": [
+          "Tigreal engages after Harith is ready to follow.",
+          "Harith enters during the control window instead of before it."
+        ],
+        "failureCases": [
+          "Tigreal engages too far away from Harith.",
+          "Enemy disengage tools split the fight before Harith enters."
+        ]
+      }
+    ]
+  }
+]

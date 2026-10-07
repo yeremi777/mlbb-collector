@@ -1,0 +1,157 @@
+[
+  {
+    "anchorHeroId": "grock",
+    "synergyHeroId": "badang",
+    "reasons": [
+      "Grock can create terrain pressure that helps Badang trap enemies near walls.",
+      "Badang can follow Grock's wall placement with crowd-control and burst pressure in a restricted area."
+    ],
+    "synergyTypes": [
+      "setup-combo",
+      "cc-chain",
+      "teamfight-combo"
+    ],
+    "proof": [
+      {
+        "id": "grock-wall-setup-for-badang-combo",
+        "category": "setup-combo",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Grock creates terrain and limits escape paths, while Badang punishes enemies trapped near walls.",
+        "worksBestWhen": [
+          "Grock places the wall to limit escape paths.",
+          "Badang is close enough to follow immediately."
+        ],
+        "failureCases": [
+          "Grock's wall blocks his own team's follow-up.",
+          "Badang is not ready when the wall lands.",
+          "Enemies blink over or around the terrain."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "grock",
+    "synergyHeroId": "pharsa",
+    "reasons": [
+      "Grock can wall off movement routes and make enemy pathing more predictable for Pharsa.",
+      "Pharsa can punish enemies that Grock restricts near choke points or objective entrances."
+    ],
+    "synergyTypes": [
+      "poke-siege",
+      "engage-follow-up",
+      "aoe-follow-up"
+    ],
+    "proof": [
+      {
+        "id": "grock-terrain-control-for-pharsa-poke",
+        "category": "poke-siege",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Grock limits enemy movement with terrain, while Pharsa punishes the restricted area from long range.",
+        "worksBestWhen": [
+          "Grock walls narrow entrances near objectives.",
+          "Pharsa positions safely before Grock commits."
+        ],
+        "failureCases": [
+          "Grock walls at the wrong angle.",
+          "Pharsa is pressured before casting.",
+          "Enemies disengage before follow-up damage lands."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "grock",
+    "synergyHeroId": "odette",
+    "reasons": [
+      "Grock's wall and airborne pressure can restrict escape routes for Odette's AoE damage.",
+      "Odette benefits when Grock creates a trapped or slowed fight area before she commits."
+    ],
+    "synergyTypes": [
+      "setup-combo",
+      "aoe-follow-up",
+      "teamfight-combo"
+    ],
+    "proof": [
+      {
+        "id": "grock-wall-zone-for-odette-aoe",
+        "category": "setup-combo",
+        "priority": "secondary",
+        "impact": "medium",
+        "summary": "Grock creates a restricted fight area, while Odette uses that area to land repeated magic damage.",
+        "worksBestWhen": [
+          "Grock controls choke points before Odette channels.",
+          "Odette waits until enemy mobility is limited."
+        ],
+        "failureCases": [
+          "Enemies interrupt Odette.",
+          "Grock separates enemies away from Odette's damage area.",
+          "The fight happens in open space."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "grock",
+    "synergyHeroId": "claude",
+    "reasons": [
+      "Grock can absorb pressure and disrupt enemy formation before Claude enters with AoE damage.",
+      "Claude can use Grock's frontline disruption as a safer timing for Blazing Duet."
+    ],
+    "synergyTypes": [
+      "frontline-enabler",
+      "aoe-follow-up",
+      "teamfight-combo"
+    ],
+    "proof": [
+      {
+        "id": "grock-frontline-for-claude-entry",
+        "category": "frontline-enabler",
+        "priority": "secondary",
+        "impact": "medium",
+        "summary": "Grock starts or disrupts the fight, while Claude follows once enemies are displaced or distracted.",
+        "worksBestWhen": [
+          "Grock forces crowd control before Claude enters.",
+          "Claude has a clear retreat or reset path."
+        ],
+        "failureCases": [
+          "Claude enters while enemy control is still available.",
+          "Grock's wall blocks Claude's path.",
+          "Enemy burst focuses Claude immediately."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "grock",
+    "synergyHeroId": "irithel",
+    "reasons": [
+      "Grock's terrain and frontline durability can protect Irithel's kiting path.",
+      "Irithel benefits when Grock controls enemy approach angles and creates space for mobile attacks."
+    ],
+    "synergyTypes": [
+      "frontline-enabler",
+      "positioning-dependent",
+      "laning-synergy"
+    ],
+    "proof": [
+      {
+        "id": "grock-space-control-for-irithel-kiting",
+        "category": "frontline-enabler",
+        "priority": "secondary",
+        "impact": "medium",
+        "summary": "Grock controls space, while Irithel uses that space to keep attacking while moving.",
+        "worksBestWhen": [
+          "Grock uses walls to cut off divers.",
+          "Irithel plays around Grock's terrain control."
+        ],
+        "failureCases": [
+          "Grock walls Irithel away from safety.",
+          "Enemy assassins flank from behind.",
+          "Irithel is behind in item timing."
+        ]
+      }
+    ]
+  }
+]

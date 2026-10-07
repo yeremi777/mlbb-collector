@@ -1,0 +1,155 @@
+[
+  {
+    "targetHeroId": "ling",
+    "counterHeroId": "khufra",
+    "reasons": [
+      "Khufra directly punishes Ling's mobility and wall-entry pattern.",
+      "Bouncing Ball can interrupt Ling's dive path when Khufra positions near the backline or likely wall routes."
+    ],
+    "counterTypes": [
+      "anti-dash",
+      "anti-dive",
+      "crowd-control-counter"
+    ],
+    "proof": [
+      {
+        "id": "khufra-bouncing-ball-vs-ling-wall-entry",
+        "category": "skill-interaction",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Ling depends on mobility and wall-based entry, while Khufra's Bouncing Ball can knock airborne enemies trying to blink across him.",
+        "worksBestWhen": [
+          "Khufra waits for Ling's real entry instead of using Bouncing Ball early.",
+          "Khufra positions near the backline or likely wall entry points."
+        ],
+        "failureCases": [
+          "Ling baits Bouncing Ball before committing.",
+          "Ling waits until Khufra's anti-dash tool is unavailable."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "ling",
+    "counterHeroId": "minsitthar",
+    "reasons": [
+      "Minsitthar's ultimate zone can deny Ling's dash and blink freedom during fights.",
+      "Ling becomes much easier to punish when he dives into an area where his mobility is restricted."
+    ],
+    "counterTypes": [
+      "anti-dash",
+      "teamfight",
+      "crowd-control-counter"
+    ],
+    "proof": [
+      {
+        "id": "minsitthar-kings-calling-vs-ling-mobility",
+        "category": "skill-interaction",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Ling needs repeated mobility to enter, reposition, and escape, while Minsitthar's King's Calling disables dash or blink skills in the fight area.",
+        "worksBestWhen": [
+          "Minsitthar places the zone where Ling must pass through to reach carries.",
+          "The team focuses Ling while he is trapped in the anti-dash area."
+        ],
+        "failureCases": [
+          "Ling waits outside the zone and re-enters later.",
+          "Minsitthar misses the timing and uses ultimate after Ling has already escaped."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "ling",
+    "counterHeroId": "franco",
+    "reasons": [
+      "Franco can lock Ling with suppression when Ling lands or overcommits.",
+      "Suppression is valuable because Ling can dodge many ordinary skillshots with mobility and ultimate timing."
+    ],
+    "counterTypes": [
+      "pickoff",
+      "crowd-control-counter",
+      "cooldown-punish"
+    ],
+    "proof": [
+      {
+        "id": "franco-bloody-hunt-vs-ling-landing-window",
+        "category": "crowd-control-counter",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Ling wants to evade normal control with mobility, while Franco's targeted suppression can hold him in place for burst follow-up during a targetable window.",
+        "worksBestWhen": [
+          "Franco waits until Ling is targetable and no longer invulnerable.",
+          "Franco's team is ready to burst during Bloody Hunt."
+        ],
+        "failureCases": [
+          "Franco uses suppression into Ling's untargetable or ultimate timing.",
+          "Ling stays out of Franco's range and forces Franco to waste hook."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "ling",
+    "counterHeroId": "obsidia",
+    "reasons": [
+      "Obsidia can punish Ling after landing Hunt of Bone because the tethered target cannot use displacement skills during the effect.",
+      "Ling depends heavily on wall movement and repositioning, so a successful tether can force him into a shorter and more punishable fight."
+    ],
+    "counterTypes": [
+      "anti-dash",
+      "mobility",
+      "cooldown-punish"
+    ],
+    "proof": [
+      {
+        "id": "obsidia-hunt-of-bone-vs-ling-wall-mobility",
+        "category": "skill-interaction",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Ling wants to escape or reposition through wall mobility, while Obsidia's Hunt of Bone can tether him and prevent displacement skills during the tether window.",
+        "worksBestWhen": [
+          "Obsidia casts ultimate after Ling commits or after Ling has limited escape options.",
+          "Obsidia or her team has enough follow-up damage during the tether."
+        ],
+        "failureCases": [
+          "Obsidia misses Hunt of Bone.",
+          "Ling uses Tempest of Blades or invulnerability timing before Obsidia can lock him.",
+          "Obsidia is caught first before she can safely cast."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "ling",
+    "counterHeroId": "saber",
+    "reasons": [
+      "Saber can punish Ling when Ling lands from wall movement or commits onto the backline.",
+      "Triple Sweep gives Saber a targeted airborne burst window, which is useful because Ling is hard to catch with normal skillshots."
+    ],
+    "counterTypes": [
+      "pickoff",
+      "burst",
+      "cooldown-punish"
+    ],
+    "proof": [
+      {
+        "id": "saber-triple-sweep-vs-ling-targetable-window",
+        "category": "crowd-control-counter",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Ling wants to enter fights quickly, burst a target, then escape with mobility or Tempest of Blades. Saber can punish Ling during a targetable window by locking him airborne with Triple Sweep and bursting him before he resets.",
+        "worksBestWhen": [
+          "Saber waits until Ling lands or commits onto a target.",
+          "Saber avoids casting into Ling's Tempest of Blades invincibility.",
+          "Saber has enough burst damage to finish Ling during the airborne combo."
+        ],
+        "failureCases": [
+          "Ling baits Saber ultimate with Tempest of Blades.",
+          "Saber cannot reach Ling because Ling stays on walls or plays outside vision.",
+          "Saber lacks burst and Ling survives long enough to escape."
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,157 @@
+[
+  {
+    "targetHeroId": "yve",
+    "counterHeroId": "franco",
+    "reasons": [
+      "Franco can punish Yve's stationary Real World Manipulation window with suppression.",
+      "Hook pressure and Bloody Hunt make it harder for Yve to cast safely from the backline."
+    ],
+    "counterTypes": [
+      "pickoff",
+      "crowd-control-counter",
+      "anti-teamfight"
+    ],
+    "proof": [
+      {
+        "id": "franco-suppression-vs-yve-ultimate",
+        "category": "crowd-control-counter",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Yve wants to stay positioned and continue Real World Manipulation, while Franco can suppress her and create a burst window before she controls the full fight.",
+        "worksBestWhen": [
+          "Franco saves Bloody Hunt for Yve's real ultimate window.",
+          "Franco approaches from fog or Flicker range."
+        ],
+        "failureCases": [
+          "Franco misses hook or cannot reach Yve.",
+          "Yve is protected by strong frontline peel.",
+          "Franco suppresses another target before Yve commits."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "yve",
+    "counterHeroId": "kaja",
+    "reasons": [
+      "Kaja can suppress and drag Yve out of her preferred backline casting position.",
+      "Divine Judgment is a reliable answer when Yve commits to a high-value teamfight zone."
+    ],
+    "counterTypes": [
+      "pickoff",
+      "crowd-control-counter",
+      "anti-teamfight"
+    ],
+    "proof": [
+      {
+        "id": "kaja-divine-judgment-vs-yve-positioning",
+        "category": "crowd-control-counter",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Yve wants uninterrupted area control, while Kaja can suppress and drag her into team follow-up.",
+        "worksBestWhen": [
+          "Kaja has Flicker or flank access.",
+          "Kaja's team can immediately burst Yve after the pull."
+        ],
+        "failureCases": [
+          "Kaja cannot reach through Yve's frontline.",
+          "Yve baits Kaja's engage before casting ultimate.",
+          "Kaja pulls Yve without enough damage follow-up."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "yve",
+    "counterHeroId": "kadita",
+    "reasons": [
+      "Kadita can punish Yve when she stays in place during Real World Manipulation.",
+      "Kadita's mobility, airborne setup, and burst can reach Yve from side angles before Yve finishes controlling the fight."
+    ],
+    "counterTypes": [
+      "burst",
+      "mobility",
+      "cooldown-punish"
+    ],
+    "proof": [
+      {
+        "id": "kadita-burst-vs-yve-stationary-cast",
+        "category": "skill-interaction",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Yve's ultimate asks her to commit to a fixed casting position, while Kadita can approach, knock her up, and burst during that commitment window.",
+        "worksBestWhen": [
+          "Kadita enters from fog or a side angle.",
+          "Yve has already committed to ultimate positioning."
+        ],
+        "failureCases": [
+          "Kadita misses Breath of the Ocean.",
+          "Yve stays too far behind frontline.",
+          "Kadita dives before Yve commits and gets controlled first."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "yve",
+    "counterHeroId": "harley",
+    "reasons": [
+      "Harley can enter quickly, mark Yve, burst her, and leave before her team fully responds.",
+      "His in-out burst is especially useful when Yve is casting or standing away from direct peel."
+    ],
+    "counterTypes": [
+      "burst",
+      "mobility",
+      "pickoff"
+    ],
+    "proof": [
+      {
+        "id": "harley-deadly-magic-vs-yve-backline",
+        "category": "mobility-advantage",
+        "priority": "secondary",
+        "impact": "medium",
+        "summary": "Yve wants long-range control from a fixed zone, while Harley can use Space Escape and Deadly Magic to punish her before she safely controls the fight.",
+        "worksBestWhen": [
+          "Harley attacks from fog.",
+          "Yve's defensive spell or peel is unavailable."
+        ],
+        "failureCases": [
+          "Harley's burst is absorbed or cleansed by support timing.",
+          "Yve survives the mark damage.",
+          "Harley returns into enemy control."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "yve",
+    "counterHeroId": "hayabusa",
+    "reasons": [
+      "Hayabusa can bypass normal front-to-back spacing and pressure Yve's fixed casting position.",
+      "His shadow mobility and assassination pattern punish Yve when she is isolated or lightly protected."
+    ],
+    "counterTypes": [
+      "burst",
+      "mobility",
+      "pickoff"
+    ],
+    "proof": [
+      {
+        "id": "hayabusa-shadow-mobility-vs-yve-backline",
+        "category": "mobility-advantage",
+        "priority": "condition",
+        "impact": "medium",
+        "summary": "Yve wants safe backline space, while Hayabusa can bypass normal spacing and punish her with shadow mobility and single-target burst.",
+        "worksBestWhen": [
+          "Hayabusa finds Yve isolated or lightly protected.",
+          "He waits for key enemy control skills to be used."
+        ],
+        "failureCases": [
+          "Yve stays grouped with strong peel.",
+          "Hayabusa's damage spreads to other nearby units.",
+          "Hayabusa enters without enough cooldown or shadow setup."
+        ]
+      }
+    ]
+  }
+]

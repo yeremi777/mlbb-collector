@@ -1,0 +1,162 @@
+[
+  {
+    "targetHeroId": "obsidia",
+    "counterHeroId": "franco",
+    "reasons": [
+      "Franco can suppress Obsidia before she stacks enough Bone Shards or after she commits with Hunt of Bone.",
+      "Suppression is valuable because Obsidia's threat depends on continuous movement and basic-attack uptime."
+    ],
+    "counterTypes": [
+      "pickoff",
+      "crowd-control-counter",
+      "cooldown-punish"
+    ],
+    "proof": [
+      {
+        "id": "franco-bloody-hunt-vs-obsidia-moving-dps",
+        "category": "crowd-control-counter",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Obsidia wants to kite and attack while moving, while Franco can lock her with suppression and create a burst window.",
+        "worksBestWhen": [
+          "Franco catches Obsidia before Phantom Shadowmeld.",
+          "The team bursts during suppression.",
+          "Franco controls fog paths around Obsidia's farming or rotation route."
+        ],
+        "failureCases": [
+          "Obsidia avoids hook with Shadowmeld timing.",
+          "Franco engages without damage follow-up.",
+          "Obsidia stays behind frontline protection."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "obsidia",
+    "counterHeroId": "kaja",
+    "reasons": [
+      "Kaja can punish Obsidia's forward tether or aggressive marksman positioning.",
+      "Dragging Obsidia disrupts her preferred spacing and can remove her from safe attack range."
+    ],
+    "counterTypes": [
+      "pickoff",
+      "crowd-control-counter",
+      "anti-dive"
+    ],
+    "proof": [
+      {
+        "id": "kaja-divine-judgment-vs-obsidia-spacing",
+        "category": "crowd-control-counter",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Obsidia wants to maintain movement-based DPS uptime, while Kaja can suppress and reposition her into a punish area.",
+        "worksBestWhen": [
+          "Kaja waits for Obsidia to step forward.",
+          "Obsidia has no nearby peel or Shadowmeld escape timing.",
+          "Kaja's team is ready to burst immediately."
+        ],
+        "failureCases": [
+          "Kaja is zoned before reaching Obsidia.",
+          "Obsidia keeps safe range and never commits.",
+          "Kaja suppresses while Obsidia's team can counter-engage."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "obsidia",
+    "counterHeroId": "natalia",
+    "reasons": [
+      "Natalia's Smoke Bomb gives her a strong short window against basic-attack reliant marksmen.",
+      "Obsidia still has mobility, so Natalia must catch her before Shadowmeld or after Obsidia commits forward."
+    ],
+    "counterTypes": [
+      "anti-basic-attack",
+      "pickoff",
+      "burst"
+    ],
+    "proof": [
+      {
+        "id": "natalia-smoke-bomb-vs-obsidia-basic-attacks",
+        "category": "skill-interaction",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Obsidia relies on basic attacks plus Bone Shards for damage, while Natalia can create an anti-basic-attack zone and burst her during a close-range ambush.",
+        "worksBestWhen": [
+          "Natalia attacks from fog before Obsidia reacts.",
+          "Obsidia's Shadowmeld is down or forced defensively.",
+          "Natalia can finish the burst before Obsidia kites out."
+        ],
+        "failureCases": [
+          "Obsidia keeps distance and kites out Smoke Bomb.",
+          "Natalia enters through visible paths and gets focused.",
+          "Obsidia has peel or vision protection around her."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "obsidia",
+    "counterHeroId": "saber",
+    "reasons": [
+      "Saber can punish Obsidia if she is isolated and cannot Shadowmeld away before Triple Sweep connects.",
+      "This counter is timing-dependent because Obsidia has strong movement tools."
+    ],
+    "counterTypes": [
+      "burst",
+      "pickoff",
+      "cooldown-punish"
+    ],
+    "proof": [
+      {
+        "id": "saber-triple-sweep-vs-obsidia-shadowmeld-window",
+        "category": "cooldown-window",
+        "priority": "condition",
+        "impact": "medium",
+        "summary": "Obsidia wants to kite with mobility and moving attacks, while Saber can punish her during a no-escape or mispositioned window with targeted airborne burst.",
+        "worksBestWhen": [
+          "Saber waits for Shadowmeld to be used.",
+          "Obsidia is away from peel.",
+          "Saber has enough burst to finish the punish window."
+        ],
+        "failureCases": [
+          "Saber engages while Obsidia can avoid or outspace him.",
+          "Obsidia's team protects her during Saber's commit.",
+          "Saber reveals himself too early and Obsidia repositions."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "obsidia",
+    "counterHeroId": "belerick",
+    "reasons": [
+      "Belerick can punish Obsidia's repeated basic-attack damage pattern better than many fragile frontliners.",
+      "This gives the team a stable frontline answer against Obsidia's sustained marksman output."
+    ],
+    "counterTypes": [
+      "frontline",
+      "anti-basic-attack",
+      "teamfight"
+    ],
+    "proof": [
+      {
+        "id": "belerick-frontline-vs-obsidia-bone-shard-attacks",
+        "category": "teamfight-role-counter",
+        "priority": "secondary",
+        "impact": "medium",
+        "summary": "Obsidia wants continuous basic-attack uptime with Bone Shards, while Belerick can absorb and punish repeated attack patterns in front-to-back fights.",
+        "worksBestWhen": [
+          "Belerick forces Obsidia to hit him first.",
+          "His team follows when Obsidia is slowed or controlled.",
+          "Belerick has item timing to survive repeated marksman damage."
+        ],
+        "failureCases": [
+          "Obsidia ignores Belerick and targets backline heroes.",
+          "Belerick is kited without reaching control range.",
+          "Obsidia's team peels Belerick away before he can protect carries."
+        ]
+      }
+    ]
+  }
+]

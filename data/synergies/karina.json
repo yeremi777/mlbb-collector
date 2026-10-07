@@ -1,0 +1,162 @@
+[
+  {
+    "anchorHeroId": "karina",
+    "synergyHeroId": "franco",
+    "reasons": [
+      "Franco can isolate a target with hook or suppression, giving Karina a clear burst target.",
+      "Karina can enter after Franco's catch to finish the target and look for reset pressure."
+    ],
+    "synergyTypes": [
+      "pickoff-combo",
+      "cc-chain",
+      "setup-combo"
+    ],
+    "proof": [
+      {
+        "id": "franco-hook-sets-karina-pickoff-reset-window",
+        "category": "pickoff-combo",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Franco creates a controlled single-target pick, and Karina follows with burst mobility to finish the isolated enemy.",
+        "worksBestWhen": [
+          "Franco catches a squishy or weakened target.",
+          "Karina waits until the catch is confirmed.",
+          "Karina has cooldowns ready to continue after the kill."
+        ],
+        "failureCases": [
+          "Franco misses or hooks a tank.",
+          "Karina enters before the target is controlled.",
+          "Enemy peel reaches Karina during the burst window."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "karina",
+    "synergyHeroId": "atlas",
+    "reasons": [
+      "Atlas can group enemies and create a multi-target entry window for Karina.",
+      "Karina benefits when Atlas lowers enemy movement options before she dives."
+    ],
+    "synergyTypes": [
+      "engage-follow-up",
+      "cc-chain",
+      "teamfight-combo"
+    ],
+    "proof": [
+      {
+        "id": "atlas-fatal-links-sets-karina-teamfight-entry",
+        "category": "engage-follow-up",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Atlas pulls enemies together, and Karina follows into the controlled area to burst weakened targets and continue reset pressure.",
+        "worksBestWhen": [
+          "Atlas catches multiple enemies.",
+          "Karina enters after the control lands.",
+          "The team lowers enemy HP during the grouped window."
+        ],
+        "failureCases": [
+          "Atlas catches only one durable target.",
+          "Karina enters before the engage connects.",
+          "Enemies survive the burst and collapse on Karina."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "karina",
+    "synergyHeroId": "tigreal",
+    "reasons": [
+      "Tigreal can group and stun enemies, giving Karina a safer moment to enter after the fight starts.",
+      "Karina can follow Tigreal's engage to finish weakened targets instead of opening the fight alone."
+    ],
+    "synergyTypes": [
+      "cc-chain",
+      "teamfight-combo",
+      "peel"
+    ],
+    "proof": [
+      {
+        "id": "tigreal-implosion-opens-karina-cleanup-window",
+        "category": "crowd-control-chain",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Tigreal controls the enemy formation, and Karina uses the disrupted fight to enter on killable targets.",
+        "worksBestWhen": [
+          "Tigreal catches priority targets or softens the backline.",
+          "Karina waits for enemy HP to drop before entering.",
+          "Tigreal remains close enough to peel after Karina dives."
+        ],
+        "failureCases": [
+          "Karina enters too early and gets focused.",
+          "Tigreal catches only tanks.",
+          "Enemy protection prevents Karina from finishing a target."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "karina",
+    "synergyHeroId": "angela",
+    "reasons": [
+      "Angela can shield Karina during a deep burst commit.",
+      "Karina can use the protection window to survive long enough to finish a target and continue fighting."
+    ],
+    "synergyTypes": [
+      "protect",
+      "shielding",
+      "dive-support"
+    ],
+    "proof": [
+      {
+        "id": "angela-heartguard-protects-karina-dive",
+        "category": "protection",
+        "priority": "secondary",
+        "impact": "medium",
+        "summary": "Karina commits into dangerous space for a kill, while Angela can add shield support during that entry.",
+        "worksBestWhen": [
+          "Angela casts Heartguard as Karina starts the dive.",
+          "Karina targets a low-HP or fragile enemy.",
+          "Angela remains safe while attached."
+        ],
+        "failureCases": [
+          "Karina dives without shield timing.",
+          "Enemy burst breaks the shield before Karina finishes.",
+          "The target survives and Karina cannot continue pressure."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "karina",
+    "synergyHeroId": "vale",
+    "reasons": [
+      "Vale can control and burst grouped enemies before Karina enters.",
+      "Karina benefits when Vale's magic damage lowers targets into a more reachable finish window."
+    ],
+    "synergyTypes": [
+      "teamfight-combo",
+      "cc-chain",
+      "burst-follow-up"
+    ],
+    "proof": [
+      {
+        "id": "vale-control-softens-targets-for-karina",
+        "category": "teamfight-combo",
+        "priority": "secondary",
+        "impact": "high",
+        "summary": "Vale applies AoE control and burst, while Karina follows on damaged targets to secure kills and continue reset pressure.",
+        "worksBestWhen": [
+          "Vale lands control or burst on grouped enemies.",
+          "Karina waits for HP bars to drop before diving.",
+          "The team has frontline pressure to protect the combo."
+        ],
+        "failureCases": [
+          "Vale misses the control window.",
+          "Targets remain too healthy for Karina to finish.",
+          "Both heroes commit without frontline support and get collapsed on."
+        ]
+      }
+    ]
+  }
+]

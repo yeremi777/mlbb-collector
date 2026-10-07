@@ -1,0 +1,152 @@
+[
+  {
+    "anchorHeroId": "gord",
+    "synergyHeroId": "tigreal",
+    "reasons": [
+      "Tigreal can group and stun enemies, giving Gord a clean area-damage window.",
+      "Gord's damage becomes more reliable when enemies are unable to leave his skill zones or ultimate path."
+    ],
+    "synergyTypes": [
+      "engage-follow-up",
+      "cc-chain",
+      "aoe-follow-up"
+    ],
+    "proof": [
+      {
+        "id": "tigreal-grouped-engage-for-gord-damage",
+        "category": "engage-follow-up",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Tigreal creates the grouped crowd-control setup, while Gord follows with area damage and beam pressure.",
+        "worksBestWhen": [
+          "Gord is already in range before Tigreal commits.",
+          "Gord saves his main damage for the confirmed control window."
+        ],
+        "failureCases": [
+          "Tigreal engages outside Gord's follow-up range.",
+          "Gord is interrupted while casting."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "gord",
+    "synergyHeroId": "atlas",
+    "reasons": [
+      "Atlas can drag multiple enemies into one location, making Gord's area skills easier to land.",
+      "Gord can punish the grouped targets from safer distance."
+    ],
+    "synergyTypes": [
+      "setup-combo",
+      "aoe-follow-up",
+      "teamfight-combo"
+    ],
+    "proof": [
+      {
+        "id": "atlas-fatal-links-for-gord-aoe",
+        "category": "teamfight-combo",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Atlas groups enemies with Fatal Links, and Gord follows with repeated area magic damage.",
+        "worksBestWhen": [
+          "Gord saves his main damage for the grouped target area.",
+          "Atlas drags enemies into Gord's cast range."
+        ],
+        "failureCases": [
+          "Atlas misses the drag.",
+          "Enemies spread before Gord follows up."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "gord",
+    "synergyHeroId": "minotaur",
+    "reasons": [
+      "Minotaur gives Gord a frontline and crowd-control layer.",
+      "Gord benefits from Minotaur forcing enemies to stay in predictable teamfight zones."
+    ],
+    "synergyTypes": [
+      "frontline-enabler",
+      "cc-chain",
+      "teamfight-combo"
+    ],
+    "proof": [
+      {
+        "id": "minotaur-frontline-enables-gord-casting",
+        "category": "frontline-enabler",
+        "priority": "secondary",
+        "impact": "medium",
+        "summary": "Minotaur creates space and control, giving Gord safer time to cast from behind the frontline.",
+        "worksBestWhen": [
+          "Minotaur stays between Gord and enemy divers.",
+          "Gord positions behind the frontline before committing his ultimate."
+        ],
+        "failureCases": [
+          "Gord positions too far forward.",
+          "Minotaur's control is unavailable when enemies dive."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "gord",
+    "synergyHeroId": "franco",
+    "reasons": [
+      "Franco can hook or suppress one target, giving Gord an easy line for stun and damage follow-up.",
+      "The pair can convert a single catch into a pick before a full teamfight begins."
+    ],
+    "synergyTypes": [
+      "pickoff-combo",
+      "setup-combo",
+      "burst-follow-up"
+    ],
+    "proof": [
+      {
+        "id": "franco-catch-sets-gord-damage-line",
+        "category": "pickoff-combo",
+        "priority": "primary",
+        "impact": "medium",
+        "summary": "Franco catches the target, then Gord layers stun and magic damage onto the immobilized enemy.",
+        "worksBestWhen": [
+          "Franco pulls the target into Gord's skill range.",
+          "Gord has a clear cast angle after the pull."
+        ],
+        "failureCases": [
+          "Franco hooks a tank.",
+          "Franco pulls the target away from Gord's casting angle."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "gord",
+    "synergyHeroId": "lolita",
+    "reasons": [
+      "Lolita can protect Gord from ranged projectile pressure while Gord casts.",
+      "Her stun setup can create a short window for Gord's follow-up damage."
+    ],
+    "synergyTypes": [
+      "protect",
+      "peel",
+      "frontline-enabler"
+    ],
+    "proof": [
+      {
+        "id": "lolita-protects-gord-cast-position",
+        "category": "protection",
+        "priority": "secondary",
+        "impact": "medium",
+        "summary": "Lolita helps protect Gord's position and can set up enemies for Gord's area damage.",
+        "worksBestWhen": [
+          "Lolita stands between Gord and ranged threats during siege or defense.",
+          "Gord casts after Lolita creates a safe line."
+        ],
+        "failureCases": [
+          "Enemies dive from angles that bypass Lolita's shield direction.",
+          "Gord casts too far forward without peel."
+        ]
+      }
+    ]
+  }
+]

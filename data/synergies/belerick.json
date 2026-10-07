@@ -1,0 +1,157 @@
+[
+  {
+    "anchorHeroId": "belerick",
+    "synergyHeroId": "odette",
+    "reasons": [
+      "Belerick's taunt can hold enemies in place long enough for Odette to start Swan Song damage.",
+      "Odette benefits from Belerick because he can front line and reduce the chance that enemies immediately dive her."
+    ],
+    "synergyTypes": [
+      "teamfight-combo",
+      "aoe-follow-up",
+      "cc-chain"
+    ],
+    "proof": [
+      {
+        "id": "belerick-taunt-sets-odette-swan-song",
+        "category": "teamfight-combo",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Belerick taunts and holds enemies near him, while Odette follows with AoE magic damage.",
+        "worksBestWhen": [
+          "Belerick catches multiple enemies before Odette commits.",
+          "Odette casts from a safe angle behind Belerick."
+        ],
+        "failureCases": [
+          "Belerick catches only one low-value target.",
+          "Odette is interrupted or forced to disengage.",
+          "Enemy spreads before Belerick's taunt connects."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "belerick",
+    "synergyHeroId": "pharsa",
+    "reasons": [
+      "Belerick can occupy the front line and force enemies to fight inside Pharsa's long-range damage zone.",
+      "Pharsa can follow Belerick's taunt from safer distance."
+    ],
+    "synergyTypes": [
+      "engage-follow-up",
+      "poke-siege",
+      "aoe-follow-up"
+    ],
+    "proof": [
+      {
+        "id": "belerick-frontline-creates-pharsa-damage-window",
+        "category": "engage-follow-up",
+        "priority": "secondary",
+        "impact": "medium",
+        "summary": "Belerick creates front-line control, while Pharsa rains damage from range onto enemies forced to respond to him.",
+        "worksBestWhen": [
+          "Belerick fights near a choke or objective.",
+          "Pharsa has a clear angle before Belerick taunts."
+        ],
+        "failureCases": [
+          "Belerick fights outside Pharsa's range.",
+          "Pharsa is flanked during her follow-up.",
+          "Enemy disengages after Belerick commits."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "belerick",
+    "synergyHeroId": "ixia",
+    "reasons": [
+      "Belerick can hold the front line and keep enemies occupied in front of Ixia.",
+      "Ixia benefits from grouped or controlled enemies because her teamfight damage pattern wants enemies inside her firing area."
+    ],
+    "synergyTypes": [
+      "frontline-enabler",
+      "aoe-follow-up",
+      "teamfight-combo"
+    ],
+    "proof": [
+      {
+        "id": "belerick-frontline-holds-ixia-firing-area",
+        "category": "frontline-enabler",
+        "priority": "secondary",
+        "impact": "medium",
+        "summary": "Belerick absorbs and controls the enemy front, while Ixia follows from behind with sustained teamfight damage.",
+        "worksBestWhen": [
+          "Belerick keeps enemies inside Ixia's attack area.",
+          "Ixia positions safely before Belerick commits."
+        ],
+        "failureCases": [
+          "Enemy divers bypass Belerick and reach Ixia.",
+          "Belerick pulls enemies away from Ixia's firing angle.",
+          "Ixia is forced to reposition during her key damage window."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "belerick",
+    "synergyHeroId": "hanabi",
+    "reasons": [
+      "Belerick can keep enemy attention away from Hanabi while she deals damage from the backline.",
+      "Hanabi's bouncing attacks become more valuable when Belerick forces enemies to fight close together."
+    ],
+    "synergyTypes": [
+      "frontline-enabler",
+      "aoe-follow-up",
+      "game-phase"
+    ],
+    "proof": [
+      {
+        "id": "belerick-frontline-enables-hanabi-bounce-damage",
+        "category": "frontline-enabler",
+        "priority": "secondary",
+        "impact": "medium",
+        "summary": "Belerick controls and absorbs the front line, while Hanabi punishes grouped enemies with bouncing basic attacks and skills.",
+        "worksBestWhen": [
+          "Belerick stands between Hanabi and enemy divers.",
+          "Hanabi has enough items to contribute sustained damage."
+        ],
+        "failureCases": [
+          "Enemy assassins bypass Belerick.",
+          "Hanabi is behind in item timing.",
+          "Enemies split and avoid bounce value."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "belerick",
+    "synergyHeroId": "claude",
+    "reasons": [
+      "Belerick can start or absorb a teamfight before Claude enters with Blazing Duet.",
+      "Claude benefits when Belerick forces enemies to spend attention and control on the frontline first."
+    ],
+    "synergyTypes": [
+      "frontline-enabler",
+      "aoe-follow-up",
+      "teamfight-combo"
+    ],
+    "proof": [
+      {
+        "id": "belerick-frontline-enables-claude-blazing-duet",
+        "category": "frontline-enabler",
+        "priority": "secondary",
+        "impact": "medium",
+        "summary": "Belerick creates a durable front-line fight, while Claude enters afterward to apply AoE marksman damage.",
+        "worksBestWhen": [
+          "Belerick forces key enemy control before Claude dives.",
+          "Claude keeps Battle Mirror Image available for entry or exit."
+        ],
+        "failureCases": [
+          "Claude enters before Belerick creates space.",
+          "Enemy saves hard control for Claude.",
+          "Belerick's taunt pulls enemies away from Claude's damage path."
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,157 @@
+[
+  {
+    "anchorHeroId": "cecilion",
+    "synergyHeroId": "carmilla",
+    "reasons": [
+      "Cecilion has a direct special-skill interaction with Carmilla through Moonlit Waltz, giving him protection while enabling Carmilla to enter from his position.",
+      "Carmilla's linked teamfight setup gives Cecilion a stronger window to punish grouped enemies with ranged magic damage."
+    ],
+    "synergyTypes": [
+      "setup-combo",
+      "shielding",
+      "teamfight-combo"
+    ],
+    "proof": [
+      {
+        "id": "cecilion-moonlit-waltz-with-carmilla",
+        "category": "skill-interaction",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Cecilion can use Moonlit Waltz with nearby Carmilla, while Carmilla's teamfight link creates a grouped damage window for Cecilion's ranged magic follow-up.",
+        "worksBestWhen": [
+          "Cecilion saves Moonlit Waltz for Carmilla's engage or survival window.",
+          "Carmilla enters when Cecilion is positioned safely enough to keep casting."
+        ],
+        "failureCases": [
+          "Cecilion is caught before Carmilla can enter.",
+          "Carmilla dives when Cecilion has no range, mana, or cooldowns to follow.",
+          "The enemy separates before Carmilla's link creates value."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "cecilion",
+    "synergyHeroId": "atlas",
+    "reasons": [
+      "Atlas can group enemies with Fatal Links, giving Cecilion a clear long-range damage window.",
+      "Atlas creates frontline space that helps Cecilion cast from safe distance instead of being forced into the center of the fight."
+    ],
+    "synergyTypes": [
+      "engage-follow-up",
+      "aoe-follow-up",
+      "teamfight-combo"
+    ],
+    "proof": [
+      {
+        "id": "atlas-fatal-links-for-cecilion-follow-up",
+        "category": "engage-follow-up",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Atlas starts the teamfight by pulling enemies together, while Cecilion follows from range with magic damage during the grouped-control window.",
+        "worksBestWhen": [
+          "Atlas engages after Cecilion is close enough to follow up.",
+          "Cecilion keeps a safe backline angle instead of standing beside the tank."
+        ],
+        "failureCases": [
+          "Atlas engages outside Cecilion's casting range.",
+          "The enemy cancels or dodges the Fatal Links setup.",
+          "Cecilion is zoned before Atlas commits."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "cecilion",
+    "synergyHeroId": "tigreal",
+    "reasons": [
+      "Tigreal can create a grouped engage that makes Cecilion's delayed area damage easier to land.",
+      "Tigreal's frontline presence gives Cecilion more time to stack and cast safely behind the fight."
+    ],
+    "synergyTypes": [
+      "engage-follow-up",
+      "cc-chain",
+      "teamfight-combo"
+    ],
+    "proof": [
+      {
+        "id": "tigreal-grouped-engage-for-cecilion",
+        "category": "engage-follow-up",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Tigreal groups or locks enemies first, then Cecilion follows with ranged magic damage while the enemy formation is disrupted.",
+        "worksBestWhen": [
+          "Tigreal waits until Cecilion is in follow-up range.",
+          "Cecilion keeps a safe backline angle during the engage."
+        ],
+        "failureCases": [
+          "Tigreal engages too early.",
+          "Cecilion misses the fixed-distance damage zone.",
+          "The enemy uses cleanse, immunity, or displacement to break the setup."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "cecilion",
+    "synergyHeroId": "lolita",
+    "reasons": [
+      "Lolita helps protect Cecilion's casting position so he can keep scaling and dealing ranged damage.",
+      "Lolita's frontline and peel tools reduce the pressure that normally forces Cecilion out of safe spacing."
+    ],
+    "synergyTypes": [
+      "protect",
+      "peel",
+      "backline-protection"
+    ],
+    "proof": [
+      {
+        "id": "lolita-protects-cecilion-backline",
+        "category": "protection",
+        "priority": "secondary",
+        "impact": "medium",
+        "summary": "Lolita protects Cecilion's casting position, giving him more time to scale and punish enemies from behind the frontline.",
+        "worksBestWhen": [
+          "Lolita positions between Cecilion and enemy poke or dive threats.",
+          "Cecilion stays inside the protection zone instead of overextending."
+        ],
+        "failureCases": [
+          "The enemy dives from multiple angles.",
+          "Lolita's key protection skill is forced early.",
+          "Cecilion is isolated away from the frontline."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "cecilion",
+    "synergyHeroId": "mathilda",
+    "reasons": [
+      "Mathilda helps Cecilion reposition, which supports his need to preserve distance while casting.",
+      "Mathilda's shield and movement support help Cecilion survive dive pressure long enough to keep dealing damage."
+    ],
+    "synergyTypes": [
+      "mobility-enable",
+      "shielding",
+      "backline-protection"
+    ],
+    "proof": [
+      {
+        "id": "mathilda-guiding-wind-for-cecilion-spacing",
+        "category": "mobility-enabler",
+        "priority": "secondary",
+        "impact": "medium",
+        "summary": "Mathilda gives Cecilion a safer repositioning option and shielding support, helping him preserve distance during skirmishes.",
+        "worksBestWhen": [
+          "Mathilda saves Guiding Wind for enemy dive or rotation windows.",
+          "Cecilion uses the mobility option defensively instead of walking forward."
+        ],
+        "failureCases": [
+          "Cecilion is burst before he can use the movement option.",
+          "Mathilda is too far away to support the escape.",
+          "The enemy chains CC after Cecilion repositions."
+        ]
+      }
+    ]
+  }
+]

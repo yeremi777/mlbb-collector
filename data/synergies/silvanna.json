@@ -1,0 +1,156 @@
+[
+  {
+    "anchorHeroId": "silvanna",
+    "synergyHeroId": "angela",
+    "reasons": [
+      "Angela supports Silvanna's committed engage with shield, sustain, and movement support.",
+      "This helps Silvanna stay alive while she traps and damages a target inside Imperial Justice."
+    ],
+    "synergyTypes": [
+      "dive-support",
+      "shielding",
+      "healing-sustain"
+    ],
+    "proof": [
+      {
+        "id": "silvanna-angela-imperial-justice-protection",
+        "category": "protection",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Silvanna commits into the enemy with Imperial Justice, and Angela adds protection during that risky lock-target window.",
+        "worksBestWhen": [
+          "Angela attaches as Silvanna enters with ultimate.",
+          "Silvanna locks a valuable target instead of a tank."
+        ],
+        "failureCases": [
+          "Silvanna misses the engage.",
+          "Silvanna traps a low-value target.",
+          "Angela attaches too late after Silvanna is already controlled."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "silvanna",
+    "synergyHeroId": "pharsa",
+    "reasons": [
+      "Pharsa can punish Silvanna's restrained target from long range.",
+      "Silvanna's target lock gives Pharsa a clearer window to land ranged burst."
+    ],
+    "synergyTypes": [
+      "burst-follow-up",
+      "engage-follow-up",
+      "pickoff-combo"
+    ],
+    "proof": [
+      {
+        "id": "silvanna-pharsa-ranged-burst-trapped-target",
+        "category": "engage-follow-up",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Silvanna restrains a target, while Pharsa follows from range with burst damage during the trapped window.",
+        "worksBestWhen": [
+          "Silvanna locks a priority target that Pharsa can reach with spell range.",
+          "Pharsa holds her burst until Silvanna confirms the lock."
+        ],
+        "failureCases": [
+          "Pharsa is zoned away before the follow-up.",
+          "Silvanna traps a tank.",
+          "The enemy interrupts Pharsa's casting window."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "silvanna",
+    "synergyHeroId": "lunox",
+    "reasons": [
+      "Lunox can follow Silvanna's trapped target with fast magic burst.",
+      "This helps finish the target before the Imperial Justice window ends."
+    ],
+    "synergyTypes": [
+      "burst-follow-up",
+      "pickoff-combo"
+    ],
+    "proof": [
+      {
+        "id": "silvanna-lunox-burst-trapped-target",
+        "category": "pickoff-combo",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Silvanna isolates the target, while Lunox adds burst damage to secure the pickoff.",
+        "worksBestWhen": [
+          "Lunox is close enough to follow immediately.",
+          "Silvanna restrains a squishy or high-value target."
+        ],
+        "failureCases": [
+          "Lunox is zoned away.",
+          "Silvanna traps a tank.",
+          "The target survives the first burst and the enemy team counter-engages."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "silvanna",
+    "synergyHeroId": "vexana",
+    "reasons": [
+      "Vexana can follow Silvanna's restraint with delayed AoE burst and extra control pressure.",
+      "Silvanna's lock makes it easier for Vexana's delayed damage to connect."
+    ],
+    "synergyTypes": [
+      "burst-follow-up",
+      "cc-chain",
+      "aoe-follow-up"
+    ],
+    "proof": [
+      {
+        "id": "silvanna-vexana-delayed-aoe-locked-target",
+        "category": "crowd-control-chain",
+        "priority": "primary",
+        "impact": "medium",
+        "summary": "Silvanna restrains a target in a fixed area, while Vexana follows with delayed AoE damage and Eternal Guard pressure.",
+        "worksBestWhen": [
+          "Vexana casts after Silvanna confirms the target lock.",
+          "The trapped target is close to other enemies, increasing AoE value."
+        ],
+        "failureCases": [
+          "Vexana casts too early and the enemy moves before Silvanna lands.",
+          "Silvanna locks a target outside Vexana's follow-up range.",
+          "The enemy disengages before Eternal Guard adds value."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "silvanna",
+    "synergyHeroId": "kadita",
+    "reasons": [
+      "Kadita can follow Silvanna's target lock with knock-up and burst damage.",
+      "This creates a strong pickoff sequence when both heroes commit to the same trapped target."
+    ],
+    "synergyTypes": [
+      "burst-follow-up",
+      "cc-chain",
+      "pickoff-combo"
+    ],
+    "proof": [
+      {
+        "id": "silvanna-kadita-knockup-burst-trapped-target",
+        "category": "pickoff-combo",
+        "priority": "primary",
+        "impact": "medium",
+        "summary": "Silvanna holds the target in place, while Kadita adds delayed CC and burst during the trapped window.",
+        "worksBestWhen": [
+          "Kadita times Breath of the Ocean after Silvanna confirms Imperial Justice.",
+          "Silvanna locks a target that Kadita can immediately reach."
+        ],
+        "failureCases": [
+          "Kadita's delayed CC misses.",
+          "Both heroes commit into the same target without enough damage follow-up.",
+          "The enemy saves displacement or suppression to punish the double commit."
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,152 @@
+[
+  {
+    "anchorHeroId": "gusion",
+    "synergyHeroId": "angela",
+    "reasons": [
+      "Angela gives Gusion extra safety during his all-in burst window.",
+      "The attached movement support helps Gusion chase after marking a target or reset after committing."
+    ],
+    "synergyTypes": [
+      "shielding",
+      "dive-support",
+      "mobility-enable"
+    ],
+    "proof": [
+      {
+        "id": "gusion-angela-burst-dive-protection",
+        "category": "shielding",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Gusion supplies the burst dive, while Angela helps him survive the entry and exit.",
+        "worksBestWhen": [
+          "Angela attaches after Gusion confirms a reachable target.",
+          "Gusion keeps enough cooldowns to exit after burst."
+        ],
+        "failureCases": [
+          "Gusion misses the initial mark.",
+          "Angela attaches before Gusion is ready to commit."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "gusion",
+    "synergyHeroId": "franco",
+    "reasons": [
+      "Franco can hold a target long enough for Gusion's dagger combo.",
+      "Gusion adds the fast damage needed to convert Franco's catch into a kill."
+    ],
+    "synergyTypes": [
+      "pickoff-combo",
+      "setup-combo",
+      "burst-follow-up"
+    ],
+    "proof": [
+      {
+        "id": "gusion-franco-hook-burst-pickoff",
+        "category": "pickoff-combo",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Franco isolates the target, and Gusion follows with burst during the control window.",
+        "worksBestWhen": [
+          "Franco catches a squishy or priority target.",
+          "Gusion is close enough to unload the combo immediately."
+        ],
+        "failureCases": [
+          "Franco hooks a tank or bait target.",
+          "Gusion misses dagger placement after the catch."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "gusion",
+    "synergyHeroId": "kaja",
+    "reasons": [
+      "Kaja can force a single target into Gusion's burst range.",
+      "Gusion's fast damage makes Kaja's short pickoff window more threatening."
+    ],
+    "synergyTypes": [
+      "pickoff-combo",
+      "setup-combo",
+      "burst-follow-up"
+    ],
+    "proof": [
+      {
+        "id": "gusion-kaja-controlled-target-burst",
+        "category": "setup-combo",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Kaja controls one target, and Gusion delivers burst before the target can escape.",
+        "worksBestWhen": [
+          "Kaja catches a high-value target.",
+          "Gusion has full combo cooldowns ready."
+        ],
+        "failureCases": [
+          "Kaja catches a durable frontline hero.",
+          "Gusion is late or lacks cooldowns."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "gusion",
+    "synergyHeroId": "selena",
+    "reasons": [
+      "Selena can scout and stun from range, giving Gusion a clearer target.",
+      "Gusion can follow Selena's trap or arrow setup with burst."
+    ],
+    "synergyTypes": [
+      "vision-setup",
+      "cc-chain",
+      "pickoff-combo"
+    ],
+    "proof": [
+      {
+        "id": "gusion-selena-vision-stun-burst-setup",
+        "category": "vision-setup",
+        "priority": "primary",
+        "impact": "medium",
+        "summary": "Selena provides vision and crowd-control setup, while Gusion uses it to enter with a higher hit chance.",
+        "worksBestWhen": [
+          "Selena controls bushes or narrow paths.",
+          "Gusion waits for confirmed vision or stun before entering."
+        ],
+        "failureCases": [
+          "Selena misses the setup.",
+          "Gusion enters before the target is marked or controlled."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "gusion",
+    "synergyHeroId": "mathilda",
+    "reasons": [
+      "Mathilda gives Gusion an extra route for entering or leaving after his burst.",
+      "Her shield support reduces the risk of Gusion being punished after committing."
+    ],
+    "synergyTypes": [
+      "mobility-enable",
+      "shielding",
+      "dive-support"
+    ],
+    "proof": [
+      {
+        "id": "gusion-mathilda-mobility-reset-support",
+        "category": "mobility-enabler",
+        "priority": "secondary",
+        "impact": "medium",
+        "summary": "Mathilda supports Gusion's dive route with shield and movement tools.",
+        "worksBestWhen": [
+          "Mathilda positions near Gusion's intended fight path.",
+          "Gusion uses the mobility route after spending burst."
+        ],
+        "failureCases": [
+          "Mathilda is too far to provide a useful escape route.",
+          "Gusion enters before Mathilda can support him."
+        ]
+      }
+    ]
+  }
+]

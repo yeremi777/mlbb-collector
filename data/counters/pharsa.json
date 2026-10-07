@@ -1,0 +1,152 @@
+[
+  {
+    "targetHeroId": "pharsa",
+    "counterHeroId": "chou",
+    "reasons": [
+      "Chou can reach Pharsa from angles and displace her out of a safe casting position.",
+      "Pharsa loses much of her value when she is forced to cancel artillery positioning."
+    ],
+    "counterTypes": [
+      "mobility",
+      "pickoff",
+      "anti-backline"
+    ],
+    "proof": [
+      {
+        "id": "chou-flank-vs-pharsa-feathered-air-strike",
+        "category": "skill-interaction",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Pharsa wants to stand at long range during Feathered Air Strike; Chou can flank and force her out of position before she finishes the cast window.",
+        "worksBestWhen": [
+          "Chou approaches from side vision instead of walking through the frontline.",
+          "Chou saves displacement for Pharsa's real ultimate position."
+        ],
+        "failureCases": [
+          "Pharsa keeps enough distance and uses Wings by Wings before Chou reaches her.",
+          "Chou dives without allied follow-up."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "pharsa",
+    "counterHeroId": "lancelot",
+    "reasons": [
+      "Lancelot can dodge Pharsa's delayed artillery and reach her backline position.",
+      "His mobility makes it difficult for Pharsa to rely only on range."
+    ],
+    "counterTypes": [
+      "mobility",
+      "cooldown-punish",
+      "anti-backline"
+    ],
+    "proof": [
+      {
+        "id": "lancelot-dive-vs-pharsa-artillery",
+        "category": "mobility-advantage",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Pharsa's ultimate threatens fixed areas, while Lancelot can reposition through the fight and punish her during or after the casting window.",
+        "worksBestWhen": [
+          "Lancelot waits for Pharsa to commit ultimate before diving.",
+          "Minions, jungle units, or enemy heroes give Lancelot dash paths."
+        ],
+        "failureCases": [
+          "Lancelot dives without dash resets or misses the entry path.",
+          "Pharsa's team peels with hard crowd control."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "pharsa",
+    "counterHeroId": "saber",
+    "reasons": [
+      "Saber can punish Pharsa when she is isolated behind her frontline.",
+      "Pharsa is vulnerable if her escape is already used or interrupted."
+    ],
+    "counterTypes": [
+      "pickoff",
+      "burst",
+      "anti-backline"
+    ],
+    "proof": [
+      {
+        "id": "saber-pickoff-vs-pharsa-escape-cooldown",
+        "category": "cooldown-window",
+        "priority": "primary",
+        "impact": "medium",
+        "summary": "Pharsa relies on safe spacing and Wings by Wings escape; Saber can punish her after that mobility is unavailable.",
+        "worksBestWhen": [
+          "Saber tracks Pharsa's Wings by Wings cooldown.",
+          "Saber attacks from fog or after Pharsa starts ultimate."
+        ],
+        "failureCases": [
+          "Pharsa stays near peel support.",
+          "Saber uses ultimate into defensive items or backup control."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "pharsa",
+    "counterHeroId": "hayabusa",
+    "reasons": [
+      "Hayabusa can threaten Pharsa from side lanes or jungle angles.",
+      "His target access punishes Pharsa when she casts from predictable backline spots."
+    ],
+    "counterTypes": [
+      "mobility",
+      "pickoff",
+      "execution-dependent"
+    ],
+    "proof": [
+      {
+        "id": "hayabusa-shadow-access-vs-pharsa-positioning",
+        "category": "positioning-requirement",
+        "priority": "primary",
+        "impact": "medium",
+        "summary": "Pharsa wants a safe stationary casting zone; Hayabusa can pressure that zone if he has shadow access and Pharsa lacks immediate peel.",
+        "worksBestWhen": [
+          "Hayabusa enters from flank vision, not straight front.",
+          "Pharsa is separated from tank and support."
+        ],
+        "failureCases": [
+          "Pharsa groups tightly and Hayabusa's damage spreads poorly.",
+          "Hayabusa dives before Pharsa commits her escape."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "pharsa",
+    "counterHeroId": "natalia",
+    "reasons": [
+      "Natalia can pressure Pharsa's backline positioning before fights start.",
+      "Pharsa is much weaker when forced to spend escape defensively before casting ultimate."
+    ],
+    "counterTypes": [
+      "pickoff",
+      "vision-control",
+      "burst"
+    ],
+    "proof": [
+      {
+        "id": "natalia-flank-pressure-vs-pharsa-backline",
+        "category": "vision-awareness",
+        "priority": "condition",
+        "impact": "medium",
+        "summary": "Pharsa wants to set up from a safe distance, while Natalia can force Pharsa to respect flank threat and delay her artillery timing.",
+        "worksBestWhen": [
+          "Natalia hides on the expected rotation path before objectives.",
+          "Natalia waits until Pharsa is separated from peel."
+        ],
+        "failureCases": [
+          "Pharsa's team keeps vision around her.",
+          "Natalia reveals too early and gets zoned out."
+        ]
+      }
+    ]
+  }
+]

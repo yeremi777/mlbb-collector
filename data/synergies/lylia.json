@@ -1,0 +1,157 @@
+[
+  {
+    "anchorHeroId": "lylia",
+    "synergyHeroId": "tigreal",
+    "reasons": [
+      "Tigreal can group enemies, giving Lylia a clear area to stack Shadow Energy damage.",
+      "Lylia can layer AoE damage after Tigreal creates the crowd-control window."
+    ],
+    "synergyTypes": [
+      "setup-combo",
+      "aoe-follow-up",
+      "teamfight-combo"
+    ],
+    "proof": [
+      {
+        "id": "lylia-tigreal-grouped-shadow-energy-window",
+        "category": "setup-combo",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Tigreal creates a crowd-control window, while Lylia follows with layered AoE damage.",
+        "worksBestWhen": [
+          "Lylia has Shadow Energy pressure prepared before Tigreal engages.",
+          "Tigreal catches enemies inside Lylia's follow-up range."
+        ],
+        "failureCases": [
+          "Tigreal engages before Lylia is in range.",
+          "Lylia uses her damage cycle before the enemies are controlled.",
+          "The enemy escapes the zone before Lylia's damage lands."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "lylia",
+    "synergyHeroId": "atlas",
+    "reasons": [
+      "Atlas can pull enemies into a predictable area, letting Lylia chain area damage more reliably.",
+      "The grouped control gives Lylia a better target zone for her poke-to-burst pattern."
+    ],
+    "synergyTypes": [
+      "setup-combo",
+      "aoe-follow-up",
+      "teamfight-combo"
+    ],
+    "proof": [
+      {
+        "id": "lylia-atlas-fatal-links-aoe-zone",
+        "category": "setup-combo",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Atlas compresses enemies into one zone, and Lylia punishes that zone with repeated AoE pressure.",
+        "worksBestWhen": [
+          "Lylia waits for Atlas' pull before spending her main damage.",
+          "Atlas catches targets in Lylia's effective range."
+        ],
+        "failureCases": [
+          "Enemies escape the zone before Lylia's damage lands.",
+          "Lylia is forced to reset before following up.",
+          "Atlas engages when Lylia is not ready."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "lylia",
+    "synergyHeroId": "carmilla",
+    "reasons": [
+      "Carmilla links grouped enemies, increasing the value of Lylia's AoE pressure during clustered fights.",
+      "Lylia can keep damaging the contested area while Carmilla's link punishes nearby enemies."
+    ],
+    "synergyTypes": [
+      "teamfight-combo",
+      "cc-chain",
+      "aoe-follow-up"
+    ],
+    "proof": [
+      {
+        "id": "lylia-carmilla-linked-aoe-pressure",
+        "category": "teamfight-combo",
+        "priority": "primary",
+        "impact": "medium",
+        "summary": "Carmilla keeps enemies linked and slowed, while Lylia damages the contested area.",
+        "worksBestWhen": [
+          "Carmilla lands Curse of Blood before Lylia spends her main damage cycle.",
+          "Lylia positions safely to continue area pressure."
+        ],
+        "failureCases": [
+          "Enemies split apart and break the link.",
+          "Lylia is forced to use her reset before following up.",
+          "Carmilla links targets outside Lylia's damage zone."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "lylia",
+    "synergyHeroId": "lolita",
+    "reasons": [
+      "Lolita protects Lylia from ranged pressure while Lylia pokes and zones from behind the frontline.",
+      "Lylia gains more time to place damage safely when Lolita blocks important projectile threats."
+    ],
+    "synergyTypes": [
+      "backline-protection",
+      "peel",
+      "teamfight-combo"
+    ],
+    "proof": [
+      {
+        "id": "lylia-lolita-projectile-protection-zone-control",
+        "category": "protection",
+        "priority": "secondary",
+        "impact": "medium",
+        "summary": "Lylia wants time to place damage safely, and Lolita can block many ranged threats.",
+        "worksBestWhen": [
+          "Lolita positions between Lylia and projectile-heavy enemies.",
+          "Lylia stays behind the shield line while zoning."
+        ],
+        "failureCases": [
+          "Enemies dive around Lolita's shield angle.",
+          "Lylia stands too far forward before Lolita can protect her.",
+          "The enemy uses non-projectile dive to reach Lylia."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "lylia",
+    "synergyHeroId": "minotaur",
+    "reasons": [
+      "Minotaur gives Lylia a frontline and sustain layer so she can focus on zoning instead of escaping every engage.",
+      "His CC can hold enemies inside Lylia's damage area."
+    ],
+    "synergyTypes": [
+      "frontline-enabler",
+      "healing-sustain",
+      "cc-chain"
+    ],
+    "proof": [
+      {
+        "id": "lylia-minotaur-frontline-zone-peel",
+        "category": "frontline-enabler",
+        "priority": "secondary",
+        "impact": "medium",
+        "summary": "Minotaur absorbs pressure and controls space, giving Lylia safer angles for repeated poke.",
+        "worksBestWhen": [
+          "Minotaur guards the fight entrance while Lylia zones behind him.",
+          "Lylia saves her reset for real dive pressure."
+        ],
+        "failureCases": [
+          "Lylia is flanked before Minotaur can peel.",
+          "Minotaur engages too far from Lylia.",
+          "The enemy forces Lylia's reset before the main fight."
+        ]
+      }
+    ]
+  }
+]

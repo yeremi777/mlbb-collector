@@ -1,0 +1,157 @@
+[
+  {
+    "anchorHeroId": "zhuxin",
+    "synergyHeroId": "tigreal",
+    "reasons": [
+      "Tigreal groups enemies first, giving Zhuxin a better window to stack Soul Snare.",
+      "Zhuxin can extend the control chain after Tigreal's engage."
+    ],
+    "synergyTypes": [
+      "cc-chain",
+      "setup-combo",
+      "teamfight-combo"
+    ],
+    "proof": [
+      {
+        "id": "tigreal-control-for-zhuxin-soul-snare",
+        "category": "crowd-control-chain",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Tigreal starts grouped control, while Zhuxin continues the fight with Soul Snare capture and throw pressure.",
+        "worksBestWhen": [
+          "Tigreal catches enemies inside Zhuxin's follow-up range.",
+          "Zhuxin holds Lantern Flare for the confirmed engage."
+        ],
+        "failureCases": [
+          "Tigreal engages too far away.",
+          "Enemies spread before Soul Snare stacks.",
+          "Zhuxin is forced backward by dive pressure."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "zhuxin",
+    "synergyHeroId": "atlas",
+    "reasons": [
+      "Atlas can pull enemies into one zone for Zhuxin's lantern pressure.",
+      "Zhuxin can apply Soul Snare more reliably after Atlas forces enemies together."
+    ],
+    "synergyTypes": [
+      "setup-combo",
+      "cc-chain",
+      "teamfight-combo"
+    ],
+    "proof": [
+      {
+        "id": "atlas-setup-for-zhuxin-lantern",
+        "category": "setup-combo",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Atlas groups enemies, while Zhuxin follows with Soul Snare stacking and capture control.",
+        "worksBestWhen": [
+          "Atlas catches multiple enemies.",
+          "Zhuxin is already close enough to apply Lantern Flare."
+        ],
+        "failureCases": [
+          "Atlas catches only a tank.",
+          "Zhuxin arrives after the control window ends.",
+          "Enemy disengage tools break the stack timing."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "zhuxin",
+    "synergyHeroId": "mathilda",
+    "reasons": [
+      "Mathilda helps Zhuxin chase, reposition, or escape while maintaining lantern pressure.",
+      "Zhuxin gains more control value when mobility support helps her stay close enough to stack Soul Snare."
+    ],
+    "synergyTypes": [
+      "mobility-enable",
+      "shielding",
+      "dive-support"
+    ],
+    "proof": [
+      {
+        "id": "mathilda-mobility-for-zhuxin-control",
+        "category": "mobility-enabler",
+        "priority": "primary",
+        "impact": "medium",
+        "summary": "Mathilda gives Zhuxin mobility and shield support so she can keep enemies inside her control zone.",
+        "worksBestWhen": [
+          "Mathilda saves Guiding Wind for Zhuxin's chase or retreat.",
+          "Zhuxin uses the mobility window to maintain Lantern Flare pressure."
+        ],
+        "failureCases": [
+          "Zhuxin dives too far.",
+          "Mathilda uses mobility support before Zhuxin commits.",
+          "Enemy burst removes Zhuxin before stacks build."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "zhuxin",
+    "synergyHeroId": "chip",
+    "reasons": [
+      "Chip can bring teammates into the area Zhuxin is already controlling.",
+      "Zhuxin's capture and throw pressure gives Chip's portal fight a stronger control layer."
+    ],
+    "synergyTypes": [
+      "mobility-enable",
+      "teamfight-combo",
+      "objective-control"
+    ],
+    "proof": [
+      {
+        "id": "chip-collapse-into-zhuxin-control-zone",
+        "category": "mobility-enabler",
+        "priority": "secondary",
+        "impact": "medium",
+        "summary": "Chip turns Zhuxin's control zone into a fast team-collapse point.",
+        "worksBestWhen": [
+          "Chip portals teammates after Zhuxin has started controlling space.",
+          "Zhuxin saves Lantern Flare for the portal timing."
+        ],
+        "failureCases": [
+          "Chip opens the portal before Zhuxin is ready.",
+          "The fight moves away from Zhuxin's lantern area.",
+          "Enemies disengage before Soul Snare stacks."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "zhuxin",
+    "synergyHeroId": "minotaur",
+    "reasons": [
+      "Minotaur gives Zhuxin a stable frontline.",
+      "His control and sustain help Zhuxin keep applying lantern pressure without being forced out early."
+    ],
+    "synergyTypes": [
+      "frontline-enabler",
+      "healing-sustain",
+      "cc-chain"
+    ],
+    "proof": [
+      {
+        "id": "minotaur-frontline-for-zhuxin",
+        "category": "frontline-enabler",
+        "priority": "secondary",
+        "impact": "medium",
+        "summary": "Minotaur protects the front of the fight so Zhuxin can keep stacking Soul Snare.",
+        "worksBestWhen": [
+          "Minotaur stands between Zhuxin and enemy divers.",
+          "Zhuxin plays behind Minotaur while stacking control."
+        ],
+        "failureCases": [
+          "Minotaur engages too deep.",
+          "Zhuxin is flanked.",
+          "Zhuxin cannot maintain lantern contact long enough."
+        ]
+      }
+    ]
+  }
+]

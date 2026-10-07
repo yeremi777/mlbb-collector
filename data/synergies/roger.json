@@ -1,0 +1,157 @@
+[
+  {
+    "anchorHeroId": "roger",
+    "synergyHeroId": "angela",
+    "reasons": [
+      "Angela can attach to Roger as he commits in wolf form, helping him survive the dive and continue chasing.",
+      "Roger can use Angela's protection to stay on a low-health or priority target longer."
+    ],
+    "synergyTypes": [
+      "dive-support",
+      "shielding",
+      "mobility-enable"
+    ],
+    "proof": [
+      {
+        "id": "angela-protects-roger-wolf-form-commit",
+        "category": "shielding",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Roger enters the fight to finish targets, while Angela adds protection and sustain during the dive window.",
+        "worksBestWhen": [
+          "Angela attaches after Roger identifies a kill target.",
+          "Roger avoids diving into full enemy crowd control."
+        ],
+        "failureCases": [
+          "Roger dives before Angela is ready.",
+          "Roger targets a durable frontliner.",
+          "The enemy kites until Angela's timing is wasted."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "roger",
+    "synergyHeroId": "rafaela",
+    "reasons": [
+      "Rafaela's movement speed helps Roger chase or disengage, while her healing supports skirmish uptime.",
+      "Roger can use the speed window to enter wolf form and reach enemy damage dealers."
+    ],
+    "synergyTypes": [
+      "mobility-enable",
+      "healing-sustain",
+      "dive-support"
+    ],
+    "proof": [
+      {
+        "id": "rafaela-speeds-roger-skirmish-chase",
+        "category": "mobility-enabler",
+        "priority": "primary",
+        "impact": "medium",
+        "summary": "Roger wants to chase and finish targets, while Rafaela increases his movement reliability during skirmishes.",
+        "worksBestWhen": [
+          "Rafaela speeds Roger before he enters wolf form.",
+          "Roger uses the movement window to target the enemy backline."
+        ],
+        "failureCases": [
+          "Roger overchases beyond support range.",
+          "Rafaela is forced to use healing defensively.",
+          "Enemy hard control stops Roger's chase."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "roger",
+    "synergyHeroId": "kaja",
+    "reasons": [
+      "Kaja can suppress and drag one target into Roger's range, giving Roger a safer execute path.",
+      "Roger can wait for Kaja's isolation before committing in wolf form."
+    ],
+    "synergyTypes": [
+      "pickoff-combo",
+      "cc-chain",
+      "burst-follow-up"
+    ],
+    "proof": [
+      {
+        "id": "kaja-isolates-target-for-roger-finish",
+        "category": "pickoff-combo",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Kaja isolates a priority target, while Roger follows with burst and chase damage.",
+        "worksBestWhen": [
+          "Kaja catches an enemy carry or mage.",
+          "Roger waits to commit until the target is suppressed."
+        ],
+        "failureCases": [
+          "Kaja pulls a tank.",
+          "Roger dives before the pull.",
+          "Enemy teammates peel Roger away from the target."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "roger",
+    "synergyHeroId": "franco",
+    "reasons": [
+      "Franco's hook or suppression creates a target Roger can immediately collapse on.",
+      "Roger can save his close-range commit until Franco has already controlled the target."
+    ],
+    "synergyTypes": [
+      "pickoff-combo",
+      "cc-chain",
+      "burst-follow-up"
+    ],
+    "proof": [
+      {
+        "id": "franco-catch-enables-roger-collapse",
+        "category": "pickoff-combo",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Franco starts the pick by dragging or suppressing a target, while Roger follows with close-range damage.",
+        "worksBestWhen": [
+          "Franco catches squishy heroes near Roger.",
+          "Roger saves wolf-form commit until the target is controlled."
+        ],
+        "failureCases": [
+          "Franco misses hook.",
+          "Roger commits into enemy backup.",
+          "The target survives and Roger cannot reset the fight."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "roger",
+    "synergyHeroId": "floryn",
+    "reasons": [
+      "Floryn's global heal can support Roger even when he is skirmishing away from the main team.",
+      "Roger benefits from global recovery when he commits to fast rotations or isolated fights."
+    ],
+    "synergyTypes": [
+      "healing-sustain",
+      "dive-support",
+      "cooldown-dependent"
+    ],
+    "proof": [
+      {
+        "id": "floryn-global-heal-supports-roger-rotation",
+        "category": "healing-sustain",
+        "priority": "secondary",
+        "impact": "medium",
+        "summary": "Roger often fights in fast rotations, while Floryn can support his commit from anywhere with global healing.",
+        "worksBestWhen": [
+          "Roger times his dive around Bloom availability.",
+          "Floryn saves ultimate for Roger's risky commit."
+        ],
+        "failureCases": [
+          "Roger is bursted before healing matters.",
+          "Anti-heal reduces Floryn's value.",
+          "Roger dives after Bloom has already been used."
+        ]
+      }
+    ]
+  }
+]

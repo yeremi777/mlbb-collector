@@ -1,0 +1,157 @@
+[
+  {
+    "targetHeroId": "leomord",
+    "counterHeroId": "khufra",
+    "reasons": [
+      "Khufra can disrupt Leomord's mounted mobility and chase pattern.",
+      "His tank control makes it harder for Leomord to freely run through the backline."
+    ],
+    "counterTypes": [
+      "anti-dash",
+      "frontline",
+      "anti-engage"
+    ],
+    "proof": [
+      {
+        "id": "khufra-bouncing-ball-vs-leomord-mounted-chase",
+        "category": "mobility-advantage",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Leomord wants to chase through fights with mounted mobility, while Khufra can occupy his path and punish mobility attempts around the backline.",
+        "worksBestWhen": [
+          "Khufra positions between Leomord and the low-health target.",
+          "Khufra saves control until Leomord commits mounted state."
+        ],
+        "failureCases": [
+          "Leomord waits out Khufra's control.",
+          "Khufra is forced away from the backline.",
+          "Leomord's team layers crowd control before Khufra can peel."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "leomord",
+    "counterHeroId": "minsitthar",
+    "reasons": [
+      "King's Calling can restrict directional Blink skills and create a punishing zone around Leomord's commit.",
+      "Leomord becomes easier to focus when he cannot freely chase through the fight."
+    ],
+    "counterTypes": [
+      "anti-dash",
+      "zone-control",
+      "teamfight"
+    ],
+    "proof": [
+      {
+        "id": "minsitthar-kings-calling-vs-leomord-chase-zone",
+        "category": "skill-interaction",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Leomord wants extended chase mobility, while Minsitthar can zone the fight and restrict mobility options inside King's Calling.",
+        "worksBestWhen": [
+          "Minsitthar casts ultimate after Leomord commits.",
+          "The team focuses Leomord inside the zone."
+        ],
+        "failureCases": [
+          "Leomord avoids the King's Calling area.",
+          "Minsitthar commits too early.",
+          "Leomord's team disengages and re-engages after the zone ends."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "leomord",
+    "counterHeroId": "valir",
+    "reasons": [
+      "Valir can push Leomord away when Leomord tries to enter mounted chase range.",
+      "Slows and knockback reduce Leomord's ability to finish low-health targets."
+    ],
+    "counterTypes": [
+      "disengage",
+      "kiting",
+      "anti-engage"
+    ],
+    "proof": [
+      {
+        "id": "valir-searing-torrent-vs-leomord-mounted-engage",
+        "category": "kiting",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Leomord wants to run down targets after mounting, while Valir can knock him back, slow his approach, and reset spacing.",
+        "worksBestWhen": [
+          "Valir saves Searing Torrent for Leomord's mounted engage.",
+          "Teammates kite backward instead of fighting inside Leomord's threat range."
+        ],
+        "failureCases": [
+          "Leomord flanks Valir.",
+          "Valir uses knockback before Leomord commits.",
+          "Leomord has crowd-control follow-up from teammates."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "leomord",
+    "counterHeroId": "kaja",
+    "reasons": [
+      "Kaja can suppress Leomord during mounted commit.",
+      "Suppression can stop Leomord from reaching low-health backliners during his strongest fight window."
+    ],
+    "counterTypes": [
+      "crowd-control-counter",
+      "pickoff",
+      "anti-dive"
+    ],
+    "proof": [
+      {
+        "id": "kaja-divine-judgment-vs-leomord-mounted-commit",
+        "category": "crowd-control-counter",
+        "priority": "primary",
+        "impact": "medium",
+        "summary": "Leomord wants uninterrupted chase after mounting, while Kaja can suppress and drag him away from the target.",
+        "worksBestWhen": [
+          "Kaja waits until Leomord commits to the carry.",
+          "The team bursts Leomord during suppression."
+        ],
+        "failureCases": [
+          "Kaja uses ultimate before Leomord mounts.",
+          "Leomord has defensive support nearby.",
+          "Kaja cannot reach Leomord through frontline pressure."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "leomord",
+    "counterHeroId": "karrie",
+    "reasons": [
+      "Karrie can punish Leomord if he builds durability and commits into extended fights.",
+      "Her max-HP true damage gives her a strong front-to-back answer when protected."
+    ],
+    "counterTypes": [
+      "tank-shred",
+      "true-damage",
+      "kiting"
+    ],
+    "proof": [
+      {
+        "id": "karrie-lightwheel-mark-vs-leomord-durable-commit",
+        "category": "damage-type-advantage",
+        "priority": "secondary",
+        "impact": "medium",
+        "summary": "Leomord can become durable during fight commits, while Karrie's Lightwheel Mark converts repeated hits into max-HP true damage.",
+        "worksBestWhen": [
+          "Karrie has frontline protection.",
+          "Karrie keeps distance while stacking marks."
+        ],
+        "failureCases": [
+          "Leomord reaches Karrie before she can kite.",
+          "Karrie is behind in items.",
+          "Leomord's team dives Karrie together."
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,134 @@
+[
+  {
+    "targetHeroId": "harith",
+    "counterHeroId": "minsitthar",
+    "reasons": [
+      "Minsitthar directly limits Harith's repeated dash pattern.",
+      "Harith loses major fight value when he cannot freely Chrono Dash inside Zaman Force."
+    ],
+    "counterTypes": ["anti-dash", "teamfight", "anti-engage"],
+    "proof": [
+      {
+        "id": "minsitthar-kings-calling-vs-harith-chrono-dash",
+        "category": "skill-interaction",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Harith wants repeated Chrono Dash uptime, while Minsitthar's King’s Calling restricts movement skills inside the field.",
+        "worksBestWhen": [
+          "Minsitthar casts King’s Calling after Harith commits.",
+          "Teammates focus Harith while his dash pattern is restricted."
+        ],
+        "failureCases": [
+          "Harith waits outside the zone.",
+          "Minsitthar casts ultimate too early."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "harith",
+    "counterHeroId": "khufra",
+    "reasons": [
+      "Khufra punishes Harith's blink and dash movement with Bouncing Ball.",
+      "Khufra can stand between Harith and the backline, forcing Harith to delay or misroute his dash chain."
+    ],
+    "counterTypes": ["anti-dash", "anti-engage", "frontline"],
+    "proof": [
+      {
+        "id": "khufra-bouncing-ball-vs-harith-chrono-dash",
+        "category": "skill-interaction",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Harith needs repeated dash access, while Khufra's Bouncing Ball punishes blink or dash attempts around him.",
+        "worksBestWhen": [
+          "Khufra holds Bouncing Ball for Harith's commit.",
+          "Khufra protects the backline instead of chasing too far."
+        ],
+        "failureCases": [
+          "Harith waits out Bouncing Ball.",
+          "Khufra uses anti-dash before Harith enters."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "harith",
+    "counterHeroId": "phoveus",
+    "reasons": [
+      "Phoveus punishes Harith's repeated Chrono Dash usage because Harith needs frequent dashes to maintain pressure, shield uptime, and repositioning inside fights.",
+      "Harith becomes less free to chain dashes aggressively when each dash commitment can create a punish window for Phoveus."
+    ],
+    "counterTypes": ["anti-dash", "cooldown-punish", "teamfight"],
+    "proof": [
+      {
+        "id": "phoveus-anti-dash-vs-harith-chrono-dash",
+        "category": "skill-interaction",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Harith repeatedly uses Chrono Dash, while Phoveus benefits when enemies blink, dash, or are displaced near him, enabling repeated punishment.",
+        "worksBestWhen": [
+          "Phoveus stays close enough to Harith's fight zone.",
+          "Harith commits into Zaman Force near Phoveus or Phoveus's team."
+        ],
+        "failureCases": [
+          "Harith plays outside Phoveus's trigger range.",
+          "Phoveus cannot mark or reach Harith before Harith resets.",
+          "Harith's team kites Phoveus before he converts the anti-dash value."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "harith",
+    "counterHeroId": "obsidia",
+    "reasons": [
+      "Obsidia can prevent Harith from using displacement skills during her tether window, directly cutting off the dash chain Harith needs to keep fighting.",
+      "If Obsidia lands Hunt of Bone after Harith commits, Harith can be forced to stay in a punishable position instead of resetting his position with Chrono Dash."
+    ],
+    "counterTypes": ["anti-dash", "pickoff", "mobility"],
+    "proof": [
+      {
+        "id": "obsidia-hunt-of-bone-vs-harith-chrono-dash",
+        "category": "skill-interaction",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Harith wants to keep dashing with Chrono Dash, while Obsidia can tether him and prevent displacement skills during the effect.",
+        "worksBestWhen": [
+          "Obsidia lands Hunt of Bone after Harith commits.",
+          "Obsidia has enough damage or follow-up to punish Harith during the tether."
+        ],
+        "failureCases": [
+          "Obsidia misses the ultimate.",
+          "Harith baits the ultimate before committing Zaman Force.",
+          "Harith's team peels Obsidia during the tether window."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "harith",
+    "counterHeroId": "kaja",
+    "reasons": [
+      "Kaja can suppress Harith during his commit window and stop his dash cycle long enough for allied burst.",
+      "Kaja is reliable if he gets in range, but he needs follow-up damage and good timing."
+    ],
+    "counterTypes": ["pickoff", "anti-dive", "anti-engage"],
+    "proof": [
+      {
+        "id": "kaja-divine-judgment-vs-harith-dash-cycle",
+        "category": "crowd-control-counter",
+        "priority": "primary",
+        "impact": "medium",
+        "summary": "Harith wants continuous dash uptime, while Kaja can suppress and drag him out of his preferred fight pattern.",
+        "worksBestWhen": [
+          "Kaja waits until Harith commits into range.",
+          "Allies are ready to burst during suppression."
+        ],
+        "failureCases": [
+          "Harith baits Kaja's ultimate with shield and mobility.",
+          "Kaja catches Harith without enough follow-up damage."
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,157 @@
+[
+  {
+    "anchorHeroId": "cyclops",
+    "synergyHeroId": "kaja",
+    "reasons": [
+      "Kaja can suppress and drag a priority target into Cyclops' spell range.",
+      "Cyclops can follow Kaja's isolation with magic damage and Star Power Lockdown."
+    ],
+    "synergyTypes": [
+      "pickoff-combo",
+      "cc-chain",
+      "burst-follow-up"
+    ],
+    "proof": [
+      {
+        "id": "kaja-isolates-target-for-cyclops-lockdown",
+        "category": "pickoff-combo",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Kaja isolates a target with suppression, and Cyclops follows with magic damage and lockdown to finish the pick.",
+        "worksBestWhen": [
+          "Kaja catches a squishy or mobile target.",
+          "Cyclops is close enough to cast immediately."
+        ],
+        "failureCases": [
+          "Kaja catches a tank.",
+          "Cyclops is zoned away before follow-up.",
+          "The team lacks damage to finish during the lock window."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "cyclops",
+    "synergyHeroId": "franco",
+    "reasons": [
+      "Franco can pull or suppress one target, giving Cyclops a clear follow-up target.",
+      "Cyclops can add immediate magic damage and lockdown after Franco creates the pick."
+    ],
+    "synergyTypes": [
+      "pickoff-combo",
+      "cc-chain",
+      "burst-follow-up"
+    ],
+    "proof": [
+      {
+        "id": "franco-pickoff-sets-cyclops-damage",
+        "category": "pickoff-combo",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Franco pulls or suppresses one target, while Cyclops adds immediate magic damage and target lockdown.",
+        "worksBestWhen": [
+          "Franco lands hook on a high-value target.",
+          "Cyclops holds cooldowns until the target is displaced."
+        ],
+        "failureCases": [
+          "Franco misses hook.",
+          "The target is too durable.",
+          "Cyclops uses ultimate too early or on a low-value target."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "cyclops",
+    "synergyHeroId": "tigreal",
+    "reasons": [
+      "Tigreal's crowd control gives Cyclops a safer and more predictable window to cast into the fight.",
+      "Cyclops can follow Tigreal's engage with repeated spell damage and target lockdown."
+    ],
+    "synergyTypes": [
+      "engage-follow-up",
+      "cc-chain",
+      "teamfight-combo"
+    ],
+    "proof": [
+      {
+        "id": "tigreal-engage-gives-cyclops-cast-window",
+        "category": "engage-follow-up",
+        "priority": "primary",
+        "impact": "medium",
+        "summary": "Tigreal starts the fight and controls enemy movement, while Cyclops follows with repeated magic skills and target lockdown.",
+        "worksBestWhen": [
+          "Cyclops stands behind the frontline.",
+          "Tigreal controls enemies before Cyclops commits."
+        ],
+        "failureCases": [
+          "Tigreal engages out of Cyclops' range.",
+          "Cyclops is dived before the fight starts.",
+          "The enemy disengages before Cyclops can stack damage."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "cyclops",
+    "synergyHeroId": "angela",
+    "reasons": [
+      "Angela helps Cyclops survive when he steps forward to chase or continue spell rotations.",
+      "Cyclops can play more aggressively when Angela adds healing and shielding during his commit."
+    ],
+    "synergyTypes": [
+      "protect",
+      "shielding",
+      "mobility-enable"
+    ],
+    "proof": [
+      {
+        "id": "angela-protects-cyclops-chase-window",
+        "category": "protection",
+        "priority": "secondary",
+        "impact": "medium",
+        "summary": "Cyclops often needs to stay near spell range, while Angela can heal, shield, and support him during chase or retreat.",
+        "worksBestWhen": [
+          "Angela saves support for Cyclops' forward commit.",
+          "Cyclops is already ahead or has enough damage to chase."
+        ],
+        "failureCases": [
+          "Cyclops is instantly bursted before support arrives.",
+          "Angela attaches to the wrong target.",
+          "Cyclops overchases without team vision."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "cyclops",
+    "synergyHeroId": "floryn",
+    "reasons": [
+      "Floryn can sustain Cyclops during skirmishes even when he rotates away from the support position.",
+      "Cyclops benefits from global healing when he chases or fights outside a tight grouped formation."
+    ],
+    "synergyTypes": [
+      "healing-sustain",
+      "protect",
+      "cooldown-dependent"
+    ],
+    "proof": [
+      {
+        "id": "floryn-global-heal-supports-cyclops-skirmish",
+        "category": "healing-sustain",
+        "priority": "secondary",
+        "impact": "medium",
+        "summary": "Cyclops benefits from extra sustain while chasing or skirmishing, and Floryn can provide global healing without needing to stand beside him.",
+        "worksBestWhen": [
+          "Cyclops engages when Floryn's ultimate is available.",
+          "The team avoids forcing fights after the global heal is used."
+        ],
+        "failureCases": [
+          "Cyclops is burst down before the heal timing.",
+          "Anti-heal reduces the sustain value.",
+          "Cyclops fights while Floryn's ultimate is unavailable."
+        ]
+      }
+    ]
+  }
+]

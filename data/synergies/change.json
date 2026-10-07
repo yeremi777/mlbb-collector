@@ -1,0 +1,157 @@
+[
+  {
+    "anchorHeroId": "change",
+    "synergyHeroId": "tigreal",
+    "reasons": [
+      "Tigreal can group and hold enemies long enough for Chang'e to aim Meteor Shower into a controlled fight area.",
+      "Chang'e can follow Tigreal's engage from safer distance instead of walking into the frontline."
+    ],
+    "synergyTypes": [
+      "engage-follow-up",
+      "aoe-follow-up",
+      "teamfight-combo"
+    ],
+    "proof": [
+      {
+        "id": "change-meteor-shower-after-tigreal-engage",
+        "category": "engage-follow-up",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Tigreal creates the crowd-control opening, while Chang'e uses sustained ranged damage to punish enemies caught in the grouped setup.",
+        "worksBestWhen": [
+          "Tigreal engages after Chang'e is close enough to cast Meteor Shower.",
+          "Chang'e keeps Meteor Shower aimed through the controlled area instead of chasing too wide."
+        ],
+        "failureCases": [
+          "Tigreal engages outside Chang'e's cast angle.",
+          "Enemies spread before Tigreal commits.",
+          "Chang'e is forced to reposition before her damage finishes."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "change",
+    "synergyHeroId": "atlas",
+    "reasons": [
+      "Atlas can pull enemies into a compact area, giving Chang'e a clean Meteor Shower line.",
+      "Chang'e adds long-duration follow-up damage after Atlas starts the grouped fight."
+    ],
+    "synergyTypes": [
+      "setup-combo",
+      "aoe-follow-up",
+      "teamfight-combo"
+    ],
+    "proof": [
+      {
+        "id": "change-meteor-shower-after-atlas-pull",
+        "category": "setup-combo",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Atlas creates a grouped displacement and stun window, while Chang'e converts that window into sustained area damage.",
+        "worksBestWhen": [
+          "Atlas catches multiple enemies before Chang'e commits Meteor Shower.",
+          "Chang'e has vision and enough distance to fire safely."
+        ],
+        "failureCases": [
+          "Atlas misses the pull or catches only a tank.",
+          "Enemy divers reach Chang'e before she finishes casting.",
+          "Chang'e fires at the wrong angle after the pull."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "change",
+    "synergyHeroId": "belerick",
+    "reasons": [
+      "Belerick gives Chang'e a durable front line that can absorb pressure while she pokes from behind.",
+      "Belerick's taunt can keep enemies inside Chang'e's Meteor Shower path for a short but valuable damage window."
+    ],
+    "synergyTypes": [
+      "frontline-enabler",
+      "teamfight-combo",
+      "positioning-dependent"
+    ],
+    "proof": [
+      {
+        "id": "belerick-frontline-for-change-poke",
+        "category": "frontline-enabler",
+        "priority": "primary",
+        "impact": "medium",
+        "summary": "Belerick protects the fight shape by standing between Chang'e and enemy divers, then uses taunt to hold enemies where Chang'e can damage them.",
+        "worksBestWhen": [
+          "Belerick controls choke points or objective entrances.",
+          "Chang'e positions behind Belerick before using Meteor Shower."
+        ],
+        "failureCases": [
+          "Belerick cannot reach the enemy backline.",
+          "Chang'e stands too close and gets collapsed on.",
+          "The enemy saves mobility skills until after Belerick's taunt."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "change",
+    "synergyHeroId": "lolita",
+    "reasons": [
+      "Lolita can shield Chang'e during poke and siege situations where ranged pressure would interrupt Chang'e's safe positioning.",
+      "Lolita's charged crowd-control threat helps Chang'e keep enemies at a controlled distance."
+    ],
+    "synergyTypes": [
+      "protect",
+      "backline-protection",
+      "poke-siege"
+    ],
+    "proof": [
+      {
+        "id": "lolita-protects-change-siege-angle",
+        "category": "protection",
+        "priority": "primary",
+        "impact": "medium",
+        "summary": "Lolita protects Chang'e's poke pattern by reducing incoming ranged pressure and threatening counter-engage if enemies walk forward.",
+        "worksBestWhen": [
+          "Lolita stands between Chang'e and projectile-heavy enemies.",
+          "Chang'e plays behind Lolita instead of isolated side angles."
+        ],
+        "failureCases": [
+          "Enemy damage comes from flank assassins rather than front-facing projectiles.",
+          "Lolita uses shield too early and cannot protect the real siege window.",
+          "Chang'e overextends after minion wave clear."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "change",
+    "synergyHeroId": "rafaela",
+    "reasons": [
+      "Rafaela's healing and movement support help Chang'e maintain poke pressure without resetting too often.",
+      "Chang'e benefits from movement support because her damage pattern depends heavily on spacing and safe angles."
+    ],
+    "synergyTypes": [
+      "healing-sustain",
+      "mobility-enable",
+      "poke-siege"
+    ],
+    "proof": [
+      {
+        "id": "rafaela-sustain-and-movement-for-change-poke",
+        "category": "mobility-enabler",
+        "priority": "secondary",
+        "impact": "medium",
+        "summary": "Rafaela helps Chang'e reposition and stay healthy while Chang'e repeatedly clears, pokes, and sieges from range.",
+        "worksBestWhen": [
+          "Rafaela keeps Chang'e moving between poke angles.",
+          "The team plays a slower siege or objective-control style."
+        ],
+        "failureCases": [
+          "Enemy burst kills Chang'e before healing matters.",
+          "Rafaela and Chang'e are both caught by the same engage.",
+          "The team lacks a real front line to hold space."
+        ]
+      }
+    ]
+  }
+]

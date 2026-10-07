@@ -1,0 +1,152 @@
+[
+  {
+    "anchorHeroId": "kagura",
+    "synergyHeroId": "tigreal",
+    "reasons": [
+      "Tigreal can group enemies, giving Kagura a clearer umbrella combo target area.",
+      "Kagura can follow the engage with burst, pull, and reposition tools."
+    ],
+    "synergyTypes": [
+      "engage-follow-up",
+      "cc-chain",
+      "teamfight-combo"
+    ],
+    "proof": [
+      {
+        "id": "tigreal-grouped-engage-for-kagura-combo",
+        "category": "engage-follow-up",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Tigreal creates the grouped engage, while Kagura follows with umbrella burst and control.",
+        "worksBestWhen": [
+          "Kagura has umbrella position ready before Tigreal commits.",
+          "Kagura is close enough to follow the grouped control."
+        ],
+        "failureCases": [
+          "Tigreal engages outside Kagura's combo range.",
+          "Enemies spread before Kagura's delayed control lands."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "kagura",
+    "synergyHeroId": "atlas",
+    "reasons": [
+      "Atlas can drag enemies together, making Kagura's delayed pull and burst easier to land.",
+      "Kagura can punish the grouped enemies from a safer mid-range position."
+    ],
+    "synergyTypes": [
+      "setup-combo",
+      "aoe-follow-up",
+      "teamfight-combo"
+    ],
+    "proof": [
+      {
+        "id": "atlas-fatal-links-sets-kagura-umbrella-combo",
+        "category": "setup-combo",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Atlas groups targets, then Kagura layers umbrella combo damage onto the grouped area.",
+        "worksBestWhen": [
+          "Kagura saves her main combo until after Atlas confirms the drag.",
+          "Atlas drags enemies into Kagura's umbrella range."
+        ],
+        "failureCases": [
+          "Atlas misses.",
+          "Enemies spread before Kagura's delayed control lands."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "kagura",
+    "synergyHeroId": "chou",
+    "reasons": [
+      "Chou can isolate or kick a priority target into Kagura's damage range.",
+      "Kagura can follow the displaced target with umbrella burst and control."
+    ],
+    "synergyTypes": [
+      "pickoff-combo",
+      "setup-combo",
+      "burst-follow-up"
+    ],
+    "proof": [
+      {
+        "id": "chou-kick-delivers-target-to-kagura",
+        "category": "pickoff-combo",
+        "priority": "primary",
+        "impact": "medium",
+        "summary": "Chou starts a single-target displacement, and Kagura follows with burst before the target stabilizes.",
+        "worksBestWhen": [
+          "Chou kicks the target toward Kagura or into a predictable path.",
+          "Kagura tracks the kick direction before committing her combo."
+        ],
+        "failureCases": [
+          "Chou kicks the target away from Kagura's umbrella position.",
+          "Kagura uses her combo before the displacement is confirmed."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "kagura",
+    "synergyHeroId": "franco",
+    "reasons": [
+      "Franco can pull one enemy into Kagura's combo range.",
+      "Kagura can add burst and crowd control after the pull, turning the catch into a kill threat."
+    ],
+    "synergyTypes": [
+      "pickoff-combo",
+      "setup-combo",
+      "burst-follow-up"
+    ],
+    "proof": [
+      {
+        "id": "franco-hook-pulls-target-for-kagura-combo",
+        "category": "pickoff-combo",
+        "priority": "primary",
+        "impact": "medium",
+        "summary": "Franco catches one target, while Kagura layers umbrella burst and control onto the displaced enemy.",
+        "worksBestWhen": [
+          "Franco catches a squishy target.",
+          "Kagura has umbrella position ready before the pull lands."
+        ],
+        "failureCases": [
+          "Franco catches a durable frontline target.",
+          "Kagura's umbrella is not positioned."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "kagura",
+    "synergyHeroId": "kaja",
+    "reasons": [
+      "Kaja can suppress and drag a target into Kagura's prepared umbrella zone.",
+      "Kagura can follow the controlled target with burst and delayed pull before the target can freely reposition."
+    ],
+    "synergyTypes": [
+      "setup-combo",
+      "pickoff-combo",
+      "burst-follow-up"
+    ],
+    "proof": [
+      {
+        "id": "kaja-drag-sets-kagura-umbrella-burst",
+        "category": "setup-combo",
+        "priority": "primary",
+        "impact": "medium",
+        "summary": "Kaja creates a controlled single-target setup, while Kagura uses umbrella burst and pull to finish the pickoff.",
+        "worksBestWhen": [
+          "Kaja drags the target toward Kagura's umbrella position.",
+          "Kagura waits for Kaja's confirmed catch before using the main combo."
+        ],
+        "failureCases": [
+          "Kaja catches a tank or drags the target outside Kagura's umbrella range.",
+          "Kagura uses her combo before Kaja confirms the target."
+        ]
+      }
+    ]
+  }
+]

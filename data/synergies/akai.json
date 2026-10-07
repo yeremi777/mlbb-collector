@@ -1,0 +1,162 @@
+[
+  {
+    "anchorHeroId": "akai",
+    "synergyHeroId": "eudora",
+    "reasons": [
+      "Eudora can burst a target that Akai pins or displaces into a fixed position.",
+      "Akai's control gives Eudora a clearer window to land her single-target magic combo."
+    ],
+    "synergyTypes": [
+      "pickoff-combo",
+      "setup-combo",
+      "burst-follow-up"
+    ],
+    "proof": [
+      {
+        "id": "eudora-burst-follows-akai-wall-pin",
+        "category": "pickoff-combo",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Akai isolates or pins a target with Heavy Spin, and Eudora follows with magic burst during the control window.",
+        "worksBestWhen": [
+          "Akai pins a squishy target near terrain.",
+          "Eudora is already in combo range.",
+          "The team focuses the same target after Akai commits."
+        ],
+        "failureCases": [
+          "Akai pushes the target out of Eudora's range.",
+          "Eudora is too far to follow the pin.",
+          "The target receives peel, shield, or magic-defense support."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "akai",
+    "synergyHeroId": "saber",
+    "reasons": [
+      "Saber can burst a target that Akai separates from the enemy team.",
+      "Akai's displacement helps create the isolation that Saber wants for Triple Sweep."
+    ],
+    "synergyTypes": [
+      "pickoff-combo",
+      "cc-chain",
+      "burst-follow-up"
+    ],
+    "proof": [
+      {
+        "id": "saber-triple-sweep-follows-akai-isolation",
+        "category": "pickoff-combo",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Akai separates or pins a priority enemy, and Saber follows with single-target airborne burst.",
+        "worksBestWhen": [
+          "Akai isolates a fragile backline target.",
+          "Saber has burst cooldowns ready.",
+          "Akai pins away from enemy peel."
+        ],
+        "failureCases": [
+          "Akai displaces the target outside Saber's reach.",
+          "Saber commits to a durable target.",
+          "Enemy teammates collapse on Saber after entry."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "akai",
+    "synergyHeroId": "pharsa",
+    "reasons": [
+      "Pharsa can follow Akai's displacement and zoning with long-range AoE damage.",
+      "Akai's frontline pressure helps Pharsa cast from a safer position."
+    ],
+    "synergyTypes": [
+      "setup-combo",
+      "frontline-enabler",
+      "teamfight-combo"
+    ],
+    "proof": [
+      {
+        "id": "pharsa-airstrike-follows-akai-zone-control",
+        "category": "setup-combo",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Akai pins or zones enemies, and Pharsa follows with ranged damage into the controlled area.",
+        "worksBestWhen": [
+          "Akai controls enemies near terrain or an objective.",
+          "Pharsa has safe vision and range to cast.",
+          "Akai does not push enemies out of Pharsa's damage area."
+        ],
+        "failureCases": [
+          "Enemy assassins reach Pharsa before follow-up.",
+          "Akai engages outside Pharsa's range.",
+          "Enemies disengage from the controlled zone."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "akai",
+    "synergyHeroId": "vale",
+    "reasons": [
+      "Vale can layer knock-up, slow, and burst after Akai pins or disrupts enemies.",
+      "Akai's control helps Vale connect AoE skills on targets that have limited movement."
+    ],
+    "synergyTypes": [
+      "cc-chain",
+      "burst-follow-up",
+      "pickoff-combo"
+    ],
+    "proof": [
+      {
+        "id": "vale-burst-chains-after-akai-control",
+        "category": "crowd-control-chain",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Akai controls enemy movement with displacement, and Vale follows with crowd control plus magic burst into the same target area.",
+        "worksBestWhen": [
+          "Akai pins or zones a priority target.",
+          "Vale holds cooldowns for the follow-up window.",
+          "Both heroes focus the same enemy group or carry."
+        ],
+        "failureCases": [
+          "Vale casts before Akai finishes positioning the target.",
+          "Enemies spread before Vale's AoE lands.",
+          "The target escapes the control chain with mobility or protection."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "akai",
+    "synergyHeroId": "claude",
+    "reasons": [
+      "Claude can enter after Akai disrupts the enemy formation and creates space.",
+      "Akai can pin or zone enemies so Claude has a clearer Blazing Duet damage window."
+    ],
+    "synergyTypes": [
+      "engage-follow-up",
+      "aoe-follow-up",
+      "teamfight-combo"
+    ],
+    "proof": [
+      {
+        "id": "claude-blazing-duet-follows-akai-disruption",
+        "category": "engage-follow-up",
+        "priority": "secondary",
+        "impact": "high",
+        "summary": "Akai starts the displacement and zoning, while Claude follows with Blazing Duet after the enemy formation is disrupted.",
+        "worksBestWhen": [
+          "Akai controls the enemy frontline or pins a key target.",
+          "Claude waits until Akai creates space.",
+          "The team is ready to protect Claude during his entry."
+        ],
+        "failureCases": [
+          "Akai pushes enemies out of Claude's damage area.",
+          "Claude enters before Akai controls enemy peel.",
+          "Enemy displacement or burst forces Claude out of the fight."
+        ]
+      }
+    ]
+  }
+]

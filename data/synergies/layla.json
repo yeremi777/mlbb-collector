@@ -1,0 +1,152 @@
+[
+  {
+    "anchorHeroId": "layla",
+    "synergyHeroId": "lolita",
+    "reasons": [
+      "Lolita protects Layla from ranged projectiles and gives her a front wall to attack behind.",
+      "Layla can use her range more safely when Lolita blocks incoming pressure from the front."
+    ],
+    "synergyTypes": [
+      "backline-protection",
+      "frontline-enabler",
+      "protect"
+    ],
+    "proof": [
+      {
+        "id": "lolita-protection-for-layla-long-range-damage",
+        "category": "protection",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Lolita blocks ranged pressure while Layla uses her range to keep dealing damage from the backline.",
+        "worksBestWhen": [
+          "Lolita positions between Layla and enemy poke.",
+          "Layla keeps attacking from behind Lolita instead of stepping forward."
+        ],
+        "failureCases": [
+          "Enemy divers flank around Lolita.",
+          "Layla is caught while Lolita's shield is unavailable."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "layla",
+    "synergyHeroId": "minotaur",
+    "reasons": [
+      "Minotaur gives Layla frontline protection, healing, and crowd control against enemies trying to dive her.",
+      "Layla can keep attacking when Minotaur peels divers away from her backline position."
+    ],
+    "synergyTypes": [
+      "frontline-enabler",
+      "healing-sustain",
+      "peel"
+    ],
+    "proof": [
+      {
+        "id": "minotaur-peel-for-layla-backline-safety",
+        "category": "peel",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Minotaur protects Layla by standing in front, healing, and controlling divers who enter her attack space.",
+        "worksBestWhen": [
+          "Minotaur saves control for enemy dive timing.",
+          "Layla stays within peel range."
+        ],
+        "failureCases": [
+          "Minotaur engages too far forward.",
+          "Enemy assassins attack Layla from an unprotected side angle."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "layla",
+    "synergyHeroId": "rafaela",
+    "reasons": [
+      "Rafaela helps Layla reposition, survive poke, and escape when enemies try to close the distance.",
+      "Layla benefits from heal and speed support because her damage pattern depends on keeping safe spacing."
+    ],
+    "synergyTypes": [
+      "healing-sustain",
+      "mobility-enable",
+      "backline-protection"
+    ],
+    "proof": [
+      {
+        "id": "rafaela-speed-heal-for-layla-spacing",
+        "category": "protection",
+        "priority": "secondary",
+        "impact": "medium",
+        "summary": "Rafaela gives Layla healing and speed support, improving Layla's ability to keep safe spacing.",
+        "worksBestWhen": [
+          "Rafaela saves speed support for dive or disengage.",
+          "Layla stays close enough to receive support."
+        ],
+        "failureCases": [
+          "Layla is burst before Rafaela can heal.",
+          "Layla overextends after receiving speed support."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "layla",
+    "synergyHeroId": "tigreal",
+    "reasons": [
+      "Tigreal creates space in front of Layla and can start fights that allow Layla to fire safely from range.",
+      "Layla can follow Tigreal's control from a protected backline position."
+    ],
+    "synergyTypes": [
+      "frontline-enabler",
+      "engage-follow-up",
+      "teamfight-combo"
+    ],
+    "proof": [
+      {
+        "id": "tigreal-frontline-for-layla-range-follow-up",
+        "category": "frontline-enabler",
+        "priority": "primary",
+        "impact": "medium",
+        "summary": "Tigreal holds the frontline and controls enemies, giving Layla time and space to attack from the backline.",
+        "worksBestWhen": [
+          "Tigreal engages within Layla's follow-up range.",
+          "Layla does not walk forward into enemy counter-engage."
+        ],
+        "failureCases": [
+          "Tigreal dives too deep and leaves Layla unprotected.",
+          "Enemy flankers ignore Tigreal and reach Layla."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "layla",
+    "synergyHeroId": "diggie",
+    "reasons": [
+      "Diggie can protect Layla from crowd-control engage, which is one of the main ways enemies punish her immobility.",
+      "Layla can keep attacking when Diggie reduces the value of enemy lockdown timing."
+    ],
+    "synergyTypes": [
+      "protect",
+      "backline-protection",
+      "cooldown-dependent"
+    ],
+    "proof": [
+      {
+        "id": "diggie-protection-for-layla-anti-engage",
+        "category": "protection",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Diggie reduces the threat of crowd-control engage, helping Layla keep attacking instead of being locked down immediately.",
+        "worksBestWhen": [
+          "Diggie saves protection for the enemy's real engage.",
+          "Layla stays near Diggie during key teamfights."
+        ],
+        "failureCases": [
+          "Diggie's key protection is baited early.",
+          "Layla is killed by raw burst before protection matters."
+        ]
+      }
+    ]
+  }
+]

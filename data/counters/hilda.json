@@ -1,0 +1,152 @@
+[
+  {
+    "targetHeroId": "hilda",
+    "counterHeroId": "baxia",
+    "reasons": [
+      "Baxia directly reduces HP regeneration and shield value, which targets Hilda’s sustain identity.",
+      "His durability helps contest her early invade and bush-control pattern."
+    ],
+    "counterTypes": [
+      "anti-sustain",
+      "frontline",
+      "anti-invade"
+    ],
+    "proof": [
+      {
+        "id": "baxia-anti-regen-vs-hilda-bush-sustain",
+        "category": "sustain-anti-sustain",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Hilda wants to reset through bush sustain and shields, while Baxia reduces HP regen and shield value when his skills hit.",
+        "worksBestWhen": [
+          "Baxia contests Hilda early instead of letting her invade freely.",
+          "Teammates collapse when Hilda overextends."
+        ],
+        "failureCases": [
+          "Baxia cannot maintain contact with Hilda.",
+          "Hilda avoids full fights and only trades briefly from bushes."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "hilda",
+    "counterHeroId": "karrie",
+    "reasons": [
+      "Karrie's Lightwheel Mark true damage based on max HP is strong into durable frontliners.",
+      "She can punish Hilda if Hilda fails to instantly reach or burst her."
+    ],
+    "counterTypes": [
+      "true-damage",
+      "tank-shred",
+      "kiting"
+    ],
+    "proof": [
+      {
+        "id": "karrie-lightwheel-mark-vs-hilda-durability",
+        "category": "damage-type-advantage",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Hilda relies on durability and sustain to survive trades, while Karrie's stacking true damage threatens high-HP targets.",
+        "worksBestWhen": [
+          "Karrie has peel and space to stack attacks.",
+          "Hilda is forced to approach through frontline control."
+        ],
+        "failureCases": [
+          "Hilda reaches Karrie before Karrie can stack damage.",
+          "Karrie is isolated without peel."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "hilda",
+    "counterHeroId": "valir",
+    "reasons": [
+      "Valir can push Hilda away and slow her chase.",
+      "His range and disengage tools make it harder for Hilda to force short melee trades."
+    ],
+    "counterTypes": [
+      "kiting",
+      "disengage",
+      "range-advantage"
+    ],
+    "proof": [
+      {
+        "id": "valir-searing-torrent-vs-hilda-chase",
+        "category": "kiting",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Hilda wants to run down targets in melee range, while Valir can knock her back, slow her, and create space.",
+        "worksBestWhen": [
+          "Valir saves Searing Torrent for Hilda's commit.",
+          "Valir fights near teammates who can punish the displacement."
+        ],
+        "failureCases": [
+          "Hilda flanks from fog and reaches Valir first.",
+          "Valir wastes knockback before Hilda commits."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "hilda",
+    "counterHeroId": "kaja",
+    "reasons": [
+      "Kaja can stop Hilda's dive and drag her into team damage.",
+      "Suppression is valuable because Hilda depends on movement and short trade timing."
+    ],
+    "counterTypes": [
+      "suppression",
+      "pickoff",
+      "anti-dive"
+    ],
+    "proof": [
+      {
+        "id": "kaja-divine-judgment-vs-hilda-dive",
+        "category": "crowd-control-counter",
+        "priority": "primary",
+        "impact": "medium",
+        "summary": "Hilda wants fast melee access, while Kaja can suppress and reposition her during the dive window.",
+        "worksBestWhen": [
+          "Kaja saves Divine Judgment for Hilda's commit.",
+          "The team can burst Hilda during suppression."
+        ],
+        "failureCases": [
+          "Kaja suppresses Hilda too early before she fully commits.",
+          "Hilda has enough backup to turn the fight."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "hilda",
+    "counterHeroId": "franco",
+    "reasons": [
+      "Franco can punish Hilda's bush play if her path is predicted.",
+      "Suppression prevents Hilda from using movement and sustain tempo during a pickoff."
+    ],
+    "counterTypes": [
+      "suppression",
+      "pickoff",
+      "vision-awareness"
+    ],
+    "proof": [
+      {
+        "id": "franco-bloody-hunt-vs-hilda-bush-pathing",
+        "category": "vision-awareness",
+        "priority": "condition",
+        "impact": "medium",
+        "summary": "Hilda uses bushes to create pressure and recover, while Franco can punish predictable bush routes with hook or suppression.",
+        "worksBestWhen": [
+          "Franco tracks Hilda's invade path.",
+          "Allies are ready to burst during Bloody Hunt."
+        ],
+        "failureCases": [
+          "Franco loses vision and hooks blindly.",
+          "Hilda baits Franco's control before committing."
+        ]
+      }
+    ]
+  }
+]

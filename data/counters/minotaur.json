@@ -1,0 +1,152 @@
+[
+  {
+    "targetHeroId": "minotaur",
+    "counterHeroId": "diggie",
+    "reasons": [
+      "Diggie can reduce Minotaur's main teamfight value by protecting allies from crowd-control chains.",
+      "Minotaur relies on AoE engage, so Time Journey can deny the most important setup window."
+    ],
+    "counterTypes": [
+      "anti-cc",
+      "cleanse",
+      "teamfight"
+    ],
+    "proof": [
+      {
+        "id": "diggie-time-journey-vs-minotaur-teamfight-engage",
+        "category": "crowd-control-counter",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Minotaur wants to lock multiple enemies with AoE crowd control, while Diggie can protect grouped allies during the engage window.",
+        "worksBestWhen": [
+          "Diggie saves Time Journey for Minoan Fury or the real stomp engage.",
+          "Allies are close enough to receive protection."
+        ],
+        "failureCases": [
+          "Minotaur baits Time Journey with a fake engage.",
+          "Diggie is caught or zoned before the fight starts."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "minotaur",
+    "counterHeroId": "baxia",
+    "reasons": [
+      "Baxia reduces Minotaur's healing value in extended fights.",
+      "Anti-heal pressure makes it harder for Minotaur's team to stabilize after engage."
+    ],
+    "counterTypes": [
+      "anti-sustain",
+      "anti-heal",
+      "frontline"
+    ],
+    "proof": [
+      {
+        "id": "baxia-anti-heal-vs-minotaur-motivation-roar",
+        "category": "sustain-anti-sustain",
+        "priority": "primary",
+        "impact": "medium",
+        "summary": "Minotaur wants to heal and extend teamfights, while Baxia can reduce the healing value so the enemy team has less time to stabilize.",
+        "worksBestWhen": [
+          "Baxia applies anti-heal before Minotaur's team receives follow-up sustain.",
+          "Allies commit damage while healing value is reduced."
+        ],
+        "failureCases": [
+          "Baxia cannot reach the grouped enemy team.",
+          "Minotaur wins the engage before anti-heal matters."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "minotaur",
+    "counterHeroId": "valir",
+    "reasons": [
+      "Valir can push Minotaur away before Minotaur reaches a strong engage angle.",
+      "Knockback and slow pressure make Minotaur's approach more predictable and easier to reset."
+    ],
+    "counterTypes": [
+      "disengage",
+      "kiting",
+      "anti-engage"
+    ],
+    "proof": [
+      {
+        "id": "valir-knockback-vs-minotaur-engage-path",
+        "category": "positioning-requirement",
+        "priority": "condition",
+        "impact": "medium",
+        "summary": "Minotaur wants to enter the middle of a teamfight, while Valir can deny approach angles with knockback and slow before Minotaur reaches the backline.",
+        "worksBestWhen": [
+          "Valir holds knockback for Minotaur's entry.",
+          "Valir stays outside Despair Stomp range."
+        ],
+        "failureCases": [
+          "Minotaur engages from fog before Valir reacts.",
+          "Valir wastes knockback on another target."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "minotaur",
+    "counterHeroId": "karrie",
+    "reasons": [
+      "Karrie can pressure Minotaur's tank durability with repeated tank-shred damage.",
+      "Minotaur struggles when he cannot survive long enough to cycle healing and control."
+    ],
+    "counterTypes": [
+      "tank-shred",
+      "kiting",
+      "damage-type-advantage"
+    ],
+    "proof": [
+      {
+        "id": "karrie-tank-shred-vs-minotaur-frontline-durability",
+        "category": "damage-type-advantage",
+        "priority": "secondary",
+        "impact": "medium",
+        "summary": "Minotaur wants to absorb damage and control space, while Karrie can wear him down if she has protection and attack uptime.",
+        "worksBestWhen": [
+          "Karrie has peel against Minotaur's engage.",
+          "Karrie attacks from safe distance during the frontline exchange."
+        ],
+        "failureCases": [
+          "Minotaur catches Karrie with AoE control.",
+          "Karrie is zoned before she can stack damage."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "minotaur",
+    "counterHeroId": "dyrroth",
+    "reasons": [
+      "Dyrroth can reduce Minotaur's durability and punish him before extended sustain matters.",
+      "Defense reduction and burst pressure help break through Minotaur's frontline role."
+    ],
+    "counterTypes": [
+      "penetration",
+      "burst",
+      "cooldown-punish"
+    ],
+    "proof": [
+      {
+        "id": "dyrroth-defense-reduction-vs-minotaur-frontline",
+        "category": "damage-type-advantage",
+        "priority": "secondary",
+        "impact": "medium",
+        "summary": "Minotaur wants to survive long enough to engage, heal, and control the fight, while Dyrroth can reduce his durability and force a faster kill window.",
+        "worksBestWhen": [
+          "Dyrroth engages when Minotaur's main control is unavailable.",
+          "Allies follow up on the defense-reduction window."
+        ],
+        "failureCases": [
+          "Minotaur catches Dyrroth with crowd control first.",
+          "Dyrroth dives without enough team damage."
+        ]
+      }
+    ]
+  }
+]

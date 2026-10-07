@@ -1,0 +1,157 @@
+[
+  {
+    "anchorHeroId": "mathilda",
+    "synergyHeroId": "paquito",
+    "reasons": [
+      "Mathilda helps Paquito enter, reposition, or exit after committing his close-range combo.",
+      "Paquito can convert Mathilda's shield and movement support into stronger skirmish pressure."
+    ],
+    "synergyTypes": [
+      "mobility-enable",
+      "dive-support",
+      "burst-follow-up"
+    ],
+    "proof": [
+      {
+        "id": "mathilda-guiding-wind-for-paquito-combo",
+        "category": "mobility-enabler",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Mathilda gives Paquito extra access and safety, while Paquito turns that mobility into close-range burst and control pressure.",
+        "worksBestWhen": [
+          "Mathilda saves Guiding Wind for Paquito's engage or disengage.",
+          "Paquito has combo resources ready before using the movement support."
+        ],
+        "failureCases": [
+          "Paquito dives before Mathilda can support him.",
+          "Mathilda uses Guiding Wind on another teammate first.",
+          "Enemy hard crowd control locks Paquito before he can reset position."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "mathilda",
+    "synergyHeroId": "claude",
+    "reasons": [
+      "Mathilda gives Claude another movement and shield option when he enters a teamfight.",
+      "Claude benefits from Mathilda's support because his damage window can require aggressive positioning."
+    ],
+    "synergyTypes": [
+      "mobility-enable",
+      "shielding",
+      "teamfight-combo"
+    ],
+    "proof": [
+      {
+        "id": "mathilda-reposition-support-for-claude",
+        "category": "protection",
+        "priority": "secondary",
+        "impact": "medium",
+        "summary": "Mathilda supports Claude's repositioning and survival, giving him a safer entry or exit route during damage windows.",
+        "worksBestWhen": [
+          "Claude waits until Mathilda is close enough to support him.",
+          "Mathilda keeps an escape or follow-up route available after Claude commits."
+        ],
+        "failureCases": [
+          "Claude enters while Mathilda is too far away.",
+          "Enemy hard control is saved for Claude's entry.",
+          "Mathilda is forced to use mobility defensively before Claude commits."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "mathilda",
+    "synergyHeroId": "yu-zhong",
+    "reasons": [
+      "Mathilda can support Yu Zhong's backline dive with shield and movement follow-up.",
+      "Yu Zhong creates pressure inside the enemy formation, giving Mathilda a clear teammate to reinforce."
+    ],
+    "synergyTypes": [
+      "dive-support",
+      "mobility-enable",
+      "protection"
+    ],
+    "proof": [
+      {
+        "id": "mathilda-dive-support-for-yu-zhong",
+        "category": "mobility-enabler",
+        "priority": "secondary",
+        "impact": "medium",
+        "summary": "Mathilda helps Yu Zhong stay connected to the fight after he dives, while Yu Zhong creates space for the team to collapse.",
+        "worksBestWhen": [
+          "Yu Zhong dives after Mathilda can follow the fight direction.",
+          "Mathilda uses shield and movement to support Yu Zhong's second entry or reset."
+        ],
+        "failureCases": [
+          "Yu Zhong dives too deep without team follow-up.",
+          "Mathilda is zoned away before Guiding Wind is useful.",
+          "Enemy burst kills Yu Zhong before the sustain fight starts."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "mathilda",
+    "synergyHeroId": "beatrix",
+    "reasons": [
+      "Mathilda gives Beatrix extra safety when she needs to reposition after choosing a weapon angle.",
+      "Beatrix benefits from shield and movement support because her damage reliability depends on spacing and timing."
+    ],
+    "synergyTypes": [
+      "backline-protection",
+      "mobility-enable",
+      "laning-synergy"
+    ],
+    "proof": [
+      {
+        "id": "mathilda-protects-beatrix-weapon-angle",
+        "category": "protection",
+        "priority": "secondary",
+        "impact": "medium",
+        "summary": "Mathilda protects Beatrix's positioning, while Beatrix uses the safer angle to keep dealing weapon-based damage.",
+        "worksBestWhen": [
+          "Mathilda stays close enough to offer escape or reposition.",
+          "Beatrix uses the movement support to reset spacing instead of overchasing."
+        ],
+        "failureCases": [
+          "Beatrix is caught before Mathilda can cast.",
+          "Mathilda leaves before Beatrix's damage window.",
+          "Enemy dive has multiple crowd-control layers."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "mathilda",
+    "synergyHeroId": "aamon",
+    "reasons": [
+      "Mathilda can help Aamon reach a target or escape after a burst attempt.",
+      "Aamon benefits from Mathilda's shield because his pickoff pattern often requires a risky commit."
+    ],
+    "synergyTypes": [
+      "dive-support",
+      "pickoff-combo",
+      "mobility-enable"
+    ],
+    "proof": [
+      {
+        "id": "mathilda-entry-exit-for-aamon-pickoff",
+        "category": "pickoff-combo",
+        "priority": "secondary",
+        "impact": "medium",
+        "summary": "Mathilda gives Aamon a safer entry or exit path, while Aamon supplies the burst finish after the movement setup.",
+        "worksBestWhen": [
+          "Mathilda supports Aamon after he has identified an isolated target.",
+          "Aamon has shards available before committing."
+        ],
+        "failureCases": [
+          "Aamon enters without enough damage setup.",
+          "Mathilda's mobility is used before the assassination window.",
+          "Enemy reveal or hard crowd control stops Aamon's re-entry."
+        ]
+      }
+    ]
+  }
+]

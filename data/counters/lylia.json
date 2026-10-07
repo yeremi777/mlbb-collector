@@ -1,0 +1,160 @@
+[
+  {
+    "targetHeroId": "lylia",
+    "counterHeroId": "kaja",
+    "reasons": [
+      "Kaja can suppress Lylia before she freely uses Black Shoes.",
+      "Lylia is hardest to kill when she chooses the timing of her reset, so forced pickoff windows are valuable."
+    ],
+    "counterTypes": [
+      "pickoff",
+      "crowd-control-counter",
+      "burst"
+    ],
+    "proof": [
+      {
+        "id": "kaja-divine-judgment-vs-lylia-black-shoes",
+        "category": "crowd-control-counter",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Lylia wants to survive burst with Black Shoes, while Kaja's targeted suppression can create a forced punish window before she resets.",
+        "worksBestWhen": [
+          "Kaja hides until Lylia steps forward to poke.",
+          "The team bursts immediately during Divine Judgment."
+        ],
+        "failureCases": [
+          "Lylia keeps distance and pokes outside Kaja's reach.",
+          "Kaja engages after Lylia has already reset with Black Shoes."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "lylia",
+    "counterHeroId": "franco",
+    "reasons": [
+      "Franco can punish Lylia if she steps too far forward to set up Gloom damage.",
+      "Suppression is valuable because Lylia's normal escape pattern depends on timing and availability."
+    ],
+    "counterTypes": [
+      "pickoff",
+      "crowd-control-counter",
+      "cooldown-punish"
+    ],
+    "proof": [
+      {
+        "id": "franco-bloody-hunt-vs-lylia-poke-position",
+        "category": "crowd-control-counter",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Lylia wants to bait enemies into her zone and reset with Black Shoes, while Franco can suppress her and force a burst window before she escapes.",
+        "worksBestWhen": [
+          "Franco waits for Lylia to use movement or overstep.",
+          "Franco's team follows up immediately."
+        ],
+        "failureCases": [
+          "Franco misses hook or uses ultimate after Black Shoes.",
+          "Lylia keeps enough distance and forces Franco to reveal first."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "lylia",
+    "counterHeroId": "saber",
+    "reasons": [
+      "Saber can punish Lylia before she uses Black Shoes by forcing a fast airborne burst window.",
+      "The counter is strongest after Black Shoes is down or when Lylia has no defensive spell or item timing available."
+    ],
+    "counterTypes": [
+      "burst",
+      "pickoff",
+      "cooldown-punish"
+    ],
+    "proof": [
+      {
+        "id": "saber-triple-sweep-vs-lylia-black-shoes-window",
+        "category": "crowd-control-counter",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Lylia wants to survive burst with Black Shoes, while Saber can knock her airborne and compress the kill window before she can reset.",
+        "worksBestWhen": [
+          "Saber engages from fog or after Lylia has used Black Shoes.",
+          "Saber has enough burst damage to finish during the airborne combo.",
+          "Lylia does not have Purify, Winter Crown, or prepared defensive timing."
+        ],
+        "failureCases": [
+          "Lylia uses Black Shoes before Saber finishes the burst.",
+          "Lylia uses Purify or defensive item timing to break the pickoff.",
+          "Saber lacks damage and Lylia survives long enough to reset."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "lylia",
+    "counterHeroId": "obsidia",
+    "reasons": [
+      "Obsidia can threaten Lylia because Hunt of Bone prevents the tethered enemy from using displacement skills.",
+      "Lylia depends heavily on Black Shoes to survive burst and reset her position, HP state, and Shadow Energy charges.",
+      "If Hunt of Bone lands before Black Shoes is used, Lylia becomes much easier to finish during the tether window."
+    ],
+    "counterTypes": [
+      "pickoff",
+      "anti-mobility",
+      "cooldown-punish"
+    ],
+    "proof": [
+      {
+        "id": "obsidia-hunt-of-bone-vs-lylia-black-shoes",
+        "category": "skill-interaction",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Lylia wants to survive burst by returning to her Black Shoes position, while Obsidia's Hunt of Bone can tether the target and prevent displacement skills, creating a punish window before Lylia can reset.",
+        "worksBestWhen": [
+          "Obsidia lands Hunt of Bone before Lylia casts Black Shoes.",
+          "Lylia is already low or has stepped forward to poke.",
+          "Obsidia or her team has enough follow-up damage during the tether."
+        ],
+        "failureCases": [
+          "Lylia uses Black Shoes before Hunt of Bone connects.",
+          "Obsidia misses Hunt of Bone.",
+          "Lylia keeps distance and forces Obsidia to engage from a bad angle.",
+          "Current patch interaction does not block Black Shoes as a displacement skill."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "lylia",
+    "counterHeroId": "minsitthar",
+    "reasons": [
+      "Minsitthar can restrict Lylia's mobility tools if she is caught inside King's Calling.",
+      "This is useful because Lylia becomes much easier to punish when she cannot freely reposition or reset."
+    ],
+    "counterTypes": [
+      "anti-dash",
+      "cooldown-punish",
+      "teamfight"
+    ],
+    "proof": [
+      {
+        "id": "minsitthar-kings-calling-vs-lylia-reset-zone",
+        "category": "skill-interaction",
+        "priority": "primary",
+        "impact": "medium",
+        "summary": "Lylia wants to reposition and reset with Black Shoes, while Minsitthar's King's Calling can disable movement skills for enemies inside the field.",
+        "worksBestWhen": [
+          "Minsitthar casts King's Calling after Lylia steps forward to poke.",
+          "Lylia is trapped before she can safely use her reset.",
+          "Allies are ready to burst her inside the zone."
+        ],
+        "failureCases": [
+          "Lylia stays outside King's Calling and continues zoning.",
+          "Minsitthar uses ultimate too early and Lylia waits it out.",
+          "Lylia has already reset to a safer position before the zone matters."
+        ]
+      }
+    ]
+  }
+]

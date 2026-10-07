@@ -1,0 +1,157 @@
+[
+  {
+    "anchorHeroId": "lukas",
+    "synergyHeroId": "angela",
+    "reasons": [
+      "Angela can attach to Lukas during his brawl window.",
+      "Lukas benefits from added protection because he wants to remain in the fight after entering."
+    ],
+    "synergyTypes": [
+      "shielding",
+      "healing-sustain",
+      "dive-support"
+    ],
+    "proof": [
+      {
+        "id": "angela-protection-for-lukas-brawl",
+        "category": "protection",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Angela extends Lukas's commit window with attached protection.",
+        "worksBestWhen": [
+          "Angela attaches before Lukas fully commits.",
+          "Lukas uses the shield window to force out a core target."
+        ],
+        "failureCases": [
+          "Lukas enters after Angela's ultimate is unavailable.",
+          "Enemy burst removes Lukas before sustain matters.",
+          "Lukas overextends beyond follow-up range."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "lukas",
+    "synergyHeroId": "chip",
+    "reasons": [
+      "Chip can bring teammates into Lukas's frontline brawl.",
+      "Lukas can start pressure first, then Chip helps convert it into a numbers advantage."
+    ],
+    "synergyTypes": [
+      "mobility-enable",
+      "teamfight-combo",
+      "objective-control"
+    ],
+    "proof": [
+      {
+        "id": "chip-portal-followup-for-lukas",
+        "category": "mobility-enabler",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Lukas creates the brawl, while Chip brings fast team follow-up.",
+        "worksBestWhen": [
+          "Lukas starts a fight teammates can safely join.",
+          "Chip opens Shortcut after Lukas creates pressure."
+        ],
+        "failureCases": [
+          "Lukas dies before teammates arrive.",
+          "Chip portals the team into counter-engage.",
+          "The fight moves away from the portal."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "lukas",
+    "synergyHeroId": "floryn",
+    "reasons": [
+      "Floryn gives Lukas global sustain during long fights.",
+      "Lukas benefits from healing support because he wants to keep fighting after his first entry."
+    ],
+    "synergyTypes": [
+      "healing-sustain",
+      "protect",
+      "game-phase"
+    ],
+    "proof": [
+      {
+        "id": "floryn-global-heal-for-lukas",
+        "category": "healing-sustain",
+        "priority": "secondary",
+        "impact": "medium",
+        "summary": "Floryn extends Lukas's brawl window with global healing.",
+        "worksBestWhen": [
+          "Floryn saves Bloom for Lukas's real commit.",
+          "Lukas avoids being burst before healing applies."
+        ],
+        "failureCases": [
+          "Anti-heal reduces the sustain value.",
+          "Lukas commits without follow-up.",
+          "Lukas is chain-controlled before he can continue fighting."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "lukas",
+    "synergyHeroId": "mathilda",
+    "reasons": [
+      "Mathilda improves Lukas's entry and retreat options.",
+      "Lukas can use her mobility support to reach better targets or reset after trading."
+    ],
+    "synergyTypes": [
+      "mobility-enable",
+      "shielding",
+      "dive-support"
+    ],
+    "proof": [
+      {
+        "id": "mathilda-mobility-for-lukas",
+        "category": "mobility-enabler",
+        "priority": "secondary",
+        "impact": "medium",
+        "summary": "Mathilda helps Lukas reposition during extended brawls.",
+        "worksBestWhen": [
+          "Mathilda stays near Lukas's fight path.",
+          "Lukas uses the mobility window after forcing enemy cooldowns."
+        ],
+        "failureCases": [
+          "Lukas enters outside Mathilda's range.",
+          "Enemy crowd control blocks the retreat.",
+          "Mathilda uses the mobility tool before Lukas commits."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "lukas",
+    "synergyHeroId": "kalea",
+    "reasons": [
+      "Kalea can grab and displace a target, giving Lukas a clearer target to hit.",
+      "Her healing and control support fit Lukas's extended fighter style."
+    ],
+    "synergyTypes": [
+      "pickoff-combo",
+      "healing-sustain",
+      "cc-chain"
+    ],
+    "proof": [
+      {
+        "id": "kalea-displacement-for-lukas-followup",
+        "category": "pickoff-combo",
+        "priority": "secondary",
+        "impact": "medium",
+        "summary": "Kalea isolates a target, while Lukas follows with brawler damage and pressure.",
+        "worksBestWhen": [
+          "Kalea displaces the target toward Lukas.",
+          "Lukas has cooldowns ready to follow the grab."
+        ],
+        "failureCases": [
+          "Kalea throws the target away from Lukas.",
+          "Lukas is not close enough to follow.",
+          "Enemy peel blocks Lukas after the displacement."
+        ]
+      }
+    ]
+  }
+]

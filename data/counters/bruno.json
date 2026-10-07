@@ -1,0 +1,152 @@
+[
+  {
+    "targetHeroId": "bruno",
+    "counterHeroId": "lolita",
+    "reasons": [
+      "Lolita can deny Bruno's front-facing ranged attack pressure with Guardian's Reflection.",
+      "Bruno depends on repeated enhanced basic attacks, so shield timing can reduce his main damage window."
+    ],
+    "counterTypes": [
+      "protect",
+      "anti-engage",
+      "teamfight"
+    ],
+    "proof": [
+      {
+        "id": "lolita-guardian-reflection-vs-bruno-powerball",
+        "category": "skill-interaction",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Bruno wants to land repeated enhanced ranged attacks, while Lolita can reflect ranged basic attacks and projectile pressure from the shield direction.",
+        "worksBestWhen": [
+          "Lolita faces Bruno before his enhanced attack connects.",
+          "Allies stay behind Lolita during Bruno's damage window."
+        ],
+        "failureCases": [
+          "Bruno attacks from a side angle.",
+          "Lolita uses shield too early and Bruno waits it out."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "bruno",
+    "counterHeroId": "natalia",
+    "reasons": [
+      "Natalia can pressure Bruno from conceal before he freely cycles enhanced basic attacks.",
+      "Bruno is much easier to punish when he is separated from peel or vision."
+    ],
+    "counterTypes": [
+      "pickoff",
+      "vision-control",
+      "burst"
+    ],
+    "proof": [
+      {
+        "id": "natalia-conceal-pickoff-vs-bruno-dps-space",
+        "category": "vision-awareness",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Bruno wants visible and controlled DPS space, while Natalia can threaten from conceal and force him to play closer to protection.",
+        "worksBestWhen": [
+          "Natalia controls bushes around Bruno's rotation path.",
+          "Bruno is away from hard crowd-control peel."
+        ],
+        "failureCases": [
+          "Bruno stays grouped with tank or support protection.",
+          "Natalia is revealed before reaching Bruno."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "bruno",
+    "counterHeroId": "saber",
+    "reasons": [
+      "Saber can lock Bruno with targeted burst before Bruno has time to kite.",
+      "This is especially punishing when Bruno's dash or defensive battle spell is unavailable."
+    ],
+    "counterTypes": [
+      "pickoff",
+      "burst",
+      "cooldown-punish"
+    ],
+    "proof": [
+      {
+        "id": "saber-triple-sweep-vs-bruno-backline-dps",
+        "category": "skill-interaction",
+        "priority": "primary",
+        "impact": "medium",
+        "summary": "Bruno wants to kite and keep attacking, while Saber can create a short targeted airborne burst window that denies Bruno's DPS uptime.",
+        "worksBestWhen": [
+          "Saber attacks from fog or a flank angle.",
+          "Bruno has no immediate peel or defensive cooldown."
+        ],
+        "failureCases": [
+          "Bruno survives the burst with support protection.",
+          "Saber dives into a grouped enemy team and gets traded."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "bruno",
+    "counterHeroId": "belerick",
+    "reasons": [
+      "Belerick punishes repeated basic attacks and can force Bruno to hit a durable frontline instead of a carry.",
+      "Taunt and frontline pressure can reduce Bruno's freedom to choose safe attack targets."
+    ],
+    "counterTypes": [
+      "frontline",
+      "protect",
+      "teamfight"
+    ],
+    "proof": [
+      {
+        "id": "belerick-frontline-taunt-vs-bruno-basic-attacks",
+        "category": "teamfight-role-counter",
+        "priority": "secondary",
+        "impact": "medium",
+        "summary": "Bruno wants to repeatedly attack priority targets, while Belerick can absorb pressure, punish basic attacks, and disrupt Bruno's target choice.",
+        "worksBestWhen": [
+          "Belerick stands between Bruno and the backline.",
+          "Belerick has enough durability to survive Bruno's damage window."
+        ],
+        "failureCases": [
+          "Bruno kites Belerick and attacks from max range.",
+          "Belerick cannot reach Bruno or force him to hit the frontline."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "bruno",
+    "counterHeroId": "franco",
+    "reasons": [
+      "Franco can punish Bruno's positioning with hook or suppression before Bruno outputs sustained damage.",
+      "Bruno is vulnerable when caught during rotation or before he has space to kite."
+    ],
+    "counterTypes": [
+      "pickoff",
+      "anti-dive",
+      "cooldown-punish"
+    ],
+    "proof": [
+      {
+        "id": "franco-pickoff-vs-bruno-positioning",
+        "category": "positioning-requirement",
+        "priority": "condition",
+        "impact": "medium",
+        "summary": "Bruno wants safe spacing for repeated attacks, while Franco can remove that spacing by hooking or suppressing him when he steps too far forward.",
+        "worksBestWhen": [
+          "Franco hides vision before Bruno rotates.",
+          "The team follows up immediately after hook or suppression."
+        ],
+        "failureCases": [
+          "Franco misses hook.",
+          "Bruno stays behind minions or frontline protection."
+        ]
+      }
+    ]
+  }
+]

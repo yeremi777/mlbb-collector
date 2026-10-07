@@ -1,0 +1,157 @@
+[
+  {
+    "anchorHeroId": "kaja",
+    "synergyHeroId": "lunox",
+    "reasons": [
+      "Kaja can suppress and drag one target into Lunox's burst range.",
+      "Lunox can use Darkening and Chaos Assault follow-up quickly once Kaja fixes the target position."
+    ],
+    "synergyTypes": [
+      "pickoff-combo",
+      "burst-follow-up",
+      "cooldown-dependent"
+    ],
+    "proof": [
+      {
+        "id": "kaja-divine-judgment-sets-lunox-darkening",
+        "category": "pickoff-combo",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Kaja locks and drags the target, while Lunox uses her burst window to quickly punish the suppressed enemy.",
+        "worksBestWhen": [
+          "Kaja catches a priority damage dealer or fragile target.",
+          "Lunox has Darkening and Chaos damage ready before Kaja commits."
+        ],
+        "failureCases": [
+          "Kaja pulls the target away from Lunox's range.",
+          "Lunox is forced to use Brilliance defensively before the pickoff.",
+          "The target survives the burst and receives peel from teammates."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "kaja",
+    "synergyHeroId": "saber",
+    "reasons": [
+      "Kaja's suppression gives Saber a reliable target window for Triple Sweep.",
+      "Saber's single-target burst helps finish the enemy before Kaja's control window ends."
+    ],
+    "synergyTypes": [
+      "pickoff-combo",
+      "burst-follow-up",
+      "cc-chain"
+    ],
+    "proof": [
+      {
+        "id": "kaja-suppression-sets-saber-triple-sweep",
+        "category": "pickoff-combo",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Kaja isolates and drags a target, then Saber adds single-target burst and airborne control to secure the pickoff.",
+        "worksBestWhen": [
+          "Kaja suppresses a squishy or high-value target.",
+          "Saber waits until Kaja has committed before using Triple Sweep."
+        ],
+        "failureCases": [
+          "Kaja catches a tank instead of a damage dealer.",
+          "Saber is too far away to follow up.",
+          "Enemy peel interrupts Saber before he reaches the target."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "kaja",
+    "synergyHeroId": "eudora",
+    "reasons": [
+      "Kaja can drag a target into Eudora's burst range.",
+      "Eudora adds stun and high magic burst after Kaja starts the pickoff."
+    ],
+    "synergyTypes": [
+      "pickoff-combo",
+      "burst-follow-up",
+      "cc-chain"
+    ],
+    "proof": [
+      {
+        "id": "kaja-drag-sets-eudora-burst",
+        "category": "pickoff-combo",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Kaja provides forced target access, while Eudora converts the caught target into a fast magic burst kill.",
+        "worksBestWhen": [
+          "Kaja pulls the target toward Eudora.",
+          "Eudora saves her burst for the suppressed target."
+        ],
+        "failureCases": [
+          "Eudora uses burst before Kaja confirms the catch.",
+          "The target survives with defensive items or team peel.",
+          "Kaja and Eudora lack vision before engaging."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "kaja",
+    "synergyHeroId": "kadita",
+    "reasons": [
+      "Kaja's suppression can hold or drag a target into Kadita's delayed knock-up and burst path.",
+      "Kadita can punish the position Kaja creates instead of needing to start the combo alone."
+    ],
+    "synergyTypes": [
+      "setup-combo",
+      "burst-follow-up",
+      "pickoff-combo"
+    ],
+    "proof": [
+      {
+        "id": "kaja-drag-sets-kadita-burst",
+        "category": "setup-combo",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Kaja fixes the target position, while Kadita layers delayed control and burst onto the pulled enemy.",
+        "worksBestWhen": [
+          "Kadita pre-positions before Kaja commits.",
+          "Kaja drags the target toward Kadita's setup path."
+        ],
+        "failureCases": [
+          "Kadita mistimes the delayed eruption.",
+          "Kaja pulls the target out of Kadita's burst area.",
+          "Enemy allies body-block or counter-engage after Kaja commits."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "kaja",
+    "synergyHeroId": "pharsa",
+    "reasons": [
+      "Kaja can lock and drag one enemy into a predictable position for Pharsa's long-range burst.",
+      "Pharsa can follow Kaja's pickoff from safer distance when the target path is visible."
+    ],
+    "synergyTypes": [
+      "engage-follow-up",
+      "burst-follow-up",
+      "positioning-dependent"
+    ],
+    "proof": [
+      {
+        "id": "kaja-pickoff-creates-pharsa-burst-angle",
+        "category": "engage-follow-up",
+        "priority": "secondary",
+        "impact": "medium",
+        "summary": "Kaja creates a controlled single-target pick, while Pharsa adds long-range damage if she has the correct angle.",
+        "worksBestWhen": [
+          "Pharsa has vision of Kaja's target before casting.",
+          "Kaja drags the target into open space, not behind terrain."
+        ],
+        "failureCases": [
+          "Kaja catches a target outside Pharsa's cast angle.",
+          "Pharsa needs to reposition before the damage lands.",
+          "The target escapes the repeated strike area after Kaja's suppression ends."
+        ]
+      }
+    ]
+  }
+]

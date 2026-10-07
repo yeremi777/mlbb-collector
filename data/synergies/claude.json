@@ -1,0 +1,158 @@
+[
+  {
+    "anchorHeroId": "claude",
+    "synergyHeroId": "angela",
+    "reasons": [
+      "Angela can attach to Claude when he enters with Blazing Duet.",
+      "Claude's dive pattern benefits from extra protection because he often enters the middle of the fight."
+    ],
+    "synergyTypes": [
+      "shielding",
+      "dive-support",
+      "mobility-enable"
+    ],
+    "proof": [
+      {
+        "id": "angela-heartguard-protects-claude-blazing-duet",
+        "category": "shielding",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Claude dives into a risky damage window, while Angela gives shield and attached support to reduce the punishment risk.",
+        "worksBestWhen": [
+          "Angela saves Heartguard for Claude's real Blazing Duet entry.",
+          "Claude enters after enemy burst or control is partially spent."
+        ],
+        "failureCases": [
+          "Claude dives before Angela can attach.",
+          "Enemy suppression or hard control catches Claude through the shield.",
+          "Claude enters without enough item damage."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "claude",
+    "synergyHeroId": "floryn",
+    "reasons": [
+      "Floryn can heal Claude globally even when Claude enters far from the support's position.",
+      "Claude benefits from global sustain because Blazing Duet often places him inside enemy damage range."
+    ],
+    "synergyTypes": [
+      "healing-sustain",
+      "dive-support",
+      "cooldown-dependent"
+    ],
+    "proof": [
+      {
+        "id": "floryn-global-heal-supports-claude-entry",
+        "category": "healing-sustain",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Claude commits into a high-risk teamfight window, while Floryn's global heal can keep him alive during or after the entry.",
+        "worksBestWhen": [
+          "Floryn saves Bloom for Claude's real engage or the enemy counter-burst.",
+          "Claude enters when he has Battle Mirror Image available for repositioning."
+        ],
+        "failureCases": [
+          "Floryn uses Bloom too early.",
+          "Claude is instantly controlled before healing can matter.",
+          "Claude dives alone without team pressure."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "claude",
+    "synergyHeroId": "tigreal",
+    "reasons": [
+      "Tigreal can group enemies, making Claude's Blazing Duet hit more valuable targets.",
+      "Claude can wait for Tigreal's engage before committing his mobility skill and ultimate."
+    ],
+    "synergyTypes": [
+      "engage-follow-up",
+      "aoe-follow-up",
+      "teamfight-combo"
+    ],
+    "proof": [
+      {
+        "id": "tigreal-sets-claude-blazing-duet",
+        "category": "engage-follow-up",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Tigreal controls a grouped fight area, while Claude enters afterward to apply AoE marksman damage.",
+        "worksBestWhen": [
+          "Tigreal catches multiple enemies.",
+          "Claude has Battle Mirror Image or an exit path ready after the ultimate."
+        ],
+        "failureCases": [
+          "Claude enters before Tigreal lands control.",
+          "Enemy spreads out or disengages.",
+          "Claude is locked down immediately after Blazing Duet starts."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "claude",
+    "synergyHeroId": "atlas",
+    "reasons": [
+      "Atlas can pull enemies together for Claude's AoE damage.",
+      "Claude can use Battle Mirror Image to enter after Atlas confirms the grouped setup."
+    ],
+    "synergyTypes": [
+      "setup-combo",
+      "aoe-follow-up",
+      "teamfight-combo"
+    ],
+    "proof": [
+      {
+        "id": "atlas-pull-sets-claude-blazing-duet",
+        "category": "setup-combo",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Atlas creates a grouped crowd-control moment, while Claude converts it into Blazing Duet damage.",
+        "worksBestWhen": [
+          "Atlas pulls enemies before Claude enters.",
+          "Claude keeps an exit path with Battle Mirror Image."
+        ],
+        "failureCases": [
+          "Atlas catches only one target or misses the pull.",
+          "Claude dives into saved counter-control.",
+          "Enemy burst is saved for Claude after Atlas engages."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "claude",
+    "synergyHeroId": "chip",
+    "reasons": [
+      "Chip can create a portal entry that lets Claude join a fight quickly after the target area is chosen.",
+      "Claude can use the portal entry as a shortcut into Blazing Duet range instead of walking through enemy zoning."
+    ],
+    "synergyTypes": [
+      "mobility-enable",
+      "engage-follow-up",
+      "execution-dependent"
+    ],
+    "proof": [
+      {
+        "id": "chip-shortcut-enables-claude-teamfight-entry",
+        "category": "mobility-enabler",
+        "priority": "secondary",
+        "impact": "medium",
+        "summary": "Chip creates a team teleport path toward an enemy area, while Claude uses the arrival window to enter with Blazing Duet.",
+        "worksBestWhen": [
+          "Chip places Shortcut on a target the team can actually collapse on.",
+          "Claude keeps Battle Mirror Image ready after arriving.",
+          "The team follows the same portal timing."
+        ],
+        "failureCases": [
+          "Claude enters through the portal before teammates are ready.",
+          "The enemy uses the portal timing to counter-engage.",
+          "Chip places Shortcut too deep and Claude has no safe exit."
+        ]
+      }
+    ]
+  }
+]

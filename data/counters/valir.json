@@ -1,0 +1,152 @@
+[
+  {
+    "targetHeroId": "valir",
+    "counterHeroId": "lolita",
+    "reasons": [
+      "Lolita can reduce Valir's poke value and protect teammates during siege or objective setup.",
+      "She helps the team walk through Valir's zoning without taking as much chip damage."
+    ],
+    "counterTypes": [
+      "anti-poke",
+      "protect",
+      "frontline"
+    ],
+    "proof": [
+      {
+        "id": "lolita-protection-vs-valir-fireball-poke",
+        "category": "teamfight-role-counter",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Valir wants to repeatedly zone enemies with ranged fireballs and knockback; Lolita can protect allies and create safer forward movement.",
+        "worksBestWhen": [
+          "Lolita saves protection for Valir's poke before objective fights.",
+          "Teammates walk behind Lolita instead of splitting into Valir's angles."
+        ],
+        "failureCases": [
+          "Valir waits out Lolita's shield and then re-engages.",
+          "Lolita is flanked or forced to face the wrong direction."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "valir",
+    "counterHeroId": "lancelot",
+    "reasons": [
+      "Lancelot can dodge Valir's skillshots and reach him from non-linear angles.",
+      "Valir is weaker when his knockback or ultimate is forced before the real dive."
+    ],
+    "counterTypes": [
+      "mobility",
+      "cooldown-punish",
+      "anti-backline"
+    ],
+    "proof": [
+      {
+        "id": "lancelot-mobility-vs-valir-linear-control",
+        "category": "mobility-advantage",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Valir controls straight paths well, but Lancelot can use mobility and timing to bypass or dodge the control line.",
+        "worksBestWhen": [
+          "Lancelot waits for Valir's knockback or defensive ultimate to be used.",
+          "Lancelot enters from flank paths rather than front lane."
+        ],
+        "failureCases": [
+          "Lancelot dashes directly into knockback.",
+          "Valir's team layers additional crowd control after the knockback."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "valir",
+    "counterHeroId": "pharsa",
+    "reasons": [
+      "Pharsa can outrange Valir's normal control zone during objective fights.",
+      "Her artillery forces Valir to reposition instead of freely zoning the frontline."
+    ],
+    "counterTypes": [
+      "range-advantage",
+      "poke",
+      "teamfight"
+    ],
+    "proof": [
+      {
+        "id": "pharsa-range-vs-valir-mid-range-zone",
+        "category": "range-advantage",
+        "priority": "primary",
+        "impact": "medium",
+        "summary": "Valir wants to control mid-range space, while Pharsa can threaten from longer artillery range with Feathered Air Strike.",
+        "worksBestWhen": [
+          "Pharsa casts from outside Valir's reliable knockback range.",
+          "The team protects Pharsa from flank divers."
+        ],
+        "failureCases": [
+          "Valir's team reaches Pharsa before she finishes ultimate.",
+          "Pharsa casts too close and gets knocked away or forced to escape."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "valir",
+    "counterHeroId": "kagura",
+    "reasons": [
+      "Kagura can poke from flexible angles and reposition around Valir's linear control.",
+      "Her escape tools make it harder for Valir to lock her into the knockback path."
+    ],
+    "counterTypes": [
+      "mobility",
+      "poke",
+      "cooldown-punish"
+    ],
+    "proof": [
+      {
+        "id": "kagura-angle-poke-vs-valir-linear-control",
+        "category": "mobility-advantage",
+        "priority": "condition",
+        "impact": "medium",
+        "summary": "Valir punishes predictable forward movement; Kagura can reposition and trade from angles that are harder for Valir to control.",
+        "worksBestWhen": [
+          "Kagura does not spend her escape before Valir uses knockback.",
+          "She pokes from side angles, not directly through Valir's fire path."
+        ],
+        "failureCases": [
+          "Kagura misuses umbrella position and cannot escape.",
+          "Valir saves knockback until Kagura commits."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "valir",
+    "counterHeroId": "hayabusa",
+    "reasons": [
+      "Hayabusa can threaten Valir from side lanes and force him to hold defensive cooldowns.",
+      "Valir struggles if he is attacked after defensive tools have already been used."
+    ],
+    "counterTypes": [
+      "pickoff",
+      "mobility",
+      "anti-backline"
+    ],
+    "proof": [
+      {
+        "id": "hayabusa-pickoff-vs-valir-defensive-cooldowns",
+        "category": "cooldown-window",
+        "priority": "condition",
+        "impact": "medium",
+        "summary": "Valir survives dives by pushing enemies away and using defensive timing; Hayabusa can punish when those tools are unavailable.",
+        "worksBestWhen": [
+          "Hayabusa waits out Valir's defensive ultimate.",
+          "He attacks when Valir is away from peel."
+        ],
+        "failureCases": [
+          "Valir saves knockback for Hayabusa's entry.",
+          "Hayabusa's damage spreads across multiple nearby targets."
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,157 @@
+[
+  {
+    "targetHeroId": "brody",
+    "counterHeroId": "lolita",
+    "reasons": [
+      "Lolita can protect allies from Brody's forward-facing ranged pressure and reduce his ability to freely poke.",
+      "Brody's damage pattern is more predictable than high-attack-speed marksmen, so shield timing is practical."
+    ],
+    "counterTypes": [
+      "protect",
+      "anti-projectile",
+      "teamfight"
+    ],
+    "proof": [
+      {
+        "id": "lolita-guardian-bulwark-vs-brody-ranged-pressure",
+        "category": "skill-interaction",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Brody wants to land heavy ranged attacks and mark targets, while Lolita can protect from incoming projectile pressure and shield allies during trades.",
+        "worksBestWhen": [
+          "Lolita faces Brody before his damage window.",
+          "Carries stay behind Lolita's protection."
+        ],
+        "failureCases": [
+          "Brody attacks from side angles.",
+          "Lolita wastes shield before Brody commits.",
+          "Brody's team forces Lolita to turn away."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "brody",
+    "counterHeroId": "natalia",
+    "reasons": [
+      "Natalia can punish Brody's limited escape options by approaching from fog and forcing close-range burst.",
+      "Silence disrupts Brody before he can set up stun, reposition, or finish with ultimate."
+    ],
+    "counterTypes": [
+      "pickoff",
+      "vision-control",
+      "burst"
+    ],
+    "proof": [
+      {
+        "id": "natalia-camouflage-vs-brody-marksman-positioning",
+        "category": "vision-awareness",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Brody wants controlled ranged trades, while Natalia can bypass lane vision, silence him, and burst before he completes his mark-based damage cycle.",
+        "worksBestWhen": [
+          "Natalia attacks after Brody uses mobility or stun.",
+          "Natalia approaches through unchecked bush routes."
+        ],
+        "failureCases": [
+          "Brody keeps safe spacing with tank protection.",
+          "Natalia is revealed before the engage.",
+          "Brody survives the first burst and counter-stuns."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "brody",
+    "counterHeroId": "saber",
+    "reasons": [
+      "Saber can punish Brody's lack of reliable escape with a targeted burst lock.",
+      "Brody is vulnerable when isolated because his damage requires setup through marks and spacing."
+    ],
+    "counterTypes": [
+      "pickoff",
+      "burst",
+      "crowd-control-counter"
+    ],
+    "proof": [
+      {
+        "id": "saber-triple-sweep-vs-brody-isolation",
+        "category": "skill-interaction",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Brody wants to control fights through heavy ranged hits, while Saber can force an airborne burst window with Triple Sweep before Brody finishes his damage cycle.",
+        "worksBestWhen": [
+          "Saber waits until Brody's defensive tools or Flicker are unavailable.",
+          "Saber has enough damage to finish during the lock window."
+        ],
+        "failureCases": [
+          "Brody builds defensively and survives.",
+          "Saber ults into heavy peel.",
+          "Brody positions too far behind frontline."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "brody",
+    "counterHeroId": "wanwan",
+    "reasons": [
+      "Wanwan can cleanse Brody's control if timed correctly and keep repositioning around his slower attack rhythm.",
+      "Her mobility makes it harder for Brody to repeatedly stack marks on the same target."
+    ],
+    "counterTypes": [
+      "cleanse",
+      "mobility",
+      "kiting"
+    ],
+    "proof": [
+      {
+        "id": "wanwan-cleanse-mobility-vs-brody-mark-control",
+        "category": "mobility-advantage",
+        "priority": "condition",
+        "impact": "medium",
+        "summary": "Brody wants to land controlled mark stacks and stun pressure, while Wanwan can remove control effects and reposition after attacks.",
+        "worksBestWhen": [
+          "Wanwan saves Needles in Flowers for Brody's stun or control moment.",
+          "Wanwan avoids trading while already marked."
+        ],
+        "failureCases": [
+          "Brody lands burst before Wanwan can reset spacing.",
+          "Wanwan wastes cleanse early.",
+          "Brody's team locks Wanwan after her skill 2 is down."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "brody",
+    "counterHeroId": "chou",
+    "reasons": [
+      "Chou can isolate Brody and force him out of his preferred firing position.",
+      "Brody is threatening when he controls spacing; Chou punishes that by kicking him into team follow-up."
+    ],
+    "counterTypes": [
+      "pickoff",
+      "displacement",
+      "anti-backline"
+    ],
+    "proof": [
+      {
+        "id": "chou-flank-kick-vs-brody-positioning",
+        "category": "positioning-requirement",
+        "priority": "condition",
+        "impact": "medium",
+        "summary": "Brody wants to maintain safe attack spacing, while Chou can flank, displace, and isolate him from protection.",
+        "worksBestWhen": [
+          "Chou attacks from side vision or bush.",
+          "Brody's Flicker or defensive item is unavailable."
+        ],
+        "failureCases": [
+          "Brody keeps strong frontline spacing.",
+          "Chou engages through visible paths.",
+          "Brody survives the kick and counter-stuns."
+        ]
+      }
+    ]
+  }
+]

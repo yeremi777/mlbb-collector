@@ -1,0 +1,152 @@
+[
+  {
+    "anchorHeroId": "bane",
+    "synergyHeroId": "tigreal",
+    "reasons": [
+      "Tigreal can group and control enemies, giving Bane a clear AoE damage window after the engage.",
+      "Bane can add follow-up damage when Tigreal forces enemies to stay inside a teamfight area."
+    ],
+    "synergyTypes": [
+      "engage-follow-up",
+      "teamfight-combo",
+      "aoe-follow-up"
+    ],
+    "proof": [
+      {
+        "id": "tigreal-setup-for-bane-aoe-follow-up",
+        "category": "engage-follow-up",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Tigreal starts the fight and forces enemies into a grouped position, while Bane follows with AoE damage during the control window.",
+        "worksBestWhen": [
+          "Tigreal engages after Bane is close enough to follow up.",
+          "Bane saves his AoE damage for the confirmed crowd-control window."
+        ],
+        "failureCases": [
+          "Tigreal engages too far from Bane.",
+          "The enemy spreads out before Tigreal commits."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "bane",
+    "synergyHeroId": "atlas",
+    "reasons": [
+      "Atlas can pull enemies into one area, helping Bane punish grouped targets with AoE follow-up.",
+      "Atlas gives Bane a stronger teamfight entry point when enemies are already displaced and controlled."
+    ],
+    "synergyTypes": [
+      "setup-combo",
+      "teamfight-combo",
+      "aoe-follow-up"
+    ],
+    "proof": [
+      {
+        "id": "atlas-grouping-for-bane-aoe-damage",
+        "category": "setup-combo",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Atlas creates the grouped setup, while Bane adds damage after enemies are displaced and controlled.",
+        "worksBestWhen": [
+          "Atlas catches multiple priority targets.",
+          "Bane waits until Atlas finishes the pull before committing damage."
+        ],
+        "failureCases": [
+          "Atlas catches only the frontline.",
+          "Bane is zoned away before the follow-up."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "bane",
+    "synergyHeroId": "minotaur",
+    "reasons": [
+      "Minotaur gives Bane a durable frontline and sustain support for longer objective fights.",
+      "Minotaur's control windows let Bane follow with damage without being the first hero to absorb pressure."
+    ],
+    "synergyTypes": [
+      "frontline-enabler",
+      "healing-sustain",
+      "cc-chain"
+    ],
+    "proof": [
+      {
+        "id": "minotaur-frontline-for-bane-objective-fights",
+        "category": "frontline-enabler",
+        "priority": "primary",
+        "impact": "medium",
+        "summary": "Minotaur absorbs pressure, heals nearby teammates, and creates crowd-control windows that let Bane follow with damage.",
+        "worksBestWhen": [
+          "Minotaur stays between Bane and enemy divers.",
+          "Bane plays around Minotaur's engage and heal timing."
+        ],
+        "failureCases": [
+          "Bane walks too far ahead of Minotaur.",
+          "Minotaur's key control is unavailable when Bane commits."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "bane",
+    "synergyHeroId": "rafaela",
+    "reasons": [
+      "Rafaela's heal and movement support help Bane chase, kite, and stay active during extended skirmishes.",
+      "Bane benefits from Rafaela's sustain when he has to keep fighting around objectives or lane pressure."
+    ],
+    "synergyTypes": [
+      "healing-sustain",
+      "mobility-enable",
+      "positioning-dependent"
+    ],
+    "proof": [
+      {
+        "id": "rafaela-sustain-for-bane-extended-skirmish",
+        "category": "healing-sustain",
+        "priority": "secondary",
+        "impact": "medium",
+        "summary": "Rafaela improves Bane's extended-fight uptime by helping him reposition and recover during poke or chase sequences.",
+        "worksBestWhen": [
+          "Rafaela stays close enough to support Bane's re-entry.",
+          "Bane uses the speed window to either chase or disengage."
+        ],
+        "failureCases": [
+          "Bane dives beyond Rafaela's support range.",
+          "The enemy bursts Bane before the sustain matters."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "bane",
+    "synergyHeroId": "angela",
+    "reasons": [
+      "Angela can attach to Bane during a commit, giving him extra protection while he fights inside enemy range.",
+      "Angela's support helps Bane stay alive long enough to finish his damage cycle after entering the fight."
+    ],
+    "synergyTypes": [
+      "shielding",
+      "dive-support",
+      "healing-sustain"
+    ],
+    "proof": [
+      {
+        "id": "angela-support-for-bane-frontline-commit",
+        "category": "protection",
+        "priority": "secondary",
+        "impact": "medium",
+        "summary": "Angela supports Bane's forward pressure by adding shield and sustain during the moment Bane commits into a fight.",
+        "worksBestWhen": [
+          "Angela saves her ultimate for Bane's real engage.",
+          "Bane has enough damage and cooldowns ready after Angela joins."
+        ],
+        "failureCases": [
+          "Angela attaches after Bane is already controlled.",
+          "Bane commits without a clear target or follow-up."
+        ]
+      }
+    ]
+  }
+]

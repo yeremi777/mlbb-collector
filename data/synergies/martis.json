@@ -1,0 +1,152 @@
+[
+  {
+    "anchorHeroId": "martis",
+    "synergyHeroId": "angela",
+    "reasons": [
+      "Angela can protect Martis while he commits into a fight.",
+      "Martis benefits from extra sustain and movement support because his value depends on staying active through repeated skill casts and execution windows."
+    ],
+    "synergyTypes": [
+      "shielding",
+      "dive-support",
+      "healing-sustain"
+    ],
+    "proof": [
+      {
+        "id": "martis-angela-skirmish-shield-support",
+        "category": "shielding",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Martis commits into melee skirmishes, and Angela strengthens his survival during that window.",
+        "worksBestWhen": [
+          "Angela attaches during Martis's real fight entry.",
+          "Martis uses the shield to finish targets, not to chase too far alone."
+        ],
+        "failureCases": [
+          "Angela attaches before Martis is ready.",
+          "Martis enters into too much burst or suppression."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "martis",
+    "synergyHeroId": "kaja",
+    "reasons": [
+      "Kaja can isolate a target and let Martis enter with a clearer kill path.",
+      "Martis can use his damage and execute pressure after Kaja forces the target into a bad position."
+    ],
+    "synergyTypes": [
+      "pickoff-combo",
+      "setup-combo",
+      "burst-follow-up"
+    ],
+    "proof": [
+      {
+        "id": "martis-kaja-pickoff-execute-window",
+        "category": "pickoff-combo",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Kaja starts the single-target catch, and Martis follows with melee pressure and execution threat.",
+        "worksBestWhen": [
+          "Kaja catches a priority target.",
+          "Martis is close enough to follow immediately."
+        ],
+        "failureCases": [
+          "Kaja catches a tank.",
+          "Martis cannot reach before the target gets peel."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "martis",
+    "synergyHeroId": "atlas",
+    "reasons": [
+      "Atlas can group enemies and force a fight where Martis can enter with control and execution pressure.",
+      "Martis benefits when enemies are already displaced or slowed before he starts melee trading."
+    ],
+    "synergyTypes": [
+      "engage-follow-up",
+      "teamfight-combo",
+      "aoe-follow-up"
+    ],
+    "proof": [
+      {
+        "id": "martis-atlas-grouped-fight-follow-up",
+        "category": "engage-follow-up",
+        "priority": "secondary",
+        "impact": "medium",
+        "summary": "Atlas creates the grouped fight, and Martis follows with melee control and finishing pressure.",
+        "worksBestWhen": [
+          "Atlas catches multiple enemies.",
+          "Martis enters after Atlas's setup, not before."
+        ],
+        "failureCases": [
+          "Atlas misses or catches only a tank.",
+          "Martis enters too early and gets focused before the setup lands."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "martis",
+    "synergyHeroId": "floryn",
+    "reasons": [
+      "Floryn can support Martis during extended skirmishes, including when he dives beyond normal support range.",
+      "Her global-style healing value helps Martis survive long enough to reach an execution window."
+    ],
+    "synergyTypes": [
+      "healing-sustain",
+      "protect",
+      "cooldown-dependent"
+    ],
+    "proof": [
+      {
+        "id": "martis-floryn-global-skirmish-sustain",
+        "category": "healing-sustain",
+        "priority": "secondary",
+        "impact": "medium",
+        "summary": "Martis wants to keep fighting through low-health targets, while Floryn adds sustain support during the commit.",
+        "worksBestWhen": [
+          "Floryn saves healing for Martis's real fight.",
+          "Martis uses the sustain window to finish targets or disengage."
+        ],
+        "failureCases": [
+          "Martis is bursted before healing matters.",
+          "Floryn's key skill is on cooldown during the execution window."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "martis",
+    "synergyHeroId": "rafaela",
+    "reasons": [
+      "Rafaela's speed support helps Martis chase or reposition in skirmishes.",
+      "Her healing gives Martis more room to stay active while looking for execution resets."
+    ],
+    "synergyTypes": [
+      "healing-sustain",
+      "mobility-enable",
+      "peel"
+    ],
+    "proof": [
+      {
+        "id": "martis-rafaela-speed-sustain-skirmish",
+        "category": "healing-sustain",
+        "priority": "secondary",
+        "impact": "medium",
+        "summary": "Rafaela supports Martis's extended skirmish pattern with heal and movement speed.",
+        "worksBestWhen": [
+          "Rafaela times speed boost as Martis enters or chases.",
+          "Martis avoids overextending outside healing range."
+        ],
+        "failureCases": [
+          "Martis dives too far away.",
+          "Burst damage removes him before sustain matters."
+        ]
+      }
+    ]
+  }
+]

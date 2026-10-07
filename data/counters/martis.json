@@ -1,0 +1,138 @@
+[
+  {
+    "targetHeroId": "martis",
+    "counterHeroId": "kaja",
+    "reasons": [
+      "Kaja is one of the strongest direct answers because suppression can punish Martis even when normal crowd control is unreliable.",
+      "Martis loses a lot of fight value if he is locked before converting Mortal Coil pressure into Decimation resets."
+    ],
+    "counterTypes": ["crowd-control-counter", "pickoff", "cooldown-punish"],
+    "proof": [
+      {
+        "id": "kaja-suppression-vs-martis-mortal-coil",
+        "category": "crowd-control-counter",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Martis relies on control immunity during Mortal Coil, but suppression is an important exception, so Kaja can punish Martis during his commit window.",
+        "worksBestWhen": [
+          "Kaja saves suppression for Martis instead of using it on the frontline.",
+          "Allies burst Martis before he can reset with Decimation."
+        ],
+        "failureCases": [
+          "Kaja uses his lockdown too early.",
+          "Martis waits for Kaja's control to be spent before entering."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "martis",
+    "counterHeroId": "franco",
+    "reasons": [
+      "Franco gives another suppression-based answer to Martis's normal CC immunity.",
+      "He can punish Martis before Martis reaches the backline or after Martis commits too deep."
+    ],
+    "counterTypes": ["crowd-control-counter", "pickoff", "anti-dive"],
+    "proof": [
+      {
+        "id": "franco-suppression-vs-martis-fight-flow",
+        "category": "crowd-control-counter",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Martis can ignore many normal crowd-control effects during Mortal Coil, but Franco's suppression-style lockdown can still stop his fight flow.",
+        "worksBestWhen": [
+          "Franco holds ultimate for Martis's real engage.",
+          "Franco's team is ready to burst during suppression."
+        ],
+        "failureCases": [
+          "Franco misses hook and loses zoning pressure.",
+          "Martis forces Franco to use suppression on another target."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "martis",
+    "counterHeroId": "karrie",
+    "reasons": [
+      "Karrie is a strong counter because her repeated Max HP-based true damage pressures Martis even when he uses damage reduction.",
+      "She works best when protected, because Martis can still kill her if he reaches melee range."
+    ],
+    "counterTypes": ["true-damage", "tank-shred", "kiting"],
+    "proof": [
+      {
+        "id": "karrie-true-damage-vs-martis-damage-reduction",
+        "category": "damage-type-advantage",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Martis uses damage reduction to survive close fights, while Karrie can pressure him with repeated true damage if she has enough space to keep attacking.",
+        "worksBestWhen": [
+          "Karrie has frontline peel.",
+          "Karrie keeps distance while stacking damage.",
+          "Martis has already used Mortal Coil or cannot reach Karrie cleanly."
+        ],
+        "failureCases": [
+          "Martis reaches Karrie before she can kite.",
+          "Karrie is isolated without protection.",
+          "Martis executes a low-health ally first and uses the reset pressure to chase Karrie."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "martis",
+    "counterHeroId": "alpha",
+    "reasons": [
+      "Alpha is a believable Martis counter because he can fight Martis directly with sustain while Beta adds true damage pressure.",
+      "Alpha is suggested because his sustain, close-range trading, and Beta's true-damage pressure let him contest Martis directly instead of depending only on crowd control that Martis can resist during Mortal Coil."
+    ],
+    "counterTypes": ["true-damage", "sustain", "frontline"],
+    "proof": [
+      {
+        "id": "alpha-sustain-true-damage-vs-martis-duel",
+        "category": "damage-type-advantage",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Martis wants to win close-range trades with damage reduction and control immunity, while Alpha can keep trading through sustain and Beta's true damage.",
+        "worksBestWhen": [
+          "Alpha lands repeated skills to keep Beta pressure active.",
+          "Alpha has enough sustain or defensive item timing to survive Martis's first commit.",
+          "Alpha avoids becoming low enough for an easy Decimation reset."
+        ],
+        "failureCases": [
+          "Martis bursts Alpha low before Alpha can sustain back.",
+          "Alpha misses skills and cannot trigger enough Beta pressure.",
+          "Martis enters when Alpha's ultimate or sustain window is unavailable."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "martis",
+    "counterHeroId": "x.borg",
+    "reasons": [
+      "X.Borg can pressure Martis with true damage while also having Firaga Armor as a survival buffer.",
+      "His ranged fire pressure makes Martis work harder to find a clean Decimation setup."
+    ],
+    "counterTypes": ["true-damage", "sustain", "kiting"],
+    "proof": [
+      {
+        "id": "x.borg-true-damage-vs-martis-close-fight",
+        "category": "damage-type-advantage",
+        "priority": "secondary",
+        "impact": "medium",
+        "summary": "Martis wants to reduce damage and force close fights, while X.Borg can apply true damage windows and use Firaga Armor to survive part of the engage.",
+        "worksBestWhen": [
+          "X.Borg keeps spacing and burns Martis before Martis reaches execute range.",
+          "X.Borg has Firaga Armor available before the fight starts.",
+          "The team prevents Martis from freely diving the armorless state."
+        ],
+        "failureCases": [
+          "Martis catches X.Borg after Firaga Armor is broken.",
+          "X.Borg misses fire pressure and cannot trigger true damage reliably.",
+          "Martis reaches low-health targets and snowballs with Decimation resets."
+        ]
+      }
+    ]
+  }
+]

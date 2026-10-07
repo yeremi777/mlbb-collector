@@ -1,0 +1,157 @@
+[
+  {
+    "targetHeroId": "franco",
+    "counterHeroId": "martis",
+    "reasons": [
+      "Martis can use Mortal Coil's control immunity timing to resist Franco's normal hook or crowd-control pickoff flow.",
+      "Martis is durable enough to punish Franco after a failed hook, especially when Franco cannot immediately follow with Bloody Hunt.",
+      "This matchup is strongest when Martis tracks Franco's cooldowns and does not waste Mortal Coil before the pick attempt."
+    ],
+    "counterTypes": [
+      "control-immunity",
+      "anti-pickoff",
+      "cooldown-punish",
+      "execution-dependent"
+    ],
+    "proof": [
+      {
+        "id": "martis-mortal-coil-vs-franco-pickoff",
+        "category": "skill-interaction",
+        "priority": "primary",
+        "impact": "medium",
+        "summary": "Franco wants to isolate a target with Iron Hook or close-range control, while Martis can use Mortal Coil's control immunity timing to resist normal control and punish Franco after the failed pick.",
+        "worksBestWhen": [
+          "Martis saves Mortal Coil for Franco's hook or control attempt.",
+          "Martis stays close enough to punish Franco after a missed hook.",
+          "Franco has already used Bloody Hunt or cannot immediately suppress Martis."
+        ],
+        "failureCases": [
+          "Franco lands Bloody Hunt suppression before Martis can use Mortal Coil.",
+          "Martis mistimes Mortal Coil and gets pulled into Franco's team.",
+          "Franco hooks Martis when Martis has no team follow-up nearby."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "franco",
+    "counterHeroId": "chou",
+    "reasons": [
+      "Chou can use Shunpo timing to avoid or reduce Franco's normal crowd-control threat.",
+      "Chou can punish Franco after a missed hook by closing distance and displacing him with The Way of Dragon.",
+      "This counter is strong but execution-dependent because Chou can still lose if Franco suppresses him first."
+    ],
+    "counterTypes": [
+      "control-immunity",
+      "mobility",
+      "pickoff",
+      "cooldown-punish"
+    ],
+    "proof": [
+      {
+        "id": "chou-shunpo-vs-franco-pickoff",
+        "category": "mobility-advantage",
+        "priority": "primary",
+        "impact": "medium",
+        "summary": "Franco needs a clean hook or close-range suppression to start a pick, while Chou can use mobility and Shunpo timing to avoid normal control windows and punish Franco after a missed hook.",
+        "worksBestWhen": [
+          "Chou tracks Franco's hook cooldown.",
+          "Chou saves Shunpo for Franco's real pick attempt.",
+          "Chou has enough team follow-up after displacing Franco."
+        ],
+        "failureCases": [
+          "Franco suppresses Chou before Shunpo is used.",
+          "Chou dives Franco without team follow-up.",
+          "Franco waits until Chou spends Shunpo before committing."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "franco",
+    "counterHeroId": "tigreal",
+    "reasons": [
+      "Tigreal can stand between Franco and the backline, making Franco's hook target less valuable.",
+      "If Franco hooks Tigreal instead of a carry, Tigreal can turn the pull into a counter-engage opportunity.",
+      "Tigreal's teamfight crowd control can punish Franco after a failed hook or overextended pick attempt."
+    ],
+    "counterTypes": ["frontline", "anti-pickoff", "teamfight", "protect"],
+    "proof": [
+      {
+        "id": "tigreal-frontline-counter-engage-vs-franco-hook",
+        "category": "teamfight-role-counter",
+        "priority": "primary",
+        "impact": "medium",
+        "summary": "Franco wants to isolate a high-value target with Iron Hook, while Tigreal can absorb hook pressure as a frontline and turn a bad Franco hook into a counter-engage window.",
+        "worksBestWhen": [
+          "Tigreal positions between Franco and the backline.",
+          "Carries avoid standing too close to Tigreal after he is hooked.",
+          "Tigreal has crowd-control skills available when Franco overextends."
+        ],
+        "failureCases": [
+          "Franco ignores Tigreal and finds a side-angle hook on a carry.",
+          "Tigreal is hooked before his team is close enough to follow up.",
+          "Franco suppresses a priority target immediately before Tigreal can respond."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "franco",
+    "counterHeroId": "valir",
+    "reasons": [
+      "Valir can punish Franco after a missed hook by slowing, poking, and pushing him away.",
+      "Valir can make it harder for Franco to walk forward for close-range suppression.",
+      "This counter depends heavily on spacing because Valir can still be caught by Flicker into Bloody Hunt."
+    ],
+    "counterTypes": ["disengage", "poke", "cooldown-punish", "kiting"],
+    "proof": [
+      {
+        "id": "valir-cooldown-punish-vs-franco-hook",
+        "category": "cooldown-window",
+        "priority": "condition",
+        "impact": "medium",
+        "summary": "Franco is most threatening when Iron Hook or Bloody Hunt is available, but Valir can kite and punish him after hook is missed or when Franco is forced to walk forward.",
+        "worksBestWhen": [
+          "Valir plays outside direct suppression range.",
+          "Valir waits for Franco to miss hook before stepping forward.",
+          "Valir keeps knockback available for Franco's approach."
+        ],
+        "failureCases": [
+          "Franco catches Valir with Flicker into Bloody Hunt.",
+          "Valir walks into hook range without vision.",
+          "Valir wastes disengage before Franco commits."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "franco",
+    "counterHeroId": "diggie",
+    "reasons": [
+      "Diggie can help check bushes and reduce Franco's hidden hook angles.",
+      "Diggie can protect nearby teammates after Franco starts a pick attempt, especially if Franco does not immediately suppress the target.",
+      "Diggie should be treated as a conditional anti-pickoff support, not a clean answer to Franco's suppression."
+    ],
+    "counterTypes": ["vision-control", "protect", "anti-pickoff", "teamfight"],
+    "proof": [
+      {
+        "id": "diggie-vision-protection-vs-franco-hook",
+        "category": "vision-awareness",
+        "priority": "condition",
+        "impact": "medium",
+        "summary": "Franco wants hidden hook angles and isolated picks, while Diggie can help scout dangerous space and protect nearby allies after a pick attempt, but Diggie does not cleanly answer Franco's suppression.",
+        "worksBestWhen": [
+          "Diggie scouts bushes before objectives.",
+          "Diggie stays near Franco's likely target.",
+          "Franco hooks without immediate suppression follow-up."
+        ],
+        "failureCases": [
+          "Franco suppresses the hooked target immediately.",
+          "Franco hooks Diggie first.",
+          "Allies are too far from Diggie's protection range."
+        ]
+      }
+    ]
+  }
+]

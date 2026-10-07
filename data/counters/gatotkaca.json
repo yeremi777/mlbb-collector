@@ -1,0 +1,152 @@
+[
+  {
+    "targetHeroId": "gatotkaca",
+    "counterHeroId": "karrie",
+    "reasons": [
+      "Karrie pressures Gatotkaca's high durability with repeated Max HP true damage instead of relying only on normal physical damage.",
+      "Gatotkaca wants extended melee fights, while Karrie can kite and stack damage safely when protected."
+    ],
+    "counterTypes": [
+      "tank-shred",
+      "true-damage",
+      "kiting"
+    ],
+    "proof": [
+      {
+        "id": "karrie-lightwheel-mark-vs-gatotkaca-frontline",
+        "category": "damage-type-advantage",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Gatotkaca wants to absorb damage as a frontline tank, while Karrie can stack Lightwheel Mark and convert repeated hits into Max HP true damage.",
+        "worksBestWhen": [
+          "Karrie has frontline protection and can hit Gatotkaca without being jumped.",
+          "Karrie keeps spacing instead of fighting inside Gatotkaca's engage zone."
+        ],
+        "failureCases": [
+          "Gatotkaca reaches Karrie with Avatar of Guardian or teammate crowd control.",
+          "Karrie is forced to hit other targets and cannot safely stack damage on Gatotkaca."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "gatotkaca",
+    "counterHeroId": "lunox",
+    "reasons": [
+      "Lunox can pressure Gatotkaca with magic penetration and burst instead of taking a slow frontline trade.",
+      "Her Order and Chaos tools give her defensive and offensive windows against Gatotkaca's engage."
+    ],
+    "counterTypes": [
+      "penetration",
+      "burst",
+      "mobility"
+    ],
+    "proof": [
+      {
+        "id": "lunox-chaos-burst-vs-gatotkaca-durability",
+        "category": "damage-type-advantage",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Gatotkaca becomes difficult to kill through normal damage, while Lunox can use penetration and burst windows to damage durable frontliners.",
+        "worksBestWhen": [
+          "Lunox tracks Gatotkaca's ultimate and saves her defensive or escape window for the real engage.",
+          "Lunox attacks from a safe mid-range position."
+        ],
+        "failureCases": [
+          "Lunox is caught before entering the correct Order or Chaos state.",
+          "Gatotkaca forces Lunox to use her defensive window early and re-engages with teammates."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "gatotkaca",
+    "counterHeroId": "valir",
+    "reasons": [
+      "Valir can push back and slow Gatotkaca, reducing his ability to follow up after engaging.",
+      "Valir's self-cleanse and movement speed help him survive the first crowd-control window if timed correctly."
+    ],
+    "counterTypes": [
+      "disengage",
+      "kiting",
+      "anti-engage"
+    ],
+    "proof": [
+      {
+        "id": "valir-searing-torrent-vs-gatotkaca-engage",
+        "category": "kiting",
+        "priority": "primary",
+        "impact": "medium",
+        "summary": "Gatotkaca wants to close distance and keep enemies inside his control zone, while Valir can use pushback, slows, and self-cleanse timing to delay or deny the follow-up.",
+        "worksBestWhen": [
+          "Valir holds Searing Torrent until Gatotkaca commits.",
+          "Valir plays behind frontline instead of standing in the first engage path."
+        ],
+        "failureCases": [
+          "Gatotkaca engages from fog before Valir can react.",
+          "Valir wastes his displacement before Gatotkaca commits."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "gatotkaca",
+    "counterHeroId": "dyrroth",
+    "reasons": [
+      "Dyrroth can punish Gatotkaca in lane or skirmishes with Physical Defense reduction and burst pressure.",
+      "This is strongest before Gatotkaca becomes too durable or when Dyrroth has item tempo."
+    ],
+    "counterTypes": [
+      "penetration",
+      "burst",
+      "anti-frontline"
+    ],
+    "proof": [
+      {
+        "id": "dyrroth-defense-reduction-vs-gatotkaca",
+        "category": "damage-type-advantage",
+        "priority": "secondary",
+        "impact": "medium",
+        "summary": "Gatotkaca wants to survive long trades, while Dyrroth can create a defense-reduction burst window that punishes him before he stabilizes.",
+        "worksBestWhen": [
+          "Dyrroth fights early or with follow-up damage.",
+          "Dyrroth avoids wasting his burst after Gatotkaca has already forced a teamfight."
+        ],
+        "failureCases": [
+          "Gatotkaca survives the first burst and turns the fight with taunt or team follow-up.",
+          "Dyrroth overcommits into Gatotkaca's team."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "gatotkaca",
+    "counterHeroId": "diggie",
+    "reasons": [
+      "Diggie can reduce Gatotkaca's teamfight value by protecting allies from the key crowd-control window.",
+      "This matchup denies Gatotkaca's setup rather than killing him directly."
+    ],
+    "counterTypes": [
+      "anti-cc",
+      "cleanse",
+      "teamfight"
+    ],
+    "proof": [
+      {
+        "id": "diggie-time-journey-vs-gatotkaca-engage",
+        "category": "crowd-control-counter",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Gatotkaca wants to start fights with area control, while Diggie can protect nearby allies with cleanse, control immunity, and shielding during the engage window.",
+        "worksBestWhen": [
+          "Diggie saves Time Journey for Gatotkaca's real commit.",
+          "Diggie stays close enough to protect the allies Gatotkaca wants to catch."
+        ],
+        "failureCases": [
+          "Gatotkaca baits Time Journey before fully committing.",
+          "Gatotkaca catches Diggie away from the teammates who need protection."
+        ]
+      }
+    ]
+  }
+]

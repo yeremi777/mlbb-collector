@@ -1,0 +1,161 @@
+[
+  {
+    "anchorHeroId": "beatrix",
+    "synergyHeroId": "franco",
+    "reasons": [
+      "Franco can drag or suppress one enemy, giving Beatrix a confirmed target for weapon follow-up.",
+      "Beatrix's weapon damage becomes more reliable when the target has limited ability to move, dash, or interrupt her firing angle."
+    ],
+    "synergyTypes": [
+      "pickoff-combo",
+      "burst-follow-up",
+      "setup-combo"
+    ],
+    "proof": [
+      {
+        "id": "beatrix-weapon-follow-up-after-franco-suppression",
+        "category": "pickoff-combo",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Franco confirms one target with hook or suppression, while Beatrix follows with the weapon best suited to the target's position.",
+        "worksBestWhen": [
+          "Franco catches a priority target inside Beatrix's damage range.",
+          "Beatrix has the right weapon ready before Franco commits.",
+          "Beatrix waits until the target is actually controlled before firing."
+        ],
+        "failureCases": [
+          "Franco catches a tank instead of a priority target.",
+          "Beatrix is reloading or holding the wrong weapon.",
+          "Enemy peel interrupts Beatrix before the damage lands."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "beatrix",
+    "synergyHeroId": "kaja",
+    "reasons": [
+      "Kaja can suppress and drag one priority target, giving Beatrix a clean single-target damage window.",
+      "Beatrix can use Kaja's lock to aim or burst without relying on raw lane pressure or guessing the enemy movement path."
+    ],
+    "synergyTypes": [
+      "pickoff-combo",
+      "burst-follow-up",
+      "cc-chain"
+    ],
+    "proof": [
+      {
+        "id": "beatrix-single-target-damage-after-kaja-lock",
+        "category": "pickoff-combo",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Kaja suppresses and pulls one enemy, while Beatrix uses the confirmed target window for weapon damage before the target can escape.",
+        "worksBestWhen": [
+          "Kaja catches a squishy or high-value target.",
+          "Beatrix is already in range before Kaja commits.",
+          "Beatrix prepares the weapon that fits the target's final position."
+        ],
+        "failureCases": [
+          "Kaja catches the frontline.",
+          "Beatrix is not ready with the correct weapon.",
+          "Enemy peel interrupts the follow-up after the suppression window."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "beatrix",
+    "synergyHeroId": "kalea",
+    "reasons": [
+      "Kalea can knock enemies airborne or move a grabbed target, giving Beatrix a controlled damage window.",
+      "Beatrix can punish Kalea's forced target position with a prepared weapon angle."
+    ],
+    "synergyTypes": [
+      "setup-combo",
+      "cc-chain",
+      "burst-follow-up"
+    ],
+    "proof": [
+      {
+        "id": "beatrix-weapon-angle-after-kalea-displacement",
+        "category": "setup-combo",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Kalea creates a displacement or airborne-control window, while Beatrix follows with weapon damage from a prepared angle.",
+        "worksBestWhen": [
+          "Kalea moves the target toward Beatrix's safe damage angle.",
+          "Beatrix prepares the weapon before Kalea commits.",
+          "Kalea and Beatrix focus the same target."
+        ],
+        "failureCases": [
+          "Kalea moves the target away from Beatrix's line of fire.",
+          "Beatrix is pressured before she can follow up.",
+          "The enemy uses peel or immunity after Kalea's setup."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "beatrix",
+    "synergyHeroId": "atlas",
+    "reasons": [
+      "Atlas can group enemies, giving Beatrix a teamfight damage window with the correct weapon choice.",
+      "Beatrix can stay behind the engage and punish the controlled area instead of starting the fight herself."
+    ],
+    "synergyTypes": [
+      "setup-combo",
+      "aoe-follow-up",
+      "teamfight-combo"
+    ],
+    "proof": [
+      {
+        "id": "beatrix-aoe-weapon-follow-up-after-atlas-pull",
+        "category": "setup-combo",
+        "priority": "secondary",
+        "impact": "medium",
+        "summary": "Atlas creates a grouped control window, while Beatrix converts the setup into weapon-based area or burst damage.",
+        "worksBestWhen": [
+          "Atlas catches multiple enemies or a high-value backline target.",
+          "Beatrix has the correct weapon ready before Atlas commits.",
+          "Beatrix keeps safe spacing and waits for the pull or control window."
+        ],
+        "failureCases": [
+          "Atlas catches enemies outside Beatrix's weapon angle.",
+          "Beatrix is reloading or holding the wrong weapon.",
+          "Enemy divers force Beatrix to reposition before she can follow up."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "beatrix",
+    "synergyHeroId": "tigreal",
+    "reasons": [
+      "Tigreal can group or hold enemies long enough for Beatrix to follow with weapon damage.",
+      "Beatrix can punish Tigreal's engage from behind the frontline when she has a safe angle."
+    ],
+    "synergyTypes": [
+      "engage-follow-up",
+      "aoe-follow-up",
+      "teamfight-combo"
+    ],
+    "proof": [
+      {
+        "id": "beatrix-weapon-damage-after-tigreal-engage",
+        "category": "engage-follow-up",
+        "priority": "secondary",
+        "impact": "medium",
+        "summary": "Tigreal creates a crowd-control opening, while Beatrix follows with weapon-based damage if she has the right weapon and safe angle.",
+        "worksBestWhen": [
+          "Tigreal engages after Beatrix has weapon and range ready.",
+          "Beatrix uses the correct weapon for grouped or single-target follow-up."
+        ],
+        "failureCases": [
+          "Tigreal engages too far from Beatrix.",
+          "Beatrix is forced to reposition during the setup.",
+          "The enemy spreads before Tigreal completes the engage."
+        ]
+      }
+    ]
+  }
+]

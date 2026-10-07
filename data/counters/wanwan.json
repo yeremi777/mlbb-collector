@@ -1,0 +1,138 @@
+[
+  {
+    "targetHeroId": "wanwan",
+    "counterHeroId": "minsitthar",
+    "reasons": [
+      "Minsitthar directly restricts Wanwan's constant movement and jumping pattern.",
+      "His ultimate can trap Wanwan before she freely activates Crossbow of Tang."
+    ],
+    "counterTypes": ["anti-dash", "crowd-control-counter", "teamfight"],
+    "proof": [
+      {
+        "id": "minsitthar-kings-calling-vs-wanwan-mobility",
+        "category": "skill-interaction",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Wanwan relies on mobility to kite and unlock her ultimate, while Minsitthar's King's Calling disables dash or blink skills in its zone.",
+        "worksBestWhen": [
+          "Minsitthar casts ultimate before Wanwan freely activates Crossbow of Tang.",
+          "Allies focus Wanwan while her movement is restricted."
+        ],
+        "failureCases": [
+          "Wanwan stays outside King's Calling.",
+          "Wanwan activates Crossbow of Tang before being trapped and becomes invincible during the ultimate."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "wanwan",
+    "counterHeroId": "khufra",
+    "reasons": [
+      "Khufra can punish Wanwan's movement if she tries to jump through his Bouncing Ball zone.",
+      "This makes him a strong teamfight bodyguard against Wanwan's free-hit positioning."
+    ],
+    "counterTypes": ["anti-dash", "anti-dive", "crowd-control-counter"],
+    "proof": [
+      {
+        "id": "khufra-bouncing-ball-vs-wanwan-jump-positioning",
+        "category": "skill-interaction",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Wanwan wants to reposition constantly around targets, while Khufra's Bouncing Ball punishes enemies trying to blink across him.",
+        "worksBestWhen": [
+          "Khufra positions near the carry Wanwan wants to attack.",
+          "Khufra waits for Wanwan's real movement path."
+        ],
+        "failureCases": [
+          "Wanwan keeps distance and attacks outside Khufra's zone.",
+          "Khufra uses Bouncing Ball before Wanwan commits."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "wanwan",
+    "counterHeroId": "lolita",
+    "reasons": [
+      "Lolita can reduce Wanwan's teamfight value by shielding against ranged basic attacks and projectiles.",
+      "This is especially relevant during Wanwan's ultimate because Crossbow of Tang is treated as basic attack damage.",
+      "Lolita protects the team from the burst window instead of chasing Wanwan directly."
+    ],
+    "counterTypes": ["protect", "teamfight", "anti-dive"],
+    "proof": [
+      {
+        "id": "lolita-guardian-reflection-vs-wanwan-crossbow-of-tang",
+        "category": "skill-interaction",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Wanwan wants to convert exposed weaknesses into Crossbow of Tang damage, while Lolita's shield can block or reflect ranged basic attack and projectile pressure to protect teammates during the burst window.",
+        "worksBestWhen": [
+          "Lolita faces Wanwan correctly before the ultimate damage lands.",
+          "Lolita stays close enough to protect the teammate Wanwan is targeting.",
+          "The team avoids spreading too far away from Lolita's shield angle."
+        ],
+        "failureCases": [
+          "Wanwan attacks from an angle Lolita is not covering.",
+          "Lolita's shield breaks or is unavailable.",
+          "Wanwan waits out the shield before activating ultimate."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "wanwan",
+    "counterHeroId": "franco",
+    "reasons": [
+      "Franco can punish Wanwan before she activates Crossbow of Tang or after it ends.",
+      "Suppression is useful because Wanwan can otherwise cleanse or dodge many ordinary control attempts."
+    ],
+    "counterTypes": ["pickoff", "crowd-control-counter", "cooldown-punish"],
+    "proof": [
+      {
+        "id": "franco-bloody-hunt-vs-wanwan-pre-ultimate-window",
+        "category": "crowd-control-counter",
+        "priority": "condition",
+        "impact": "high",
+        "summary": "Wanwan is hard to control once she is moving freely or invincible in ultimate, while Franco can suppress her if he catches her before that window.",
+        "worksBestWhen": [
+          "Franco waits until Wanwan's cleanse or ultimate timing is unavailable.",
+          "The team bursts during Bloody Hunt."
+        ],
+        "failureCases": [
+          "Wanwan activates Crossbow of Tang and becomes invincible.",
+          "Franco misses hook or suppresses at the wrong timing."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "wanwan",
+    "counterHeroId": "kaja",
+    "reasons": [
+      "Kaja can suppress and drag Wanwan before she activates Crossbow of Tang.",
+      "Kaja can punish Wanwan with one decisive suppression window before she activates Crossbow of Tang, which fits better as a direct pickoff proof against her pre-ultimate vulnerability.",
+      "Wanwan becomes much harder to punish after her ultimate is active, so Kaja's value is strongest before she unlocks or casts it."
+    ],
+    "counterTypes": ["pickoff", "crowd-control-counter", "anti-mobility"],
+    "proof": [
+      {
+        "id": "kaja-divine-judgment-vs-wanwan-pre-ultimate-pickoff",
+        "category": "crowd-control-counter",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Wanwan wants to kite until all weaknesses are exposed, then activate Crossbow of Tang. Kaja can suppress and drag her before that window, giving the team a direct burst opportunity.",
+        "worksBestWhen": [
+          "Kaja hides until Wanwan steps forward to expose weaknesses.",
+          "Kaja engages before Wanwan activates Crossbow of Tang.",
+          "Teammates are ready to burst during Divine Judgment."
+        ],
+        "failureCases": [
+          "Wanwan keeps distance and never enters Kaja's range.",
+          "Wanwan activates Crossbow of Tang before Kaja catches her.",
+          "Kaja uses Divine Judgment on another target before Wanwan commits."
+        ]
+      }
+    ]
+  }
+]

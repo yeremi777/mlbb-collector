@@ -1,0 +1,157 @@
+[
+  {
+    "anchorHeroId": "cici",
+    "synergyHeroId": "gatotkaca",
+    "reasons": [
+      "Gatotkaca can knock enemies airborne and pull fringe targets toward the center, helping Cici find two linked targets.",
+      "Cici can cast Curtain Call after Gatotkaca's landing to punish enemies forced close together."
+    ],
+    "synergyTypes": [
+      "cc-chain",
+      "setup-combo",
+      "teamfight-combo"
+    ],
+    "proof": [
+      {
+        "id": "gatotkaca-setup-for-cici-curtain-call",
+        "category": "setup-combo",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Gatotkaca creates a grouped airborne setup, while Cici links two enemies and damages both with Yo-Yo Blitz.",
+        "worksBestWhen": [
+          "Gatotkaca lands near two priority targets.",
+          "Cici waits for the knock-up or pull before casting Curtain Call."
+        ],
+        "failureCases": [
+          "Gatotkaca lands on only one target.",
+          "Cici links a low-value target pair.",
+          "Enemies spread before Cici enters range."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "cici",
+    "synergyHeroId": "tigreal",
+    "reasons": [
+      "Tigreal can group enemies, giving Cici an easier two-target Curtain Call setup.",
+      "Cici benefits from entering after Tigreal confirms the crowd-control window."
+    ],
+    "synergyTypes": [
+      "cc-chain",
+      "engage-follow-up",
+      "teamfight-combo"
+    ],
+    "proof": [
+      {
+        "id": "tigreal-grouping-for-cici",
+        "category": "engage-follow-up",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Tigreal starts the grouped fight, while Cici links and damages two controlled enemies.",
+        "worksBestWhen": [
+          "Tigreal catches two or more enemies.",
+          "Cici is close enough to follow immediately."
+        ],
+        "failureCases": [
+          "Cici arrives after the control ends.",
+          "Tigreal catches only the enemy tank.",
+          "Cici is focused before she builds sustained pressure."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "cici",
+    "synergyHeroId": "atlas",
+    "reasons": [
+      "Atlas can gather enemies into a position where Cici can link two heroes more reliably.",
+      "Cici's dual-target damage has better value when Atlas forces enemies into one zone."
+    ],
+    "synergyTypes": [
+      "setup-combo",
+      "cc-chain",
+      "teamfight-combo"
+    ],
+    "proof": [
+      {
+        "id": "atlas-fatal-links-for-cici",
+        "category": "setup-combo",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Atlas groups targets first, then Cici uses Curtain Call to bind two enemies and continue damage.",
+        "worksBestWhen": [
+          "Atlas catches two high-value heroes.",
+          "Cici waits until the pull finishes."
+        ],
+        "failureCases": [
+          "Atlas catches enemies outside Cici's range.",
+          "Cici links the wrong pair.",
+          "Enemies use disengage after the setup."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "cici",
+    "synergyHeroId": "angela",
+    "reasons": [
+      "Angela helps Cici stay alive while Cici chases linked targets.",
+      "Cici benefits from attached protection because she often fights forward instead of from a safe backline position."
+    ],
+    "synergyTypes": [
+      "dive-support",
+      "shielding",
+      "healing-sustain"
+    ],
+    "proof": [
+      {
+        "id": "angela-protection-for-cici-chase",
+        "category": "protection",
+        "priority": "secondary",
+        "impact": "medium",
+        "summary": "Angela keeps Cici alive during her extended chase and dual-target damage window.",
+        "worksBestWhen": [
+          "Angela attaches before Cici fully commits.",
+          "Cici keeps damaging enemies to maintain skirmish pressure."
+        ],
+        "failureCases": [
+          "Cici jumps into hard crowd control.",
+          "Angela attaches after Cici is already forced out.",
+          "Anti-heal and burst remove the sustain value."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "cici",
+    "synergyHeroId": "rafaela",
+    "reasons": [
+      "Rafaela gives Cici movement and healing support for extended skirmishes.",
+      "Cici can keep chasing linked or slowed enemies more reliably with speed support."
+    ],
+    "synergyTypes": [
+      "healing-sustain",
+      "mobility-enable",
+      "peel"
+    ],
+    "proof": [
+      {
+        "id": "rafaela-speed-for-cici-chase",
+        "category": "mobility-enabler",
+        "priority": "secondary",
+        "impact": "medium",
+        "summary": "Rafaela helps Cici stay in range during chase and kite patterns.",
+        "worksBestWhen": [
+          "Rafaela stays near Cici's fight path.",
+          "Cici uses the speed window to keep safe spacing."
+        ],
+        "failureCases": [
+          "Cici dives beyond Rafaela's range.",
+          "Enemy burst kills Cici before healing matters.",
+          "Rafaela is forced to heal another target first."
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,152 @@
+[
+  {
+    "targetHeroId": "edith",
+    "counterHeroId": "karrie",
+    "reasons": [
+      "Karrie punishes Edith's tank/frontline nature because repeated attacks can trigger max-HP true damage.",
+      "Edith becomes weaker when she cannot safely absorb damage and transform before Karrie melts her HP."
+    ],
+    "counterTypes": [
+      "tank-shred",
+      "true-damage",
+      "kiting"
+    ],
+    "proof": [
+      {
+        "id": "karrie-lightwheel-mark-vs-edith-frontline",
+        "category": "damage-type-advantage",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Edith wants to stay durable long enough to start fights and transform, while Karrie's repeated attacks can convert into max-HP true damage that reduces Edith's tank value.",
+        "worksBestWhen": [
+          "Karrie has peel from a roamer or frontline.",
+          "Karrie keeps distance from Edith's crowd-control range."
+        ],
+        "failureCases": [
+          "Edith catches Karrie first with crowd control.",
+          "Karrie fights without protection before her attack-speed items are ready."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "edith",
+    "counterHeroId": "diggie",
+    "reasons": [
+      "Diggie reduces Edith's teamfight engage value by protecting allies from her crowd-control chain.",
+      "Time Journey is especially valuable when Edith tries to start with crowd control before transforming."
+    ],
+    "counterTypes": [
+      "anti-cc",
+      "cleanse",
+      "teamfight"
+    ],
+    "proof": [
+      {
+        "id": "diggie-time-journey-vs-edith-engage",
+        "category": "crowd-control-counter",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Edith wants to create a crowd-control window for her team, while Diggie can remove debuffs and give nearby allies control immunity during the engage window.",
+        "worksBestWhen": [
+          "Diggie saves Time Journey for Edith's real engage.",
+          "Diggie positions near the allies Edith wants to catch."
+        ],
+        "failureCases": [
+          "Edith baits Time Journey before committing.",
+          "Edith catches Diggie first or forces the fight while Diggie's ultimate is unavailable."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "edith",
+    "counterHeroId": "valir",
+    "reasons": [
+      "Valir can push Edith away before she reaches ideal crowd-control range.",
+      "His slows and knockback make it harder for Edith to force a clean Phylax engage."
+    ],
+    "counterTypes": [
+      "kiting",
+      "disengage",
+      "anti-engage"
+    ],
+    "proof": [
+      {
+        "id": "valir-searing-torrent-vs-edith-engage",
+        "category": "kiting",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Edith wants to enter crowd-control range, while Valir can slow, zone, and knock her away before she reaches the backline.",
+        "worksBestWhen": [
+          "Valir keeps Searing Torrent for Edith's approach.",
+          "The team follows Valir's disengage instead of re-entering Edith's range."
+        ],
+        "failureCases": [
+          "Edith flanks from fog or uses a surprise engage angle.",
+          "Valir is controlled or burst before he can disengage."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "edith",
+    "counterHeroId": "dyrroth",
+    "reasons": [
+      "Dyrroth can pressure Edith before her teamfight value comes online.",
+      "His defense reduction helps punish Edith's tank form before she gets a comfortable transform window."
+    ],
+    "counterTypes": [
+      "penetration",
+      "burst",
+      "cooldown-punish"
+    ],
+    "proof": [
+      {
+        "id": "dyrroth-defense-reduction-vs-edith-tank-form",
+        "category": "damage-type-advantage",
+        "priority": "primary",
+        "impact": "medium",
+        "summary": "Edith relies on durability to enter fights, while Dyrroth can reduce her physical defense and burst her during short punish windows.",
+        "worksBestWhen": [
+          "Dyrroth wins early lane tempo.",
+          "Dyrroth engages after Edith misses or spends a crowd-control skill."
+        ],
+        "failureCases": [
+          "Dyrroth dives into Edith's crowd control without backup.",
+          "Edith survives the burst and turns the fight after transforming."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "edith",
+    "counterHeroId": "lunox",
+    "reasons": [
+      "Lunox can punish Edith with burst windows while avoiding key retaliation with Brilliance.",
+      "Brilliance gives Lunox an answer when Edith tries to turn the fight after transforming."
+    ],
+    "counterTypes": [
+      "burst",
+      "mobility",
+      "cooldown-punish"
+    ],
+    "proof": [
+      {
+        "id": "lunox-brilliance-vs-edith-turnaround",
+        "category": "mobility-advantage",
+        "priority": "secondary",
+        "impact": "medium",
+        "summary": "Edith wants enemies to stay inside her retaliation window, while Lunox can use Brilliance to avoid key timing and Darkening to reposition for burst.",
+        "worksBestWhen": [
+          "Lunox holds Brilliance for Edith's engage or burst window.",
+          "Lunox attacks after Edith has already committed her crowd control."
+        ],
+        "failureCases": [
+          "Lunox uses Brilliance too early.",
+          "Edith catches Lunox before she can enter her safe ultimate state."
+        ]
+      }
+    ]
+  }
+]

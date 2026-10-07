@@ -1,0 +1,155 @@
+[
+  {
+    "anchorHeroId": "esmeralda",
+    "synergyHeroId": "angela",
+    "reasons": [
+      "Angela can attach to Esmeralda during a dive, adding shield, healing, and movement support while Esmeralda fights inside the enemy formation.",
+      "Esmeralda benefits from support that follows her commit without needing the support hero to stand in the same danger zone."
+    ],
+    "synergyTypes": [
+      "dive-support",
+      "shielding",
+      "healing-sustain"
+    ],
+    "proof": [
+      {
+        "id": "esmeralda-angela-attached-dive-support",
+        "category": "shielding",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Esmeralda commits into close-range extended fights, while Angela can attach and add protection during that commit window.",
+        "worksBestWhen": [
+          "Angela saves Heartguard for Esmeralda's real engage.",
+          "Esmeralda enters while her team can still follow the dive."
+        ],
+        "failureCases": [
+          "Esmeralda dives before Angela is ready.",
+          "Esmeralda enters too deep without team follow-up.",
+          "The enemy waits out Angela's support window before re-engaging."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "esmeralda",
+    "synergyHeroId": "floryn",
+    "reasons": [
+      "Floryn can support Esmeralda with global healing even when Esmeralda fights away from the main team.",
+      "The healing window helps Esmeralda keep pressure during extended frontline trades."
+    ],
+    "synergyTypes": [
+      "healing-sustain",
+      "dive-support"
+    ],
+    "proof": [
+      {
+        "id": "esmeralda-floryn-global-heal-extended-fight",
+        "category": "healing-sustain",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Esmeralda plays long close-range fights, and Floryn can restore her HP globally during the focus window.",
+        "worksBestWhen": [
+          "Floryn holds Bloom until Esmeralda is being focused.",
+          "Esmeralda still has enough shield or HP to survive until the heal resolves."
+        ],
+        "failureCases": [
+          "Esmeralda is burst down before healing changes the fight.",
+          "Floryn uses the global heal before Esmeralda commits.",
+          "The enemy isolates Esmeralda after the heal is already spent."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "esmeralda",
+    "synergyHeroId": "estes",
+    "reasons": [
+      "Estes helps Esmeralda stay in front during grouped fights where she wants repeated damage and shield uptime.",
+      "The extra sustain lets Esmeralda hold space longer for her team."
+    ],
+    "synergyTypes": [
+      "healing-sustain",
+      "teamfight-combo"
+    ],
+    "proof": [
+      {
+        "id": "esmeralda-estes-grouped-sustain-frontline",
+        "category": "healing-sustain",
+        "priority": "primary",
+        "impact": "medium",
+        "summary": "Esmeralda benefits from sustained healing while contesting space near enemies in grouped fights.",
+        "worksBestWhen": [
+          "Esmeralda fights near the team instead of fully isolating herself.",
+          "Estes positions safely behind Esmeralda during the teamfight."
+        ],
+        "failureCases": [
+          "Esmeralda dives outside Estes' healing range.",
+          "Estes is forced away before the fight starts.",
+          "The enemy applies burst or anti-heal before Esmeralda can use the sustain."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "esmeralda",
+    "synergyHeroId": "minotaur",
+    "reasons": [
+      "Minotaur provides a second frontline body and CC layer so Esmeralda is not the only hero absorbing focus.",
+      "His teamfight sustain and disruption give Esmeralda more time to play extended fights."
+    ],
+    "synergyTypes": [
+      "frontline-enabler",
+      "cc-chain",
+      "healing-sustain"
+    ],
+    "proof": [
+      {
+        "id": "esmeralda-minotaur-second-frontline-control",
+        "category": "frontline-enabler",
+        "priority": "primary",
+        "impact": "medium",
+        "summary": "Minotaur creates frontline space and disruption, giving Esmeralda more time to stay inside the fight.",
+        "worksBestWhen": [
+          "Minotaur engages first or peels after Esmeralda enters.",
+          "The team has damage follow-up behind the double frontline."
+        ],
+        "failureCases": [
+          "Both frontliners engage without damage follow-up.",
+          "Minotaur and Esmeralda split their engage timing.",
+          "The enemy ignores the frontline and dives the backline."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "esmeralda",
+    "synergyHeroId": "luo-yi",
+    "reasons": [
+      "Luo Yi can group and control enemies through Yin-Yang reaction windows, giving Esmeralda better close-range AoE targets.",
+      "Esmeralda can enter after Luo Yi creates a clustered fight area."
+    ],
+    "synergyTypes": [
+      "setup-combo",
+      "cc-chain",
+      "teamfight-combo"
+    ],
+    "proof": [
+      {
+        "id": "esmeralda-luo-yi-grouped-reaction-follow-up",
+        "category": "setup-combo",
+        "priority": "primary",
+        "impact": "medium",
+        "summary": "Luo Yi can create a grouped control window, while Esmeralda follows with close-range AoE pressure.",
+        "worksBestWhen": [
+          "Luo Yi triggers the reaction before Esmeralda commits.",
+          "Esmeralda has a path to reach the pulled targets."
+        ],
+        "failureCases": [
+          "The enemy spreads out before the reaction triggers.",
+          "Esmeralda cannot reach the grouped enemies in time.",
+          "Luo Yi uses her control while Esmeralda is not ready to follow."
+        ]
+      }
+    ]
+  }
+]

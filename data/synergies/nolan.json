@@ -1,0 +1,157 @@
+[
+  {
+    "anchorHeroId": "nolan",
+    "synergyHeroId": "chip",
+    "reasons": [
+      "Chip can turn Nolan's first dive pressure into a full team collapse.",
+      "Nolan can start the target pressure, then Chip brings follow-up through Shortcut."
+    ],
+    "synergyTypes": [
+      "mobility-enable",
+      "dive-support",
+      "pickoff-combo"
+    ],
+    "proof": [
+      {
+        "id": "chip-portal-followup-for-nolan-dive",
+        "category": "mobility-enabler",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Nolan starts the pickoff, while Chip lets teammates join quickly through portals.",
+        "worksBestWhen": [
+          "Nolan identifies the target before Chip opens Shortcut.",
+          "The team enters after Nolan has forced enemy movement."
+        ],
+        "failureCases": [
+          "Chip opens the portal into a losing fight.",
+          "Nolan dies before teammates arrive.",
+          "The enemy waits near the portal with counter-engage."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "nolan",
+    "synergyHeroId": "angela",
+    "reasons": [
+      "Angela can attach to Nolan and protect him while he dives.",
+      "Nolan often enters deep positions, so attached protection is easier to apply than normal backline support."
+    ],
+    "synergyTypes": [
+      "dive-support",
+      "shielding",
+      "healing-sustain"
+    ],
+    "proof": [
+      {
+        "id": "angela-attached-protection-for-nolan",
+        "category": "protection",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Angela gives Nolan extra safety during his burst-dive window.",
+        "worksBestWhen": [
+          "Angela attaches before Nolan spends his escape route.",
+          "Nolan chooses a target that can be finished during the protection window."
+        ],
+        "failureCases": [
+          "Nolan dives into layered crowd control.",
+          "Angela attaches too late.",
+          "Nolan overextends after the shield window ends."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "nolan",
+    "synergyHeroId": "kaja",
+    "reasons": [
+      "Kaja's suppression gives Nolan a reliable target to burst.",
+      "Nolan's Rift combo becomes easier when the target cannot freely dash away."
+    ],
+    "synergyTypes": [
+      "pickoff-combo",
+      "cc-chain",
+      "burst-follow-up"
+    ],
+    "proof": [
+      {
+        "id": "kaja-suppression-for-nolan-burst",
+        "category": "pickoff-combo",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Kaja locks one target first, then Nolan follows with fast burst.",
+        "worksBestWhen": [
+          "Kaja suppresses a core or backline damage dealer.",
+          "Nolan waits for the confirmed lock before committing."
+        ],
+        "failureCases": [
+          "Kaja catches a low-value target.",
+          "Nolan is too far to follow.",
+          "Enemy peel punishes Nolan after the pick attempt."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "nolan",
+    "synergyHeroId": "floryn",
+    "reasons": [
+      "Floryn can heal Nolan even when he dives away from her position.",
+      "Nolan benefits from global sustain because his pickoff pattern often separates him from normal support range."
+    ],
+    "synergyTypes": [
+      "healing-sustain",
+      "dive-support",
+      "game-phase"
+    ],
+    "proof": [
+      {
+        "id": "floryn-global-heal-for-nolan",
+        "category": "healing-sustain",
+        "priority": "secondary",
+        "impact": "medium",
+        "summary": "Floryn gives Nolan global sustain support during dive or escape windows.",
+        "worksBestWhen": [
+          "Floryn uses Bloom before Nolan is already too low.",
+          "Nolan keeps one mobility tool to escape after being healed."
+        ],
+        "failureCases": [
+          "Nolan is burst before healing applies.",
+          "Nolan dives without cooldowns.",
+          "Enemy control prevents Nolan from resetting."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "nolan",
+    "synergyHeroId": "mathilda",
+    "reasons": [
+      "Mathilda gives Nolan another movement option for entry or exit.",
+      "Her shield and mobility support reduce Nolan's risk after he spends Rift mobility."
+    ],
+    "synergyTypes": [
+      "mobility-enable",
+      "shielding",
+      "dive-support"
+    ],
+    "proof": [
+      {
+        "id": "mathilda-mobility-for-nolan",
+        "category": "mobility-enabler",
+        "priority": "secondary",
+        "impact": "medium",
+        "summary": "Mathilda helps Nolan reposition after his burst attempt.",
+        "worksBestWhen": [
+          "Mathilda stays close enough to Nolan's fight path.",
+          "Nolan saves one movement option for after the burst."
+        ],
+        "failureCases": [
+          "Nolan dives outside Mathilda's range.",
+          "Enemy crowd control blocks the retreat.",
+          "Mathilda is forced to use support tools before Nolan commits."
+        ]
+      }
+    ]
+  }
+]

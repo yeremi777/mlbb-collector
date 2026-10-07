@@ -1,0 +1,153 @@
+[
+  {
+    "anchorHeroId": "masha",
+    "synergyHeroId": "angela",
+    "reasons": [
+      "Angela can attach to Masha during a side-lane dive or chase, adding protection without needing to rotate physically.",
+      "Masha's isolated pressure becomes stronger when Angela can support the commit from distance."
+    ],
+    "synergyTypes": [
+      "dive-support",
+      "shielding",
+      "mobility-enable"
+    ],
+    "proof": [
+      {
+        "id": "masha-angela-attached-side-lane-dive",
+        "category": "protection",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Masha wants to force isolated fights, and Angela can turn that isolated fight into a stronger commit.",
+        "worksBestWhen": [
+          "Angela attaches as Masha begins the chase.",
+          "Masha has an exit path after forcing the fight."
+        ],
+        "failureCases": [
+          "Masha dives into multiple enemies without an exit path.",
+          "Angela attaches after Masha has already lost too much HP.",
+          "The enemy kites Masha until Angela's support window ends."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "masha",
+    "synergyHeroId": "floryn",
+    "reasons": [
+      "Floryn's global heal fits Masha's side-lane pressure because Masha often fights far from the main team.",
+      "Masha can continue split pressure while still receiving support during dangerous trades."
+    ],
+    "synergyTypes": [
+      "healing-sustain",
+      "objective-control"
+    ],
+    "proof": [
+      {
+        "id": "masha-floryn-global-heal-side-pressure",
+        "category": "healing-sustain",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Masha can pressure side lanes while Floryn still supports her from across the map.",
+        "worksBestWhen": [
+          "Floryn watches Masha's side-lane all-in timing.",
+          "Masha uses the heal to survive and disengage after forcing pressure."
+        ],
+        "failureCases": [
+          "Masha is chain-controlled before healing matters.",
+          "Floryn heals before Masha commits.",
+          "Masha continues diving after the heal instead of resetting."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "masha",
+    "synergyHeroId": "chip",
+    "reasons": [
+      "Chip can convert Masha's side-lane pressure into a fast team rotation or objective collapse.",
+      "Masha can pull enemies to a side lane while Chip helps teammates punish the response."
+    ],
+    "synergyTypes": [
+      "mobility-enable",
+      "objective-control"
+    ],
+    "proof": [
+      {
+        "id": "masha-chip-portal-side-pressure-collapse",
+        "category": "mobility-enabler",
+        "priority": "secondary",
+        "impact": "medium",
+        "summary": "Masha pulls enemies to side lanes, and Chip can help teammates move quickly to punish that response.",
+        "worksBestWhen": [
+          "Chip portals the team after enemies commit to stopping Masha.",
+          "The team has vision around the portal destination."
+        ],
+        "failureCases": [
+          "The team uses the portal without vision.",
+          "Chip rotates before Masha has created pressure.",
+          "Masha dies before the team can collapse."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "masha",
+    "synergyHeroId": "mathilda",
+    "reasons": [
+      "Mathilda can give Masha another reposition option when Masha dives or exits after forcing pressure.",
+      "Masha's chase and disengage patterns become more flexible with an extra movement path."
+    ],
+    "synergyTypes": [
+      "mobility-enable",
+      "dive-support"
+    ],
+    "proof": [
+      {
+        "id": "masha-mathilda-guiding-wind-chase-exit",
+        "category": "mobility-enabler",
+        "priority": "secondary",
+        "impact": "medium",
+        "summary": "Masha wants to chase and disengage on her terms, and Mathilda adds an extra movement path.",
+        "worksBestWhen": [
+          "Mathilda stays near the fight edge rather than diving too deep.",
+          "Masha uses the movement option after forcing enemy cooldowns."
+        ],
+        "failureCases": [
+          "Masha ignores the exit route and overcommits.",
+          "Mathilda is too far away to provide the movement option.",
+          "The enemy saves crowd control for Masha's escape."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "masha",
+    "synergyHeroId": "rafaela",
+    "reasons": [
+      "Rafaela's speed and heal support Masha's chase pattern and help her rotate between side pressure and team fights.",
+      "Masha can use the movement support to pressure targets and reposition after forcing responses."
+    ],
+    "synergyTypes": [
+      "mobility-enable",
+      "healing-sustain"
+    ],
+    "proof": [
+      {
+        "id": "masha-rafaela-speed-heal-chase-support",
+        "category": "mobility-enabler",
+        "priority": "secondary",
+        "impact": "medium",
+        "summary": "Masha pressures through movement and repeated engages, while Rafaela improves speed and sustain.",
+        "worksBestWhen": [
+          "Rafaela rotates with Masha before objective fights.",
+          "Masha uses the speed to engage or reset rather than chase too far."
+        ],
+        "failureCases": [
+          "Masha plays fully isolated and receives no nearby support.",
+          "Rafaela is caught while following Masha.",
+          "The enemy uses hard control to stop Masha's chase."
+        ]
+      }
+    ]
+  }
+]

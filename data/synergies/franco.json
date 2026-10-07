@@ -1,0 +1,162 @@
+[
+  {
+    "anchorHeroId": "franco",
+    "synergyHeroId": "eudora",
+    "reasons": [
+      "Eudora can burst a target Franco has hooked or suppressed.",
+      "Franco's single-target control gives Eudora a stable window to land her magic combo."
+    ],
+    "synergyTypes": [
+      "pickoff-combo",
+      "burst-follow-up",
+      "setup-combo"
+    ],
+    "proof": [
+      {
+        "id": "eudora-burst-confirms-franco-catch",
+        "category": "pickoff-combo",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Franco isolates one target with hook or suppression, and Eudora follows with single-target magic burst during the control window.",
+        "worksBestWhen": [
+          "Franco catches a squishy mage or marksman.",
+          "Eudora is in range with full combo ready.",
+          "Both heroes focus the same target after the catch."
+        ],
+        "failureCases": [
+          "Franco hooks a tank or bait target.",
+          "Eudora is out of range when the hook lands.",
+          "Enemy shield, magic defense, or peel keeps the target alive."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "franco",
+    "synergyHeroId": "saber",
+    "reasons": [
+      "Saber can follow Franco's hook or suppression with Triple Sweep burst.",
+      "Franco's catch creates the isolated target that Saber wants for a single-target pickoff."
+    ],
+    "synergyTypes": [
+      "cc-chain",
+      "pickoff-combo",
+      "burst-follow-up"
+    ],
+    "proof": [
+      {
+        "id": "saber-triple-sweep-follows-franco-catch",
+        "category": "crowd-control-chain",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Franco catches a priority target, and Saber chains airborne burst onto the same isolated enemy.",
+        "worksBestWhen": [
+          "Franco catches a fragile backline target.",
+          "Saber is close enough to follow immediately.",
+          "The enemy team is not already positioned to peel."
+        ],
+        "failureCases": [
+          "Franco misses or hooks a durable target.",
+          "Saber dives before the catch is confirmed.",
+          "Enemy peel interrupts Saber after the control window."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "franco",
+    "synergyHeroId": "karina",
+    "reasons": [
+      "Karina can enter after Franco isolates a target with hook or suppression.",
+      "Franco's pickoff window helps Karina finish a target and look for reset pressure."
+    ],
+    "synergyTypes": [
+      "pickoff-combo",
+      "burst-follow-up",
+      "dive-support"
+    ],
+    "proof": [
+      {
+        "id": "karina-burst-follows-franco-isolation",
+        "category": "pickoff-combo",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Franco creates the controlled target, while Karina follows with burst mobility to finish the pick.",
+        "worksBestWhen": [
+          "Franco catches a low-HP or fragile enemy.",
+          "Karina waits for the hook or suppression before entering.",
+          "Karina has cooldowns available to continue after the kill."
+        ],
+        "failureCases": [
+          "Franco pulls a tank into the team.",
+          "Karina enters into grouped enemy peel.",
+          "The target survives and Karina loses reset pressure."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "franco",
+    "synergyHeroId": "kadita",
+    "reasons": [
+      "Kadita can follow Franco's hook or suppression with delayed knock-up and burst.",
+      "Franco's control window helps Kadita time Breath of the Ocean and Rough Waves on the caught target."
+    ],
+    "synergyTypes": [
+      "pickoff-combo",
+      "setup-combo",
+      "burst-follow-up"
+    ],
+    "proof": [
+      {
+        "id": "kadita-burst-combo-follows-franco-catch",
+        "category": "pickoff-combo",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Franco isolates or suppresses a target, while Kadita uses the control window to connect her knock-up timing and burst combo.",
+        "worksBestWhen": [
+          "Franco catches a squishy or priority target.",
+          "Kadita is close enough to follow immediately.",
+          "Kadita times Breath of the Ocean during Franco's control window."
+        ],
+        "failureCases": [
+          "Franco hooks a tank or bait target.",
+          "Kadita is too far and the control window expires.",
+          "Enemy peel, cleanse, or saved mobility breaks the follow-up timing."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "franco",
+    "synergyHeroId": "vexana",
+    "reasons": [
+      "Vexana can land magic burst on a target Franco has hooked or suppressed.",
+      "Franco's control gives Vexana time to place her follow-up damage and add zoning pressure."
+    ],
+    "synergyTypes": [
+      "pickoff-combo",
+      "burst-follow-up",
+      "setup-combo"
+    ],
+    "proof": [
+      {
+        "id": "vexana-burst-follows-franco-suppression",
+        "category": "pickoff-combo",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Franco holds a target in place, and Vexana follows with magic burst plus zoning pressure around the caught enemy.",
+        "worksBestWhen": [
+          "Franco catches a squishy target within Vexana's range.",
+          "Vexana has key cooldowns ready when the catch lands.",
+          "The target is near teammates for extra AoE or zoning value."
+        ],
+        "failureCases": [
+          "Vexana is too far to follow the hook.",
+          "The target is too durable for the burst window.",
+          "Enemy peel prevents Vexana from finishing the target."
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,152 @@
+[
+  {
+    "targetHeroId": "angela",
+    "counterHeroId": "esmeralda",
+    "reasons": [
+      "Esmeralda is a strong answer to shield-heavy protection plans.",
+      "Angela's value drops if the shielded ally cannot safely hold the frontline or dive."
+    ],
+    "counterTypes": [
+      "anti-shield",
+      "sustain",
+      "teamfight"
+    ],
+    "proof": [
+      {
+        "id": "esmeralda-shield-pressure-vs-angela-heartguard",
+        "category": "sustain-anti-sustain",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Angela adds shield and sustain to a chosen ally; Esmeralda can pressure shield-based durability and turn extended fights into her own sustain advantage.",
+        "worksBestWhen": [
+          "Esmeralda reaches Angela's attached target instead of chasing Angela herself.",
+          "The team times anti-heal or burst around the shielded ally."
+        ],
+        "failureCases": [
+          "Angela attaches to a hero Esmeralda cannot reach.",
+          "Esmeralda dives too deep and gets controlled before converting shield pressure."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "angela",
+    "counterHeroId": "baxia",
+    "reasons": [
+      "Baxia reduces the value of Angela's healing-based sustain plan.",
+      "His frontline pressure can chase the attached target and force Angela's team to retreat."
+    ],
+    "counterTypes": [
+      "anti-sustain",
+      "anti-heal",
+      "frontline"
+    ],
+    "proof": [
+      {
+        "id": "baxia-anti-sustain-vs-angela-healing",
+        "category": "sustain-anti-sustain",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Angela wants to extend her ally's survival through healing and shield; Baxia helps reduce sustain value and keeps pressure on the protected target.",
+        "worksBestWhen": [
+          "Baxia marks and chases the attached ally, not a low-value target.",
+          "Team damage follows while Angela's sustain is reduced."
+        ],
+        "failureCases": [
+          "Baxia cannot reach the Angela-boosted carry.",
+          "Angela attaches after Baxia's team has already spent key damage."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "angela",
+    "counterHeroId": "luo-yi",
+    "reasons": [
+      "Luo Yi can punish teams that group around an Angela-protected diver.",
+      "Her zoning can separate Angela's attached target from follow-up teammates."
+    ],
+    "counterTypes": [
+      "positioning-punish",
+      "teamfight",
+      "poke"
+    ],
+    "proof": [
+      {
+        "id": "luo-yi-teamfight-zone-vs-angela-heartguard",
+        "category": "teamfight-role-counter",
+        "priority": "secondary",
+        "impact": "medium",
+        "summary": "Angela increases the value of one engaged ally, while Luo Yi can punish clustered formations and make grouped follow-up more dangerous.",
+        "worksBestWhen": [
+          "Luo Yi targets the follow-up formation, not only the attached hero.",
+          "The team uses Luo Yi's zone control around objectives."
+        ],
+        "failureCases": [
+          "Angela attaches to a split-pushing or highly mobile hero away from Luo Yi's zone.",
+          "Luo Yi misses setup and the Angela target reaches the backline."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "angela",
+    "counterHeroId": "kaja",
+    "reasons": [
+      "Kaja can punish the carry Angela chooses to attach to.",
+      "Locking the boosted hero can waste much of Angela's Heartguard timing."
+    ],
+    "counterTypes": [
+      "pickoff",
+      "anti-dive",
+      "cooldown-punish"
+    ],
+    "proof": [
+      {
+        "id": "kaja-lockdown-vs-angela-heartguard-target",
+        "category": "cooldown-window",
+        "priority": "primary",
+        "impact": "medium",
+        "summary": "Angela wants one ally to enter with shield and support; Kaja can hold lockdown for that exact boosted ally and force a failed dive.",
+        "worksBestWhen": [
+          "Kaja saves control for the Heartguard target.",
+          "Allies burst during the lockdown before Angela's healing stabilizes the target."
+        ],
+        "failureCases": [
+          "Kaja controls the wrong hero.",
+          "Angela's attached ally has defensive backup or immunity timing."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "angela",
+    "counterHeroId": "saber",
+    "reasons": [
+      "Saber can punish Angela or her chosen carry before Heartguard value fully resolves.",
+      "Heartguard's channel being interruptible creates timing windows before Angela attaches."
+    ],
+    "counterTypes": [
+      "burst",
+      "pickoff",
+      "cooldown-punish"
+    ],
+    "proof": [
+      {
+        "id": "saber-burst-vs-angela-heartguard-channel",
+        "category": "cooldown-window",
+        "priority": "condition",
+        "impact": "medium",
+        "summary": "Angela's Heartguard needs a channel before attach; burst or interruption before the attach can reduce her save potential.",
+        "worksBestWhen": [
+          "Saber tracks Angela's ultimate cooldown and channel timing.",
+          "Saber targets Angela before attach or the protected carry after shield timing weakens."
+        ],
+        "failureCases": [
+          "Saber bursts into full shield value without follow-up.",
+          "Angela attaches from a safe position and Saber cannot reach her."
+        ]
+      }
+    ]
+  }
+]

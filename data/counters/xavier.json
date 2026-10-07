@@ -1,0 +1,155 @@
+[
+  {
+    "targetHeroId": "xavier",
+    "counterHeroId": "hayabusa",
+    "reasons": [
+      "Hayabusa can reach Xavier's backline position with shadow mobility.",
+      "Xavier struggles when a mobile assassin forces him to fight at close range."
+    ],
+    "counterTypes": [
+      "mobility",
+      "pickoff",
+      "backline-dive"
+    ],
+    "proof": [
+      {
+        "id": "hayabusa-shadow-dive-vs-xavier-backline",
+        "category": "mobility-advantage",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Xavier wants to cast from distance, while Hayabusa can dive the backline, dodge angles with shadows, and burst before Xavier controls space.",
+        "worksBestWhen": [
+          "Hayabusa tracks Xavier's skill cooldowns.",
+          "Hayabusa enters after frontline vision is broken."
+        ],
+        "failureCases": [
+          "Xavier stays under hard peel.",
+          "Hayabusa's ultimate damage splits across multiple units."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "xavier",
+    "counterHeroId": "harley",
+    "reasons": [
+      "Harley can punish Xavier's low mobility by blinking into burst range, applying Deadly Magic, then returning with Space Escape before Xavier can fully control the area.",
+      "Compared with Lancelot, Harley has a cleaner anti-Xavier proof because his combo is directly built around fast in-out magic burst rather than dash reset execution."
+    ],
+    "counterTypes": [
+      "mobility",
+      "burst",
+      "pickoff",
+      "cooldown-punish"
+    ],
+    "proof": [
+      {
+        "id": "harley-deadly-magic-vs-xavier-immobility",
+        "category": "mobility-advantage",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Xavier wants to cast safely from long range, while Harley can use Space Escape to enter burst range, mark Xavier with Deadly Magic, add damage, then return before Xavier can fully punish.",
+        "worksBestWhen": [
+          "Harley attacks from fog, side bush, or after Xavier uses Mystic Field.",
+          "Xavier is separated from hard peel or frontline cover.",
+          "Harley has enough burst items to threaten Xavier during the Deadly Magic window."
+        ],
+        "failureCases": [
+          "Xavier stays behind tanks or hard crowd control.",
+          "Another hero blocks Harley's target path.",
+          "Harley returns to a dangerous hat position or fails to finish Xavier."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "xavier",
+    "counterHeroId": "natalia",
+    "reasons": [
+      "Natalia threatens Xavier from fog and forces him to position more defensively.",
+      "Silence and burst pressure can stop Xavier from casting his long-range combo cleanly."
+    ],
+    "counterTypes": [
+      "vision-control",
+      "pickoff",
+      "burst"
+    ],
+    "proof": [
+      {
+        "id": "natalia-camouflage-vs-xavier-casting-space",
+        "category": "vision-awareness",
+        "priority": "primary",
+        "impact": "medium",
+        "summary": "Xavier wants safe distance and predictable casting space, while Natalia can approach from bushes and punish his immobility with silence and burst.",
+        "worksBestWhen": [
+          "Natalia controls side-lane and jungle bush routes.",
+          "Xavier is separated from his roamer."
+        ],
+        "failureCases": [
+          "Xavier's team reveals Natalia's route.",
+          "Natalia cannot finish Xavier before peel arrives."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "xavier",
+    "counterHeroId": "lolita",
+    "reasons": [
+      "Lolita can reduce Xavier's projectile and line-poke value for her team.",
+      "Her shield buys time for allies to survive Xavier's long-range pressure."
+    ],
+    "counterTypes": [
+      "protect",
+      "anti-projectile",
+      "teamfight"
+    ],
+    "proof": [
+      {
+        "id": "lolita-guardian-bulwark-vs-xavier-poke",
+        "category": "skill-interaction",
+        "priority": "secondary",
+        "impact": "medium",
+        "summary": "Xavier wants to poke through long lanes, while Lolita can block incoming ranged basic attacks and projectiles to protect allies from poke windows.",
+        "worksBestWhen": [
+          "Lolita shields the main path of Xavier's poke.",
+          "Allies position behind Lolita instead of spreading randomly."
+        ],
+        "failureCases": [
+          "Xavier attacks from another angle.",
+          "Lolita's shield is on cooldown or mispositioned."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "xavier",
+    "counterHeroId": "saber",
+    "reasons": [
+      "Saber punishes Xavier's lack of escape if he reaches him from fog.",
+      "Xavier is vulnerable to single-target burst when caught without frontline protection."
+    ],
+    "counterTypes": [
+      "pickoff",
+      "burst",
+      "cooldown-punish"
+    ],
+    "proof": [
+      {
+        "id": "saber-triple-sweep-vs-xavier-immobility",
+        "category": "skill-interaction",
+        "priority": "secondary",
+        "impact": "medium",
+        "summary": "Xavier needs safe casting distance, while Saber can force a short airborne burst window that removes Xavier before he controls the fight.",
+        "worksBestWhen": [
+          "Saber hides until Xavier steps outside tower or frontline range.",
+          "Saber has damage items and follow-up."
+        ],
+        "failureCases": [
+          "Xavier positions too deep behind allies.",
+          "Saber dives into defensive crowd control or defensive item timing."
+        ]
+      }
+    ]
+  }
+]

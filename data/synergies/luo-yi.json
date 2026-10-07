@@ -1,0 +1,157 @@
+[
+  {
+    "anchorHeroId": "luo-yi",
+    "synergyHeroId": "atlas",
+    "reasons": [
+      "Atlas can pull enemies together, making Luo Yi's opposite-mark reaction easier to trigger.",
+      "Luo Yi adds magic burst and control after Atlas starts the grouped fight."
+    ],
+    "synergyTypes": [
+      "setup-combo",
+      "cc-chain",
+      "teamfight-combo"
+    ],
+    "proof": [
+      {
+        "id": "atlas-grouping-for-luo-yi-anchor",
+        "category": "setup-combo",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Atlas groups enemies first, then Luo Yi applies Yin/Yang marks to trigger reaction damage and control on the clustered targets.",
+        "worksBestWhen": [
+          "Luo Yi has charges ready before Atlas engages.",
+          "Atlas catches more than one target."
+        ],
+        "failureCases": [
+          "Luo Yi is too far away.",
+          "Atlas catches only one target.",
+          "The enemy spreads or dashes before the reaction triggers."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "luo-yi",
+    "synergyHeroId": "tigreal",
+    "reasons": [
+      "Tigreal's grouped engage gives Luo Yi a clear target cluster for Yin-Yang Reaction.",
+      "Luo Yi can add follow-up damage and displacement after Tigreal forces enemies into one area."
+    ],
+    "synergyTypes": [
+      "setup-combo",
+      "cc-chain",
+      "teamfight-combo"
+    ],
+    "proof": [
+      {
+        "id": "tigreal-grouped-cc-for-luo-yi-reaction",
+        "category": "crowd-control-chain",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Tigreal groups enemies, then Luo Yi follows with opposite marks to chain additional AoE control and magic damage.",
+        "worksBestWhen": [
+          "Tigreal waits for Luo Yi to be in range.",
+          "Luo Yi tracks which mark state she is about to apply."
+        ],
+        "failureCases": [
+          "Luo Yi uses the wrong timing or lacks charges.",
+          "Tigreal engages out of range.",
+          "The enemy uses immunity or cleanse during the setup."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "luo-yi",
+    "synergyHeroId": "yu-zhong",
+    "reasons": [
+      "Luo Yi's Diversion can help Yu Zhong enter fights from stronger flank angles.",
+      "Yu Zhong can disrupt the enemy backline while Luo Yi follows with AoE magic control."
+    ],
+    "synergyTypes": [
+      "mobility-enable",
+      "dive-support",
+      "teamfight-combo"
+    ],
+    "proof": [
+      {
+        "id": "luo-yi-diversion-for-yu-zhong-anchor",
+        "category": "mobility-enabler",
+        "priority": "condition",
+        "impact": "medium",
+        "summary": "Luo Yi creates a coordinated entry point, while Yu Zhong uses the flank to disrupt enemy backline positioning.",
+        "worksBestWhen": [
+          "The team enters together through Diversion.",
+          "Yu Zhong starts the fight after the teleport completes."
+        ],
+        "failureCases": [
+          "The teleport is scouted.",
+          "Yu Zhong commits before the team arrives.",
+          "Luo Yi has no follow-up spells after using Diversion."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "luo-yi",
+    "synergyHeroId": "claude",
+    "reasons": [
+      "Luo Yi can create unexpected teamfight entry angles for Claude's AoE damage window.",
+      "Luo Yi's reaction control can help keep enemies close enough for Claude to deal damage safely."
+    ],
+    "synergyTypes": [
+      "mobility-enable",
+      "aoe-follow-up",
+      "teamfight-combo"
+    ],
+    "proof": [
+      {
+        "id": "luo-yi-entry-for-claude-teamfight",
+        "category": "teamfight-combo",
+        "priority": "secondary",
+        "impact": "medium",
+        "summary": "Luo Yi creates the entry or control window, while Claude follows with AoE marksman damage when enemies are grouped or displaced.",
+        "worksBestWhen": [
+          "Claude has resources and ultimate ready before the teleport play.",
+          "Luo Yi's team enters from fog or a flank angle."
+        ],
+        "failureCases": [
+          "Claude enters before the CC setup.",
+          "The enemy holds hard CC for Claude.",
+          "The teleport lands into a bad formation."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "luo-yi",
+    "synergyHeroId": "odette",
+    "reasons": [
+      "Luo Yi can create a teleport or displacement setup that gives Odette a surprise AoE channel angle.",
+      "Luo Yi's control helps keep targets near Odette's damage zone."
+    ],
+    "synergyTypes": [
+      "setup-combo",
+      "aoe-follow-up",
+      "execution-dependent"
+    ],
+    "proof": [
+      {
+        "id": "luo-yi-setup-for-odette-channel",
+        "category": "execution-difficulty",
+        "priority": "condition",
+        "impact": "medium",
+        "summary": "Luo Yi enables a coordinated entry or reaction setup, while Odette follows if the team can protect the channel.",
+        "worksBestWhen": [
+          "The team coordinates Diversion timing clearly.",
+          "Odette casts after enemies are already controlled or distracted."
+        ],
+        "failureCases": [
+          "Odette is interrupted immediately.",
+          "The teleport lands into enemy counter-engage.",
+          "Luo Yi and Odette lack enough frontline protection."
+        ]
+      }
+    ]
+  }
+]

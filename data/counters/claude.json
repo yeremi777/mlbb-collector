@@ -1,0 +1,157 @@
+[
+  {
+    "targetHeroId": "claude",
+    "counterHeroId": "belerick",
+    "reasons": [
+      "Belerick punishes Claude's repeated-hit pattern from basic attacks and Blazing Duet.",
+      "Taunt can disrupt Claude when Claude enters teamfight range."
+    ],
+    "counterTypes": [
+      "anti-basic-attack",
+      "frontline",
+      "teamfight"
+    ],
+    "proof": [
+      {
+        "id": "belerick-deadly-thorns-vs-claude-blazing-duet",
+        "category": "skill-interaction",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Claude wants to deal repeated hits in close teamfight range, while Belerick punishes frequent damage triggers and can taunt Claude during his commit window.",
+        "worksBestWhen": [
+          "Belerick positions near Claude's intended Blazing Duet target area.",
+          "Belerick has enough durability to survive the entry."
+        ],
+        "failureCases": [
+          "Claude waits for Belerick's control to be unavailable.",
+          "Claude kites from outside Belerick's range.",
+          "Belerick is too far from Claude's entry point."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "claude",
+    "counterHeroId": "kaja",
+    "reasons": [
+      "Kaja can suppress Claude during Blazing Duet.",
+      "Claude becomes much easier to kill if he cannot return to or reposition with Battle Mirror Image."
+    ],
+    "counterTypes": [
+      "crowd-control-counter",
+      "pickoff",
+      "anti-dive"
+    ],
+    "proof": [
+      {
+        "id": "kaja-divine-judgment-vs-claude-blazing-duet-entry",
+        "category": "crowd-control-counter",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Claude wants to enter, deal AoE damage, and escape with mobility, while Kaja can suppress and drag him during the commit window.",
+        "worksBestWhen": [
+          "Kaja saves Divine Judgment for Claude's real entry.",
+          "Allied burst is ready after suppression."
+        ],
+        "failureCases": [
+          "Claude baits Kaja with mirror movement.",
+          "Kaja cannot reach Claude through frontline.",
+          "Kaja suppresses too early and Claude escapes afterward."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "claude",
+    "counterHeroId": "franco",
+    "reasons": [
+      "Franco can suppress Claude during Blazing Duet.",
+      "Hook also punishes Claude if he shows before mirror reposition is safe."
+    ],
+    "counterTypes": [
+      "crowd-control-counter",
+      "pickoff",
+      "anti-dive"
+    ],
+    "proof": [
+      {
+        "id": "franco-bloody-hunt-vs-claude-mirror-entry",
+        "category": "crowd-control-counter",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Claude depends on short mobility and AoE damage windows, while Franco can lock him with suppression and force a failed engage.",
+        "worksBestWhen": [
+          "Franco tracks Claude's mirror location.",
+          "Franco saves Bloody Hunt until Claude commits."
+        ],
+        "failureCases": [
+          "Franco misses hook.",
+          "Claude enters after Franco uses suppression.",
+          "Claude has strong peel support."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "claude",
+    "counterHeroId": "brody",
+    "reasons": [
+      "Brody can pressure Claude before Claude reaches item comfort.",
+      "Brody's heavier early trades and slow make Claude's farming phase more difficult."
+    ],
+    "counterTypes": [
+      "lane-pressure",
+      "burst",
+      "range-advantage"
+    ],
+    "proof": [
+      {
+        "id": "brody-early-abyss-mark-pressure-vs-claude-scaling",
+        "category": "game-phase",
+        "priority": "primary",
+        "impact": "medium",
+        "summary": "Claude wants to scale into attack-speed item spikes, while Brody can pressure early with burst trades, slows, and Abyss Mark damage before Claude's teamfight timing is ready.",
+        "worksBestWhen": [
+          "Brody wins early wave control.",
+          "Brody punishes Claude before Claude has core items."
+        ],
+        "failureCases": [
+          "Claude safely farms under protection.",
+          "Brody overextends and gets ganked.",
+          "Claude reaches item timing and enters fights after Brody's burst is used."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "claude",
+    "counterHeroId": "lesley",
+    "reasons": [
+      "Lesley can pressure Claude in lane with long-range poke and camouflage repositioning.",
+      "She is a valid gold-lane counter candidate, but the matchup depends heavily on spacing, timing, and user mechanics."
+    ],
+    "counterTypes": [
+      "range-advantage",
+      "poke",
+      "execution-dependent"
+    ],
+    "proof": [
+      {
+        "id": "lesley-range-poke-vs-claude-gold-lane-scaling",
+        "category": "range-advantage",
+        "priority": "secondary",
+        "impact": "medium",
+        "summary": "Claude wants to safely farm and scale, while Lesley can use range and camouflage pressure to punish Claude before he reaches strong item timing.",
+        "worksBestWhen": [
+          "Lesley maintains spacing and does not let Claude freely stack or trade.",
+          "Lesley uses camouflage to poke and reset lane position."
+        ],
+        "failureCases": [
+          "Lesley mispositions and Claude gets mirror engage angle.",
+          "Claude safely farms until item spike.",
+          "Lesley loses camouflage value by taking or dealing damage at the wrong time."
+        ]
+      }
+    ]
+  }
+]

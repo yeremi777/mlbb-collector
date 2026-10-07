@@ -1,0 +1,157 @@
+[
+  {
+    "targetHeroId": "barats",
+    "counterHeroId": "karrie",
+    "reasons": [
+      "Karrie is a strong answer because Barats relies heavily on HP and durability.",
+      "Repeated max-HP true damage punishes Barats when he walks forward to start fights."
+    ],
+    "counterTypes": [
+      "true-damage",
+      "tank-shred",
+      "kiting"
+    ],
+    "proof": [
+      {
+        "id": "karrie-lightwheel-mark-vs-barats-big-guy",
+        "category": "damage-type-advantage",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Barats wants to become a durable frontliner through Big Guy stacks, while Karrie's Lightwheel Mark punishes high-HP targets with max-HP true damage.",
+        "worksBestWhen": [
+          "Karrie has peel against Detona's Welcome.",
+          "Barats is forced to walk through Karrie's attack range."
+        ],
+        "failureCases": [
+          "Barats catches Karrie with ultimate.",
+          "Karrie lacks item timing.",
+          "Barats's team zones Karrie away from the fight."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "barats",
+    "counterHeroId": "lunox",
+    "reasons": [
+      "Lunox can damage durable targets through penetration-based magic pressure.",
+      "Barats struggles when the enemy mage can threaten him without needing to overcommit into his swallow range."
+    ],
+    "counterTypes": [
+      "penetration",
+      "burst",
+      "anti-frontline"
+    ],
+    "proof": [
+      {
+        "id": "lunox-penetration-vs-barats-frontline",
+        "category": "damage-type-advantage",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Barats wants to absorb damage and control space, while Lunox can use penetration-oriented magic damage to cut through his frontline durability.",
+        "worksBestWhen": [
+          "Lunox positions outside Detona's Welcome range.",
+          "Barats is already committed forward."
+        ],
+        "failureCases": [
+          "Barats reaches Lunox with ultimate.",
+          "Lunox is forced to spend defensive tools early.",
+          "Barats's team dives together and denies Lunox free casting."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "barats",
+    "counterHeroId": "dyrroth",
+    "reasons": [
+      "Dyrroth can reduce Barats's physical defense and punish him before stacks become overwhelming.",
+      "This is especially relevant in lane or early skirmishes."
+    ],
+    "counterTypes": [
+      "penetration",
+      "burst",
+      "lane-pressure"
+    ],
+    "proof": [
+      {
+        "id": "dyrroth-defense-reduction-vs-barats-stacks",
+        "category": "damage-type-advantage",
+        "priority": "secondary",
+        "impact": "medium",
+        "summary": "Barats wants to become harder to kill with stacks, while Dyrroth can reduce physical defense and create a burst window before Barats controls the fight.",
+        "worksBestWhen": [
+          "Dyrroth fights before Barats reaches strong stack uptime.",
+          "Dyrroth avoids being swallowed near enemy follow-up."
+        ],
+        "failureCases": [
+          "Barats survives the burst and turns the fight long.",
+          "Dyrroth gets caught by Detona's Welcome.",
+          "Barats has full team support and stack uptime."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "barats",
+    "counterHeroId": "x.borg",
+    "reasons": [
+      "X.Borg can wear down Barats and threaten true damage through Last Insanity.",
+      "His armor gives him a buffer against Barats's close-range control if spaced correctly."
+    ],
+    "counterTypes": [
+      "true-damage",
+      "kiting",
+      "anti-frontline"
+    ],
+    "proof": [
+      {
+        "id": "xborg-last-insanity-vs-barats-frontline",
+        "category": "damage-type-advantage",
+        "priority": "secondary",
+        "impact": "medium",
+        "summary": "Barats wants to stand forward and absorb pressure, while X.Borg can kite with fire damage and threaten true-damage detonation.",
+        "worksBestWhen": [
+          "X.Borg keeps Barats at the edge of his damage range.",
+          "Barats has already committed movement or ultimate."
+        ],
+        "failureCases": [
+          "Barats swallows X.Borg before ultimate value.",
+          "X.Borg loses armor too early.",
+          "Barats's team collapses on armorless X.Borg."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "barats",
+    "counterHeroId": "valir",
+    "reasons": [
+      "Valir can slow and push Barats away, reducing his ability to reach swallow range.",
+      "Barats is dangerous when he controls close space; Valir makes that space harder to enter."
+    ],
+    "counterTypes": [
+      "disengage",
+      "kiting",
+      "anti-engage"
+    ],
+    "proof": [
+      {
+        "id": "valir-kiting-vs-barats-detona-welcome",
+        "category": "kiting",
+        "priority": "condition",
+        "impact": "medium",
+        "summary": "Barats wants to walk into control range, while Valir can knock him back and force him to spend more time reaching targets.",
+        "worksBestWhen": [
+          "Valir saves knockback for Barats's approach.",
+          "The team respects Detona's Welcome range."
+        ],
+        "failureCases": [
+          "Barats flanks or catches Valir from fog.",
+          "Valir wastes Searing Torrent too early.",
+          "Barats's team layers engage after Valir's disengage."
+        ]
+      }
+    ]
+  }
+]

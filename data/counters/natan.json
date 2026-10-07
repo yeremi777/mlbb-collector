@@ -1,0 +1,157 @@
+[
+  {
+    "targetHeroId": "natan",
+    "counterHeroId": "lolita",
+    "reasons": [
+      "Lolita can block many ranged or projectile attack patterns that Natan depends on for DPS.",
+      "Her shield can reduce Natan's front-to-back free-hit window when positioned correctly."
+    ],
+    "counterTypes": [
+      "protect",
+      "anti-projectile",
+      "teamfight"
+    ],
+    "proof": [
+      {
+        "id": "lolita-shield-vs-natan-ranged-dps",
+        "category": "skill-interaction",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Natan wants repeated ranged DPS, while Lolita can block many ranged or projectile attacks and protect her team.",
+        "worksBestWhen": [
+          "Lolita tracks Natan's firing angle and clone angle.",
+          "Team fights behind Lolita."
+        ],
+        "failureCases": [
+          "Natan attacks from side angle.",
+          "Lolita wastes shield early.",
+          "Natan's team forces Lolita to turn away."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "natan",
+    "counterHeroId": "pharsa",
+    "reasons": [
+      "Pharsa can poke Natan from long range before he gets stable DPS uptime.",
+      "Feathered Air Strike can force Natan to reposition instead of standing and attacking."
+    ],
+    "counterTypes": [
+      "range-advantage",
+      "poke",
+      "cooldown-punish"
+    ],
+    "proof": [
+      {
+        "id": "pharsa-range-poke-vs-natan-dps-setup",
+        "category": "range-advantage",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Natan wants stable attack spacing, while Pharsa can pressure him from long range and break his setup before he can sustain DPS.",
+        "worksBestWhen": [
+          "Pharsa casts from safe terrain or behind frontline.",
+          "Natan has no easy path to reach her."
+        ],
+        "failureCases": [
+          "Natan dodges the artillery zone.",
+          "Pharsa is dived before casting.",
+          "Natan's team forces Pharsa to cancel or reposition."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "natan",
+    "counterHeroId": "harley",
+    "reasons": [
+      "Harley can burst Natan before Natan gets sustained DPS value.",
+      "Space Escape gives Harley an in-out pattern that can punish Natan's fragile timing."
+    ],
+    "counterTypes": [
+      "burst",
+      "mobility",
+      "pickoff"
+    ],
+    "proof": [
+      {
+        "id": "harley-in-out-burst-vs-natan",
+        "category": "mobility-advantage",
+        "priority": "primary",
+        "impact": "medium",
+        "summary": "Natan wants time to stack damage with clone and basic attacks, while Harley can enter, mark, burst, and exit before Natan stabilizes.",
+        "worksBestWhen": [
+          "Harley attacks before Natan's defensive resources are ready.",
+          "Natan is away from peel."
+        ],
+        "failureCases": [
+          "Natan survives the Deadly Magic burst.",
+          "Harley returns into crowd control.",
+          "Natan stays grouped with support."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "natan",
+    "counterHeroId": "saber",
+    "reasons": [
+      "Saber can punish Natan before Natan builds attack uptime.",
+      "His lock-burst is effective when Natan is isolated or after repositioning is unavailable."
+    ],
+    "counterTypes": [
+      "burst",
+      "pickoff",
+      "cooldown-punish"
+    ],
+    "proof": [
+      {
+        "id": "saber-triple-sweep-vs-natan-dps-window",
+        "category": "skill-interaction",
+        "priority": "secondary",
+        "impact": "medium",
+        "summary": "Natan wants sustained ranged DPS, while Saber can force a short lock-and-burst fight.",
+        "worksBestWhen": [
+          "Saber attacks from fog.",
+          "Natan has no peel nearby."
+        ],
+        "failureCases": [
+          "Saber dives into full enemy formation.",
+          "Natan survives with item or support protection.",
+          "Saber is revealed early."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "natan",
+    "counterHeroId": "franco",
+    "reasons": [
+      "Franco can punish Natan when he steps forward to attack or clone-position.",
+      "Suppression removes Natan's free-hit window."
+    ],
+    "counterTypes": [
+      "pickoff",
+      "crowd-control-counter",
+      "anti-backline"
+    ],
+    "proof": [
+      {
+        "id": "franco-suppression-vs-natan-free-hit",
+        "category": "crowd-control-counter",
+        "priority": "condition",
+        "impact": "medium",
+        "summary": "Natan wants uninterrupted DPS uptime, while Franco can stop that window with hook or suppression.",
+        "worksBestWhen": [
+          "Franco catches Natan after he steps forward.",
+          "Team follows up immediately."
+        ],
+        "failureCases": [
+          "Franco misses hook.",
+          "Natan stays behind minions or frontline.",
+          "Franco suppresses another target while Natan remains free."
+        ]
+      }
+    ]
+  }
+]

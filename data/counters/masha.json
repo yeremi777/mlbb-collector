@@ -1,0 +1,152 @@
+[
+  {
+    "targetHeroId": "masha",
+    "counterHeroId": "karrie",
+    "reasons": [
+      "Karrie's repeated max-HP true damage is a clear answer to Masha's multi-HP durability.",
+      "Masha can still threaten Karrie if she closes the gap, so peel is required."
+    ],
+    "counterTypes": [
+      "true-damage",
+      "max-hp-damage",
+      "kiting"
+    ],
+    "proof": [
+      {
+        "id": "karrie-lightwheel-mark-vs-masha-hp-bars",
+        "category": "damage-type-advantage",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Masha survives through multiple HP bars, while Karrie repeatedly triggers max-HP true damage that punishes durable targets.",
+        "worksBestWhen": [
+          "Karrie is protected from Masha's direct chase.",
+          "Karrie has enough time to stack Lightwheel Mark."
+        ],
+        "failureCases": [
+          "Masha reaches Karrie before marks are stacked.",
+          "Karrie is isolated in a side lane."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "masha",
+    "counterHeroId": "lunox",
+    "reasons": [
+      "Lunox can punish Masha's HP-heavy profile with Chaos Assault.",
+      "She works best when she can stay away from Masha's chase path."
+    ],
+    "counterTypes": [
+      "max-hp-damage",
+      "burst",
+      "kiting"
+    ],
+    "proof": [
+      {
+        "id": "lunox-chaos-assault-vs-masha-hp-bars",
+        "category": "damage-type-advantage",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Masha wants to absorb damage through HP bars, while Lunox can threaten target-HP scaling magic damage.",
+        "worksBestWhen": [
+          "Lunox fights with spacing and peel.",
+          "Masha is forced to approach through allied frontline."
+        ],
+        "failureCases": [
+          "Masha reaches Lunox in a side lane.",
+          "Lunox mistimes defensive tools and gets chased down."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "masha",
+    "counterHeroId": "valir",
+    "reasons": [
+      "Valir can stop Masha from sticking to carries.",
+      "Masha's chase pressure is reduced when she is repeatedly pushed back or slowed."
+    ],
+    "counterTypes": [
+      "kiting",
+      "disengage",
+      "anti-dive"
+    ],
+    "proof": [
+      {
+        "id": "valir-disengage-vs-masha-chase",
+        "category": "kiting",
+        "priority": "primary",
+        "impact": "medium",
+        "summary": "Masha wants to run down targets, while Valir can knock her away and slow her approach.",
+        "worksBestWhen": [
+          "Valir saves knockback for Masha's committed chase.",
+          "The team retreats together instead of scattering."
+        ],
+        "failureCases": [
+          "Masha flanks Valir directly.",
+          "Valir uses his disengage before Masha commits."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "masha",
+    "counterHeroId": "lesley",
+    "reasons": [
+      "Lesley can punish Masha from range and force Masha to spend time closing distance.",
+      "This is strongest when Lesley has vision and cannot be isolated."
+    ],
+    "counterTypes": [
+      "true-damage",
+      "range-advantage",
+      "poke"
+    ],
+    "proof": [
+      {
+        "id": "lesley-range-poke-vs-masha-close-duel",
+        "category": "range-advantage",
+        "priority": "secondary",
+        "impact": "medium",
+        "summary": "Masha wants to force close duels, while Lesley can poke from range and threaten true-damage shots against durable targets.",
+        "worksBestWhen": [
+          "Lesley avoids side-lane isolation.",
+          "Teammates provide vision against Masha's flank path."
+        ],
+        "failureCases": [
+          "Masha reaches Lesley before Lesley can kite.",
+          "Lesley lacks enough items to threaten Masha's HP bars."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "masha",
+    "counterHeroId": "baxia",
+    "reasons": [
+      "Baxia can reduce Masha's regen and sustain value while matching some of her map pressure.",
+      "This is more useful as a utility counter than a guaranteed duel win."
+    ],
+    "counterTypes": [
+      "anti-sustain",
+      "frontline",
+      "teamfight"
+    ],
+    "proof": [
+      {
+        "id": "baxia-mark-vs-masha-recovery-windows",
+        "category": "sustain-anti-sustain",
+        "priority": "secondary",
+        "impact": "medium",
+        "summary": "Masha benefits from HP-bar durability and recovery windows, while Baxia can reduce shield and HP regen effects when his skills hit.",
+        "worksBestWhen": [
+          "Baxia keeps marking Masha during chase or objective fights.",
+          "The team follows up instead of letting Masha disengage."
+        ],
+        "failureCases": [
+          "Masha avoids Baxia and pressures another lane.",
+          "Baxia cannot keep contact long enough to matter."
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,152 @@
+[
+  {
+    "anchorHeroId": "jawhead",
+    "synergyHeroId": "kadita",
+    "reasons": [
+      "Jawhead can displace or lock a target into a predictable position, making Kadita's burst combo easier to land.",
+      "Kadita's burst turns Jawhead's catch into a fast kill threat."
+    ],
+    "synergyTypes": [
+      "setup-combo",
+      "burst-follow-up",
+      "pickoff-combo"
+    ],
+    "proof": [
+      {
+        "id": "jawhead-kadita-displacement-burst-setup",
+        "category": "setup-combo",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Jawhead creates the displacement or catch, and Kadita follows with burst during the target's limited response window.",
+        "worksBestWhen": [
+          "Jawhead throws or locks a priority target toward Kadita's range.",
+          "Kadita saves burst until after Jawhead commits."
+        ],
+        "failureCases": [
+          "Jawhead throws the target away from Kadita.",
+          "Kadita misses the burst timing or enters into enemy control."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "jawhead",
+    "synergyHeroId": "eudora",
+    "reasons": [
+      "Jawhead can bring a target into Eudora's burst range.",
+      "Eudora's single-target stun and burst fit Jawhead's pickoff-first gameplay."
+    ],
+    "synergyTypes": [
+      "pickoff-combo",
+      "burst-follow-up",
+      "cc-chain"
+    ],
+    "proof": [
+      {
+        "id": "jawhead-eudora-single-target-burst-pickoff",
+        "category": "pickoff-combo",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Jawhead isolates a target, while Eudora adds immediate lock and burst to finish the pickoff.",
+        "worksBestWhen": [
+          "Jawhead targets a squishy hero.",
+          "Eudora keeps her burst available for Jawhead's catch."
+        ],
+        "failureCases": [
+          "Jawhead catches a durable frontline hero.",
+          "Eudora is too far away or her burst is on cooldown."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "jawhead",
+    "synergyHeroId": "gusion",
+    "reasons": [
+      "Jawhead can create a predictable target position for Gusion's dagger burst.",
+      "Gusion adds fast damage after Jawhead starts the pick, reducing the time enemies have to peel."
+    ],
+    "synergyTypes": [
+      "burst-follow-up",
+      "pickoff-combo",
+      "execution-dependent"
+    ],
+    "proof": [
+      {
+        "id": "jawhead-gusion-catch-burst-follow-up",
+        "category": "engage-follow-up",
+        "priority": "primary",
+        "impact": "medium",
+        "summary": "Jawhead starts the catch, and Gusion follows with burst before the target can escape or receive peel.",
+        "worksBestWhen": [
+          "Gusion has skill cooldowns ready.",
+          "Jawhead catches a target near Gusion's entry range."
+        ],
+        "failureCases": [
+          "Gusion misses the dagger mark.",
+          "Jawhead throws the target outside Gusion's combo path."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "jawhead",
+    "synergyHeroId": "pharsa",
+    "reasons": [
+      "Pharsa can follow Jawhead's catch from long range without standing near the first engage.",
+      "Jawhead's displacement can force enemies into a short window where Pharsa's burst is easier to land."
+    ],
+    "synergyTypes": [
+      "engage-follow-up",
+      "range",
+      "burst-follow-up"
+    ],
+    "proof": [
+      {
+        "id": "jawhead-pharsa-ranged-catch-follow-up",
+        "category": "engage-follow-up",
+        "priority": "secondary",
+        "impact": "medium",
+        "summary": "Jawhead starts the pick, and Pharsa adds ranged burst from a safer position.",
+        "worksBestWhen": [
+          "Jawhead catches enemies within Pharsa's cast range.",
+          "Pharsa has vision on the displaced target."
+        ],
+        "failureCases": [
+          "The target escapes before Pharsa's damage lands.",
+          "Jawhead dives outside Pharsa's follow-up range."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "jawhead",
+    "synergyHeroId": "angela",
+    "reasons": [
+      "Angela can attach to Jawhead during aggressive pickoffs, giving him more safety after he commits.",
+      "Angela's sustain and movement support help Jawhead survive the counter-engage after he throws or locks a target."
+    ],
+    "synergyTypes": [
+      "shielding",
+      "dive-support",
+      "healing-sustain"
+    ],
+    "proof": [
+      {
+        "id": "jawhead-angela-aggressive-pickoff-protection",
+        "category": "shielding",
+        "priority": "secondary",
+        "impact": "medium",
+        "summary": "Jawhead starts a risky engage, while Angela improves his survival and chase after commitment.",
+        "worksBestWhen": [
+          "Angela attaches after Jawhead chooses the real target.",
+          "Jawhead uses the shield to secure a pick instead of diving too far."
+        ],
+        "failureCases": [
+          "Angela attaches before Jawhead can start a real play.",
+          "Jawhead commits into too many enemies without backup."
+        ]
+      }
+    ]
+  }
+]

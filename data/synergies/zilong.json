@@ -1,0 +1,154 @@
+[
+  {
+    "anchorHeroId": "zilong",
+    "synergyHeroId": "angela",
+    "reasons": [
+      "Angela can attach to Zilong during a commit, helping him survive while he dives or chases a target.",
+      "Zilong benefits from Angela's shield and sustain when he enters deep for a pickoff."
+    ],
+    "synergyTypes": [
+      "dive-support",
+      "shielding",
+      "healing-sustain"
+    ],
+    "proof": [
+      {
+        "id": "angela-dive-support-for-zilong-commit",
+        "category": "protection",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Angela supports Zilong's dive by giving protection and sustain while Zilong commits onto a priority target.",
+        "worksBestWhen": [
+          "Angela joins after Zilong identifies a real target.",
+          "Zilong still has mobility and damage available after Angela attaches."
+        ],
+        "failureCases": [
+          "Angela attaches before Zilong commits and the enemy disengages.",
+          "Zilong dives into too much crowd control."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "zilong",
+    "synergyHeroId": "rafaela",
+    "reasons": [
+      "Rafaela's speed support helps Zilong chase targets or escape after flipping a target out of position.",
+      "Rafaela's heal gives Zilong more room to survive extended skirmishes after a pickoff attempt."
+    ],
+    "synergyTypes": [
+      "mobility-enable",
+      "healing-sustain",
+      "pickoff-combo"
+    ],
+    "proof": [
+      {
+        "id": "rafaela-speed-for-zilong-chase-reset",
+        "category": "mobility-enabler",
+        "priority": "primary",
+        "impact": "medium",
+        "summary": "Rafaela helps Zilong start or continue a chase, while her healing gives him more room to survive extended skirmishes.",
+        "worksBestWhen": [
+          "Rafaela follows close enough to support the chase.",
+          "Zilong chooses isolated targets instead of diving into the full team."
+        ],
+        "failureCases": [
+          "Zilong outruns Rafaela's support.",
+          "Enemy hard control stops Zilong before he can finish the target."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "zilong",
+    "synergyHeroId": "franco",
+    "reasons": [
+      "Franco can begin the pickoff, and Zilong can add displacement or chase after the target is isolated.",
+      "Zilong can help finish the target after Franco creates a single-target catch."
+    ],
+    "synergyTypes": [
+      "pickoff-combo",
+      "cc-chain",
+      "setup-combo"
+    ],
+    "proof": [
+      {
+        "id": "franco-catch-for-zilong-pickoff-chase",
+        "category": "pickoff-combo",
+        "priority": "primary",
+        "impact": "medium",
+        "summary": "Franco creates a catch, while Zilong extends the pickoff by flipping, chasing, or finishing the isolated target.",
+        "worksBestWhen": [
+          "Franco catches a target Zilong can quickly reach.",
+          "Zilong waits for the catch instead of starting blindly."
+        ],
+        "failureCases": [
+          "Franco catches a tank.",
+          "Zilong arrives late after the target escapes."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "zilong",
+    "synergyHeroId": "floryn",
+    "reasons": [
+      "Floryn can support Zilong even when he is away from the main group, fitting Zilong's split-push and chase pattern.",
+      "Global healing gives Zilong a second chance after he commits onto a target or escapes from a risky pickoff attempt."
+    ],
+    "synergyTypes": [
+      "healing-sustain",
+      "dive-support",
+      "cooldown-dependent"
+    ],
+    "proof": [
+      {
+        "id": "floryn-global-heal-for-zilong-side-pressure",
+        "category": "healing-sustain",
+        "priority": "secondary",
+        "impact": "medium",
+        "summary": "Zilong often plays away from the main formation, while Floryn can still support him through global healing when he commits, chases, or retreats.",
+        "worksBestWhen": [
+          "Floryn saves her global heal for Zilong's real commit or escape window.",
+          "Zilong does not dive into heavy crowd control without an exit path.",
+          "The team tracks Zilong's side-lane pressure before starting a fight elsewhere."
+        ],
+        "failureCases": [
+          "Zilong is burst down before Floryn can heal.",
+          "Floryn uses global heal before Zilong commits.",
+          "Anti-heal or chain crowd control reduces the sustain value."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "zilong",
+    "synergyHeroId": "minotaur",
+    "reasons": [
+      "Minotaur gives Zilong a safer teamfight entry by absorbing pressure and creating control windows.",
+      "Zilong can enter later for chase or cleanup after Minotaur stabilizes the frontline."
+    ],
+    "synergyTypes": [
+      "frontline-enabler",
+      "healing-sustain",
+      "cc-chain"
+    ],
+    "proof": [
+      {
+        "id": "minotaur-frontline-for-zilong-cleanup-entry",
+        "category": "frontline-enabler",
+        "priority": "secondary",
+        "impact": "medium",
+        "summary": "Minotaur starts or stabilizes the frontline, letting Zilong enter later for chase or cleanup instead of being the first target.",
+        "worksBestWhen": [
+          "Zilong waits until Minotaur absorbs key control.",
+          "Minotaur's crowd control creates a clear chase target."
+        ],
+        "failureCases": [
+          "Zilong engages before Minotaur starts the fight.",
+          "The enemy saves control specifically for Zilong."
+        ]
+      }
+    ]
+  }
+]

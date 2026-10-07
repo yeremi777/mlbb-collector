@@ -1,0 +1,154 @@
+[
+  {
+    "targetHeroId": "uranus",
+    "counterHeroId": "baxia",
+    "reasons": [
+      "Baxia directly attacks Uranus's main value: extended regeneration.",
+      "Uranus is much less disruptive when his sustain is reduced during objective fights."
+    ],
+    "counterTypes": [
+      "anti-sustain",
+      "anti-heal",
+      "frontline"
+    ],
+    "proof": [
+      {
+        "id": "baxia-anti-sustain-vs-uranus-regeneration",
+        "category": "sustain-anti-sustain",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Uranus wants long fights to stack regeneration; Baxia reduces sustain value and forces Uranus to retreat sooner.",
+        "worksBestWhen": [
+          "Baxia stays on Uranus during turtle, lord, or turret pressure.",
+          "The team follows Baxia's anti-sustain window with real damage."
+        ],
+        "failureCases": [
+          "Uranus avoids Baxia and farms stacks elsewhere.",
+          "Baxia chases too deep without follow-up."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "uranus",
+    "counterHeroId": "dyrroth",
+    "reasons": [
+      "Dyrroth can pressure Uranus in lane by reducing durability and forcing trades that Uranus cannot freely out-regenerate.",
+      "This delays Uranus's ability to become an unkillable side-lane wall."
+    ],
+    "counterTypes": [
+      "penetration",
+      "burst",
+      "game-phase"
+    ],
+    "proof": [
+      {
+        "id": "dyrroth-defense-reduction-vs-uranus-sustain-lane",
+        "category": "damage-type-advantage",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Uranus wants to absorb repeated trades, while Dyrroth can punish him with heavy defense-reduction burst before sustain fully stabilizes.",
+        "worksBestWhen": [
+          "Dyrroth pressures early and does not let Uranus stack freely.",
+          "The team applies anti-heal or burst during Dyrroth's engage."
+        ],
+        "failureCases": [
+          "Uranus survives early pressure and rotates safely.",
+          "Dyrroth overcommits after Uranus activates mobility and sustain."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "uranus",
+    "counterHeroId": "karrie",
+    "reasons": [
+      "Karrie can punish high-HP durable heroes that want long fights.",
+      "Uranus struggles if Karrie can hit safely while her frontline prevents Uranus from reaching her."
+    ],
+    "counterTypes": [
+      "tank-shred",
+      "true-damage",
+      "kiting"
+    ],
+    "proof": [
+      {
+        "id": "karrie-true-damage-vs-uranus-durability",
+        "category": "damage-type-advantage",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Uranus wants durability and long sustain windows; Karrie can convert repeated safe hits into tank-shred pressure.",
+        "worksBestWhen": [
+          "Karrie has peel and enough attack-speed item timing.",
+          "The team keeps Uranus away from Karrie's position."
+        ],
+        "failureCases": [
+          "Uranus reaches Karrie before she can stack damage safely.",
+          "Karrie is behind in items and cannot threaten him yet."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "uranus",
+    "counterHeroId": "x.borg",
+    "reasons": [
+      "X.Borg can pressure Uranus with true-damage windows, which is useful against a hero that wants to stay alive through repeated regeneration and extended trades.",
+      "X.Borg's Firaga Armor gives him a survival buffer in lane or skirmishes, making him harder for Uranus to simply outlast."
+    ],
+    "counterTypes": [
+      "true-damage",
+      "sustain",
+      "kiting"
+    ],
+    "proof": [
+      {
+        "id": "x.borg-true-damage-vs-uranus-long-fight",
+        "category": "damage-type-advantage",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Uranus wants to win long fights through Radiance regeneration, shield value, and mobility, while X.Borg can keep applying pressure with true-damage windows from Fire Missiles and Last Insanity.",
+        "worksBestWhen": [
+          "X.Borg keeps Uranus inside Fire Missiles long enough to trigger true-damage pressure.",
+          "X.Borg has Firaga Armor available before the trade starts.",
+          "X.Borg avoids wasting Last Insanity when Uranus can easily disengage."
+        ],
+        "failureCases": [
+          "Uranus disengages before X.Borg reaches true-damage timing.",
+          "X.Borg loses Firaga Armor before the real fight starts.",
+          "Uranus uses mobility to avoid Last Insanity's explosion window."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "uranus",
+    "counterHeroId": "lunox",
+    "reasons": [
+      "Lunox can threaten durable heroes with magic burst and penetration-style damage pressure.",
+      "She can punish Uranus when he stays too long to stack regeneration."
+    ],
+    "counterTypes": [
+      "burst",
+      "penetration",
+      "anti-sustain"
+    ],
+    "proof": [
+      {
+        "id": "lunox-burst-pressure-vs-uranus-regeneration",
+        "category": "damage-type-advantage",
+        "priority": "secondary",
+        "impact": "medium",
+        "summary": "Uranus wants to outlast damage over time; Lunox can create burst windows that pressure him before regeneration fully pays off.",
+        "worksBestWhen": [
+          "Lunox times burst after Uranus commits forward.",
+          "Anti-heal or allied crowd control supports her damage window."
+        ],
+        "failureCases": [
+          "Uranus disengages before Lunox completes the burst.",
+          "Lunox wastes cooldowns into Uranus's safest sustain timing."
+        ]
+      }
+    ]
+  }
+]

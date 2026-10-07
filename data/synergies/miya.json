@@ -1,0 +1,162 @@
+[
+  {
+    "anchorHeroId": "miya",
+    "synergyHeroId": "estes",
+    "reasons": [
+      "Estes can keep Miya healthy during extended front-to-back fights, giving her more time to convert attack-speed scaling into damage.",
+      "Miya benefits when Estes stays near the backline and supports her repeated basic-attack uptime."
+    ],
+    "synergyTypes": [
+      "healing-sustain",
+      "backline-protection",
+      "teamfight-combo"
+    ],
+    "proof": [
+      {
+        "id": "estes-healing-sustain-for-miya-backline-dps",
+        "category": "healing-sustain",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Miya wants long attack uptime from a safe backline position, while Estes extends that window with repeated healing during grouped fights.",
+        "worksBestWhen": [
+          "Miya stays behind the frontline within Estes' healing range.",
+          "The team plays grouped objective or front-to-back fights.",
+          "Miya has enough items to reward the sustained fight window."
+        ],
+        "failureCases": [
+          "Enemy burst kills Miya before healing stabilizes her.",
+          "Anti-heal reduces Estes' sustain value.",
+          "Miya positions too far from Estes during the fight."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "miya",
+    "synergyHeroId": "angela",
+    "reasons": [
+      "Angela can attach to Miya with Heartguard and add a shield during the enemy dive window.",
+      "Miya can keep attacking while Angela supports her from the attached position."
+    ],
+    "synergyTypes": [
+      "shielding",
+      "protect",
+      "backline-protection"
+    ],
+    "proof": [
+      {
+        "id": "angela-heartguard-protects-miya-damage-window",
+        "category": "protection",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Miya is fragile during late-game damage uptime, and Angela's Heartguard can shield and support her through a focused engage.",
+        "worksBestWhen": [
+          "Angela saves Heartguard for the real dive or teamfight.",
+          "Miya is the main damage source worth protecting.",
+          "Miya continues spacing behind the frontline while shielded."
+        ],
+        "failureCases": [
+          "Heartguard is on cooldown when the dive starts.",
+          "Enemy burst breaks through the shield quickly.",
+          "Miya is isolated beyond team peel after the shield ends."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "miya",
+    "synergyHeroId": "mathilda",
+    "reasons": [
+      "Mathilda gives Miya shield value and a repositioning option through Guiding Wind.",
+      "Miya can use the added mobility to kite away from divers or follow safe cleanup opportunities."
+    ],
+    "synergyTypes": [
+      "mobility-enable",
+      "shielding",
+      "peel"
+    ],
+    "proof": [
+      {
+        "id": "mathilda-guiding-wind-enables-miya-reposition",
+        "category": "mobility-enabler",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Miya lacks a normal dash, while Mathilda can provide shield and movement support that helps Miya reposition during fights.",
+        "worksBestWhen": [
+          "Mathilda stays close enough for Miya to use the mobility link.",
+          "Miya saves the reposition for enemy engage or cleanup.",
+          "The team plays around Miya as the protected backline carry."
+        ],
+        "failureCases": [
+          "Guiding Wind is unavailable during the enemy engage.",
+          "Miya is rooted, suppressed, or burst before she can reposition.",
+          "Mathilda moves away from Miya before the link can be used."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "miya",
+    "synergyHeroId": "tigreal",
+    "reasons": [
+      "Tigreal can start fights and keep enemies controlled while Miya attacks from the backline.",
+      "Grouped enemies increase the value of Miya's repeated basic attacks and teamfight damage window."
+    ],
+    "synergyTypes": [
+      "engage-follow-up",
+      "frontline-enabler",
+      "teamfight-combo"
+    ],
+    "proof": [
+      {
+        "id": "tigreal-engage-creates-miya-backline-dps-window",
+        "category": "engage-follow-up",
+        "priority": "secondary",
+        "impact": "high",
+        "summary": "Tigreal creates a grouped crowd-control opening, and Miya follows from safe range with sustained basic-attack damage.",
+        "worksBestWhen": [
+          "Tigreal engages within Miya's follow-up range.",
+          "Miya waits behind the frontline before attacking.",
+          "The team is ready to protect Miya after Tigreal commits."
+        ],
+        "failureCases": [
+          "Tigreal engages too far from Miya.",
+          "Enemy assassins bypass the frontline and reach Miya.",
+          "Enemies spread before Tigreal creates a grouped target."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "miya",
+    "synergyHeroId": "diggie",
+    "reasons": [
+      "Diggie can protect Miya from crowd-control chains that would stop her attack uptime.",
+      "Time Journey supports Miya during major teamfights by giving nearby protection during the enemy engage window."
+    ],
+    "synergyTypes": [
+      "protect",
+      "shielding",
+      "teamfight-combo"
+    ],
+    "proof": [
+      {
+        "id": "diggie-time-journey-protects-miya-dps-uptime",
+        "category": "protection",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Miya needs uninterrupted attack uptime, while Diggie can protect nearby teammates during a crowd-control engage with Time Journey.",
+        "worksBestWhen": [
+          "Diggie stays close enough to cover Miya.",
+          "Diggie saves Time Journey for the enemy's real engage.",
+          "Miya keeps attacking after the protection window starts."
+        ],
+        "failureCases": [
+          "Diggie uses Time Journey before the main engage.",
+          "Miya is caught outside Diggie's protection range.",
+          "Enemy waits out the protection window before committing damage."
+        ]
+      }
+    ]
+  }
+]

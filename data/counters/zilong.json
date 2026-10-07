@@ -1,0 +1,152 @@
+[
+  {
+    "targetHeroId": "zilong",
+    "counterHeroId": "minsitthar",
+    "reasons": [
+      "Minsitthar can restrict Zilong's movement skills inside King's Calling.",
+      "Zilong depends on dash engage and chase, so anti-mobility field control can stop his dive."
+    ],
+    "counterTypes": [
+      "anti-dash",
+      "anti-dive",
+      "teamfight"
+    ],
+    "proof": [
+      {
+        "id": "minsitthar-kings-calling-vs-zilong-dash-chase",
+        "category": "skill-interaction",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Zilong wants to dash into the backline and keep chasing, while Minsitthar can create a field that restricts movement skills and slows the commit.",
+        "worksBestWhen": [
+          "Minsitthar saves King's Calling for Zilong's real dive.",
+          "The team punishes Zilong while he is trapped in the field."
+        ],
+        "failureCases": [
+          "Zilong waits until King's Calling is unavailable.",
+          "Minsitthar casts too late after Zilong has already flipped the target."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "zilong",
+    "counterHeroId": "khufra",
+    "reasons": [
+      "Khufra can punish Zilong's direct dash engage with anti-blink control.",
+      "Khufra can stand between Zilong and the backline to make target access riskier."
+    ],
+    "counterTypes": [
+      "anti-dash",
+      "anti-dive",
+      "frontline"
+    ],
+    "proof": [
+      {
+        "id": "khufra-bouncing-ball-vs-zilong-spear-strike",
+        "category": "skill-interaction",
+        "priority": "primary",
+        "impact": "medium",
+        "summary": "Zilong wants to use dash engage to reach a priority target, while Khufra can punish blink movement and slow the dive.",
+        "worksBestWhen": [
+          "Khufra positions near the carry Zilong wants to flip.",
+          "Khufra activates anti-dash control before Zilong reaches the backline."
+        ],
+        "failureCases": [
+          "Zilong waits out Bouncing Ball.",
+          "Khufra is too far from the target Zilong chooses."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "zilong",
+    "counterHeroId": "franco",
+    "reasons": [
+      "Franco can stop Zilong's dive with hook or suppression.",
+      "Zilong's speed and slow immunity do not protect him from hard lock if Franco times the punish."
+    ],
+    "counterTypes": [
+      "pickoff",
+      "anti-dive",
+      "execution-dependent"
+    ],
+    "proof": [
+      {
+        "id": "franco-suppression-vs-zilong-dive",
+        "category": "crowd-control-counter",
+        "priority": "primary",
+        "impact": "medium",
+        "summary": "Zilong wants to run through slows and keep attacking, while Franco's suppression can lock him during the commit window.",
+        "worksBestWhen": [
+          "Franco holds suppression for Zilong's real dive.",
+          "Allies are ready to burst Zilong while he is locked."
+        ],
+        "failureCases": [
+          "Franco misses hook or suppresses a low-priority target.",
+          "Zilong avoids grouped fights and split-pushes elsewhere."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "zilong",
+    "counterHeroId": "belerick",
+    "reasons": [
+      "Belerick can punish Zilong's repeated basic attacks and direct melee commitment.",
+      "Taunt and frontline durability make it harder for Zilong to freely choose a backline target."
+    ],
+    "counterTypes": [
+      "frontline",
+      "protect",
+      "anti-dive"
+    ],
+    "proof": [
+      {
+        "id": "belerick-taunt-vs-zilong-basic-attack-dive",
+        "category": "teamfight-role-counter",
+        "priority": "secondary",
+        "impact": "medium",
+        "summary": "Zilong wants to dive and keep basic-attacking a priority target, while Belerick can absorb the engage and disrupt Zilong's target selection.",
+        "worksBestWhen": [
+          "Belerick stays near the ally Zilong wants to dive.",
+          "Belerick has enough durability to survive the initial commit."
+        ],
+        "failureCases": [
+          "Zilong avoids Belerick and split-pushes.",
+          "Belerick cannot force Zilong to hit him."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "zilong",
+    "counterHeroId": "valir",
+    "reasons": [
+      "Valir can push Zilong away before Zilong reaches the backline.",
+      "Kiting and disengage reduce Zilong's ability to convert movement speed into kills."
+    ],
+    "counterTypes": [
+      "kiting",
+      "disengage",
+      "anti-engage"
+    ],
+    "proof": [
+      {
+        "id": "valir-knockback-vs-zilong-chase",
+        "category": "kiting",
+        "priority": "condition",
+        "impact": "medium",
+        "summary": "Zilong wants to chase directly into a target, while Valir can knock him back and slow his approach before the kill window starts.",
+        "worksBestWhen": [
+          "Valir saves knockback for Zilong's engage.",
+          "Valir positions behind frontline protection."
+        ],
+        "failureCases": [
+          "Zilong flanks Valir before knockback is ready.",
+          "Valir wastes disengage on another target."
+        ]
+      }
+    ]
+  }
+]

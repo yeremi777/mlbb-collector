@@ -1,0 +1,157 @@
+[
+  {
+    "targetHeroId": "change",
+    "counterHeroId": "lolita",
+    "reasons": [
+      "Lolita directly reduces Chang'e's long-range projectile pressure by blocking the path of her main poke and Meteor Shower damage.",
+      "She protects grouped teammates from Chang'e's front-facing damage window, forcing Chang'e to reposition or delay her ultimate."
+    ],
+    "counterTypes": [
+      "anti-projectile",
+      "protect",
+      "teamfight"
+    ],
+    "proof": [
+      {
+        "id": "lolita-guardian-bulwark-vs-change-meteor-shower",
+        "category": "skill-interaction",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Chang'e wants to pressure from range with projectile-heavy damage, while Lolita can raise Guardian's Bulwark to block projectiles and reduce the value of Chang'e's main damage window.",
+        "worksBestWhen": [
+          "Lolita faces the correct direction before Chang'e commits Meteor Shower.",
+          "The team groups behind Lolita instead of scattering into Chang'e's line."
+        ],
+        "failureCases": [
+          "Chang'e changes angle and fires around the shield.",
+          "Lolita wastes her shield before Chang'e commits ultimate.",
+          "Chang'e's team forces Lolita to turn away from the projectile path."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "change",
+    "counterHeroId": "natalia",
+    "reasons": [
+      "Natalia can punish Chang'e before Chang'e gets a safe long-range setup.",
+      "Chang'e is easier to kill when Natalia reaches her from flank or bush before Chang'e has time to kite backward."
+    ],
+    "counterTypes": [
+      "pickoff",
+      "mobility",
+      "backline-pressure"
+    ],
+    "proof": [
+      {
+        "id": "natalia-flank-vs-change-backline-poke",
+        "category": "positioning-requirement",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Chang'e wants to stand safely behind her frontline, while Natalia pressures hidden angles and punishes Chang'e when her map awareness or protection is weak.",
+        "worksBestWhen": [
+          "Natalia approaches from fog, side bushes, or after Chang'e uses mobility or shield tools.",
+          "Natalia targets Chang'e before Meteor Shower creates distance pressure."
+        ],
+        "failureCases": [
+          "Chang'e stays near peel heroes.",
+          "Natalia crosses visible traps, minions, or vision.",
+          "Chang'e keeps enough distance to kite before Natalia commits."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "change",
+    "counterHeroId": "hayabusa",
+    "reasons": [
+      "Hayabusa can reach Chang'e through flank angles and punish her low durability when she is separated.",
+      "Shadow mobility lets Hayabusa avoid some linear poke patterns and threaten Chang'e after her main damage is committed."
+    ],
+    "counterTypes": [
+      "mobility",
+      "burst",
+      "backline-pressure"
+    ],
+    "proof": [
+      {
+        "id": "hayabusa-shadow-mobility-vs-change-range-control",
+        "category": "mobility-advantage",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Chang'e wants to keep distance and fire forward, while Hayabusa can enter from shadow angles and burst isolated backline targets.",
+        "worksBestWhen": [
+          "Chang'e is away from teammates or minions.",
+          "Hayabusa saves mobility to enter and exit after forcing Chang'e's defensive tools."
+        ],
+        "failureCases": [
+          "Chang'e stays grouped and Hayabusa's ultimate damage spreads.",
+          "Hayabusa dives into hard crowd control.",
+          "Chang'e's team tracks Hayabusa's shadow positions."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "change",
+    "counterHeroId": "lancelot",
+    "reasons": [
+      "Lancelot can dodge through projectile pressure and threaten Chang'e's backline position.",
+      "His mobility and invulnerable timing reduce Chang'e's ability to punish him during his engage."
+    ],
+    "counterTypes": [
+      "mobility",
+      "burst",
+      "cooldown-punish"
+    ],
+    "proof": [
+      {
+        "id": "lancelot-dash-window-vs-change-projectile-poke",
+        "category": "mobility-advantage",
+        "priority": "primary",
+        "impact": "medium",
+        "summary": "Chang'e wants to zone with forward damage, while Lancelot can use dash and invulnerability windows to bypass poke and burst her during cooldown gaps.",
+        "worksBestWhen": [
+          "Lancelot waits for Chang'e to commit Meteor Shower or misposition.",
+          "Lancelot has minions or targets to extend his dash path."
+        ],
+        "failureCases": [
+          "Lancelot enters without dash reset options.",
+          "Chang'e is protected by reliable crowd control.",
+          "Chang'e's shield and movement speed let her kite out before Lancelot finishes."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "change",
+    "counterHeroId": "franco",
+    "reasons": [
+      "Franco can punish Chang'e's predictable firing position with hook or suppression.",
+      "Chang'e loses much of her value when she is forced out of safe backline spacing."
+    ],
+    "counterTypes": [
+      "pickoff",
+      "crowd-control-counter",
+      "anti-backline"
+    ],
+    "proof": [
+      {
+        "id": "franco-hook-suppression-vs-change-channel-position",
+        "category": "crowd-control-counter",
+        "priority": "primary",
+        "impact": "medium",
+        "summary": "Chang'e wants uninterrupted range control, while Franco can hook or suppress her when she steps forward to aim Meteor Shower.",
+        "worksBestWhen": [
+          "Franco hides his angle before Chang'e starts channeling pressure.",
+          "Franco's team follows up immediately after hook or suppression."
+        ],
+        "failureCases": [
+          "Franco misses hook and Chang'e keeps range advantage.",
+          "Chang'e plays behind minions or tank body-blocks.",
+          "Franco suppresses without enough burst follow-up."
+        ]
+      }
+    ]
+  }
+]

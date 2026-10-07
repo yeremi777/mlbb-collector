@@ -1,0 +1,157 @@
+[
+  {
+    "targetHeroId": "benedetta",
+    "counterHeroId": "khufra",
+    "reasons": [
+      "Khufra is the strongest direct counter because Bouncing Ball punishes blink movement.",
+      "Benedetta's core threat is dash and blink chaining, so Khufra directly attacks the center of her kit."
+    ],
+    "counterTypes": [
+      "anti-dash",
+      "anti-dive",
+      "crowd-control-counter"
+    ],
+    "proof": [
+      {
+        "id": "khufra-bouncing-ball-vs-benedetta-blinks",
+        "category": "skill-interaction",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Benedetta wants to dash across fights, while Khufra's Bouncing Ball knocks airborne enemies who try to blink across him.",
+        "worksBestWhen": [
+          "Khufra positions between Benedetta and the backline.",
+          "Khufra saves Bouncing Ball for her real entry."
+        ],
+        "failureCases": [
+          "Benedetta baits Bouncing Ball first.",
+          "Khufra misses the entry angle.",
+          "Benedetta waits out the anti-dash window."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "benedetta",
+    "counterHeroId": "obsidia",
+    "reasons": [
+      "Obsidia's Hunt of Bone is a strong direct answer because it can disable displacement skills during the tether.",
+      "This is especially relevant against Benedetta, whose safety and damage pattern depend heavily on dash access."
+    ],
+    "counterTypes": [
+      "anti-dash",
+      "pickoff",
+      "mobility"
+    ],
+    "proof": [
+      {
+        "id": "obsidia-hunt-of-bone-vs-benedetta-dashes",
+        "category": "skill-interaction",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Benedetta wants to escape and reposition through dash skills, while Obsidia can tether her with Hunt of Bone and disable displacement skills during the punish window.",
+        "worksBestWhen": [
+          "Obsidia lands Hunt of Bone after Benedetta commits or after An Eye for An Eye is unavailable.",
+          "Obsidia has enough follow-up damage or team support during the tether."
+        ],
+        "failureCases": [
+          "Obsidia misses Hunt of Bone.",
+          "Benedetta blocks the setup with correct control-immunity timing.",
+          "Obsidia tethers Benedetta in a bad position and gets dragged into danger."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "benedetta",
+    "counterHeroId": "minsitthar",
+    "reasons": [
+      "Minsitthar can restrict Benedetta's dash options if she is caught inside King's Calling.",
+      "This is strong but more placement and timing dependent than Khufra or Obsidia."
+    ],
+    "counterTypes": [
+      "anti-dash",
+      "teamfight",
+      "execution-dependent"
+    ],
+    "proof": [
+      {
+        "id": "minsitthar-kings-calling-vs-benedetta-dashes",
+        "category": "skill-interaction",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Benedetta wants to chain dashes through a fight, while Minsitthar's King's Calling prevents directional blink skills inside the field.",
+        "worksBestWhen": [
+          "Minsitthar casts after Benedetta commits.",
+          "The team follows up while Benedetta is trapped in the zone."
+        ],
+        "failureCases": [
+          "Benedetta waits outside the field.",
+          "Minsitthar casts too early.",
+          "Benedetta uses immunity timing before the trap is meaningful."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "benedetta",
+    "counterHeroId": "kaja",
+    "reasons": [
+      "Kaja can suppress Benedetta after she commits, ignoring her normal mobility-based escape pattern.",
+      "His drag makes the punish window easier for teammates to convert."
+    ],
+    "counterTypes": [
+      "suppression",
+      "pickoff",
+      "anti-dive"
+    ],
+    "proof": [
+      {
+        "id": "kaja-divine-judgment-vs-benedetta-commit",
+        "category": "crowd-control-counter",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Benedetta wants to enter and escape through dash timing, while Kaja can suppress and drag her during a committed window.",
+        "worksBestWhen": [
+          "Kaja waits for Benedetta to spend mobility.",
+          "Allies are ready to burst during suppression."
+        ],
+        "failureCases": [
+          "Benedetta baits Kaja's ultimate.",
+          "Kaja cannot reach her.",
+          "Benedetta blocks the setup before suppression lands."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "benedetta",
+    "counterHeroId": "franco",
+    "reasons": [
+      "Franco can suppress Benedetta with Bloody Hunt if she enters his range.",
+      "The counter is valid but more execution-dependent than Kaja because Franco needs accurate timing and can be outmaneuvered."
+    ],
+    "counterTypes": [
+      "suppression",
+      "pickoff",
+      "execution-dependent"
+    ],
+    "proof": [
+      {
+        "id": "franco-bloody-hunt-vs-benedetta-entry",
+        "category": "crowd-control-counter",
+        "priority": "primary",
+        "impact": "medium",
+        "summary": "Benedetta wants to dodge normal control and escape after committing, while Franco can suppress her if he catches her outside her defensive timing.",
+        "worksBestWhen": [
+          "Franco waits until Benedetta's An Eye for An Eye is unavailable or mistimed.",
+          "Franco suppresses after Benedetta commits forward."
+        ],
+        "failureCases": [
+          "Benedetta avoids Franco's range.",
+          "Franco wastes hook or ultimate timing.",
+          "Benedetta blocks the setup with control-immunity timing."
+        ]
+      }
+    ]
+  }
+]

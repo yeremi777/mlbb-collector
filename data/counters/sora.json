@@ -1,0 +1,169 @@
+[
+  {
+    "targetHeroId": "sora",
+    "counterHeroId": "khufra",
+    "reasons": [
+      "Khufra can punish Sora's dash and leap-based engage before Sora freely reaches the backline.",
+      "Sora depends on mobility to enter, chase, and continue form-based pressure, while Khufra can disrupt that movement path with anti-blink control.",
+      "Khufra's frontline positioning forces Sora to commit through a control zone instead of freely choosing a clean target."
+    ],
+    "counterTypes": [
+      "anti-dash",
+      "anti-engage",
+      "crowd-control-counter"
+    ],
+    "proof": [
+      {
+        "id": "khufra-bouncing-ball-vs-sora-dash-entry",
+        "category": "skill-interaction",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Sora wants to enter fights with mobility and continue pressure through Thunder or Torrent follow-up, while Khufra can punish blink-style movement and interrupt Sora's clean engage path.",
+        "worksBestWhen": [
+          "Khufra saves his anti-dash control for Sora's real engage.",
+          "Khufra positions between Sora and the backline target Sora wants to reach.",
+          "The team is ready to punish Sora when his movement is interrupted."
+        ],
+        "failureCases": [
+          "Sora waits for Khufra to use his control first.",
+          "Sora uses Thunder ultimate's untargetable timing to avoid the first control attempt.",
+          "Khufra is isolated and cannot protect the target Sora is diving."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "sora",
+    "counterHeroId": "minsitthar",
+    "reasons": [
+      "Minsitthar can restrict Sora's mobility inside King’s Calling, making it harder for Sora to continue his close-range combo after committing.",
+      "Sora depends on repeated movement and form-based follow-up, while Minsitthar creates a teamfight zone that punishes directional mobility.",
+      "Minsitthar is especially valuable when Sora must dive into a grouped fight instead of taking an isolated duel."
+    ],
+    "counterTypes": [
+      "anti-dash",
+      "anti-engage",
+      "teamfight"
+    ],
+    "proof": [
+      {
+        "id": "minsitthar-kings-calling-vs-sora-mobility",
+        "category": "skill-interaction",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Sora wants to enter, reposition, and keep fighting through form-based movement, while Minsitthar can create a zone that restricts directional mobility and makes Sora easier to punish after entry.",
+        "worksBestWhen": [
+          "Minsitthar casts King’s Calling after Sora commits.",
+          "Sora is forced to fight inside the King’s Calling zone.",
+          "Minsitthar's team follows up while Sora's movement options are limited."
+        ],
+        "failureCases": [
+          "Sora baits King’s Calling and disengages before committing.",
+          "Minsitthar casts too early or too far from Sora's real target.",
+          "Sora's team zones Minsitthar away before he can place the field."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "sora",
+    "counterHeroId": "karrie",
+    "reasons": [
+      "Karrie directly punishes Sora's Torrent form because Torrent increases Sora's Max HP profile.",
+      "Karrie's Max HP true damage gives a reliable damage-profile answer when Sora becomes tankier instead of playing only for burst.",
+      "Karrie is strongest into Sora when she is protected and can keep attacking long enough to stack her true-damage mark."
+    ],
+    "counterTypes": [
+      "true-damage",
+      "max-hp-damage",
+      "tank-shred"
+    ],
+    "proof": [
+      {
+        "id": "karrie-lightwheel-mark-vs-sora-torrent-form",
+        "category": "damage-type-advantage",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Sora's Torrent form increases his tank-style Max HP profile, while Karrie's Lightwheel Mark deals True Damage based on the target's Max HP after stacking marks, giving Karrie a direct answer to Torrent-form Sora.",
+        "worksBestWhen": [
+          "Sora is using Torrent form or building durable.",
+          "Karrie has frontline peel and enough time to stack Lightwheel Mark.",
+          "The fight is front-to-back instead of a clean Sora flank onto Karrie."
+        ],
+        "failureCases": [
+          "Sora reaches Karrie before she can stack marks.",
+          "Karrie is under-farmed or isolated.",
+          "Sora uses Thunder burst style and avoids extended DPS trades."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "sora",
+    "counterHeroId": "valentina",
+    "reasons": [
+      "Valentina can copy Sora's ultimate, which is central to Sora's Thunder and Torrent form identity.",
+      "Sora's ultimate is not only damage; it enables his form-based power spike, so Valentina can contest that same strategic tool during important fights.",
+      "Valentina's value depends on copying Sora at the correct moment and using the stolen ultimate before Sora forces her out."
+    ],
+    "counterTypes": [
+      "skill-interaction",
+      "ultimate-copy",
+      "execution-dependent"
+    ],
+    "proof": [
+      {
+        "id": "valentina-i-am-you-vs-sora-shifting-skies",
+        "category": "skill-interaction",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Sora's Shifting Skies enables his Thunder or Torrent form power spike, while Valentina can steal an enemy ultimate and cast it, letting her contest Sora by copying his core form-switching tool.",
+        "worksBestWhen": [
+          "Valentina copies Sora before the decisive fight.",
+          "Valentina has enough space to use the stolen form without being instantly collapsed on.",
+          "Valentina's team plays around the stolen ultimate window instead of treating it as a simple lockdown tool."
+        ],
+        "failureCases": [
+          "Valentina copies the wrong target.",
+          "Sora bursts or forces Valentina out before she can use the stolen ultimate.",
+          "The exact copied Sora behavior changes or requires further in-game validation."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "sora",
+    "counterHeroId": "minotaur",
+    "reasons": [
+      "Minotaur can punish Sora after Sora commits into close range, using airborne crowd control to interrupt Sora's follow-up window.",
+      "Sora depends on mobility, form-based pressure, and continued action after entry; Minotaur's teamfight control can stop that sequence before Sora fully converts the engage into damage.",
+      "Minotaur also provides frontline protection and healing support, which helps reduce Sora's value when Sora tries to dive the backline during grouped fights."
+    ],
+    "counterTypes": [
+      "frontline",
+      "teamfight",
+      "crowd-control-counter",
+      "protect"
+    ],
+    "proof": [
+      {
+        "id": "minotaur-airborne-control-vs-sora-entry",
+        "category": "crowd-control-counter",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Sora wants to enter with mobility and keep fighting through Thunder or Torrent follow-up, while Minotaur can answer the commit with airborne crowd control, frontline protection, and teamfight healing support.",
+        "worksBestWhen": [
+          "Minotaur saves his crowd control for Sora's real entry instead of using it too early.",
+          "Minotaur stays near the backline or objective area where Sora wants to dive.",
+          "The team follows up while Sora is airborne or forced to stop his combo."
+        ],
+        "failureCases": [
+          "Sora baits Minotaur's ultimate before committing.",
+          "Sora uses Thunder untargetable timing to avoid the first control window.",
+          "Minotaur is too far from the target Sora is diving.",
+          "Sora plays around Minotaur by split-pushing or forcing smaller skirmishes instead of grouped fights."
+        ]
+      }
+    ]
+  }
+]

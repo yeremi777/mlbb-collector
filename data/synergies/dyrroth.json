@@ -1,0 +1,155 @@
+[
+  {
+    "anchorHeroId": "dyrroth",
+    "synergyHeroId": "kaja",
+    "reasons": [
+      "Kaja's suppression gives Dyrroth a stable target for his close-range burst sequence.",
+      "Dyrroth can use the catch window to apply damage before the target repositions."
+    ],
+    "synergyTypes": [
+      "pickoff-combo",
+      "setup-combo",
+      "burst-follow-up"
+    ],
+    "proof": [
+      {
+        "id": "dyrroth-kaja-suppression-burst-window",
+        "category": "pickoff-combo",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Kaja locks and drags the target, while Dyrroth follows with close-range burst.",
+        "worksBestWhen": [
+          "Kaja catches a squishy or damaged target.",
+          "Dyrroth is close enough to follow immediately."
+        ],
+        "failureCases": [
+          "Kaja catches a tank.",
+          "Dyrroth is too far from the target.",
+          "The enemy peels Dyrroth after the suppression ends."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "dyrroth",
+    "synergyHeroId": "franco",
+    "reasons": [
+      "Franco can isolate a target with hook or suppression so Dyrroth can collapse with close-range damage.",
+      "Dyrroth's burst helps convert Franco's catch into a kill threat."
+    ],
+    "synergyTypes": [
+      "pickoff-combo",
+      "setup-combo"
+    ],
+    "proof": [
+      {
+        "id": "dyrroth-franco-hook-suppression-burst",
+        "category": "setup-combo",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Franco creates the catch window, and Dyrroth supplies the damage needed to finish the target.",
+        "worksBestWhen": [
+          "Franco catches a priority target near Dyrroth.",
+          "Dyrroth saves his main damage for the catch."
+        ],
+        "failureCases": [
+          "Franco hooks a tank.",
+          "Franco's suppression is interrupted.",
+          "Dyrroth commits after the target has already escaped."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "dyrroth",
+    "synergyHeroId": "angela",
+    "reasons": [
+      "Angela helps Dyrroth stay alive while he commits into melee range for burst trades.",
+      "The attached shield and sustain let Dyrroth continue fighting after his first engage."
+    ],
+    "synergyTypes": [
+      "dive-support",
+      "shielding",
+      "healing-sustain"
+    ],
+    "proof": [
+      {
+        "id": "dyrroth-angela-melee-commit-protection",
+        "category": "protection",
+        "priority": "secondary",
+        "impact": "medium",
+        "summary": "Dyrroth's damage requires close contact, and Angela helps him survive that commit.",
+        "worksBestWhen": [
+          "Angela attaches as Dyrroth starts the dive.",
+          "Dyrroth targets an enemy he can realistically finish."
+        ],
+        "failureCases": [
+          "Dyrroth overextends into layered crowd control.",
+          "Angela attaches after Dyrroth is already low.",
+          "The enemy disengages and wastes Dyrroth's cooldowns."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "dyrroth",
+    "synergyHeroId": "floryn",
+    "reasons": [
+      "Floryn can sustain Dyrroth during aggressive skirmishes even when he fights away from the healer.",
+      "Global healing helps Dyrroth continue trading after committing into melee range."
+    ],
+    "synergyTypes": [
+      "healing-sustain",
+      "dive-support"
+    ],
+    "proof": [
+      {
+        "id": "dyrroth-floryn-global-heal-skirmish",
+        "category": "healing-sustain",
+        "priority": "secondary",
+        "impact": "medium",
+        "summary": "Dyrroth benefits from extra sustain during aggressive trades, and Floryn can heal globally.",
+        "worksBestWhen": [
+          "Dyrroth baits damage before Floryn casts Bloom.",
+          "Dyrroth still has mobility or damage cooldowns after receiving the heal."
+        ],
+        "failureCases": [
+          "Dyrroth is burst down before healing arrives.",
+          "Floryn heals too early.",
+          "Dyrroth commits into too many enemies without follow-up."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "dyrroth",
+    "synergyHeroId": "carmilla",
+    "reasons": [
+      "Carmilla's linked-target setup can make Dyrroth's focused damage more valuable when enemies group around the target.",
+      "Dyrroth can focus one enemy while Carmilla adds teamfight pressure to nearby enemies."
+    ],
+    "synergyTypes": [
+      "teamfight-combo",
+      "damage-amplification",
+      "cc-chain"
+    ],
+    "proof": [
+      {
+        "id": "dyrroth-carmilla-linked-target-pressure",
+        "category": "teamfight-combo",
+        "priority": "secondary",
+        "impact": "medium",
+        "summary": "Dyrroth focuses one enemy, while Carmilla's link can punish nearby enemies through linked damage and control interaction.",
+        "worksBestWhen": [
+          "Carmilla links enemies before Dyrroth commits.",
+          "Dyrroth attacks a target near other linked enemies."
+        ],
+        "failureCases": [
+          "Dyrroth fights an isolated target while Carmilla's link misses.",
+          "The enemy spreads out before Dyrroth commits.",
+          "Dyrroth is peeled before he can finish the target."
+        ]
+      }
+    ]
+  }
+]

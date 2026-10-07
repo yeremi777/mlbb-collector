@@ -1,0 +1,162 @@
+[
+  {
+    "anchorHeroId": "julian",
+    "synergyHeroId": "kaja",
+    "reasons": [
+      "Kaja can suppress and drag a target, giving Julian a stable target for his enhanced burst combo.",
+      "Julian's front-loaded damage fits Kaja's single-target pickoff pattern."
+    ],
+    "synergyTypes": [
+      "setup-combo",
+      "pickoff-combo",
+      "burst-follow-up"
+    ],
+    "proof": [
+      {
+        "id": "kaja-locks-target-for-julian-enhanced-combo",
+        "category": "setup-combo",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Kaja locks the target first, then Julian follows with an enhanced skill combo to secure the pickoff.",
+        "worksBestWhen": [
+          "Kaja targets a carry or fragile core.",
+          "Julian prepares the correct skill order before the suppression starts.",
+          "Julian has cooldowns ready for the enhanced skill."
+        ],
+        "failureCases": [
+          "Kaja locks a tank or low-value target.",
+          "Julian's enhanced skill is not ready.",
+          "Enemy teammates collapse after Julian commits."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "julian",
+    "synergyHeroId": "franco",
+    "reasons": [
+      "Franco can hook or suppress a target into Julian's combo range.",
+      "Julian can convert Franco's catch quickly because his enhanced skill damage or control is immediate."
+    ],
+    "synergyTypes": [
+      "pickoff-combo",
+      "cc-chain",
+      "burst-follow-up"
+    ],
+    "proof": [
+      {
+        "id": "franco-catch-enables-julian-enhanced-burst",
+        "category": "pickoff-combo",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Franco creates the catch, while Julian follows with enhanced burst or control before the target can escape.",
+        "worksBestWhen": [
+          "Franco catches a squishy or priority target.",
+          "Julian waits until the hook or suppression is confirmed.",
+          "Julian has the correct enhanced skill path prepared."
+        ],
+        "failureCases": [
+          "Franco hooks a tank.",
+          "Julian spends skills before Franco confirms the catch.",
+          "The target survives until teammates peel."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "julian",
+    "synergyHeroId": "mathilda",
+    "reasons": [
+      "Mathilda helps Julian enter combo range without spending his whole skill pattern just to approach.",
+      "Mathilda's shield gives Julian more safety during the cooldown window after his enhanced skill."
+    ],
+    "synergyTypes": [
+      "mobility-enable",
+      "shielding",
+      "dive-support"
+    ],
+    "proof": [
+      {
+        "id": "mathilda-enables-julian-entry-and-exit",
+        "category": "mobility-enabler",
+        "priority": "secondary",
+        "impact": "medium",
+        "summary": "Mathilda gives Julian a safer entry and escape route around his enhanced combo window.",
+        "worksBestWhen": [
+          "Julian uses the mobility to reach a real kill target.",
+          "Mathilda keeps the field available until Julian is ready to commit.",
+          "Julian has enhanced skill preparation before entering."
+        ],
+        "failureCases": [
+          "Julian dashes in without enhanced skill preparation.",
+          "Mathilda's path pulls Julian into enemy crowd control.",
+          "Julian is punished after his enhanced skill puts all skills on cooldown."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "julian",
+    "synergyHeroId": "angela",
+    "reasons": [
+      "Angela can attach to Julian and add protection when he commits to an all-in combo.",
+      "Julian benefits from Angela's shield because he is vulnerable after spending his enhanced skill."
+    ],
+    "synergyTypes": [
+      "shielding",
+      "dive-support",
+      "protect"
+    ],
+    "proof": [
+      {
+        "id": "angela-shields-julian-dive-combo",
+        "category": "shielding",
+        "priority": "secondary",
+        "impact": "high",
+        "summary": "Angela shields and attaches to Julian, helping him survive his dive and post-combo cooldown window.",
+        "worksBestWhen": [
+          "Angela attaches before Julian fully commits.",
+          "Julian chooses a target he can realistically burst.",
+          "Julian has an exit plan after the enhanced skill."
+        ],
+        "failureCases": [
+          "Angela channels too late.",
+          "Julian commits into suppression or layered crowd control.",
+          "Julian fails to finish the target and exits with all skills on cooldown."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "julian",
+    "synergyHeroId": "floryn",
+    "reasons": [
+      "Floryn can support Julian from anywhere on the map during jungle or side skirmishes.",
+      "Floryn's global heal helps Julian survive after diving or after his enhanced skill cooldown window begins."
+    ],
+    "synergyTypes": [
+      "healing-sustain",
+      "dive-support",
+      "protect"
+    ],
+    "proof": [
+      {
+        "id": "floryn-global-heal-covers-julian-cooldown-window",
+        "category": "healing-sustain",
+        "priority": "secondary",
+        "impact": "medium",
+        "summary": "Floryn gives Julian global healing support so he can survive skirmishes even when the roamer is not nearby.",
+        "worksBestWhen": [
+          "Floryn saves Bloom for Julian's real all-in or escape window.",
+          "Julian waits for Bloom availability before forcing risky fights.",
+          "Julian exits after the enhanced combo and avoids overextending."
+        ],
+        "failureCases": [
+          "Julian is burst down before Bloom matters.",
+          "Anti-heal reduces the recovery.",
+          "Julian overcommits into multiple enemies after the heal."
+        ]
+      }
+    ]
+  }
+]

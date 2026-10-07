@@ -1,0 +1,157 @@
+[
+  {
+    "targetHeroId": "phoveus",
+    "counterHeroId": "esmeralda",
+    "reasons": [
+      "Esmeralda reduces the value of Phoveus's shield-supported close fights.",
+      "She can convert nearby enemy shield value into her own survivability during extended skirmishes."
+    ],
+    "counterTypes": [
+      "anti-shield",
+      "sustain-anti-sustain",
+      "frontline"
+    ],
+    "proof": [
+      {
+        "id": "esmeralda-shield-interaction-vs-phoveus",
+        "category": "skill-interaction",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Phoveus wants shield-supported close fights, while Esmeralda can reduce the value of that shield and turn it into her own survivability.",
+        "worksBestWhen": [
+          "Esmeralda fights Phoveus in extended skirmishes.",
+          "She avoids being bursted before her shield cycle starts."
+        ],
+        "failureCases": [
+          "Phoveus bursts or controls Esmeralda before she can sustain.",
+          "Esmeralda is kited before reaching him.",
+          "Phoveus's team collapses faster than Esmeralda can drain shield value."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "phoveus",
+    "counterHeroId": "valir",
+    "reasons": [
+      "Valir can reset spacing against Phoveus's close-range pressure.",
+      "Pushback and slows reduce Phoveus's ability to stay on priority targets."
+    ],
+    "counterTypes": [
+      "kiting",
+      "disengage",
+      "anti-engage"
+    ],
+    "proof": [
+      {
+        "id": "valir-disengage-vs-phoveus-close-range",
+        "category": "kiting",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Phoveus wants to force close fights, while Valir can reset spacing and make his engage harder to complete.",
+        "worksBestWhen": [
+          "Valir saves peel for Phoveus's real entry.",
+          "Team backs away instead of fighting in Phoveus's range."
+        ],
+        "failureCases": [
+          "Valir is flanked.",
+          "Phoveus enters after Valir uses peel.",
+          "Phoveus's team layers control first."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "phoveus",
+    "counterHeroId": "lunox",
+    "reasons": [
+      "Lunox can pressure durable fighters with high magic burst and HP-sensitive damage.",
+      "Her defensive timing can help her avoid Phoveus's commitment window."
+    ],
+    "counterTypes": [
+      "burst",
+      "penetration",
+      "tank-shred"
+    ],
+    "proof": [
+      {
+        "id": "lunox-burst-vs-phoveus-durable-skirmish",
+        "category": "damage-type-advantage",
+        "priority": "secondary",
+        "impact": "medium",
+        "summary": "Phoveus wants to survive and keep fighting, while Lunox can punish him with burst before he gets extended uptime.",
+        "worksBestWhen": [
+          "Lunox keeps spacing.",
+          "She saves defensive timing for Phoveus's engage."
+        ],
+        "failureCases": [
+          "Phoveus catches Lunox after her defensive tools.",
+          "Lunox is forced to use burst on another target.",
+          "Phoveus's team dives with him."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "phoveus",
+    "counterHeroId": "alpha",
+    "reasons": [
+      "Alpha can match fighter trades with sustain and true damage.",
+      "His kit is suited for extended melee fights against Phoveus rather than fragile all-in burst."
+    ],
+    "counterTypes": [
+      "true-damage",
+      "sustain-anti-sustain",
+      "frontline"
+    ],
+    "proof": [
+      {
+        "id": "alpha-true-damage-sustain-vs-phoveus",
+        "category": "damage-type-advantage",
+        "priority": "secondary",
+        "impact": "medium",
+        "summary": "Phoveus wants durable close-range skirmishes, while Alpha can answer with sustain, control, and true-damage pressure.",
+        "worksBestWhen": [
+          "Alpha fights with cooldowns ready.",
+          "Alpha avoids being isolated before sustain starts."
+        ],
+        "failureCases": [
+          "Phoveus kites Alpha's key skills.",
+          "Alpha misses control or sustain timing.",
+          "Phoveus has stronger team follow-up."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "phoveus",
+    "counterHeroId": "x.borg",
+    "reasons": [
+      "X.Borg's Firaga Armor helps him avoid being instantly punished in Phoveus's close-range fights.",
+      "His true-damage pressure can wear down durable fighters in extended fights."
+    ],
+    "counterTypes": [
+      "true-damage",
+      "frontline",
+      "kiting"
+    ],
+    "proof": [
+      {
+        "id": "xborg-firaga-armor-vs-phoveus-pressure",
+        "category": "damage-type-advantage",
+        "priority": "secondary",
+        "impact": "medium",
+        "summary": "Phoveus wants to force close-range durability fights, while X.Borg can survive burst windows and answer with true-damage pressure.",
+        "worksBestWhen": [
+          "X.Borg keeps Firaga Armor before committing.",
+          "He kites Phoveus before using ultimate."
+        ],
+        "failureCases": [
+          "X.Borg loses armor before the fight.",
+          "Phoveus catches him after cooldowns.",
+          "X.Borg dives into too much control."
+        ]
+      }
+    ]
+  }
+]

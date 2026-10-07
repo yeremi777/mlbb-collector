@@ -1,0 +1,157 @@
+[
+  {
+    "anchorHeroId": "brody",
+    "synergyHeroId": "kaja",
+    "reasons": [
+      "Kaja can lock a priority target, giving Brody time to apply damage and Abyss Marks.",
+      "Brody's burst pattern benefits from a guaranteed single-target pickoff window."
+    ],
+    "synergyTypes": [
+      "pickoff-combo",
+      "burst-follow-up",
+      "setup-combo"
+    ],
+    "proof": [
+      {
+        "id": "kaja-lock-for-brody-abyss-marks",
+        "category": "pickoff-combo",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Kaja isolates or locks a target, while Brody follows with mark-based burst and execute pressure.",
+        "worksBestWhen": [
+          "Kaja catches a target within Brody's attack range.",
+          "Brody saves burst for the locked target."
+        ],
+        "failureCases": [
+          "Kaja catches a tank instead of a priority target.",
+          "Brody is zoned before he can hit.",
+          "The enemy peels Brody during the follow-up."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "brody",
+    "synergyHeroId": "franco",
+    "reasons": [
+      "Franco can create a hook or suppression pickoff that gives Brody a clear target.",
+      "Brody can punish the caught target with physical burst and Abyss Mark follow-up."
+    ],
+    "synergyTypes": [
+      "pickoff-combo",
+      "burst-follow-up",
+      "setup-combo"
+    ],
+    "proof": [
+      {
+        "id": "franco-pickoff-for-brody-burst",
+        "category": "pickoff-combo",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Franco catches one target first, while Brody uses the control window to apply marks and burst the isolated enemy.",
+        "worksBestWhen": [
+          "Franco pulls or suppresses a target into Brody's range.",
+          "Brody focuses the caught target instead of switching targets too early."
+        ],
+        "failureCases": [
+          "Franco misses the hook or catches the wrong target.",
+          "Brody is too far to follow.",
+          "The enemy blocks the hook or counter-engages Brody."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "brody",
+    "synergyHeroId": "atlas",
+    "reasons": [
+      "Atlas creates a frontline engage that lets Brody attack from safer spacing.",
+      "When Atlas groups enemies, Brody can apply pressure without needing to walk into the first engage."
+    ],
+    "synergyTypes": [
+      "engage-follow-up",
+      "aoe-follow-up",
+      "frontline-enabler"
+    ],
+    "proof": [
+      {
+        "id": "atlas-frontline-for-brody-follow-up",
+        "category": "engage-follow-up",
+        "priority": "secondary",
+        "impact": "medium",
+        "summary": "Atlas starts and controls the fight, while Brody follows from a safer range with burst and mark pressure.",
+        "worksBestWhen": [
+          "Atlas engages in Brody's attack range.",
+          "Brody focuses priority targets after the pull."
+        ],
+        "failureCases": [
+          "Atlas engages too deep.",
+          "Brody is zoned away from the grouped targets.",
+          "The enemy uses Atlas's engage timing to dive Brody."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "brody",
+    "synergyHeroId": "lolita",
+    "reasons": [
+      "Brody needs space to attack and build Abyss Marks; Lolita helps protect that space.",
+      "Lolita's defensive frontline can reduce poke or dive pressure while Brody looks for burst windows."
+    ],
+    "synergyTypes": [
+      "protect",
+      "peel",
+      "backline-protection"
+    ],
+    "proof": [
+      {
+        "id": "lolita-protects-brody-mark-stacking",
+        "category": "protection",
+        "priority": "secondary",
+        "impact": "medium",
+        "summary": "Lolita protects Brody's position, allowing him to stack marks and prepare Torn-Apart Memory more safely.",
+        "worksBestWhen": [
+          "Lolita stands between Brody and enemy poke or dive threats.",
+          "Brody avoids stepping past the protection line."
+        ],
+        "failureCases": [
+          "The enemy attacks Brody from multiple angles.",
+          "Lolita's protection is forced before Brody can trade.",
+          "Brody is caught while rotating alone."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "brody",
+    "synergyHeroId": "angela",
+    "reasons": [
+      "Angela's shield helps Brody survive burst or dive while he keeps attacking.",
+      "Angela can turn a lane fight or small skirmish in Brody's favor by adding sustain and pressure to his mark-based trade."
+    ],
+    "synergyTypes": [
+      "shielding",
+      "protect",
+      "laning-synergy"
+    ],
+    "proof": [
+      {
+        "id": "angela-heartguard-for-brody-mark-trades",
+        "category": "shielding",
+        "priority": "secondary",
+        "impact": "medium",
+        "summary": "Angela protects Brody during trades or dives, helping him stay alive long enough to stack Abyss Marks and finish with Torn-Apart Memory.",
+        "worksBestWhen": [
+          "Angela saves Heartguard for real danger or a committed fight.",
+          "Brody maintains attack spacing after receiving shield."
+        ],
+        "failureCases": [
+          "Angela attaches after Brody is already burst.",
+          "Brody is chain-controlled and cannot attack.",
+          "The enemy disengages until Angela's shield expires."
+        ]
+      }
+    ]
+  }
+]

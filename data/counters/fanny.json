@@ -1,0 +1,162 @@
+[
+  {
+    "targetHeroId": "fanny",
+    "counterHeroId": "khufra",
+    "reasons": [
+      "Khufra directly punishes Fanny's main strength because Bouncing Ball can stop enemies trying to blink across him.",
+      "Fanny depends on clean Steel Cable paths to enter and escape, while Khufra can block those paths near walls, jungle entrances, and objective fights."
+    ],
+    "counterTypes": [
+      "anti-dash",
+      "anti-dive",
+      "frontline"
+    ],
+    "proof": [
+      {
+        "id": "khufra-bouncing-ball-vs-fanny-steel-cable",
+        "category": "skill-interaction",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Fanny wants uninterrupted cable movement through terrain, while Khufra can punish blink-style movement with Bouncing Ball and stop her from freely crossing his zone.",
+        "worksBestWhen": [
+          "Khufra positions near Fanny's expected wall path.",
+          "Khufra saves Bouncing Ball for Fanny's real cable entry.",
+          "Allies immediately follow up when Fanny is interrupted."
+        ],
+        "failureCases": [
+          "Fanny avoids Khufra's zone and attacks from another wall angle.",
+          "Khufra activates Bouncing Ball too early.",
+          "Khufra stops Fanny but has no team follow-up damage."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "fanny",
+    "counterHeroId": "franco",
+    "reasons": [
+      "Franco can punish Fanny with Iron Hook displacement if he predicts her cable route or waits near the target she wants to dive.",
+      "Bloody Hunt suppression can stop Fanny during her commit window and give Franco's team time to burst her down."
+    ],
+    "counterTypes": [
+      "pickoff",
+      "anti-dive",
+      "execution-dependent"
+    ],
+    "proof": [
+      {
+        "id": "franco-hook-suppression-vs-fanny-cable-entry",
+        "category": "crowd-control-counter",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Fanny wants to enter and exit quickly with Steel Cable, while Franco can interrupt her commit with hook displacement or suppression if he times the punish correctly.",
+        "worksBestWhen": [
+          "Franco waits near the ally Fanny wants to dive.",
+          "Franco uses Bloody Hunt after Fanny commits, not before she chooses her route.",
+          "The team is ready to burst Fanny during the suppression window."
+        ],
+        "failureCases": [
+          "Franco misses Iron Hook.",
+          "Fanny attacks from an unexpected wall angle.",
+          "Franco suppresses Fanny without enough follow-up damage."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "fanny",
+    "counterHeroId": "kaja",
+    "reasons": [
+      "Kaja's Divine Judgement can suppress and drag Fanny, stopping her cable sequence after she commits.",
+      "Kaja is especially useful when he holds ultimate for Fanny instead of using it early on a lower-value target."
+    ],
+    "counterTypes": [
+      "pickoff",
+      "anti-dive",
+      "cooldown-punish"
+    ],
+    "proof": [
+      {
+        "id": "kaja-divine-judgement-vs-fanny-cable-dive",
+        "category": "crowd-control-counter",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Fanny wants to pass through fights with cable mobility, while Kaja can suppress and drag her during the commit window, preventing her from freely continuing the cable sequence.",
+        "worksBestWhen": [
+          "Kaja waits until Fanny enters his range.",
+          "Kaja has teammates nearby to damage Fanny during suppression.",
+          "Kaja saves Divine Judgement for Fanny's real dive."
+        ],
+        "failureCases": [
+          "Fanny attacks the opposite side of the fight.",
+          "Kaja uses Divine Judgement on another hero before Fanny commits.",
+          "Kaja is zoned or bursted before Fanny enters."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "fanny",
+    "counterHeroId": "obsidia",
+    "reasons": [
+      "Obsidia can punish Fanny with Hunt of Bone because the tether can prevent displacement skills during its active window.",
+      "This creates a strong anti-mobility window against Fanny, but Obsidia must land the ultimate and avoid being bursted first."
+    ],
+    "counterTypes": [
+      "anti-dash",
+      "anti-dive",
+      "cooldown-punish"
+    ],
+    "proof": [
+      {
+        "id": "obsidia-hunt-of-bone-vs-fanny-steel-cable",
+        "category": "skill-interaction",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Fanny wants to keep flying through walls and reposition freely, while Obsidia's Hunt of Bone can tether her and prevent displacement skills during the tether window.",
+        "worksBestWhen": [
+          "Obsidia casts Hunt of Bone after Fanny commits.",
+          "Obsidia has team follow-up ready during the tether duration.",
+          "The fight happens near a wall path or objective where Fanny's cable route is predictable."
+        ],
+        "failureCases": [
+          "Obsidia misses Hunt of Bone.",
+          "Fanny bursts Obsidia before the ultimate connects.",
+          "Fanny baits the ultimate, disengages, then re-enters after it ends."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "fanny",
+    "counterHeroId": "minsitthar",
+    "reasons": [
+      "Minsitthar can restrict Fanny's movement inside King's Calling, making her cable entry or escape much harder if she is caught inside the field.",
+      "This counter is valid but situational because Minsitthar must place the field where Fanny actually commits."
+    ],
+    "counterTypes": [
+      "anti-dash",
+      "anti-dive",
+      "execution-dependent"
+    ],
+    "proof": [
+      {
+        "id": "minsitthar-kings-calling-vs-fanny-cable-path",
+        "category": "skill-interaction",
+        "priority": "condition",
+        "impact": "medium",
+        "summary": "Fanny wants to cable through terrain and exit after burst damage, while Minsitthar can create a field that restricts movement skills if Fanny is caught inside it.",
+        "worksBestWhen": [
+          "Minsitthar places King's Calling on Fanny's target or escape path.",
+          "Fanny has already committed before Minsitthar casts the field.",
+          "The team fights inside the field instead of chasing outside it."
+        ],
+        "failureCases": [
+          "Fanny cables around the field.",
+          "Minsitthar casts King's Calling too early.",
+          "Fanny waits until King's Calling is unavailable before committing."
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,142 @@
+[
+  {
+    "targetHeroId": "karrie",
+    "counterHeroId": "kaja",
+    "reasons": [
+      "Kaja directly denies Karrie's repeated-attack uptime by suppressing and dragging her before she can safely stack Lightwheel Mark.",
+      "This matchup works especially well as a pickoff setup because Karrie is vulnerable when she is pulled away from her peel or frontline."
+    ],
+    "counterTypes": ["suppression", "pickoff", "crowd-control-counter"],
+    "proof": [
+      {
+        "id": "kaja-divine-judgment-vs-karrie-attack-uptime",
+        "category": "crowd-control-counter",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Karrie wants uninterrupted basic attacks and skill hits to stack Lightwheel Mark, while Kaja can suppress and drag her during the key DPS window before she can freely attack.",
+        "worksBestWhen": [
+          "Kaja saves Divine Judgment for Karrie instead of using it on the frontline.",
+          "Kaja reaches Karrie from a flank, brush angle, or Flicker engage.",
+          "Teammates follow immediately after Kaja pulls Karrie out of position."
+        ],
+        "failureCases": [
+          "Kaja cannot reach Karrie because she stays behind strong peel.",
+          "Kaja commits without teammate damage follow-up.",
+          "Kaja suppresses the wrong target and Karrie is left free to deal sustained damage."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "karrie",
+    "counterHeroId": "franco",
+    "reasons": [
+      "Franco can stop Karrie's DPS window with suppression, forcing her to lose the repeated attacks needed to trigger Lightwheel Mark consistently.",
+      "His hook and ultimate pressure punish Karrie when she steps forward to attack tanks or objectives."
+    ],
+    "counterTypes": ["suppression", "pickoff", "positioning-requirement"],
+    "proof": [
+      {
+        "id": "franco-bloody-hunt-vs-karrie-forward-position",
+        "category": "crowd-control-counter",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Karrie needs safe forward positioning to keep attacking, while Franco can punish that position with Bloody Hunt suppression and coordinated burst follow-up.",
+        "worksBestWhen": [
+          "Franco holds Bloody Hunt until Karrie commits to a fight or objective.",
+          "Franco threatens Karrie from fog of war or brush control.",
+          "The team is ready to burst Karrie during the suppression duration."
+        ],
+        "failureCases": [
+          "Franco misses hook and loses map pressure.",
+          "Franco suppresses Karrie without teammate follow-up.",
+          "Karrie stays out of hook and ultimate range while protected by her frontline."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "karrie",
+    "counterHeroId": "lolita",
+    "reasons": [
+      "Lolita directly reduces Karrie's basic-attack pressure by blocking ranged basic attacks and projectiles with her shield when positioned correctly.",
+      "This protects teammates during the time Karrie wants to stack Lightwheel Mark through repeated hits."
+    ],
+    "counterTypes": ["protect", "anti-basic-attack", "anti-projectile"],
+    "proof": [
+      {
+        "id": "lolita-guardian-bulwark-vs-karrie-lightwheel-stacks",
+        "category": "skill-interaction",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Karrie relies on repeated ranged attacks to build pressure, while Lolita can face Karrie and block ranged basic attacks and projectiles to protect the team during Karrie's DPS window.",
+        "worksBestWhen": [
+          "Lolita positions between Karrie and the protected teammate.",
+          "Lolita angles Guardian's Bulwark toward Karrie's attack direction.",
+          "Allied damage dealers stay behind Lolita's shield line."
+        ],
+        "failureCases": [
+          "Karrie attacks from the side or waits out the shield duration.",
+          "Lolita shields too early before Karrie commits.",
+          "Karrie finds a different target outside Lolita's shield angle."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "karrie",
+    "counterHeroId": "natalia",
+    "reasons": [
+      "Natalia can threaten Karrie before Karrie gets protected DPS uptime in a teamfight.",
+      "Smoke Bomb is especially relevant because Karrie depends heavily on basic attacks to apply pressure and stack Lightwheel Mark."
+    ],
+    "counterTypes": ["pickoff", "anti-basic-attack", "vision-control"],
+    "proof": [
+      {
+        "id": "natalia-smoke-bomb-vs-karrie-basic-attack-stacks",
+        "category": "skill-interaction",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Karrie needs repeated basic attacks to build her damage pattern, while Natalia can enter from vision gaps and use Smoke Bomb to deny basic-attack retaliation during the pickoff window.",
+        "worksBestWhen": [
+          "Natalia finds Karrie before teamfight formation is complete.",
+          "Natalia attacks from fog of war, brush, or a flank route.",
+          "Karrie's dash or defensive response is unavailable or already used."
+        ],
+        "failureCases": [
+          "Karrie stays grouped with peel and vision control.",
+          "Natalia enters after Karrie already has protection and damage uptime.",
+          "Natalia cannot finish the pickoff before the enemy team collapses."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "karrie",
+    "counterHeroId": "saber",
+    "reasons": [
+      "Saber can punish Karrie's low durability with single-target airborne burst before she has time to stack true damage.",
+      "Saber counters Karrie by forcing a short, controlled burst window with airborne crowd control, which reduces Karrie's chance to reposition, kite, or build repeated Lightwheel Mark stacks."
+    ],
+    "counterTypes": ["pickoff", "burst", "cooldown-punish"],
+    "proof": [
+      {
+        "id": "saber-triple-sweep-vs-karrie-before-stacks",
+        "category": "damage-type-advantage",
+        "priority": "primary",
+        "impact": "medium",
+        "summary": "Karrie wants extended attack uptime to trigger Lightwheel Mark repeatedly, while Saber can force a short burst fight with Triple Sweep before Karrie reaches her full DPS value.",
+        "worksBestWhen": [
+          "Saber waits for Phantom Step or defensive tools to be used.",
+          "Saber catches Karrie away from peel or vision.",
+          "Saber has enough burst damage to finish Karrie during the crowd-control window."
+        ],
+        "failureCases": [
+          "Karrie survives the burst and returns damage with teammate protection.",
+          "Saber dives into a protected backline without follow-up.",
+          "Karrie has defensive item timing or positioning that prevents Saber from finishing the kill."
+        ]
+      }
+    ]
+  }
+]

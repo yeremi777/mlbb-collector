@@ -1,0 +1,157 @@
+[
+  {
+    "anchorHeroId": "yve",
+    "synergyHeroId": "tigreal",
+    "reasons": [
+      "Yve wants to control grouped enemies from range, and Tigreal can create the crowd-control opening that keeps enemies inside her zoning area.",
+      "Tigreal's frontline engage lets Yve follow from safer spacing instead of starting the fight herself."
+    ],
+    "synergyTypes": [
+      "engage-follow-up",
+      "teamfight-combo",
+      "cc-chain"
+    ],
+    "proof": [
+      {
+        "id": "yve-follow-up-after-tigreal-engage",
+        "category": "engage-follow-up",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Tigreal starts the fight with grouped crowd control, while Yve follows with area slow and damage control from behind the frontline.",
+        "worksBestWhen": [
+          "Tigreal engages after Yve is close enough to cast.",
+          "Yve saves her main zoning skills for the real crowd-control window."
+        ],
+        "failureCases": [
+          "Tigreal engages too far away from Yve.",
+          "The enemy spreads out before Tigreal commits.",
+          "Yve is flanked or interrupted before the follow-up lands."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "yve",
+    "synergyHeroId": "atlas",
+    "reasons": [
+      "Yve benefits when enemies are pulled into one area, because her zoning damage becomes easier to place.",
+      "Atlas can force a teamfight shape that gives Yve a clear follow-up area."
+    ],
+    "synergyTypes": [
+      "setup-combo",
+      "teamfight-combo",
+      "aoe-follow-up"
+    ],
+    "proof": [
+      {
+        "id": "yve-zoning-after-atlas-setup",
+        "category": "setup-combo",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Atlas groups enemies with engage control, while Yve places area damage and slows over the controlled zone.",
+        "worksBestWhen": [
+          "Atlas catches multiple enemies or a priority backline target.",
+          "Yve waits for Atlas's real engage before committing her main damage window."
+        ],
+        "failureCases": [
+          "Atlas catches only the frontline.",
+          "Yve is outside follow-up range.",
+          "Enemies interrupt Yve before her zone pressure matters."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "yve",
+    "synergyHeroId": "carmilla",
+    "reasons": [
+      "Carmilla can link clustered enemies, giving Yve stronger value from repeated area damage and slows.",
+      "Yve can punish linked enemies from safe range while Carmilla plays inside the fight."
+    ],
+    "synergyTypes": [
+      "damage-amplification",
+      "teamfight-combo",
+      "cc-chain"
+    ],
+    "proof": [
+      {
+        "id": "yve-damage-over-carmilla-link",
+        "category": "teamfight-combo",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Carmilla links enemies in a teamfight, while Yve layers area damage and slow pressure into the linked group.",
+        "worksBestWhen": [
+          "Carmilla links multiple enemies before Yve commits.",
+          "Yve casts while enemies are still connected or forced to stay near the fight."
+        ],
+        "failureCases": [
+          "Enemies separate before the link has value.",
+          "Carmilla links only one target.",
+          "Yve is forced to reposition before dealing damage."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "yve",
+    "synergyHeroId": "minotaur",
+    "reasons": [
+      "Minotaur gives Yve a frontline that can start fights or peel enemies away from her casting position.",
+      "Yve benefits from Minotaur's crowd control because it keeps enemies in her zoning area longer."
+    ],
+    "synergyTypes": [
+      "frontline-enabler",
+      "cc-chain",
+      "protection"
+    ],
+    "proof": [
+      {
+        "id": "yve-safe-casting-behind-minotaur",
+        "category": "frontline-enabler",
+        "priority": "secondary",
+        "impact": "medium",
+        "summary": "Minotaur protects the front of the fight and creates control windows, giving Yve safer time to cast from behind him.",
+        "worksBestWhen": [
+          "Minotaur positions between Yve and enemy divers.",
+          "Yve casts after Minotaur starts the fight or peels the dive."
+        ],
+        "failureCases": [
+          "Minotaur engages without Yve in range.",
+          "Enemy assassins reach Yve from the side.",
+          "Yve spends her key skills before Minotaur forces the fight."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "yve",
+    "synergyHeroId": "khufra",
+    "reasons": [
+      "Khufra can disrupt enemy movement so Yve has more time to apply area control.",
+      "Yve benefits when Khufra forces enemies to fight around choke points or objective entrances."
+    ],
+    "synergyTypes": [
+      "frontline-enabler",
+      "cc-chain",
+      "positioning-dependent"
+    ],
+    "proof": [
+      {
+        "id": "yve-zone-control-with-khufra-frontline",
+        "category": "positioning-requirement",
+        "priority": "condition",
+        "impact": "medium",
+        "summary": "Khufra creates a disruptive frontline zone, while Yve adds slows and area damage over the same space.",
+        "worksBestWhen": [
+          "Khufra engages near walls, choke points, or objective entrances.",
+          "Yve keeps safe spacing behind Khufra."
+        ],
+        "failureCases": [
+          "Khufra dives beyond Yve's range.",
+          "Enemy flankers ignore Khufra and reach Yve.",
+          "The fight happens in open space where enemies can spread freely."
+        ]
+      }
+    ]
+  }
+]

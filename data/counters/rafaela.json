@@ -1,0 +1,152 @@
+[
+  {
+    "targetHeroId": "rafaela",
+    "counterHeroId": "baxia",
+    "reasons": [
+      "Baxia reduces the value of Rafaela's healing during skirmishes.",
+      "Rafaela's team wants to reset through sustain and movement speed, while Baxia can force lower-value healing windows."
+    ],
+    "counterTypes": [
+      "anti-sustain",
+      "anti-heal",
+      "frontline"
+    ],
+    "proof": [
+      {
+        "id": "baxia-anti-heal-vs-rafaela-holy-healing",
+        "category": "sustain-anti-sustain",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Rafaela wants to restore allies during skirmishes, while Baxia reduces healing and regeneration so her team loses sustain advantage.",
+        "worksBestWhen": [
+          "Baxia tags Rafaela's grouped allies before the main damage exchange.",
+          "Allies commit damage during the anti-heal window."
+        ],
+        "failureCases": [
+          "Rafaela's team disengages before Baxia reaches them.",
+          "Baxia cannot apply pressure to the correct targets."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "rafaela",
+    "counterHeroId": "luo-yi",
+    "reasons": [
+      "Rafaela teams often group to receive healing and speed value.",
+      "Luo Yi can punish grouped movement with mark reactions and displacement."
+    ],
+    "counterTypes": [
+      "teamfight",
+      "anti-engage",
+      "positioning-requirement"
+    ],
+    "proof": [
+      {
+        "id": "luo-yi-yin-yang-reaction-vs-rafaela-grouping",
+        "category": "positioning-requirement",
+        "priority": "primary",
+        "impact": "medium",
+        "summary": "Rafaela wants allies close enough to receive support value, while Luo Yi punishes clustered positioning with Yin-Yang reactions.",
+        "worksBestWhen": [
+          "Rafaela's team groups around objectives or jungle entrances.",
+          "Luo Yi has follow-up damage ready after the pull or stun."
+        ],
+        "failureCases": [
+          "Rafaela's team spreads before Luo Yi marks multiple targets.",
+          "Luo Yi misses mark timing or lacks follow-up."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "rafaela",
+    "counterHeroId": "natalia",
+    "reasons": [
+      "Natalia can pressure Rafaela's backline position and force her to play defensively.",
+      "Rafaela loses a lot of team value if she is zoned away before a fight starts."
+    ],
+    "counterTypes": [
+      "pickoff",
+      "vision-control",
+      "anti-engage"
+    ],
+    "proof": [
+      {
+        "id": "natalia-pickoff-vs-rafaela-backline-support",
+        "category": "vision-awareness",
+        "priority": "condition",
+        "impact": "medium",
+        "summary": "Rafaela wants safe backline access to allies, while Natalia creates hidden pickoff pressure that can remove or zone her before a fight.",
+        "worksBestWhen": [
+          "Natalia controls flank bushes before objectives.",
+          "Rafaela is separated from tank or damage core."
+        ],
+        "failureCases": [
+          "Rafaela reveals Natalia early.",
+          "Rafaela stays grouped with hard crowd-control peel."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "rafaela",
+    "counterHeroId": "saber",
+    "reasons": [
+      "Saber can remove Rafaela quickly before her team benefits from repeated healing and speed boosts.",
+      "This works best when Rafaela is exposed or lacks defensive peel."
+    ],
+    "counterTypes": [
+      "pickoff",
+      "burst",
+      "cooldown-punish"
+    ],
+    "proof": [
+      {
+        "id": "saber-burst-vs-rafaela-support-positioning",
+        "category": "skill-interaction",
+        "priority": "secondary",
+        "impact": "medium",
+        "summary": "Rafaela wants to stay alive behind her team and provide repeated support value, while Saber can target and burst her when she is exposed.",
+        "worksBestWhen": [
+          "Saber attacks from fog after Rafaela steps forward.",
+          "Rafaela has no nearby peel or defensive cooldown."
+        ],
+        "failureCases": [
+          "Rafaela stays behind a tank and Saber cannot reach her.",
+          "Saber dives too deep and gets traded after the burst."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "rafaela",
+    "counterHeroId": "franco",
+    "reasons": [
+      "Franco can punish Rafaela's positioning with hook or suppression before she can reset her team.",
+      "Pickoff pressure forces Rafaela to play safer and reduces her ability to control vision with her team."
+    ],
+    "counterTypes": [
+      "pickoff",
+      "vision-control",
+      "execution-dependent"
+    ],
+    "proof": [
+      {
+        "id": "franco-hook-vs-rafaela-support-rotation",
+        "category": "positioning-requirement",
+        "priority": "condition",
+        "impact": "medium",
+        "summary": "Rafaela wants to rotate with allies and support from safe range, while Franco can punish exposed support movement with hook or suppression.",
+        "worksBestWhen": [
+          "Franco controls bush vision before Rafaela rotates.",
+          "Allies follow up immediately after the pickoff."
+        ],
+        "failureCases": [
+          "Franco hooks a tank instead of Rafaela.",
+          "Rafaela stays behind teammates and avoids hook angles."
+        ]
+      }
+    ]
+  }
+]

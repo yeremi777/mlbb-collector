@@ -1,0 +1,152 @@
+[
+  {
+    "anchorHeroId": "minotaur",
+    "synergyHeroId": "odette",
+    "reasons": [
+      "Minotaur can create the control window that Odette needs to channel large AoE damage.",
+      "Odette benefits when Minotaur keeps enemies grouped or slowed during the teamfight setup."
+    ],
+    "synergyTypes": [
+      "cc-chain",
+      "teamfight-combo",
+      "aoe-follow-up"
+    ],
+    "proof": [
+      {
+        "id": "minotaur-control-for-odette-aoe-channel",
+        "category": "crowd-control-chain",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Minotaur controls enemies in a grouped fight, while Odette follows with AoE damage during the control window.",
+        "worksBestWhen": [
+          "Minotaur engages after Odette is close enough to follow.",
+          "Odette saves her ultimate until enemies are controlled."
+        ],
+        "failureCases": [
+          "Odette is interrupted before the damage completes.",
+          "Minotaur catches enemies too far from Odette."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "minotaur",
+    "synergyHeroId": "pharsa",
+    "reasons": [
+      "Pharsa can follow Minotaur's engage from safer distance with long-range damage.",
+      "Minotaur's frontline control gives Pharsa more time to cast from outside the center of the fight."
+    ],
+    "synergyTypes": [
+      "engage-follow-up",
+      "poke-siege",
+      "aoe-follow-up"
+    ],
+    "proof": [
+      {
+        "id": "minotaur-engage-for-pharsa-ranged-follow-up",
+        "category": "engage-follow-up",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Minotaur creates the frontline control, while Pharsa punishes controlled enemies from range.",
+        "worksBestWhen": [
+          "Minotaur engages inside Pharsa's damage range.",
+          "Pharsa is not forced to reposition before the follow-up."
+        ],
+        "failureCases": [
+          "Minotaur engages outside Pharsa's range.",
+          "Enemy divers force Pharsa away before she can cast."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "minotaur",
+    "synergyHeroId": "claude",
+    "reasons": [
+      "Minotaur can control enemies so Claude has a safer window to enter with AoE damage.",
+      "Claude benefits when Minotaur absorbs pressure before Claude commits into the fight."
+    ],
+    "synergyTypes": [
+      "engage-follow-up",
+      "teamfight-combo",
+      "aoe-follow-up"
+    ],
+    "proof": [
+      {
+        "id": "minotaur-control-for-claude-aoe-entry",
+        "category": "engage-follow-up",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Minotaur absorbs pressure and controls enemies, while Claude follows with AoE damage after the engage starts.",
+        "worksBestWhen": [
+          "Claude waits for Minotaur's control before entering.",
+          "Minotaur forces enemies to spend key control before Claude commits."
+        ],
+        "failureCases": [
+          "Claude enters before Minotaur creates space.",
+          "Enemy control interrupts Claude during his damage window."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "minotaur",
+    "synergyHeroId": "bane",
+    "reasons": [
+      "Minotaur's frontline and control let Bane follow with AoE damage around objectives and grouped fights.",
+      "Bane benefits when Minotaur stabilizes the fight before Bane commits damage."
+    ],
+    "synergyTypes": [
+      "engage-follow-up",
+      "aoe-follow-up",
+      "objective-control"
+    ],
+    "proof": [
+      {
+        "id": "minotaur-frontline-for-bane-objective-aoe",
+        "category": "engage-follow-up",
+        "priority": "secondary",
+        "impact": "medium",
+        "summary": "Minotaur starts or stabilizes the fight, while Bane adds AoE damage after enemies are controlled.",
+        "worksBestWhen": [
+          "Bane stays close enough to follow Minotaur's engage.",
+          "The fight happens around an objective or choke area."
+        ],
+        "failureCases": [
+          "Bane is zoned away before the follow-up.",
+          "Minotaur catches only targets Bane cannot safely damage."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "minotaur",
+    "synergyHeroId": "xavier",
+    "reasons": [
+      "Xavier can follow Minotaur's control from long range and add teamfight damage without standing inside the engage.",
+      "Minotaur gives Xavier a safer frontline while Xavier contributes skill damage from distance."
+    ],
+    "synergyTypes": [
+      "engage-follow-up",
+      "poke-siege",
+      "teamfight-combo"
+    ],
+    "proof": [
+      {
+        "id": "minotaur-control-for-xavier-long-range-damage",
+        "category": "engage-follow-up",
+        "priority": "secondary",
+        "impact": "medium",
+        "summary": "Minotaur creates a controlled frontline, while Xavier follows with long-range skill damage from safer positioning.",
+        "worksBestWhen": [
+          "Xavier has line of sight and range when Minotaur engages.",
+          "Minotaur starts fights where enemies cannot easily spread out."
+        ],
+        "failureCases": [
+          "Xavier is forced away before the engage.",
+          "Minotaur's control does not hold enemies long enough."
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,152 @@
+[
+  {
+    "targetHeroId": "moskov",
+    "counterHeroId": "lolita",
+    "reasons": [
+      "Lolita can reduce Moskov's damage window by blocking and reflecting ranged basic attacks and projectile pressure.",
+      "She protects teammates when Moskov tries to free-hit from a fixed angle."
+    ],
+    "counterTypes": [
+      "protect",
+      "anti-basic-attack",
+      "anti-projectile"
+    ],
+    "proof": [
+      {
+        "id": "lolita-guardian-bulwark-vs-moskov-basic-attacks",
+        "category": "skill-interaction",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Moskov depends heavily on repeated ranged basic attacks, while Lolita's shield can reflect incoming ranged basic attacks and projectiles during the key DPS window.",
+        "worksBestWhen": [
+          "Lolita faces Moskov before he commits his attack-speed window.",
+          "Teammates stay behind the shield instead of splitting randomly."
+        ],
+        "failureCases": [
+          "Moskov flanks from the side or waits until Lolita's shield is unavailable.",
+          "Lolita shields the wrong direction."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "moskov",
+    "counterHeroId": "belerick",
+    "reasons": [
+      "Belerick punishes Moskov's repeated basic attacks with return-style damage pressure.",
+      "His taunt can interrupt Moskov's free-hit pattern and force Moskov to attack a tank instead of the backline."
+    ],
+    "counterTypes": [
+      "frontline",
+      "anti-basic-attack",
+      "crowd-control-counter"
+    ],
+    "proof": [
+      {
+        "id": "belerick-taunt-vs-moskov-free-hit-window",
+        "category": "skill-interaction",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Moskov wants to stack continuous basic attacks, while Belerick rewards being hit and can taunt Moskov during the fight.",
+        "worksBestWhen": [
+          "Belerick is positioned between Moskov and the backline.",
+          "Belerick has enough durability to survive the first DPS window."
+        ],
+        "failureCases": [
+          "Moskov avoids hitting Belerick and attacks from another angle.",
+          "Belerick dives too far without follow-up."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "moskov",
+    "counterHeroId": "natalia",
+    "reasons": [
+      "Natalia can threaten Moskov before he gets safe positioning.",
+      "Smoke Bomb gives Natalia a strong answer against basic-attack marksmen during assassination or disengage windows."
+    ],
+    "counterTypes": [
+      "pickoff",
+      "anti-basic-attack",
+      "vision-control"
+    ],
+    "proof": [
+      {
+        "id": "natalia-smoke-bomb-vs-moskov-basic-attacks",
+        "category": "skill-interaction",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Moskov is dangerous when protected and free-hitting, while Natalia can approach from unseen angles and use Smoke Bomb to reduce basic-attack retaliation.",
+        "worksBestWhen": [
+          "Natalia tracks Moskov's lane rotation and attacks before teamfight formation.",
+          "Moskov has already used Abyss Walker."
+        ],
+        "failureCases": [
+          "Moskov stays grouped with peel heroes.",
+          "Natalia enters after Moskov has vision and a wall-stun angle prepared."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "moskov",
+    "counterHeroId": "saber",
+    "reasons": [
+      "Saber can punish Moskov's low-durability marksman profile with targeted airborne burst.",
+      "This is strongest after Moskov uses his blink or is separated from peel."
+    ],
+    "counterTypes": [
+      "pickoff",
+      "burst",
+      "cooldown-punish"
+    ],
+    "proof": [
+      {
+        "id": "saber-triple-sweep-vs-moskov-after-blink",
+        "category": "skill-interaction",
+        "priority": "primary",
+        "impact": "medium",
+        "summary": "Moskov wants space to attack repeatedly, while Saber can force a single-target burst check before Moskov can sustain DPS.",
+        "worksBestWhen": [
+          "Saber waits for Moskov's blink to be used.",
+          "Saber has enough burst damage to finish or force Moskov out."
+        ],
+        "failureCases": [
+          "Moskov has Purify, defensive item timing, or strong peel.",
+          "Saber dives into multiple enemies without follow-up."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "moskov",
+    "counterHeroId": "franco",
+    "reasons": [
+      "Franco can punish Moskov if he is locked before he starts free-hitting.",
+      "Suppression is valuable because it prevents Moskov from using his mobility or basic-attack window while controlled."
+    ],
+    "counterTypes": [
+      "pickoff",
+      "suppression",
+      "positioning-requirement"
+    ],
+    "proof": [
+      {
+        "id": "franco-bloody-hunt-vs-moskov-positioning",
+        "category": "crowd-control-counter",
+        "priority": "primary",
+        "impact": "medium",
+        "summary": "Moskov's threat depends on maintaining attack range, while Franco can suppress him and create a pickoff window.",
+        "worksBestWhen": [
+          "Franco hides hook or Flicker-ultimate angles.",
+          "Team follow-up is ready immediately."
+        ],
+        "failureCases": [
+          "Franco misses the engage or catches the wrong target.",
+          "Moskov stays behind tanks and avoids hook angles."
+        ]
+      }
+    ]
+  }
+]

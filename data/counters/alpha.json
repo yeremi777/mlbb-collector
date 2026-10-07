@@ -1,0 +1,152 @@
+[
+  {
+    "targetHeroId": "alpha",
+    "counterHeroId": "baxia",
+    "reasons": [
+      "Baxia directly reduces Alpha's healing value, which is central to Alpha's extended-fight pattern.",
+      "Baxia can contest Alpha without giving easy burst access to the backline."
+    ],
+    "counterTypes": [
+      "anti-sustain",
+      "frontline",
+      "teamfight"
+    ],
+    "proof": [
+      {
+        "id": "baxia-anti-heal-vs-alpha-force-swing-sustain",
+        "category": "sustain-anti-sustain",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Alpha wants to heal during extended fights, while Baxia reduces healing and shield effects to make those fights less favorable.",
+        "worksBestWhen": [
+          "Baxia applies pressure before Alpha's sustain skill connects on multiple targets.",
+          "The team focuses Alpha while his sustain is reduced."
+        ],
+        "failureCases": [
+          "Baxia arrives late after Alpha has already healed.",
+          "Alpha avoids Baxia and dives softer targets."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "alpha",
+    "counterHeroId": "valir",
+    "reasons": [
+      "Valir can keep Alpha away with knockback and slows.",
+      "Alpha is much less threatening when he cannot keep enemies inside his skill range."
+    ],
+    "counterTypes": [
+      "kiting",
+      "disengage",
+      "anti-dive"
+    ],
+    "proof": [
+      {
+        "id": "valir-kiting-vs-alpha-melee-attachment",
+        "category": "kiting",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Alpha wants to stay attached in melee range, while Valir can repeatedly disengage and slow his approach.",
+        "worksBestWhen": [
+          "Valir saves knockback for Alpha's engage.",
+          "Valir plays behind a frontline."
+        ],
+        "failureCases": [
+          "Alpha flanks Valir before Valir can react.",
+          "Valir uses knockback too early."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "alpha",
+    "counterHeroId": "dyrroth",
+    "reasons": [
+      "Dyrroth can pressure Alpha before Alpha's sustain cycle becomes stable.",
+      "Defense reduction and strong early trading can force Alpha into losing short trades."
+    ],
+    "counterTypes": [
+      "burst",
+      "penetration",
+      "cooldown-punish"
+    ],
+    "proof": [
+      {
+        "id": "dyrroth-burst-trade-vs-alpha-sustain-loop",
+        "category": "damage-type-advantage",
+        "priority": "secondary",
+        "impact": "medium",
+        "summary": "Alpha prefers longer fights, while Dyrroth can shorten the trade with defense-reduction burst before Alpha stabilizes.",
+        "worksBestWhen": [
+          "Dyrroth plays aggressively before Alpha gets durability items.",
+          "Dyrroth dodges Alpha's key sustain skill."
+        ],
+        "failureCases": [
+          "Dyrroth extends the fight after missing burst.",
+          "Alpha lands multiple sustain skills in a grouped fight."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "alpha",
+    "counterHeroId": "karrie",
+    "reasons": [
+      "Karrie can punish Alpha's durable frontline pattern with repeated true-damage marks.",
+      "Alpha struggles when he cannot reach or burst Karrie before she stacks damage."
+    ],
+    "counterTypes": [
+      "true-damage",
+      "kiting",
+      "item-power-spike"
+    ],
+    "proof": [
+      {
+        "id": "karrie-true-damage-vs-alpha-durability",
+        "category": "damage-type-advantage",
+        "priority": "secondary",
+        "impact": "medium",
+        "summary": "Alpha wants durability and sustain to carry fights, while Karrie's true damage pressures him through that durability.",
+        "worksBestWhen": [
+          "Karrie has frontline peel.",
+          "Karrie fights after core attack-speed items."
+        ],
+        "failureCases": [
+          "Alpha dives Karrie before she can stack marks.",
+          "Karrie has no protection from flank engage."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "alpha",
+    "counterHeroId": "lunox",
+    "reasons": [
+      "Lunox can threaten durable fighters with penetration and burst timing.",
+      "Alpha is vulnerable if Lunox punishes during his cooldown window instead of letting him sustain."
+    ],
+    "counterTypes": [
+      "burst",
+      "penetration",
+      "cooldown-punish"
+    ],
+    "proof": [
+      {
+        "id": "lunox-penetration-burst-vs-alpha-sustain-window",
+        "category": "damage-type-advantage",
+        "priority": "secondary",
+        "impact": "medium",
+        "summary": "Alpha wants extended healing trades, while Lunox can use penetration and burst timing to punish him before the sustain loop resets.",
+        "worksBestWhen": [
+          "Lunox keeps distance and waits for Alpha's engage skill.",
+          "Lunox has protection from frontline allies."
+        ],
+        "failureCases": [
+          "Alpha catches Lunox without escape.",
+          "Lunox uses burst while Alpha still has full sustain tools and teammates nearby."
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,157 @@
+[
+  {
+    "anchorHeroId": "zhask",
+    "synergyHeroId": "atlas",
+    "reasons": [
+      "Atlas can group enemies into one area, giving Zhask's spawn and enhanced form a stronger zone to punish.",
+      "Zhask benefits when Atlas forces enemies to stay near the spawn's threat area."
+    ],
+    "synergyTypes": [
+      "setup-combo",
+      "teamfight-combo",
+      "aoe-follow-up"
+    ],
+    "proof": [
+      {
+        "id": "atlas-grouping-for-zhask-spawn-zone",
+        "category": "setup-combo",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Atlas groups enemies with Fatal Links, while Zhask punishes the grouped location with spawn pressure.",
+        "worksBestWhen": [
+          "Zhask places or enhances the spawn near Atlas's pull area.",
+          "Atlas catches multiple targets instead of one tank."
+        ],
+        "failureCases": [
+          "Zhask's spawn is placed too far away.",
+          "Atlas is interrupted before completing the pull.",
+          "Enemies kill or avoid the spawn before the combo starts."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "zhask",
+    "synergyHeroId": "tigreal",
+    "reasons": [
+      "Tigreal can push or knock enemies into a predictable area where Zhask's spawn can pressure them.",
+      "Zhask benefits when Tigreal controls enemies near a prepared spawn zone."
+    ],
+    "synergyTypes": [
+      "setup-combo",
+      "cc-chain",
+      "teamfight-combo"
+    ],
+    "proof": [
+      {
+        "id": "tigreal-control-for-zhask-spawn-pressure",
+        "category": "setup-combo",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Tigreal creates the crowd-control area, while Zhask uses spawn damage and zoning to punish enemies stuck there.",
+        "worksBestWhen": [
+          "Tigreal engages near Zhask's prepared spawn zone.",
+          "Zhask avoids placing the spawn too early in a bad position."
+        ],
+        "failureCases": [
+          "Tigreal pushes enemies away from the spawn.",
+          "Zhask's spawn is destroyed before follow-up.",
+          "The enemy disengages after Tigreal's first control layer."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "zhask",
+    "synergyHeroId": "grock",
+    "reasons": [
+      "Grock's wall can restrict escape paths around Zhask's spawn.",
+      "Zhask benefits when Grock forces enemies to move through or remain near the spawn's threat area."
+    ],
+    "synergyTypes": [
+      "setup-combo",
+      "positioning-dependent",
+      "teamfight-combo"
+    ],
+    "proof": [
+      {
+        "id": "grock-wall-for-zhask-spawn-zone",
+        "category": "setup-combo",
+        "priority": "secondary",
+        "impact": "medium",
+        "summary": "Grock limits enemy movement with terrain, while Zhask uses the restricted area for spawn-based pressure.",
+        "worksBestWhen": [
+          "Grock walls enemies toward the spawn instead of away from it.",
+          "Zhask places the spawn where terrain control matters."
+        ],
+        "failureCases": [
+          "Grock's wall blocks Zhask's team follow-up.",
+          "Enemies blink out of the zone.",
+          "Zhask's spawn is placed after enemies already escape."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "zhask",
+    "synergyHeroId": "hylos",
+    "reasons": [
+      "Hylos can slow enemies and create frontline pressure around Zhask's spawn zone.",
+      "Zhask benefits when Hylos holds objective areas where the spawn can keep dealing damage."
+    ],
+    "synergyTypes": [
+      "frontline-enabler",
+      "objective-control",
+      "teamfight-combo"
+    ],
+    "proof": [
+      {
+        "id": "hylos-frontline-for-zhask-objective-zone",
+        "category": "objective-control",
+        "priority": "secondary",
+        "impact": "medium",
+        "summary": "Hylos keeps enemies pressured in the zone, while Zhask adds spawn damage and area denial.",
+        "worksBestWhen": [
+          "Hylos fights near Zhask's spawn zone.",
+          "The team uses the combo around Turtle, Lord, turret, or choke points."
+        ],
+        "failureCases": [
+          "Hylos fights outside Zhask's threat area.",
+          "Zhask's spawn is destroyed before the objective fight.",
+          "Enemies disengage and re-enter after Hylos's path expires."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "zhask",
+    "synergyHeroId": "lolita",
+    "reasons": [
+      "Lolita can help protect Zhask while he sets up and plays around Nightmaric Spawn.",
+      "Zhask benefits from peel and protection because he needs time to control an area with spawn placement."
+    ],
+    "synergyTypes": [
+      "protect",
+      "peel",
+      "backline-protection"
+    ],
+    "proof": [
+      {
+        "id": "lolita-protection-for-zhask-setup",
+        "category": "protection",
+        "priority": "secondary",
+        "impact": "medium",
+        "summary": "Zhask needs time and space to control an area with spawn placement, while Lolita provides peel and protection.",
+        "worksBestWhen": [
+          "Lolita protects Zhask during setup before the fight starts.",
+          "Zhask positions behind the frontline instead of standing recklessly beside the spawn."
+        ],
+        "failureCases": [
+          "Enemies dive from angles Lolita cannot cover.",
+          "Zhask places the spawn too far forward.",
+          "Lolita uses protection before the enemy poke or dive arrives."
+        ]
+      }
+    ]
+  }
+]

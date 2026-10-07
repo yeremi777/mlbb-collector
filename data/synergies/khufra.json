@@ -1,0 +1,152 @@
+[
+  {
+    "anchorHeroId": "khufra",
+    "synergyHeroId": "guinevere",
+    "reasons": [
+      "Khufra's airborne control gives Guinevere a strong setup for her magic burst combo.",
+      "Guinevere benefits when enemies are already controlled and cannot easily dodge her engage."
+    ],
+    "synergyTypes": [
+      "cc-chain",
+      "setup-combo",
+      "burst-follow-up"
+    ],
+    "proof": [
+      {
+        "id": "khufra-guinevere-airborne-burst-chain",
+        "category": "crowd-control-chain",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Khufra starts the control chain, while Guinevere follows with airborne-based burst.",
+        "worksBestWhen": [
+          "Khufra confirms the target before Guinevere commits.",
+          "Guinevere saves her burst for enemies already controlled or displaced."
+        ],
+        "failureCases": [
+          "Guinevere enters before Khufra confirms control.",
+          "Enemy uses immunity or displacement after the first crowd control ends."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "khufra",
+    "synergyHeroId": "pharsa",
+    "reasons": [
+      "Khufra can lock enemies in place long enough for Pharsa to follow with long-range damage.",
+      "Pharsa can punish Khufra's engage without standing inside the frontline."
+    ],
+    "synergyTypes": [
+      "engage-follow-up",
+      "poke-siege",
+      "aoe-follow-up"
+    ],
+    "proof": [
+      {
+        "id": "khufra-pharsa-control-artillery-follow-up",
+        "category": "engage-follow-up",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Khufra creates the crowd-control window, while Pharsa follows from long range with artillery damage.",
+        "worksBestWhen": [
+          "Pharsa is already in range before Khufra engages.",
+          "Khufra catches enemies in a visible and punishable area."
+        ],
+        "failureCases": [
+          "Khufra engages outside Pharsa's follow-up range.",
+          "Enemy spreads or disengages before Pharsa's damage lands."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "khufra",
+    "synergyHeroId": "odette",
+    "reasons": [
+      "Khufra can start an area-control fight that gives Odette a better Swan Song window.",
+      "Odette's AoE damage benefits from enemies being controlled or grouped by Khufra."
+    ],
+    "synergyTypes": [
+      "teamfight-combo",
+      "aoe-follow-up",
+      "cc-chain"
+    ],
+    "proof": [
+      {
+        "id": "khufra-odette-area-control-swan-song",
+        "category": "teamfight-combo",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Khufra creates engage control, while Odette converts that control into sustained AoE teamfight damage.",
+        "worksBestWhen": [
+          "Odette channels after Khufra has already forced enemy movement.",
+          "Khufra keeps threats away from Odette during the channel."
+        ],
+        "failureCases": [
+          "Odette is interrupted by strong crowd control.",
+          "Khufra engages before Odette is ready."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "khufra",
+    "synergyHeroId": "kadita",
+    "reasons": [
+      "Khufra's crowd control helps Kadita land her delayed knock-up and burst.",
+      "Kadita can punish enemies who are already slowed, knocked airborne, or trapped by Khufra's engage."
+    ],
+    "synergyTypes": [
+      "setup-combo",
+      "burst-follow-up",
+      "pickoff-combo"
+    ],
+    "proof": [
+      {
+        "id": "khufra-kadita-control-into-burst",
+        "category": "setup-combo",
+        "priority": "primary",
+        "impact": "medium",
+        "summary": "Khufra starts the catch, while Kadita follows with delayed control and burst damage.",
+        "worksBestWhen": [
+          "Kadita waits for Khufra to confirm the target.",
+          "Khufra chooses targets Kadita can actually reach."
+        ],
+        "failureCases": [
+          "Kadita enters before Khufra's control lands.",
+          "Enemy defensive skills absorb Kadita's burst."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "khufra",
+    "synergyHeroId": "granger",
+    "reasons": [
+      "Khufra's control makes Granger's burst shots easier to land.",
+      "Granger can safely fire from behind Khufra's frontline after Khufra starts the fight."
+    ],
+    "synergyTypes": [
+      "engage-follow-up",
+      "burst-follow-up",
+      "pickoff-combo"
+    ],
+    "proof": [
+      {
+        "id": "khufra-granger-controlled-target-burst",
+        "category": "engage-follow-up",
+        "priority": "primary",
+        "impact": "medium",
+        "summary": "Khufra locks down or disrupts the target, while Granger follows with ranged burst.",
+        "worksBestWhen": [
+          "Granger positions behind Khufra before the engage.",
+          "Khufra catches a target Granger can immediately hit."
+        ],
+        "failureCases": [
+          "Granger is too far away to follow up.",
+          "Enemy frontline blocks Granger's damage angle."
+        ]
+      }
+    ]
+  }
+]

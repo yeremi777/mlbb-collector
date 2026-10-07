@@ -1,0 +1,152 @@
+[
+  {
+    "targetHeroId": "freya",
+    "counterHeroId": "esmeralda",
+    "reasons": [
+      "Esmeralda is strong into shield-heavy melee fights because Freya relies on durability windows to keep attacking.",
+      "Freya loses all-in value when her shield-based survivability becomes something Esmeralda can exploit."
+    ],
+    "counterTypes": [
+      "anti-sustain",
+      "shield-punish",
+      "teamfight"
+    ],
+    "proof": [
+      {
+        "id": "esmeralda-shield-punish-vs-freya-all-in",
+        "category": "skill-interaction",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Freya wants to survive long enough to keep attacking in melee, while Esmeralda can punish shield-based durability and fight back in extended range.",
+        "worksBestWhen": [
+          "Esmeralda enters after Freya commits to the fight.",
+          "Esmeralda has enough durability to stay inside Freya's melee range."
+        ],
+        "failureCases": [
+          "Freya bursts Esmeralda before Esmeralda can cycle skills.",
+          "Freya avoids extended trades and waits for team follow-up."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "freya",
+    "counterHeroId": "valir",
+    "reasons": [
+      "Valir can push Freya away and slow her, reducing her close-range attack uptime.",
+      "Freya becomes much weaker when she cannot stay attached during her power window."
+    ],
+    "counterTypes": [
+      "kiting",
+      "disengage",
+      "anti-dive"
+    ],
+    "proof": [
+      {
+        "id": "valir-disengage-vs-freya-melee-uptime",
+        "category": "kiting",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Freya wants close-range uptime, while Valir can deny the approach with knockback, slow, and self-protection timing.",
+        "worksBestWhen": [
+          "Valir holds knockback for Freya's jump or all-in.",
+          "Valir plays behind frontline protection."
+        ],
+        "failureCases": [
+          "Freya flanks Valir before he can disengage.",
+          "Valir wastes knockback before Freya commits."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "freya",
+    "counterHeroId": "minsitthar",
+    "reasons": [
+      "Minsitthar can create a zone that restricts directional blink skills, making Freya's engage less flexible.",
+      "His field is useful when Freya wants to dive directly into the backline."
+    ],
+    "counterTypes": [
+      "anti-dash",
+      "teamfight",
+      "positioning-requirement"
+    ],
+    "proof": [
+      {
+        "id": "minsitthar-kings-calling-vs-freya-engage",
+        "category": "skill-interaction",
+        "priority": "primary",
+        "impact": "medium",
+        "summary": "Freya wants to commit through movement and melee pressure, while Minsitthar can restrict dash options inside King's Calling.",
+        "worksBestWhen": [
+          "Minsitthar places King's Calling after Freya jumps in.",
+          "The team focuses Freya while she is trapped in the zone."
+        ],
+        "failureCases": [
+          "Freya waits outside the field before committing.",
+          "Minsitthar misses the timing or isolates himself."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "freya",
+    "counterHeroId": "dyrroth",
+    "reasons": [
+      "Dyrroth can pressure Freya before her extended fight becomes valuable.",
+      "His defense reduction and early burst make Freya's lane trades more dangerous."
+    ],
+    "counterTypes": [
+      "burst",
+      "penetration",
+      "cooldown-punish"
+    ],
+    "proof": [
+      {
+        "id": "dyrroth-defense-reduction-vs-freya-sustain-trade",
+        "category": "damage-type-advantage",
+        "priority": "secondary",
+        "impact": "medium",
+        "summary": "Freya wants sustained melee fights, while Dyrroth can reduce durability and force a shorter burst trade before Freya stabilizes.",
+        "worksBestWhen": [
+          "Dyrroth fights early before Freya scales into items.",
+          "Dyrroth has enhanced trading resources ready."
+        ],
+        "failureCases": [
+          "Dyrroth overcommits after Freya's defensive window starts.",
+          "Freya gets support or shield advantage before Dyrroth bursts."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "freya",
+    "counterHeroId": "karrie",
+    "reasons": [
+      "Karrie can punish durable melee fighters with repeated marks and true damage.",
+      "Freya struggles if she cannot reach Karrie before Karrie builds enough attack speed and spacing safety."
+    ],
+    "counterTypes": [
+      "true-damage",
+      "kiting",
+      "item-power-spike"
+    ],
+    "proof": [
+      {
+        "id": "karrie-lightwheel-mark-vs-freya-durability",
+        "category": "damage-type-advantage",
+        "priority": "secondary",
+        "impact": "medium",
+        "summary": "Freya wants to survive through an all-in, while Karrie can cut through durable targets with repeated true-damage marks.",
+        "worksBestWhen": [
+          "Karrie has frontline protection.",
+          "Karrie keeps spacing instead of accepting melee trades."
+        ],
+        "failureCases": [
+          "Freya catches Karrie without peel.",
+          "Karrie is behind item timing and cannot stack damage quickly."
+        ]
+      }
+    ]
+  }
+]

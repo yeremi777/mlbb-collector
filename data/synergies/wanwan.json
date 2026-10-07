@@ -1,0 +1,158 @@
+[
+  {
+    "anchorHeroId": "wanwan",
+    "synergyHeroId": "lolita",
+    "reasons": [
+      "Lolita protects Wanwan from projectile and ranged pressure while Wanwan looks for weakness angles.",
+      "This protection helps Wanwan survive the vulnerable setup phase before Crossbow of Tang is available."
+    ],
+    "synergyTypes": [
+      "backline-protection",
+      "peel",
+      "teamfight-combo"
+    ],
+    "proof": [
+      {
+        "id": "wanwan-lolita-projectile-protection-weakness-setup",
+        "category": "protection",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Wanwan needs time and spacing to hit all weakness points, while Lolita can protect her from ranged pressure during that setup window.",
+        "worksBestWhen": [
+          "Lolita shields toward the enemy marksman, poke mage, or projectile-heavy threat.",
+          "Wanwan stays behind Lolita while preparing weakness hits."
+        ],
+        "failureCases": [
+          "Enemies dive from side angles that bypass Lolita's shield.",
+          "Wanwan overextends before Lolita can protect her.",
+          "The enemy uses non-projectile control to reach Wanwan."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "wanwan",
+    "synergyHeroId": "minotaur",
+    "reasons": [
+      "Minotaur gives Wanwan a frontline, healing, and CC layer so she can move and attack with less disruption.",
+      "His teamfight presence helps Wanwan enter fights after enemies are already controlled."
+    ],
+    "synergyTypes": [
+      "frontline-enabler",
+      "cc-chain",
+      "healing-sustain"
+    ],
+    "proof": [
+      {
+        "id": "wanwan-minotaur-frontline-space-weakness-window",
+        "category": "frontline-enabler",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Minotaur creates space and sustain in front of Wanwan, giving her more time to hit weakness points and scale into the fight.",
+        "worksBestWhen": [
+          "Minotaur protects Wanwan from divers instead of engaging too far away.",
+          "Wanwan uses Minotaur's CC window to reposition and attack safely."
+        ],
+        "failureCases": [
+          "Minotaur engages too deep and leaves Wanwan exposed.",
+          "Wanwan is bursted before she can use the frontline space.",
+          "The enemy forces Wanwan away before she opens enough weaknesses."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "wanwan",
+    "synergyHeroId": "angela",
+    "reasons": [
+      "Angela can attach to Wanwan when Wanwan is being pressured, giving shield, sustain, and movement support.",
+      "This support helps Wanwan survive before her ultimate is unlocked."
+    ],
+    "synergyTypes": [
+      "shielding",
+      "healing-sustain",
+      "mobility-enable"
+    ],
+    "proof": [
+      {
+        "id": "wanwan-angela-pre-ultimate-protection",
+        "category": "protection",
+        "priority": "secondary",
+        "impact": "medium",
+        "summary": "Wanwan needs enough time to hit weakness points, and Angela can protect her during the vulnerable pre-ultimate window.",
+        "worksBestWhen": [
+          "Angela attaches when Wanwan is being dived or focused.",
+          "Wanwan still has room to kite after Angela attaches."
+        ],
+        "failureCases": [
+          "Wanwan is chain-controlled before Angela can support her.",
+          "Angela attaches after Wanwan has already lost her safe position.",
+          "The enemy saves burst until Angela's protection ends."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "wanwan",
+    "synergyHeroId": "floryn",
+    "reasons": [
+      "Floryn can globally heal Wanwan while Wanwan kites, repositions, or fights away from the support.",
+      "This sustain helps Wanwan survive the time needed to unlock Crossbow of Tang."
+    ],
+    "synergyTypes": [
+      "healing-sustain",
+      "backline-protection",
+      "positioning-dependent"
+    ],
+    "proof": [
+      {
+        "id": "wanwan-floryn-global-heal-weakness-setup",
+        "category": "healing-sustain",
+        "priority": "primary",
+        "impact": "medium",
+        "summary": "Wanwan needs time to hit all weaknesses before using Crossbow of Tang, and Floryn can support that window with global healing.",
+        "worksBestWhen": [
+          "Floryn saves Bloom for the moment Wanwan is being focused.",
+          "Wanwan still has enough space to kite after receiving the heal."
+        ],
+        "failureCases": [
+          "Wanwan is bursted before the heal changes the fight.",
+          "Wanwan is suppressed or chain-controlled after her escape skill is unavailable.",
+          "Floryn heals too early before Wanwan is actually pressured."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "wanwan",
+    "synergyHeroId": "kaja",
+    "reasons": [
+      "Kaja can suppress and drag one target, giving Wanwan a more stable target to open weakness points.",
+      "Wanwan can use the target-lock window to attack safely and prepare Crossbow of Tang."
+    ],
+    "synergyTypes": [
+      "pickoff-combo",
+      "setup-combo",
+      "cc-chain"
+    ],
+    "proof": [
+      {
+        "id": "wanwan-kaja-suppression-weakness-opening",
+        "category": "setup-combo",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Kaja locks one enemy with suppression, while Wanwan uses the control window to safely attack and open weakness points.",
+        "worksBestWhen": [
+          "Kaja suppresses a target that Wanwan can immediately reach.",
+          "Wanwan is already positioned to hit multiple weakness angles.",
+          "Kaja drags the target toward Wanwan's attack path."
+        ],
+        "failureCases": [
+          "The suppression window ends before Wanwan opens enough weaknesses.",
+          "Kaja catches a tank or low-value target.",
+          "Kaja drags the target into an angle that makes Wanwan's weakness hits harder."
+        ]
+      }
+    ]
+  }
+]

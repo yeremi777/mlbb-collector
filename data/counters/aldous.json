@@ -1,0 +1,157 @@
+[
+  {
+    "targetHeroId": "aldous",
+    "counterHeroId": "kaja",
+    "reasons": [
+      "Kaja can suppress Aldous after Aldous commits into the backline.",
+      "Suppression prevents Aldous from freely continuing basic attacks or escaping after a dive."
+    ],
+    "counterTypes": [
+      "crowd-control-counter",
+      "pickoff",
+      "anti-dive"
+    ],
+    "proof": [
+      {
+        "id": "kaja-divine-judgment-vs-aldous-chase-fate-landing",
+        "category": "crowd-control-counter",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Aldous wants to dive one target and continue pressure after landing, while Kaja can suppress and drag him into the team's follow-up.",
+        "worksBestWhen": [
+          "Kaja saves Divine Judgment for Aldous's landing.",
+          "The protected carry stays close enough for Kaja to counter-engage."
+        ],
+        "failureCases": [
+          "Aldous targets someone outside Kaja's range.",
+          "Kaja uses suppression before Aldous commits.",
+          "Aldous has enough backup to punish Kaja's counter-engage."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "aldous",
+    "counterHeroId": "franco",
+    "reasons": [
+      "Franco can suppress Aldous after Aldous dives, buying time for the team to kill or disengage.",
+      "Hook can punish Aldous when he farms or rotates predictably."
+    ],
+    "counterTypes": [
+      "crowd-control-counter",
+      "pickoff",
+      "protect"
+    ],
+    "proof": [
+      {
+        "id": "franco-bloody-hunt-vs-aldous-backline-dive",
+        "category": "crowd-control-counter",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Aldous wants a clean single-target dive, while Franco can interrupt his follow-up with suppression and isolate him from the target.",
+        "worksBestWhen": [
+          "Franco stays near the likely Aldous target.",
+          "Franco saves Bloody Hunt until Aldous commits."
+        ],
+        "failureCases": [
+          "Franco is not near the target Aldous chooses.",
+          "Aldous baits Franco ultimate with another frontline engage.",
+          "Franco suppresses without allied damage nearby."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "aldous",
+    "counterHeroId": "chou",
+    "reasons": [
+      "Chou can kick Aldous away from the target after Aldous lands.",
+      "Chou's control immunity helps him survive or reposition around Aldous's engage timing."
+    ],
+    "counterTypes": [
+      "disengage",
+      "pickoff",
+      "anti-dive"
+    ],
+    "proof": [
+      {
+        "id": "chou-way-of-dragon-vs-aldous-dive-follow-up",
+        "category": "skill-interaction",
+        "priority": "primary",
+        "impact": "medium",
+        "summary": "Aldous wants to stick to one target after impact, while Chou can displace him and break the dive follow-up.",
+        "worksBestWhen": [
+          "Chou waits for Aldous to land before using The Way of Dragon.",
+          "Chou kicks Aldous toward allied damage or away from the carry."
+        ],
+        "failureCases": [
+          "Chou mistimes control immunity.",
+          "Aldous targets another teammate.",
+          "Chou's team cannot punish Aldous after displacement."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "aldous",
+    "counterHeroId": "khufra",
+    "reasons": [
+      "Khufra can protect the backline with body positioning and follow-up control.",
+      "Bouncing Ball and Tyrant control make it harder for Aldous to freely continue after landing."
+    ],
+    "counterTypes": [
+      "anti-dive",
+      "frontline",
+      "crowd-control-counter"
+    ],
+    "proof": [
+      {
+        "id": "khufra-backline-peel-vs-aldous-single-target-dive",
+        "category": "positioning-requirement",
+        "priority": "primary",
+        "impact": "medium",
+        "summary": "Aldous wants to isolate a squishy target, while Khufra can stand near that target and punish Aldous's dive path with tank control.",
+        "worksBestWhen": [
+          "Khufra stays close to the Aldous target instead of chasing elsewhere.",
+          "Khufra uses crowd control after Aldous commits."
+        ],
+        "failureCases": [
+          "Aldous targets a split-pushing ally far from Khufra.",
+          "Khufra wastes control before Aldous ult.",
+          "Aldous has enough damage to kill before Khufra reacts."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "aldous",
+    "counterHeroId": "belerick",
+    "reasons": [
+      "Belerick can stand as a durable peel target and taunt Aldous after he dives.",
+      "Belerick punishes Aldous better when Aldous is forced to fight a tank instead of a fragile backliner."
+    ],
+    "counterTypes": [
+      "frontline",
+      "protect",
+      "anti-burst"
+    ],
+    "proof": [
+      {
+        "id": "belerick-taunt-peel-vs-aldous-target-dive",
+        "category": "teamfight-role-counter",
+        "priority": "primary",
+        "impact": "medium",
+        "summary": "Aldous wants to burst a fragile hero, while Belerick can peel with taunt and force Aldous to fight into a tank instead of a carry.",
+        "worksBestWhen": [
+          "Belerick positions near the hero Aldous wants.",
+          "Belerick saves taunt until Aldous lands."
+        ],
+        "failureCases": [
+          "Aldous ignores Belerick and targets a separated carry.",
+          "Belerick cannot reach Aldous after the landing.",
+          "Aldous has enough stacks to burst before peel arrives."
+        ]
+      }
+    ]
+  }
+]

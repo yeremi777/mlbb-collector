@@ -1,0 +1,157 @@
+[
+  {
+    "targetHeroId": "khaleed",
+    "counterHeroId": "baxia",
+    "reasons": [
+      "Baxia directly reduces the healing value that helps Khaleed survive trades.",
+      "He can contest Khaleed's short-range brawling without being easily forced out."
+    ],
+    "counterTypes": [
+      "anti-sustain",
+      "frontline",
+      "lane-pressure"
+    ],
+    "proof": [
+      {
+        "id": "baxia-anti-regen-vs-khaleed-quicksand-guard",
+        "category": "sustain-anti-sustain",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Khaleed wants to heal and reset through Quicksand Guard, while Baxia reduces HP regeneration effects when applying Baxia Mark through skills.",
+        "worksBestWhen": [
+          "Baxia keeps anti-regen uptime during Khaleed's healing window.",
+          "The team punishes Khaleed while Quicksand Guard is interrupted or reduced."
+        ],
+        "failureCases": [
+          "Khaleed disengages before the anti-regen matters.",
+          "Baxia cannot match Khaleed's rotation timing.",
+          "Khaleed wins through early burst before Baxia stabilizes."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "khaleed",
+    "counterHeroId": "valir",
+    "reasons": [
+      "Valir can push Khaleed away during Desert Tornado or before Khaleed reaches the backline.",
+      "Valir's cleanse and movement window helps him survive Khaleed's engage attempt."
+    ],
+    "counterTypes": [
+      "disengage",
+      "kiting",
+      "anti-engage"
+    ],
+    "proof": [
+      {
+        "id": "valir-searing-torrent-vs-khaleed-entry",
+        "category": "skill-interaction",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Khaleed wants to close distance and force short-range trades, while Valir can knock him back, slow him, and kite the engage.",
+        "worksBestWhen": [
+          "Valir saves Searing Torrent for Khaleed's entry.",
+          "Teammates kite backward instead of fighting inside Khaleed's range."
+        ],
+        "failureCases": [
+          "Khaleed flanks Valir from fog.",
+          "Valir wastes knockback before Khaleed commits.",
+          "Khaleed's team layers additional engage."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "khaleed",
+    "counterHeroId": "dyrroth",
+    "reasons": [
+      "Dyrroth can challenge Khaleed's lane dominance with defense reduction and burst.",
+      "Khaleed prefers sustained trades, while Dyrroth can make short trades dangerous."
+    ],
+    "counterTypes": [
+      "lane-pressure",
+      "penetration",
+      "burst"
+    ],
+    "proof": [
+      {
+        "id": "dyrroth-defense-reduction-vs-khaleed-sustain-trades",
+        "category": "damage-type-advantage",
+        "priority": "secondary",
+        "impact": "medium",
+        "summary": "Khaleed wants to brawl and heal through lane trades, while Dyrroth can reduce physical defense and burst him before he resets.",
+        "worksBestWhen": [
+          "Dyrroth trades around enhanced skill timing.",
+          "Khaleed's Quicksand Guard is unavailable or interrupted."
+        ],
+        "failureCases": [
+          "Khaleed kites out and heals before Dyrroth finishes.",
+          "Dyrroth misses key defense-reduction timing.",
+          "Khaleed wins early tempo and denies Dyrroth farm."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "khaleed",
+    "counterHeroId": "karrie",
+    "reasons": [
+      "Karrie can punish Khaleed if he builds durable and tries to stay in extended fights.",
+      "Her value increases when teammates keep Khaleed away from direct access."
+    ],
+    "counterTypes": [
+      "true-damage",
+      "tank-shred",
+      "kiting"
+    ],
+    "proof": [
+      {
+        "id": "karrie-lightwheel-mark-vs-khaleed-bruiser",
+        "category": "damage-type-advantage",
+        "priority": "secondary",
+        "impact": "medium",
+        "summary": "Khaleed wants to survive as a bruiser, while Karrie converts repeated hits into max-HP true damage.",
+        "worksBestWhen": [
+          "Karrie has frontline peel.",
+          "Khaleed is forced to chase through open space."
+        ],
+        "failureCases": [
+          "Khaleed reaches Karrie first with Raging Sandstorm.",
+          "Karrie is under-farmed.",
+          "Khaleed's team controls Karrie before she stacks marks."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "khaleed",
+    "counterHeroId": "lunox",
+    "reasons": [
+      "Lunox can pressure Khaleed through magic penetration and burst windows.",
+      "Khaleed is vulnerable if he cannot safely channel sustain or close distance."
+    ],
+    "counterTypes": [
+      "penetration",
+      "burst",
+      "anti-frontline"
+    ],
+    "proof": [
+      {
+        "id": "lunox-penetration-vs-khaleed-bruiser-sustain",
+        "category": "damage-type-advantage",
+        "priority": "secondary",
+        "impact": "medium",
+        "summary": "Khaleed wants to sustain through damage, while Lunox can threaten him with penetration-based magic burst from safer spacing.",
+        "worksBestWhen": [
+          "Lunox keeps distance and avoids Khaleed's ultimate path.",
+          "Khaleed's engage is already used."
+        ],
+        "failureCases": [
+          "Khaleed reaches Lunox before she cycles skills.",
+          "Lunox is forced defensive too early.",
+          "Khaleed's team follows up on the engage."
+        ]
+      }
+    ]
+  }
+]

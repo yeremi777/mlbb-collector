@@ -1,0 +1,152 @@
+[
+  {
+    "anchorHeroId": "sun",
+    "synergyHeroId": "angela",
+    "reasons": [
+      "Angela helps Sun survive during extended fights where his clones and basic attacks need time to create value.",
+      "Shielding support makes Sun harder to burst before his sustained pressure matters."
+    ],
+    "synergyTypes": [
+      "shielding",
+      "healing-sustain",
+      "protect"
+    ],
+    "proof": [
+      {
+        "id": "angela-protects-sun-clone-pressure",
+        "category": "shielding",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Sun provides sustained clone pressure, while Angela helps keep him alive during the fight.",
+        "worksBestWhen": [
+          "Angela attaches after Sun commits to a real fight, not only a clone bait.",
+          "Sun keeps attacking during Angela's protection window."
+        ],
+        "failureCases": [
+          "The enemy disengages and waits out Angela's protection.",
+          "Sun is controlled before he can use his sustained damage."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "sun",
+    "synergyHeroId": "floryn",
+    "reasons": [
+      "Floryn can support Sun even when he pressures a side lane or objective away from the main group.",
+      "Sun benefits from global sustain because his value often comes from extended pressure rather than instant burst."
+    ],
+    "synergyTypes": [
+      "healing-sustain",
+      "protect",
+      "objective-control"
+    ],
+    "proof": [
+      {
+        "id": "floryn-global-heal-supports-sun-split-pressure",
+        "category": "healing-sustain",
+        "priority": "secondary",
+        "impact": "high",
+        "summary": "Sun applies split-pressure and extended-fight pressure, while Floryn's global healing helps him stay active even when separated from the team.",
+        "worksBestWhen": [
+          "Floryn saves Bloom for Sun's committed side-lane fight or objective contest.",
+          "Sun uses the healing window to continue pressure or safely disengage."
+        ],
+        "failureCases": [
+          "Sun is collapsed on by multiple enemies with hard crowd control.",
+          "Floryn uses global healing before Sun fully commits."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "sun",
+    "synergyHeroId": "tigreal",
+    "reasons": [
+      "Tigreal can hold enemies in place while Sun and his Doppelgangers attack.",
+      "This improves Sun's ability to keep hitting instead of being kited."
+    ],
+    "synergyTypes": [
+      "engage-follow-up",
+      "cc-chain",
+      "teamfight-combo"
+    ],
+    "proof": [
+      {
+        "id": "tigreal-control-keeps-targets-in-sun-range",
+        "category": "engage-follow-up",
+        "priority": "primary",
+        "impact": "medium",
+        "summary": "Tigreal controls enemies, giving Sun time to stack pressure with clones.",
+        "worksBestWhen": [
+          "Sun enters after Tigreal confirms the crowd-control window.",
+          "Tigreal controls targets close enough for Sun's clones to attack."
+        ],
+        "failureCases": [
+          "Enemies disengage before Sun reaches them.",
+          "Sun enters before the control window is available."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "sun",
+    "synergyHeroId": "kaja",
+    "reasons": [
+      "Kaja can drag a target into Sun's attack range.",
+      "Sun's clones help punish the isolated target during and after the suppression window."
+    ],
+    "synergyTypes": [
+      "pickoff-combo",
+      "setup-combo",
+      "burst-follow-up"
+    ],
+    "proof": [
+      {
+        "id": "kaja-drag-brings-target-to-sun-clones",
+        "category": "setup-combo",
+        "priority": "primary",
+        "impact": "medium",
+        "summary": "Kaja isolates one enemy, and Sun uses clones and basic attacks to finish the target.",
+        "worksBestWhen": [
+          "Kaja pulls the target into Sun's active Doppelganger zone.",
+          "Sun is close enough to follow the suppression immediately."
+        ],
+        "failureCases": [
+          "The target escapes after suppression.",
+          "Sun is too far away to follow."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "sun",
+    "synergyHeroId": "minotaur",
+    "reasons": [
+      "Minotaur gives Sun a stronger frontline and sustain layer in grouped fights.",
+      "His knock-up pressure can keep enemies in Sun's melee range."
+    ],
+    "synergyTypes": [
+      "frontline-enabler",
+      "healing-sustain",
+      "cc-chain"
+    ],
+    "proof": [
+      {
+        "id": "minotaur-frontline-stabilizes-sun-fight",
+        "category": "frontline-enabler",
+        "priority": "secondary",
+        "impact": "medium",
+        "summary": "Minotaur keeps the fight stable while Sun applies clone-based sustained damage.",
+        "worksBestWhen": [
+          "Minotaur starts or stabilizes the fight before Sun fully commits.",
+          "Sun fights inside Minotaur's healing and control area."
+        ],
+        "failureCases": [
+          "Sun is forced to chase alone outside Minotaur's control zone.",
+          "Minotaur's crowd control is unavailable during Sun's commit."
+        ]
+      }
+    ]
+  }
+]

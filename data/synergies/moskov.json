@@ -1,0 +1,157 @@
+[
+  {
+    "anchorHeroId": "moskov",
+    "synergyHeroId": "tigreal",
+    "reasons": [
+      "Tigreal can group or displace enemies, giving Moskov better angles for piercing basic attacks and Spear of Misery follow-up.",
+      "Moskov can stay behind the engage and convert Tigreal's crowd-control window into repeated basic-attack pressure."
+    ],
+    "synergyTypes": [
+      "engage-follow-up",
+      "cc-chain",
+      "teamfight-combo"
+    ],
+    "proof": [
+      {
+        "id": "moskov-follow-up-on-tigreal-engage",
+        "category": "engage-follow-up",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Tigreal creates the crowd-control opening, while Moskov converts the setup into repeated basic attacks and possible wall-stun pressure.",
+        "worksBestWhen": [
+          "Tigreal engages near walls or narrow jungle paths.",
+          "Moskov is already close enough to follow safely."
+        ],
+        "failureCases": [
+          "Tigreal engages too far from Moskov.",
+          "Moskov dashes forward before the enemy is controlled.",
+          "The enemy spreads out and denies Moskov's piercing attack value."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "moskov",
+    "synergyHeroId": "atlas",
+    "reasons": [
+      "Atlas can pull enemies into a compact area, giving Moskov a clearer front-to-back attack line.",
+      "Moskov can punish the grouped formation with sustained basic attacks after Atlas starts the teamfight."
+    ],
+    "synergyTypes": [
+      "setup-combo",
+      "teamfight-combo",
+      "aoe-follow-up"
+    ],
+    "proof": [
+      {
+        "id": "moskov-piercing-attacks-after-atlas-pull",
+        "category": "setup-combo",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Atlas creates a grouped target area, while Moskov punishes the formation with sustained marksman damage.",
+        "worksBestWhen": [
+          "Atlas catches multiple enemies.",
+          "Moskov attacks from behind the frontline."
+        ],
+        "failureCases": [
+          "Atlas catches only a tank.",
+          "Moskov is zoned before he can hit.",
+          "Enemies dash or cleanse after the pull."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "moskov",
+    "synergyHeroId": "lolita",
+    "reasons": [
+      "Lolita protects Moskov from ranged pressure, helping him keep basic-attack uptime in front-to-back fights.",
+      "Moskov can use Lolita's frontline spacing to attack safely while preserving his dash for repositioning."
+    ],
+    "synergyTypes": [
+      "protect",
+      "backline-protection",
+      "shielding"
+    ],
+    "proof": [
+      {
+        "id": "lolita-protects-moskov-attack-uptime",
+        "category": "protection",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Moskov needs time to attack repeatedly, while Lolita creates a safer damage pocket against ranged poke and projectile pressure.",
+        "worksBestWhen": [
+          "Lolita positions between Moskov and enemy poke.",
+          "Moskov stays behind the frontline."
+        ],
+        "failureCases": [
+          "Enemy assassins flank around Lolita.",
+          "Lolita's shield is baited before the real fight.",
+          "Moskov separates from Lolita's protection range."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "moskov",
+    "synergyHeroId": "angela",
+    "reasons": [
+      "Angela can protect Moskov when he commits with dash timing or gets targeted by dive pressure.",
+      "Moskov can keep attacking longer when Angela adds shielding and healing during his danger window."
+    ],
+    "synergyTypes": [
+      "shielding",
+      "protect",
+      "mobility-enable"
+    ],
+    "proof": [
+      {
+        "id": "angela-supports-moskov-reposition-window",
+        "category": "shielding",
+        "priority": "secondary",
+        "impact": "medium",
+        "summary": "Angela extends Moskov's survival window during risky repositioning, helping him keep attacking after committing.",
+        "worksBestWhen": [
+          "Angela saves Heartguard for Moskov's real danger window.",
+          "Moskov already has enough damage to convert the protection."
+        ],
+        "failureCases": [
+          "Moskov is burst before Angela can attach.",
+          "Moskov dashes into layered hard crowd control.",
+          "Angela attaches after Moskov has already lost position."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "moskov",
+    "synergyHeroId": "estes",
+    "reasons": [
+      "Estes keeps Moskov healthy during extended grouped fights, giving Moskov more time to maintain basic-attack pressure.",
+      "Moskov benefits from nearby healing and frontline cover because his damage pattern depends on staying alive long enough to keep attacking."
+    ],
+    "synergyTypes": [
+      "healing-sustain",
+      "protect",
+      "teamfight-combo"
+    ],
+    "proof": [
+      {
+        "id": "estes-sustains-moskov-front-to-back-fight",
+        "category": "healing-sustain",
+        "priority": "secondary",
+        "impact": "medium",
+        "summary": "Estes sustains Moskov during grouped fights, giving Moskov more time to build pressure through repeated attacks.",
+        "worksBestWhen": [
+          "Moskov stays within Estes' healing range.",
+          "The team plays around a grouped frontline."
+        ],
+        "failureCases": [
+          "Moskov is isolated from Estes.",
+          "Enemy burst kills Moskov before healing matters.",
+          "Anti-heal reduces Estes' sustain value."
+        ]
+      }
+    ]
+  }
+]

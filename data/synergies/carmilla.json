@@ -1,0 +1,157 @@
+[
+  {
+    "anchorHeroId": "carmilla",
+    "synergyHeroId": "cecilion",
+    "reasons": [
+      "Cecilion and Carmilla have a direct Moonlit Waltz interaction that gives Carmilla an entry path from Cecilion's position.",
+      "Cecilion can punish enemies affected by Carmilla's linked teamfight setup from safe range."
+    ],
+    "synergyTypes": [
+      "setup-combo",
+      "shielding",
+      "teamfight-combo"
+    ],
+    "proof": [
+      {
+        "id": "carmilla-entry-through-cecilion-moonlit-waltz",
+        "category": "skill-interaction",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Carmilla can enter through Cecilion's special interaction, then create a linked control window that Cecilion can punish from range.",
+        "worksBestWhen": [
+          "Cecilion is positioned safely before Carmilla commits.",
+          "Carmilla links enemies while Cecilion still has damage skills available."
+        ],
+        "failureCases": [
+          "Cecilion is too far to contribute after Carmilla enters.",
+          "Carmilla uses her engage before Cecilion is ready.",
+          "The enemy spreads out before Curse of Blood connects."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "carmilla",
+    "synergyHeroId": "luo-yi",
+    "reasons": [
+      "Carmilla's linked teamfight setup helps keep enemies close enough for Luo Yi's Yin-Yang Reaction value.",
+      "Luo Yi can punish clustered enemies with repeated mark reactions after Carmilla starts the fight."
+    ],
+    "synergyTypes": [
+      "cc-chain",
+      "aoe-follow-up",
+      "teamfight-combo"
+    ],
+    "proof": [
+      {
+        "id": "carmilla-link-for-luo-yi-reaction",
+        "category": "teamfight-combo",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Carmilla creates the close-range teamfight link, while Luo Yi adds AoE magic punishment and displacement pressure through Yin-Yang Reaction.",
+        "worksBestWhen": [
+          "Carmilla starts the fight after Luo Yi is already in casting range.",
+          "Luo Yi saves charges for the linked enemy group."
+        ],
+        "failureCases": [
+          "Luo Yi has no skill charges when Carmilla engages.",
+          "Carmilla links only one target.",
+          "The enemy disengages before Luo Yi can apply opposite marks."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "carmilla",
+    "synergyHeroId": "odette",
+    "reasons": [
+      "Carmilla's control and link setup can hold enemies in the area where Odette wants to channel damage.",
+      "Odette gives Carmilla's engage a high-value AoE follow-up during the same teamfight window."
+    ],
+    "synergyTypes": [
+      "setup-combo",
+      "aoe-follow-up",
+      "teamfight-combo"
+    ],
+    "proof": [
+      {
+        "id": "carmilla-setup-for-odette-channel",
+        "category": "setup-combo",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Carmilla starts the grouped-control window, then Odette follows with AoE channel damage while enemies are linked or controlled.",
+        "worksBestWhen": [
+          "Carmilla engages before Odette commits to the channel.",
+          "Odette casts from a position that cannot be instantly interrupted."
+        ],
+        "failureCases": [
+          "Odette is interrupted before damage ramps up.",
+          "Carmilla engages too far away from Odette.",
+          "The enemy saves hard CC for Odette's channel."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "carmilla",
+    "synergyHeroId": "pharsa",
+    "reasons": [
+      "Carmilla can start fights from the frontline while Pharsa follows from safer range.",
+      "Pharsa's long-range burst can punish enemies affected by Carmilla's link and control window."
+    ],
+    "synergyTypes": [
+      "engage-follow-up",
+      "burst-follow-up",
+      "aoe-follow-up"
+    ],
+    "proof": [
+      {
+        "id": "carmilla-engage-for-pharsa-range",
+        "category": "engage-follow-up",
+        "priority": "secondary",
+        "impact": "high",
+        "summary": "Carmilla creates the close-range setup, while Pharsa follows from distance with long-range magic damage.",
+        "worksBestWhen": [
+          "Carmilla engages inside Pharsa's ultimate range.",
+          "Pharsa waits for Carmilla's real commitment before using her burst window."
+        ],
+        "failureCases": [
+          "Pharsa is forced to reposition before follow-up.",
+          "Carmilla engages outside Pharsa's range.",
+          "The enemy dives Pharsa while Carmilla is already committed."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "carmilla",
+    "synergyHeroId": "vexana",
+    "reasons": [
+      "Carmilla's linked enemy group gives Vexana a clearer window to land AoE control and summon pressure.",
+      "Vexana can extend the fight after Carmilla enters by adding zone control around linked targets."
+    ],
+    "synergyTypes": [
+      "cc-chain",
+      "aoe-follow-up",
+      "teamfight-combo"
+    ],
+    "proof": [
+      {
+        "id": "carmilla-link-for-vexana-control",
+        "category": "crowd-control-chain",
+        "priority": "secondary",
+        "impact": "medium",
+        "summary": "Carmilla starts the teamfight with link and control, then Vexana adds follow-up CC and zone pressure to keep enemies inside the fight.",
+        "worksBestWhen": [
+          "Carmilla links multiple enemies.",
+          "Vexana saves her control skill for Carmilla's engage."
+        ],
+        "failureCases": [
+          "Vexana misses the follow-up.",
+          "Carmilla enters without nearby damage support.",
+          "The enemy disengages before Vexana's pressure becomes meaningful."
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,152 @@
+[
+  {
+    "targetHeroId": "fredrinn",
+    "counterHeroId": "karrie",
+    "reasons": [
+      "Karrie directly punishes Fredrinn's high-HP frontline identity.",
+      "Max-HP true damage reduces the value of Fredrinn's durability in extended fights."
+    ],
+    "counterTypes": [
+      "tank-shred",
+      "true-damage",
+      "kiting"
+    ],
+    "proof": [
+      {
+        "id": "karrie-lightwheel-mark-vs-fredrinn-frontline",
+        "category": "damage-type-advantage",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Fredrinn wants to survive and convert damage into value, while Karrie stacks Lightwheel Marks to deal max-HP true damage through his tankiness.",
+        "worksBestWhen": [
+          "Karrie has peel and keeps distance from Fredrinn's taunt range.",
+          "Karrie attacks Fredrinn before he reaches the backline."
+        ],
+        "failureCases": [
+          "Fredrinn catches Karrie with his engage and taunt sequence.",
+          "Karrie is forced to fight without frontline protection."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "fredrinn",
+    "counterHeroId": "baxia",
+    "reasons": [
+      "Baxia weakens Fredrinn's sustain-based fight pattern.",
+      "Fredrinn becomes less threatening when his HP recovery is reduced during extended combat."
+    ],
+    "counterTypes": [
+      "anti-sustain",
+      "anti-heal",
+      "frontline"
+    ],
+    "proof": [
+      {
+        "id": "baxia-anti-heal-vs-fredrinn-crystal-energy",
+        "category": "sustain-anti-sustain",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Fredrinn converts stored damage into HP through damage dealt, while Baxia reduces healing and shield effects to make Fredrinn's sustain less reliable.",
+        "worksBestWhen": [
+          "Baxia stays close enough to apply anti-sustain during the fight.",
+          "The team follows with burst or sustained DPS."
+        ],
+        "failureCases": [
+          "Baxia cannot keep contact with Fredrinn.",
+          "Fredrinn waits out Baxia pressure before committing."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "fredrinn",
+    "counterHeroId": "dyrroth",
+    "reasons": [
+      "Dyrroth can reduce Fredrinn's physical defense and punish him before he stabilizes.",
+      "This is especially useful in lane skirmishes where Fredrinn has fewer teammates to cover him."
+    ],
+    "counterTypes": [
+      "penetration",
+      "burst",
+      "cooldown-punish"
+    ],
+    "proof": [
+      {
+        "id": "dyrroth-defense-reduction-vs-fredrinn-frontline",
+        "category": "damage-type-advantage",
+        "priority": "primary",
+        "impact": "medium",
+        "summary": "Fredrinn relies on durability to extend fights, while Dyrroth's defense reduction makes him easier to burst during short trades.",
+        "worksBestWhen": [
+          "Dyrroth pressures Fredrinn early.",
+          "Dyrroth engages after Fredrinn spends his engage or taunt tools."
+        ],
+        "failureCases": [
+          "Dyrroth fights into full Fredrinn combo points.",
+          "Fredrinn survives the burst and turns with Appraiser's Wrath."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "fredrinn",
+    "counterHeroId": "x.borg",
+    "reasons": [
+      "X.Borg can pressure Fredrinn without needing to fully commit into his taunt range.",
+      "Last Insanity provides true-damage threat against durable targets."
+    ],
+    "counterTypes": [
+      "true-damage",
+      "poke",
+      "anti-sustain"
+    ],
+    "proof": [
+      {
+        "id": "x.borg-last-insanity-vs-fredrinn-frontline",
+        "category": "damage-type-advantage",
+        "priority": "secondary",
+        "impact": "medium",
+        "summary": "Fredrinn wants enemies to stay in close-range control, while X.Borg can poke, zone, and threaten true damage through Last Insanity.",
+        "worksBestWhen": [
+          "X.Borg keeps distance and uses armor state safely.",
+          "X.Borg waits for Fredrinn to spend crowd control before committing ultimate."
+        ],
+        "failureCases": [
+          "Fredrinn catches X.Borg after armor is broken.",
+          "X.Borg dives too deep and gets taunted before detonation."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "fredrinn",
+    "counterHeroId": "valir",
+    "reasons": [
+      "Valir can keep Fredrinn away from the backline and make it harder for him to start taunt combos.",
+      "Knockback and slows reduce Fredrinn's ability to force extended melee fights."
+    ],
+    "counterTypes": [
+      "kiting",
+      "disengage",
+      "anti-engage"
+    ],
+    "proof": [
+      {
+        "id": "valir-searing-torrent-vs-fredrinn-engage",
+        "category": "kiting",
+        "priority": "condition",
+        "impact": "medium",
+        "summary": "Fredrinn wants to enter and hold enemies in close range, while Valir can push him away and slow his approach.",
+        "worksBestWhen": [
+          "Valir holds knockback for Fredrinn's engage.",
+          "The team retreats when Valir creates space."
+        ],
+        "failureCases": [
+          "Fredrinn flanks or catches Valir first.",
+          "Valir's disengage is unavailable during the main engage."
+        ]
+      }
+    ]
+  }
+]

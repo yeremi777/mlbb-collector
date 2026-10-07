@@ -1,0 +1,152 @@
+[
+  {
+    "targetHeroId": "lesley",
+    "counterHeroId": "natalia",
+    "reasons": [
+      "Natalia can threaten Lesley before Lesley reaches late-game poke comfort.",
+      "Lesley has limited self-peel if caught after Tactical Grenade or camouflage timing is forced."
+    ],
+    "counterTypes": [
+      "pickoff",
+      "burst",
+      "vision-control"
+    ],
+    "proof": [
+      {
+        "id": "natalia-flank-vs-lesley-safe-poke",
+        "category": "positioning-requirement",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Lesley wants distance and safe poke windows; Natalia can attack from unexpected angles and punish isolated positioning.",
+        "worksBestWhen": [
+          "Natalia tracks Lesley's escape skill before committing.",
+          "Natalia attacks when Lesley is away from tank or support."
+        ],
+        "failureCases": [
+          "Lesley groups tightly and uses frontline bodyguards.",
+          "Natalia engages after Lesley has already retreated behind turret or peel."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "lesley",
+    "counterHeroId": "saber",
+    "reasons": [
+      "Saber can force a decisive all-in before Lesley's poke becomes overwhelming.",
+      "Lesley is vulnerable if she has already used Tactical Grenade or lacks nearby blockers."
+    ],
+    "counterTypes": [
+      "burst",
+      "pickoff",
+      "cooldown-punish"
+    ],
+    "proof": [
+      {
+        "id": "saber-burst-vs-lesley-defensive-cooldowns",
+        "category": "cooldown-window",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Lesley survives through range, camouflage, and knockback; Saber can punish when those defensive tools are down or when she is isolated.",
+        "worksBestWhen": [
+          "Saber waits for Tactical Grenade or camouflage to be unavailable.",
+          "Saber has enough burst to finish before Lesley can reposition."
+        ],
+        "failureCases": [
+          "Lesley keeps tank bodyguards close.",
+          "Saber dives into defensive support without enough follow-up."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "lesley",
+    "counterHeroId": "lolita",
+    "reasons": [
+      "Lolita can protect allies from Lesley's poke pattern and reduce the value of long-range harassment.",
+      "A strong frontline also helps body-block Lesley's Ultimate Snipe bullets."
+    ],
+    "counterTypes": [
+      "protect",
+      "frontline",
+      "anti-poke"
+    ],
+    "proof": [
+      {
+        "id": "lolita-frontline-vs-lesley-snipe-line",
+        "category": "teamfight-role-counter",
+        "priority": "primary",
+        "impact": "medium",
+        "summary": "Lesley wants clean shots onto fragile targets, while Lolita can stand between Lesley and the backline to deny clean target access.",
+        "worksBestWhen": [
+          "Lolita positions directly between Lesley and the target Lesley wants to finish.",
+          "The team respects Lesley's ultimate line and does not scatter too far."
+        ],
+        "failureCases": [
+          "Lesley flanks from an angle Lolita is not covering.",
+          "Lolita's shield or engage is used before Lesley commits poke."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "lesley",
+    "counterHeroId": "belerick",
+    "reasons": [
+      "Belerick can stand in Lesley's firing path and force her to spend shots into a tank.",
+      "His frontline presence makes it harder for Lesley to freely hit squishy heroes."
+    ],
+    "counterTypes": [
+      "frontline",
+      "protect",
+      "anti-basic-attack"
+    ],
+    "proof": [
+      {
+        "id": "belerick-frontline-vs-lesley-target-access",
+        "category": "teamfight-role-counter",
+        "priority": "secondary",
+        "impact": "medium",
+        "summary": "Lesley wants repeated high-value shots on fragile targets; Belerick can occupy the line of fire and force less efficient target selection.",
+        "worksBestWhen": [
+          "Belerick stays near Lesley's intended target instead of chasing too far.",
+          "The team uses Belerick's presence to walk forward safely."
+        ],
+        "failureCases": [
+          "Lesley farms safely and hits late item timing.",
+          "Belerick is kited before reaching relevant position."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "lesley",
+    "counterHeroId": "brody",
+    "reasons": [
+      "Brody can contest Lesley's gold lane with strong trading and burst pressure.",
+      "He can punish Lesley before her late-game crit poke becomes the main threat."
+    ],
+    "counterTypes": [
+      "range-advantage",
+      "burst",
+      "game-phase"
+    ],
+    "proof": [
+      {
+        "id": "brody-lane-pressure-vs-lesley-scaling",
+        "category": "game-phase",
+        "priority": "condition",
+        "impact": "medium",
+        "summary": "Lesley scales into long-range pick damage; Brody can pressure the lane earlier and delay her item comfort.",
+        "worksBestWhen": [
+          "Brody wins lane tempo and converts it into turret or turtle pressure.",
+          "He avoids giving Lesley free farm after the early lane."
+        ],
+        "failureCases": [
+          "Lesley survives lane without losing farm.",
+          "Brody misses early tempo and Lesley reaches late-game safely."
+        ]
+      }
+    ]
+  }
+]

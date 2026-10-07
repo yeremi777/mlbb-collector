@@ -1,0 +1,152 @@
+[
+  {
+    "targetHeroId": "arlott",
+    "counterHeroId": "minsitthar",
+    "reasons": [
+      "Minsitthar directly prevents Arlott from freely using movement skills inside King's Calling.",
+      "This denies Arlott's core reset pattern with Vengeance."
+    ],
+    "counterTypes": [
+      "anti-dash",
+      "anti-engage",
+      "teamfight"
+    ],
+    "proof": [
+      {
+        "id": "minsitthar-kings-calling-vs-arlott-vengeance",
+        "category": "skill-interaction",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Arlott wants to dash repeatedly onto marked targets, while Minsitthar's ultimate prevents enemies from using movement skills inside the field.",
+        "worksBestWhen": [
+          "Minsitthar casts after Arlott commits into the team.",
+          "Allies focus Arlott while his dash options are restricted."
+        ],
+        "failureCases": [
+          "Arlott waits outside the field and re-enters later.",
+          "Minsitthar misses Arlott or catches only low-value targets."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "arlott",
+    "counterHeroId": "khufra",
+    "reasons": [
+      "Khufra punishes Arlott when he tries to dash through the frontline.",
+      "Bouncing Ball can break Arlott's entry timing and protect squishy allies."
+    ],
+    "counterTypes": [
+      "anti-dash",
+      "frontline",
+      "anti-engage"
+    ],
+    "proof": [
+      {
+        "id": "khufra-bouncing-ball-vs-arlott-vengeance",
+        "category": "skill-interaction",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Arlott relies on Vengeance movement to reach marked targets, while Khufra can knock up enemies that attempt to blink across him.",
+        "worksBestWhen": [
+          "Khufra predicts Arlott's dash target.",
+          "Backline allies stand behind Khufra's anti-dash zone."
+        ],
+        "failureCases": [
+          "Arlott marks and attacks from another angle.",
+          "Khufra uses Bouncing Ball before Arlott commits."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "arlott",
+    "counterHeroId": "diggie",
+    "reasons": [
+      "Diggie reduces the value of Arlott's crowd-control-based teamfight setup.",
+      "Time Journey can protect allies when Arlott tries to chain crowd control and dash resets."
+    ],
+    "counterTypes": [
+      "anti-cc",
+      "cleanse",
+      "protect"
+    ],
+    "proof": [
+      {
+        "id": "diggie-time-journey-vs-arlott-cc-chain",
+        "category": "crowd-control-counter",
+        "priority": "primary",
+        "impact": "medium",
+        "summary": "Arlott wants to use crowd control and marks to create a reset chain, while Diggie can protect nearby allies with cleanse and control immunity during the engage.",
+        "worksBestWhen": [
+          "Diggie saves Time Journey for Arlott's real commit.",
+          "Diggie stands close enough to the allies Arlott wants to collapse on."
+        ],
+        "failureCases": [
+          "Arlott baits Diggie's ultimate first.",
+          "Arlott catches Diggie before Time Journey is used."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "arlott",
+    "counterHeroId": "valir",
+    "reasons": [
+      "Valir can push Arlott away before he reaches the marked target.",
+      "Knockback and slows make it harder for Arlott to maintain dash-reset pressure."
+    ],
+    "counterTypes": [
+      "kiting",
+      "disengage",
+      "anti-engage"
+    ],
+    "proof": [
+      {
+        "id": "valir-searing-torrent-vs-arlott-engage",
+        "category": "kiting",
+        "priority": "secondary",
+        "impact": "medium",
+        "summary": "Arlott wants to stick to enemies and refresh Vengeance, while Valir can knock him away and slow his approach.",
+        "worksBestWhen": [
+          "Valir saves knockback for Arlott's dash.",
+          "The team does not clump into Arlott's crowd-control angle."
+        ],
+        "failureCases": [
+          "Arlott flanks from fog.",
+          "Valir wastes Searing Torrent before Arlott commits."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "arlott",
+    "counterHeroId": "kaja",
+    "reasons": [
+      "Kaja can suppress Arlott during his commit and pull him away from marked targets.",
+      "This prevents Arlott from continuing his reset chain."
+    ],
+    "counterTypes": [
+      "suppression",
+      "pickoff",
+      "anti-dive"
+    ],
+    "proof": [
+      {
+        "id": "kaja-divine-judgment-vs-arlott-reset-chain",
+        "category": "crowd-control-counter",
+        "priority": "secondary",
+        "impact": "medium",
+        "summary": "Arlott wants to keep dashing through marked enemies, while Kaja can suppress and drag him out before the chain continues.",
+        "worksBestWhen": [
+          "Kaja waits until Arlott commits into the backline.",
+          "Teammates burst Arlott during suppression."
+        ],
+        "failureCases": [
+          "Arlott baits Divine Judgment with a tanky entry.",
+          "Kaja is forced to use ultimate defensively on another threat."
+        ]
+      }
+    ]
+  }
+]

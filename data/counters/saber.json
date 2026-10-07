@@ -1,0 +1,157 @@
+[
+  {
+    "targetHeroId": "saber",
+    "counterHeroId": "argus",
+    "reasons": [
+      "Argus can survive Saber's lethal burst with death immunity and punish after Saber's combo is spent."
+    ],
+    "counterTypes": [
+      "anti-burst",
+      "death-immunity",
+      "cooldown-punish"
+    ],
+    "proof": [
+      {
+        "id": "argus-death-immunity-vs-saber-burst",
+        "category": "skill-interaction",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Saber wants instant single-target death, while Argus can survive lethal burst with ultimate death immunity and turn the fight after Saber's combo fails.",
+        "worksBestWhen": [
+          "Argus ultimate is ready.",
+          "Argus reacts before dying.",
+          "Saber commits his full combo into Argus."
+        ],
+        "failureCases": [
+          "Argus ultimate is on cooldown.",
+          "Saber baits Argus ultimate first.",
+          "Argus is chain-controlled after ultimate ends."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "saber",
+    "counterHeroId": "benedetta",
+    "reasons": [
+      "Benedetta can block damage and gain control immunity with correct timing against Saber's engage."
+    ],
+    "counterTypes": [
+      "control-immunity",
+      "damage-block",
+      "execution-dependent"
+    ],
+    "proof": [
+      {
+        "id": "benedetta-skill-two-vs-saber-ultimate",
+        "category": "skill-interaction",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Saber relies on a predictable burst window, while Benedetta can block damage and gain control immunity with correct Skill 2 timing.",
+        "worksBestWhen": [
+          "Benedetta predicts or reacts to Saber's engage.",
+          "Benedetta saves Skill 2 for Saber's ultimate.",
+          "Benedetta can punish Saber after his combo fails."
+        ],
+        "failureCases": [
+          "Benedetta mistimes Skill 2.",
+          "Saber attacks from fog or bush.",
+          "Benedetta wastes Skill 2 before Saber commits."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "saber",
+    "counterHeroId": "wanwan",
+    "reasons": [
+      "Wanwan can remove control effects excluding suppression, making her a strong timing-based answer to Saber's non-suppression pickoff window."
+    ],
+    "counterTypes": [
+      "cleanse",
+      "mobility",
+      "anti-pickoff"
+    ],
+    "proof": [
+      {
+        "id": "wanwan-needles-in-flowers-vs-saber-triple-sweep",
+        "category": "skill-interaction",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Saber wants to lock a fragile backline target with non-suppression crowd control and burst, while Wanwan can remove control effects excluding suppression if she times her Skill 2 correctly.",
+        "worksBestWhen": [
+          "Wanwan saves Skill 2 for Saber's engage.",
+          "Wanwan has enough spacing to reposition after cleansing.",
+          "Saber commits without first baiting Wanwan's defensive skill."
+        ],
+        "failureCases": [
+          "Wanwan uses Skill 2 before Saber commits.",
+          "Saber attacks from fog and bursts before Wanwan reacts.",
+          "Wanwan is chain-controlled after cleansing."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "saber",
+    "counterHeroId": "diggie",
+    "reasons": [
+      "Diggie can reduce Saber's pickoff value by protecting nearby allies during the airborne burst window."
+    ],
+    "counterTypes": [
+      "anti-cc",
+      "cleanse",
+      "protect"
+    ],
+    "proof": [
+      {
+        "id": "diggie-time-journey-vs-saber-pickoff",
+        "category": "crowd-control-counter",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Saber wants to lock one target with airborne burst, while Diggie can remove debuffs and give nearby allies control immunity and shield during the engage window.",
+        "worksBestWhen": [
+          "Diggie stays near Saber's likely target.",
+          "Diggie saves ultimate for Saber's real commit.",
+          "The protected ally stays within Diggie's protection range."
+        ],
+        "failureCases": [
+          "Saber catches Diggie first.",
+          "Saber waits out Time Journey.",
+          "Saber attacks from fog before Diggie can react."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "saber",
+    "counterHeroId": "khufra",
+    "reasons": [
+      "Khufra can punish Saber's dash-style entry path and protect the backline from clean pickoffs."
+    ],
+    "counterTypes": [
+      "anti-dash",
+      "anti-dive",
+      "frontline"
+    ],
+    "proof": [
+      {
+        "id": "khufra-bouncing-ball-vs-saber-entry",
+        "category": "skill-interaction",
+        "priority": "primary",
+        "impact": "medium",
+        "summary": "Saber needs clean target access, while Khufra's Bouncing Ball punishes enemies trying to use blink skills across him.",
+        "worksBestWhen": [
+          "Khufra positions between Saber and the backline.",
+          "Khufra saves Bouncing Ball for Saber's entry.",
+          "Saber is forced to dive through the frontline."
+        ],
+        "failureCases": [
+          "Saber enters from an angle not covered by Khufra.",
+          "Saber waits until Bouncing Ball ends.",
+          "Khufra is baited away from the carry."
+        ]
+      }
+    ]
+  }
+]

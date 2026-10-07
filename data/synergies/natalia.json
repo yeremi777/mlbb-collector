@@ -1,0 +1,152 @@
+[
+  {
+    "anchorHeroId": "natalia",
+    "synergyHeroId": "selena",
+    "reasons": [
+      "Selena's traps create local control zones that help Natalia choose safer approach paths.",
+      "A landed Abyssal Arrow gives Natalia a clear target to silence and burst."
+    ],
+    "synergyTypes": [
+      "vision-setup",
+      "pickoff-combo",
+      "burst-follow-up"
+    ],
+    "proof": [
+      {
+        "id": "selena-trap-arrow-prepares-natalia-pickoff",
+        "category": "vision-setup",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Selena prepares trap and stun pressure, while Natalia executes the close-range pickoff.",
+        "worksBestWhen": [
+          "Selena controls jungle entrances before Natalia rotates.",
+          "Natalia waits for the trap or arrow value before committing."
+        ],
+        "failureCases": [
+          "The arrow misses or the target avoids the trap zone.",
+          "Natalia enters before the control window is confirmed."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "natalia",
+    "synergyHeroId": "kaja",
+    "reasons": [
+      "Kaja can suppress a priority target so Natalia does not need to rely only on stealth entry.",
+      "Natalia can follow the drag with silence and burst while the target is unable to respond."
+    ],
+    "synergyTypes": [
+      "pickoff-combo",
+      "setup-combo",
+      "burst-follow-up"
+    ],
+    "proof": [
+      {
+        "id": "kaja-suppression-for-natalia-execution",
+        "category": "pickoff-combo",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Kaja locks and drags a target, while Natalia finishes the pickoff from close range.",
+        "worksBestWhen": [
+          "Kaja targets a fragile damage dealer or mobile core.",
+          "Natalia is close enough to follow the drag immediately."
+        ],
+        "failureCases": [
+          "Kaja catches a tank.",
+          "Natalia arrives late after the control window ends."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "natalia",
+    "synergyHeroId": "franco",
+    "reasons": [
+      "Franco can pull a target out of formation, creating the isolation Natalia wants.",
+      "Natalia can punish the pulled target with silence and burst while the enemy team is split."
+    ],
+    "synergyTypes": [
+      "pickoff-combo",
+      "setup-combo",
+      "burst-follow-up"
+    ],
+    "proof": [
+      {
+        "id": "franco-hook-isolates-target-for-natalia",
+        "category": "pickoff-combo",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Franco isolates the target, and Natalia follows with close-range execution.",
+        "worksBestWhen": [
+          "Franco catches the target near bush or river where Natalia can approach unseen.",
+          "Natalia waits for the confirmed catch before revealing herself."
+        ],
+        "failureCases": [
+          "Franco catches frontline.",
+          "Natalia's position is revealed too early."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "natalia",
+    "synergyHeroId": "zetian",
+    "reasons": [
+      "Zetian can reveal enemy positions globally, helping Natalia decide which target is isolated enough to hunt.",
+      "Zetian's ultimate also creates a timing window with enemy control and allied movement speed for Natalia's entry."
+    ],
+    "synergyTypes": [
+      "vision-setup",
+      "pickoff-combo",
+      "mobility-enable"
+    ],
+    "proof": [
+      {
+        "id": "zetian-global-vision-guides-natalia-pickoff",
+        "category": "vision-setup",
+        "priority": "secondary",
+        "impact": "medium",
+        "summary": "Zetian gives map-wide target information and a brief control window, helping Natalia choose safer pickoff timing.",
+        "worksBestWhen": [
+          "Natalia uses the reveal window to rotate toward an isolated target.",
+          "Zetian's ultimate is used before Natalia fully commits."
+        ],
+        "failureCases": [
+          "Natalia forces a dive after enemies have already grouped defensively.",
+          "Zetian's ultimate is unavailable during Natalia's rotation."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "natalia",
+    "synergyHeroId": "popol-and-kupa",
+    "reasons": [
+      "Popol and Kupa can place traps that punish enemies moving through jungle, river, and objective entrances.",
+      "Natalia benefits when enemy movement is slowed or immobilized before she reveals herself for the silence burst."
+    ],
+    "synergyTypes": [
+      "vision-setup",
+      "pickoff-combo",
+      "objective-control"
+    ],
+    "proof": [
+      {
+        "id": "popol-traps-control-paths-for-natalia",
+        "category": "vision-setup",
+        "priority": "secondary",
+        "impact": "medium",
+        "summary": "Popol and Kupa control local paths with traps, giving Natalia safer pickoff routes around bushes and objectives.",
+        "worksBestWhen": [
+          "Traps are placed near common rotation paths before Natalia moves.",
+          "Natalia waits for the enemy to trigger the trap before committing."
+        ],
+        "failureCases": [
+          "Traps are cleared, avoided, or placed too far from Natalia's route.",
+          "Natalia commits before the target is controlled."
+        ]
+      }
+    ]
+  }
+]

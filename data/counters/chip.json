@@ -1,0 +1,162 @@
+[
+  {
+    "targetHeroId": "chip",
+    "counterHeroId": "diggie",
+    "reasons": [
+      "Diggie can reduce the value of Chip's portal-based crowd-control engage.",
+      "Chip wants to bring allies into a crowd-control pile, while Diggie can protect teammates during that moment."
+    ],
+    "counterTypes": [
+      "anti-cc",
+      "cleanse",
+      "teamfight"
+    ],
+    "proof": [
+      {
+        "id": "diggie-time-journey-vs-chip-portal-engage",
+        "category": "skill-interaction",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Chip wants a portal engage into airborne or stun follow-up, while Diggie can use teamfight protection to reduce the crowd-control value of that engage.",
+        "worksBestWhen": [
+          "Diggie saves ultimate for Chip's real portal commit.",
+          "Diggie stays near the teammate Chip is trying to collapse on.",
+          "The team avoids entering Chip's portal fight before Diggie is ready."
+        ],
+        "failureCases": [
+          "Chip baits Diggie's ultimate with a fake engage.",
+          "Diggie is caught before he can cast.",
+          "Chip's team delays the portal entry until Diggie's protection ends."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "chip",
+    "counterHeroId": "valir",
+    "reasons": [
+      "Valir can push away Chip or the first hero arriving through Chip's portal.",
+      "Chip's engage becomes weaker when the enemy team can immediately reset spacing."
+    ],
+    "counterTypes": [
+      "disengage",
+      "anti-engage",
+      "kiting"
+    ],
+    "proof": [
+      {
+        "id": "valir-disengage-vs-chip-portal-arrival",
+        "category": "teamfight-role-counter",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Chip wants allies to arrive through a portal and collapse on one area, while Valir can disrupt the arrival path and reset the fight.",
+        "worksBestWhen": [
+          "Valir watches the main portal location instead of chasing Chip.",
+          "Valir keeps knockback for portal arrivals.",
+          "Valir's team backs away from the portal focal point."
+        ],
+        "failureCases": [
+          "Chip's team arrives from multiple angles.",
+          "Valir is the first target and gets crowd-control chained before casting.",
+          "Valir wastes knockback before the portal engage starts."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "chip",
+    "counterHeroId": "atlas",
+    "reasons": [
+      "Chip's portal can group allies into a predictable area, which gives Atlas a punish window.",
+      "Atlas can counter the teamfight pattern Chip enables when multiple enemies arrive near the same portal point."
+    ],
+    "counterTypes": [
+      "teamfight",
+      "anti-engage",
+      "positioning-punish"
+    ],
+    "proof": [
+      {
+        "id": "atlas-fatal-links-vs-chip-grouped-portal",
+        "category": "positioning-requirement",
+        "priority": "condition",
+        "impact": "high",
+        "summary": "Chip wants to concentrate allies around a portal target, while Atlas can punish grouped arrivals if he holds his engage for the portal commit.",
+        "worksBestWhen": [
+          "Atlas waits for multiple enemies to take the portal.",
+          "The fight happens near terrain or choke points.",
+          "Atlas has Flicker or a clean flank angle."
+        ],
+        "failureCases": [
+          "Chip's team staggers portal usage.",
+          "Atlas engages before enough enemies arrive.",
+          "Chip's team spreads immediately after entering."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "chip",
+    "counterHeroId": "kadita",
+    "reasons": [
+      "Kadita can punish portal arrivals because Chip's team often appears around a known main portal area.",
+      "Her burst can convert when enemies cluster too tightly after using Shortcut."
+    ],
+    "counterTypes": [
+      "burst",
+      "anti-engage",
+      "positioning-punish"
+    ],
+    "proof": [
+      {
+        "id": "kadita-burst-vs-chip-portal-cluster",
+        "category": "positioning-requirement",
+        "priority": "condition",
+        "impact": "medium",
+        "summary": "Chip creates a portal focus point, while Kadita can prepare burst around that point and punish grouped arrivals.",
+        "worksBestWhen": [
+          "Kadita has vision of the main portal.",
+          "Chip's allies enter without checking Kadita's position.",
+          "Kadita waits for a high-value target to arrive."
+        ],
+        "failureCases": [
+          "Chip's team delays portal entry.",
+          "Kadita commits before the high-value target arrives.",
+          "Chip's team enters spread out or with crowd-control immunity support."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "chip",
+    "counterHeroId": "franco",
+    "reasons": [
+      "Franco can threaten Chip before Chip starts the portal play.",
+      "If Chip is hooked or suppressed before the setup, his team loses the clean engage trigger."
+    ],
+    "counterTypes": [
+      "pickoff",
+      "cooldown-punish",
+      "anti-engage"
+    ],
+    "proof": [
+      {
+        "id": "franco-pickoff-vs-chip-portal-setup",
+        "category": "cooldown-window",
+        "priority": "condition",
+        "impact": "medium",
+        "summary": "Chip needs time and positioning to create portal value, while Franco can punish him before or after Shortcut with pickoff pressure.",
+        "worksBestWhen": [
+          "Franco controls river or bush vision.",
+          "Franco targets Chip before the portal has full team follow-up.",
+          "Franco's team can burst Chip quickly after suppression."
+        ],
+        "failureCases": [
+          "Franco hooks Chip after Chip has already created a favorable portal collapse.",
+          "Franco's team cannot burst Chip through his durability.",
+          "Chip's team counter-engages through the portal while Franco is committed."
+        ]
+      }
+    ]
+  }
+]

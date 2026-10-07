@@ -1,0 +1,154 @@
+[
+  {
+    "anchorHeroId": "ling",
+    "synergyHeroId": "angela",
+    "reasons": [
+      "Angela can attach to Ling during a backline dive, adding protection and movement support without needing to follow his wall movement.",
+      "Ling benefits from attached support because he often fights far away from the rest of the team."
+    ],
+    "synergyTypes": [
+      "dive-support",
+      "shielding",
+      "mobility-enable"
+    ],
+    "proof": [
+      {
+        "id": "ling-angela-attached-backline-dive",
+        "category": "protection",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Ling enters fights from extreme angles, and Angela can support his dive through attachment-based protection.",
+        "worksBestWhen": [
+          "Angela attaches before Ling fully commits to the backline.",
+          "Ling has an escape route or ultimate timing after the dive."
+        ],
+        "failureCases": [
+          "Ling dives into heavy control before Angela can protect him.",
+          "Angela attaches after Ling has already spent his mobility.",
+          "The enemy saves suppression or instant burst for Ling's entry."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "ling",
+    "synergyHeroId": "floryn",
+    "reasons": [
+      "Floryn can heal Ling globally, which fits Ling's habit of fighting far from the main team.",
+      "The global support helps Ling continue pressure after a risky dive or objective skirmish."
+    ],
+    "synergyTypes": [
+      "healing-sustain",
+      "dive-support"
+    ],
+    "proof": [
+      {
+        "id": "ling-floryn-global-heal-remote-dive",
+        "category": "healing-sustain",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Ling often commits away from his support, and Floryn can still assist him with global healing.",
+        "worksBestWhen": [
+          "Floryn tracks Ling's dive timing.",
+          "Ling survives long enough for the heal to matter."
+        ],
+        "failureCases": [
+          "Ling is locked down and killed before the heal changes the fight.",
+          "Floryn heals too early before Ling commits.",
+          "Ling dives without energy or escape resources."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "ling",
+    "synergyHeroId": "chip",
+    "reasons": [
+      "Chip can help the team arrive near Ling's side pressure or pickoff angle instead of leaving Ling isolated.",
+      "Ling's fast map pressure becomes more valuable when teammates can rotate into the created opening."
+    ],
+    "synergyTypes": [
+      "mobility-enable",
+      "objective-control",
+      "dive-support"
+    ],
+    "proof": [
+      {
+        "id": "ling-chip-portal-map-pressure-conversion",
+        "category": "mobility-enabler",
+        "priority": "secondary",
+        "impact": "medium",
+        "summary": "Ling creates map pressure quickly, and Chip can help teammates rotate around that pressure.",
+        "worksBestWhen": [
+          "Chip uses portals after Ling creates side pressure.",
+          "The team has vision before entering the portal."
+        ],
+        "failureCases": [
+          "The team enters the portal late.",
+          "The portal sends teammates into a bad fight without vision.",
+          "Ling creates pressure while Chip's key rotation skill is unavailable."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "ling",
+    "synergyHeroId": "kaja",
+    "reasons": [
+      "Kaja can suppress and drag a priority target, giving Ling a simple assassination target.",
+      "Ling can use his mobility to follow Kaja's catch and finish the isolated target."
+    ],
+    "synergyTypes": [
+      "pickoff-combo",
+      "setup-combo"
+    ],
+    "proof": [
+      {
+        "id": "ling-kaja-suppression-pickoff-follow-up",
+        "category": "pickoff-combo",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Kaja removes the target's movement window, while Ling follows with fast burst and chase.",
+        "worksBestWhen": [
+          "Kaja catches a damage dealer before Ling commits.",
+          "Ling is close enough to follow the drag."
+        ],
+        "failureCases": [
+          "Kaja suppresses a tank.",
+          "Ling is too far to follow the catch.",
+          "The enemy peels Ling after Kaja's suppression ends."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "ling",
+    "synergyHeroId": "tigreal",
+    "reasons": [
+      "Tigreal can start grouped fights that give Ling a safer timing to enter after enemies are controlled.",
+      "Ling can wait for the first engage and then dive the backline during the enemy's disrupted formation."
+    ],
+    "synergyTypes": [
+      "engage-follow-up",
+      "teamfight-combo"
+    ],
+    "proof": [
+      {
+        "id": "ling-tigreal-engage-after-control-window",
+        "category": "engage-follow-up",
+        "priority": "secondary",
+        "impact": "medium",
+        "summary": "Tigreal absorbs the first engage window, and Ling follows after enemies are controlled or displaced.",
+        "worksBestWhen": [
+          "Ling waits for Tigreal's engage instead of entering first.",
+          "Tigreal catches targets that allow Ling to reach the backline safely."
+        ],
+        "failureCases": [
+          "Ling dives before Tigreal starts.",
+          "Tigreal engages outside Ling's follow-up route.",
+          "The enemy saves anti-dive control for Ling after Tigreal's engage."
+        ]
+      }
+    ]
+  }
+]

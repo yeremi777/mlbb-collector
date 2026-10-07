@@ -1,0 +1,158 @@
+[
+  {
+    "targetHeroId": "silvanna",
+    "counterHeroId": "diggie",
+    "reasons": [
+      "Diggie directly reduces Silvanna's teamfight lock value.",
+      "Time Journey can protect nearby allies during Silvanna's engage timing."
+    ],
+    "counterTypes": [
+      "anti-cc",
+      "cleanse",
+      "protect"
+    ],
+    "proof": [
+      {
+        "id": "diggie-time-journey-vs-silvanna-imperial-justice",
+        "category": "skill-interaction",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Silvanna wants Imperial Justice to restrain a target and force a trapped fight, while Diggie can grant nearby allies shield and control immunity.",
+        "worksBestWhen": [
+          "Diggie saves Time Journey for Silvanna's real engage.",
+          "Diggie stays close enough to protect the target Silvanna wants."
+        ],
+        "failureCases": [
+          "Silvanna baits Time Journey first.",
+          "Silvanna catches Diggie before he can cast ultimate."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "silvanna",
+    "counterHeroId": "valir",
+    "reasons": [
+      "Valir can push Silvanna away before or after her commit and reduce her ability to stay on top of targets.",
+      "His self-cleanse and movement boost also help him survive engage attempts."
+    ],
+    "counterTypes": [
+      "disengage",
+      "kiting",
+      "anti-dive"
+    ],
+    "proof": [
+      {
+        "id": "valir-disengage-vs-silvanna-dive-lock",
+        "category": "kiting",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Silvanna wants to dive and keep enemies inside her combat zone, while Valir can cleanse himself, gain movement speed, and use knockback to reset spacing.",
+        "worksBestWhen": [
+          "Valir saves Searing Torrent for Silvanna's dive.",
+          "Valir avoids standing in Silvanna's direct ultimate path."
+        ],
+        "failureCases": [
+          "Silvanna catches Valir while his tools are down.",
+          "Valir pushes too early and Silvanna re-engages after."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "silvanna",
+    "counterHeroId": "kadita",
+    "reasons": [
+      "Kadita can reduce Silvanna's engage value with control immunity and damage reduction from Ocean Ode.",
+      "Rough Waves gives Kadita an untargetable burst window and can remove existing debuffs or crowd controls after she dives underground.",
+      "Kadita can punish Silvanna if Silvanna commits too deeply into Kadita's burst zone."
+    ],
+    "counterTypes": [
+      "control-immunity",
+      "burst",
+      "mobility"
+    ],
+    "proof": [
+      {
+        "id": "kadita-ocean-ode-rough-waves-vs-silvanna-lock",
+        "category": "skill-interaction",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Silvanna wants to restrain a target with Imperial Justice and continue damage inside the Circle of Light, while Kadita can use control immunity, untargetable timing, and burst to survive or punish the commit.",
+        "worksBestWhen": [
+          "Kadita times Ocean Ode before Silvanna's engage connects.",
+          "Kadita successfully enters Rough Waves before Silvanna finishes the damage sequence.",
+          "Silvanna dives without enough backup or after Kadita has prepared her combo."
+        ],
+        "failureCases": [
+          "Kadita is caught before Ocean Ode or Rough Waves is available.",
+          "Silvanna baits Kadita's immunity first, then re-engages.",
+          "Kadita mistimes ultimate and still gets punished after the untargetable window ends."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "silvanna",
+    "counterHeroId": "lunox",
+    "reasons": [
+      "Lunox can survive Silvanna's all-in timing with Brilliance invincibility.",
+      "Lunox can punish Silvanna's durability with Chaos Assault and Darkening windows after avoiding the initial engage.",
+      "This is a timing-based counter, not a guaranteed escape from every Silvanna ultimate."
+    ],
+    "counterTypes": [
+      "control-immunity",
+      "mobility",
+      "burst"
+    ],
+    "proof": [
+      {
+        "id": "lunox-brilliance-vs-silvanna-imperial-justice-window",
+        "category": "cooldown-window",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Silvanna wants to trap one target and deal sustained magic damage inside her ultimate zone, while Lunox can use Brilliance to become invincible and survive the key damage window.",
+        "worksBestWhen": [
+          "Lunox uses Brilliance before or during Silvanna's main damage window.",
+          "Lunox keeps enough spacing to avoid being forced into a bad Darkening blink.",
+          "Silvanna has already committed and cannot easily switch targets."
+        ],
+        "failureCases": [
+          "Lunox is restrained before she can cast Brilliance.",
+          "Brilliance is used too early and Silvanna waits it out.",
+          "Lunox survives but cannot actually leave the danger zone afterward."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "silvanna",
+    "counterHeroId": "kaja",
+    "reasons": [
+      "Kaja can drag Silvanna away from her preferred target after she dives.",
+      "Suppression gives the team a reliable way to punish Silvanna's all-in timing."
+    ],
+    "counterTypes": [
+      "pickoff",
+      "crowd-control-counter",
+      "anti-dive"
+    ],
+    "proof": [
+      {
+        "id": "kaja-divine-judgment-vs-silvanna-dive",
+        "category": "crowd-control-counter",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Silvanna wants to isolate one target, while Kaja can suppress and drag her into a punish position.",
+        "worksBestWhen": [
+          "Kaja positions near the ally Silvanna wants to jump.",
+          "The team bursts Silvanna immediately after Divine Judgment."
+        ],
+        "failureCases": [
+          "Kaja is the target and cannot respond cleanly.",
+          "Silvanna waits for Kaja to reveal or spend ultimate."
+        ]
+      }
+    ]
+  }
+]

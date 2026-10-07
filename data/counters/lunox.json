@@ -1,0 +1,157 @@
+[
+  {
+    "targetHeroId": "lunox",
+    "counterHeroId": "franco",
+    "reasons": [
+      "Franco can suppress Lunox before she uses Brilliance.",
+      "Hook and suppression punish Lunox when her invulnerability or blink options are unavailable."
+    ],
+    "counterTypes": [
+      "crowd-control-counter",
+      "pickoff",
+      "cooldown-punish"
+    ],
+    "proof": [
+      {
+        "id": "franco-suppression-vs-lunox-brilliance-window",
+        "category": "cooldown-window",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Lunox is dangerous when Brilliance or Darkening is available, but Franco can punish her if he catches her before those defensive tools are used.",
+        "worksBestWhen": [
+          "Franco waits for Lunox to spend Brilliance or blink.",
+          "Franco's team follows up during suppression."
+        ],
+        "failureCases": [
+          "Lunox pre-casts Brilliance.",
+          "Franco misses hook.",
+          "Lunox keeps distance and forces Franco to engage through frontline."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "lunox",
+    "counterHeroId": "kaja",
+    "reasons": [
+      "Kaja can suppress Lunox before she enters invulnerable state.",
+      "Dragging Lunox into allied burst is effective when her escape cycle is down."
+    ],
+    "counterTypes": [
+      "crowd-control-counter",
+      "pickoff",
+      "anti-mage"
+    ],
+    "proof": [
+      {
+        "id": "kaja-divine-judgment-vs-lunox-defensive-cycle",
+        "category": "cooldown-window",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Lunox wants to choose when to become invulnerable or blink, while Kaja can suppress her during the gap before she activates those tools.",
+        "worksBestWhen": [
+          "Kaja tracks Lunox's Brilliance usage.",
+          "Kaja commits only when allied burst is ready."
+        ],
+        "failureCases": [
+          "Lunox uses Brilliance before Kaja reaches her.",
+          "Kaja catches Lunox without damage follow-up.",
+          "Lunox positions behind tanks."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "lunox",
+    "counterHeroId": "saber",
+    "reasons": [
+      "Saber can punish Lunox during the window when Brilliance is unavailable.",
+      "His targeted airborne burst is useful against squishy mages if timed after defensive cooldowns."
+    ],
+    "counterTypes": [
+      "burst",
+      "pickoff",
+      "cooldown-punish"
+    ],
+    "proof": [
+      {
+        "id": "saber-triple-sweep-vs-lunox-brilliance-cooldown",
+        "category": "cooldown-window",
+        "priority": "primary",
+        "impact": "medium",
+        "summary": "Lunox survives burst through correct Brilliance timing, so Saber works best by waiting for Brilliance cooldown before using Triple Sweep.",
+        "worksBestWhen": [
+          "Saber confirms Lunox has used Brilliance.",
+          "Saber has enough damage to finish during crowd control."
+        ],
+        "failureCases": [
+          "Lunox keeps Brilliance ready.",
+          "Saber ults into enemy peel.",
+          "Lunox survives the combo and counter-bursts."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "lunox",
+    "counterHeroId": "chou",
+    "reasons": [
+      "Chou can kick Lunox out of position if he catches her before Brilliance.",
+      "Control immunity helps Chou approach through some mage control tools."
+    ],
+    "counterTypes": [
+      "pickoff",
+      "control-immunity",
+      "displacement"
+    ],
+    "proof": [
+      {
+        "id": "chou-way-of-dragon-vs-lunox-positioning",
+        "category": "skill-interaction",
+        "priority": "primary",
+        "impact": "medium",
+        "summary": "Lunox wants controlled spacing and defensive timing, while Chou can force displacement and punish her if she delays Brilliance.",
+        "worksBestWhen": [
+          "Chou approaches from fog or flank.",
+          "Chou times engage after Lunox uses a defensive spell."
+        ],
+        "failureCases": [
+          "Lunox reacts with Brilliance.",
+          "Chou kicks Lunox away from allied damage.",
+          "Chou is controlled before Shunpo."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "lunox",
+    "counterHeroId": "natalia",
+    "reasons": [
+      "Natalia can pressure Lunox before Lunox safely sets her fight rhythm.",
+      "Lunox is vulnerable if Natalia catches her without Brilliance or near isolated jungle paths."
+    ],
+    "counterTypes": [
+      "pickoff",
+      "mobility",
+      "backline-pressure"
+    ],
+    "proof": [
+      {
+        "id": "natalia-isolated-pickoff-vs-lunox-cooldown-management",
+        "category": "positioning-requirement",
+        "priority": "primary",
+        "impact": "medium",
+        "summary": "Lunox wants to manage cooldowns safely, while Natalia threatens sudden backline pressure and punishes isolated positioning.",
+        "worksBestWhen": [
+          "Natalia waits until Lunox's defensive cooldown is used.",
+          "Natalia approaches from fog and avoids minion vision."
+        ],
+        "failureCases": [
+          "Lunox keeps Brilliance available.",
+          "Lunox stays grouped with peel.",
+          "Natalia is revealed before she reaches Lunox."
+        ]
+      }
+    ]
+  }
+]

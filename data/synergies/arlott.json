@@ -1,0 +1,162 @@
+[
+  {
+    "anchorHeroId": "arlott",
+    "synergyHeroId": "tigreal",
+    "reasons": [
+      "Tigreal's crowd control can create multiple marked targets for Arlott's Demon Gaze interaction.",
+      "Tigreal's grouping makes Arlott's dash reset and area follow-up easier to execute."
+    ],
+    "synergyTypes": [
+      "cc-chain",
+      "setup-combo",
+      "teamfight-combo"
+    ],
+    "proof": [
+      {
+        "id": "tigreal-cc-creates-arlott-mark-chain",
+        "category": "crowd-control-chain",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Tigreal controls and groups enemies, allowing Arlott to exploit marked targets with repeated Vengeance pressure.",
+        "worksBestWhen": [
+          "Arlott is near enough for marks and follow-up.",
+          "Tigreal catches multiple enemies rather than only a tank.",
+          "Arlott saves Vengeance for marked targets."
+        ],
+        "failureCases": [
+          "Arlott is too far away when Tigreal engages.",
+          "Enemies use control immunity or disengage after the pull.",
+          "Arlott dashes into a bad position without team follow-up."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "arlott",
+    "synergyHeroId": "atlas",
+    "reasons": [
+      "Atlas can pull enemies into one location, giving Arlott a dense group of controlled targets to mark and dash through.",
+      "Arlott can follow Atlas's engage with Final Slash or Vengeance resets."
+    ],
+    "synergyTypes": [
+      "setup-combo",
+      "cc-chain",
+      "teamfight-combo"
+    ],
+    "proof": [
+      {
+        "id": "atlas-fatal-links-enables-arlott-marked-dashes",
+        "category": "setup-combo",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Atlas creates a grouped control setup, and Arlott converts it into marked-target dash pressure.",
+        "worksBestWhen": [
+          "Atlas drops enemies within Arlott's follow-up range.",
+          "Arlott saves Vengeance for marked targets.",
+          "The team follows Arlott's commit."
+        ],
+        "failureCases": [
+          "Atlas engages before Arlott arrives.",
+          "Arlott spends Vengeance on an unmarked target.",
+          "Enemy backline stays outside the grouped area."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "arlott",
+    "synergyHeroId": "minotaur",
+    "reasons": [
+      "Minotaur's area control can mark enemies for Arlott's Vengeance follow-up.",
+      "Minotaur adds frontline presence so Arlott can enter after the first control layer."
+    ],
+    "synergyTypes": [
+      "cc-chain",
+      "frontline-enabler",
+      "teamfight-combo"
+    ],
+    "proof": [
+      {
+        "id": "minotaur-control-enables-arlott-vengeance-chain",
+        "category": "crowd-control-chain",
+        "priority": "primary",
+        "impact": "medium",
+        "summary": "Minotaur starts the control layer, while Arlott uses the CC-applied marks to dash and continue the fight.",
+        "worksBestWhen": [
+          "Minotaur controls enemies near Arlott.",
+          "Arlott waits for the crowd-control window and then commits.",
+          "Arlott has enough space to dash through marked targets."
+        ],
+        "failureCases": [
+          "Arlott enters before Minotaur's setup.",
+          "Minotaur controls only frontline tanks.",
+          "Enemies disengage before Arlott can chain Vengeance."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "arlott",
+    "synergyHeroId": "carmilla",
+    "reasons": [
+      "Carmilla's linked enemies can spread control and damage value while Arlott attacks marked targets.",
+      "Arlott's own control and dash pressure help keep linked enemies under threat."
+    ],
+    "synergyTypes": [
+      "damage-amplification",
+      "cc-chain",
+      "teamfight-combo"
+    ],
+    "proof": [
+      {
+        "id": "carmilla-link-amplifies-arlott-dash-pressure",
+        "category": "damage-amplification",
+        "priority": "secondary",
+        "impact": "high",
+        "summary": "Carmilla links enemies, and Arlott adds repeated dash damage plus control pressure into the linked group.",
+        "worksBestWhen": [
+          "Carmilla links enemies before Arlott commits.",
+          "Arlott focuses marked targets inside the link window.",
+          "The enemy team remains grouped during the link."
+        ],
+        "failureCases": [
+          "Enemies break the link.",
+          "Arlott dashes beyond Carmilla's linked area.",
+          "Carmilla links only low-value frontliners."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "arlott",
+    "synergyHeroId": "angela",
+    "reasons": [
+      "Angela can shield and attach to Arlott before he dives into marked-target chains.",
+      "Arlott benefits from extra protection because he often commits forward to keep Vengeance resets going."
+    ],
+    "synergyTypes": [
+      "shielding",
+      "dive-support",
+      "protect"
+    ],
+    "proof": [
+      {
+        "id": "angela-shields-arlott-mark-chain-dive",
+        "category": "shielding",
+        "priority": "secondary",
+        "impact": "medium",
+        "summary": "Angela gives Arlott protection during his dive sequence, helping him survive while chaining marked targets.",
+        "worksBestWhen": [
+          "Angela attaches before Arlott commits.",
+          "Arlott has marked targets ready or nearby CC setup.",
+          "Arlott has enough follow-up to continue after the shield."
+        ],
+        "failureCases": [
+          "Arlott dives without marks.",
+          "Angela's shield is forced too early.",
+          "Enemy suppression or burst stops Arlott before he can reset Vengeance."
+        ]
+      }
+    ]
+  }
+]

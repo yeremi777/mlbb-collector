@@ -1,0 +1,157 @@
+[
+  {
+    "targetHeroId": "popol-and-kupa",
+    "counterHeroId": "lolita",
+    "reasons": [
+      "Lolita can protect teammates from many ranged pressure patterns and reduce Popol's lane poke value.",
+      "Her shield and frontline presence make it harder for Popol to convert Kupa pressure into safe damage."
+    ],
+    "counterTypes": [
+      "protect",
+      "anti-projectile",
+      "teamfight"
+    ],
+    "proof": [
+      {
+        "id": "lolita-guardian-bulwark-vs-popol-ranged-pressure",
+        "category": "skill-interaction",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Popol and Kupa wants to pressure through ranged attacks and Kupa control, while Lolita can block incoming projectile pressure from the front and protect nearby allies.",
+        "worksBestWhen": [
+          "Lolita faces the correct direction before Popol commits damage.",
+          "Teammates play behind the shield instead of splitting."
+        ],
+        "failureCases": [
+          "Popol attacks from side angles.",
+          "Kupa locks Lolita or a carry before the shield is ready.",
+          "Lolita wastes shield before the real trade."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "popol-and-kupa",
+    "counterHeroId": "natalia",
+    "reasons": [
+      "Natalia can punish Popol directly if she bypasses Kupa and attacks from fog.",
+      "Popol is much weaker when the assassin reaches him instead of fighting through Kupa first."
+    ],
+    "counterTypes": [
+      "pickoff",
+      "vision-control",
+      "burst"
+    ],
+    "proof": [
+      {
+        "id": "natalia-camouflage-vs-popol-backline",
+        "category": "vision-awareness",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Popol wants Kupa and traps to control approach paths, while Natalia can use camouflage and bush pressure to create a direct backline pickoff threat.",
+        "worksBestWhen": [
+          "Natalia tracks trap placement and avoids predictable paths.",
+          "She waits until Kupa is away, low, or committed forward."
+        ],
+        "failureCases": [
+          "Natalia walks into traps or Kupa peel.",
+          "Popol has nearby support protection.",
+          "Natalia cannot finish the burst after revealing."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "popol-and-kupa",
+    "counterHeroId": "clint",
+    "reasons": [
+      "Clint can contest Popol's lane pressure with high-damage ranged poke and skill-enhanced trades.",
+      "He can punish Popol when Popol steps forward behind Kupa."
+    ],
+    "counterTypes": [
+      "range-advantage",
+      "poke",
+      "lane-pressure"
+    ],
+    "proof": [
+      {
+        "id": "clint-long-range-poke-vs-popol-lane-pressure",
+        "category": "range-advantage",
+        "priority": "secondary",
+        "impact": "medium",
+        "summary": "Popol wants to pressure lane through Kupa and traps, while Clint can answer with long-range poke and bursty trade patterns from safer spacing.",
+        "worksBestWhen": [
+          "Clint keeps wave control and avoids trap angles.",
+          "Clint pokes Popol instead of wasting everything on Kupa."
+        ],
+        "failureCases": [
+          "Kupa locks Clint before he can trade back.",
+          "Clint is forced into trap-controlled bushes.",
+          "Popol gets early lane tempo and freezes Clint out."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "popol-and-kupa",
+    "counterHeroId": "lesley",
+    "reasons": [
+      "Lesley can play for patient long-range trades and punish Popol when he lacks direct access.",
+      "True-damage poke can pressure Popol without requiring extended basic-attack uptime into Kupa."
+    ],
+    "counterTypes": [
+      "range-advantage",
+      "poke",
+      "burst"
+    ],
+    "proof": [
+      {
+        "id": "lesley-long-range-poke-vs-popol-controlled-lane",
+        "category": "range-advantage",
+        "priority": "secondary",
+        "impact": "medium",
+        "summary": "Popol wants controlled lane fights around Kupa, while Lesley can look for longer-range poke windows and disengage from direct trades.",
+        "worksBestWhen": [
+          "Lesley avoids early all-in trades.",
+          "Lesley farms safely until her poke becomes threatening."
+        ],
+        "failureCases": [
+          "Popol snowballs the early lane.",
+          "Kupa reaches Lesley before she can disengage.",
+          "Lesley is trapped or revealed before camouflage spacing matters."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "popol-and-kupa",
+    "counterHeroId": "lancelot",
+    "reasons": [
+      "Lancelot can bypass Kupa and reach Popol if he has dash paths.",
+      "Popol is vulnerable when Kupa is down, misplaced, or already committed forward."
+    ],
+    "counterTypes": [
+      "mobility",
+      "burst",
+      "cooldown-punish"
+    ],
+    "proof": [
+      {
+        "id": "lancelot-dash-path-vs-popol-kupa-positioning",
+        "category": "mobility-advantage",
+        "priority": "condition",
+        "impact": "medium",
+        "summary": "Popol wants opponents to fight through Kupa first, while Lancelot can use dash mobility and invulnerability timing to reach Popol directly.",
+        "worksBestWhen": [
+          "Lancelot waits until Kupa is out of position.",
+          "There are minions or targets for dash resets."
+        ],
+        "failureCases": [
+          "Lancelot dashes into traps.",
+          "Kupa locks Lancelot before he reaches Popol.",
+          "Lancelot lacks follow-up damage after entry."
+        ]
+      }
+    ]
+  }
+]

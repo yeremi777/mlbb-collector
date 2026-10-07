@@ -1,0 +1,157 @@
+[
+  {
+    "anchorHeroId": "aldous",
+    "synergyHeroId": "angela",
+    "reasons": [
+      "Angela can attach to Aldous from anywhere, giving him shield and follow-up support during his global dive.",
+      "Aldous benefits from Angela because his ultimate often places him deep inside enemy formation."
+    ],
+    "synergyTypes": [
+      "shielding",
+      "dive-support",
+      "mobility-enable"
+    ],
+    "proof": [
+      {
+        "id": "angela-heartguard-supports-aldous-dive",
+        "category": "shielding",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Aldous commits to a target with global pressure, while Angela protects and supports the dive with Heartguard.",
+        "worksBestWhen": [
+          "Angela saves Heartguard for Aldous's real engage.",
+          "Aldous chooses an isolated or low-peel target."
+        ],
+        "failureCases": [
+          "Angela's channel is interrupted.",
+          "Aldous dives into multiple enemies without backup.",
+          "Aldous targets a hero with strong defensive response."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "aldous",
+    "synergyHeroId": "floryn",
+    "reasons": [
+      "Floryn's global heal can support Aldous even when he dives far from the rest of the team.",
+      "Aldous benefits from emergency healing because his engage often forces him to absorb retaliation after landing."
+    ],
+    "synergyTypes": [
+      "healing-sustain",
+      "dive-support",
+      "cooldown-dependent"
+    ],
+    "proof": [
+      {
+        "id": "floryn-global-heal-supports-aldous-dive",
+        "category": "healing-sustain",
+        "priority": "primary",
+        "impact": "medium",
+        "summary": "Aldous commits across the map, while Floryn gives global sustain that can keep him alive during the landing fight.",
+        "worksBestWhen": [
+          "Floryn holds Bloom for Aldous's commit or teamfight turn.",
+          "Aldous dives when enemies have already used key burst."
+        ],
+        "failureCases": [
+          "Aldous is chain-controlled before the heal matters.",
+          "Floryn uses Bloom before Aldous commits.",
+          "Aldous dives into anti-heal or heavy burst."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "aldous",
+    "synergyHeroId": "selena",
+    "reasons": [
+      "Selena gives Aldous extra map control through traps and long-range catch pressure.",
+      "Abyssal Arrow can create a safer landing target for Aldous."
+    ],
+    "synergyTypes": [
+      "vision-setup",
+      "pickoff-combo",
+      "cc-chain"
+    ],
+    "proof": [
+      {
+        "id": "selena-vision-sets-aldous-global-pickoff",
+        "category": "vision-setup",
+        "priority": "secondary",
+        "impact": "medium",
+        "summary": "Selena helps identify and control a target path, while Aldous uses that information to choose a safer global commit.",
+        "worksBestWhen": [
+          "Selena prepares traps around the target's escape path.",
+          "Aldous follows a confirmed catch instead of forcing blind engages."
+        ],
+        "failureCases": [
+          "Selena misses arrow and Aldous still commits.",
+          "The enemy groups before Aldous lands.",
+          "The target has defensive tools ready."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "aldous",
+    "synergyHeroId": "kaja",
+    "reasons": [
+      "Kaja can suppress and drag a target, giving Aldous a safer target to finish.",
+      "Aldous adds burst follow-up after Kaja forces a priority enemy out of position."
+    ],
+    "synergyTypes": [
+      "pickoff-combo",
+      "cc-chain",
+      "setup-combo"
+    ],
+    "proof": [
+      {
+        "id": "kaja-suppression-sets-aldous-finish",
+        "category": "pickoff-combo",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Kaja locks the target first, while Aldous uses his burst and chase pressure to complete the pickoff.",
+        "worksBestWhen": [
+          "Kaja catches a priority damage dealer.",
+          "Aldous waits until Kaja confirms the suppression."
+        ],
+        "failureCases": [
+          "Kaja catches a tank.",
+          "Aldous ults before Kaja has a clean target.",
+          "Enemy teammates collapse onto Aldous after landing."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "aldous",
+    "synergyHeroId": "tigreal",
+    "reasons": [
+      "Tigreal can start a fight and force enemy attention before Aldous chooses his dive target.",
+      "Aldous can follow Tigreal's engage by targeting a backline hero during the chaos."
+    ],
+    "synergyTypes": [
+      "frontline-enabler",
+      "engage-follow-up",
+      "teamfight-combo"
+    ],
+    "proof": [
+      {
+        "id": "tigreal-engage-creates-aldous-dive-window",
+        "category": "engage-follow-up",
+        "priority": "secondary",
+        "impact": "medium",
+        "summary": "Tigreal creates the teamfight opening, while Aldous uses the distraction to enter on a vulnerable enemy.",
+        "worksBestWhen": [
+          "Tigreal engages before Aldous reveals his target.",
+          "Aldous chooses a backline target separated from peel."
+        ],
+        "failureCases": [
+          "Aldous dives before Tigreal controls the fight.",
+          "Tigreal's engage misses.",
+          "The enemy saves suppression, knockback, or burst for Aldous's landing."
+        ]
+      }
+    ]
+  }
+]

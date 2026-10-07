@@ -1,0 +1,162 @@
+[
+  {
+    "targetHeroId": "nolan",
+    "counterHeroId": "khufra",
+    "reasons": [
+      "Khufra directly punishes Nolan's dash-based entry and escape pattern.",
+      "Nolan needs clean movement paths to connect rifts, while Khufra can interrupt that rhythm."
+    ],
+    "counterTypes": [
+      "anti-dash",
+      "anti-dive",
+      "crowd-control-counter"
+    ],
+    "proof": [
+      {
+        "id": "khufra-bouncing-ball-vs-nolan-rift-dashes",
+        "category": "skill-interaction",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Nolan relies on dash movement to create and trigger rifts, while Khufra's anti-blink control can punish Nolan when he tries to cross through the fight.",
+        "worksBestWhen": [
+          "Khufra saves Bouncing Ball for Nolan's real engage.",
+          "Khufra positions between Nolan and Nolan's intended target.",
+          "The protected carry stays close enough for Khufra to peel."
+        ],
+        "failureCases": [
+          "Nolan baits Khufra's anti-dash before committing.",
+          "Khufra is forced to engage first and loses peel position.",
+          "Nolan enters from an angle Khufra cannot cover."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "nolan",
+    "counterHeroId": "minsitthar",
+    "reasons": [
+      "Minsitthar's ultimate field can deny directional blink skills, which directly restricts Nolan's mobility inside the fight.",
+      "Nolan becomes much easier to punish when he cannot freely dash through his rift pattern."
+    ],
+    "counterTypes": [
+      "anti-dash",
+      "anti-dive",
+      "teamfight"
+    ],
+    "proof": [
+      {
+        "id": "minsitthar-kings-calling-vs-nolan-mobility",
+        "category": "skill-interaction",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Nolan wants to move through targets with repeated dashes, while Minsitthar can create a zone where directional blink skills are blocked.",
+        "worksBestWhen": [
+          "Minsitthar places King's Calling around Nolan's target or escape route.",
+          "The team follows up before Nolan exits the field.",
+          "Minsitthar waits for Nolan to commit instead of casting too early."
+        ],
+        "failureCases": [
+          "Nolan waits outside the zone and enters after it expires.",
+          "Minsitthar uses ultimate too early on a low-value target.",
+          "Nolan attacks a different backline angle outside the field."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "nolan",
+    "counterHeroId": "franco",
+    "reasons": [
+      "Franco gives a simple answer to Nolan's mobility by catching him with suppression before or after his dash chain.",
+      "Nolan's durability is not the main threat; his movement uptime is, so targeted lock is valuable."
+    ],
+    "counterTypes": [
+      "pickoff",
+      "crowd-control-counter",
+      "cooldown-punish"
+    ],
+    "proof": [
+      {
+        "id": "franco-suppression-vs-nolan-dash-chain",
+        "category": "crowd-control-counter",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Nolan wants fast in-out burst, while Franco can suppress him during a punish window and stop the escape pattern long enough for follow-up.",
+        "worksBestWhen": [
+          "Franco waits for Nolan to spend a dash.",
+          "Franco has nearby burst follow-up.",
+          "Franco controls fog paths that Nolan wants to use."
+        ],
+        "failureCases": [
+          "Franco misses hook and Nolan gets free backline access.",
+          "Nolan enters from fog after Franco has used suppression.",
+          "Franco locks Nolan without enough allied damage to finish him."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "nolan",
+    "counterHeroId": "kaja",
+    "reasons": [
+      "Kaja can punish Nolan with targeted suppression and drag him away from his intended burst route.",
+      "This is reliable when Kaja waits for Nolan's entry instead of chasing him blindly."
+    ],
+    "counterTypes": [
+      "pickoff",
+      "crowd-control-counter",
+      "anti-dive"
+    ],
+    "proof": [
+      {
+        "id": "kaja-divine-judgment-vs-nolan-dive",
+        "category": "crowd-control-counter",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Nolan wants to cross into the backline and leave, while Kaja can lock and reposition him during the dive window.",
+        "worksBestWhen": [
+          "Kaja saves Divine Judgment for Nolan's committed engage.",
+          "The team bursts Nolan during suppression.",
+          "Kaja stands near Nolan's likely target."
+        ],
+        "failureCases": [
+          "Kaja gets poked out before Nolan commits.",
+          "Nolan avoids Kaja's range and attacks a different lane angle.",
+          "Kaja uses suppression before Nolan spends mobility."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "nolan",
+    "counterHeroId": "saber",
+    "reasons": [
+      "Saber can punish Nolan when Nolan has spent mobility tools and has no clean escape route.",
+      "The matchup depends on timing because Nolan can dodge or disengage if Saber commits too early."
+    ],
+    "counterTypes": [
+      "burst",
+      "pickoff",
+      "cooldown-punish"
+    ],
+    "proof": [
+      {
+        "id": "saber-triple-sweep-vs-nolan-cooldown-window",
+        "category": "cooldown-window",
+        "priority": "condition",
+        "impact": "medium",
+        "summary": "Nolan is dangerous while his dash chain is available, but Saber can punish him after a mobility commit with single-target airborne burst.",
+        "worksBestWhen": [
+          "Saber waits for Nolan to use a mobility skill.",
+          "Nolan is isolated from peel.",
+          "Saber has enough burst damage to finish the punish window."
+        ],
+        "failureCases": [
+          "Saber ults while Nolan still has escape tools.",
+          "Nolan invades Saber before Saber reaches burst timing.",
+          "Nolan's team peels during Saber's commit."
+        ]
+      }
+    ]
+  }
+]

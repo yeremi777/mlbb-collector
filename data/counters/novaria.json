@@ -1,0 +1,155 @@
+[
+  {
+    "targetHeroId": "novaria",
+    "counterHeroId": "natalia",
+    "reasons": [
+      "Natalia can punish Novaria's backline positioning from bushes and fog.",
+      "Silence and burst make it harder for Novaria to safely line up long-range shots."
+    ],
+    "counterTypes": [
+      "vision-control",
+      "pickoff",
+      "burst"
+    ],
+    "proof": [
+      {
+        "id": "natalia-camouflage-vs-novaria-long-range-positioning",
+        "category": "vision-awareness",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Novaria wants safe long-range casting angles, while Natalia can approach from camouflage and punish her when she is separated from protection.",
+        "worksBestWhen": [
+          "Natalia controls flank bushes and tracks Novaria's rotations.",
+          "Novaria uses her long-range poke aggressively without nearby peel."
+        ],
+        "failureCases": [
+          "Novaria's team reveals Natalia's route.",
+          "Natalia fails to burst before Novaria escapes through terrain or receives peel."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "novaria",
+    "counterHeroId": "hayabusa",
+    "reasons": [
+      "Hayabusa can reach Novaria despite her long casting range.",
+      "His mobility punishes Novaria when she is aiming from isolated terrain angles."
+    ],
+    "counterTypes": [
+      "mobility",
+      "pickoff",
+      "backline-dive"
+    ],
+    "proof": [
+      {
+        "id": "hayabusa-shadow-dive-vs-novaria-poke-angle",
+        "category": "mobility-advantage",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Novaria wants to cast safely from far away, while Hayabusa can dive through shadows and force her into a close-range survival check.",
+        "worksBestWhen": [
+          "Hayabusa enters after Novaria's key poke skill is used.",
+          "Hayabusa has vision of Novaria's terrain path."
+        ],
+        "failureCases": [
+          "Novaria stays grouped with anti-dive protection.",
+          "Hayabusa's burst spreads onto other targets."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "novaria",
+    "counterHeroId": "harley",
+    "reasons": [
+      "Harley can punish Novaria's long-range casting posture by blinking from fog, applying Deadly Magic, bursting, then returning with Space Escape.",
+      "Compared with Lancelot, Harley gives a cleaner proof because he does not need dash-reset paths through minions or multiple targets to reach Novaria."
+    ],
+    "counterTypes": [
+      "mobility",
+      "burst",
+      "pickoff",
+      "cooldown-punish"
+    ],
+    "proof": [
+      {
+        "id": "harley-deadly-magic-vs-novaria-poke-positioning",
+        "category": "mobility-advantage",
+        "priority": "primary",
+        "impact": "medium",
+        "summary": "Novaria wants to stay far away and aim long-range shots, while Harley can use Space Escape to close the gap, burst her with Deadly Magic and follow-up damage, then return before she can fully reposition.",
+        "worksBestWhen": [
+          "Harley attacks from bush or fog before Novaria has safe terrain spacing.",
+          "Novaria has already used her movement or is aiming aggressively.",
+          "Harley avoids entering through obvious vision paths."
+        ],
+        "failureCases": [
+          "Novaria stays protected behind tanks and vision.",
+          "Harley's Deadly Magic is blocked by another hero.",
+          "Novaria survives the burst and escapes through terrain with team peel."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "novaria",
+    "counterHeroId": "lolita",
+    "reasons": [
+      "Lolita can reduce Novaria's poke value by shielding key projectile paths.",
+      "This matters most when Novaria's team relies on long-range poke before objective fights."
+    ],
+    "counterTypes": [
+      "protect",
+      "anti-projectile",
+      "teamfight"
+    ],
+    "proof": [
+      {
+        "id": "lolita-guardian-bulwark-vs-novaria-poke",
+        "category": "skill-interaction",
+        "priority": "secondary",
+        "impact": "medium",
+        "summary": "Novaria wants to hit long-range projectile-style poke, while Lolita can block ranged attacks and projectiles to protect allies.",
+        "worksBestWhen": [
+          "Lolita faces the direction of Novaria's poke.",
+          "Teammates group behind Lolita during objective setup."
+        ],
+        "failureCases": [
+          "Novaria attacks from fog or a side angle.",
+          "Lolita's shield is baited before the real poke."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "novaria",
+    "counterHeroId": "saber",
+    "reasons": [
+      "Saber can punish Novaria's low durability if he reaches her from fog.",
+      "Novaria is vulnerable when her terrain movement is unavailable or she is aiming instead of repositioning."
+    ],
+    "counterTypes": [
+      "pickoff",
+      "burst",
+      "cooldown-punish"
+    ],
+    "proof": [
+      {
+        "id": "saber-triple-sweep-vs-novaria-aim-window",
+        "category": "cooldown-window",
+        "priority": "condition",
+        "impact": "medium",
+        "summary": "Novaria wants time to aim long-range shots, while Saber can force a sudden airborne burst before she escapes or receives peel.",
+        "worksBestWhen": [
+          "Saber hides until Novaria steps away from protection.",
+          "Saber has enough burst to finish her during Triple Sweep."
+        ],
+        "failureCases": [
+          "Novaria stays behind tanks and vision.",
+          "Saber enters through predictable paths and gets controlled."
+        ]
+      }
+    ]
+  }
+]

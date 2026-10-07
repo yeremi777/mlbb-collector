@@ -1,0 +1,161 @@
+[
+  {
+    "anchorHeroId": "valentina",
+    "synergyHeroId": "atlas",
+    "reasons": [
+      "Atlas creates a grouped teamfight window where Valentina can safely follow with magic damage or a copied ultimate.",
+      "Valentina can use the setup after Atlas commits instead of being the first hero entering."
+    ],
+    "synergyTypes": [
+      "setup-combo",
+      "teamfight-combo",
+      "cc-chain"
+    ],
+    "proof": [
+      {
+        "id": "valentina-follow-up-after-atlas-teamfight-setup",
+        "category": "setup-combo",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Atlas groups enemies with a teamfight engage, while Valentina follows with magic damage, copied-ultimate value, or control follow-up.",
+        "worksBestWhen": [
+          "Atlas engages after Valentina is close enough to follow.",
+          "Valentina has a useful copied ultimate or key cooldowns ready.",
+          "The team is ready to fight around Atlas's pull."
+        ],
+        "failureCases": [
+          "Atlas engages before Valentina can follow.",
+          "Valentina copies a low-value ultimate for the fight.",
+          "Enemy burst forces Valentina away before she can cast."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "valentina",
+    "synergyHeroId": "mathilda",
+    "reasons": [
+      "Mathilda helps Valentina reposition after entering with her dash or after committing to a copied-ultimate play.",
+      "Valentina benefits from Mathilda's shield and movement support because she often needs to step into risky mid-range casting windows."
+    ],
+    "synergyTypes": [
+      "mobility-enable",
+      "shielding",
+      "dive-support"
+    ],
+    "proof": [
+      {
+        "id": "valentina-cast-reset-with-mathilda-guiding-wind",
+        "category": "mobility-enabler",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Mathilda gives Valentina shield, movement speed, and reposition support, helping Valentina enter, follow up, or reset after casting.",
+        "worksBestWhen": [
+          "Mathilda saves Guiding Wind for Valentina's real commit or escape.",
+          "Valentina uses the movement support to cast safely instead of overextending.",
+          "Mathilda stays close enough for Valentina to use the reposition window."
+        ],
+        "failureCases": [
+          "Valentina enters before Mathilda can support.",
+          "Mathilda uses Guiding Wind on another teammate first.",
+          "Enemy hard crowd control locks Valentina before she can reset."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "valentina",
+    "synergyHeroId": "kalea",
+    "reasons": [
+      "Kalea can knock up, grab, or reposition enemies, giving Valentina a controlled follow-up window.",
+      "Valentina can use Kalea's setup to land damage or prepare a copied ultimate with less risk."
+    ],
+    "synergyTypes": [
+      "setup-combo",
+      "cc-chain",
+      "teamfight-combo"
+    ],
+    "proof": [
+      {
+        "id": "valentina-follow-up-after-kalea-forced-position",
+        "category": "setup-combo",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Kalea creates a forced-position or airborne-control window, while Valentina follows with magic damage or copied-ultimate utility.",
+        "worksBestWhen": [
+          "Kalea moves the target toward Valentina's safe casting range.",
+          "Valentina waits for Kalea's confirmed control before using key cooldowns.",
+          "The team follows the same displaced target."
+        ],
+        "failureCases": [
+          "Kalea displaces the target away from Valentina.",
+          "Valentina spends cooldowns before Kalea confirms the setup.",
+          "Enemy peel interrupts Valentina after Kalea commits."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "valentina",
+    "synergyHeroId": "carmilla",
+    "reasons": [
+      "Carmilla's linked-target teamfight pattern increases Valentina's value when enemies are clustered.",
+      "Valentina can layer magic damage or a copied crowd-control ultimate into Carmilla's linked fight."
+    ],
+    "synergyTypes": [
+      "damage-amplification",
+      "teamfight-combo",
+      "cc-chain"
+    ],
+    "proof": [
+      {
+        "id": "valentina-damage-utility-during-carmilla-link",
+        "category": "teamfight-combo",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Carmilla links enemies in a teamfight, while Valentina adds magic damage or copied-ultimate utility into the linked window.",
+        "worksBestWhen": [
+          "Carmilla links multiple enemies before Valentina commits.",
+          "Valentina saves her strongest follow-up for the linked window."
+        ],
+        "failureCases": [
+          "Enemies spread and reduce the linked-target value.",
+          "Valentina copies a low-impact ultimate.",
+          "Carmilla links after Valentina has already spent cooldowns."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "valentina",
+    "synergyHeroId": "franco",
+    "reasons": [
+      "Franco can hook or suppress one target, giving Valentina a safe pickoff follow-up window.",
+      "Valentina can use the confirmed target to cast magic damage, copy a useful ultimate, or help finish the target before the enemy resets."
+    ],
+    "synergyTypes": [
+      "pickoff-combo",
+      "burst-follow-up",
+      "cc-chain"
+    ],
+    "proof": [
+      {
+        "id": "valentina-follow-up-after-franco-pickoff",
+        "category": "pickoff-combo",
+        "priority": "secondary",
+        "impact": "medium",
+        "summary": "Franco confirms one enemy with hook or suppression, while Valentina follows with magic damage or copied-ultimate setup.",
+        "worksBestWhen": [
+          "Franco catches a high-value target near Valentina.",
+          "Valentina keeps key cooldowns ready for the confirmed pick.",
+          "Franco does not isolate a target outside Valentina's range."
+        ],
+        "failureCases": [
+          "Franco catches a tank.",
+          "Valentina is too far away to follow.",
+          "Enemy peel interrupts Valentina's follow-up."
+        ]
+      }
+    ]
+  }
+]

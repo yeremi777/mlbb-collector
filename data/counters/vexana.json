@@ -1,0 +1,152 @@
+[
+  {
+    "targetHeroId": "vexana",
+    "counterHeroId": "diggie",
+    "reasons": [
+      "Diggie reduces Vexana's teamfight control value.",
+      "Time Journey can help allies survive or reset after Vexana's CC setup."
+    ],
+    "counterTypes": [
+      "anti-cc",
+      "cleanse",
+      "protect"
+    ],
+    "proof": [
+      {
+        "id": "diggie-time-journey-vs-vexana-control-combo",
+        "category": "crowd-control-counter",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Vexana wants to start fights with control and delayed AoE follow-up, while Diggie can cleanse and protect nearby allies during the control window.",
+        "worksBestWhen": [
+          "Diggie saves ultimate for Vexana's real CC combo.",
+          "Allies stay close enough to receive protection."
+        ],
+        "failureCases": [
+          "Vexana baits Diggie ultimate with minor control.",
+          "Diggie is caught before the main combo."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "vexana",
+    "counterHeroId": "lancelot",
+    "reasons": [
+      "Lancelot can dodge delayed Vexana skill timing.",
+      "He can punish Vexana's immobility after her control skills are used."
+    ],
+    "counterTypes": [
+      "mobility",
+      "burst",
+      "cooldown-punish"
+    ],
+    "proof": [
+      {
+        "id": "lancelot-immunity-windows-vs-vexana-delayed-skills",
+        "category": "mobility-advantage",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Vexana relies on delayed area control, while Lancelot can use invulnerable or untargetable windows to dodge and then burst her.",
+        "worksBestWhen": [
+          "Lancelot waits for Deathly Grasp or Cursed Blast to be committed.",
+          "Vexana lacks frontline peel."
+        ],
+        "failureCases": [
+          "Lancelot dives into Eternal Guard and enemy follow-up.",
+          "Vexana holds CC until Lancelot's immunity ends."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "vexana",
+    "counterHeroId": "kagura",
+    "reasons": [
+      "Kagura can reposition away from Vexana's delayed AoE and remove debuffs.",
+      "Her umbrella poke lets her pressure Vexana without standing in predictable zones."
+    ],
+    "counterTypes": [
+      "cleanse",
+      "mobility",
+      "poke"
+    ],
+    "proof": [
+      {
+        "id": "kagura-rasho-umbrella-flee-vs-vexana-control-zone",
+        "category": "skill-interaction",
+        "priority": "primary",
+        "impact": "medium",
+        "summary": "Vexana wants to trap enemies in control zones, while Kagura can cleanse, dash, and reposition around delayed skill timing.",
+        "worksBestWhen": [
+          "Kagura keeps mobility for Deathly Grasp or Cursed Blast timing.",
+          "Kagura pokes from angles instead of walking straight into Vexana's zone."
+        ],
+        "failureCases": [
+          "Kagura uses her escape too early.",
+          "Vexana’s frontline forces Kagura into a narrow path."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "vexana",
+    "counterHeroId": "natalia",
+    "reasons": [
+      "Natalia can punish Vexana before Vexana sets up a front-to-back fight.",
+      "Backline pressure forces Vexana to spend skills defensively."
+    ],
+    "counterTypes": [
+      "pickoff",
+      "vision-control",
+      "backline-access"
+    ],
+    "proof": [
+      {
+        "id": "natalia-pickoff-vs-vexana-backline-position",
+        "category": "positioning-requirement",
+        "priority": "condition",
+        "impact": "medium",
+        "summary": "Vexana is strongest when casting safely behind her frontline, while Natalia threatens her isolated rotations and backline position.",
+        "worksBestWhen": [
+          "Natalia attacks from fog before Vexana groups.",
+          "Vexana's control skills are on cooldown or aimed elsewhere."
+        ],
+        "failureCases": [
+          "Vexana stays protected with vision and peel.",
+          "Natalia enters after Eternal Guard and CC are already available."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "vexana",
+    "counterHeroId": "saber",
+    "reasons": [
+      "Saber can remove or force out Vexana before she gets full teamfight value.",
+      "Targeted burst is useful when Vexana is exposed after casting."
+    ],
+    "counterTypes": [
+      "pickoff",
+      "burst",
+      "cooldown-punish"
+    ],
+    "proof": [
+      {
+        "id": "saber-pickoff-vs-vexana-control-setup",
+        "category": "damage-type-advantage",
+        "priority": "secondary",
+        "impact": "medium",
+        "summary": "Vexana wants enough time to layer CC, delayed burst, and summon pressure, while Saber can force a fast single-target pickoff.",
+        "worksBestWhen": [
+          "Saber catches Vexana outside tank cover.",
+          "Saber waits until Vexana's main CC is unavailable."
+        ],
+        "failureCases": [
+          "Vexana has defensive item timing.",
+          "Saber dives into multiple enemies without follow-up."
+        ]
+      }
+    ]
+  }
+]

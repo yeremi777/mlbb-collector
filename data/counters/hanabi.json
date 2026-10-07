@@ -1,0 +1,152 @@
+[
+  {
+    "targetHeroId": "hanabi",
+    "counterHeroId": "esmeralda",
+    "reasons": [
+      "Esmeralda is a strong answer because Hanabi's safety depends heavily on having shield active.",
+      "Removing or pressuring shield value also weakens Hanabi's crowd-control immunity window."
+    ],
+    "counterTypes": [
+      "anti-shield",
+      "sustain",
+      "cooldown-punish"
+    ],
+    "proof": [
+      {
+        "id": "esmeralda-shield-pressure-vs-hanabi-equinox",
+        "category": "skill-interaction",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Hanabi gains control immunity while shielded; Esmeralda can pressure shield-based safety and make Hanabi easier to control or burst.",
+        "worksBestWhen": [
+          "Esmeralda reaches Hanabi before Hanabi free-hits in teamfight.",
+          "Allies follow up once Hanabi's shield window is weakened."
+        ],
+        "failureCases": [
+          "Hanabi stays far behind strong peel.",
+          "Esmeralda dives alone into full enemy formation."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "hanabi",
+    "counterHeroId": "natalia",
+    "reasons": [
+      "Natalia can punish Hanabi before Hanabi gets a safe teamfight position.",
+      "Hanabi is vulnerable if caught without shield or before she can lifesteal through the fight."
+    ],
+    "counterTypes": [
+      "pickoff",
+      "burst",
+      "vision-control"
+    ],
+    "proof": [
+      {
+        "id": "natalia-flank-vs-hanabi-backline-uptime",
+        "category": "positioning-requirement",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Hanabi wants protected backline uptime; Natalia can threaten her from flank vision and force defensive positioning before the fight starts.",
+        "worksBestWhen": [
+          "Natalia tracks Hanabi's shield timing.",
+          "Natalia attacks when Hanabi is separated from tank or support."
+        ],
+        "failureCases": [
+          "Hanabi keeps shield active and stays near peel.",
+          "Natalia reveals too early and loses flank pressure."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "hanabi",
+    "counterHeroId": "lolita",
+    "reasons": [
+      "Lolita can reduce Hanabi's ability to freely damage the backline with ranged attacks.",
+      "She also helps force Hanabi to reposition instead of standing still and bouncing damage through grouped allies."
+    ],
+    "counterTypes": [
+      "protect",
+      "anti-poke",
+      "frontline"
+    ],
+    "proof": [
+      {
+        "id": "lolita-frontline-vs-hanabi-bounce-damage",
+        "category": "teamfight-role-counter",
+        "priority": "primary",
+        "impact": "medium",
+        "summary": "Hanabi wants grouped enemies and repeated ranged uptime; Lolita can protect the team's approach and deny clean firing angles.",
+        "worksBestWhen": [
+          "Lolita faces Hanabi during objective standoffs.",
+          "Teammates avoid stacking too closely behind minion waves."
+        ],
+        "failureCases": [
+          "Hanabi attacks from a side angle.",
+          "Lolita uses shield before Hanabi commits damage."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "hanabi",
+    "counterHeroId": "belerick",
+    "reasons": [
+      "Belerick can punish repeated basic-attack uptime and stand in Hanabi's firing path.",
+      "His frontline presence makes it harder for Hanabi to safely hit priority targets."
+    ],
+    "counterTypes": [
+      "frontline",
+      "anti-basic-attack",
+      "teamfight"
+    ],
+    "proof": [
+      {
+        "id": "belerick-frontline-vs-hanabi-basic-attack-uptime",
+        "category": "teamfight-role-counter",
+        "priority": "secondary",
+        "impact": "medium",
+        "summary": "Hanabi wants repeated backline basic attacks; Belerick can absorb pressure and force Hanabi to spend damage on a durable frontline instead.",
+        "worksBestWhen": [
+          "Belerick stays between Hanabi and the squishy target.",
+          "The team avoids clumping too much for Hanabi's bounce damage."
+        ],
+        "failureCases": [
+          "Hanabi free-farms items and stays outside Belerick's engage range.",
+          "Belerick is kited without follow-up."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "hanabi",
+    "counterHeroId": "pharsa",
+    "reasons": [
+      "Pharsa can outrange Hanabi and punish her immobile teamfight positioning.",
+      "Hanabi wants enemies grouped; Pharsa can force Hanabi's team to split or retreat."
+    ],
+    "counterTypes": [
+      "range-advantage",
+      "poke",
+      "teamfight"
+    ],
+    "proof": [
+      {
+        "id": "pharsa-artillery-vs-hanabi-backline-position",
+        "category": "range-advantage",
+        "priority": "secondary",
+        "impact": "medium",
+        "summary": "Hanabi wants protected basic-attack uptime, while Pharsa can pressure from artillery range before Hanabi can hit back.",
+        "worksBestWhen": [
+          "Pharsa casts from outside Hanabi's attack range.",
+          "The team protects Pharsa from flank divers."
+        ],
+        "failureCases": [
+          "Hanabi's team dives Pharsa before she casts freely.",
+          "Pharsa misses ultimate hits and Hanabi keeps free-hitting."
+        ]
+      }
+    ]
+  }
+]

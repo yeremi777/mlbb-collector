@@ -1,0 +1,157 @@
+[
+  {
+    "anchorHeroId": "lapu-lapu",
+    "synergyHeroId": "angela",
+    "reasons": [
+      "Angela can support Lapu-Lapu's dive timing with shield and healing.",
+      "Lapu-Lapu can stay longer in the enemy backline when Angela attaches during his commit window."
+    ],
+    "synergyTypes": [
+      "dive-support",
+      "shielding",
+      "protect"
+    ],
+    "proof": [
+      {
+        "id": "angela-supports-lapu-lapu-backline-dive",
+        "category": "shielding",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Lapu-Lapu commits into the fight, while Angela increases his survivability during the most dangerous part of the dive.",
+        "worksBestWhen": [
+          "Angela attaches as Lapu-Lapu enters the real fight.",
+          "Lapu-Lapu targets enemy damage dealers, not only the frontline."
+        ],
+        "failureCases": [
+          "Lapu-Lapu dives before Angela is ready.",
+          "The enemy disengages and wastes Angela's timing.",
+          "Lapu-Lapu is controlled before using his main combo."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "lapu-lapu",
+    "synergyHeroId": "floryn",
+    "reasons": [
+      "Floryn's global heal can support Lapu-Lapu when he dives deeper than normal support range.",
+      "Lapu-Lapu benefits from recovery during extended backline or objective fights."
+    ],
+    "synergyTypes": [
+      "healing-sustain",
+      "dive-support",
+      "cooldown-dependent"
+    ],
+    "proof": [
+      {
+        "id": "floryn-global-heal-supports-lapu-lapu-dive",
+        "category": "healing-sustain",
+        "priority": "secondary",
+        "impact": "medium",
+        "summary": "Lapu-Lapu dives into extended fights, while Floryn adds map-wide recovery during his commit window.",
+        "worksBestWhen": [
+          "Lapu-Lapu commits while Bloom is available.",
+          "Floryn times healing after enemy burst starts."
+        ],
+        "failureCases": [
+          "Lapu-Lapu is instantly bursted before the heal.",
+          "Anti-heal reduces the recovery.",
+          "Lapu-Lapu dives after Floryn's ultimate is already used."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "lapu-lapu",
+    "synergyHeroId": "tigreal",
+    "reasons": [
+      "Tigreal can group enemies so Lapu-Lapu can enter with a stronger multi-target fight angle.",
+      "Lapu-Lapu can follow Tigreal's control window with fighter dive and area pressure."
+    ],
+    "synergyTypes": [
+      "engage-follow-up",
+      "teamfight-combo",
+      "aoe-follow-up"
+    ],
+    "proof": [
+      {
+        "id": "lapu-lapu-follows-tigreal-grouped-engage",
+        "category": "engage-follow-up",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Tigreal controls the enemy formation, while Lapu-Lapu follows with fighter dive and area pressure.",
+        "worksBestWhen": [
+          "Lapu-Lapu waits for Tigreal's crowd-control window.",
+          "The team fights around jungle corridors or objectives."
+        ],
+        "failureCases": [
+          "Lapu-Lapu enters before Tigreal's setup.",
+          "Tigreal engages too far away.",
+          "The enemy saves disengage after Lapu-Lapu commits."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "lapu-lapu",
+    "synergyHeroId": "minotaur",
+    "reasons": [
+      "Minotaur can start or stabilize teamfights, giving Lapu-Lapu a safer entry point.",
+      "Lapu-Lapu can follow after Minotaur absorbs pressure or disrupts enemies."
+    ],
+    "synergyTypes": [
+      "frontline-enabler",
+      "cc-chain",
+      "healing-sustain"
+    ],
+    "proof": [
+      {
+        "id": "minotaur-frontline-opens-lapu-lapu-entry",
+        "category": "teamfight-combo",
+        "priority": "secondary",
+        "impact": "medium",
+        "summary": "Minotaur adds frontline control and healing, while Lapu-Lapu follows into the disrupted enemies.",
+        "worksBestWhen": [
+          "Minotaur engages first or absorbs the first enemy cooldowns.",
+          "Lapu-Lapu enters after enemy control tools are used."
+        ],
+        "failureCases": [
+          "Lapu-Lapu dives before Minotaur can help.",
+          "Minotaur's engage misses.",
+          "The fight spreads too wide for both heroes to layer pressure."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "lapu-lapu",
+    "synergyHeroId": "rafaela",
+    "reasons": [
+      "Rafaela's movement speed and healing help Lapu-Lapu reach fights, chase after engage, or disengage after his combo.",
+      "Lapu-Lapu can use Rafaela's support to enter priority targets more reliably."
+    ],
+    "synergyTypes": [
+      "mobility-enable",
+      "healing-sustain",
+      "dive-support"
+    ],
+    "proof": [
+      {
+        "id": "rafaela-enables-lapu-lapu-chase-and-retreat",
+        "category": "mobility-enabler",
+        "priority": "secondary",
+        "impact": "medium",
+        "summary": "Lapu-Lapu benefits from movement and healing support, while Rafaela helps him enter and exit fights more reliably.",
+        "worksBestWhen": [
+          "Rafaela supports Lapu-Lapu before he commits.",
+          "Lapu-Lapu uses the speed window to reach priority targets."
+        ],
+        "failureCases": [
+          "Lapu-Lapu dives out of Rafaela's range.",
+          "The enemy locks him during the engage.",
+          "Rafaela is forced to peel for the backline instead."
+        ]
+      }
+    ]
+  }
+]

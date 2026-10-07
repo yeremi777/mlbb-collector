@@ -1,0 +1,152 @@
+[
+  {
+    "anchorHeroId": "badang",
+    "synergyHeroId": "pharsa",
+    "reasons": [
+      "Badang can pin or trap enemies, giving Pharsa a clearer long-range damage window.",
+      "Pharsa follows Badang's control from safe distance and does not need to stand inside the frontline."
+    ],
+    "synergyTypes": [
+      "engage-follow-up",
+      "aoe-follow-up",
+      "poke-siege"
+    ],
+    "proof": [
+      {
+        "id": "badang-pharsa-wall-trap-artillery-follow-up",
+        "category": "engage-follow-up",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Badang controls enemy movement with wall and knockback pressure, while Pharsa punishes the trapped area from range.",
+        "worksBestWhen": [
+          "Badang traps enemies before Pharsa uses her long-range burst.",
+          "Pharsa positions safely before Badang commits."
+        ],
+        "failureCases": [
+          "Badang fails to create a wall angle.",
+          "Enemies leave the area before Pharsa's follow-up lands."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "badang",
+    "synergyHeroId": "vexana",
+    "reasons": [
+      "Badang can hold enemies in a predictable area, helping Vexana land delayed AoE damage.",
+      "Vexana adds control and summoned pressure after Badang starts the fight."
+    ],
+    "synergyTypes": [
+      "aoe-follow-up",
+      "cc-chain",
+      "teamfight-combo"
+    ],
+    "proof": [
+      {
+        "id": "badang-vexana-wall-trap-delayed-aoe",
+        "category": "teamfight-combo",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Badang traps enemies near a wall or obstacle, while Vexana follows with delayed AoE control and damage.",
+        "worksBestWhen": [
+          "Vexana casts after Badang confirms the target location.",
+          "Badang holds the target inside Vexana's damage area."
+        ],
+        "failureCases": [
+          "Vexana casts before Badang confirms the wall trap.",
+          "Enemies dash out before the delayed damage lands."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "badang",
+    "synergyHeroId": "luo-yi",
+    "reasons": [
+      "Badang's wall pressure can keep enemies close enough for Luo Yi's Yin-Yang Reaction to trigger.",
+      "Luo Yi adds pull, stun, and area pressure on enemies trapped near Badang's wall."
+    ],
+    "synergyTypes": [
+      "setup-combo",
+      "cc-chain",
+      "aoe-follow-up"
+    ],
+    "proof": [
+      {
+        "id": "badang-luo-yi-wall-cluster-reaction",
+        "category": "setup-combo",
+        "priority": "primary",
+        "impact": "medium",
+        "summary": "Badang creates a fixed fight area, while Luo Yi punishes clustered enemies with mark reactions.",
+        "worksBestWhen": [
+          "Badang traps enemies close together.",
+          "Luo Yi prepares opposite marks before or during Badang's wall control."
+        ],
+        "failureCases": [
+          "Enemies are not close enough for Yin-Yang Reaction.",
+          "Luo Yi misses mark timing during Badang's burst window."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "badang",
+    "synergyHeroId": "granger",
+    "reasons": [
+      "Badang's wall and knockback control give Granger easier burst targets.",
+      "Granger can follow from behind Badang with ranged damage after the target is trapped."
+    ],
+    "synergyTypes": [
+      "burst-follow-up",
+      "pickoff-combo",
+      "positioning-dependent"
+    ],
+    "proof": [
+      {
+        "id": "badang-granger-wall-trap-burst-shots",
+        "category": "pickoff-combo",
+        "priority": "primary",
+        "impact": "medium",
+        "summary": "Badang traps or controls the target, while Granger uses the fixed target window to land burst shots.",
+        "worksBestWhen": [
+          "Granger has a clear firing angle behind Badang.",
+          "Badang controls a target Granger can immediately hit."
+        ],
+        "failureCases": [
+          "Enemy frontline blocks Granger's shot angle.",
+          "Badang traps enemies outside Granger's range."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "badang",
+    "synergyHeroId": "kadita",
+    "reasons": [
+      "Badang can force enemies into a wall or fixed area, helping Kadita land her delayed burst combo.",
+      "Kadita gives Badang a strong magic burst follow-up after his control connects."
+    ],
+    "synergyTypes": [
+      "setup-combo",
+      "burst-follow-up",
+      "pickoff-combo"
+    ],
+    "proof": [
+      {
+        "id": "badang-kadita-wall-trap-delayed-burst",
+        "category": "setup-combo",
+        "priority": "primary",
+        "impact": "medium",
+        "summary": "Badang controls the target's position, while Kadita follows with knock-up and burst damage.",
+        "worksBestWhen": [
+          "Badang confirms the wall trap before Kadita commits.",
+          "Kadita enters from fog or side angle after the target is controlled."
+        ],
+        "failureCases": [
+          "Kadita enters before Badang confirms control.",
+          "Enemy defensive cooldowns survive the burst window."
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,162 @@
+[
+  {
+    "anchorHeroId": "saber",
+    "synergyHeroId": "franco",
+    "reasons": [
+      "Franco can isolate a target with Iron Hook or Bloody Hunt, giving Saber a clean burst target.",
+      "Saber can follow Franco's catch with Triple Sweep before the target receives peel."
+    ],
+    "synergyTypes": [
+      "pickoff-combo",
+      "cc-chain",
+      "burst-follow-up"
+    ],
+    "proof": [
+      {
+        "id": "franco-catch-sets-saber-triple-sweep",
+        "category": "pickoff-combo",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Franco creates the single-target catch, while Saber follows with airborne burst to finish the isolated enemy.",
+        "worksBestWhen": [
+          "Franco catches a squishy or priority target.",
+          "Saber is close enough to follow immediately.",
+          "Orbiting Swords and Triple Sweep are ready."
+        ],
+        "failureCases": [
+          "Franco hooks a tank or bait target.",
+          "Saber enters before Franco confirms the catch.",
+          "Enemy peel reaches the target during Saber's commit."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "saber",
+    "synergyHeroId": "kaja",
+    "reasons": [
+      "Kaja can suppress and drag one target into Saber's burst range.",
+      "Saber benefits from the isolation because his damage pattern is strongest against one priority target."
+    ],
+    "synergyTypes": [
+      "setup-combo",
+      "pickoff-combo",
+      "cc-chain"
+    ],
+    "proof": [
+      {
+        "id": "kaja-divine-judgment-delivers-target-to-saber",
+        "category": "setup-combo",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Kaja locks and pulls a priority enemy, creating a controlled single-target window for Saber's Triple Sweep.",
+        "worksBestWhen": [
+          "Kaja catches a backline or fragile target.",
+          "Saber waits for the drag before committing.",
+          "The team collapses on the same target."
+        ],
+        "failureCases": [
+          "Kaja is burst before completing the pick.",
+          "Saber is out of range after the drag.",
+          "Enemy teammates immediately peel after the suppression window."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "saber",
+    "synergyHeroId": "tigreal",
+    "reasons": [
+      "Tigreal can start the fight and hold enemies long enough for Saber to choose a priority target.",
+      "Saber can enter after Tigreal's engage instead of starting the fight alone."
+    ],
+    "synergyTypes": [
+      "engage-follow-up",
+      "cc-chain",
+      "dive-support"
+    ],
+    "proof": [
+      {
+        "id": "tigreal-engage-opens-saber-burst-target",
+        "category": "engage-follow-up",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Tigreal disrupts the enemy formation, and Saber follows on the key target inside the control window.",
+        "worksBestWhen": [
+          "Tigreal catches the backline or forces a carry into range.",
+          "Saber waits until the engage is confirmed.",
+          "The team has damage ready to finish the target."
+        ],
+        "failureCases": [
+          "Saber dives before Tigreal commits.",
+          "Tigreal catches only durable frontline targets.",
+          "Enemy protection blocks Saber after entry."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "saber",
+    "synergyHeroId": "angela",
+    "reasons": [
+      "Angela can shield Saber during his all-in dive on the enemy backline.",
+      "Saber can use the protection window to finish his target and survive the return damage."
+    ],
+    "synergyTypes": [
+      "protect",
+      "shielding",
+      "dive-support"
+    ],
+    "proof": [
+      {
+        "id": "angela-heartguard-protects-saber-dive",
+        "category": "protection",
+        "priority": "secondary",
+        "impact": "medium",
+        "summary": "Saber commits deeply for a pickoff, and Angela can add shield support during that burst window.",
+        "worksBestWhen": [
+          "Angela casts Heartguard as Saber commits.",
+          "Saber targets a squishy hero worth the shield investment.",
+          "Saber has his full burst ready before entering."
+        ],
+        "failureCases": [
+          "Saber enters while Heartguard is unavailable.",
+          "Enemy burst breaks through the shield before Saber finishes.",
+          "Saber targets a durable hero and loses the timing window."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "saber",
+    "synergyHeroId": "nana",
+    "reasons": [
+      "Nana can transform or slow a target, making Saber's approach and Triple Sweep timing easier.",
+      "Saber can convert Nana's control into a fast single-target pickoff."
+    ],
+    "synergyTypes": [
+      "setup-combo",
+      "burst-follow-up",
+      "pickoff-combo"
+    ],
+    "proof": [
+      {
+        "id": "nana-molina-sets-saber-pickoff",
+        "category": "setup-combo",
+        "priority": "secondary",
+        "impact": "high",
+        "summary": "Nana limits a target's movement with Molina, while Saber follows with airborne burst during the control window.",
+        "worksBestWhen": [
+          "Nana's Molina connects with a priority target.",
+          "Saber waits for the transform or slow before entering.",
+          "The target is fragile enough for the burst follow-up."
+        ],
+        "failureCases": [
+          "Molina hits a low-value target.",
+          "Saber enters after Nana's control expires.",
+          "Enemy frontline blocks Saber's path to the target."
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,162 @@
+[
+  {
+    "targetHeroId": "ixia",
+    "counterHeroId": "lolita",
+    "reasons": [
+      "Lolita directly reduces Ixia's main damage pattern because Ixia relies on ranged basic attacks and Full Barrage extends those basic attacks into a fan-shaped teamfight zone.",
+      "Guardian's Bulwark can protect teammates when Lolita faces Ixia's firing direction, making Ixia's ultimate much less reliable when aimed into the shield."
+    ],
+    "counterTypes": [
+      "anti-basic-attack",
+      "protect",
+      "teamfight"
+    ],
+    "proof": [
+      {
+        "id": "lolita-guardians-bulwark-vs-ixia-full-barrage",
+        "category": "skill-interaction",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Ixia wants to hit multiple enemies with ranged basic attacks during Full Barrage, while Lolita can block or reflect incoming projectiles and ranged basic attacks when positioned correctly.",
+        "worksBestWhen": [
+          "Lolita stands between Ixia and the protected teammates.",
+          "Lolita faces the correct direction before Ixia commits Full Barrage.",
+          "The team fights behind Lolita instead of spreading outside her shield angle."
+        ],
+        "failureCases": [
+          "Ixia attacks from a side angle where Guardian's Bulwark is not facing.",
+          "Lolita uses the shield too early and Ixia waits it out.",
+          "Ixia's team forces Lolita to turn away before Full Barrage starts."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "ixia",
+    "counterHeroId": "franco",
+    "reasons": [
+      "Franco can remove Ixia from her safe firing position with hook pressure and suppression if she is caught without protection.",
+      "Ixia depends on safe continuous output, so targeted lock is valuable before she sets up or after she commits a firing angle."
+    ],
+    "counterTypes": [
+      "pickoff",
+      "crowd-control-counter",
+      "cooldown-punish"
+    ],
+    "proof": [
+      {
+        "id": "franco-bloody-hunt-vs-ixia-damage-uptime",
+        "category": "crowd-control-counter",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Ixia depends on safe continuous output, while Franco can force a single-target pickoff window with suppression and punish her lack of mobility.",
+        "worksBestWhen": [
+          "Franco plays from fog and threatens hook angles.",
+          "Ixia is separated from her frontline.",
+          "Franco's team can burst Ixia during suppression."
+        ],
+        "failureCases": [
+          "Ixia's tank blocks hook paths.",
+          "Franco suppresses Ixia while his team cannot follow up.",
+          "Ixia keeps Flicker or peel support available for the pickoff attempt."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "ixia",
+    "counterHeroId": "natalia",
+    "reasons": [
+      "Natalia can pressure Ixia before Ixia sets up Full Barrage, especially from flank or bush angles.",
+      "Smoke Bomb gives Natalia a short window against basic-attack damage, which is useful against a marksman who depends on repeated attacks."
+    ],
+    "counterTypes": [
+      "pickoff",
+      "anti-basic-attack",
+      "burst"
+    ],
+    "proof": [
+      {
+        "id": "natalia-smoke-bomb-vs-ixia-basic-attacks",
+        "category": "skill-interaction",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Ixia wants a stable firing angle, while Natalia can approach from concealment, force a close-range burst window, and use Smoke Bomb to reduce Ixia's basic-attack response.",
+        "worksBestWhen": [
+          "Natalia attacks before Ixia has defensive support nearby.",
+          "Natalia waits for Ixia's Flicker or peel tools to be unavailable.",
+          "Natalia approaches from an untracked flank path."
+        ],
+        "failureCases": [
+          "Ixia stays grouped with tank or support protection.",
+          "Natalia enters from a predictable path and gets revealed or controlled.",
+          "Natalia fails to finish Ixia before the enemy team collapses."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "ixia",
+    "counterHeroId": "kadita",
+    "reasons": [
+      "Kadita can punish Ixia's stationary or committed damage window with fast dive-burst.",
+      "Ixia has strong damage output but limited natural escape, so she is vulnerable when Kadita reaches her backline angle."
+    ],
+    "counterTypes": [
+      "burst",
+      "pickoff",
+      "mobility"
+    ],
+    "proof": [
+      {
+        "id": "kadita-dive-burst-vs-ixia-fixed-angle",
+        "category": "damage-type-advantage",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Ixia wants to stay planted behind her team, while Kadita can bypass the frontline angle and burst her before Ixia fully converts Full Barrage damage.",
+        "worksBestWhen": [
+          "Kadita approaches from fog or side lane vision.",
+          "Ixia has already committed Full Barrage or used Flicker.",
+          "Kadita has enough burst follow-up to finish Ixia quickly."
+        ],
+        "failureCases": [
+          "Kadita engages into full enemy vision.",
+          "Ixia's team holds hard crowd control for Kadita's entry.",
+          "Kadita misses the burst combo and gets punished inside Ixia's team."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "ixia",
+    "counterHeroId": "tigreal",
+    "reasons": [
+      "Tigreal can punish Ixia before she starts Full Barrage or after she has committed to a fixed firing direction.",
+      "Ixia becomes vulnerable when her teamfight position is predictable, allowing Tigreal to force a displacement or engage window around her setup."
+    ],
+    "counterTypes": [
+      "anti-engage",
+      "positioning-punish",
+      "teamfight"
+    ],
+    "proof": [
+      {
+        "id": "tigreal-teamfight-punish-vs-ixia-barrage-position",
+        "category": "positioning-requirement",
+        "priority": "condition",
+        "impact": "medium",
+        "summary": "Ixia becomes immobile during Full Barrage, so Tigreal can punish bad setup positioning, force enemies away from Ixia's firing angle, or engage after she commits; however, he should not be recorded as a direct ultimate cancel unless suppression is involved.",
+        "worksBestWhen": [
+          "Tigreal engages before Ixia enters Barrage state.",
+          "Tigreal catches Ixia after her firing angle is already committed.",
+          "Tigreal uses Flicker or flank positioning to punish Ixia's backline setup."
+        ],
+        "failureCases": [
+          "Tigreal tries to cancel Full Barrage with ordinary crowd control after it starts.",
+          "Ixia's team protects her setup area.",
+          "Tigreal engages from the front while Ixia has a safe firing angle."
+        ]
+      }
+    ]
+  }
+]

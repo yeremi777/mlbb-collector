@@ -1,0 +1,169 @@
+[
+  {
+    "targetHeroId": "marcel",
+    "counterHeroId": "valentina",
+    "reasons": [
+      "Valentina can copy Marcel's Golden Hour, which is Marcel's strongest teamfight identity.",
+      "A stolen Golden Hour lets Valentina's team mirror Marcel's fight-freezing threat instead of only trying to survive it.",
+      "Valentina's counter value depends on targeting Marcel correctly before the decisive objective fight."
+    ],
+    "counterTypes": [
+      "ultimate-copy",
+      "teamfight",
+      "skill-interaction"
+    ],
+    "proof": [
+      {
+        "id": "valentina-i-am-you-vs-marcel-golden-hour",
+        "category": "skill-interaction",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Marcel's Golden Hour is his highest-impact teamfight tool, while Valentina can steal an enemy ultimate and cast it, giving her team access to the same fight-freezing threat when she copies Marcel correctly.",
+        "worksBestWhen": [
+          "Valentina uses careful targeting or hero lock to copy Marcel instead of another enemy.",
+          "Valentina copies Marcel before the decisive objective fight.",
+          "Valentina's team is ready to play around the stolen Golden Hour."
+        ],
+        "failureCases": [
+          "Valentina copies the wrong enemy ultimate.",
+          "Marcel casts Golden Hour first and wins the setup before Valentina can respond.",
+          "Valentina's team does not follow up around the copied Golden Hour."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "marcel",
+    "counterHeroId": "lunox",
+    "reasons": [
+      "Lunox can use Brilliance's untargetable timing to avoid Marcel's Golden Hour freeze window.",
+      "Marcel's strongest threat is area control, and Lunox has a direct survival tool for the key control timing.",
+      "Lunox can punish after Golden Hour is spent if she preserves her defensive timing correctly."
+    ],
+    "counterTypes": [
+      "mobility",
+      "cooldown-punish",
+      "execution-dependent"
+    ],
+    "proof": [
+      {
+        "id": "lunox-brilliance-vs-marcel-golden-hour",
+        "category": "skill-interaction",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Marcel wants Golden Hour to freeze the fight, but Golden Hour does not affect untargetable units, allowing Lunox to use Brilliance to avoid the most important control window when timed correctly.",
+        "worksBestWhen": [
+          "Lunox saves Brilliance for Golden Hour.",
+          "Lunox avoids using her defensive timing too early.",
+          "Lunox has follow-up after Golden Hour ends."
+        ],
+        "failureCases": [
+          "Lunox uses Brilliance before Marcel commits.",
+          "Marcel catches Lunox before she can react.",
+          "Lunox survives the field but is isolated afterward."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "marcel",
+    "counterHeroId": "kaja",
+    "reasons": [
+      "Kaja can punish Marcel before Golden Hour fully controls the fight by using targeted suppression and drag.",
+      "Marcel's Golden Hour setup has timing windows, so Kaja can create a pickoff before Marcel gets ideal area control.",
+      "Kaja is most valuable when he reaches Marcel from vision control or a flank before the objective fight starts."
+    ],
+    "counterTypes": [
+      "pickoff",
+      "crowd-control-counter",
+      "anti-engage"
+    ],
+    "proof": [
+      {
+        "id": "kaja-divine-judgment-vs-marcel-setup",
+        "category": "crowd-control-counter",
+        "priority": "primary",
+        "impact": "medium",
+        "summary": "Marcel wants to set up Golden Hour around a fight area, while Kaja can use targeted suppression and drag to punish Marcel before the field becomes the center of the fight.",
+        "worksBestWhen": [
+          "Kaja catches Marcel before Golden Hour is active.",
+          "Kaja's team has immediate burst follow-up.",
+          "Kaja approaches from vision control or a flank angle."
+        ],
+        "failureCases": [
+          "Marcel casts Golden Hour before Kaja reaches him.",
+          "Kaja is forced to suppress another higher-priority target.",
+          "Marcel positions too far behind his frontline."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "marcel",
+    "counterHeroId": "franco",
+    "reasons": [
+      "Franco can suppress Marcel before Marcel gets full value from Golden Hour setup.",
+      "Marcel is dangerous when he controls the fight area, so Franco's single-target lockdown can create a direct punish window before that setup succeeds.",
+      "Franco works best when his team can immediately burst Marcel during Bloody Hunt."
+    ],
+    "counterTypes": [
+      "pickoff",
+      "crowd-control-counter",
+      "cooldown-punish"
+    ],
+    "proof": [
+      {
+        "id": "franco-bloody-hunt-vs-marcel-setup",
+        "category": "crowd-control-counter",
+        "priority": "primary",
+        "impact": "medium",
+        "summary": "Marcel wants time and positioning to control a fight with Golden Hour, while Franco can suppress Marcel and create a direct pickoff window before Marcel's area-control setup becomes decisive.",
+        "worksBestWhen": [
+          "Franco catches Marcel before Golden Hour is active.",
+          "Franco has nearby burst follow-up during suppression.",
+          "Franco uses hook or vision pressure to force Marcel into a bad position before the objective fight."
+        ],
+        "failureCases": [
+          "Marcel casts Golden Hour before Franco reaches suppression range.",
+          "Franco suppresses another target and leaves Marcel free to control the fight.",
+          "Franco has no follow-up damage after catching Marcel."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "marcel",
+    "counterHeroId": "kadita",
+    "reasons": [
+      "Kadita can use Rough Waves' untargetable timing to avoid Marcel's Golden Hour freeze window when timed correctly.",
+      "Marcel's strongest threat comes from controlling a fight area with Golden Hour; Kadita can punish that setup by entering from fog, avoiding the key control timing, and bursting after the field is committed.",
+      "Kadita's counter value depends on timing and execution, because she must hold her untargetable window for Marcel's ultimate instead of using it too early."
+    ],
+    "counterTypes": [
+      "mobility",
+      "burst",
+      "cooldown-punish",
+      "execution-dependent"
+    ],
+    "proof": [
+      {
+        "id": "kadita-rough-waves-vs-marcel-golden-hour",
+        "category": "skill-interaction",
+        "priority": "primary",
+        "impact": "medium",
+        "summary": "Marcel wants Golden Hour to freeze the fight, but Golden Hour does not affect untargetable units. Kadita can use Rough Waves' untargetable timing to avoid the key freeze window and punish after the field is committed.",
+        "worksBestWhen": [
+          "Kadita holds Rough Waves for Marcel's Golden Hour timing.",
+          "Kadita approaches from flank or fog so Marcel cannot easily pre-zone her.",
+          "Kadita's team can follow up after she survives or dodges the Golden Hour window."
+        ],
+        "failureCases": [
+          "Kadita uses Rough Waves before Marcel commits Golden Hour.",
+          "Marcel catches Kadita before she becomes untargetable.",
+          "Kadita enters without enough burst follow-up and gets punished after her combo.",
+          "Marcel's team saves suppression or hard lockdown for Kadita before she can dive underground."
+        ]
+      }
+    ]
+  }
+]

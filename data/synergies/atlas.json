@@ -1,0 +1,157 @@
+[
+  {
+    "anchorHeroId": "atlas",
+    "synergyHeroId": "pharsa",
+    "reasons": [
+      "Atlas can group enemies, giving Pharsa a clear long-range damage window.",
+      "Pharsa can follow Atlas from safer distance instead of standing inside the engage."
+    ],
+    "synergyTypes": [
+      "engage-follow-up",
+      "aoe-follow-up",
+      "teamfight-combo"
+    ],
+    "proof": [
+      {
+        "id": "atlas-fatal-links-for-pharsa-burst",
+        "category": "engage-follow-up",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Atlas creates the grouped crowd-control setup, while Pharsa punishes the trapped enemies from long range.",
+        "worksBestWhen": [
+          "Atlas waits until Pharsa can follow.",
+          "Pharsa saves damage for Fatal Links instead of spending the burst too early."
+        ],
+        "failureCases": [
+          "Atlas engages before Pharsa is in range.",
+          "The enemy cancels Atlas or avoids the pull.",
+          "Pharsa is forced to reposition during the engage window."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "atlas",
+    "synergyHeroId": "odette",
+    "reasons": [
+      "Atlas's Fatal Links can pull enemies into the grouped position Odette wants for AoE channel damage.",
+      "Odette can convert Atlas's engage into heavy teamfight damage if the enemy cannot interrupt her."
+    ],
+    "synergyTypes": [
+      "setup-combo",
+      "aoe-follow-up",
+      "teamfight-combo"
+    ],
+    "proof": [
+      {
+        "id": "atlas-fatal-links-for-odette-channel",
+        "category": "setup-combo",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Atlas groups enemies first, then Odette channels AoE damage into the grouped targets.",
+        "worksBestWhen": [
+          "Atlas catches multiple enemies.",
+          "Odette casts after enemy interrupts are already used or controlled."
+        ],
+        "failureCases": [
+          "Odette is interrupted immediately.",
+          "Atlas catches only the frontline.",
+          "The enemy spreads out or uses displacement before Odette follows."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "atlas",
+    "synergyHeroId": "claude",
+    "reasons": [
+      "Atlas can group enemies for Claude's AoE teamfight damage window.",
+      "Claude can enter after Atlas has already forced enemy positioning and control responses."
+    ],
+    "synergyTypes": [
+      "engage-follow-up",
+      "aoe-follow-up",
+      "teamfight-combo"
+    ],
+    "proof": [
+      {
+        "id": "atlas-grouped-engage-for-claude-duet",
+        "category": "engage-follow-up",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Atlas creates the grouped engage, while Claude follows into the controlled area for AoE marksman damage.",
+        "worksBestWhen": [
+          "Claude waits for Atlas to commit first.",
+          "Atlas catches priority targets or forces enemy escape skills."
+        ],
+        "failureCases": [
+          "Claude enters before Atlas lands the setup.",
+          "The enemy keeps hard CC for Claude.",
+          "Atlas engages too deep for Claude to safely follow."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "atlas",
+    "synergyHeroId": "luo-yi",
+    "reasons": [
+      "Atlas pulls enemies together, making it easier for Luo Yi to trigger Yin-Yang Reaction.",
+      "Luo Yi adds magic burst and displacement pressure after Atlas starts the fight."
+    ],
+    "synergyTypes": [
+      "cc-chain",
+      "aoe-follow-up",
+      "teamfight-combo"
+    ],
+    "proof": [
+      {
+        "id": "atlas-grouping-for-luo-yi-reaction",
+        "category": "crowd-control-chain",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Atlas groups enemies with Fatal Links, then Luo Yi applies opposite marks to trigger additional AoE control and damage.",
+        "worksBestWhen": [
+          "Luo Yi holds enough charges for Atlas's engage.",
+          "Atlas groups multiple enemies close together."
+        ],
+        "failureCases": [
+          "Luo Yi has no charges.",
+          "Atlas catches only one target.",
+          "The enemy uses immunity or dash tools before Luo Yi's reaction lands."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "atlas",
+    "synergyHeroId": "ixia",
+    "reasons": [
+      "Atlas can hold enemies in a grouped area, giving Ixia a clearer angle for fixed-position teamfight damage.",
+      "Ixia benefits when Atlas forces enemies to stay in front of her damage zone."
+    ],
+    "synergyTypes": [
+      "engage-follow-up",
+      "aoe-follow-up",
+      "positioning-dependent"
+    ],
+    "proof": [
+      {
+        "id": "atlas-control-for-ixia-barrage-angle",
+        "category": "positioning-requirement",
+        "priority": "condition",
+        "impact": "medium",
+        "summary": "Atlas creates the control window, while Ixia follows if her firing angle is already prepared.",
+        "worksBestWhen": [
+          "Ixia is positioned before Atlas commits.",
+          "Atlas pulls enemies into Ixia's damage line rather than away from it."
+        ],
+        "failureCases": [
+          "Atlas engages behind terrain or outside Ixia's angle.",
+          "Ixia is forced to move and loses the damage window.",
+          "The enemy dives Ixia before the setup completes."
+        ]
+      }
+    ]
+  }
+]

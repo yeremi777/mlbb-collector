@@ -1,0 +1,157 @@
+[
+  {
+    "targetHeroId": "luo-yi",
+    "counterHeroId": "diggie",
+    "reasons": [
+      "Diggie reduces Luo Yi's group-control payoff when she lands a multi-target reaction.",
+      "Luo Yi is strongest when allies are pulled or displaced together; Diggie makes that burst-control window less reliable."
+    ],
+    "counterTypes": [
+      "anti-cc",
+      "cleanse",
+      "teamfight"
+    ],
+    "proof": [
+      {
+        "id": "diggie-time-journey-vs-luo-yi-reaction-control",
+        "category": "skill-interaction",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Luo Yi wants grouped enemies to suffer Yin-Yang reaction control, while Diggie can protect nearby allies during the key CC window.",
+        "worksBestWhen": [
+          "Diggie saves ultimate for Luo Yi's real combo.",
+          "Allies avoid stacking before Diggie is ready."
+        ],
+        "failureCases": [
+          "Luo Yi baits Diggie's ultimate with poke.",
+          "Diggie is caught first.",
+          "Luo Yi's team uses Diversion to attack from an unexpected angle."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "luo-yi",
+    "counterHeroId": "kagura",
+    "reasons": [
+      "Kagura can remove debuffs and dash, making it harder for Luo Yi to complete the reaction setup.",
+      "Kagura also threatens Luo Yi from mage range without needing to stand grouped with teammates."
+    ],
+    "counterTypes": [
+      "cleanse",
+      "mobility",
+      "burst"
+    ],
+    "proof": [
+      {
+        "id": "kagura-cleanse-vs-luo-yi-yin-yang-reaction",
+        "category": "crowd-control-counter",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Luo Yi wants to mark and pull enemies through Yin-Yang reactions, while Kagura can remove debuffs, dash away, and reposition with her umbrella.",
+        "worksBestWhen": [
+          "Kagura saves Rasho Umbrella Flee for the real mark/control threat.",
+          "Kagura keeps enough distance to avoid being grouped with allies."
+        ],
+        "failureCases": [
+          "Kagura uses cleanse too early.",
+          "Luo Yi catches Kagura without umbrella positioning.",
+          "Luo Yi's team teleports behind Kagura with Diversion."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "luo-yi",
+    "counterHeroId": "natalia",
+    "reasons": [
+      "Luo Yi is vulnerable to ambush because she depends on positioning and setup time.",
+      "Natalia can silence and burst Luo Yi before she freely cycles marks."
+    ],
+    "counterTypes": [
+      "pickoff",
+      "vision-control",
+      "burst"
+    ],
+    "proof": [
+      {
+        "id": "natalia-camouflage-vs-luo-yi-setup-mage",
+        "category": "vision-awareness",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Luo Yi wants to stand at safe mage range and set up reactions, while Natalia can threaten her from camouflage and break her casting rhythm with silence.",
+        "worksBestWhen": [
+          "Natalia attacks before Luo Yi's team groups around her.",
+          "Natalia tracks Luo Yi's rotation paths and bush control."
+        ],
+        "failureCases": [
+          "Luo Yi stays behind tank vision.",
+          "Natalia walks into pre-placed zoning.",
+          "Luo Yi's teammates collapse on Natalia after reveal."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "luo-yi",
+    "counterHeroId": "lancelot",
+    "reasons": [
+      "Lancelot can dodge or bypass Luo Yi's skill zones and directly threaten her backline position.",
+      "Luo Yi is punishable after she uses skill charges or misses the reaction setup."
+    ],
+    "counterTypes": [
+      "mobility",
+      "burst",
+      "cooldown-punish"
+    ],
+    "proof": [
+      {
+        "id": "lancelot-dash-window-vs-luo-yi-reaction-zone",
+        "category": "mobility-advantage",
+        "priority": "secondary",
+        "impact": "medium",
+        "summary": "Luo Yi wants enemies to be predictable and grouped, while Lancelot can dash through angles and use invulnerability timing to punish her cooldown windows.",
+        "worksBestWhen": [
+          "Lancelot enters after Luo Yi spends Dispersion charges.",
+          "Luo Yi is separated from hard peel."
+        ],
+        "failureCases": [
+          "Lancelot dashes into grouped reaction zones.",
+          "Luo Yi's team layers CC after his invulnerability ends.",
+          "Lancelot lacks reset paths."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "luo-yi",
+    "counterHeroId": "yve",
+    "reasons": [
+      "Yve can contest Luo Yi from long range and force spacing discipline through zoning.",
+      "Her slows and battlefield control reduce Luo Yi's ability to freely walk into reaction range."
+    ],
+    "counterTypes": [
+      "range-advantage",
+      "zoning",
+      "teamfight"
+    ],
+    "proof": [
+      {
+        "id": "yve-zoning-vs-luo-yi-reaction-range",
+        "category": "range-advantage",
+        "priority": "secondary",
+        "impact": "medium",
+        "summary": "Luo Yi wants enemies close enough for repeated mark reactions, while Yve can zone from range and slow approach paths.",
+        "worksBestWhen": [
+          "Yve positions outside Luo Yi's reaction range.",
+          "The team spreads instead of stacking inside Luo Yi's combo area."
+        ],
+        "failureCases": [
+          "Luo Yi's team uses Diversion to flank Yve.",
+          "Yve is caught while channeling or overextended.",
+          "Luo Yi lands marks on grouped allies before Yve controls space."
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,157 @@
+[
+  {
+    "targetHeroId": "vale",
+    "counterHeroId": "hayabusa",
+    "reasons": [
+      "Hayabusa can punish Vale when Vale is isolated or after Vale uses Windblow.",
+      "Shadow mobility makes Vale's aimed combo harder to land cleanly."
+    ],
+    "counterTypes": [
+      "mobility",
+      "burst",
+      "cooldown-punish"
+    ],
+    "proof": [
+      {
+        "id": "hayabusa-shadow-kill-vs-vale-windblow-cooldown",
+        "category": "cooldown-window",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Vale depends on landing skillshot control and burst timing, while Hayabusa can wait for the key control spell and burst Vale during cooldown.",
+        "worksBestWhen": [
+          "Hayabusa attacks after Vale uses Windblow.",
+          "Vale is isolated from teammates or minions."
+        ],
+        "failureCases": [
+          "Vale keeps crowd control ready.",
+          "Hayabusa dives into grouped enemies.",
+          "Vale's team peels Hayabusa before he finishes."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "vale",
+    "counterHeroId": "harley",
+    "reasons": [
+      "Harley can blink in with Space Escape, apply burst, and return before Vale fully answers.",
+      "Vale is vulnerable when Harley attacks from fog or after Vale uses Windblow."
+    ],
+    "counterTypes": [
+      "burst",
+      "mobility",
+      "cooldown-punish"
+    ],
+    "proof": [
+      {
+        "id": "harley-space-escape-burst-vs-vale-cast-spacing",
+        "category": "mobility-advantage",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Vale wants controlled spacing to land wind combo, while Harley can quickly enter with Space Escape, burst with Deadly Magic and Poker Trick, and retreat to his hat.",
+        "worksBestWhen": [
+          "Harley initiates from bush or fog.",
+          "Harley waits until Vale's control skill is unavailable."
+        ],
+        "failureCases": [
+          "Vale holds Windblow and catches Harley's entry.",
+          "Harley's burst is blocked or absorbed by a tanky teammate.",
+          "Harley fails to burst Vale before returning."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "vale",
+    "counterHeroId": "lancelot",
+    "reasons": [
+      "Lancelot can dodge or bypass Vale's area timing.",
+      "Vale is punishable if Lancelot reaches him after his control spell is used."
+    ],
+    "counterTypes": [
+      "mobility",
+      "burst",
+      "cooldown-punish"
+    ],
+    "proof": [
+      {
+        "id": "lancelot-invulnerability-window-vs-vale-wind-combo",
+        "category": "mobility-advantage",
+        "priority": "primary",
+        "impact": "medium",
+        "summary": "Vale wants to catch enemies with wind control, while Lancelot can use mobility and invulnerability windows to bypass the setup and punish cooldowns.",
+        "worksBestWhen": [
+          "Lancelot waits for Vale to use Windblow.",
+          "Lancelot has minions or nearby targets for dash extension."
+        ],
+        "failureCases": [
+          "Lancelot dives without escape path.",
+          "Vale saves crowd control for Lancelot.",
+          "Vale positions too far behind frontline."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "vale",
+    "counterHeroId": "natalia",
+    "reasons": [
+      "Natalia can still punish Vale from hidden angles.",
+      "The matchup is conditional because Vale can burst or control Natalia if his full combo is ready."
+    ],
+    "counterTypes": [
+      "pickoff",
+      "mobility",
+      "backline-pressure"
+    ],
+    "proof": [
+      {
+        "id": "natalia-flank-vs-vale-skill-ready-condition",
+        "category": "positioning-requirement",
+        "priority": "primary",
+        "impact": "medium",
+        "summary": "Vale wants safe space to aim his combo, while Natalia pressures him from hidden angles; this works best when Vale's control skill is unavailable or he is isolated.",
+        "worksBestWhen": [
+          "Natalia tracks Vale's spell usage.",
+          "Natalia attacks from side bush or fog."
+        ],
+        "failureCases": [
+          "Vale keeps full combo ready.",
+          "Natalia is revealed before entry.",
+          "Vale stays behind tank peel."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "vale",
+    "counterHeroId": "chou",
+    "reasons": [
+      "Chou can use Shunpo timing to approach and kick Vale out of position.",
+      "This gives a fighter-style answer when the team needs pickoff instead of pure assassin burst."
+    ],
+    "counterTypes": [
+      "pickoff",
+      "control-immunity",
+      "displacement"
+    ],
+    "proof": [
+      {
+        "id": "chou-shunpo-kick-vs-vale-backline-casting",
+        "category": "skill-interaction",
+        "priority": "secondary",
+        "impact": "medium",
+        "summary": "Vale wants to cast from safe distance, while Chou can time immunity, close distance, and displace Vale into allied follow-up.",
+        "worksBestWhen": [
+          "Chou approaches from flank.",
+          "Chou saves Shunpo for Vale's crowd-control timing."
+        ],
+        "failureCases": [
+          "Vale catches Chou before Shunpo.",
+          "Chou kicks Vale away from allied damage.",
+          "Chou cannot reach Vale through peel."
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,157 @@
+[
+  {
+    "anchorHeroId": "natan",
+    "synergyHeroId": "tigreal",
+    "reasons": [
+      "Tigreal can start fights and hold enemies in place for Natan's ranged follow-up damage.",
+      "Natan benefits from a durable frontline that gives him time to maintain damage output."
+    ],
+    "synergyTypes": [
+      "engage-follow-up",
+      "teamfight-combo",
+      "frontline-enabler"
+    ],
+    "proof": [
+      {
+        "id": "natan-ranged-damage-after-tigreal-engage",
+        "category": "engage-follow-up",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Tigreal creates the engage window, while Natan follows with ranged damage from behind the frontline.",
+        "worksBestWhen": [
+          "Tigreal engages after Natan is in safe follow-up range.",
+          "Natan keeps distance instead of walking into the first crowd-control zone."
+        ],
+        "failureCases": [
+          "Tigreal engages too far forward.",
+          "Natan is flanked before he can deal damage.",
+          "Enemy assassins bypass Tigreal."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "natan",
+    "synergyHeroId": "atlas",
+    "reasons": [
+      "Atlas can group enemies, giving Natan a clear teamfight damage window.",
+      "Natan's ranged output benefits when enemies are controlled instead of free to dive him."
+    ],
+    "synergyTypes": [
+      "setup-combo",
+      "aoe-follow-up",
+      "teamfight-combo"
+    ],
+    "proof": [
+      {
+        "id": "natan-teamfight-damage-after-atlas-setup",
+        "category": "setup-combo",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Atlas groups enemies, and Natan uses the setup to apply ranged damage while staying behind the frontline.",
+        "worksBestWhen": [
+          "Atlas engages within Natan's damage range.",
+          "Natan positions safely before Atlas commits."
+        ],
+        "failureCases": [
+          "Atlas catches targets outside Natan's angle.",
+          "Natan is forced to retreat instead of follow up.",
+          "The enemy spreads before the setup lands."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "natan",
+    "synergyHeroId": "lolita",
+    "reasons": [
+      "Lolita gives Natan safer backline structure against poke and direct engage.",
+      "Natan benefits from peel because his damage depends on staying alive and positioned."
+    ],
+    "synergyTypes": [
+      "backline-protection",
+      "peel",
+      "frontline-enabler"
+    ],
+    "proof": [
+      {
+        "id": "natan-backline-protection-with-lolita",
+        "category": "protection",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Lolita protects the backline, giving Natan more time to maintain ranged damage output.",
+        "worksBestWhen": [
+          "Lolita stays close enough to protect Natan.",
+          "Natan respects the protected zone instead of stepping too far forward."
+        ],
+        "failureCases": [
+          "Lolita engages away from Natan.",
+          "Enemy flankers attack from outside Lolita's coverage.",
+          "Natan mispositions before peel is available."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "natan",
+    "synergyHeroId": "rafaela",
+    "reasons": [
+      "Rafaela's movement speed helps Natan kite, chase, or reset spacing.",
+      "Her healing supports Natan through extended fights where he needs damage uptime."
+    ],
+    "synergyTypes": [
+      "mobility-enable",
+      "healing-sustain",
+      "peel"
+    ],
+    "proof": [
+      {
+        "id": "natan-kiting-support-with-rafaela",
+        "category": "mobility-enabler",
+        "priority": "secondary",
+        "impact": "medium",
+        "summary": "Rafaela gives Natan movement and sustain, helping him keep distance while continuing damage.",
+        "worksBestWhen": [
+          "Rafaela stays near Natan during skirmishes.",
+          "Natan uses the speed boost to kite safely."
+        ],
+        "failureCases": [
+          "Natan is burst before healing matters.",
+          "Rafaela is picked off first.",
+          "Enemy hard crowd control locks Natan despite the movement support."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "natan",
+    "synergyHeroId": "mathilda",
+    "reasons": [
+      "Mathilda gives Natan an extra repositioning option when enemies dive him.",
+      "Her shield supports Natan during the first pressure window of a fight."
+    ],
+    "synergyTypes": [
+      "mobility-enable",
+      "shielding",
+      "backline-protection"
+    ],
+    "proof": [
+      {
+        "id": "natan-reposition-with-mathilda-guiding-wind",
+        "category": "protection",
+        "priority": "secondary",
+        "impact": "medium",
+        "summary": "Mathilda helps Natan survive and reposition, improving his chance to maintain damage uptime.",
+        "worksBestWhen": [
+          "Mathilda saves Guiding Wind for dive or reset moments.",
+          "Natan stays close enough to use the movement support."
+        ],
+        "failureCases": [
+          "Natan stands too far from Mathilda.",
+          "Mathilda uses Guiding Wind before the real dive.",
+          "Enemy burst kills Natan before he can reposition."
+        ]
+      }
+    ]
+  }
+]

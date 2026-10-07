@@ -1,0 +1,157 @@
+[
+  {
+    "targetHeroId": "balmond",
+    "counterHeroId": "karrie",
+    "reasons": [
+      "Karrie's repeated Max HP-based true damage can melt Balmond's tanky build."
+    ],
+    "counterTypes": [
+      "true-damage",
+      "max-hp-damage",
+      "tank-shred"
+    ],
+    "proof": [
+      {
+        "id": "karrie-true-damage-vs-balmond-durability",
+        "category": "damage-type-advantage",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Balmond often builds HP and defense, while Karrie deals repeated Max HP-based true damage that remains effective into tanky targets.",
+        "worksBestWhen": [
+          "Karrie has attack-speed and on-hit core items.",
+          "Karrie can attack safely from the backline.",
+          "Balmond is forced to walk forward into Karrie's DPS."
+        ],
+        "failureCases": [
+          "Balmond reaches Karrie before she can deal damage.",
+          "Karrie is behind in items.",
+          "Karrie has no frontline protection."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "balmond",
+    "counterHeroId": "dyrroth",
+    "reasons": [
+      "Dyrroth can reduce Balmond's Physical Defense and burst him before Balmond gets full sustain value."
+    ],
+    "counterTypes": [
+      "defense-reduction",
+      "burst",
+      "lane-pressure"
+    ],
+    "proof": [
+      {
+        "id": "dyrroth-defense-reduction-vs-balmond-sustain",
+        "category": "skill-interaction",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Balmond relies on durability and sustain in close fights, while Dyrroth can reduce Physical Defense and burst him before the fight extends.",
+        "worksBestWhen": [
+          "Dyrroth hits his enhanced Skill 2.",
+          "Dyrroth fights Balmond before Balmond becomes too tanky.",
+          "Dyrroth has damage or penetration items."
+        ],
+        "failureCases": [
+          "Dyrroth misses Skill 2.",
+          "Balmond survives the burst and keeps spinning.",
+          "Dyrroth stays too low for Balmond's execute."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "balmond",
+    "counterHeroId": "lunox",
+    "reasons": [
+      "Lunox can punish Balmond's tank build with high magic penetration and burst."
+    ],
+    "counterTypes": [
+      "penetration",
+      "burst",
+      "anti-durable"
+    ],
+    "proof": [
+      {
+        "id": "lunox-chaos-burst-vs-balmond-tank-build",
+        "category": "damage-type-advantage",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Balmond becomes durable through HP and defense, while Lunox can use magic penetration and burst to pressure durable heroes.",
+        "worksBestWhen": [
+          "Lunox has magic penetration or damage items.",
+          "Balmond commits forward and cannot escape.",
+          "Lunox keeps distance before bursting."
+        ],
+        "failureCases": [
+          "Balmond catches Lunox after her escape is used.",
+          "Lunox is underfarmed.",
+          "Balmond's team controls Lunox first."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "balmond",
+    "counterHeroId": "valir",
+    "reasons": [
+      "Valir can slow, push, and kite Balmond before Balmond gets extended close-range value."
+    ],
+    "counterTypes": [
+      "kiting",
+      "disengage",
+      "anti-melee"
+    ],
+    "proof": [
+      {
+        "id": "valir-kite-vs-balmond-close-range",
+        "category": "kiting",
+        "priority": "primary",
+        "impact": "medium",
+        "summary": "Balmond needs to stay close and spin through fights, while Valir can slow, push, and kite him away from valuable targets.",
+        "worksBestWhen": [
+          "Valir saves knockback for Balmond's engage.",
+          "Valir keeps spacing.",
+          "Balmond is forced to chase through slows."
+        ],
+        "failureCases": [
+          "Balmond flanks Valir.",
+          "Valir wastes knockback early.",
+          "Balmond has speed or engage support."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "balmond",
+    "counterHeroId": "x.borg",
+    "reasons": [
+      "X.Borg can poke Balmond from safer range and pressure his durability with true damage."
+    ],
+    "counterTypes": [
+      "true-damage",
+      "poke",
+      "anti-frontline"
+    ],
+    "proof": [
+      {
+        "id": "x-borg-poke-true-damage-vs-balmond-frontline",
+        "category": "damage-type-advantage",
+        "priority": "primary",
+        "impact": "medium",
+        "summary": "Balmond wants durable close-range fights, while X.Borg can poke from safer range and add true damage after heating enemies.",
+        "worksBestWhen": [
+          "X.Borg keeps distance.",
+          "Balmond is forced to walk through poke.",
+          "X.Borg has items and armor state available."
+        ],
+        "failureCases": [
+          "X.Borg loses armor form too early.",
+          "Balmond closes the gap.",
+          "Balmond has strong follow-up from teammates."
+        ]
+      }
+    ]
+  }
+]

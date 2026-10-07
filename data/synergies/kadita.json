@@ -1,0 +1,152 @@
+[
+  {
+    "anchorHeroId": "kadita",
+    "synergyHeroId": "johnson",
+    "reasons": [
+      "Johnson delivers Kadita directly into a stun engage.",
+      "Kadita can immediately follow Johnson's crash with knock-up and burst."
+    ],
+    "synergyTypes": [
+      "mobility-enable",
+      "setup-combo",
+      "burst-follow-up"
+    ],
+    "proof": [
+      {
+        "id": "kadita-johnson-rapid-touchdown-delivery",
+        "category": "mobility-enabler",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Johnson solves Kadita's delivery problem by bringing her into close range with a stun setup.",
+        "worksBestWhen": [
+          "Kadita rides with Johnson and prepares her combo before impact.",
+          "Johnson crashes into a priority target or grouped enemies."
+        ],
+        "failureCases": [
+          "Johnson misses the crash.",
+          "Enemy vision reads the engage path early."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "kadita",
+    "synergyHeroId": "atlas",
+    "reasons": [
+      "Atlas can group enemies with Fatal Links, giving Kadita a strong AoE burst target.",
+      "Kadita's combo becomes more reliable when enemies are pulled into one area."
+    ],
+    "synergyTypes": [
+      "setup-combo",
+      "aoe-follow-up",
+      "teamfight-combo"
+    ],
+    "proof": [
+      {
+        "id": "kadita-atlas-fatal-links-burst-setup",
+        "category": "setup-combo",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Atlas groups enemies, while Kadita follows with knock-up and burst into the clustered target area.",
+        "worksBestWhen": [
+          "Kadita waits for Atlas to finish the pull.",
+          "Atlas catches priority targets instead of only tanks."
+        ],
+        "failureCases": [
+          "Atlas engages outside Kadita's range.",
+          "Kadita enters before Atlas confirms the setup."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "kadita",
+    "synergyHeroId": "tigreal",
+    "reasons": [
+      "Tigreal can pull and stun grouped enemies, giving Kadita a clean follow-up window.",
+      "Kadita can use Tigreal's hard engage to land her delayed control more reliably."
+    ],
+    "synergyTypes": [
+      "engage-follow-up",
+      "aoe-follow-up",
+      "teamfight-combo"
+    ],
+    "proof": [
+      {
+        "id": "kadita-tigreal-implosion-burst-follow-up",
+        "category": "engage-follow-up",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Tigreal creates the crowd-control opening, while Kadita turns that opening into burst damage.",
+        "worksBestWhen": [
+          "Tigreal engages after Kadita is close enough to follow.",
+          "Kadita waits for the stun window before committing her full combo."
+        ],
+        "failureCases": [
+          "Tigreal engages too far away from Kadita.",
+          "Enemy defensive skills are available after Tigreal's control ends."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "kadita",
+    "synergyHeroId": "franco",
+    "reasons": [
+      "Franco's suppression gives Kadita a fixed target for her burst combo.",
+      "Franco can create pickoff windows where Kadita does not need to rely only on her own delayed setup."
+    ],
+    "synergyTypes": [
+      "pickoff-combo",
+      "setup-combo",
+      "burst-follow-up"
+    ],
+    "proof": [
+      {
+        "id": "kadita-franco-bloody-hunt-fixed-target",
+        "category": "pickoff-combo",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Franco locks a target with suppression, while Kadita follows with knock-up and burst before the target can freely reposition.",
+        "worksBestWhen": [
+          "Franco suppresses a fragile or high-value target.",
+          "Kadita is already close enough to follow the suppression window."
+        ],
+        "failureCases": [
+          "Franco catches a tank or low-value target.",
+          "Kadita is too far away when Franco starts Bloody Hunt."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "kadita",
+    "synergyHeroId": "kaja",
+    "reasons": [
+      "Kaja can suppress and drag a priority target into Kadita's range.",
+      "Kadita benefits from Kaja forcing the enemy into a predictable path before her burst combo."
+    ],
+    "synergyTypes": [
+      "pickoff-combo",
+      "setup-combo",
+      "burst-follow-up"
+    ],
+    "proof": [
+      {
+        "id": "kadita-kaja-divine-judgment-drag-burst",
+        "category": "pickoff-combo",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Kaja isolates the target with suppression and drag, while Kadita supplies the burst needed to finish the pickoff.",
+        "worksBestWhen": [
+          "Kaja suppresses a fragile or high-value target.",
+          "Kadita waits until Kaja confirms the drag direction."
+        ],
+        "failureCases": [
+          "Kaja catches the wrong target.",
+          "Kadita commits before the target position is confirmed."
+        ]
+      }
+    ]
+  }
+]

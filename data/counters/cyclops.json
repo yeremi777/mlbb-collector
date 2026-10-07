@@ -1,0 +1,152 @@
+[
+  {
+    "targetHeroId": "cyclops",
+    "counterHeroId": "kagura",
+    "reasons": [
+      "Kagura can remove debuffs and reposition, making Cyclops's single-target lock less reliable.",
+      "Her umbrella range lets her punish Cyclops without always staying inside his best close-range skill zone."
+    ],
+    "counterTypes": [
+      "cleanse",
+      "mobility",
+      "burst"
+    ],
+    "proof": [
+      {
+        "id": "kagura-rasho-umbrella-flee-vs-cyclops-lockdown",
+        "category": "skill-interaction",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Cyclops wants to lock and chase a target, while Kagura can cleanse debuffs, dash, and reset spacing before counter-poking.",
+        "worksBestWhen": [
+          "Kagura keeps Rasho Umbrella Flee available for Cyclops's lockdown timing.",
+          "Kagura pokes before Cyclops gets close enough for repeated skill hits."
+        ],
+        "failureCases": [
+          "Kagura uses her cleanse early.",
+          "Cyclops catches Kagura after her umbrella mobility is unavailable."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "cyclops",
+    "counterHeroId": "lancelot",
+    "reasons": [
+      "Lancelot can use invulnerable or untargetable windows to dodge Cyclops's important skill timing.",
+      "He can punish Cyclops's short effective range with burst after cooldowns are committed."
+    ],
+    "counterTypes": [
+      "mobility",
+      "cooldown-punish",
+      "burst"
+    ],
+    "proof": [
+      {
+        "id": "lancelot-immunity-windows-vs-cyclops-skill-cycle",
+        "category": "mobility-advantage",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Cyclops needs skill hits to maintain tempo, while Lancelot can dodge through key windows and burst Cyclops before the sustained cycle wins.",
+        "worksBestWhen": [
+          "Lancelot times Thorned Rose or Phantom Execution into Cyclops's lockdown or burst window.",
+          "Lancelot engages after Cyclops spends Planets Attack or ultimate."
+        ],
+        "failureCases": [
+          "Lancelot mistimes immunity and gets immobilized.",
+          "Cyclops stays protected behind tank control."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "cyclops",
+    "counterHeroId": "saber",
+    "reasons": [
+      "Saber can punish Cyclops before Cyclops gets repeated skill rotations.",
+      "Targeted airborne burst is effective when Cyclops is isolated or lacks defensive item timing."
+    ],
+    "counterTypes": [
+      "pickoff",
+      "burst",
+      "cooldown-punish"
+    ],
+    "proof": [
+      {
+        "id": "saber-triple-sweep-vs-cyclops-sustained-chase",
+        "category": "skill-interaction",
+        "priority": "primary",
+        "impact": "medium",
+        "summary": "Cyclops wants a longer chase where cooldown reduction matters, while Saber compresses the fight into a single burst window.",
+        "worksBestWhen": [
+          "Saber catches Cyclops away from tank peel.",
+          "Saber has enough burst to finish before Cyclops can sustain or kite."
+        ],
+        "failureCases": [
+          "Cyclops survives the initial burst.",
+          "Saber dives while Cyclops's team is ready to counter-engage."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "cyclops",
+    "counterHeroId": "lolita",
+    "reasons": [
+      "Lolita can protect teammates from part of Cyclops's projectile pressure.",
+      "She gives the team a safer formation against Cyclops's chase attempts."
+    ],
+    "counterTypes": [
+      "protect",
+      "anti-projectile",
+      "teamfight"
+    ],
+    "proof": [
+      {
+        "id": "lolita-guardian-bulwark-vs-cyclops-projectiles",
+        "category": "skill-interaction",
+        "priority": "secondary",
+        "impact": "medium",
+        "summary": "Cyclops relies on skill pressure to start cooldown cycling, while Lolita can shield allies from ranged projectile pressure and disrupt his clean target access.",
+        "worksBestWhen": [
+          "Lolita positions between Cyclops and the target he wants to chase.",
+          "The team respects Lolita's shield angle."
+        ],
+        "failureCases": [
+          "Cyclops attacks from a flank.",
+          "Cyclops waits out the shield before using lockdown."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "cyclops",
+    "counterHeroId": "natalia",
+    "reasons": [
+      "Natalia can pressure Cyclops before he joins a fight.",
+      "Her threat forces Cyclops to play closer to teammates, reducing his freedom to chase."
+    ],
+    "counterTypes": [
+      "pickoff",
+      "vision-control",
+      "burst"
+    ],
+    "proof": [
+      {
+        "id": "natalia-pickoff-vs-cyclops-rotations",
+        "category": "positioning-requirement",
+        "priority": "condition",
+        "impact": "medium",
+        "summary": "Cyclops becomes dangerous when he can freely chase with skills, while Natalia punishes isolated rotations and forces safer positioning.",
+        "worksBestWhen": [
+          "Natalia tracks Cyclops between mid lane, jungle, and side rotations.",
+          "Cyclops has no defensive item or nearby peel."
+        ],
+        "failureCases": [
+          "Cyclops stays grouped.",
+          "Natalia is revealed before entering burst range."
+        ]
+      }
+    ]
+  }
+]

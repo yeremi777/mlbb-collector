@@ -1,0 +1,152 @@
+[
+  {
+    "targetHeroId": "helcurt",
+    "counterHeroId": "khufra",
+    "reasons": [
+      "Khufra is a strong anti-dive answer because Helcurt must enter close range before finishing a target.",
+      "Khufra can protect backline allies by occupying the path Helcurt wants to use during Dark Night Falls."
+    ],
+    "counterTypes": [
+      "anti-dash",
+      "anti-dive",
+      "frontline"
+    ],
+    "proof": [
+      {
+        "id": "khufra-anti-dive-vs-helcurt-darkness",
+        "category": "skill-interaction",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Helcurt depends on blink entry and close-range burst, while Khufra can deny or punish direct dive paths before Helcurt reaches the backline.",
+        "worksBestWhen": [
+          "Khufra stays near the vulnerable marksman or mage instead of chasing blindly during Helcurt's ultimate.",
+          "The team groups tightly enough for Khufra to cover the likely engage path."
+        ],
+        "failureCases": [
+          "Helcurt waits until Khufra uses his anti-dive tool first.",
+          "Helcurt attacks from fog while Khufra is zoning elsewhere."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "helcurt",
+    "counterHeroId": "hilda",
+    "reasons": [
+      "Hilda can pressure bushes and invade paths, making it harder for Helcurt to set up unseen pickoffs.",
+      "Her durability and early skirmish strength reduce Helcurt's comfort when he wants to snowball from isolated targets."
+    ],
+    "counterTypes": [
+      "vision-control",
+      "anti-dive",
+      "early-game"
+    ],
+    "proof": [
+      {
+        "id": "hilda-bush-control-vs-helcurt-pickoff",
+        "category": "vision-awareness",
+        "priority": "primary",
+        "impact": "medium",
+        "summary": "Helcurt gains value from unseen approach and darkness pressure; Hilda can contest side bushes and jungle entrances so Helcurt has fewer clean angles.",
+        "worksBestWhen": [
+          "Hilda actively checks river and jungle entrances before objectives.",
+          "The team reacts to Hilda's scouting instead of splitting alone."
+        ],
+        "failureCases": [
+          "Hilda checks vision alone without backup and becomes the target.",
+          "Helcurt avoids Hilda and attacks the opposite side."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "helcurt",
+    "counterHeroId": "kaja",
+    "reasons": [
+      "Kaja can punish Helcurt after he commits into the backline.",
+      "Suppression-style lockdown is valuable against assassins that rely on fast burst windows."
+    ],
+    "counterTypes": [
+      "pickoff",
+      "crowd-control-counter",
+      "anti-dive"
+    ],
+    "proof": [
+      {
+        "id": "kaja-lockdown-vs-helcurt-commit",
+        "category": "crowd-control-counter",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Helcurt wants a short burst window after entering; Kaja can hold a direct lockdown answer for the moment Helcurt appears.",
+        "worksBestWhen": [
+          "Kaja saves his lockdown for Helcurt instead of using it on the frontline.",
+          "Allies are close enough to burst Helcurt during the control window."
+        ],
+        "failureCases": [
+          "Helcurt baits Kaja's engage tool before committing.",
+          "Kaja is forced to use his control on another diver."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "helcurt",
+    "counterHeroId": "saber",
+    "reasons": [
+      "Saber can punish Helcurt when Helcurt exits darkness or fails to instantly kill the target.",
+      "Point-target burst is useful against an assassin who must reveal himself to finish kills."
+    ],
+    "counterTypes": [
+      "burst",
+      "pickoff",
+      "cooldown-punish"
+    ],
+    "proof": [
+      {
+        "id": "saber-burst-vs-helcurt-post-commit",
+        "category": "cooldown-window",
+        "priority": "primary",
+        "impact": "medium",
+        "summary": "Helcurt is most dangerous during his engage and stinger burst window; Saber can answer after Helcurt commits and his escape path becomes predictable.",
+        "worksBestWhen": [
+          "Saber waits for Helcurt to enter before committing.",
+          "Saber has backup damage to finish Helcurt quickly."
+        ],
+        "failureCases": [
+          "Saber is the first target and dies before using his burst.",
+          "Helcurt enters only after Saber has used ultimate elsewhere."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "helcurt",
+    "counterHeroId": "popol-and-kupa",
+    "reasons": [
+      "Popol and Kupa can make flank routes harder for Helcurt by using traps and Kupa's zone presence.",
+      "This helps protect immobile backline heroes during Dark Night Falls."
+    ],
+    "counterTypes": [
+      "vision-control",
+      "protect",
+      "anti-dive"
+    ],
+    "proof": [
+      {
+        "id": "popol-and-kupa-traps-vs-helcurt-flank",
+        "category": "vision-awareness",
+        "priority": "condition",
+        "impact": "medium",
+        "summary": "Helcurt wants unseen flank access; Popol and Kupa can pre-place control around common entry paths so Helcurt has fewer clean approach angles.",
+        "worksBestWhen": [
+          "Traps are placed before Helcurt casts ultimate.",
+          "Popol plays near the carry Helcurt wants to kill."
+        ],
+        "failureCases": [
+          "Traps are placed too late after Helcurt has already entered.",
+          "Helcurt approaches from an unwarded side path."
+        ]
+      }
+    ]
+  }
+]

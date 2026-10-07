@@ -1,0 +1,152 @@
+[
+  {
+    "anchorHeroId": "angela",
+    "synergyHeroId": "ling",
+    "reasons": [
+      "Ling's wall mobility lets Angela turn a fast map movement into a stronger dive or cleanup play.",
+      "Angela's shield and movement support help Ling survive after entering the backline."
+    ],
+    "synergyTypes": [
+      "dive-support",
+      "shielding",
+      "mobility-enable"
+    ],
+    "proof": [
+      {
+        "id": "angela-ling-high-mobility-heartguard-dive",
+        "category": "mobility-enabler",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Ling creates the high-mobility entry, while Angela strengthens the dive with shield and speed support.",
+        "worksBestWhen": [
+          "Angela attaches after Ling confirms the fight angle.",
+          "Ling uses the shield window to reach a priority target."
+        ],
+        "failureCases": [
+          "Ling enters without enough resources or escape path.",
+          "Angela attaches while Ling is only rotating, wasting the timing."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "angela",
+    "synergyHeroId": "lancelot",
+    "reasons": [
+      "Lancelot can dive quickly into the backline, making Angela's attach timing immediately valuable.",
+      "Angela's protection helps Lancelot survive after using mobility skills to commit."
+    ],
+    "synergyTypes": [
+      "dive-support",
+      "shielding",
+      "burst-follow-up"
+    ],
+    "proof": [
+      {
+        "id": "angela-lancelot-dive-burst-protection",
+        "category": "shielding",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Lancelot supplies the dive and burst, while Angela protects the commit window.",
+        "worksBestWhen": [
+          "Lancelot has enough cooldowns to enter and exit.",
+          "Angela attaches as Lancelot starts the real engage."
+        ],
+        "failureCases": [
+          "Lancelot uses mobility only to poke and Angela wastes ultimate.",
+          "Lancelot dives into layered crowd control."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "angela",
+    "synergyHeroId": "fanny",
+    "reasons": [
+      "Fanny's cable mobility lets Angela influence fights across large distances.",
+      "Angela's shield and support help Fanny survive while moving through dangerous fight areas."
+    ],
+    "synergyTypes": [
+      "dive-support",
+      "shielding",
+      "healing-sustain"
+    ],
+    "proof": [
+      {
+        "id": "angela-fanny-cable-dive-support",
+        "category": "mobility-enabler",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Fanny creates fast dive access, while Angela adds survivability during the high-risk entry.",
+        "worksBestWhen": [
+          "Fanny has enough resources to keep moving after Angela attaches.",
+          "Angela attaches during a real fight, not during empty rotation."
+        ],
+        "failureCases": [
+          "Fanny runs out of resources mid-fight.",
+          "Enemy hard control catches Fanny after the attach."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "angela",
+    "synergyHeroId": "claude",
+    "reasons": [
+      "Angela can shield Claude during aggressive Blazing Duet entries.",
+      "Claude's mobility lets him use Angela's attach window to enter, deal area damage, and reposition."
+    ],
+    "synergyTypes": [
+      "shielding",
+      "teamfight-combo",
+      "mobility-enable"
+    ],
+    "proof": [
+      {
+        "id": "angela-claude-blazing-duet-shielding",
+        "category": "shielding",
+        "priority": "primary",
+        "impact": "medium",
+        "summary": "Angela improves Claude's survival during a mobile teamfight damage commit.",
+        "worksBestWhen": [
+          "Claude enters after tracking enemy control cooldowns.",
+          "Angela attaches before Claude's main damage window."
+        ],
+        "failureCases": [
+          "Claude dives into anti-mobility or suppression.",
+          "Angela attaches when Claude is not ready to commit."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "angela",
+    "synergyHeroId": "hayabusa",
+    "reasons": [
+      "Hayabusa can enter side or backline angles, and Angela can strengthen the pickoff attempt.",
+      "Angela's sustain helps Hayabusa survive if the target does not die instantly."
+    ],
+    "synergyTypes": [
+      "dive-support",
+      "shielding",
+      "pickoff-combo"
+    ],
+    "proof": [
+      {
+        "id": "angela-hayabusa-shadow-dive-protection",
+        "category": "shielding",
+        "priority": "secondary",
+        "impact": "medium",
+        "summary": "Hayabusa creates the assassination angle, while Angela gives him extra safety during the burst attempt.",
+        "worksBestWhen": [
+          "Hayabusa isolates a target before Angela attaches.",
+          "Angela attaches during a committed pickoff, not during split-push rotation."
+        ],
+        "failureCases": [
+          "Hayabusa's target is not isolated.",
+          "Angela attaches while Hayabusa is about to disengage."
+        ]
+      }
+    ]
+  }
+]

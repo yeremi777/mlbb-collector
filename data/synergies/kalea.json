@@ -1,0 +1,158 @@
+[
+  {
+    "anchorHeroId": "kalea",
+    "synergyHeroId": "lunox",
+    "reasons": [
+      "Kalea's forced-position ultimate gives Lunox a cleaner target for fast magic burst.",
+      "Lunox can punish the landing point immediately when Kalea moves a high-value enemy into range."
+    ],
+    "synergyTypes": [
+      "pickoff-combo",
+      "burst-follow-up",
+      "positioning-dependent"
+    ],
+    "proof": [
+      {
+        "id": "kalea-displacement-for-lunox-burst",
+        "category": "pickoff-combo",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Kalea grabs and moves a target into a predictable landing point, while Lunox follows with fast magic burst.",
+        "worksBestWhen": [
+          "Kalea throws the target toward Lunox's range.",
+          "Lunox has burst follow-up ready.",
+          "The target is a high-value damage dealer or fragile core."
+        ],
+        "failureCases": [
+          "Lunox is too far from the landing point.",
+          "Kalea throws the target away from Lunox.",
+          "The target receives peel before Lunox finishes the burst."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "kalea",
+    "synergyHeroId": "kadita",
+    "reasons": [
+      "Kalea can force the enemy toward Kadita's prepared burst path.",
+      "Kadita can punish Kalea's landing point with knock-up and burst damage."
+    ],
+    "synergyTypes": [
+      "setup-combo",
+      "burst-follow-up",
+      "cc-chain"
+    ],
+    "proof": [
+      {
+        "id": "kalea-displacement-for-kadita-burst",
+        "category": "setup-combo",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Kalea moves the target into a chosen landing area, while Kadita punishes that area with knock-up and burst.",
+        "worksBestWhen": [
+          "Kalea throws the target toward Kadita's prepared path.",
+          "Kadita waits for the landing point before committing burst."
+        ],
+        "failureCases": [
+          "Kalea changes the landing direction unexpectedly.",
+          "Kadita misses the timing.",
+          "Enemy crowd control interrupts Kadita before the burst lands."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "kalea",
+    "synergyHeroId": "saber",
+    "reasons": [
+      "Saber gives a second lock-on airborne burst after Kalea displaces the target.",
+      "Kalea can deliver a high-value target into Saber range for a simple pickoff sequence."
+    ],
+    "synergyTypes": [
+      "pickoff-combo",
+      "burst-follow-up",
+      "cc-chain"
+    ],
+    "proof": [
+      {
+        "id": "kalea-displacement-for-saber-triple-sweep",
+        "category": "pickoff-combo",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Kalea moves the target first, then Saber follows with single-target airborne burst.",
+        "worksBestWhen": [
+          "Saber waits near Kalea's throw direction.",
+          "The target is a marksman, mage, or assassin."
+        ],
+        "failureCases": [
+          "Saber is too far away.",
+          "Saber's ultimate is unavailable.",
+          "The target is too tanky or protected."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "kalea",
+    "synergyHeroId": "eudora",
+    "reasons": [
+      "Eudora gives simple stun and burst follow-up after Kalea moves a target.",
+      "Kalea's displacement can put one enemy into Eudora's reliable combo range."
+    ],
+    "synergyTypes": [
+      "pickoff-combo",
+      "burst-follow-up",
+      "cc-chain"
+    ],
+    "proof": [
+      {
+        "id": "kalea-displacement-for-eudora-burst",
+        "category": "pickoff-combo",
+        "priority": "secondary",
+        "impact": "medium",
+        "summary": "Kalea isolates a target, while Eudora follows with stun and burst damage.",
+        "worksBestWhen": [
+          "Kalea throws the target into Eudora's range.",
+          "Eudora waits until the target lands before using full combo."
+        ],
+        "failureCases": [
+          "Kalea throws the target outside Eudora's range.",
+          "Eudora's stun or burst is unavailable.",
+          "The target survives and receives peel."
+        ]
+      }
+    ]
+  },
+  {
+    "anchorHeroId": "kalea",
+    "synergyHeroId": "obsidia",
+    "reasons": [
+      "Obsidia can follow Kalea's forced-position setup with Hunt of Bone.",
+      "Kalea's displacement gives Obsidia a clearer tether target and safer first attack window."
+    ],
+    "synergyTypes": [
+      "pickoff-combo",
+      "cc-chain",
+      "burst-follow-up"
+    ],
+    "proof": [
+      {
+        "id": "kalea-displacement-for-obsidia-tether",
+        "category": "pickoff-combo",
+        "priority": "secondary",
+        "impact": "medium",
+        "summary": "Kalea starts the forced-position pickoff, while Obsidia follows with tether and sustained ranged pressure.",
+        "worksBestWhen": [
+          "Kalea throws the target into Obsidia's attack range.",
+          "Obsidia waits until Kalea confirms the target."
+        ],
+        "failureCases": [
+          "Obsidia is too far to connect Hunt of Bone.",
+          "Obsidia is dived while chasing the tether.",
+          "The target is too tanky to finish during the window."
+        ]
+      }
+    ]
+  }
+]

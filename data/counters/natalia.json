@@ -1,0 +1,152 @@
+[
+  {
+    "targetHeroId": "natalia",
+    "counterHeroId": "rafaela",
+    "reasons": [
+      "Rafaela can repeatedly check nearby areas and reveal Natalia before the assassination fully starts.",
+      "Her slow and support positioning help the intended target reposition before Natalia finishes the silence burst."
+    ],
+    "counterTypes": [
+      "vision-control",
+      "protect",
+      "kiting"
+    ],
+    "proof": [
+      {
+        "id": "rafaela-light-of-retribution-vs-natalia-camouflage",
+        "category": "vision-awareness",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Natalia depends on hidden approach paths, while Rafaela can reveal and slow nearby threats before they complete the assassination.",
+        "worksBestWhen": [
+          "Rafaela checks bushes before objectives.",
+          "Rafaela stays near the damage dealer Natalia wants to attack."
+        ],
+        "failureCases": [
+          "Natalia waits until Rafaela's reveal skill is used.",
+          "Rafaela is isolated and cannot protect the real target."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "natalia",
+    "counterHeroId": "yi-sun-shin",
+    "reasons": [
+      "Yi-Sun-Shin can reveal enemy positions globally, reducing Natalia's ability to hide rotations before objectives.",
+      "His reveal is valuable because Natalia's main threat is surprise entry from camouflage and bush control."
+    ],
+    "counterTypes": [
+      "vision-control",
+      "teamfight",
+      "cooldown-punish"
+    ],
+    "proof": [
+      {
+        "id": "yi-sun-shin-mountain-shocker-vs-natalia-hidden-rotation",
+        "category": "vision-awareness",
+        "priority": "primary",
+        "impact": "high",
+        "summary": "Natalia wants unseen map movement and flank timing, while Yi-Sun-Shin can expose enemy positions globally before major fights or objective contests.",
+        "worksBestWhen": [
+          "Yi-Sun-Shin uses global reveal before Turtle, Lord, or a high-risk rotation.",
+          "The team is ready to reposition or collapse when Natalia is revealed."
+        ],
+        "failureCases": [
+          "Yi-Sun-Shin's ultimate is on cooldown when Natalia commits.",
+          "Natalia waits out the reveal and attacks after the team relaxes."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "natalia",
+    "counterHeroId": "zetian",
+    "reasons": [
+      "Zetian's global reveal can expose Natalia during teamfight setup, reducing the surprise value of her flank.",
+      "Her teamfight ultimate is especially useful when Natalia wants to enter during a chaotic fight."
+    ],
+    "counterTypes": [
+      "vision-control",
+      "teamfight",
+      "cooldown-punish"
+    ],
+    "proof": [
+      {
+        "id": "zetian-global-vision-vs-natalia-flank-timing",
+        "category": "vision-awareness",
+        "priority": "primary",
+        "impact": "medium",
+        "summary": "Natalia wants to hide until the backline is vulnerable, while Zetian can reveal enemy heroes during a major teamfight window and make the flank easier to track.",
+        "worksBestWhen": [
+          "Zetian uses ultimate before Natalia enters the backline.",
+          "The team communicates Natalia's revealed position and protects the target."
+        ],
+        "failureCases": [
+          "Zetian's ultimate is unavailable during Natalia's pickoff attempt.",
+          "Natalia attacks outside the teamfight window or after the reveal ends."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "natalia",
+    "counterHeroId": "aldous",
+    "reasons": [
+      "Aldous can reveal all enemy heroes, making Natalia's hidden rotations easier to call out.",
+      "Once Natalia is exposed, her flank timing becomes easier to punish or avoid."
+    ],
+    "counterTypes": [
+      "vision-control",
+      "pickoff",
+      "teamfight"
+    ],
+    "proof": [
+      {
+        "id": "aldous-contract-chase-fate-vs-natalia-map-stealth",
+        "category": "vision-awareness",
+        "priority": "primary",
+        "impact": "medium",
+        "summary": "Natalia wants unseen map movement, while Aldous can reveal enemy positions and remove the surprise factor before she reaches a fragile target.",
+        "worksBestWhen": [
+          "Aldous uses reveal before major objectives or suspected ambushes.",
+          "The team is ready to collapse or retreat when Natalia is revealed."
+        ],
+        "failureCases": [
+          "Aldous wastes ultimate when Natalia is not threatening a pickoff.",
+          "Aldous commits onto the wrong target and leaves his team exposed."
+        ]
+      }
+    ]
+  },
+  {
+    "targetHeroId": "natalia",
+    "counterHeroId": "hylos",
+    "reasons": [
+      "Hylos can bodyguard fragile allies and occupy bush entrances, making Natalia's clean backline entry harder.",
+      "His persistent nearby pressure and slows punish Natalia if she commits into the protected area."
+    ],
+    "counterTypes": [
+      "frontline",
+      "anti-dive",
+      "protect"
+    ],
+    "proof": [
+      {
+        "id": "hylos-bodyguard-zone-vs-natalia-backline-entry",
+        "category": "teamfight-role-counter",
+        "priority": "secondary",
+        "impact": "medium",
+        "summary": "Natalia wants a clean backline entry, while Hylos can occupy the approach area and punish her if she commits into the protected team zone.",
+        "worksBestWhen": [
+          "Hylos patrols bushes and objective entrances.",
+          "Hylos stays close to the target Natalia wants."
+        ],
+        "failureCases": [
+          "Natalia avoids Hylos and attacks the opposite side.",
+          "Hylos is too far forward to protect the backline."
+        ]
+      }
+    ]
+  }
+]
