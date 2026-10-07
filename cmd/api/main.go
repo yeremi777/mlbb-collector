@@ -14,8 +14,6 @@ import (
 	"syscall"
 	"time"
 
-	"github.com/jackc/pgx/v5/pgxpool"
-
 	"github.com/yeremi777/mlbb-collector/docs"
 	"github.com/yeremi777/mlbb-collector/internal/config"
 	"github.com/yeremi777/mlbb-collector/internal/counter"
@@ -48,10 +46,7 @@ func register(mux httpx.Mux, db database.Querier, spec []byte) {
 }
 
 func run() error {
-	if err := config.LoadDotEnv(); err != nil {
-		return err
-	}
-	cfg, err := config.LoadAPI()
+	cfg, err := config.LoadAPI(os.Getenv)
 	if err != nil {
 		return err
 	}
@@ -61,14 +56,11 @@ func run() error {
 	}
 
 	ctx := context.Background()
-	pool, err := pgxpool.New(ctx, cfg.DatabaseURL)
+	pool, err := database.OpenPool(ctx, cfg.Database.DSN())
 	if err != nil {
-		return fmt.Errorf("connect: %w", err)
+		return err
 	}
 	defer pool.Close()
-	if err := pool.Ping(ctx); err != nil {
-		return fmt.Errorf("ping database: %w", err)
-	}
 
 	mux := http.NewServeMux()
 	register(mux, pool, spec)

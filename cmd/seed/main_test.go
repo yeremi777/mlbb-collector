@@ -17,7 +17,7 @@ func TestRunRejectsAnInvalidDatasetBeforeConnecting(t *testing.T) {
 		t.Setenv(k, v)
 	}
 
-	err := run([]string{"-data", dir})
+	err := run(dir)
 	if err == nil || err.Error() != "heroes.json: no heroes" {
 		t.Errorf("err = %v, want the dataset error alone", err)
 	}
