@@ -14,6 +14,8 @@ GOOSE = goose -dir $(MIGRATIONS_DIR) postgres "$(DB_DSN)"
 # Integration tests use this database on the .env Postgres server, never DB_NAME.
 TEST_DB_NAME ?= test_mlbb_collector
 TEST_DB_DSN = host='$(DB_HOST)' port='$(DB_PORT)' dbname='$(TEST_DB_NAME)' user='$(DB_USERNAME)' password='$(DB_PASSWORD)' sslmode='$(DB_SSLMODE)'
+# Rate-limit tests empty this Redis database, never database 0.
+TEST_REDIS_URL ?= redis://127.0.0.1:6379/15
 
 .DEFAULT_GOAL := help
 .PHONY: help api seed test test-integration vet fmt tidy migrate-up migrate-down migrate-reset migrate-status migrate-create db-env
@@ -40,7 +42,7 @@ test: ## Run the unit tests
 # shared test database's schema before its tests run.
 # Silent so the DSN and its password are never printed.
 test-integration: db-env ## Run unit and integration tests on the TEST_DB_NAME database (first: createdb -h DB_HOST -U DB_USERNAME test_mlbb_collector), emptied after every run
-	@TEST_DB_DSN="$(TEST_DB_DSN)" go test -tags integration -count=1 -p 1 ./...
+	@TEST_DB_DSN="$(TEST_DB_DSN)" TEST_REDIS_URL="$(TEST_REDIS_URL)" go test -tags integration -count=1 -p 1 ./...
 
 vet: ## Report suspicious constructs
 	go vet ./...
