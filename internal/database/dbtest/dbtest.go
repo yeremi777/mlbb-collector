@@ -1,37 +1,94 @@
 //go:build integration
 
-// Package dbtest opens the database for integration tests.
+// Package dbtest runs integration tests against a throwaway test database,
+// never the .env one.
 package dbtest
 
 import (
 	"context"
+	"fmt"
+	"os"
+	"path/filepath"
+	"runtime"
+	"sort"
+	"strings"
 	"testing"
 
 	"github.com/jackc/pgx/v5"
-
-	"github.com/yeremi777/mlbb-collector/internal/config"
 )
 
-// BeginTx opens a transaction on the DB_* database that is rolled back when
-// the test ends, so no test leaves a row behind.
+var conn *pgx.Conn
+
+// Main rebuilds the schema of the database named by TEST_DB_DSN from the
+// migrations, runs the package's tests, and exits. It refuses any database
+// whose name does not start with "test".
+func Main(m *testing.M) {
+	dsn := os.Getenv("TEST_DB_DSN")
+	if dsn == "" {
+		fmt.Fprintln(os.Stderr, "TEST_DB_DSN is not set; run make test-integration")
+		os.Exit(1)
+	}
+	ctx := context.Background()
+	c, err := pgx.Connect(ctx, dsn)
+	if err != nil {
+		fmt.Fprintln(os.Stderr, err)
+		os.Exit(1)
+	}
+	var name string
+	if err := c.QueryRow(ctx, "SELECT current_database()").Scan(&name); err != nil || !strings.HasPrefix(name, "test") {
+		fmt.Fprintf(os.Stderr, "refusing to reset database %q: its name must start with \"test\" (%v)\n", name, err)
+		os.Exit(1)
+	}
+	if err := applyMigrations(ctx, c); err != nil {
+		fmt.Fprintln(os.Stderr, err)
+		os.Exit(1)
+	}
+	conn = c
+	code := m.Run()
+	c.Close(ctx)
+	os.Exit(code)
+}
+
+// applyMigrations runs the goose Up section of every migration, oldest
+// first, on an empty schema.
+func applyMigrations(ctx context.Context, c *pgx.Conn) error {
+	if _, err := c.Exec(ctx, "DROP SCHEMA public CASCADE; CREATE SCHEMA public"); err != nil {
+		return err
+	}
+	_, here, _, _ := runtime.Caller(0)
+	files, err := filepath.Glob(filepath.Join(filepath.Dir(here), "..", "migrations", "*.sql"))
+	if err != nil {
+		return err
+	}
+	if len(files) == 0 {
+		return fmt.Errorf("no migrations found next to %s", here)
+	}
+	sort.Strings(files)
+	for _, f := range files {
+		b, err := os.ReadFile(f)
+		if err != nil {
+			return err
+		}
+		up, _, ok := strings.Cut(string(b), "-- +goose Down")
+		if !ok {
+			return fmt.Errorf("%s has no Down section", f)
+		}
+		if _, err := c.PgConn().Exec(ctx, up).ReadAll(); err != nil {
+			return fmt.Errorf("%s: %w", f, err)
+		}
+	}
+	return nil
+}
+
+// BeginTx opens a transaction on the test database that is rolled back when
+// the test ends, so each test starts from the empty migrated schema.
 func BeginTx(t *testing.T) (context.Context, pgx.Tx) {
 	t.Helper()
 	ctx := context.Background()
-	url, err := config.DatabaseURL()
-	if err != nil {
-		t.Fatal(err)
-	}
-	conn, err := pgx.Connect(ctx, url)
-	if err != nil {
-		t.Fatalf("connect: %v", err)
-	}
 	tx, err := conn.Begin(ctx)
 	if err != nil {
 		t.Fatalf("begin: %v", err)
 	}
-	t.Cleanup(func() {
-		_ = tx.Rollback(ctx)
-		_ = conn.Close(ctx)
-	})
+	t.Cleanup(func() { _ = tx.Rollback(ctx) })
 	return ctx, tx
 }

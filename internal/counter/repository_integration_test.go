@@ -14,6 +14,8 @@ import (
 	"github.com/yeremi777/mlbb-collector/internal/seed"
 )
 
+func TestMain(m *testing.M) { dbtest.Main(m) }
+
 func proof(id, category string) counter.Proof {
 	return counter.Proof{ID: id, Category: category, Priority: "primary", Impact: "high",
 		Summary: "s " + id, WorksBestWhen: []string{"w " + id}, FailureCases: []string{"f " + id}}

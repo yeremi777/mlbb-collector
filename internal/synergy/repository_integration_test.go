@@ -14,6 +14,8 @@ import (
 	"github.com/yeremi777/mlbb-collector/internal/synergy"
 )
 
+func TestMain(m *testing.M) { dbtest.Main(m) }
+
 func proof(id, category string) synergy.Proof {
 	return synergy.Proof{ID: id, Category: category, Priority: "primary", Impact: "high",
 		Summary: "s " + id, WorksBestWhen: []string{"w " + id}, FailureCases: []string{"f " + id}}

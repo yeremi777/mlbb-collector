@@ -14,6 +14,8 @@ import (
 	"github.com/yeremi777/mlbb-collector/internal/seed"
 )
 
+func TestMain(m *testing.M) { dbtest.Main(m) }
+
 func TestRepository(t *testing.T) {
 	ctx, tx := dbtest.BeginTx(t)
 	heroes := []hero.Hero{

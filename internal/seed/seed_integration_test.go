@@ -17,6 +17,8 @@ import (
 	"github.com/yeremi777/mlbb-collector/internal/synergy"
 )
 
+func TestMain(m *testing.M) { dbtest.Main(m) }
+
 func fixture() dataset.Dataset {
 	return dataset.Dataset{
 		Heroes: []hero.Hero{
