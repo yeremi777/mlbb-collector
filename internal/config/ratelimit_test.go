@@ -12,7 +12,6 @@ import (
 func validRateLimitEnv() map[string]string {
 	return map[string]string{
 		"RATE_LIMIT_ENABLED": "true",
-		"REDIS_URL":          "redis://127.0.0.1:6379/15",
 		"RATE_LIMIT_SALT":    "salt",
 	}
 }
@@ -21,7 +20,6 @@ func TestLoadRateLimitDisabledReadsNothingElse(t *testing.T) {
 	for _, enabled := range []string{"", "false"} {
 		got, err := LoadRateLimit(env(map[string]string{
 			"RATE_LIMIT_ENABLED":              enabled,
-			"REDIS_URL":                       "::bad",
 			"RATE_LIMIT_ANALYZE_MAX_REQUESTS": "many",
 		}))
 		if err != nil {
@@ -38,12 +36,12 @@ func TestLoadRateLimitDefaults(t *testing.T) {
 	if err != nil {
 		t.Fatal(err)
 	}
-	if !got.Enabled || got.Redis == nil || got.Redis.Addr != "127.0.0.1:6379" || got.Redis.DB != 15 {
-		t.Errorf("got %+v, redis %+v", got, got.Redis)
+	if !got.Enabled {
+		t.Errorf("got %+v, want enabled", got)
 	}
 	want := ratelimit.Config{
 		MaxRequests: 5, WindowSeconds: 18000, DetailMultiplier: 3,
-		CookieName: "mlbb_analyzer_client_id", CookieMaxAge: 2592000, CookieSameSite: http.SameSiteLaxMode,
+		CookieName: "mlbb_collector_client_id", CookieMaxAge: 2592000, CookieSameSite: http.SameSiteLaxMode,
 		Salt: "salt",
 	}
 	if got.Limiter != want {
@@ -81,8 +79,6 @@ func TestLoadRateLimit(t *testing.T) {
 func TestLoadRateLimitRejectsBadValues(t *testing.T) {
 	for _, tt := range []struct{ key, value, want string }{
 		{"RATE_LIMIT_ENABLED", "yes", `RATE_LIMIT_ENABLED "yes" is not true or false`},
-		{"REDIS_URL", "", "REDIS_URL is not set; rate limiting needs it"},
-		{"REDIS_URL", "127.0.0.1:6379", `REDIS_URL "127.0.0.1:6379" is not a redis:// or rediss:// URL`},
 		{"RATE_LIMIT_SALT", "", "RATE_LIMIT_SALT is not set; rate limiting needs it"},
 		{"RATE_LIMIT_ANALYZE_MAX_REQUESTS", "0", `RATE_LIMIT_ANALYZE_MAX_REQUESTS "0" is not a whole number of at least 1`},
 		{"RATE_LIMIT_ANALYZE_WINDOW_SECONDS", "soon", `RATE_LIMIT_ANALYZE_WINDOW_SECONDS "soon" is not a whole number of at least 1`},
@@ -101,10 +97,32 @@ func TestLoadRateLimitRejectsBadValues(t *testing.T) {
 	}
 }
 
-func TestLoadAPIReadsTheRateLimit(t *testing.T) {
+func TestLoadAPIReadsRedisOnlyWhenRateLimiting(t *testing.T) {
+	vars := validAPIEnv()
+	vars["REDIS_PORT"] = "bad"
+	if _, err := LoadAPI(env(vars)); err != nil {
+		t.Errorf("rate limiting off: %v", err)
+	}
+	vars["RATE_LIMIT_ENABLED"] = "true"
+	vars["RATE_LIMIT_SALT"] = "salt"
+	vars["REDIS_HOST"] = "127.0.0.1"
+	if _, err := LoadAPI(env(vars)); err == nil || !strings.Contains(err.Error(), "REDIS_PORT") {
+		t.Errorf("error = %v, want one naming REDIS_PORT", err)
+	}
+	vars["REDIS_PORT"] = "6380"
+	got, err := LoadAPI(env(vars))
+	if err != nil {
+		t.Fatal(err)
+	}
+	if want := (Redis{Host: "127.0.0.1", Port: 6380}); !got.RateLimit.Enabled || got.Redis != want {
+		t.Errorf("rate limit %+v, redis %+v, want enabled and %+v", got.RateLimit, got.Redis, want)
+	}
+}
+
+func TestLoadAPIRefusesRateLimitingWithoutASalt(t *testing.T) {
 	vars := validAPIEnv()
 	vars["RATE_LIMIT_ENABLED"] = "true"
-	vars["REDIS_URL"] = "redis://127.0.0.1:6379/15"
+	vars["REDIS_HOST"] = "127.0.0.1"
 	if _, err := LoadAPI(env(vars)); err == nil || !strings.Contains(err.Error(), "RATE_LIMIT_SALT") {
 		t.Errorf("error = %v, want one naming RATE_LIMIT_SALT", err)
 	}

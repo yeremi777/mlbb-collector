@@ -5,37 +5,27 @@ import (
 	"net/http"
 	"strings"
 
-	"github.com/redis/go-redis/v9"
-
 	"github.com/yeremi777/mlbb-collector/internal/ratelimit"
 )
 
-// RateLimit is whether analyze requests are limited, the Redis that holds
-// the counters, and the limiter's settings. A disabled one is the zero value.
+// RateLimit is whether analyze requests are limited, and the limiter's
+// settings. A disabled one is the zero value.
 type RateLimit struct {
 	Enabled bool
-	Redis   *redis.Options
 	Limiter ratelimit.Config
 }
 
-// LoadRateLimit reads RATE_LIMIT_ENABLED and, only when it is true, REDIS_URL
-// and the other RATE_LIMIT_* variables. REDIS_URL and RATE_LIMIT_SALT are
-// then required.
+// LoadRateLimit reads RATE_LIMIT_ENABLED and, only when it is true, the other
+// RATE_LIMIT_* variables. RATE_LIMIT_SALT is then required.
 func LoadRateLimit(getenv func(string) string) (RateLimit, error) {
 	enabled, err := flag(getenv, "RATE_LIMIT_ENABLED")
 	if err != nil || !enabled {
 		return RateLimit{}, err
 	}
-	for _, key := range []string{"REDIS_URL", "RATE_LIMIT_SALT"} {
-		if getenv(key) == "" {
-			return RateLimit{}, fmt.Errorf("%s is not set; rate limiting needs it", key)
-		}
+	if getenv("RATE_LIMIT_SALT") == "" {
+		return RateLimit{}, fmt.Errorf("RATE_LIMIT_SALT is not set; rate limiting needs it")
 	}
-	redisOptions, err := redis.ParseURL(getenv("REDIS_URL"))
-	if err != nil {
-		return RateLimit{}, fmt.Errorf("REDIS_URL %q is not a redis:// or rediss:// URL", getenv("REDIS_URL"))
-	}
-	cfg := ratelimit.Config{CookieName: or(getenv("RATE_LIMIT_COOKIE_NAME"), "mlbb_analyzer_client_id"), Salt: getenv("RATE_LIMIT_SALT")}
+	cfg := ratelimit.Config{CookieName: or(getenv("RATE_LIMIT_COOKIE_NAME"), "mlbb_collector_client_id"), Salt: getenv("RATE_LIMIT_SALT")}
 	for _, n := range []struct {
 		key      string
 		fallback int
@@ -66,7 +56,7 @@ func LoadRateLimit(getenv func(string) string) (RateLimit, error) {
 	default:
 		return RateLimit{}, fmt.Errorf("RATE_LIMIT_COOKIE_SAMESITE %q is not lax, strict, or none", getenv("RATE_LIMIT_COOKIE_SAMESITE"))
 	}
-	return RateLimit{Enabled: true, Redis: redisOptions, Limiter: cfg}, nil
+	return RateLimit{Enabled: true, Limiter: cfg}, nil
 }
 
 // flag reads key as true or false, false when unset.
