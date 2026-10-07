@@ -85,7 +85,7 @@ Read once at startup into one typed config, from the environment, which `make` f
 
 ## Server
 
-- The server listens on `127.0.0.1:APP_PORT` and logs `api listening url=<APP_URL> docs=<APP_URL>/docs`.
+- The server binds `127.0.0.1:APP_PORT`, then logs `api listening url=<APP_URL> docs=<APP_URL>/docs`. A port it cannot bind stops startup with no `api listening` line.
 - Startup pings Postgres and fails when it cannot reach it.
 - Read-header timeout 5s, read timeout 10s, idle timeout 60s. The write timeout is `AI_TIMEOUT_SECONDS` (default 60, owned by `analysis`) plus 10s, so an analyze response is never cut off.
 - `SIGINT` or `SIGTERM` stops accepting connections and lets in-flight requests finish for up to 25s.
@@ -98,7 +98,7 @@ Read once at startup into one typed config, from the environment, which `make` f
 - AC-4: A handler test forces a repository error and gets 500 `internal_error` with no detail from the error in the body.
 - AC-5: The route test passes: every registered route except `/docs` and `/docs/openapi.yaml` is in `docs/openapi.yaml`, and every path in it other than the four analyze routes `analysis` owns is registered.
 - AC-6: `GET /docs`, `/docs/`, and `/docs/index.html` render the spec in Swagger UI from both `localhost` and `127.0.0.1`, and `GET /docs/openapi.yaml` declares no servers.
-- AC-7: Startup without `DB_HOST` or `APP_URL`, with `APP_PORT=abc`, with `APP_URL=localhost`, or with an `APP_URL` port other than `APP_PORT`, exits non-zero naming the variable. Startup with an unreachable database, or a `DB_SSLMODE` Postgres does not accept, exits non-zero.
+- AC-7: Startup without `DB_HOST` or `APP_URL`, with `APP_PORT=abc`, with `APP_URL=localhost`, or with an `APP_URL` port other than `APP_PORT`, exits non-zero naming the variable. Startup with an unreachable database, or a `DB_SSLMODE` Postgres does not accept, exits non-zero. Startup on a port already in use exits non-zero with the bind error and no `api listening` line.
 - AC-8: After `SIGTERM` during a request that is still running, the request completes and the process exits 0.
 
 ## Verification
@@ -107,7 +107,7 @@ Read once at startup into one typed config, from the environment, which `make` f
 set -a; . ./.env; set +a                                   # the commands below read the .env variables
 go vet ./...
 go test ./...                                              # AC-3, AC-4, AC-5
-make test-db-up && make test-integration                     # repository queries against the throwaway Postgres
+make test-integration                                       # repository queries against test_mlbb_collector
 make api                                                   # this API on :8080
 API_PORT=8081 go run ./cmd/api                             # dev's API, from the mlbb-analyzer-service checkout on branch dev, same DB_* settings
 for p in /health /api/heroes '/api/heroes?search=ali' '/api/heroes?role=TANK' '/api/heroes?lane=roam&page=2&size=5' '/api/heroes?page=0&size=500' '/api/heroes?page=99' '/api/heroes?size=abc' /api/heroes/tigreal /api/heroes/x.borg /api/heroes/nope /api/heroes/tigreal/counters /api/heroes/x.borg/counters /api/heroes/hirara/counters /api/heroes/nope/counters /api/heroes/tigreal/synergies /api/heroes/x.borg/synergies /api/heroes/hirara/synergies /api/heroes/nope/synergies; do diff <(curl -si "127.0.0.1:8080$p" | grep -iv '^date:') <(curl -si "127.0.0.1:8081$p" | grep -iv '^date:') >/dev/null || echo "DIFF $p"; done   # AC-1, prints nothing

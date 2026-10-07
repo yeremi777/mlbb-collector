@@ -78,10 +78,16 @@ func run() error {
 		IdleTimeout:       60 * time.Second,
 	}
 
+	// Bind before logging, so "api listening" is printed only once the port
+	// is ours.
+	ln, err := net.Listen("tcp", srv.Addr)
+	if err != nil {
+		return err
+	}
 	stop, cancel := signal.NotifyContext(ctx, os.Interrupt, syscall.SIGTERM)
 	defer cancel()
 	served := make(chan error, 1)
-	go func() { served <- srv.ListenAndServe() }()
+	go func() { served <- srv.Serve(ln) }()
 	slog.Info("api listening", "url", cfg.URL, "docs", cfg.URL+"/docs")
 
 	select {
