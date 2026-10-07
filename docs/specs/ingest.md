@@ -124,7 +124,7 @@ A non-default base URL is logged as a warning on every run.
 set -a; . ./.env; set +a; export PGHOST=$DB_HOST PGPORT=$DB_PORT PGDATABASE=$DB_NAME PGUSER=$DB_USERNAME PGPASSWORD=$DB_PASSWORD PGSSLMODE=$DB_SSLMODE   # psql below reads these
 go vet ./...
 go test ./...                                                      # AC-5, AC-8, AC-10
-make test-db-up && make test-integration                             # AC-5 to AC-7 against the throwaway Postgres
+make test-integration                                              # AC-5 to AC-7 against test_mlbb_collector
 make migrate-reset && make migrate-up                              # AC-1, run by the user
 make ingest && make ingest                                         # AC-2, AC-3, run by the user
 psql -c "SELECT rank_tier, window_days, count(*) FROM raw.hero_rank_snapshots WHERE snapshot_date = current_date GROUP BY 1, 2 ORDER BY 1, 2"   # AC-2
