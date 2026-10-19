@@ -46,3 +46,9 @@ type Querier interface {
 	Query(ctx context.Context, sql string, args ...any) (pgx.Rows, error)
 	QueryRow(ctx context.Context, sql string, args ...any) pgx.Row
 }
+
+// DB is a Querier that opens transactions; on a pgx.Tx, Begin opens a savepoint.
+type DB interface {
+	Querier
+	Begin(ctx context.Context) (pgx.Tx, error)
+}
