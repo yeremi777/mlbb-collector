@@ -18,7 +18,7 @@ TEST_DB_DSN = host='$(DB_HOST)' port='$(DB_PORT)' dbname='$(TEST_DB_NAME)' user=
 TEST_REDIS_DB ?= 15
 
 .DEFAULT_GOAL := help
-.PHONY: help api seed test test-integration vet fmt tidy migrate-up migrate-down migrate-reset migrate-status migrate-create db-env
+.PHONY: help api seed ingest ingest-install ingest-status ingest-uninstall test test-integration vet fmt tidy migrate-up migrate-down migrate-reset migrate-status migrate-create db-env
 
 help: ## List the targets
 	@awk 'BEGIN {FS = ":.*## "} /^[a-z-]+:.*## / {printf "  %-17s %s\n", $$1, $$2}' $(MAKEFILE_LIST)
@@ -32,6 +32,20 @@ api: db-env ## Serve the API on APP_PORT, with its docs at APP_URL/docs
 
 seed: db-env ## Make the public tables of the .env database match data/
 	go run ./cmd/seed
+
+## Ingest
+
+ingest: db-env ## Fetch the Patch calendar and today's hero statistics into the raw tables of the .env database
+	go run ./cmd/ingest all
+
+ingest-install: db-env ## Install or replace the launchd agent that runs ingest all at 07:00 and 13:00
+	@sh deploy/launchd/ingest-agent.sh install
+
+ingest-status: ## Show the launchd agent's state, schedule, and last log lines
+	@sh deploy/launchd/ingest-agent.sh status
+
+ingest-uninstall: ## Remove the launchd agent and its binary, keeping the log
+	@sh deploy/launchd/ingest-agent.sh uninstall
 
 ## Code
 

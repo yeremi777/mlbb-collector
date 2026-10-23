@@ -20,7 +20,7 @@
 | `ingest patches` | fetches the patch calendar |
 | `ingest all [-date YYYY-MM-DD] [-force]` | `patches`, then `stats`; a `patches` failure is logged and `stats` still runs |
 
-- `-date` labels the Snapshot with that date instead of today in `INGEST_TIMEZONE`, for a run that started after midnight on behalf of the previous day.
+- `-date` labels the Snapshot with that date instead of today in `INGEST_TIMEZONE`, for a run that started after midnight on behalf of the previous day. A date later than today is refused.
 - `-force` fetches every combination even when the date already has rows.
 - Exit 0 when everything run succeeded, 1 when any combination or the calendar failed, and 2 on a bad command or flag, with the usage text on stderr.
 - Every run logs one structured summary line per feed: date, combinations fetched, skipped, and failed, rows inserted, Patches fetched and changed.
@@ -68,7 +68,7 @@ Index on `(main_heroid, rank_tier, window_days, snapshot_date)`. Rows are only e
 ### Upstream
 
 - `GET https://liquipedia.net/mobilelegends/api.php?action=parse&page=Portal:Patches&format=json&prop=text`, one request per run.
-- A Patch is a table row whose first cell reads `Patch <version>` and whose second cell is a date such as `January 2, 2006`. Every other row is skipped.
+- A Patch is a table row whose first cell reads `Patch <version>`, the version kept as shown with any letter suffix, and whose second cell is a date such as `January 2, 2006`. Every other row is skipped.
 - Highlights are the row's third-cell list items, one entry each with whitespace collapsed; nested items fold into their parent; a plain-text cell is one entry; an empty or missing cell is none.
 - A 429 or 5xx, a transport error, or a body with no tables is retried once, after 30s or the `Retry-After` value if longer. A MediaWiki error, another status, or a page with tables but no Patch rows fails at once.
 - The whole calendar is fetched and parsed before the database is touched, so a failure leaves `raw.patches` as it was.
@@ -90,7 +90,22 @@ Both clients send `INGEST_USER_AGENT`, default `mlbb-collector/1.0 (+github.com/
 
 ## Schedule
 
-`deploy/cron/crontab` holds one marked block: `CRON_TZ=Asia/Jakarta` and `ingest all` at 07:00 and 13:00, run from the checkout with `.env` loaded into its environment, appending to `log/ingest.log`. `make ingest-install` builds `bin/ingest` and writes the block into the user's crontab with this checkout's path, replacing an earlier copy of the block; `make ingest-status` prints the installed block.
+A launchd user agent, `com.yeremi777.mlbb-collector.ingest`, runs `ingest all` at 07:00 and 13:00 in the Mac's local time. A run missed while the Mac sleeps starts on wake, and launchd never starts a second run while one is running.
+
+The agent reads nothing from the checkout, because macOS denies a background job access to `~/Documents`:
+
+| Item | Path |
+|---|---|
+| Binary | `~/Library/Application Support/mlbb-collector/ingest` |
+| Agent | `~/Library/LaunchAgents/com.yeremi777.mlbb-collector.ingest.plist`, mode 600, with the `DB_*` and `INGEST_*` variables, `MOONTON_BASE_URL`, and `LIQUIPEDIA_BASE_URL` from `.env` in its `EnvironmentVariables` |
+| Log | `~/Library/Logs/mlbb-collector/ingest.log`, stdout and stderr appended |
+
+| Target | Does |
+|---|---|
+| `make ingest` | runs `ingest all` from the checkout with `.env` |
+| `make ingest-install` | builds the binary, writes the agent with `plutil`, and loads it, replacing a loaded copy; run again after a code or `.env` change |
+| `make ingest-status` | prints the loaded agent's state and the log's last 20 lines |
+| `make ingest-uninstall` | unloads the agent and deletes the agent and the binary; the log is kept |
 
 ## Configuration
 
@@ -111,12 +126,13 @@ A non-default base URL is logged as a warning on every run.
 - AC-3: A second `make ingest` the same day makes no Moonton request and inserts nothing; with `-force` it appends a second full set.
 - AC-4: With 10 of 30 combinations deleted for today, `ingest stats` fetches exactly those 10.
 - AC-5: Unit tests against a stub server prove: `records: null`, `code` non-zero, and `total` 100 fail without retry; a short read and a 500 are retried once; a failure in the middle keeps earlier combinations and exits 1 after the rest; requests are 2s apart.
-- AC-6: `payload` equals the upstream record byte-for-byte as JSON, including `sub_hero`.
+- AC-6: `payload` equals the upstream record as a JSON value (`payload = $1::jsonb`), including `sub_hero`.
 - AC-7: `ingest patches` twice in a row reports zero changed on the second run and leaves every `updated_at` unchanged. A fixture with one edited Highlights entry changes exactly that row.
-- AC-8: Parser tests on the committed `Portal:Patches` fixture yield 113 Patches, newest first, with the reused-version and letter-suffix cases, and reject a page with tables but no Patch rows as non-retryable.
+- AC-8: Parser tests on the committed `Portal:Patches` fixture yield 113 Patches, newest first, with 112 distinct versions, `1.7.44B` on two release dates, and versions kept with their letter suffix in either case (`2.1.67a`, `1.9.42B`); they reject a page with tables but no Patch rows as non-retryable.
 - AC-9: `LIQUIPEDIA_BASE_URL=http://127.0.0.1:1 ingest all` logs the calendar failure, still stores statistics, and exits 1.
 - AC-10: Both upstreams receive the configured User-Agent; Liquipedia receives one `action=parse` request per run.
-- AC-11: `make ingest-install` twice leaves exactly one block in `crontab -l`, and `make ingest-status` prints it.
+- AC-11: `make ingest-install` twice leaves exactly one loaded agent, its plist has mode 600 and runs at 07:00 and 13:00, and `make ingest-status` prints it; `make ingest-uninstall` leaves none.
+- AC-12: A `-date` later than today in `INGEST_TIMEZONE` exits 2 with the usage text.
 
 ## Verification
 
@@ -132,5 +148,9 @@ psql -tAc "SELECT sum(appearance_share) FROM raw.hero_rank_snapshots WHERE rank_
 psql -c "DELETE FROM raw.hero_rank_snapshots WHERE snapshot_date = current_date AND (window_days = 15 OR (window_days = 30 AND rank_tier IN ('epic','legend','mythic','honor')))"   # AC-4 setup, run by the user against a disposable database
 go run ./cmd/ingest stats                                          # AC-4, logs 10 fetched, 20 skipped
 LIQUIPEDIA_BASE_URL=http://127.0.0.1:1 go run ./cmd/ingest all; test $? -eq 1   # AC-9
+go run ./cmd/ingest stats -date 2999-01-01; test $? -eq 2       # AC-12
 make ingest-install && make ingest-install && make ingest-status   # AC-11
+launchctl list | grep -c com.yeremi777.mlbb-collector.ingest      # AC-11, prints 1
+stat -f %Lp ~/Library/LaunchAgents/com.yeremi777.mlbb-collector.ingest.plist   # AC-11, prints 600
+make ingest-uninstall && ! launchctl list | grep -q com.yeremi777.mlbb-collector.ingest   # AC-11
 ```

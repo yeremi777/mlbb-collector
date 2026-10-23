@@ -14,6 +14,7 @@ The service seeds a hand-authored hero, counter, and synergy dataset from `data/
 - AI providers in a fall-through chain (OpenRouter, OpenCode Zen, and an offline `mock`), with an in-memory result cache
 - Optional Redis-backed rate limiting of uncached analyze requests, per client address and per browser
 - Seeding (`make seed`) that makes the public tables match `data/` exactly
+- Daily ingest (`make ingest`) of Moonton's hero statistics into `raw.hero_rank_snapshots` and Liquipedia's Patch calendar into `raw.patches`, scheduled by a launchd agent
 - Timestamped SQL migrations via goose
 - Swagger UI at `/docs`
 
@@ -56,11 +57,25 @@ make api APP_PORT=8090 APP_URL=http://127.0.0.1:8090
 
 To limit analyze requests, set `RATE_LIMIT_ENABLED=true`, `RATE_LIMIT_SALT`, and `REDIS_HOST` (with `REDIS_PORT` and `REDIS_DB`) in `.env`. `make help` lists every target.
 
+## Ingest
+
+`make ingest` fetches the Patch calendar and today's hero statistics, as dated in `INGEST_TIMEZONE`, into the raw tables of the `.env` database. A re-run fetches only the Rank tier and Window combinations still missing for the day. `go run ./cmd/ingest` takes a command:
+
+```bash
+go run ./cmd/ingest stats                     # today's statistics
+go run ./cmd/ingest stats -date 2026-10-18    # label a run after midnight with the previous day
+go run ./cmd/ingest all -force                # fetch every combination again and append
+go run ./cmd/ingest patches                   # the Patch calendar only
+```
+
+`make ingest-install` installs a launchd agent that runs `ingest all` at 07:00 and 13:00 in the Mac's local time; a run missed while the Mac sleeps starts on wake. The binary is copied to `~/Library/Application Support/mlbb-collector/`, the `.env` settings are written into the agent's plist (mode 600), and the log is `~/Library/Logs/mlbb-collector/ingest.log`. Re-run it after a code or `.env` change. `make ingest-status` shows the agent and the log's last lines, and `make ingest-uninstall` removes it.
+
 ## Project Layout
 
 ```
 cmd/api              REST API binary: the routes the frontend consumes
 cmd/seed             seeder binary: data/ -> Postgres
+cmd/ingest           ingest binary: Moonton and Liquipedia -> raw tables
 internal/hero        heroes: repository, service, handlers
 internal/counter     counters and their proof: repository, handlers
 internal/synergy     synergies and their proof: repository, handlers
@@ -69,9 +84,12 @@ internal/ai          OpenAI-compatible chat providers and the fall-through chain
 internal/ratelimit   Redis-backed analyze rate limiting
 internal/dataset     reads and validates the authored dataset
 internal/seed        writes the dataset to the public tables
+internal/snapshot    Moonton hero statistics: client, daily run, raw.hero_rank_snapshots
+internal/patch       Liquipedia Patch calendar: client, parser, raw.patches
 internal/database    Postgres connections and goose migrations
 internal/httpx       JSON responses, errors, routing, CORS, docs page
 internal/config      environment configuration
+deploy/launchd       the launchd agent behind make ingest-install
 docs                 OpenAPI contract, specs, ADRs, authoring guides
 data                 hand-authored heroes, counters, and synergies (source of truth in git)
 ```
