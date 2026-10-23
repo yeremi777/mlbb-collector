@@ -55,9 +55,9 @@ func Main(m *testing.M) {
 	os.Exit(code)
 }
 
-// emptySchema drops every table and the raw schema, leaving an empty public schema.
+// emptySchema drops every table and the raw, staging, and marts schemas, leaving an empty public schema.
 func emptySchema(ctx context.Context, c *pgx.Conn) error {
-	_, err := c.Exec(ctx, "DROP SCHEMA IF EXISTS raw CASCADE; DROP SCHEMA public CASCADE; CREATE SCHEMA public")
+	_, err := c.Exec(ctx, "DROP SCHEMA IF EXISTS marts CASCADE; DROP SCHEMA IF EXISTS staging CASCADE; DROP SCHEMA IF EXISTS raw CASCADE; DROP SCHEMA public CASCADE; CREATE SCHEMA public")
 	return err
 }
 
