@@ -15,6 +15,7 @@ The service seeds a hand-authored hero, counter, and synergy dataset from `data/
 - Optional Redis-backed rate limiting of uncached analyze requests, per client address and per browser
 - Seeding (`make seed`) that makes the public tables match `data/` exactly
 - Daily ingest (`make ingest`) of Moonton's hero statistics into `raw.hero_rank_snapshots` and Liquipedia's Patch calendar into `raw.patches`, scheduled by a launchd agent
+- `staging` and `marts` views over the raw zone: deduplicated Snapshots, Measured counters, and each hero's current standing per Rank tier and Window with its Patch
 - Timestamped SQL migrations via goose
 - Swagger UI at `/docs`
 
