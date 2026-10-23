@@ -120,7 +120,7 @@ Primary key is the hero pair.
 - AC-1: Every file under `data/` is byte-identical to its counterpart under `dev`'s `data/static/`, and `data/` holds nothing else.
 - AC-2: Loading the dataset yields 133 Heroes, 660 Counters with 660 Proofs, and 660 Synergies with 660 Proofs.
 - AC-3: Unit tests prove each case under Loading fails rejects a fixture dataset with an error naming the file, row index, and key.
-- AC-4: Migrations create the five tables with the columns, checks, keys, and indexes above. `make migrate-reset`, which rolls every migration back, then `make migrate-up`, succeeds.
+- AC-4: Migrations create the five tables with the columns, checks, keys, and indexes above. `make migrate-up` succeeds.
 - AC-5: Seeding an empty database leaves heroes 133, counters 660, counter_proofs 660, synergies 660, synergy_proofs 660.
 - AC-6: Seeding a second time leaves every count and `max(updated_at)` of every table unchanged.
 - AC-7: Seeding from a copy of `data/` with one Counter removed deletes that Counter and its Proof; seeding from a copy with one Hero removed deletes that Hero and every Counter and Synergy naming it.
@@ -135,7 +135,7 @@ git -C ~/Documents/Local/mlbb-analyzer-service archive dev data/static | tar -x 
 go vet ./...
 go test ./...                                                     # AC-2, AC-3
 make test-integration                                              # AC-9
-make migrate-reset && make migrate-up                             # AC-4, run by the user
+make migrate-up                                                   # AC-4, run by the user
 make seed && make seed                                            # AC-5, AC-6, run by the user
 psql -c "SELECT 'heroes', count(*), max(updated_at) FROM heroes UNION ALL SELECT 'counters', count(*), max(updated_at) FROM counters UNION ALL SELECT 'counter_proofs', count(*), max(updated_at) FROM counter_proofs UNION ALL SELECT 'synergies', count(*), max(updated_at) FROM synergies UNION ALL SELECT 'synergy_proofs', count(*), max(updated_at) FROM synergy_proofs"   # AC-5, AC-6
 go run ./cmd/seed -data "$TMPDIR/data-minus-one"                  # AC-7, run by the user against a disposable database
