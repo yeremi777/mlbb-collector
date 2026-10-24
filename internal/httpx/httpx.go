@@ -147,8 +147,7 @@ const ui = SwaggerUIBundle({
 `
 
 // docsPaths serve the docs page: /docs, a trailing slash, and the Swagger UI
-// address dev served, where browsers that cached dev's permanent redirect
-// from /docs still go.
+// address browsers that cached a permanent redirect from /docs still go to.
 var docsPaths = []string{"GET /docs", "GET /docs/{$}", "GET /docs/index.html"}
 
 // Docs serves the OpenAPI contract at /docs/openapi.yaml and a Swagger UI page

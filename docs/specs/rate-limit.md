@@ -54,7 +54,7 @@ The `REDIS_*` variables are read only when limiting is enabled. `REDIS_DB` is a 
 - AC-5: With Redis stopped, an uncached analyze request answers 503 `rate_limit_unavailable`.
 - AC-6: With `RATE_LIMIT_ENABLED=false`, no Redis connection is opened and no cookie is set.
 - AC-7: Enabling without `RATE_LIMIT_SALT` stops startup naming it, and enabling with `RATE_LIMIT_COOKIE_SAMESITE=none` and `RATE_LIMIT_COOKIE_SECURE=false` stops startup naming both.
-- AC-8: For the same sequence of requests, the Redis keys, counter values, and TTLs equal those recorded in `testdata/dev.json`.
+- AC-8: For the same sequence of requests, the Redis keys, counter values, and TTLs equal those recorded in `testdata/golden.json`.
 - AC-9: Integration tests use database `TEST_REDIS_DB` (15 under `make test-integration`) on the `REDIS_HOST` and `REDIS_PORT` server, refuse to run when it equals `REDIS_DB`, and empty only that database.
 
 ## Verification

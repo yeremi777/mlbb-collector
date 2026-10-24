@@ -129,7 +129,7 @@ func TestDocs(t *testing.T) {
 	Docs(mux, []byte("openapi: 3.1.0\n"))
 	h := Router(mux)
 
-	// /docs/index.html is where browsers that once saw dev's permanent
+	// /docs/index.html is where browsers that once saw a permanent
 	// redirect from /docs still go, so it serves the page rather than
 	// redirecting back to /docs.
 	for _, target := range []string{"/docs", "/docs/", "/docs/index.html"} {

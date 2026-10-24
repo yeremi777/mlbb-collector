@@ -190,9 +190,9 @@ func TestAValidCookieIsKeptAndKeyedCanonically(t *testing.T) {
 	}
 }
 
-// devGolden is a request sequence and what dev's limiter at b04727f answered
-// and left in Redis for it, with each issued browser ID as <issued-N>.
-type devGolden struct {
+// rateLimitGolden is a request sequence and what the limiter answered and left
+// in Redis for it, with each issued browser ID as <issued-N>.
+type rateLimitGolden struct {
 	Requests []struct {
 		Route        string `json:"route"`
 		RemoteAddr   string `json:"remoteAddr"`
@@ -215,15 +215,15 @@ type goldenCounter struct {
 	TTL   int    `json:"ttl"`
 }
 
-// within1 allows a clock tick between dev's capture and this run.
+// within1 allows a clock tick between the capture and this run.
 func within1(got, want int) bool { return got >= want-1 && got <= want }
 
 func TestRedisMatchesDev(t *testing.T) {
-	raw, err := os.ReadFile("testdata/dev.json")
+	raw, err := os.ReadFile("testdata/golden.json")
 	if err != nil {
 		t.Fatal(err)
 	}
-	var golden devGolden
+	var golden rateLimitGolden
 	if err := json.Unmarshal(raw, &golden); err != nil {
 		t.Fatal(err)
 	}
@@ -293,6 +293,6 @@ func TestRedisMatchesDev(t *testing.T) {
 		delete(got, want.Key)
 	}
 	for key := range got {
-		t.Errorf("%s is in Redis but not in dev's", key)
+		t.Errorf("%s is in Redis but not in the golden", key)
 	}
 }

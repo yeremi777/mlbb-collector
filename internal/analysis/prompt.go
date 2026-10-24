@@ -119,7 +119,7 @@ Return corrected JSON only with exactly these keys:
 Do not add matchup facts outside the provided dataset context.`
 
 // languageInstructions name the language of the explanatory prose. Both name
-// counterHeroId for Synergies too, as dev's do.
+// counterHeroId for Synergies too.
 var languageInstructions = map[string]string{
 	"en": "Write all user-visible explanation text (summary, strengths, conditions, failureCases) " +
 		"in English. Keep every identifier exactly as given: counterHeroId, evidenceIds, and proof ids.",

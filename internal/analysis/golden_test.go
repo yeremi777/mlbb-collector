@@ -13,9 +13,9 @@ import (
 	"testing"
 )
 
-// routeCase is one file of testdata/routes, captured from dev's analyzer and
-// response encoding at b04727f: a request, the answers of a stub provider for
-// each provider asked, and the status, body, and provider requests dev gave.
+// routeCase is one file of testdata/routes, a request, the answers of a stub
+// provider for each provider asked, and the expected status, body, and provider
+// requests.
 type routeCase struct {
 	Route     string          `json:"route"`
 	Request   json.RawMessage `json:"request"`
@@ -67,7 +67,7 @@ func stubEnv(t *testing.T, c routeCase) (map[string]string, *[]received) {
 			defer mu.Unlock()
 			log = append(log, received{Provider: sp.Provider, Path: r.URL.Path, Headers: headers, Body: string(body)})
 			if next == len(sp.Answers) {
-				t.Errorf("%s asked more often than dev asked it", sp.Provider)
+				t.Errorf("%s asked more often than the golden case allows", sp.Provider)
 				w.WriteHeader(http.StatusTeapot)
 				return
 			}

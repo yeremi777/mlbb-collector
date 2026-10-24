@@ -63,8 +63,7 @@ func partner(t *testing.T, ms []Matchup, uid string) Matchup {
 	return ms[i]
 }
 
-// assertGoldenMessages compares messages with testdata/prompts/name, captured
-// from dev's prompt builders.
+// assertGoldenMessages compares messages with testdata/prompts/name.
 func assertGoldenMessages(t *testing.T, name string, got []ai.Message) {
 	t.Helper()
 	raw, err := os.ReadFile(filepath.Join("testdata", "prompts", name))

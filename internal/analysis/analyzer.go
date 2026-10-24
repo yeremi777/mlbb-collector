@@ -225,7 +225,7 @@ func validateDetail(payload map[string]any, proofIDs []string) (Detail, error) {
 	if err != nil {
 		return Detail{}, providerFailure("%v", err)
 	}
-	// Anonymous, so a type error names the field as dev's repair message does.
+	// Anonymous, so a type error names the field in the repair message.
 	var answer struct {
 		Score        *float64 `json:"score"`
 		Confidence   *float64 `json:"confidence"`
