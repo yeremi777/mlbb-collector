@@ -58,6 +58,8 @@ make api APP_PORT=8090 APP_URL=http://127.0.0.1:8090
 
 To limit analyze requests, set `RATE_LIMIT_ENABLED=true`, `RATE_LIMIT_SALT`, and `REDIS_HOST` (with `REDIS_PORT` and `REDIS_DB`) in `.env`. `make help` lists every target.
 
+A browser frontend sends analyze requests with `credentials: "include"` so the rate-limit cookie is stored and returned, and `FRONTEND_ORIGIN` lists the page's origin. The page and the API are served from the same host name, such as `localhost` for both, because the cookie is `SameSite=Lax` by default.
+
 ## Ingest
 
 `make ingest` fetches the Patch calendar and today's hero statistics, as dated in `INGEST_TIMEZONE`, into the raw tables of the `.env` database. A re-run fetches only the Rank tier and Window combinations still missing for the day. `go run ./cmd/ingest` takes a command:
