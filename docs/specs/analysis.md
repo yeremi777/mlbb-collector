@@ -2,7 +2,7 @@
 
 ## Goal
 
-Four analyze routes return an AI-produced Score and Confidence for every Counter or Synergy of one hero, or a written explanation of one, built only from the stored Reasons and Proof ([ADR-0003](../adr/0003-scores-are-ai-generated-and-never-stored.md)), with the same request and response contract as `mlbb-analyzer-service` branch `dev`.
+Four analyze routes return an AI-produced Score and Confidence for every Counter or Synergy of one hero, or a written explanation of one, built only from the stored Reasons and Proof ([ADR-0003](../adr/0003-scores-are-ai-generated-and-never-stored.md)), under the request and response contract below.
 
 ## Non-goals
 
@@ -10,7 +10,7 @@ Four analyze routes return an AI-produced Score and Confidence for every Counter
 - No measured data, Patch, or Snapshot in any prompt. Scores draw on the authored dataset only.
 - No Score, Confidence, or explanation is written to Postgres or any durable store.
 - No change to a request key, response key, or `*_not_found` error code the frontend reads.
-- No prompt wording change. The messages sent to a provider equal `dev`'s for the same input.
+- No prompt wording change. The messages sent to a provider equal the golden files in `testdata/prompts` for the same input.
 
 ## Routes
 
@@ -42,7 +42,7 @@ Each route checks, in this order, and answers with the first failure:
 |---|---|---|
 | 422 | `invalid_request` | message `Request body is not valid JSON.` or `language must be 'en' or 'id'.` |
 | 404 | `*_not_found` | as in Check order; the hero messages are `Hero was not found in the dataset.`, `Counter hero was not found in the dataset.`, `Synergy hero was not found in the dataset.`; the data and matchup messages read `Counter data was not found for the target hero.`, `Counter matchup was not found for the target hero.`, and their Synergy and anchor equivalents |
-| 502 | `ai_provider_error` | every provider failed, or the model's answer failed validation; the message is `dev`'s for the same failure |
+| 502 | `ai_provider_error` | every provider failed, or the model's answer failed validation; the message names the failing provider or validation rule |
 | 504 | `ai_provider_not_configured` | message `AI provider is not configured. Set the required API key in .env.` |
 | 504 | `ai_provider_timeout` | the request's AI deadline passed; message `AI provider did not answer in time.` |
 
@@ -61,7 +61,7 @@ Each route checks, in this order, and answers with the first failure:
 
 - `AI_PROVIDERS` lists provider names in fall-through order: `openrouter`, `opencode_zen`, `mock`. A name outside that list stops startup with an error naming it.
 - `openrouter` and `opencode_zen` speak OpenAI-compatible `POST /chat/completions` with `response_format: json_object` and temperature 0.2. A listed provider without its API key or model is skipped with a warning; an API key starting with `<` is a placeholder and counts as missing. No usable provider leaves the routes answering `ai_provider_not_configured`.
-- One provider is asked directly; two or more are asked as a chain, whose failure message joins each provider's, as `dev` does.
+- One provider is asked directly; two or more are asked as a chain, whose failure message joins each provider's, in fall-through order.
 - A transport error, a 5xx, or a 402, 408, 409, 425, or 429 from a provider falls through to the next one. Any other failure stops the chain.
 - A model answer wrapped in a markdown code fence is unwrapped before parsing.
 - `mock` makes no network call and returns a valid, deterministic answer derived from the request's Counters or Synergies, for local development and tests.
@@ -84,8 +84,8 @@ Each route checks, in this order, and answers with the first failure:
 
 ## Acceptance criteria
 
-- AC-1: For each of the four routes, the messages sent to the provider for `tigreal` (and `tigreal`/`diggie` for counter detail, `tigreal`/`pharsa` for synergy detail) in `en` and `id`, and the repair messages after an invalid counter detail, equal golden files produced from `dev`'s prompt builders.
-- AC-2: Against a stub chat-completions server returning a fixed answer, each route's status and body bytes, and the request bodies the stub receives, equal golden files captured from `dev`'s analyzer and response encoding against the same stub and input, with no database. The cases cover a valid answer for each route, a detail repair, an invalid scoring answer, a provider error, and a two-provider chain that fails.
+- AC-1: For each of the four routes, the messages sent to the provider for `tigreal` (and `tigreal`/`diggie` for counter detail, `tigreal`/`pharsa` for synergy detail) in `en` and `id`, and the repair messages after an invalid counter detail, equal the golden files in `testdata/prompts`.
+- AC-2: Against a stub chat-completions server returning a fixed answer, each route's status and body bytes, and the request bodies the stub receives, equal the golden files in `testdata/routes` against the same stub and input, with no database. The cases cover a valid answer for each route, a detail repair, an invalid scoring answer, a provider error, and a two-provider chain that fails.
 - AC-3: Handler tests prove each step of Check order answers its stated status and code, and that a request failing step N never reaches step N+1.
 - AC-4: Unit tests prove each Scoring and Detail validation rule rejects an answer that breaks it, the ranking order including both tie-breaks, and that the repair is sent once and only for a non-evidence failure.
 - AC-5: Unit tests prove fall-through on each retryable status and on a transport error, a stop on a non-retryable status, and `ai_provider_timeout` when a stub provider outlasts the deadline, including during the repair.

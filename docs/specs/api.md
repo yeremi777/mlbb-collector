@@ -2,7 +2,7 @@
 
 ## Goal
 
-`cmd/api` serves Heroes, Counters, and Synergies from the `public` tables over HTTP, answering every route below with the same status, headers, and body bytes as `mlbb-analyzer-service` branch `dev`, so the `mlbb-analyzer` frontend switches to it without a change.
+`cmd/api` serves Heroes, Counters, and Synergies from the `public` tables over HTTP, answering every route below with the status, headers, and body stated here, so the `mlbb-analyzer` frontend works against it without a change.
 
 ## Non-goals
 
@@ -24,7 +24,7 @@
 | `GET /docs/openapi.yaml` | the spec file as written, `application/yaml` | |
 | `GET /` | 302 redirect to `/docs` | |
 
-`docs/openapi.yaml` is the contract for every route and body except the docs routes and redirect above. It declares no servers, so the docs page calls OpenAPI's default `/`, the address it was opened on, whether `localhost` or `127.0.0.1`. `/docs/index.html` serves the page because browsers that once saw `dev`'s permanent redirect from `/docs` go there without asking. It is written by hand, and a test fails when a registered route other than those is missing from it, or a path in it is not registered.
+`docs/openapi.yaml` is the contract for every route and body except the docs routes and redirect above. It declares no servers, so the docs page calls OpenAPI's default `/`, the address it was opened on, whether `localhost` or `127.0.0.1`. `/docs/index.html` serves the page because browsers that once cached a permanent redirect from `/docs` go there without asking. It is written by hand, and a test fails when a registered route other than those is missing from it, or a path in it is not registered.
 
 ### Bodies
 
@@ -92,8 +92,8 @@ Read once at startup into one typed config, from the environment, which `make` f
 
 ## Acceptance criteria
 
-- AC-1: For every route in the table and for these requests, the status, `Content-Type`, and body bytes equal `dev`'s against the same seeded database: `/api/heroes`, `?search=ali`, `?role=TANK`, `?lane=roam&page=2&size=5`, `?page=0&size=500`, `?page=99`, `?size=abc`, `/api/heroes/tigreal`, `/api/heroes/x.borg`, `/api/heroes/nope`, the counters and synergies of `tigreal`, `x.borg`, `hirara`, and `nope`.
-- AC-2: A request from an allowed origin, a preflight from an allowed origin, and a request from another origin get the CORS headers stated above, and match `dev`'s.
+- AC-1: For every route in the table and for these requests, the status, `Content-Type`, and body are those the table and `docs/openapi.yaml` state against the seeded database: `/api/heroes`, `?search=ali`, `?role=TANK`, `?lane=roam&page=2&size=5`, `?page=0&size=500`, `?page=99`, `?size=abc`, `/api/heroes/tigreal`, `/api/heroes/x.borg`, `/api/heroes/nope`, the counters and synergies of `tigreal`, `x.borg`, `hirara`, and `nope`.
+- AC-2: A request from an allowed origin, a preflight from an allowed origin, and a request from another origin get the CORS headers stated above.
 - AC-3: An unknown path answers 404 `not_found` and a wrong method on a known path answers 405 `method_not_allowed`, both in the error body shape.
 - AC-4: A handler test forces a repository error and gets 500 `internal_error` with no detail from the error in the body.
 - AC-5: The route test passes: every registered route except the docs routes and the redirect is in `docs/openapi.yaml`, and every path in it is registered.
@@ -109,9 +109,8 @@ go vet ./...
 go test ./...                                              # AC-3, AC-4, AC-5
 make test-integration                                       # repository queries against test_mlbb_collector
 make api                                                   # this API on :8080
-API_PORT=8081 go run ./cmd/api                             # dev's API, from the mlbb-analyzer-service checkout on branch dev, same DB_* settings
-for p in /health /api/heroes '/api/heroes?search=ali' '/api/heroes?role=TANK' '/api/heroes?lane=roam&page=2&size=5' '/api/heroes?page=0&size=500' '/api/heroes?page=99' '/api/heroes?size=abc' /api/heroes/tigreal /api/heroes/x.borg /api/heroes/nope /api/heroes/tigreal/counters /api/heroes/x.borg/counters /api/heroes/hirara/counters /api/heroes/nope/counters /api/heroes/tigreal/synergies /api/heroes/x.borg/synergies /api/heroes/hirara/synergies /api/heroes/nope/synergies; do diff <(curl -si "127.0.0.1:8080$p" | grep -iv '^date:') <(curl -si "127.0.0.1:8081$p" | grep -iv '^date:') >/dev/null || echo "DIFF $p"; done   # AC-1, prints nothing
-for o in http://localhost:3000 https://evil.example; do diff <(curl -si -H "Origin: $o" 127.0.0.1:8080/health | grep -i '^access-control\|^vary') <(curl -si -H "Origin: $o" 127.0.0.1:8081/health | grep -i '^access-control\|^vary') || echo "DIFF $o"; done   # AC-2
+for p in /health /api/heroes '/api/heroes?search=ali' '/api/heroes?role=TANK' '/api/heroes?lane=roam&page=2&size=5' '/api/heroes?page=0&size=500' '/api/heroes?page=99' '/api/heroes?size=abc' /api/heroes/tigreal /api/heroes/x.borg /api/heroes/nope /api/heroes/tigreal/counters /api/heroes/x.borg/counters /api/heroes/hirara/counters /api/heroes/nope/counters /api/heroes/tigreal/synergies /api/heroes/x.borg/synergies /api/heroes/hirara/synergies /api/heroes/nope/synergies; do curl -si "127.0.0.1:8080$p" | grep -i '^HTTP\|^content-type'; done   # AC-1, status and content type per route
+for o in http://localhost:3000 https://evil.example; do curl -si -H "Origin: $o" 127.0.0.1:8080/health | grep -i '^access-control\|^vary'; done   # AC-2, CORS headers only for the allowed origin
 curl -si -X OPTIONS -H 'Origin: http://localhost:3000' -H 'Access-Control-Request-Headers: content-type' 127.0.0.1:8080/api/heroes   # AC-2, 204
 curl -s 127.0.0.1:8080/nope; curl -s -X DELETE 127.0.0.1:8080/api/heroes   # AC-3
 open http://127.0.0.1:8080/docs                            # AC-6

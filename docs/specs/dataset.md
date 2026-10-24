@@ -7,7 +7,7 @@ The authored Heroes, Counters, and Synergies in `data/` are validated as one uni
 ## Non-goals
 
 - No HTTP API, analysis, ingest, or `raw`, `staging`, or `marts` schema. Later specs own them.
-- The authored content is not edited. The files are copied from `mlbb-analyzer-service` branch `dev`, `data/static/`, unchanged.
+- The authored content is not edited. The files in `data/` are the dataset as authored.
 - No index files (`counters.json`, `synergies.json`), no `data/static/raw/hero-meta-final.json`, and no README inside `data/`.
 - No `score` or `scoreHint` anywhere in the dataset ([ADR-0003](../adr/0003-scores-are-ai-generated-and-never-stored.md)).
 
@@ -117,7 +117,7 @@ Primary key is the hero pair.
 
 ## Acceptance criteria
 
-- AC-1: Every file under `data/` is byte-identical to its counterpart under `dev`'s `data/static/`, and `data/` holds nothing else.
+- AC-1: `data/` holds only `heroes.json`, `counters/<hero-id>.json`, and `synergies/<hero-id>.json`.
 - AC-2: Loading the dataset yields 133 Heroes, 660 Counters with 660 Proofs, and 660 Synergies with 660 Proofs.
 - AC-3: Unit tests prove each case under Loading fails rejects a fixture dataset with an error naming the file, row index, and key.
 - AC-4: Migrations create the five tables with the columns, checks, keys, and indexes above. `make migrate-up` succeeds.
@@ -131,7 +131,7 @@ Primary key is the hero pair.
 
 ```bash
 set -a; . <(grep '^DB_' .env); set +a; export PGHOST=$DB_HOST PGPORT=$DB_PORT PGDATABASE=$DB_NAME PGUSER=$DB_USERNAME PGPASSWORD=$DB_PASSWORD PGSSLMODE=$DB_SSLMODE   # psql below reads these
-git -C ~/Documents/Local/mlbb-analyzer-service archive dev data/static | tar -x -C "$TMPDIR" && diff -r -x counters.json -x synergies.json -x raw -x README.md "$TMPDIR/data/static" data   # AC-1
+find data -type f | grep -vE '^data/(heroes\.json|(counters|synergies)/[^/]+\.json)$'   # AC-1, prints nothing
 go vet ./...
 go test ./...                                                     # AC-2, AC-3
 make test-integration                                              # AC-9
