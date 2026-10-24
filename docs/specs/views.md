@@ -8,7 +8,8 @@ The `staging` views turn the raw zone into one clean row per fact, and the `mart
 
 - No table, materialized view, or scheduled refresh. Every object here is a plain view.
 - No HTTP route and no Go reader. A view's first consumer brings its own spec.
-- No change to `raw` or `public`.
+- No change to `raw` or `public`, and so no index on `raw`. The first consumer measures the views and brings its own spec if they are slow.
+- No column that reads the current date. A caller subtracts `snapshot_date` from its own today, because `snapshot_date` is a date in `INGEST_TIMEZONE`, not in the database session's zone.
 - No Measured counter mixed into a Counter, or into any Score.
 
 ## Rules
@@ -16,7 +17,9 @@ The `staging` views turn the raw zone into one clean row per fact, and the `mart
 - Nothing outside `staging` reads `raw`.
 - `raw` keeps upstream spelling (`main_heroid`); `staging` and `marts` use `main_hero_id`, `target_heroid`, and `counter_heroid`.
 - A `marts` view joins `public.heroes` with a `LEFT JOIN` on `mlid`, so a hero Moonton lists before the authored dataset carries it appears with a NULL Hero ID and name.
-- A value read from `payload` that is missing, null, or not the expected JSON type yields no row, never an error for the whole view.
+- A value read from `payload` that is missing, null, or not the expected JSON type yields no row, never an error for the whole view. The rule applies to the `sub_hero` and `sub_hero_last` arrays and to each entry's `heroid` and `increase_win_rate`; an invalid entry is skipped and its siblings stay.
+- One migration creates the `staging` and `marts` schemas and all six views in dependency order, in the final shape. Its Down section drops the views, then the two schemas.
+- The integration test helper drops `staging` and `marts` along with `raw` between runs.
 
 ## staging
 
@@ -43,7 +46,6 @@ One row per hero, Rank tier, and Window, from the hero's newest Snapshot date in
 |---|---|
 | `main_hero_id`, `hero_uid`, `hero_name` | the hero; `hero_uid` and `hero_name` NULL when not in `public.heroes` |
 | `rank_tier`, `window_days`, `snapshot_date` | |
-| `snapshot_age_days` | `current_date - snapshot_date` |
 | `patch_as_of` | the version of the latest Patch released on or before `snapshot_date` |
 | `days_since_patch` | `snapshot_date` minus that Patch's release date |
 | `window_crosses_patch` | true when `snapshot_date - window_days` is before that Patch's release date |
@@ -59,10 +61,10 @@ The rows of `hero_counter_daily` at the newest Snapshot date per Target hero, Ra
 
 ## Acceptance criteria
 
-- AC-1: Migrations create the six views; `make migrate-reset && make migrate-up` succeeds.
+- AC-1: One migration creates the six views; `make migrate-up` succeeds.
 - AC-2: With one day forced twice, `hero_rank_snapshot_latest` holds one row per hero, Rank tier, Window, and date, carrying the second fetch's values.
 - AC-3: `hero_counter_daily` has no row with `win_rate_delta <= 0`, and a `sub_hero_last` row appears with its hero ids swapped relative to the payload.
-- AC-4: A Snapshot whose `payload` has `sub_hero` null, or a scalar, yields no `hero_counter_daily` rows for that hero and no error.
+- AC-4: A Snapshot whose `payload` has `sub_hero` null, or a scalar, yields no `hero_counter_daily` rows for that hero and no error. An entry whose `heroid` or `increase_win_rate` is missing, null, or not a number yields no row, and the valid entries beside it still yield theirs.
 - AC-5: `hero_current` has 30 rows per hero in the newest Snapshot; a hero absent from `public.heroes` appears with NULL `hero_uid`.
 - AC-6: With Patches released on D and D-3, a Snapshot dated D-1 has the D-3 Patch as `patch_as_of`, `days_since_patch` 2, and `window_crosses_patch` true for the 3-day Window and above, false for the 1-day Window. A Snapshot dated before every Patch has the three Patch columns NULL.
 - AC-7: Ranks in `hero_current` never compare rows of different Snapshot dates.
@@ -74,7 +76,7 @@ The rows of `hero_counter_daily` at the newest Snapshot date per Target hero, Ra
 set -a; . <(grep '^DB_' .env); set +a; export PGHOST=$DB_HOST PGPORT=$DB_PORT PGDATABASE=$DB_NAME PGUSER=$DB_USERNAME PGPASSWORD=$DB_PASSWORD PGSSLMODE=$DB_SSLMODE   # psql below reads these
 go vet ./...
 make test-integration                                              # AC-2 to AC-8
-make migrate-reset && make migrate-up                              # AC-1, run by the user
+make migrate-up                                                    # AC-1, run by the user
 psql -tAc "SELECT count(*) FROM staging.hero_counter_daily WHERE win_rate_delta <= 0"   # AC-3, returns 0
 psql -tAc "SELECT main_hero_id, count(*) FROM marts.hero_current WHERE snapshot_date = (SELECT max(snapshot_date) FROM marts.hero_current) GROUP BY 1 HAVING count(*) <> 30"   # AC-5, returns nothing
 ```

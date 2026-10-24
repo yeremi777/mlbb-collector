@@ -112,7 +112,7 @@ The agent reads nothing from the checkout, because macOS denies a background job
 | Variable | Default | Meaning |
 |---|---|---|
 | `DB_*` | | as in `api` |
-| `INGEST_TIMEZONE` | `Asia/Jakarta` | the zone whose today is a run's date |
+| `INGEST_TIMEZONE` | `Asia/Jakarta` | the zone whose today is a run's date; never change it once rows are stored |
 | `INGEST_USER_AGENT` | as above | sent to both upstreams |
 | `MOONTON_BASE_URL` | `https://api.gms.moontontech.com/api/gms/source/2669606` | for pointing a run at a stub |
 | `LIQUIPEDIA_BASE_URL` | `https://liquipedia.net/mobilelegends/api.php` | for pointing a run at a stub |
@@ -121,7 +121,7 @@ A non-default base URL is logged as a warning on every run.
 
 ## Acceptance criteria
 
-- AC-1: Migrations create both tables with the columns, checks, and index above; `make migrate-reset && make migrate-up` succeeds.
+- AC-1: Migrations create both tables with the columns, checks, and index above; `make migrate-up` succeeds.
 - AC-2: `make ingest` exits 0 and leaves 30 combinations × the upstream roster rows for today, and the sum of `appearance_share` for `all`/1-day is within 0.01 of 1.
 - AC-3: A second `make ingest` the same day makes no Moonton request and inserts nothing; with `-force` it appends a second full set.
 - AC-4: With 10 of 30 combinations deleted for today, `ingest stats` fetches exactly those 10.
@@ -141,7 +141,7 @@ set -a; . <(grep '^DB_' .env); set +a; export PGHOST=$DB_HOST PGPORT=$DB_PORT PG
 go vet ./...
 go test ./...                                                      # AC-5, AC-8, AC-10
 make test-integration                                              # AC-5 to AC-7 against test_mlbb_collector
-make migrate-reset && make migrate-up                              # AC-1, run by the user
+make migrate-up                                                    # AC-1, run by the user
 make ingest && make ingest                                         # AC-2, AC-3, run by the user
 psql -c "SELECT rank_tier, window_days, count(*) FROM raw.hero_rank_snapshots WHERE snapshot_date = current_date GROUP BY 1, 2 ORDER BY 1, 2"   # AC-2
 psql -tAc "SELECT sum(appearance_share) FROM raw.hero_rank_snapshots WHERE rank_tier = 'all' AND window_days = 1 AND snapshot_date = current_date"   # AC-2
