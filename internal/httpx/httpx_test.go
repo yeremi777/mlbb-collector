@@ -109,6 +109,21 @@ func TestCORS(t *testing.T) {
 	}
 }
 
+func TestDocsPageGivesTheTabSwaggerIcons(t *testing.T) {
+	mux := http.NewServeMux()
+	Docs(mux, nil)
+	body := serve(Router(mux), http.MethodGet, "/docs", nil).Body.String()
+
+	for _, icon := range []string{
+		`<link rel="icon" type="image/png" sizes="32x32" href="https://cdn.jsdelivr.net/npm/swagger-ui-dist@5/favicon-32x32.png">`,
+		`<link rel="icon" type="image/png" sizes="16x16" href="https://cdn.jsdelivr.net/npm/swagger-ui-dist@5/favicon-16x16.png">`,
+	} {
+		if !strings.Contains(body, icon) {
+			t.Errorf("docs page lacks %s", icon)
+		}
+	}
+}
+
 func TestDocs(t *testing.T) {
 	mux := http.NewServeMux()
 	Docs(mux, []byte("openapi: 3.1.0\n"))
