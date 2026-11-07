@@ -3,7 +3,8 @@ info:
   title: MLBB Collector
   version: 1.0.0
   description: >
-    Mobile Legends: Bang Bang heroes, counters, and synergies, with AI scoring.
+    Mobile Legends: Bang Bang heroes, counters, and synergies with AI scoring,
+    plus statistics measured by Moonton.
     Fan-made; not affiliated with Moonton.
 tags:
   - name: health
@@ -13,6 +14,8 @@ tags:
     description: AI counter scoring.
   - name: synergies
     description: AI synergy scoring.
+  - name: stats
+    description: Statistics measured by Moonton.
 
 paths:
   /health:
@@ -303,6 +306,31 @@ paths:
         "503": { $ref: "#/components/responses/RateLimitUnavailable" }
         "504": { $ref: "#/components/responses/ProviderUnavailable" }
 
+  /api/stats/heroes:
+    get:
+      tags: [stats]
+      summary: List hero statistics
+      description: >
+        Every hero's standing at the newest snapshot date of one rank tier and
+        window, ordered by win rate, highest first, then hero ID. A rank tier or
+        window with no data gives an empty board.
+      operationId: listHeroStats
+      parameters:
+        - name: rank
+          in: query
+          description: Rank tier, case-insensitive.
+          schema: { $ref: "#/components/schemas/RankTier" }
+        - name: window
+          in: query
+          description: Window in days. A value that is not an integer uses the default.
+          schema: { $ref: "#/components/schemas/Window" }
+      responses:
+        "200":
+          description: The board.
+          content:
+            application/json:
+              schema: { $ref: "#/components/schemas/Board" }
+
 components:
   parameters:
     HeroId:
@@ -327,6 +355,14 @@ components:
       type: integer
       minimum: 0
       maximum: 100
+    RankTier:
+      type: string
+      enum: [all, epic, legend, mythic, honor, glory]
+      default: all
+    Window:
+      type: integer
+      enum: [1, 3, 7, 15, 30]
+      default: 7
 
     Hero:
       type: object
@@ -454,6 +490,53 @@ components:
           type: array
           description: Proof IDs of this counter or synergy that the explanation draws on.
           items: { type: string }
+
+    Board:
+      type: object
+      required: [rankTier, windowDays, snapshotDate, patch, heroes]
+      properties:
+        rankTier: { type: string, examples: [glory] }
+        windowDays: { type: integer, examples: [7] }
+        snapshotDate:
+          type: [string, "null"]
+          format: date
+          description: Newest snapshot date of the rank tier and window; null when they have no snapshot.
+          examples: ["2026-10-30"]
+        patch:
+          type: [object, "null"]
+          description: The patch the snapshot date falls in; null when no patch is known for it.
+          required: [version, daysSince, windowCrossesPatch]
+          properties:
+            version: { type: string, examples: ["1.9.20"] }
+            daysSince: { type: integer, minimum: 0, description: Days from the patch release to the snapshot date. }
+            windowCrossesPatch: { type: boolean, description: Whether the window starts before the patch release. }
+        heroes:
+          type: array
+          items: { $ref: "#/components/schemas/Standing" }
+
+    Standing:
+      type: object
+      required: [hero, winRate, appearanceShare, banRate, change, position]
+      properties:
+        hero: { $ref: "#/components/schemas/Hero" }
+        winRate: { type: number, minimum: 0, maximum: 1, description: Share of games won., examples: [0.512] }
+        appearanceShare: { type: number, minimum: 0, maximum: 1, description: Share of all picks., examples: [0.008] }
+        banRate: { type: number, minimum: 0, maximum: 1, description: Share of games banned., examples: [0.031] }
+        change:
+          type: [object, "null"]
+          description: Change since the hero's previous snapshot of this rank tier and window; null when there is none.
+          required: [since, winRate, appearanceShare, banRate]
+          properties:
+            since: { type: string, format: date, examples: ["2026-10-20"] }
+            winRate: { type: number, examples: [0.004] }
+            appearanceShare: { type: number, examples: [-0.001] }
+            banRate: { type: number, examples: [0.002] }
+        position:
+          type: object
+          required: [winRate, appearance]
+          properties:
+            winRate: { type: integer, minimum: 1, description: Place by win rate on this board's snapshot date. }
+            appearance: { type: integer, minimum: 1, description: Place by appearance share on this board's snapshot date. }
 
     Error:
       type: object

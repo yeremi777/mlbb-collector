@@ -23,6 +23,7 @@ import (
 	"github.com/yeremi777/mlbb-collector/internal/hero"
 	"github.com/yeremi777/mlbb-collector/internal/httpx"
 	"github.com/yeremi777/mlbb-collector/internal/ratelimit"
+	"github.com/yeremi777/mlbb-collector/internal/stats"
 	"github.com/yeremi777/mlbb-collector/internal/synergy"
 )
 
@@ -48,6 +49,7 @@ func register(mux httpx.Mux, db database.Querier, analyzer *analysis.Analyzer, l
 	counter.NewHandler(heroes, counters).Register(mux)
 	synergy.NewHandler(heroes, synergies).Register(mux)
 	analysis.NewHandler(heroes, counters, synergies, analyzer, limiter).Register(mux)
+	stats.NewHandler(stats.NewRepository(db)).Register(mux)
 	httpx.Docs(mux, spec)
 }
 
